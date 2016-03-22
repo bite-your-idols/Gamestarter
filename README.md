@@ -9,6 +9,9 @@ It is based on originally created addon by Mezo in OpenELEC official forums, sin
 Connecto to your Raspberry Pi via ssh and type:
 
 wget --no-check-certificate -O /storage/install-gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/install-gamestarter.sh
+
+Then:
+
 sh /storage/install-gamestarter.sh
 
 relax and wait 5 minutes...
