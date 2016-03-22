@@ -1,0 +1,48 @@
+#!/bin/sh
+. /etc/profile
+
+# Stop KODI
+systemctl stop kodi
+
+# Enable ALSA
+modprobe snd_bcm2835
+
+# Enable libCEC
+# case $1 in
+  # "start") print("foo");;
+  # *)/storage/.kodi/addons/script.libcec.daemon/bin/libcec-daemon -q & ;;
+# esac
+
+# Launch emulator
+case $1 in
+	"start")  
+   		/storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg --menu
+	;;
+   "ports")  
+  		# si es un port ejecutamos su sh
+   		chmod a+x $2
+		$2
+	;;
+	"amiga")  
+		# cambiar el modo de TV a 1080 50h
+		tvservice -e "CEA 31"
+   		/storage/emulators/uae4arm/uae4arm -f $2
+	;;
+   *) 
+		/storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg -L /storage/emulators/retroarch/cores/$1_libretro.so "$2"
+   ;;
+esac
+
+# Disable libCEC
+# pkill libcec-daemon
+
+# Disable ALSA
+rmmod snd_bcm2835
+
+# Reset resolution to standard
+case $1 in
+  "amiga") tvservice -p;;
+esac
+
+# Start KODI
+systemctl start kodi
