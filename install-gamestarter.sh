@@ -17,6 +17,7 @@ wget --no-check-certificate -O /storage/downloads/retroarch.tar.gz https://githu
 tar -xf /storage/downloads/retroarch.tar.gz -C /storage/emulators/ -xz
 
 echo 'downloading Libretro cores...' 
+mkdir -p /storage/emulators/retroarch/cores
 wget --no-check-certificate -O /storage/downloads/libretro-1.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-1.tar.gz?raw=true
 tar -xf /storage/downloads/libretro-1.tar.gz -C /storage/emulators/retroarch/cores/ -xz
 wget --no-check-certificate -O /storage/downloads/libretro-2.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-2.tar.gz?raw=true
