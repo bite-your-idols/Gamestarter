@@ -7,9 +7,9 @@ echo 'This script will install/update Gamestarter'
 echo 'Version 0.0.1' 
 echo '*******************************************************************************'
 
-# create setaup directories
-
+# create/setup directories
 mkdir -p /storage/downloads
+mkdir -p /storage/emulators
 
 # descargar retroarch y los cores
 echo 'downloading RetroArch...' 
