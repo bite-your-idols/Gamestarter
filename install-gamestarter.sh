@@ -13,7 +13,7 @@ mkdir -p /storage/downloads
 
 # curl -L --output /storage/downloads/uae4arm.tar.gz --get https://github.com/bite-your-idols/gamestarter-openelec/blob/master/uae4arm.tar.gz
 
-wget --no-check-certificate -O /storage/downloads/uae4arm.tar.gz http://www.dropbox.com/s/jmu7gis9ckty4gb/RetroArch_base.tar.gz?dl=0
+wget --no-check-certificate -O /storage/downloads/uae4arm.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/uae4arm.tar.gz?raw=true
 tar -xf /storage/downloads/uae4arm.tar.gz -C /storage/emulators/ -xz
 
 
