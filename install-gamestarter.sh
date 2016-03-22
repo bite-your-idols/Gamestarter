@@ -28,7 +28,7 @@ tar -xf /storage/downloads/libretro-2.tar.gz -C /storage/emulators/retroarch/cor
 echo 'downloading uae4arm...' 
 wget --no-check-certificate -O /storage/downloads/uae4arm.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/uae4arm.tar.gz?raw=true
 tar -xf /storage/downloads/uae4arm.tar.gz -C /storage/emulators/ -xz
-mkdir /storage/emulators/roms/amiga
+mkdir -p /storage/emulators/roms/amiga
 cp /storage/emulators/uae4arm/conf/TheSpyWhoLovedMe-example.uae /storage/emulators/roms/amiga
 
 
@@ -90,7 +90,7 @@ tar -xf /storage/downloads/gamemaker-libs.tar.gz -C /storage/ -xz
 
 wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/0.0.1.tar.gz
 tar -xf /storage/downloads/script.hacklib.tar.gz -C /storage/.kodi/addons/ -xz
-cp /storage/.kodi/addons/script.hacklib/autostart.sh /storage/.config
+cp /storage/.kodi/addons/script.hacklib-0.0.1/autostart.sh /storage/.config
 chmod a+x /storage/.config/autostart.sh
 
 #remove downloaded files
