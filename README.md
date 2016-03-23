@@ -4,9 +4,12 @@
 
 
 ### About
-I like Raspberry Pi, it is my Media Center since several years ago. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my Media Center for playing retrogames but I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for Retroarch and other games or emulators for Raspberry Pi's OpenELEC.
+I like Raspberry Pi, it is my Media Center since several years ago. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my Media Center for playing retrogames but I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for Retroarch and other games or emulators for Raspberry Pi's OpenELEC. It is based on an addon created by Mezo in OpenELEC official forums and edited by other users.
 
-It is based on an addon created by Mezo in OpenELEC official forums and edited by other users.
+After instalaltion you will continue haveing your customized OpenELEC with the addition of RetroArch, Amiga UAE4ARM emulator and some GameMaker Pi ports (* read below). Everything can be launched within kodi, and after exit you will get back to kodi again.
+
+Only thing you need is a PC, a tablet or a phone with an ssh client and a gamepad to enjoy!
+
 
 
 This is still a work in progress project.
@@ -66,9 +69,19 @@ There it is a default/example launchers/games list I created. You can edit list,
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
+### Amiga emulation:
 
-WIP...
+Amiga emulation is based on UAE4ARM pi port, I can not launch emulator to GUI by now, but you can launch games from kodi creating a custom config file for each one. More info here: http://blog.petrockblock.com/forums/topic/launch-amiga-games-from-retropie-menu/
 
+You will need a mouse in order to start games, and a keyboard to exit, save/load states...
+
+
+
+### GameMaker Pi:
+
+As an extra feature, the installation will download and extract three free games from GameMaker Team. To make them work I need to make a hacklib in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some issue to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called script.hacklib. Also to make them works I need to add a code line to autostart.sh file in .config folder, so if you have some custo code inside that file, rename file before installation, and afterwards edit manually file.
+
+These games only work with Xbox Controller :(
 
 
 ### ToDo:
@@ -79,6 +92,9 @@ WIP...
 
 
 ### Bugs, issues, errors...:
+- Please, sorry for my english ;)
+
+
 - No sound in emualtors:
 ```
 mount -o remount,rw /flash
@@ -90,6 +106,9 @@ hdmi_force_edid_audio=1
 dtparam=audio=on
 ```
 Exit saving and reboot.
+
+
+Any improvement, collaborations, corrections are welcome!!!
 
 
 WIP...
