@@ -3,8 +3,7 @@
 
 #Welcome message
 echo '*******************************************************************************' 
-echo 'Installing Gamestarter...' 
-echo 'Version 0.0.1' 
+echo 'Installing Gamestarter v-0.0.1' 
 echo '*******************************************************************************'
 
 # create/setup directories
@@ -13,13 +12,13 @@ mkdir -p /storage/emulators
 
 # descargar retroarch y los cores
 echo ''
-echo ' -> downloading RetroArch...' 
+echo '::Gamestarter-01/08:: -> downloading RetroArch...' 
 echo ''
 wget --no-check-certificate -O /storage/downloads/retroarch.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/retroarch.tar.gz?raw=true
 tar -xf /storage/downloads/retroarch.tar.gz -C /storage/emulators/ -xz
 
 echo '' 
-echo ' -> downloading Libretro cores...'
+echo ' ->::Gamestarter-02/08:: -> downloading Libretro cores...'
 echo ''
 mkdir -p /storage/emulators/retroarch/cores
 wget --no-check-certificate -O /storage/downloads/libretro-1.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-1.tar.gz?raw=true
@@ -30,7 +29,7 @@ tar -xf /storage/downloads/libretro-2.tar.gz -C /storage/emulators/retroarch/cor
 
 # descargar amiga
 echo ''
-echo ' -> downloading uae4arm...'
+echo '::Gamestarter-03/08:: -> downloading uae4arm...'
 echo '' 
 wget --no-check-certificate -O /storage/downloads/uae4arm.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/uae4arm.tar.gz?raw=true
 tar -xf /storage/downloads/uae4arm.tar.gz -C /storage/emulators/ -xz
@@ -40,7 +39,7 @@ cp /storage/emulators/uae4arm/conf/TheSpyWhoLovedMe-example.uae /storage/emulato
 
 # descargar scripts, permisos de escritura y carpetas vacias
 echo ''
-echo ' -> downloading Gamestarter scripts...' 
+echo '::Gamestarter-04/08:: -> downloading Gamestarter scripts...' 
 echo ''
 mkdir -p /storage/emulators/scripts
 wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter.sh
@@ -55,7 +54,7 @@ mkdir -p /storage/emulators/roms
 
 # instalar el addon de Retroarch
 echo ''
-echo ' -> downloading RetroArch launcher addon...' 
+echo '::Gamestarter-05/08:: -> downloading RetroArch launcher addon...' 
 echo ''
 # wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.tar.gz https://github.com/bite-your-idols/script.gamestarter.retroarch/archive/0.0.2.tar.gz
 wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.tar.gz https://github.com/bite-your-idols/script.gamestarter.retroarch/archive/master.tar.gz
@@ -63,7 +62,7 @@ tar -xf /storage/downloads/script.gamestarter.retroarch.tar.gz -C /storage/.kodi
 
 # instalar el addon/libs de uae4arm
 echo ''
-echo ' -> downloading uae4arm launcher addon and libs...' 
+echo '::Gamestarter-06/08:: -> downloading uae4arm launcher addon and libs...' 
 echo ''
 # wget --no-check-certificate -O /storage/downloads/script.gamestarter.uae4arm.tar.gz https://github.com/bite-your-idols/script.gamestarter.uae4arm/archive/0.0.2.tar.gz
 wget --no-check-certificate -O /storage/downloads/script.gamestarter.uae4arm.tar.gz https://github.com/bite-your-idols/script.gamestarter.uae4arm/archive/master.tar.gz
@@ -71,7 +70,7 @@ tar -xf /storage/downloads/script.gamestarter.uae4arm.tar.gz -C /storage/.kodi/a
 
 # instalar advanced launcher, launchers.xml/symlink y caratulas
 echo ''
-echo ' -> downloading AdvancedLauncher frontend...'
+echo '::Gamestarter-07/08:: -> downloading AdvancedLauncher frontend...'
 echo ''
 wget --no-check-certificate -O /storage/downloads/advanced.launcher.tar.gz https://github.com/bite-your-idols/advanced-launcher/archive/2.5.8.tar.gz
 tar -xf /storage/downloads/advanced.launcher.tar.gz -C /storage/.kodi/addons/ -xz
@@ -85,7 +84,7 @@ ln -s /storage/emulators/frontend/launchers.xml  /storage/.kodi/userdata/addon_d
 
 # Lo de Gamemaker Pi
 echo ''
-echo ' -> downloading GameMaker Pi ports and requiered libs...'
+echo '::Gamestarter-08/08:: -> downloading GameMaker Pi ports and requiered libs...'
 echo ''
 wget --no-check-certificate -O /storage/downloads/MalditaCastilla.tar.gz https://www.yoyogames.com/download/pi/castilla
 wget --no-check-certificate -O /storage/downloads/SuperCrateBox.tar.gz https://www.yoyogames.com/download/pi/crate
@@ -133,7 +132,5 @@ rm /storage/install-gamestarter.sh
 
 # end installation
 echo '----'
-echo 'installation complete, please enjoy!!'
-echo '----'
-echo 'You should reboot now...'
+echo '::Gamestarter:: -> Installation completed, now rebbot and enjoy!!'
 echo '----'
