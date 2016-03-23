@@ -77,11 +77,13 @@ You will need a mouse in order to start games, and a keyboard to exit, save/load
 
 
 
+
 ### GameMaker Pi:
 
 As an extra feature, the installation will download and extract three free games from GameMaker Team. To make them work I need to make a hacklib in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some issue to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called script.hacklib. Also to make them works I need to add a code line to autostart.sh file in .config folder, so if you have some custo code inside that file, rename file before installation, and afterwards edit manually file.
 
 These games only work with Xbox Controller :(
+
 
 
 ### ToDo:
@@ -108,10 +110,9 @@ dtparam=audio=on
 Exit saving and reboot.
 
 
-Any improvement, collaborations, corrections are welcome!!!
+- Any improvement, collaborations, corrections are welcome!!!
 
 
-WIP...
 
 
 
