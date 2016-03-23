@@ -15,7 +15,7 @@ modprobe snd_bcm2835
 
 # Launch emulator
 case $1 in
-	"start")  
+	"retroarch")  
    		/storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg --menu
 	;;
    "ports")  
