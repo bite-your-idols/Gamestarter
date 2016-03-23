@@ -57,14 +57,16 @@ mkdir -p /storage/emulators/roms
 echo ''
 echo ' -> downloading RetroArch launcher addon...' 
 echo ''
-wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.tar.gz https://github.com/bite-your-idols/script.gamestarter.retroarch/archive/0.0.2.tar.gz
+# wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.tar.gz https://github.com/bite-your-idols/script.gamestarter.retroarch/archive/0.0.2.tar.gz
+wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.tar.gz https://github.com/bite-your-idols/script.gamestarter.retroarch/archive/master.tar.gz
 tar -xf /storage/downloads/script.gamestarter.retroarch.tar.gz -C /storage/.kodi/addons/ -xz
 
 # instalar el addon/libs de uae4arm
 echo ''
 echo ' -> downloading uae4arm launcher addon and libs...' 
 echo ''
-wget --no-check-certificate -O /storage/downloads/script.gamestarter.uae4arm.tar.gz https://github.com/bite-your-idols/script.gamestarter.uae4arm/archive/0.0.2.tar.gz
+# wget --no-check-certificate -O /storage/downloads/script.gamestarter.uae4arm.tar.gz https://github.com/bite-your-idols/script.gamestarter.uae4arm/archive/0.0.2.tar.gz
+wget --no-check-certificate -O /storage/downloads/script.gamestarter.uae4arm.tar.gz https://github.com/bite-your-idols/script.gamestarter.uae4arm/archive/master.tar.gz
 tar -xf /storage/downloads/script.gamestarter.uae4arm.tar.gz -C /storage/.kodi/addons/ -xz
 
 # instalar advanced launcher, launchers.xml/symlink y caratulas
@@ -104,8 +106,9 @@ chmod a+x /storage/emulators/roms/ports/CaveStory.sh
 wget --no-check-certificate -O /storage/downloads/gamemaker-libs.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/gamemaker-libs.tar.gz?raw=true
 tar -xf /storage/downloads/gamemaker-libs.tar.gz -C /storage/ -xz
 
-wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/0.0.2.tar.gz
-tar -xf /storage/downloads/script.hacklib.tar.gz -C /storage/.kodi/addons/ -xz
+# wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/0.0.2.tar.gz
+wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/mastertar.gz
+çtar -xf /storage/downloads/script.hacklib.tar.gz -C /storage/.kodi/addons/ -xz
 cp /storage/.kodi/addons/script.hacklib-0.0.1/autostart.sh /storage/.config
 chmod a+x /storage/.config/autostart.sh
 chmod a+x /storage/.kodi/addons/script.hacklib-0.0.1/bin/hacklib
