@@ -107,11 +107,11 @@ wget --no-check-certificate -O /storage/downloads/gamemaker-libs.tar.gz https://
 tar -xf /storage/downloads/gamemaker-libs.tar.gz -C /storage/ -xz
 
 # wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/0.0.2.tar.gz
-wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/mastertar.gz
-çtar -xf /storage/downloads/script.hacklib.tar.gz -C /storage/.kodi/addons/ -xz
-cp /storage/.kodi/addons/script.hacklib-0.0.1/autostart.sh /storage/.config
+wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/master.tar.gz
+tar -xf /storage/downloads/script.hacklib.tar.gz -C /storage/.kodi/addons/ -xz
+cp /storage/.kodi/addons/script.hacklib-master/autostart.sh /storage/.config
 chmod a+x /storage/.config/autostart.sh
-chmod a+x /storage/.kodi/addons/script.hacklib-0.0.1/bin/hacklib
+chmod a+x /storage/.kodi/addons/script.hacklib-master/bin/hacklib
 
 #remove downloaded files
 rm /storage/downloads/retroarch.tar.gz
