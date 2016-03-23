@@ -45,7 +45,7 @@ After that, you should reboot your system and copy your roms, bios and saves to 
 After installation is completed and reboot, firts thing you have to do is transfer some roms and requiered bios. 
 Then, there are two ways of launching RetroArch. The easiest one is using the addon that is located under Program Addons called Gamestarter: Retroarch. 
 
-[screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
+![screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
 
 The first time RetroArch is launched I recommend to Update everything (Settings menu> Online Updater). The you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores,... just like in [Lakka](http://www.lakka.tv/) distro!!
 
@@ -56,7 +56,14 @@ XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 
 The other way to launch RetroArch games, and the only one to launch both amiga roms and GameMaker Pi ports, is using AdvancedLauncher, located also under Program Addons.
 
-There it is a default/example launchers/games list I created. You can edit list
+
+![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-context.png)
+
+
+There it is a default/example launchers/games list I created. You can edit list, scan for your games, edit emulators... everything using contextual menu.
+
+
+![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
 
