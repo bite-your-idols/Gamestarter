@@ -5,10 +5,11 @@
 
 ### About
 I'm trying ot make a very easy installation for Retroarch and other games or emulators for Raspberry Pi's OpenELEC.
-It is based on originally created addon by Mezo in OpenELEC official forums and edits by some other forum users.
+It is based on originally addon created by Mezo in OpenELEC official forums and edited by other forum users.
 
 
-This is still a work in progress script.
+This is still a work in progress project.
+
 
 
 ### Installation instructions:
@@ -30,14 +31,23 @@ After that, you should reboot your system and copy your roms, bios and saves to 
 
 
 
+
 ### Post-installation setup:
 
 WIP...
 
 
+
+### ToDo:
+
+WIP...
+
+
+
 ### Bugs, issues, errors...:
 
 WIP...
+
 
 
 
