@@ -3,7 +3,7 @@
 
 #Welcome message
 echo '*******************************************************************************' 
-echo 'This script will install/update Gamestarter' 
+echo 'Installing Gamestarter...' 
 echo 'Version 0.0.1' 
 echo '*******************************************************************************'
 
@@ -12,11 +12,15 @@ mkdir -p /storage/downloads
 mkdir -p /storage/emulators
 
 # descargar retroarch y los cores
-echo 'downloading RetroArch...' 
+echo ''
+echo ' -> downloading RetroArch...' 
+echo ''
 wget --no-check-certificate -O /storage/downloads/retroarch.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/retroarch.tar.gz?raw=true
 tar -xf /storage/downloads/retroarch.tar.gz -C /storage/emulators/ -xz
 
-echo 'downloading Libretro cores...' 
+echo '' 
+echo ' -> downloading Libretro cores...'
+echo ''
 mkdir -p /storage/emulators/retroarch/cores
 wget --no-check-certificate -O /storage/downloads/libretro-1.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-1.tar.gz?raw=true
 tar -xf /storage/downloads/libretro-1.tar.gz -C /storage/emulators/retroarch/cores/ -xz
@@ -25,7 +29,9 @@ tar -xf /storage/downloads/libretro-2.tar.gz -C /storage/emulators/retroarch/cor
 
 
 # descargar amiga
-echo 'downloading uae4arm...' 
+echo ''
+echo ' -> downloading uae4arm...'
+echo '' 
 wget --no-check-certificate -O /storage/downloads/uae4arm.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/uae4arm.tar.gz?raw=true
 tar -xf /storage/downloads/uae4arm.tar.gz -C /storage/emulators/ -xz
 mkdir -p /storage/emulators/roms/amiga
@@ -33,7 +39,9 @@ cp /storage/emulators/uae4arm/conf/TheSpyWhoLovedMe-example.uae /storage/emulato
 
 
 # descargar scripts, permisos de escritura y carpetas vacias
-echo 'downloading Gamestarter scripts...' 
+echo ''
+echo ' -> downloading Gamestarter scripts...' 
+echo ''
 mkdir -p /storage/emulators/scripts
 wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter.sh
 wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.start https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter.start
@@ -46,17 +54,23 @@ mkdir -p /storage/emulators/saves
 mkdir -p /storage/emulators/roms
 
 # instalar el addon de Retroarch
-echo 'downloading RetroArch launcher addon...' 
+echo ''
+echo ' -> downloading RetroArch launcher addon...' 
+echo ''
 wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.tar.gz https://github.com/bite-your-idols/script.gamestarter.retroarch/archive/0.0.1.tar.gz
 tar -xf /storage/downloads/script.gamestarter.retroarch.tar.gz -C /storage/.kodi/addons/ -xz
 
 # instalar el addon/libs de uae4arm
-echo 'downloading uae4arm launcher addon and libs...' 
+echo ''
+echo ' -> downloading uae4arm launcher addon and libs...' 
+echo ''
 wget --no-check-certificate -O /storage/downloads/script.gamestarter.uae4arm.tar.gz https://github.com/bite-your-idols/script.gamestarter.uae4arm/archive/0.0.1.tar.gz
 tar -xf /storage/downloads/script.gamestarter.uae4arm.tar.gz -C /storage/.kodi/addons/ -xz
 
-# instalar advanced launcher, launchers.xml/symlink y caratulas -> frontend.tar.gz ?
-echo 'downloading AdvancedLauncher frontend...'
+# instalar advanced launcher, launchers.xml/symlink y caratulas
+echo ''
+echo ' -> downloading AdvancedLauncher frontend...'
+echo ''
 wget --no-check-certificate -O /storage/downloads/advanced.launcher.tar.gz https://github.com/bite-your-idols/advanced-launcher/archive/2.5.8.tar.gz
 tar -xf /storage/downloads/advanced.launcher.tar.gz -C /storage/.kodi/addons/ -xz
 
@@ -68,7 +82,9 @@ ln -s /storage/emulators/frontend/launchers.xml  /storage/.kodi/userdata/addon_d
 
 
 # Lo de Gamemaker Pi
-echo 'downloading GameMaker Pi ports and requiered libs...'
+echo ''
+echo ' -> downloading GameMaker Pi ports and requiered libs...'
+echo ''
 wget --no-check-certificate -O /storage/downloads/MalditaCastilla.tar.gz https://www.yoyogames.com/download/pi/castilla
 wget --no-check-certificate -O /storage/downloads/SuperCrateBox.tar.gz https://www.yoyogames.com/download/pi/crate
 wget --no-check-certificate -O /storage/downloads/TheyNeedToBeFed.tar.gz https://www.yoyogames.com/download/pi/tntbf
