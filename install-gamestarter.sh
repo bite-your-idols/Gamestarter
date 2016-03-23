@@ -92,6 +92,7 @@ wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://
 tar -xf /storage/downloads/script.hacklib.tar.gz -C /storage/.kodi/addons/ -xz
 cp /storage/.kodi/addons/script.hacklib-0.0.1/autostart.sh /storage/.config
 chmod a+x /storage/.config/autostart.sh
+chmod a+x /storage/.kodi/addons/script.hacklib-0.0.1/bin/hacklib
 
 #remove downloaded files
 rm /storage/downloads/retroarch.tar.gz
