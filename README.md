@@ -45,6 +45,18 @@ WIP...
 
 
 ### Bugs, issues, errors...:
+- No sound in emualtors:
+```
+mount -o remount,rw /flash
+nano /flash/config.txt 
+```
+Add this lines:
+```
+hdmi_force_edid_audio=1
+dtparam=audio=on
+```
+Exit saving and reboot.
+
 
 WIP...
 
