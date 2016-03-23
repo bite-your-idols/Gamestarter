@@ -1,6 +1,7 @@
 # Gamestarter
 
-![preview](https://raw.github.com/alvarotrigo/fullPage.js/master/examples/imgs/intro.png)
+![preview](https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/assets/gamestarter-logo.jpg)
+
 
 
 ### About
