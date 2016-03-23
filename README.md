@@ -1,6 +1,6 @@
 # About
 I'm trying ot make a very easy installation for Retroarch and other games or emulators for Raspberry Pi's OpenELEC.
-It is based on originally created addon by Mezo in OpenELEC official forums, since then, a lot of changes are made by other users.
+It is based on originally created addon by Mezo in OpenELEC official forums and edits by some other forum users.
 
 
 This is still a work in progress script.
@@ -18,13 +18,23 @@ sh /storage/install-gamestarter.sh
 
 relax and wait 5 minutes...
 
+After that, you should reboot your system and copy your roms, bios and saves to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares).
+
+
+
+### Post-installation setup:
+
+
+
+
+### Bugs, issues, errors...:
 
 
 
 
 ### Credits:
 
-- Original Addon creator Mezo, modified by Nasp, Diablodiab and Bite Your Idols:
+- Original RetroArch addon creator Mezo:
  http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi
 
 - Retroarch:
@@ -42,7 +52,7 @@ https://github.com/edwtjo/advanced-launcher
 - Hacklib:
 http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
 
-- System thumbs:
+- System thumbs by tronkyfran:
 https://github.com/HerbFargus/es-theme-tronkyfran
 
 
