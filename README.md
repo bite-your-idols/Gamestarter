@@ -8,7 +8,7 @@ This is still a work in progress script.
 
 ### Installation instructions:
 
-Connecto to your Raspberry Pi via ssh and type:
+Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELEC_FAQ#How_do_i_use_SSH.3F) and type:
 
 wget --no-check-certificate -O /storage/install-gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/install-gamestarter.sh
 
