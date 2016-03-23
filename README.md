@@ -4,8 +4,9 @@
 
 
 ### About
-I'm trying ot make a very easy installation for Retroarch and other games or emulators for Raspberry Pi's OpenELEC.
-It is based on originally addon created by Mezo in OpenELEC official forums and edited by other forum users.
+I like Raspberry Pi, it is my Media Center since several years ago. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my Media Center for playing retrogames but I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for Retroarch and other games or emulators for Raspberry Pi's OpenELEC.
+
+It is based on an addon created by Mezo in OpenELEC official forums and edited by other users.
 
 
 This is still a work in progress project.
@@ -13,6 +14,13 @@ This is still a work in progress project.
 
 
 ### Installation instructions:
+
+Before installation I recommend to make a backup of your system with [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) or creating an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/)
+
+Since this is still a work in progress project, some thing may not work, but I have tested into OpenELEC 6.0.3 in a Raspberry Pi 2 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
+
+So, let's go!!
+
 
 Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELEC_FAQ#How_do_i_use_SSH.3F) and type:
 
@@ -36,6 +44,8 @@ After that, you should reboot your system and copy your roms, bios and saves to 
 
 After installation is completed and reboot, firts thing you have to do is transfer some roms and requiered bios. 
 Then, there are two ways of launching RetroArch. The easiest one is using the addon that is located under Program Addons called Gamestarter: Retroarch. 
+
+[screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
 
 The first time RetroArch is launched I recommend to Update everything (Settings menu> Online Updater). The you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores,... just like in [Lakka](http://www.lakka.tv/) distro!!
 
