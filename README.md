@@ -27,17 +27,18 @@ After that, you should reboot your system and copy your roms, bios and saves to 
 
 ### Post-installation setup:
 
-
+WIP...
 
 
 ### Bugs, issues, errors...:
 
+WIP...
 
 
 
 ### Credits:
 
-- Original RetroArch addon creator Mezo:
+- Original RetroArch addon by Mezo:
  http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi
 
 - Retroarch:
