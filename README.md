@@ -10,6 +10,15 @@ This is still a work in progress script.
 
 Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELEC_FAQ#How_do_i_use_SSH.3F) and type:
 
+Terminal:
+```shell
+// With bower
+bower install fullpage.js
+
+// With npm
+npm install fullpage.js
+```
+
 wget --no-check-certificate -O /storage/install-gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/install-gamestarter.sh
 
 Then:
