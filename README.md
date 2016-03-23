@@ -3,6 +3,8 @@ I'm trying ot make a very easy installation for Retroarch and other games or emu
 It is based on originally created addon by Mezo in OpenELEC official forums, since then, a lot of changes are made by other users.
 
 
+This is still a work in progress script.
+
 
 ### Installation instructions:
 
