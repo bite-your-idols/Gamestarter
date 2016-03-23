@@ -39,8 +39,9 @@ WIP...
 
 
 ### ToDo:
-
-WIP...
+- Include sample roms/games
+- Create uninstall and update scripts for libretro cores and RetroArch.
+- WIP...
 
 
 
