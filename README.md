@@ -1,4 +1,9 @@
-# About
+# Gamestarter
+
+![preview](https://raw.github.com/alvarotrigo/fullPage.js/master/examples/imgs/intro.png)
+
+
+### About
 I'm trying ot make a very easy installation for Retroarch and other games or emulators for Raspberry Pi's OpenELEC.
 It is based on originally created addon by Mezo in OpenELEC official forums and edits by some other forum users.
 
