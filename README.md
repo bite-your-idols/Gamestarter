@@ -41,7 +41,7 @@ sh /storage/install-gamestarter.sh
 
 relax and wait 5 minutes...
 
-After that, you should reboot your system and copy your roms, bios and saves to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares).
+After that, you should reboot your system and copy your [roms, bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) and saves to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares).
 
 
 
