@@ -6,9 +6,12 @@
 ### About
 I like Raspberry Pi, it is my media center since some years ago. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my media center for playing retrogames but I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for Retroarch and other games or emulators for Raspberry Pi's OpenELEC. It is based on an addon created by Mezo in OpenELEC official forums and edited by other users.
 
-After instalaltion you will continue having your own customized OpenELEC with the addition of RetroArch, Amiga UAE4ARM emulator and some GameMaker Pi ports (* read below). Everything can be launched within kodi, and after exit you will get back to kodi again.
+After instalaltion you will continue having your own customized OpenELEC with the addition of [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), Amiga UAE4ARM emulator and some [GameMaker Pi](http://yoyogames.com/pi) ports (* read below). Everything can be launched within kodi, and after exit you will get back to kodi again.
 
-Only thing you need is a PC, a tablet or a phone with an ssh client to run the installation script, and a gamepad to enjoy!
+Only things you need:
+- a Raspberry Pi with [OpenELEC](http://openelec.tv/get-openelec) installed, 
+- a PC, a tablet or a phone with an ssh client to run the installation script, 
+- a gamepad to enjoy!
 
 
 
@@ -51,6 +54,9 @@ Then, there are two ways of launching RetroArch. The easiest one is using the ad
 ![screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
 
 The first time RetroArch is launched I recommend to Update everything (Settings menu> Online Updater). Then you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores,... just like in [Lakka](http://www.lakka.tv/) distro!!
+
+![screenshot-retroarch-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-retroarch.gif)
+
 
 Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
 ```
