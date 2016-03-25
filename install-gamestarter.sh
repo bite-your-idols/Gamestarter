@@ -16,6 +16,7 @@ echo '::Gamestarter-01/08:: -> downloading RetroArch...'
 echo ''
 wget --no-check-certificate -O /storage/downloads/retroarch.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/retroarch.tar.gz?raw=true
 tar -xf /storage/downloads/retroarch.tar.gz -C /storage/emulators/ -xz
+rm /storage/downloads/retroarch.tar.gz
 
 echo '' 
 echo ' ->::Gamestarter-02/08:: -> downloading Libretro cores...'
@@ -25,6 +26,8 @@ wget --no-check-certificate -O /storage/downloads/libretro-1.tar.gz https://gith
 tar -xf /storage/downloads/libretro-1.tar.gz -C /storage/emulators/retroarch/cores/ -xz
 wget --no-check-certificate -O /storage/downloads/libretro-2.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-2.tar.gz?raw=true
 tar -xf /storage/downloads/libretro-2.tar.gz -C /storage/emulators/retroarch/cores/ -xz
+rm /storage/downloads/libretro-1.tar.gz
+rm /storage/downloads/libretro-2.tar.gz
 
 
 # descargar amiga
@@ -35,6 +38,7 @@ wget --no-check-certificate -O /storage/downloads/uae4arm.tar.gz https://github.
 tar -xf /storage/downloads/uae4arm.tar.gz -C /storage/emulators/ -xz
 mkdir -p /storage/emulators/roms/amiga
 cp /storage/emulators/uae4arm/conf/TheSpyWhoLovedMe-example.uae /storage/emulators/roms/amiga
+rm /storage/downloads/uae4arm.tar.gz
 
 
 # descargar scripts, permisos de escritura y carpetas vacias
@@ -59,6 +63,8 @@ echo ''
 # wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.tar.gz https://github.com/bite-your-idols/script.gamestarter.retroarch/archive/0.0.2.tar.gz
 wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.tar.gz https://github.com/bite-your-idols/script.gamestarter.retroarch/archive/master.tar.gz
 tar -xf /storage/downloads/script.gamestarter.retroarch.tar.gz -C /storage/.kodi/addons/ -xz
+rm /storage/downloads/script.gamestarter.retroarch.tar.gz
+
 
 # instalar el addon/libs de uae4arm
 echo ''
@@ -67,6 +73,7 @@ echo ''
 # wget --no-check-certificate -O /storage/downloads/script.gamestarter.uae4arm.tar.gz https://github.com/bite-your-idols/script.gamestarter.uae4arm/archive/0.0.2.tar.gz
 wget --no-check-certificate -O /storage/downloads/script.gamestarter.uae4arm.tar.gz https://github.com/bite-your-idols/script.gamestarter.uae4arm/archive/master.tar.gz
 tar -xf /storage/downloads/script.gamestarter.uae4arm.tar.gz -C /storage/.kodi/addons/ -xz
+rm /storage/downloads/script.gamestarter.uae4arm.tar.gz
 
 # instalar advanced launcher, launchers.xml/symlink y caratulas
 echo ''
@@ -81,6 +88,8 @@ tar -xf /storage/downloads/frontend.tar.gz -C /storage/emulators/ -xz
 mkdir /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher
 ln -s /storage/emulators/frontend/launchers.xml  /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/launchers.xml
 
+rm /storage/downloads/advanced.launcher.tar.gz
+rm /storage/downloads/frontend.tar.gz
 
 # Lo de Gamemaker Pi
 echo ''
@@ -102,35 +111,26 @@ chmod a+x /storage/emulators/roms/ports/SuperCrateBox.sh
 chmod a+x /storage/emulators/roms/ports/TheyNeedToBeFed.sh
 chmod a+x /storage/emulators/roms/ports/CaveStory.sh
 
+rm /storage/downloads/MalditaCastilla.tar.gz
+rm /storage/downloads/SuperCrateBox.tar.gz
+rm /storage/downloads/TheyNeedToBeFed.tar.gz
+
 wget --no-check-certificate -O /storage/downloads/gamemaker-libs.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/gamemaker-libs.tar.gz?raw=true
 tar -xf /storage/downloads/gamemaker-libs.tar.gz -C /storage/ -xz
+
+rm /storage/downloads/gamemaker-libs.tar.gz
 
 # wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/0.0.2.tar.gz
 wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/master.tar.gz
 tar -xf /storage/downloads/script.hacklib.tar.gz -C /storage/.kodi/addons/ -xz
-cp /storage/.kodi/addons/script.hacklib-master/autostart.sh /storage/.config
-chmod a+x /storage/.config/autostart.sh
+# cp /storage/.kodi/addons/script.hacklib-master/autostart.sh /storage/.config
+echo "[ $PPID -eq 1 -a -f /storage/.kodi/addons/script.hacklib-master/bin/hacklib ] && . /storage/.kodi/addons/script.hacklib-master/bin/hacklib" >> /storage/.config/autostart.sh
+chmod +x /storage/.config/autostart.sh
 chmod a+x /storage/.kodi/addons/script.hacklib-master/bin/hacklib
-
-#remove downloaded files
-rm /storage/downloads/retroarch.tar.gz
-rm /storage/downloads/libretro-1.tar.gz
-rm /storage/downloads/libretro-2.tar.gz
-rm /storage/downloads/uae4arm.tar.gz
-rm /storage/downloads/script.gamestarter.retroarch.tar.gz
-rm /storage/downloads/script.gamestarter.uae4arm.tar.gz
-rm /storage/downloads/advanced.launcher.tar.gz
-rm /storage/downloads/frontend.tar.gz
-rm /storage/downloads/MalditaCastilla.tar.gz
-rm /storage/downloads/SuperCrateBox.tar.gz
-rm /storage/downloads/TheyNeedToBeFed.tar.gz
-rm /storage/downloads/gamemaker-libs.tar.gz
 rm /storage/downloads/script.hacklib.tar.gz
-rm /storage/install-gamestarter.sh
-
-
 
 # end installation
+rm /storage/install-gamestarter.sh
 echo '----'
 echo '::Gamestarter:: -> Installation completed, now rebbot and enjoy!!'
 echo '----'
