@@ -19,15 +19,15 @@ tar -xf /storage/downloads/retroarch.tar.gz -C /storage/emulators/ -xz
 rm /storage/downloads/retroarch.tar.gz
 
 echo '' 
-echo ' ->::Gamestarter-02/08:: -> downloading Libretro cores...'
+echo '::Gamestarter-02/08:: -> downloading Libretro cores...'
 echo ''
 mkdir -p /storage/emulators/retroarch/cores
-wget --no-check-certificate -O /storage/downloads/libretro-1.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-1.tar.gz?raw=true
-tar -xf /storage/downloads/libretro-1.tar.gz -C /storage/emulators/retroarch/cores/ -xz
-wget --no-check-certificate -O /storage/downloads/libretro-2.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-2.tar.gz?raw=true
-tar -xf /storage/downloads/libretro-2.tar.gz -C /storage/emulators/retroarch/cores/ -xz
-rm /storage/downloads/libretro-1.tar.gz
-rm /storage/downloads/libretro-2.tar.gz
+wget --no-check-certificate -O /storage/downloads/libretro-part1.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-part1.tar.gz?raw=true
+tar -xf /storage/downloads/libretro-part1.tar.gz -C /storage/emulators/retroarch/cores/ -xz
+wget --no-check-certificate -O /storage/downloads/libretro-part2.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/libretro-part2.tar.gz?raw=true
+tar -xf /storage/downloads/libretro-part2.tar.gz -C /storage/emulators/retroarch/cores/ -xz
+rm /storage/downloads/libretro-part1.tar.gz
+rm /storage/downloads/libretro-part2.tar.gz
 
 
 # descargar amiga
@@ -132,5 +132,5 @@ rm /storage/downloads/script.hacklib.tar.gz
 # end installation
 rm /storage/install-gamestarter.sh
 echo '----'
-echo '::Gamestarter:: -> Installation completed, now rebbot and enjoy!!'
+echo '::Gamestarter:: -> Installation completed, now reboot and enjoy!!'
 echo '----'
