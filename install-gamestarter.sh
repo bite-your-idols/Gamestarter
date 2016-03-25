@@ -77,7 +77,7 @@ rm /storage/downloads/script.gamestarter.uae4arm.tar.gz
 
 # instalar advanced launcher, launchers.xml/symlink y caratulas
 echo ''
-echo '::Gamestarter-07/08:: -> downloading AdvancedLauncher frontend...'
+echo '::Gamestarter-07/08:: -> downloading AdvancedLauncher frontend and assets...'
 echo ''
 wget --no-check-certificate -O /storage/downloads/advanced.launcher.tar.gz https://github.com/bite-your-idols/advanced-launcher/archive/2.5.8.tar.gz
 tar -xf /storage/downloads/advanced.launcher.tar.gz -C /storage/.kodi/addons/ -xz
@@ -124,7 +124,7 @@ rm /storage/downloads/gamemaker-libs.tar.gz
 wget --no-check-certificate -O /storage/downloads/script.hacklib.tar.gz https://github.com/bite-your-idols/script.hacklib/archive/master.tar.gz
 tar -xf /storage/downloads/script.hacklib.tar.gz -C /storage/.kodi/addons/ -xz
 # cp /storage/.kodi/addons/script.hacklib-master/autostart.sh /storage/.config
-echo "[ $PPID -eq 1 -a -f /storage/.kodi/addons/script.hacklib-master/bin/hacklib ] && . /storage/.kodi/addons/script.hacklib-master/bin/hacklib" >> /storage/.config/autostart.sh
+echo '[ $PPID -eq 1 -a -f /storage/.kodi/addons/script.hacklib-master/bin/hacklib ] && . /storage/.kodi/addons/script.hacklib-master/bin/hacklib' >> /storage/.config/autostart.sh
 chmod +x /storage/.config/autostart.sh
 chmod a+x /storage/.kodi/addons/script.hacklib-master/bin/hacklib
 rm /storage/downloads/script.hacklib.tar.gz
