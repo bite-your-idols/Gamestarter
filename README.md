@@ -42,12 +42,12 @@ After that, you should reboot your system and copy your [roms, bios](https://git
 
 That's all!
 
-###### Pre-Installed image 
-```
+
+##### Pre-Installed image 
 There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/):
 
 https://goo.gl/l9X3rC
-```
+
 ![screenshot-kodi](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi.png)
 
 It includes some extras like custom splash screen and addon shortcuts on home page.
