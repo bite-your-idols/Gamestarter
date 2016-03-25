@@ -77,7 +77,7 @@ rm /storage/downloads/script.gamestarter.uae4arm.tar.gz
 
 # instalar advanced launcher, launchers.xml/symlink y caratulas
 echo ''
-echo '::Gamestarter-07/08:: -> downloading AdvancedLauncher frontend and assets...'
+echo '::Gamestarter-07/08:: -> downloading AdvancedLauncher, assets and sample roms...'
 echo ''
 wget --no-check-certificate -O /storage/downloads/advanced.launcher.tar.gz https://github.com/bite-your-idols/advanced-launcher/archive/2.5.8.tar.gz
 tar -xf /storage/downloads/advanced.launcher.tar.gz -C /storage/.kodi/addons/ -xz
