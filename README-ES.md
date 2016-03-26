@@ -5,99 +5,95 @@
 [English](https://github.com/bite-your-idols/gamestarter-openelec/)/Spanish
 
 
-traducción en breve...
+traducción en proceso...
 
 
-### About
-I like Raspberry Pi as my media center. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my media center for playing retrogames. But I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for emulators and other games for Raspberry Pi's OpenELEC.
+### Sobre el proyecto
+Me gusta la Raspberry Pi como media center. Me gusta OpenELEC porque es simple, rapido y estable. Me gusta jugar, especialmente a jiegos retro. Asi que lo ideal seria poder usar mi media center para jugar a emuladores, pero sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso. Por eso he creado este script de instalación fácil de emuladores y otros juegos para OpenELEC de Raspberry Pi.
 
-After instalaltion you will continue with your own customized OpenELEC but with the addition of multi-emulator frontend [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), Amiga UAE4ARM emulator and some [GameMaker Pi](http://yoyogames.com/pi) ports. Everything can be launched within kodi, and after exit you will get back to kodi again. Also I included a launcher addon for retroarch, some test freeware roms, advanced launcher "skin" and default game list with main emulators, retroarch joypad configs and many more...
-
-Only things you need:
-- a Raspberry Pi with [OpenELEC](http://openelec.tv/get-openelec) installed, 
-- a PC, a tablet or a phone with an ssh client to run the installation script, 
-- a gamepad to enjoy!
+Después de la instalación continuarás teniendo tu propia versión de OpenELEC pero habiendole añadido el multi-emulador [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), el emulador de Amiga UAE4ARM y algunos juegos de [GameMaker Pi](http://yoyogames.com/pi). Todo puede ser lanzado desde kodi y al salir volverás a él. También he incluido un addon para lanzar RetroArch, que puedes añadir a tu pantalla de inicio, algunos roms de prueba o demos, una lista inicial de AdvandeLauncher con los principales emus pre-configurados y un "skin", las configuraciones para RetroArch para la mayoria de mandos del mercado y más.
 
 
-
-### Installation instructions:
-
-Before installation I recommend to backup your system with [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) or creating an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
-
-Since this is still a work in progress project some things may not work, but I have tested into OpenELEC 6.0.3 in a Raspberry Pi 2 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
-
-So, let's go!!
+Lo único que necesitas es:
+- una Raspberry Pi con [OpenELEC](http://openelec.tv/get-openelec) instalado, 
+- un PC, tablet o teléfono móvil con un cliente ssh para ejecutar el script de instalación, 
+- un mando para disfrutar.
 
 
-Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELEC_FAQ#How_do_i_use_SSH.3F) and type:
+
+### Instrucciones de instalación:
+Antres de la instalación recomiendo hacer un backup de tu sistema con [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) o hacer una imagen de tu tarjeta con [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
+
+Como es un proyecto en desarrollo algunas cosas pueden no funcionar, no me hago responsable de los daños que puedan surgir, pero esta probado en OpenELEC 6.0.3 en una Raspberry Pi 2 model B y todo funciona bien. También recomiendo leer todo este texto antes de instalar para saber de que va el tema.
+
+¡vamos allá!
+
+
+Conéctate a tu Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELEC_FAQ#How_do_i_use_SSH.3F) y escribe (copia/pega):
 
 ```
 wget --no-check-certificate -O /storage/install-gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/install-gamestarter.sh
 ```
 
-Then:
+Después:
 ```
 sh /storage/install-gamestarter.sh
 ```
 
-relax and wait 5 minutes...
+relájate y espera 5 minutos...
 
 
-After that, you should reboot your system and copy your [roms, bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) and saves to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares).
+Al finalizar, deberías reiniciar tu sistema y copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en /storage/emulators/ folder usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares).
 
-That's all!
+¡Eso es todo!
 
 
-##### Pre-Installed image 
-There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/):
+##### Imagen Pre-Instalada
+Hay una forma alternativa de tener Gamestarter, puedes escribir en una tarjeta SD una imagen pre-instalada de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/):
 
 https://goo.gl/l9X3rC
 
 ![screenshot-kodi](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi.png)
 
-It includes some extras like custom splash screen and addon shortcuts on home page.
+Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio.
 
-It's burn & run!!!
-
-
+¡¡Es grabar y a jugar!!
 
 
-### Post-installation setup:
 
-After installation is completed there are two ways of launching RetroArch. The easiest one is using the addon that is located under Program Addons called Gamestarter: Retroarch. 
+
+### Ajustes Post-instalación:
+Una vez que la instalaciñon esta completa hay dos maneras de lanzar RetroArch. La más fácil es usando el addon instalado en "Addons de programas" llamado "Gamestarter: RetroArch".
 
 ![screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
 
-The first time RetroArch is launched I recommend to Update everything (Settings menu> Online Updater). Then you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores... just like in [Lakka](http://www.lakka.tv/) distro!!
+La primera vez que inicies RetroArch recomiendo que actualices todo lo posible (Settings menu> Online Updates), asi podrás crear tus propias listas en el menu, lanzar juegos, seleccionar distintos cores para cada emulador, usar wallpapers dinámicos, boxarts, actualizar los cores... todo como en la distro [Lakka](http://www.lakka.tv/)!!
 
 ![screenshot-retroarch-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-retroarch.gif)
 
-
-Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
+En lugar de usar el addon, tambien puedes [asignarle a un boton de mando de TV](http://kodi.wiki/view/HOW-TO:Modify_keymaps) la siguiente acción:
 ```
 XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
 
-
-The other way to launch RetroArch games, and the only one to launch both amiga roms and GameMaker Pi ports, is using AdvancedLauncher, located also under Program Addons.
+La otra manera de lanzar juegos con RetroArch, y la única manera de lanzar los juegos de Amiga y GameMaker, es usando el addon Advanced Launcher, situado en "Addons de Programas"
 
 
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-context.png)
 
-
-There it is a default/example launchers/games list I created. You can edit list, scan for your games, edit emulator cores... everything using contextual menu.
+Hay una lista de emuladores como ejemplo con algunos roms gratuitos incluidos. Puedes editar la lista, escanear para buscar tus roms, cambiar los cores de los emuladores... todo usando el menu contextual.
 
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
-### Amiga emulation:
+### Emulación de Amiga:
 
-Amiga emulation is based on UAE4ARM pi port, You can not launch emulator into GUI by now, but you can launch games from kodi's Advanced Launcher creating a custom config file for each one. More info here: http://blog.petrockblock.com/forums/topic/launch-amiga-games-from-retropie-menu/
+Para emular Amiga se usa la versión para Pi del emulador UAE4ARM, de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher creando un archivo de configuración para cada juego. Más info sobre esto aquí: http://blog.petrockblock.com/forums/topic/launch-amiga-games-from-retropie-menu/
 
-You will need a mouse in order to start games and a keyboard to exit, save/load states...
+Necesitarás un ratón para iniciar algunos juegos y un teclado para salir, salvar partidas, etc...
 
-Also you can exit using ssh:
+También puede salir mediante ssh:
 ```
 pkill uae4arm
 ```
@@ -105,11 +101,11 @@ pkill uae4arm
 
 ### GameMaker Pi:
 
-As an extra feature, the installation will download and extract three free games from GameMaker Team. To make them work I had to make a hacklib in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some curl-related issues to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called "hacklib".
+Como extra, se descargarán e instalarán 3 juegos gratuitos de GameMaker. Para hacerlos funcionar en OpenELEC hay que hacer un pequeño hack en las bibliotecas del sistema. Si notas algun pequeño fallo, relacionado con el downgrade de la versiñon de CURL, puedes desactivar/activar el hack usando un addon que encontrarás en Addons de Programas llamado "hacklib".
 
-These games only work with Xbox Controller :(
+Estos juegos sólo funcionan con el mando de Xbox :(
 
-You can exit them using ssh too:
+También puede salir mediante ssh:
 ```
 pkill MalditaCastilla
 pkill SuperCrateBox
@@ -118,25 +114,24 @@ pkill TheyNeedToBeFed
 
 
 
-### ToDo:
-- Create uninstall and update scripts
-- Integrate [IARL](https://github.com/zach-morris/plugin.program.iarl) addon
-- Add EmulationStation
+### Próximamente::
+- Crear scrpits de actualización y desintalación
+- Integrar el addon  [IARL](https://github.com/zach-morris/plugin.program.iarl)
+- Añadir EmulationStation
 
 
 
-### Bugs, issues, errors...:
+### Bugs, fallos, errores...:
 
-- Any improvement, collaborations, corrections are welcome!!!
-
-
+- Cualquier mejora, colaboración, corrección o comentario es bienvenido!!!
 
 
 
 
-### Creditos:
 
-- Original RetroArch addon by Mezo:
+### Créditos:
+
+- Addon original de RetroArch por Mezo:
  http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi
 
 - Retroarch:
@@ -154,8 +149,8 @@ https://github.com/edwtjo/advanced-launcher
 - Hacklib:
 http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
 
-- System thumbs by tronkyfran:
+- Imágenes para AdvancedLauncher por tronkyfran:
 https://github.com/HerbFargus/es-theme-tronkyfran
 
 
-Enjoy!
+Venga!
