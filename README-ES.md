@@ -98,9 +98,9 @@ Amiga emulation is based on UAE4ARM pi port, You can not launch emulator into GU
 You will need a mouse in order to start games and a keyboard to exit, save/load states...
 
 Also you can exit using ssh:
-´´´
+```
 pkill uae4arm
-´´´
+```
 
 
 ### GameMaker Pi:
@@ -110,11 +110,11 @@ As an extra feature, the installation will download and extract three free games
 These games only work with Xbox Controller :(
 
 You can exit them using ssh too:
-´´´
+```
 pkill MalditaCastilla
 pkill SuperCrateBox
 pkill TheyNeedToBeFed
-´´´
+```
 
 
 
