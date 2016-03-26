@@ -115,6 +115,7 @@ pkill TheyNeedToBeFed
 
 ### ToDo:
 - Create uninstall and update scripts
+- Integrate [IARL](https://github.com/zach-morris/plugin.program.iarl) addon
 - Add EmulationStation
 
 
