@@ -97,7 +97,7 @@ Also you can exit using ssh:
 ```
 pkill uae4arm
 ```
-
+There is a work in progress libretro core port of this emulator. When it will be released I will use it instead.
 
 ### GameMaker Pi:
 
