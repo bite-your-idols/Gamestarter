@@ -6,7 +6,7 @@
 
 
 ### Sobre el proyecto
-Me gusta la Raspberry Pi como media center. Me gusta OpenELEC porque es simple, rapido y estable. Me gusta jugar, especialmente a jiegos retro. Asi que lo ideal seria poder usar mi media center para jugar a emuladores, pero sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso. Por eso he creado este script de instalación fácil de emuladores y otros juegos para OpenELEC de Raspberry Pi.
+Me gusta la Raspberry Pi como media center. Me gusta OpenELEC porque es simple, rapido y estable. Me gusta jugar, especialmente a juegos retro. Asi que lo ideal seria poder usar mi media center para jugar a emuladores, pero sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso. Por eso he creado este script de instalación fácil de emuladores y otros juegos para OpenELEC de Raspberry Pi.
 
 Después de la instalación continuarás teniendo tu propia versión de OpenELEC pero habiendole añadido el multi-emulador [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), el emulador de Amiga UAE4ARM y algunos juegos de [GameMaker Pi](http://yoyogames.com/pi). Todo puede ser lanzado desde kodi y al salir volverás a él. También he incluido un addon para lanzar RetroArch, que puedes añadir a tu pantalla de inicio, algunos roms de prueba o demos, una lista inicial de AdvandeLauncher con los principales emus pre-configurados y un "skin", las configuraciones para RetroArch para la mayoria de mandos del mercado y más.
 
@@ -40,7 +40,7 @@ sh /storage/install-gamestarter.sh
 relájate y espera 5 minutos...
 
 
-Al finalizar, deberías reiniciar tu sistema y copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en /storage/emulators/ folder usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares).
+Al finalizar, deberías reiniciar tu sistema y copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares).
 
 ¡Eso es todo!
 
@@ -60,7 +60,7 @@ Incluye algunos extras como una splash screen personalizada y acceso directo de 
 
 
 ### Ajustes Post-instalación:
-Una vez que la instalaciñon esta completa hay dos maneras de lanzar RetroArch. La más fácil es usando el addon instalado en "Addons de programas" llamado "Gamestarter: RetroArch".
+Una vez que la instalación esta completa hay dos maneras de lanzar RetroArch. La más fácil es usando el addon instalado en "Addons de programas" llamado "Gamestarter: RetroArch".
 
 ![screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
 
@@ -68,7 +68,7 @@ La primera vez que inicies RetroArch recomiendo que actualices todo lo posible (
 
 ![screenshot-retroarch-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-retroarch.gif)
 
-En lugar de usar el addon, tambien puedes [asignarle a un boton de mando de TV](http://kodi.wiki/view/HOW-TO:Modify_keymaps) la siguiente acción:
+En lugar de usar el addon, tambien puedes [asignarle a un botón del mando de la TV](http://kodi.wiki/view/HOW-TO:Modify_keymaps) la siguiente acción:
 ```
 XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
@@ -94,11 +94,11 @@ También puede salir mediante ssh:
 ```
 pkill uae4arm
 ```
-
+Hay en desarrollo una versión para RetroArch de este emulador, cuando se publique la idea es cambiarnos a él.
 
 ### GameMaker Pi:
 
-Como extra, se descargarán e instalarán 3 juegos gratuitos de GameMaker. Para hacerlos funcionar en OpenELEC hay que hacer un pequeño hack en las bibliotecas del sistema. Si notas algun pequeño fallo, relacionado con el downgrade de la versiñon de CURL, puedes desactivar/activar el hack usando un addon que encontrarás en Addons de Programas llamado "hacklib".
+Como extra, se descargarán e instalarán 3 juegos gratuitos de GameMaker. Para hacerlos funcionar en OpenELEC hay que hacer un pequeño hack en las bibliotecas del sistema. Si notas algun pequeño fallo, relacionado con el downgrade de la versión de CURL, puedes desactivar/activar el hack usando un addon que encontrarás en Addons de Programas llamado "hacklib".
 
 Estos juegos sólo funcionan con el mando de Xbox :(
 
@@ -112,7 +112,7 @@ pkill TheyNeedToBeFed
 
 
 ### Próximamente::
-- Crear scrpits de actualización y desintalación
+- Crear scripts de actualización y desintalación
 - Integrar el addon  [IARL](https://github.com/zach-morris/plugin.program.iarl)
 - Añadir EmulationStation
 
