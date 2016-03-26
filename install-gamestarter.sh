@@ -98,7 +98,7 @@ echo ''
 wget --no-check-certificate -O /storage/downloads/MalditaCastilla.tar.gz https://www.yoyogames.com/download/pi/castilla
 wget --no-check-certificate -O /storage/downloads/SuperCrateBox.tar.gz https://www.yoyogames.com/download/pi/crate
 wget --no-check-certificate -O /storage/downloads/TheyNeedToBeFed.tar.gz https://www.yoyogames.com/download/pi/tntbf
-mkdir /storage/emulators/roms/ports
+# mkdir /storage/emulators/roms/ports
 tar xvzf /storage/downloads/MalditaCastilla.tar.gz -C /storage/emulators/roms/ports/
 tar xvzf /storage/downloads/SuperCrateBox.tar.gz -C /storage/emulators/roms/ports/
 tar xvzf /storage/downloads/TheyNeedToBeFed.tar.gz -C /storage/emulators/roms/ports/
