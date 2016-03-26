@@ -5,9 +5,6 @@
 [English](https://github.com/bite-your-idols/gamestarter-openelec/)/Spanish
 
 
-traducción en proceso...
-
-
 ### Sobre el proyecto
 Me gusta la Raspberry Pi como media center. Me gusta OpenELEC porque es simple, rapido y estable. Me gusta jugar, especialmente a jiegos retro. Asi que lo ideal seria poder usar mi media center para jugar a emuladores, pero sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso. Por eso he creado este script de instalación fácil de emuladores y otros juegos para OpenELEC de Raspberry Pi.
 
