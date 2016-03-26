@@ -1,4 +1,4 @@
-# Gamestarter
+# Gamestarter (English/[Spanish](https://github.com/bite-your-idols/gamestarter-openelec/blob/master/README-ES.md))
 
 ![gamestarter-logo](https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/assets/gamestarter-logo.jpg)
 
