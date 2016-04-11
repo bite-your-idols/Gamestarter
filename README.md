@@ -147,7 +147,7 @@ https://www.raspberrypi.org/forums/viewtopic.php?t=110488
 - AdvancedLauncher:
 https://github.com/edwtjo/advanced-launcher
 
-- System thumbs & emulationstation theme by tronkyfran:
+- AdvancedLauncher thumbs & emulationstation theme by tronkyfran:
 https://github.com/HerbFargus/es-theme-tronkyfran
 
 - Internet Archive ROM Launcher by ZachMorris:
