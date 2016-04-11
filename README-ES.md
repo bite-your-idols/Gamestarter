@@ -102,7 +102,7 @@ Como extra, se descargarán e instalarán 3 juegos gratuitos de GameMaker. Para 
 
 Estos juegos sólo funcionan con el mando de Xbox :(
 
-También puede salir mediante ssh:
+También puedes salir mediante ssh:
 ```
 pkill MalditaCastilla
 pkill SuperCrateBox
@@ -112,7 +112,7 @@ pkill TheyNeedToBeFed
 
 
 ### Próximamente::
-- Crear scripts de actualización y desintalación
+- Crear script de actualización
 - Integrar el addon  [IARL](https://github.com/zach-morris/plugin.program.iarl)
 - Añadir EmulationStation
 
@@ -131,23 +131,29 @@ pkill TheyNeedToBeFed
 - Addon original de RetroArch por Mezo:
  http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi
 
+- RetroArch, UAE4ARM & EmulationStation compilados by Escalade:
+http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch
+
 - Retroarch:
 http://www.libretro.com/
 
 - UAE4ARM:
 https://www.raspberrypi.org/forums/viewtopic.php?t=110488
 
-- GameMaker:
-http://yoyogames.com/pi
-
 - AdvancedLauncher:
 https://github.com/edwtjo/advanced-launcher
 
+- Imágenes para AdvancedLauncher & emulationstation por by tronkyfran:
+https://github.com/HerbFargus/es-theme-tronkyfran
+
+- Internet Archive ROM Launcher by ZachMorris:
+https://github.com/zach-morris/plugin.program.iarl
+
+- GameMaker:
+http://yoyogames.com/pi
+
 - Hacklib:
 http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
-
-- Imágenes para AdvancedLauncher por tronkyfran:
-https://github.com/HerbFargus/es-theme-tronkyfran
 
 
 Venga!
