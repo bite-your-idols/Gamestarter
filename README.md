@@ -115,7 +115,7 @@ pkill TheyNeedToBeFed
 
 
 ### ToDo:
-- Create uninstall and update scripts
+- Create update script
 - Integrate [IARL](https://github.com/zach-morris/plugin.program.iarl) addon
 - Add EmulationStation
 
@@ -135,23 +135,29 @@ pkill TheyNeedToBeFed
 - Original RetroArch addon by Mezo:
  http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi
 
+- RetroArch, UAE4ARM & EmulationStation compiled by Escalade:
+http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch
+
 - Retroarch:
 http://www.libretro.com/
 
 - UAE4ARM:
 https://www.raspberrypi.org/forums/viewtopic.php?t=110488
 
-- GameMaker:
-http://yoyogames.com/pi
-
 - AdvancedLauncher:
 https://github.com/edwtjo/advanced-launcher
 
+- System thumbs & emulationstation theme by tronkyfran:
+https://github.com/HerbFargus/es-theme-tronkyfran
+
+- Internet Archive ROM Launcher by ZachMorris:
+https://github.com/zach-morris/plugin.program.iarl
+
+- GameMaker:
+http://yoyogames.com/pi
+
 - Hacklib:
 http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
-
-- System thumbs by tronkyfran:
-https://github.com/HerbFargus/es-theme-tronkyfran
 
 
 Enjoy!
