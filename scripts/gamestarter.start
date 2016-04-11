@@ -9,7 +9,7 @@ modprobe snd_bcm2835
 
 # Enable libCEC
 # case $1 in
-  # "start") print("foo");;
+  # "start") echo 'libCEC';;
   # *)/storage/.kodi/addons/script.libcec.daemon/bin/libcec-daemon -q & ;;
 # esac
 
@@ -17,6 +17,10 @@ modprobe snd_bcm2835
 case $1 in
 	"retroarch")  
    		/storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg --menu
+	;;
+	"emulationstation")  
+   		# /storage/emulators/emulationstation/emulationstation --no-splash
+   		/storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
 	;;
    "ports")  
   		# si es un port ejecutamos su sh
@@ -27,6 +31,8 @@ case $1 in
 		# cambiar el modo de TV a 1080 50h
 		tvservice -e "CEA 31"
    		/storage/emulators/uae4arm/uae4arm -f $2
+		# /storage/emulators/uae4arm/uae4arm -s "floppy0=$2"
+		# /storage/emulators/uae4arm/uae4arm -s "floppy0=/storage/emulators/roms/amiga/TheSpyWhoLovedMe.adf"
 	;;
    *) 
 		/storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg -L /storage/emulators/retroarch/cores/$1_libretro.so "$2"
@@ -45,4 +51,8 @@ case $1 in
 esac
 
 # Start KODI
-systemctl start kodi
+# systemctl start kodi
+case $3 in
+  "ES") echo 'Exit ES';;
+  *) systemctl start kodi;;
+esac
