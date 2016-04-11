@@ -86,7 +86,7 @@ wget --no-check-certificate -O /storage/downloads/frontend.tar.gz https://github
 tar -xf /storage/downloads/frontend.tar.gz -C /storage/emulators/ -xz
 
 mkdir /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher
-ln -s /storage/emulators/frontend/launchers.xml  /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/launchers.xml
+ln -s /storage/emulators/advancedlauncher/launchers.xml  /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/launchers.xml
 
 rm /storage/downloads/advanced.launcher.tar.gz
 rm /storage/downloads/frontend.tar.gz
