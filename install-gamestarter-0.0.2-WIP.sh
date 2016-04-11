@@ -118,7 +118,7 @@ ln -s /storage/emulators/advancedlauncher/launchers.xml  /storage/.kodi/userdata
 rm /storage/downloads/advanced.launcher.tar.gz
 rm /storage/downloads/frontend.tar.gz
 
-# instalar internet archive RON launcher
+# instalar Internet Archive ROM Launcher
 echo ''
 echo '::Gamestarter-10/11:: -> downloading Internet Archive ROM Launcher addon...'
 echo ''
@@ -140,9 +140,9 @@ wget --no-check-certificate -O /storage/downloads/TheyNeedToBeFed.tar.gz https:/
 tar xvzf /storage/downloads/MalditaCastilla.tar.gz -C /storage/emulators/roms/ports/
 tar xvzf /storage/downloads/SuperCrateBox.tar.gz -C /storage/emulators/roms/ports/
 tar xvzf /storage/downloads/TheyNeedToBeFed.tar.gz -C /storage/emulators/roms/ports/
-wget --no-check-certificate -O /storage/emulators/roms/ports/MalditaCastilla.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/ports/MalditaCastilla.sh
-wget --no-check-certificate -O /storage/emulators/roms/ports/SuperCrateBox.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/ports/SuperCrateBox.sh
-wget --no-check-certificate -O /storage/emulators/roms/ports/TheyNeedToBeFed.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/ports/TheyNeedToBeFed.sh
+wget --no-check-certificate -O /storage/emulators/roms/ports/MalditaCastilla.sh https://raw.githubusercontent.com/bite-your-idols/gamemaker-openelec/master/scripts/MalditaCastilla.sh
+wget --no-check-certificate -O /storage/emulators/roms/ports/SuperCrateBox.sh https://raw.githubusercontent.com/bite-your-idols/gamemaker-openelec/master/scripts/SuperCrateBox.sh
+wget --no-check-certificate -O /storage/emulators/roms/ports/TheyNeedToBeFed.sh https://raw.githubusercontent.com/bite-your-idols/gamemaker-openelec/master/scripts/TheyNeedToBeFed.sh
 wget --no-check-certificate -O /storage/emulators/roms/ports/CaveStory.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/ports/CaveStory.sh
 chmod a+x /storage/emulators/roms/ports/MalditaCastilla.sh
 chmod a+x /storage/emulators/roms/ports/SuperCrateBox.sh
@@ -153,7 +153,7 @@ rm /storage/downloads/MalditaCastilla.tar.gz
 rm /storage/downloads/SuperCrateBox.tar.gz
 rm /storage/downloads/TheyNeedToBeFed.tar.gz
 
-wget --no-check-certificate -O /storage/downloads/gamemaker-libs.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/gamemaker-libs.tar.gz?raw=true
+wget --no-check-certificate -O /storage/downloads/gamemaker-libs.tar.gz https://github.com/bite-your-idols/gamemaker-openelec/raw/master/packages/gamemaker-libs.tar.gz?raw=true
 tar -xf /storage/downloads/gamemaker-libs.tar.gz -C /storage/ -xz
 
 rm /storage/downloads/gamemaker-libs.tar.gz
@@ -168,7 +168,7 @@ chmod a+x /storage/.kodi/addons/script.hacklib-master/bin/hacklib
 rm /storage/downloads/script.hacklib.tar.gz
 
 # end installation
-rm /storage/install-gamestarter.sh
+rm /storage/install-gamestarter-0.0.2-WIP.sh
 echo '----'
 echo '::Gamestarter:: -> Installation completed, now reboot and enjoy!!'
 echo '----'
