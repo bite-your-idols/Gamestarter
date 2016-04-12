@@ -87,6 +87,11 @@ There it is a default/example launchers/games list I created. You can edit list,
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
 
+Finally, you can use [IARL](https://github.com/zach-morris/plugin.program.iarl/) addon, it will launch Games hosted on the Internet Archive.
+
+![Screen #2](https://raw.githubusercontent.com/zach-morris/plugin.program.iarl/master/support/media/screen2.jpg)
+
+More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
 
 ### Amiga emulation:
 
@@ -98,7 +103,7 @@ Also you can exit using ssh:
 ```
 pkill uae4arm
 ```
-There is a work in progress libretro core port of this emulator. When it will be released I will use it instead.
+> There is a work in progress libretro core port of this emulator. When it will be released I will use it instead.
 
 
 
@@ -116,14 +121,7 @@ pkill TheyNeedToBeFed
 
 
 ### Internet Archive ROM Launcher:
-Are you interested in having a large game collection, but not interested in storing all that data on your computer?
-IARL uses xml files to provide the information for Games on the [Internet Archive](https://archive.org).  The database can also provide media for each Game (Fanart / Boxart / Snapshots / Trailer / etc).
 
-More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
-
-![Screen #2](https://raw.githubusercontent.com/zach-morris/plugin.program.iarl/master/support/media/screen2.jpg)
-
-To set up:
 Go to Video Addons> IARL> settings, select external launchers, and then select OpenElec (Rpi) Gamestarter Addon
 On the setup wizard tab, choose setup for 'most playable', 'balanced', and 'accurate' (I have some default cores selected, which can be changed if needed)
 Then hit OK. Open up the addon to run it at least once. The addon requires the settings be saved before the wizard can run, I can't really find a way around that.
@@ -135,8 +133,8 @@ Reopen the addon settings, then select the wizard tab and hit run. it should set
 
 ### Changelog:
 v0.0.2-WIP:
-- emulationstation added (OE7+)
-- IARL addon
+- emulationstation (OE7+)
+- IARL
 
 v0.0.1: 
 - Initial Release
