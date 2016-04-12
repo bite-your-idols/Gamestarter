@@ -14,7 +14,7 @@ Only things you need:
 - a PC, a tablet or a phone with an ssh client to run the installation script, 
 - a gamepad to enjoy!
 
-
+***
 
 ### Installation instructions:
 
