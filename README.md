@@ -7,15 +7,14 @@ English/[Spanish](https://github.com/bite-your-idols/gamestarter-openelec/blob/m
 ### About
 I like Raspberry Pi as my media center. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my media center for playing retrogames. But I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for emulators and other games for Raspberry Pi's OpenELEC.
 
-After instalaltion you will continue with your own customized OpenELEC but with the addition of multi-emulator frontend [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), Amiga UAE4ARM emulator and some [GameMaker Pi](http://yoyogames.com/pi) ports. Everything can be launched within kodi, and after exit you will get back to kodi again. Also I included a launcher addon for retroarch, some test freeware roms, advanced launcher "skin" and default game list with main emulators, retroarch joypad configs and many more...
+After instalaltion you will continue with your own customized OpenELEC but with the addition of multi-emulator frontend [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), Amiga UAE4ARM emulator and some [GameMaker Pi](http://yoyogames.com/pi) ports. Everything can be launched within kodi, and after exit you will get back to kodi again. Also I included a launcher addon for retroarch, some test freeware roms, advanced launcher "skin" and default game list with main emulators, retroarch joypad configs, [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl) addon and many more...
 
 Only things you need:
-- a Raspberry Pi with [OpenELEC](http://openelec.tv/get-openelec) installed, 
+- a Raspberry Pi with [OpenELEC](http://openelec.tv/get-openelec) (OE 6.0.0 or later) installed, 
 - a PC, a tablet or a phone with an ssh client to run the installation script, 
 - a gamepad to enjoy!
 
 
-***
 
 ### Installation instructions:
 
@@ -57,11 +56,12 @@ It includes some extras like custom splash screen and addon shortcuts on home pa
 It's burn & run!!!
 
 
+***
 
 
 ### Post-installation setup:
 
-After installation is completed there are two ways of launching RetroArch. The easiest one is using the addon that is located under Program Addons called Gamestarter: Retroarch. 
+After installation is completed there are several ways of launching RetroArch. The easiest one is using the addon that is located under Program Addons called Gamestarter: Retroarch. 
 
 ![screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
 
@@ -113,13 +113,18 @@ pkill SuperCrateBox
 pkill TheyNeedToBeFed
 ```
 
+### Internet Rchive ROM Launcher:
 
 
-### ToDo:
-- Create update script
-- Integrate [IARL](https://github.com/zach-morris/plugin.program.iarl) addon
-- Add EmulationStation
+***
 
+### Changelog:
+v0.0.2-WIP:
+- Add emulationstation
+- IARL addon
+
+v0.0.1: 
+- Initial Release
 
 
 ### Bugs, issues, errors...:
@@ -127,9 +132,7 @@ pkill TheyNeedToBeFed
 - Any improvement, collaborations, corrections are welcome!!!
 
 
-
-
-
+***
 
 ### Credits:
 
@@ -148,7 +151,7 @@ https://www.raspberrypi.org/forums/viewtopic.php?t=110488
 - AdvancedLauncher:
 https://github.com/edwtjo/advanced-launcher
 
-- AdvancedLauncher thumbs & emulationstation theme by tronkyfran:
+- AdvancedLauncher thumbs by tronkyfran:
 https://github.com/HerbFargus/es-theme-tronkyfran
 
 - Internet Archive ROM Launcher by ZachMorris:
