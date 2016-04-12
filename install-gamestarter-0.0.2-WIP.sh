@@ -3,7 +3,7 @@
 
 #Welcome message
 echo '*******************************************************************************' 
-echo 'Installing Gamestarter v-0.0.2' 
+echo 'Installing Gamestarter v-0.0.2-WIP' 
 echo '*******************************************************************************'
 
 # create/setup directories
@@ -37,7 +37,7 @@ echo ''
 wget --no-check-certificate -O /storage/downloads/uae4arm.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/uae4arm.tar.gz?raw=true
 tar -xf /storage/downloads/uae4arm.tar.gz -C /storage/emulators/ -xz
 mkdir -p /storage/emulators/roms/amiga
-cp /storage/emulators/uae4arm/conf/example-config.uae /storage/emulators/roms/amiga
+# cp /storage/emulators/uae4arm/conf/example-config.uae /storage/emulators/roms/amiga
 rm /storage/downloads/uae4arm.tar.gz
 
 
@@ -57,7 +57,7 @@ echo '::Gamestarter-05/11:: -> downloading Gamestarter scripts...'
 echo ''
 mkdir -p /storage/emulators/scripts
 wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter.sh
-wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.start https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter.start
+wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.start https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter-0-0-2-WIP.start
 chmod a+x /storage/emulators/scripts/gamestarter.sh
 chmod a+x /storage/emulators/scripts/gamestarter.start
 chmod a+x /storage/emulators/retroarch/retroarch
