@@ -45,6 +45,8 @@ That's all!
 
 
 ##### Pre-Installed image 
+-------------
+
 > There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
 > https://goo.gl/l9X3rC
 
@@ -88,6 +90,7 @@ There it is a default/example launchers/games list I created. You can edit list,
 
 
 ### Amiga emulation:
+-------------
 
 Amiga emulation is based on UAE4ARM pi port, You can not launch emulator into GUI by now, but you can launch games from kodi's Advanced Launcher creating a custom config file for each one. More info here: http://blog.petrockblock.com/forums/topic/launch-amiga-games-from-retropie-menu/
 
@@ -100,6 +103,7 @@ pkill uae4arm
 There is a work in progress libretro core port of this emulator. When it will be released I will use it instead.
 
 ### GameMaker Pi:
+-------------
 
 As an extra feature, the installation will download and extract three free games from GameMaker Team. To make them work I had to make a hacklib in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some curl-related issues to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called "hacklib".
 
@@ -112,8 +116,18 @@ pkill SuperCrateBox
 pkill TheyNeedToBeFed
 ```
 
-### Internet Rchive ROM Launcher:
+### Internet Archive ROM Launcher:
+-------------
 
+Are you interested in having a large game collection, but not interested in storing all that data on your computer?
+IARL uses xml files to provide the information for Games on the [Internet Archive](https://archive.org).  The database can also provide media for each Game (Fanart / Boxart / Snapshots / Trailer / etc).
+More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
+
+To set up:
+Go to Video Addons> IARL> settings, select external launchers, and then select OpenElec (Rpi) Gamestarter Addon
+On the setup wizard tab, choose setup for 'most playable', 'balanced', and 'accurate' (I have some default cores selected, which can be changed if needed)
+Then hit OK. Open up the addon to run it at least once. The addon requires the settings be saved before the wizard can run, I can't really find a way around that.
+Reopen the addon settings, then select the wizard tab and hit run. it should setup all archives to work with Gamestarter.
 
 ***
 
