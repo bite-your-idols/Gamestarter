@@ -15,6 +15,7 @@ Only things you need:
 - a gamepad to enjoy!
 
 
+***
 
 ### Installation instructions:
 
