@@ -1,0 +1,71 @@
+#!/bin/sh
+. /etc/profile
+
+# Stop KODI
+systemctl stop kodi
+
+# Enable ALSA
+modprobe snd_bcm2835
+
+# Enable libCEC
+# case $1 in
+  # "start") echo 'libCEC';;
+  # *)/storage/.kodi/addons/script.libcec.daemon/bin/libcec-daemon -q & ;;
+# esac
+
+# Launch emulator
+case $1 in
+  "retroarch")  
+      /storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg --menu
+  ;;
+  "emulationstation")  
+      # /storage/emulators/emulationstation/emulationstation --no-splash
+      /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
+  ;;
+   "ports")  
+      # si es un port ejecutamos su sh
+      chmod a+x $2
+    $2
+  ;;
+  "amiga") 
+      # crear el archivo uae para el adf seleccionado
+      # python adf2uae.py $2
+      #archivo=$2.uae
+      cp /storage/emulators/uae4arm/conf/gamestarter.uae /storage/emulators/uae4arm/conf/launchTemp.uae
+      echo 'floppy0='$2 >> /storage/emulators/uae4arm/conf/launchTemp.uae
+
+    # cambiar el modo de TV a 1080 50h
+    tvservice -e "CEA 31"
+      #/storage/emulators/uae4arm/uae4arm -f $2
+      /storage/emulators/uae4arm/uae4arm -f /storage/emulators/uae4arm/conf/launchTemp.uae
+    
+    # /storage/emulators/uae4arm/uae4arm -s "floppy0=$2"
+    # /storage/emulators/uae4arm/uae4arm -s "floppy0=/storage/emulators/roms/amiga/TheSpyWhoLovedMe.adf"
+
+    # /storage/emulators/uae4arm/uae4arm -f /storage/emulators/uae4arm/conf/TheBluesBrothers-uae4arm.uae
+  ;;
+   *) 
+    /storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg -L /storage/emulators/retroarch/cores/$1_libretro.so "$2"
+   ;;
+esac
+
+# Disable libCEC
+# pkill libcec-daemon
+
+# Disable ALSA
+rmmod snd_bcm2835
+
+# Reset resolution to standard
+case $1 in
+  "amiga") 
+    rm /storage/emulators/uae4arm/conf/launchTemp.uae
+    tvservice -p
+  ;;
+esac
+
+# Start KODI
+# systemctl start kodi
+case $3 in
+  "ES") echo 'Exit ES';;
+  *) systemctl start kodi;;
+esac
