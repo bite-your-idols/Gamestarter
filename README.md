@@ -20,7 +20,7 @@ Only things you need:
 
 Before installation I recommend to backup your system with [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) or creating an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 
-Since this is still a work in progress project some things may not work, but I have tested into OpenELEC 6.0.3 in a Raspberry Pi 2 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
+Since this is still a work in progress project some things may not work, but I have tested into OpenELEC 6.0.3/6.95.2 in a Raspberry Pi 2/3 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
 
 So, let's go!!
 
