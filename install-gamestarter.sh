@@ -65,6 +65,11 @@ wget --no-check-certificate -O /storage/downloads/script.gamestarter.retroarch.t
 tar -xf /storage/downloads/script.gamestarter.retroarch.tar.gz -C /storage/.kodi/addons/ -xz
 rm /storage/downloads/script.gamestarter.retroarch.tar.gz
 
+# añadir audio al config.txt
+mount -o remount,rw /flash
+#nano /flash/config.txt 
+echo 'dtparam=audio=on' >> /flash/config.txt
+
 
 # instalar el addon/libs de uae4arm
 echo ''
