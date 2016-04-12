@@ -122,11 +122,11 @@ rm /storage/downloads/frontend.tar.gz
 echo ''
 echo '::Gamestarter-10/11:: -> downloading Internet Archive ROM Launcher addon...'
 echo ''
-wget --no-check-certificate -O /storage/downloads/iarl.tar.gz https://github.com/bite-your-idols/plugin.program.iarl/archive/master.tar.gz
+wget --no-check-certificate -O /storage/downloads/iarl.tar.gz https://github.com/zach-morris/plugin.program.iarl/archive/master.tar.gz
 tar -xf /storage/downloads/iarl.tar.gz -C /storage/.kodi/addons/ -xz
-rm /storage/.kodi/addons/plugin.program.iarl-master/resources/bin/romlaunch_OE_RPi2.sh
-wget --no-check-certificate -O /storage/.kodi/addons/plugin.program.iarl-master/resources/bin/romlaunch_OE_RPi2.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/iarl/romlaunch_OE_RPi2.sh
-chmod a+x /storage/.kodi/addons/plugin.program.iarl-master/resources/bin/romlaunch_OE_RPi2.sh
+# rm /storage/.kodi/addons/plugin.program.iarl-master/resources/bin/romlaunch_OE_RPi2.sh
+# wget --no-check-certificate -O /storage/.kodi/addons/plugin.program.iarl-master/resources/bin/romlaunch_OE_RPi2.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/iarl/romlaunch_OE_RPi2.sh
+# chmod a+x /storage/.kodi/addons/plugin.program.iarl-master/resources/bin/romlaunch_OE_RPi2.sh
 rm /storage/downloads/iarl.tar.gz
 
 # Lo de Gamemaker Pi
