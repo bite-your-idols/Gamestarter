@@ -12,14 +12,16 @@ Después de la instalación continuarás teniendo tu propia versión de OpenELEC
 
 
 Lo único que necesitas es:
-- una Raspberry Pi con [OpenELEC](http://openelec.tv/get-openelec) instalado, 
+- una Raspberry Pi con [OpenELEC](http://openelec.tv/get-openelec)(OE 6.0.0 o más nuevo) instalado, 
 - un PC, tablet o teléfono móvil con un cliente ssh para ejecutar el script de instalación, 
 - un mando para disfrutar.
 
+***
 
 
 ### Instrucciones de instalación:
-Antres de la instalación recomiendo hacer un backup de tu sistema con [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) o hacer una imagen de tu tarjeta con [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
+
+Antes de la instalación recomiendo hacer un backup de tu sistema con [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) o hacer una imagen de tu tarjeta con [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 
 Como es un proyecto en desarrollo algunas cosas pueden no funcionar, no me hago responsable de los daños que puedan surgir, pero esta probado en OpenELEC 6.0.3 en una Raspberry Pi 2 model B y todo funciona bien. También recomiendo leer todo este texto antes de instalar para saber de que va el tema.
 
@@ -46,21 +48,23 @@ Al finalizar, deberías reiniciar tu sistema y copiar tu [roms y bios](https://g
 
 
 ##### Imagen Pre-Instalada
-Hay una forma alternativa de tener Gamestarter, puedes escribir en una tarjeta SD una imagen pre-instalada de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/):
+> Hay una forma alternativa de tener Gamestarter, puedes escribir en una tarjeta SD una imagen pre-instalada de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/):
 
-https://goo.gl/l9X3rC
+> https://goo.gl/l9X3rC
 
 ![screenshot-kodi](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi.png)
 
-Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio.
+> Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio.
 
-¡¡Es grabar y a jugar!!
+> ¡¡Es grabar y a jugar!!
 
 
+***
 
 
 ### Ajustes Post-instalación:
-Una vez que la instalación esta completa hay dos maneras de lanzar RetroArch. La más fácil es usando el addon instalado en "Addons de programas" llamado "Gamestarter: RetroArch".
+
+Una vez que la instalación esta completa hay varias maneras de lanzar RetroArch. La más fácil es usando el addon instalado en "Addons de programas" llamado "Gamestarter: RetroArch".
 
 ![screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
 
@@ -73,7 +77,7 @@ En lugar de usar el addon, tambien puedes [asignarle a un botón del mando de la
 XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
 
-La otra manera de lanzar juegos con RetroArch, y la única manera de lanzar los juegos de Amiga y GameMaker, es usando el addon Advanced Launcher, situado en "Addons de Programas"
+Otra manera de lanzar juegos con RetroArch, y la única manera de lanzar los juegos de Amiga y GameMaker Pi, es usando el addon Advanced Launcher, situado en "Addons de Programas"
 
 
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-context.png)
@@ -82,6 +86,13 @@ Hay una lista de emuladores como ejemplo con algunos roms gratuitos incluidos. P
 
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
+
+
+Finalmente, también puedes usar el addon [IARL](https://github.com/zach-morris/plugin.program.iarl/), lanza juegos que están almancenados en Internet Archive.
+
+![Screen #2](https://raw.githubusercontent.com/zach-morris/plugin.program.iarl/master/support/media/screen2.jpg)
+
+Más info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
 
 
 ### Emulación de Amiga:
@@ -94,7 +105,8 @@ También puede salir mediante ssh:
 ```
 pkill uae4arm
 ```
-Hay en desarrollo una versión para RetroArch de este emulador, cuando se publique la idea es cambiarnos a él.
+> Hay en desarrollo una versión para RetroArch de este emulador, cuando se publique la idea es cambiarnos a él.
+
 
 ### GameMaker Pi:
 
@@ -109,13 +121,23 @@ pkill SuperCrateBox
 pkill TheyNeedToBeFed
 ```
 
+### Internet Archive ROM Launcher:
+
+Go to Video Addons> IARL> settings, select external launchers, and then select OpenElec (Rpi) Gamestarter Addon
+On the setup wizard tab, choose setup for 'most playable', 'balanced', and 'accurate' (I have some default cores selected, which can be changed if needed)
+Then hit OK. Open up the addon to run it at least once. The addon requires the settings be saved before the wizard can run, I can't really find a way around that.
+Reopen the addon settings, then select the wizard tab and hit run. it should setup all archives to work with Gamestarter.
+
+***
 
 
-### Próximamente::
-- Crear script de actualización
-- Integrar el addon  [IARL](https://github.com/zach-morris/plugin.program.iarl)
-- Añadir EmulationStation
+### Changelog:
+v0.0.2-WIP:
+- emulationstation (OE7+)
+- IARL
 
+v0.0.1: 
+- Initial Release
 
 
 ### Bugs, fallos, errores...:
@@ -123,6 +145,7 @@ pkill TheyNeedToBeFed
 - Cualquier mejora, colaboración, corrección o comentario es bienvenido!!!
 
 
+***
 
 
 
@@ -154,6 +177,7 @@ http://yoyogames.com/pi
 
 - Hacklib:
 http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
+
 
 
 Venga!
