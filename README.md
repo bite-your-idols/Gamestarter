@@ -49,7 +49,7 @@ That's all!
 
 > https://goo.gl/l9X3rC
 
-![screenshot-kodi-b](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi.png)
+![screenshot-kodi-b](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi-b.png)
 
 > It includes some extras like custom splash screen and addon shortcuts on home page.
 
