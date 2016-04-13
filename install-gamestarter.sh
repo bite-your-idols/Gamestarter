@@ -3,7 +3,7 @@
 
 #Welcome message
 echo '*******************************************************************************' 
-echo 'Installing Gamestarter v-0.0.1b' 
+echo 'Installing Gamestarter v-0.0.2' 
 echo '*******************************************************************************'
 
 # create/setup directories
