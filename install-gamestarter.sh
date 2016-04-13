@@ -36,8 +36,8 @@ echo '::Gamestarter-03/09:: -> downloading uae4arm...'
 echo '' 
 wget --no-check-certificate -O /storage/downloads/uae4arm.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/uae4arm.tar.gz?raw=true
 tar -xf /storage/downloads/uae4arm.tar.gz -C /storage/emulators/ -xz
-mkdir -p /storage/emulators/roms/amiga
-cp /storage/emulators/uae4arm/conf/example-config.uae /storage/emulators/roms/amiga
+# mkdir -p /storage/emulators/roms/amiga
+# cp /storage/emulators/uae4arm/conf/example-config.uae /storage/emulators/roms/amiga
 rm /storage/downloads/uae4arm.tar.gz
 
 
