@@ -12,7 +12,7 @@ Después de la instalación continuarás teniendo tu propia versión de OpenELEC
 
 
 Lo único que necesitas es:
-- una Raspberry Pi con [OpenELEC](http://openelec.tv/get-openelec)(Recomendado OE 6.x.x) instalado, 
+- una Raspberry Pi con [OpenELEC](http://openelec.tv/get-openelec)(Recomendado OE6) instalado, 
 - un PC, tablet o teléfono móvil con un cliente ssh para ejecutar el script de instalación, 
 - un mando para disfrutar.
 
