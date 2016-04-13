@@ -15,27 +15,53 @@ modprobe snd_bcm2835
 
 # Launch emulator
 case $1 in
-	"retroarch")  
-   		/storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg --menu
-	;;
-	"emulationstation")  
-   		# /storage/emulators/emulationstation/emulationstation --no-splash
-   		/storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
-	;;
+  "retroarch")  
+      /storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg --menu
+  ;;
+  "emulationstation")  
+      # /storage/emulators/emulationstation/emulationstation --no-splash
+      /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
+  ;;
    "ports")  
-  		# si es un port ejecutamos su sh
-   		chmod a+x $2
-		$2
-	;;
-	"amiga")  
-		# cambiar el modo de TV a 1080 50h
-		tvservice -e "CEA 31"
-   		/storage/emulators/uae4arm/uae4arm -f $2
-		# /storage/emulators/uae4arm/uae4arm -s "floppy0=$2"
-		# /storage/emulators/uae4arm/uae4arm -s "floppy0=/storage/emulators/roms/amiga/TheSpyWhoLovedMe.adf"
-	;;
+      # si es un port ejecutamos su sh
+      chmod a+x $2
+    $2
+  ;;
+  "amiga") 
+    # crear el archivo uae temporal para el adf seleccionado
+    cp /storage/emulators/uae4arm/conf/gamestarter.uae /storage/emulators/uae4arm/conf/launchTemp.uae
+    echo 'floppy0='$2 >> /storage/emulators/uae4arm/conf/launchTemp.uae
+    echo 'floppy0type=0' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+    
+    # checkeamos si es multidisco (_DISK)
+	if echo "$2" | grep -q "_DISK"; then
+		#echo "multi!";
+		name=${2%_DISK*}
+		echo 'floppy1='$name'_DISK2.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		echo 'floppy1type=0' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		echo 'floppy2='$name'_DISK3.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		echo 'floppy2type=0' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		echo 'floppy3='$name'_DISK4.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		echo 'floppy3type=0' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		echo 'nr_floppies=4' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+	else
+		echo 'nr_floppies=1' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+	fi
+
+   	# cambiar el modo de TV a 1080 50h
+    tvservice -e "CEA 31"
+    #/storage/emulators/uae4arm/uae4arm -f $2
+    /storage/emulators/uae4arm/uae4arm -f /storage/emulators/uae4arm/conf/launchTemp.uae
+    
+    # /storage/emulators/uae4arm/uae4arm -s "floppy0=$2"
+    # /storage/emulators/uae4arm/uae4arm -s "floppy0=/storage/emulators/roms/amiga/TheSpyWhoLovedMe.adf"
+
+    # /storage/emulators/uae4arm/uae4arm -f /storage/emulators/uae4arm/conf/TheBluesBrothers-uae4arm.uae
+    # /storage/emulators/scripts/gamestarter.start amiga /storage/emulators/roms/amiga/game_DISK1.adf
+
+  ;;
    *) 
-		/storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg -L /storage/emulators/retroarch/cores/$1_libretro.so "$2"
+    /storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg -L /storage/emulators/retroarch/cores/$1_libretro.so "$2"
    ;;
 esac
 
@@ -45,9 +71,12 @@ esac
 # Disable ALSA
 rmmod snd_bcm2835
 
-# Reset resolution to standard
+# Reset resolution to standard y borrar uae temporal
 case $1 in
-  "amiga") tvservice -p;;
+  "amiga") 
+    rm /storage/emulators/uae4arm/conf/launchTemp.uae
+    tvservice -p
+  ;;
 esac
 
 # Start KODI
