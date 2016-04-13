@@ -57,7 +57,7 @@ echo '::Gamestarter-05/11:: -> downloading Gamestarter scripts...'
 echo ''
 mkdir -p /storage/emulators/scripts
 wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter.sh
-wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.start https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter-0-0-2-WIP.start
+wget --no-check-certificate -O /storage/emulators/scripts/gamestarter.start https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/scripts/gamestarter.start
 chmod a+x /storage/emulators/scripts/gamestarter.sh
 chmod a+x /storage/emulators/scripts/gamestarter.start
 chmod a+x /storage/emulators/retroarch/retroarch
