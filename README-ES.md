@@ -12,7 +12,7 @@ Después de la instalación continuarás teniendo tu propia versión de OpenELEC
 
 
 Lo único que necesitas es:
-- una Raspberry Pi con [OpenELEC](http://openelec.tv/get-openelec)(OE 6.0.0 o más nuevo) instalado, 
+- una Raspberry Pi con [OpenELEC](http://openelec.tv/get-openelec)(Recomendado OE 6.x.x) instalado, 
 - un PC, tablet o teléfono móvil con un cliente ssh para ejecutar el script de instalación, 
 - un mando para disfrutar.
 
@@ -132,17 +132,21 @@ Reopen the addon settings, then select the wizard tab and hit run. it should set
 
 
 ### Changelog:
-v0.0.2-WIP:
+v0.0.3-WIP:
 - emulationstation (OE7+)
+
+v0.0.2:
 - IARL
+- Load Amiga roms from adf
 
 v0.0.1: 
 - Initial Release
 
 
 ### Bugs, fallos, errores...:
+- En OE 7 beta los juegos de GameMaker Pi no tienen sonido.
 
-- Cualquier mejora, colaboración, corrección o comentario es bienvenido!!!
+Cualquier mejora, colaboración, corrección o comentario es bienvenido!!!
 
 
 ***
