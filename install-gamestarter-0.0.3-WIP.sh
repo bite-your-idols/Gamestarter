@@ -106,7 +106,8 @@ rm /storage/downloads/script.gamestarter.emulationstation.tar.gz
 echo ''
 echo '::Gamestarter-09/11:: -> downloading AdvancedLauncher, assets and sample roms...'
 echo ''
-wget --no-check-certificate -O /storage/downloads/advanced.launcher.tar.gz https://github.com/bite-your-idols/advanced-launcher/archive/2.5.8.tar.gz
+# wget --no-check-certificate -O /storage/downloads/advanced.launcher.tar.gz https://github.com/bite-your-idols/advanced-launcher/archive/2.5.8.tar.gz
+wget --no-check-certificate -O /storage/downloads/advanced.launcher.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/raw/master/packages/advanced-launcher-master.tar.gz
 tar -xf /storage/downloads/advanced.launcher.tar.gz -C /storage/.kodi/addons/ -xz
 
 wget --no-check-certificate -O /storage/downloads/frontend.tar.gz https://github.com/bite-your-idols/gamestarter-openelec/blob/master/packages/frontend.tar.gz?raw=true
