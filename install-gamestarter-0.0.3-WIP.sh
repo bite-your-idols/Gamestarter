@@ -3,7 +3,7 @@
 
 #Welcome message
 echo '*******************************************************************************' 
-echo 'Installing Gamestarter v-0.0.2-WIP' 
+echo 'Installing Gamestarter v-0.0.3-WIP' 
 echo '*******************************************************************************'
 
 # create/setup directories
@@ -168,7 +168,7 @@ chmod a+x /storage/.kodi/addons/script.hacklib-master/bin/hacklib
 rm /storage/downloads/script.hacklib.tar.gz
 
 # end installation
-rm /storage/install-gamestarter-0.0.2-WIP.sh
+rm /storage/install-gamestarter.sh
 echo '----'
 echo '::Gamestarter:: -> Installation completed, now reboot and enjoy!!'
 echo '----'
