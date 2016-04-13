@@ -137,7 +137,7 @@ v0.0.3-WIP:
 
 v0.0.2:
 - IARL
-- Load Amiga roms from adf
+- Launch "adf" Amiga roms
 
 v0.0.1: 
 - Initial Release
