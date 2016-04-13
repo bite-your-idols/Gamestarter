@@ -97,7 +97,14 @@ Más info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
 
 ### Emulación de Amiga:
 
-Para emular Amiga se usa la versión para Pi del emulador UAE4ARM, de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher creando un archivo de configuración para cada juego. Más info sobre esto aquí: http://blog.petrockblock.com/forums/topic/launch-amiga-games-from-retropie-menu/
+Para emular Amiga se usa la versión para Pi del emulador UAE4ARM, de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher, que deben estar en formato ".adf". Todos los archivos de juegos multi-disco tienen que llamarse igual añadiendo al final "_DISK1.adf", "_DISK2.adf"...:
+> name of the game_DISK1.adf
+
+> name of the game_DISK2.adf
+
+> name of the game_DISK3.adf
+
+> ...
 
 Necesitarás un ratón para iniciar algunos juegos y un teclado para salir, salvar partidas, etc...
 
