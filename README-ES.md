@@ -52,7 +52,7 @@ Al finalizar, deberías reiniciar tu sistema y copiar tu [roms y bios](https://g
 
 > https://goo.gl/l9X3rC
 
-![screenshot-kodi](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi.png)
+![screenshot-kodi](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi-b.png)
 
 > Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio.
 
