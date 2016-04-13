@@ -95,7 +95,11 @@ More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
 
 ### Amiga emulation:
 
-Amiga emulation is based on UAE4ARM pi port, You can not launch emulator into GUI by now, but you can launch games from kodi's Advanced Launcher creating a custom config file for each one. More info here: http://blog.petrockblock.com/forums/topic/launch-amiga-games-from-retropie-menu/
+Amiga emulation is based on UAE4ARM pi port, You can not launch emulator into GUI by now, but you can launch games from kodi's Advanced Launcher. Games must be ".adf" files. All files from Multi-disk games must be named the same addinf "_DISK1.adf", "_DISK2.adf"... like this:
+> name of the game_DIKS1.adf
+> name of the game_DIKS2.adf
+> name of the game_DIKS3.adf
+> ...
 
 You will need a mouse in order to start games and a keyboard to exit, save/load states...
 
