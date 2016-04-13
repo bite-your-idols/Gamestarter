@@ -10,7 +10,7 @@ I like Raspberry Pi as my media center. I like OpenELEC because it is simple, fa
 After instalaltion you will continue with your own customized OpenELEC but with the addition of multi-emulator frontend [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), Amiga UAE4ARM emulator and some [GameMaker Pi](http://yoyogames.com/pi) ports. Everything can be launched within kodi, and after exit you will get back to kodi again. Also I included a launcher addon for retroarch, some test freeware roms, advanced launcher "skin" and default game list with main emulators, retroarch joypad configs, [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl) addon and many more...
 
 Only things you need:
-- a Raspberry Pi with [OpenELEC](http://openelec.tv/get-openelec) (OE 6.0.0 or later) installed, 
+- a Raspberry Pi with [OpenELEC](http://openelec.tv/get-openelec) (OE6 recommended) installed, 
 - a PC, a tablet or a phone with an ssh client to run the installation script, 
 - a gamepad to enjoy!
 
@@ -132,17 +132,21 @@ Reopen the addon settings, then select the wizard tab and hit run. it should set
 
 
 ### Changelog:
-v0.0.2-WIP:
+v0.0.3-WIP:
 - emulationstation (OE7+)
+
+v0.0.2:
 - IARL
+- Load Amiga roms from adf
 
 v0.0.1: 
 - Initial Release
 
 
 ### Bugs, issues, errors...:
+- in OE 7 beta Gamemaker Pi ports have no sound.
 
-- Any improvement, collaborations, corrections are welcome!!!
+Any improvement, collaborations, corrections are welcome!!!
 
 
 ***
