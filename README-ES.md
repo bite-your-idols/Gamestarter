@@ -97,12 +97,12 @@ Más info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
 
 ### Emulación de Amiga:
 
-Para emular Amiga se usa la versión para Pi del emulador UAE4ARM, de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher, que deben estar en formato ".adf". Todos los archivos de juegos multi-disco tienen que llamarse igual añadiendo al final "_DISK1.adf", "_DISK2.adf"...:
-> name of the game_DISK1.adf
+Para emular Amiga se usa la versión para Pi del emulador UAE4ARM, de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher, que deben estar en formato ".adf". Todos los archivos de juegos multi-disco tienen que llamarse igual añadiendo al final "_Disk1.adf", "_Disk2.adf"...:
+> name of the game_Disk1.adf
 
-> name of the game_DISK2.adf
+> name of the game_Disk2.adf
 
-> name of the game_DISK3.adf
+> name of the game_Disk3.adf
 
 > ...
 
