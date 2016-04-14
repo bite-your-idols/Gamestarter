@@ -34,14 +34,14 @@ case $1 in
     echo 'floppy0type=0' >> /storage/emulators/uae4arm/conf/launchTemp.uae
     
     # checkeamos si es multidisco (_DISK)
-	if echo "$2" | grep -q "_DISK"; then
+	if echo "$2" | grep -q "_Disk"; then
 		#echo "multi!";
-		name=${2%_DISK*}
-		echo 'floppy1='$name'_DISK2.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		name=${2%_Disk*}
+		echo 'floppy1='$name'_Disk2.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
 		echo 'floppy1type=0' >> /storage/emulators/uae4arm/conf/launchTemp.uae
-		echo 'floppy2='$name'_DISK3.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		echo 'floppy2='$name'_Disk3.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
 		echo 'floppy2type=0' >> /storage/emulators/uae4arm/conf/launchTemp.uae
-		echo 'floppy3='$name'_DISK4.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
+		echo 'floppy3='$name'_Disk4.adf' >> /storage/emulators/uae4arm/conf/launchTemp.uae
 		echo 'floppy3type=0' >> /storage/emulators/uae4arm/conf/launchTemp.uae
 		echo 'nr_floppies=4' >> /storage/emulators/uae4arm/conf/launchTemp.uae
 	else
