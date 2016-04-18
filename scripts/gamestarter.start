@@ -19,8 +19,8 @@ case $1 in
       /storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg --menu
   ;;
   "emulationstation")  
-      # /storage/emulators/emulationstation/emulationstation --no-splash
-      /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
+      /storage/emulators/emulationstation/emulationstation --no-splash
+      # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
   ;;
    "ports")  
       # si es un port ejecutamos su sh
