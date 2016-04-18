@@ -3,7 +3,7 @@
 
 echo ''
 echo '*******************************************************************************' 
-echo 'Gamestarter Installation Menu: Please select your option' 
+echo 'Gamestarter Installation Selection: Please select your option' 
 echo '*******************************************************************************'
 echo ''
 echo '1) Gamestarter (v0.0.2) ::'
@@ -19,11 +19,13 @@ if [ $response == "1" ]
 then
 	echo ''
     echo "You choose: Gamestarter (v0.0.2)"
+    rm /storage/installer-menu.sh
     wget --no-check-certificate -O /storage/install-gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/install-gamestarter.sh && sh /storage/install-gamestarter.sh
 elif [ $response == "2" ]
 then
 	echo ''
 	echo "You choose: Gamestarter Work-In-Progress (v0.0.3-WIP)"
+	rm /storage/installer-menu.sh
 	wget --no-check-certificate -O /storage/install-gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/install-gamestarter-WIP.sh && sh /storage/install-gamestarter.sh
 else 
 	echo 'Please, select one of the options...'
@@ -32,5 +34,5 @@ else
 	sleep 1s
 	echo ''
 	echo ''
-    sh ./installer.sh
+    sh ./storage/installer-menu.sh
 fi
