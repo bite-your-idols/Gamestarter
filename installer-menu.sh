@@ -3,7 +3,7 @@
 
 echo ''
 echo '*******************************************************************************' 
-echo 'Gamestarter Installation Selection: Please select your option' 
+echo 'Gamestarter Installation Menu: Please select your option' 
 echo '*******************************************************************************'
 echo ''
 echo '1) Gamestarter (v0.0.2) ::'
