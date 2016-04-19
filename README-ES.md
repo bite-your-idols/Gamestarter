@@ -143,12 +143,15 @@ Reopen the addon settings, then select the wizard tab and hit run. it should set
 
 
 ### Changelog:
+### Changelog:
 v0.0.3-WIP:
 - emulationstation (OE7+)
+- installation menu and optional features
 
 v0.0.2:
 - IARL
 - Launch "adf" Amiga roms
+- Installer addon
 
 v0.0.1: 
 - Initial Release
