@@ -50,14 +50,10 @@ case $1 in
 
    	# cambiar el modo de TV a 1080 50h
     tvservice -e "CEA 31"
-    #/storage/emulators/uae4arm/uae4arm -f $2
     /storage/emulators/uae4arm/uae4arm -f /storage/emulators/uae4arm/conf/launchTemp.uae
-    
-    # /storage/emulators/uae4arm/uae4arm -s "floppy0=$2"
-    # /storage/emulators/uae4arm/uae4arm -s "floppy0=/storage/emulators/roms/amiga/TheSpyWhoLovedMe.adf"
+    # to use retroarch uae4arm core instead of standalone emulator change previous line for the next one:
+    # /storage/emulators/retroarch/retroarch -c /storage/emulators/retroarch/retroarch.cfg -L /storage/emulators/retroarch/cores/uae4arm_libretro.so /storage/emulators/uae4arm/conf/launchTemp.uae
 
-    # /storage/emulators/uae4arm/uae4arm -f /storage/emulators/uae4arm/conf/TheBluesBrothers-uae4arm.uae
-    # /storage/emulators/scripts/gamestarter.start amiga /storage/emulators/roms/amiga/game_DISK1.adf
 
   ;;
    *) 
