@@ -24,7 +24,7 @@ Since this is still a work in progress project some things may not work, but I h
 
 So, let's go!!
 
-You can download the [Gamestarter installer addon](https://goo.gl/FayJ9x), copy into your Raspberry and select "install from zip" in Settings>Addons menu. Let the installer work for less than 5 minutes and it will notice you when finished. Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
+Download the [Gamestarter installer addon](https://goo.gl/FayJ9x), copy into your Raspberry and select "install from zip" in Settings>Addons menu. Let the installer work for less than 5 minutes and it will notice you when finished. Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
 
 Piece of cake!
 
