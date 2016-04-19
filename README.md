@@ -28,6 +28,7 @@ You can download the [Gamestarter installer addon](https://goo.gl/FayJ9x), copy 
 
 Piece of cake!
 
+;)
 
 
 ##### alternative method: ssh installation
@@ -36,7 +37,6 @@ Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELE
 
 ```
 wget --no-check-certificate -O /storage/installer-menu.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/installer-menu.sh && sh /storage/installer-menu.sh
-sh /storage/install-gamestarter.sh
 ```
 
 Then you can choose between current stable version (v.0.0.2) and the Work-In-Progress beta version (v.0.0.3). If you select the second one you will be asked to install or not Emulationstation and Gamemaker Pi ports during installation process.
@@ -147,10 +147,12 @@ Reopen the addon settings, then select the wizard tab and hit run. it should set
 ### Changelog:
 v0.0.3-WIP:
 - emulationstation (OE7+)
+- installation menu and optional features
 
 v0.0.2:
 - IARL
 - Launch "adf" Amiga roms
+- Installer addon
 
 v0.0.1: 
 - Initial Release
