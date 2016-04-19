@@ -34,5 +34,5 @@ else
 	sleep 1s
 	echo ''
 	echo ''
-    sh ./storage/installer-menu.sh
+    sh /storage/installer-menu.sh
 fi
