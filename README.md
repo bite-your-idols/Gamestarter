@@ -24,25 +24,23 @@ Since this is still a work in progress project some things may not work, but I h
 
 So, let's go!!
 
-##### OPTION A) Addon installation (NEW!!!!) 
-You can download the [Gamestarter installer addon](https://github.com/bite-your-idols/script.gamestarter.installer/archive/master.zip), copy into your Raspberry and select "install from zip" in Settings>Addons menu. Let the installer work for less than 5 minutes and it will notice you when finished. Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
+You can download the [Gamestarter installer addon](https://goo.gl/FayJ9x), copy into your Raspberry and select "install from zip" in Settings>Addons menu. Let the installer work for less than 5 minutes and it will notice you when finished. Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
 
 Piece of cake!
 
 
 
-##### OPTION B) ssh installation
+##### alternative method: ssh installation
 
 Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELEC_FAQ#How_do_i_use_SSH.3F) and type:
 
 ```
-wget --no-check-certificate -O /storage/install-gamestarter.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/install-gamestarter.sh
-```
-
-Then:
-```
+wget --no-check-certificate -O /storage/installer-menu.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/installer-menu.sh && sh /storage/installer-menu.sh
 sh /storage/install-gamestarter.sh
 ```
+
+Then you can choose between current stable version (v.0.0.2) and the Work-In-Progress beta version (v.0.0.3). If you select the second one you will be asked to install or not Emulationstation and Gamemaker Pi ports during installation process.
+
 
 relax and wait 5 minutes...
 
@@ -52,16 +50,16 @@ After that, you should reboot your system and copy your [roms and bios](https://
 That's all!
 
 
-##### OPTION C) Pre-Installed image 
-There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
+##### Bonus: Pre-Installed image 
+>There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
 
-https://goo.gl/l9X3rC
+>https://goo.gl/l9X3rC
 
 ![screenshot-kodi-b](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi-b.png)
 
-It includes some extras like custom splash screen and addon shortcuts on home page.
+>It includes some extras like custom splash screen and addon shortcuts on home page.
 
-It's burn & run!!!
+>It's burn & run!!!
 
 
 ***
