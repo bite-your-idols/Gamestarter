@@ -41,7 +41,7 @@ Conéctate a tu Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELE
 wget --no-check-certificate -O /storage/installer-menu.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/installer-menu.sh && sh /storage/installer-menu.sh
 ```
 
-Podrás elegir entre instalar la versión estable recomendada (v.0.0.2) y la version en pruebas (v.0.0.3). Si eliges la segunda, durante la instalaciñon se te preguntará si deseas instalar Emulationstation y los juegos de GameMaker Pi.
+Podrás elegir entre instalar la versión estable recomendada (v.0.0.2) y la version en pruebas (v.0.0.3). Si eliges la segunda, durante la instalación se te preguntará si deseas instalar Emulationstation y los juegos de GameMaker Pi.
 
 relájate y espera 5 minutos...
 
