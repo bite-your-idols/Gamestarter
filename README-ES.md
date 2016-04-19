@@ -27,6 +27,14 @@ Como es un proyecto en desarrollo algunas cosas pueden no funcionar, no me hago 
 
 ¡vamos allá!
 
+##### OPCIÓN A) Instalación desde addon (NUEVO!!!!) 
+Puedes descargar el  addon [Gamestarter installer](https://github.com/bite-your-idols/script.gamestarter.installer/archive/master.zip), copiarlo en tu Raspberry y seleccionar "instalar desde zip" en el menu Ajustes>addons. Deja que haga su trabajo durante menos de 5 minutos y te avisará cuando haya terminado. Solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+
+¡Pan comido!
+
+
+
+##### OPTION B) Instalación por ssh
 
 Conéctate a tu Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELEC_FAQ#How_do_i_use_SSH.3F) y escribe (copia/pega):
 
@@ -47,16 +55,16 @@ Al finalizar, deberías reiniciar tu sistema y copiar tu [roms y bios](https://g
 ¡Eso es todo!
 
 
-##### Imagen Pre-Instalada
-> Hay una forma alternativa de tener Gamestarter, puedes escribir en una tarjeta SD una imagen pre-instalada de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/):
+##### OPCIÓN C) Imagen Pre-Instalada
+Hay una forma alternativa de tener Gamestarter, puedes escribir en una tarjeta SD una imagen pre-instalada de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/):
 
-> https://goo.gl/l9X3rC
+https://goo.gl/l9X3rC
 
 ![screenshot-kodi](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi-b.png)
 
-> Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio.
+Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio.
 
-> ¡¡Es grabar y a jugar!!
+¡¡Es grabar y a jugar!!
 
 
 ***
