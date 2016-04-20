@@ -97,11 +97,13 @@ There is a default/example launchers/games list I created. You can edit list, sc
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
 
+
 Finally, you can use [IARL](https://github.com/zach-morris/plugin.program.iarl/) addon, it will launch Games hosted on the Internet Archive.
 
 ![Screen #2](https://raw.githubusercontent.com/zach-morris/plugin.program.iarl/master/support/media/screen2.jpg)
 
-More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
+More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/wiki)
+
 
 
 ### Amiga emulation:
@@ -123,7 +125,7 @@ pkill uae4arm
 ```
 > There is a work in progress libretro core port of this emulator. When it will be released I will use it instead.
 
-
+.
 
 ### GameMaker Pi:
 As an extra feature, the installation will download and extract three free games from GameMaker Team. To make them work I had to make a hacklib in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some curl-related issues to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called "hacklib".
@@ -138,18 +140,10 @@ pkill TheyNeedToBeFed
 ```
 
 
-### Internet Archive ROM Launcher:
-
-Go to Video Addons> IARL> settings, select external launchers, and then select OpenElec (Rpi) Gamestarter Addon
-On the setup wizard tab, choose setup for 'most playable', 'balanced', and 'accurate' (I have some default cores selected, which can be changed if needed)
-Then hit OK. Open up the addon to run it at least once. The addon requires the settings be saved before the wizard can run, I can't really find a way around that.
-Reopen the addon settings, then select the wizard tab and hit run. it should setup all archives to work with Gamestarter.
-
-
 ***
 
 
-### Changelog:
+## Changelog:
 v0.0.3-WIP:
 - emulationstation (OE7+)
 - installation menu and optional features
@@ -163,7 +157,7 @@ v0.0.1:
 - Initial Release
 
 
-### Bugs, issues, errors...:
+### Known Bugs, issues, errors...:
 - in OE 7 beta Gamemaker Pi ports have no sound.
 
 Any improvement, collaborations, corrections are welcome!!!
@@ -172,7 +166,7 @@ Any improvement, collaborations, corrections are welcome!!!
 ***
 
 
-### Credits:
+## Credits:
 
 - Original RetroArch addon by Mezo:
  http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi
