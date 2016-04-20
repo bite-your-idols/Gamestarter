@@ -69,6 +69,8 @@ It's burn & run!!!
 
 ## Post-installation setup:
 
+### RetroArch:
+
 After installation is completed there are several ways of launching RetroArch. The easiest one is using the addon that is located under Program Addons called Gamestarter: Retroarch. 
 
 ![screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
@@ -79,13 +81,15 @@ The first time RetroArch is launched I recommend to update everything (Settings 
 
 
 ***
-#### Tip:
+##### Tip:
 Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
 ```
 
 XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
 ***
+
+### AdvancedLauncher:
 
 The other way to launch RetroArch games, and the only one to launch both amiga roms and GameMaker Pi ports, is using AdvancedLauncher, located also under Program Addons.
 
@@ -99,7 +103,9 @@ There is a default/example launchers/games list I created. You can edit list, sc
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
-Finally, you can use Internet Archive ROM Launcher addon, it will launch Games hosted on the Internet Archive. It is located under Video Addons > IARL.
+### Internet Archive ROM Launcher:
+
+Finally, you can use Video Addons > IARL addon, it will launch Games hosted on the Internet Archive. 
 
 ![Screen #2](https://raw.githubusercontent.com/zach-morris/plugin.program.iarl/master/support/media/screen2.jpg)
 
