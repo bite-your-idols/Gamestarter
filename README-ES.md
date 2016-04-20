@@ -24,7 +24,7 @@ Después de la instalación continuarás teniendo tu propia versión de OpenELEC
 ## Instrucciones de instalación
 
 
-Descarga el addon [Gamestarter installer](https://goo.gl/FayJ9x), copiarlo en tu Raspberry y seleccionar "instalar desde zip" en el menu Ajustes>addons. Deja que haga su trabajo durante menos de 5 minutos y te avisará cuando haya terminado. Solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+Descarga el addon [Gamestarter installer](https://github.com/bite-your-idols/script.gamestarter.installer/archive/master.zip), copiarlo en tu Raspberry y seleccionar "instalar desde zip" en el menu Ajustes>addons. Deja que haga su trabajo durante menos de 5 minutos y te avisará cuando haya terminado. Solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
 
 ¡Pan comido!
 
