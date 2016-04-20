@@ -6,13 +6,13 @@ echo '**************************************************************************
 echo 'Gamestarter Installation Selection: Please select your option' 
 echo '*******************************************************************************'
 echo ''
-echo '1) Gamestarter (v0.0.2) ::'
+echo '1) Gamestarter Standard Installation ::'
 echo '-> Recommended for latest stable OpeneELEC 6'
 echo ''
-echo '2) Gamestarter Work-In-Progress (v0.0.3-WIP) ::'
-echo '-> Includes optional installation of EmulationStation (Only works in OE7 beta)'
-echo '-> GameMaker Pi ports do not sound in OE7 beta'
-echo '-> For testing purpouses only...'
+echo '2) Gamestarter Advanced Installation ::'
+echo '-> Includes optional installation of EmulationStation (only works in OE7 beta)'
+echo '-> Includes optional installation of GameMaker Pi ports (no sound in OE7 beta)'
+echo '-> WIP '
 echo ''
 read -r -p "Please select your instalation: [1 or 2] " response
 if [ $response == "1" ]
