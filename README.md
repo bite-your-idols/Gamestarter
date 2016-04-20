@@ -39,7 +39,7 @@ Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELE
 wget --no-check-certificate -O /storage/installer-menu.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/installer-menu.sh && sh /storage/installer-menu.sh
 ```
 
-Then you can choose between current stable version (same as installer addon) and the Work-In-Progress version which includes optional installation of Emulationstation (it only works in OE7) and Gamemaker Pi ports (no sound in OE7) during installation process.
+Then you can choose between current standard version (same as installer addon) and the advanced version which includes optional installation of Emulationstation (it only works in OE7) and Gamemaker Pi ports (no sound in OE7) during installation process.
 
 
 relax and wait 5 minutes...
