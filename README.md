@@ -140,23 +140,6 @@ pkill TheyNeedToBeFed
 .
 
 
-## Changelog:
-v0.0.3-WIP:
-- Emulationstation (OE7+)
-- Installation menu and optional features
-- Installer addon
-
-v0.0.2:
-- IARL
-- Launch "adf" Amiga roms
-
-v0.0.1: 
-- Initial Release
-
-
-.
-
-
 
 ## Credits:
 
