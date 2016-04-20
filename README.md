@@ -67,9 +67,9 @@ It's burn & run!!!
 
 
 
-## Post-installation setup:
+## Post-installation setup
 
-### RetroArch:
+#### RetroArch:
 
 After installation is completed there are several ways of launching RetroArch. The easiest one is using the addon that is located under Program Addons called Gamestarter: Retroarch. 
 
@@ -81,7 +81,7 @@ The first time RetroArch is launched I recommend to update everything (Settings 
 
 
 ***
-##### Tip:
+###### Tip:
 Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
 ```
 
@@ -89,7 +89,7 @@ XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
 ***
 
-### AdvancedLauncher:
+#### AdvancedLauncher:
 
 The other way to launch RetroArch games, and the only one to launch both amiga roms and GameMaker Pi ports, is using AdvancedLauncher, located also under Program Addons.
 
@@ -103,7 +103,7 @@ There is a default/example launchers/games list I created. You can edit list, sc
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
-### Internet Archive ROM Launcher:
+#### Internet Archive ROM Launcher:
 
 Finally, you can use Video Addons > IARL addon, it will launch Games hosted on the Internet Archive. 
 
@@ -113,7 +113,7 @@ More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/wiki)
 
 
 
-### Amiga emulation:
+#### Amiga emulation:
 
 Amiga emulation is based on UAE4ARM pi port, You can not launch emulator into GUI by now, but you can launch games from kodi's Advanced Launcher. Games must be ".adf" files. All files from Multi-disk games must be named the same adding "_Disk1.adf", "_Disk2.adf"... like this:
 > name of the game_Disk1.adf
@@ -134,7 +134,7 @@ pkill uae4arm
 
 .
 
-### GameMaker Pi:
+#### GameMaker Pi:
 As an extra feature, the installation will download and extract three free games from GameMaker Team. To make them work I had to make a hacklib in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some curl-related issues to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called "hacklib".
 
 These games only work with Xbox Controller :(
@@ -150,7 +150,7 @@ pkill TheyNeedToBeFed
 
 
 
-## Credits:
+## Credits
 
 - Original RetroArch addon by Mezo:
  http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi
