@@ -144,31 +144,6 @@ Reopen the addon settings, then select the wizard tab and hit run. it should set
 ***
 
 
-### Changelog:
-### Changelog:
-v0.0.3-WIP:
-- emulationstation (OE7+)
-- installation menu and optional features
-
-v0.0.2:
-- IARL
-- Launch "adf" Amiga roms
-- Installer addon
-
-v0.0.1: 
-- Initial Release
-
-
-### Bugs, fallos, errores...:
-- En OE 7 beta los juegos de GameMaker Pi no tienen sonido.
-
-Cualquier mejora, colaboración, corrección o comentario es bienvenido!!!
-
-
-***
-
-
-
 ### Créditos:
 
 - Addon original de RetroArch por Mezo:
