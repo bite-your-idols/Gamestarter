@@ -17,15 +17,16 @@ After installation you will continue with your own customized OpenELEC but empow
 
 So, let's go!!
 
+## Instalaltion Instructions
 Download the [Gamestarter installer addon](https://goo.gl/FayJ9x), copy into your Raspberry and select "install from zip" in Settings>Addons menu. Let the installer work for less than 5 minutes and it will notice you when finished. Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
 
 Piece of cake!
-
 
 >Before installation I recommend to backup your system with [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) or creating an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 
 >Since this is still a work in progress project some things may not work, but I have tested into OpenELEC 6.0.3/6.95.2 in a Raspberry Pi 2/3 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
 
+.
 
 
 ##### Alternative installation method: ssh
