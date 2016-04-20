@@ -52,9 +52,9 @@ That's all!
 .
 
 ##### Bonus: Pre-Installed image 
-There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
+There is an alternative way for getting Gamestarter, you can download and write [this pre-installed image](https://goo.gl/l9X3rC) with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
 
-https://goo.gl/l9X3rC
+
 
 ![screenshot-kodi-b](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi-b.png)
 
