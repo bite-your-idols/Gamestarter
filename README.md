@@ -170,32 +170,23 @@ pkill TheyNeedToBeFed
 
 ## Credits
 
-- Original RetroArch addon by Mezo:
- http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi
+- [Original RetroArch addon](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi) by Mezo
 
-- RetroArch, UAE4ARM & EmulationStation compiled by Escalade:
-http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch
+- RetroArch, UAE4ARM & EmulationStation compiled by [Escalade](http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch)
 
-- Retroarch:
-http://www.libretro.com/
+- [Retroarch](http://www.libretro.com/)
 
-- UAE4ARM:
-https://www.raspberrypi.org/forums/viewtopic.php?t=110488
+- [UAE4ARM](https://www.raspberrypi.org/forums/viewtopic.php?t=110488) Pi by Chips
 
-- AdvancedLauncher:
-https://github.com/edwtjo/advanced-launcher
+- [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher)
 
-- AdvancedLauncher thumbs by tronkyfran:
-https://github.com/HerbFargus/es-theme-tronkyfran
+- AdvancedLauncher "skin" by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
 
-- Internet Archive ROM Launcher by ZachMorris:
-https://github.com/zach-morris/plugin.program.iarl
+- [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl) by ZachMorris
 
-- GameMaker:
-http://yoyogames.com/pi
+- [GameMaker Pi](http://yoyogames.com/pi)
 
-- Hacklib:
-http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
+- [Hacklib](http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392) by Milhouse
 
 
 
