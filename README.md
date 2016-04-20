@@ -142,8 +142,8 @@ pkill TheyNeedToBeFed
 
 ## Changelog:
 v0.0.3-WIP:
-- emulationstation (OE7+)
-- installation menu and optional features
+- Emulationstation (OE7+)
+- Installation menu and optional features
 - Installer addon
 
 v0.0.2:
@@ -153,8 +153,6 @@ v0.0.2:
 v0.0.1: 
 - Initial Release
 
-
-Any improvement, collaborations, corrections are welcome!!!
 
 .
 
@@ -188,6 +186,7 @@ http://yoyogames.com/pi
 
 - Hacklib:
 http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
+
 
 
 
