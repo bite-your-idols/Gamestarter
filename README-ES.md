@@ -11,10 +11,10 @@ Si usas la Raspberry Pi como media center corriendo Kodi en [OpenELEC](http://op
 Después de la instalación continuarás teniendo tu propia versión de OpenELEC pero vitaminada incluyendo:
 - multi-emulador RetroArch con un addon para lanzarlo y pre-configuraciones para la mayoria de mandos, 
 - addon AdvancedLauncher con un listado inicial de emuladores y una apariencia custom,
-- emulador de Amiga UAE4ARM
-- addon Internet Archive ROM Launcheraddon para lanzar juegos desde la "nube"
-- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" T
-- Menu de emuladores Emulationstation* (*sólo disponible en instalación por ssh y solo funciona en OE7)
+- emulador de Amiga UAE4ARM Pi,
+- addon Internet Archive ROM Launcher para lanzar juegos desde la "nube",
+- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla",
+- Menu de emuladores Emulationstation* (*sólo disponible en instalación por ssh y solo funciona en OE7),
 - Some test freeware roms.
 
 
