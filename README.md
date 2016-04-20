@@ -66,8 +66,6 @@ That's all!
 .
 
 
-***
-
 
 ## Post-installation setup:
 
@@ -139,8 +137,7 @@ pkill SuperCrateBox
 pkill TheyNeedToBeFed
 ```
 
-
-***
+.
 
 
 ## Changelog:
@@ -156,14 +153,7 @@ v0.0.2:
 v0.0.1: 
 - Initial Release
 
-
-### Known Bugs, issues, errors...:
-- in OE 7 beta Gamemaker Pi ports have no sound.
-
-Any improvement, collaborations, corrections are welcome!!!
-
-
-***
+.
 
 
 ## Credits:
@@ -196,4 +186,4 @@ http://yoyogames.com/pi
 http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
 
 
-Enjoy!
+Any improvement, collaborations, corrections are welcome!!!
