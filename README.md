@@ -52,15 +52,15 @@ That's all!
 .
 
 ##### Bonus: Pre-Installed image 
->There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
+There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
 
->https://goo.gl/l9X3rC
+https://goo.gl/l9X3rC
 
 ![screenshot-kodi-b](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi-b.png)
 
->It includes some extras like custom splash screen and addon shortcuts on home page.
+It includes some extras like custom splash screen and addon shortcuts on home page.
 
->It's burn & run!!!
+It's burn & run!!!
 
 
 .
@@ -78,11 +78,13 @@ The first time RetroArch is launched I recommend to Update everything (Settings 
 ![screenshot-retroarch-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-retroarch.gif)
 
 
-Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
+### Tip:
+***
+>Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
 ```
 XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
-
+***
 
 The other way to launch RetroArch games, and the only one to launch both amiga roms and GameMaker Pi ports, is using AdvancedLauncher, located also under Program Addons.
 
