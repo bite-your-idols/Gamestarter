@@ -18,10 +18,11 @@ After installation you will continue with your own customized OpenELEC but empow
 
 So, let's go!!
 
-## Instalaltion Instructions
+## Installation Instructions
 Download the [Gamestarter installer addon](https://goo.gl/FayJ9x), copy into your Raspberry and select "install from zip" in Settings>Addons menu. Let the installer work for less than 5 minutes and it will notice you when finished. Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
 
 Piece of cake!
+
 
 >Before installation I recommend to backup your system with [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) or creating an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 
@@ -48,7 +49,7 @@ After that, you should reboot your system and copy your [roms and bios](https://
 
 That's all!
 
-  
+.
 
 ##### Bonus: Pre-Installed image 
 >There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
@@ -68,7 +69,7 @@ That's all!
 ***
 
 
-# Post-installation setup:
+## Post-installation setup:
 
 After installation is completed there are several ways of launching RetroArch. The easiest one is using the addon that is located under Program Addons called Gamestarter: Retroarch. 
 
@@ -91,7 +92,7 @@ The other way to launch RetroArch games, and the only one to launch both amiga r
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-context.png)
 
 
-There it is a default/example launchers/games list I created. You can edit list, scan for your games, edit emulator cores... everything using contextual menu.
+There is a default/example launchers/games list I created. You can edit list, scan for your games, edit emulator cores... everything using contextual menu.
 
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
@@ -101,6 +102,7 @@ Finally, you can use [IARL](https://github.com/zach-morris/plugin.program.iarl/)
 ![Screen #2](https://raw.githubusercontent.com/zach-morris/plugin.program.iarl/master/support/media/screen2.jpg)
 
 More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/)
+
 
 ### Amiga emulation:
 
