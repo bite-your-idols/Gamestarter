@@ -15,6 +15,8 @@ After installation you will continue with your own customized OpenELEC but empow
 - 3 [GameMaker Pi](http://yoyogames.com/pi) ports including moder masterpiece Maldita Castilla.
 - Some test freeware roms.
 
+So, let's go!!
+
 .
 
 
@@ -24,7 +26,6 @@ After installation you will continue with your own customized OpenELEC but empow
 
 >Since this is still a work in progress project some things may not work, but I have tested into OpenELEC 6.0.3/6.95.2 in a Raspberry Pi 2/3 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
 
-So, let's go!!
 
 ##### New "It couldn't be easier!" installation method: installer addon
 
