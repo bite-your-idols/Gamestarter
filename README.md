@@ -5,13 +5,13 @@
 English/[Spanish](https://github.com/bite-your-idols/gamestarter-openelec/blob/master/README-ES.md)
 
 ### About
-I like Raspberry Pi as my media center. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my media center for playing retrogames. But I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for emulators and other games for Raspberry Pi's OpenELEC.
+I like Raspberry Pi as my media center. I Like Kodi because it is huge. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my media center for playing retro games. But I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for emulators and other games for Raspberry Pi's OpenELEC.
 
 After instalaltion you will continue with your own customized OpenELEC but with the addition of multi-emulator frontend [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), Amiga UAE4ARM emulator and some [GameMaker Pi](http://yoyogames.com/pi) ports. Everything can be launched within kodi, and after exit you will get back to kodi again. Also I included a launcher addon for retroarch, some test freeware roms, advanced launcher "skin" and default game list with main emulators, retroarch joypad configs, [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl) addon and many more...
 
 Only things you need:
 - a Raspberry Pi with [OpenELEC](http://openelec.tv/get-openelec) (OE6 recommended) installed, 
-- a PC, a tablet or a phone with an ssh client to run the installation script, 
+- a PC, a tablet or a phone to download and copy addon zip (or ssh client to run the installation script), 
 - a gamepad to enjoy!
 
 ***
@@ -31,7 +31,7 @@ Piece of cake!
 ;)
 
 
-##### alternative method: ssh installation
+##### Alternative installation method: ssh
 
 Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELEC_FAQ#How_do_i_use_SSH.3F) and type:
 
@@ -148,11 +148,11 @@ Reopen the addon settings, then select the wizard tab and hit run. it should set
 v0.0.3-WIP:
 - emulationstation (OE7+)
 - installation menu and optional features
+- Installer addon
 
 v0.0.2:
 - IARL
 - Launch "adf" Amiga roms
-- Installer addon
 
 v0.0.1: 
 - Initial Release
