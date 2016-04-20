@@ -11,11 +11,11 @@ Si usas la Raspberry Pi como media center corriendo Kodi en [OpenELEC](http://op
 Después de la instalación continuarás teniendo tu propia versión de OpenELEC pero vitaminada incluyendo:
 - multi-emulador RetroArch con un addon para lanzarlo y pre-configuraciones para la mayoria de mandos, 
 - addon AdvancedLauncher con un listado inicial de emuladores y una apariencia custom,
-- emulador de Amiga UAE4ARM
-- addon Internet Archive ROM Launcheraddon para lanzar juegos desde la "nube"
-- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" T
-- Menu de emuladores Emulationstation* (*sólo disponible en instalación por ssh y solo funciona en OE7)
-- Some test freeware roms.
+- emulador de Amiga UAE4ARM Pi,
+- addon Internet Archive ROM Launcher para lanzar juegos desde la "nube",
+- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla",
+- Menu de emuladores Emulationstation* (*sólo disponible en instalación por ssh y solo funciona en OE7),
+- algunos roms gratuitos de muestra.
 
 
 ¡vamos allá!
@@ -23,7 +23,8 @@ Después de la instalación continuarás teniendo tu propia versión de OpenELEC
 
 ## Instrucciones de instalación
 
-Descarga el addon [Gamestarter installer](https://goo.gl/FayJ9x), copialo en tu Raspberry y selecciona "instalar desde zip" en el menu Ajustes>addons. Deja que haga su trabajo durante menos de 5 minutos y te avisará cuando haya terminado. Solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+
+Descarga el addon [Gamestarter installer](https://goo.gl/FayJ9x), copiarlo en tu Raspberry y seleccionar "instalar desde zip" en el menu Ajustes>addons. Deja que haga su trabajo durante menos de 5 minutos y te avisará cuando haya terminado. Solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
 
 ¡Pan comido!
 
@@ -31,7 +32,6 @@ Descarga el addon [Gamestarter installer](https://goo.gl/FayJ9x), copialo en tu 
 
 >Como es un proyecto en desarrollo algunas cosas pueden no funcionar, no me hago responsable de los daños que puedan surgir, pero esta probado en OpenELEC 6.0.3/6.95.2 en una Raspberry Pi 2/3 model B y todo funciona bien. También recomiendo leer todo este texto antes de instalar para saber de que va el tema.
 
-.
 
 
 ##### Método alternativo: instalación por ssh
@@ -54,7 +54,7 @@ Al finalizar, deberías reiniciar tu sistema y copiar tu [roms y bios](https://g
 .
 
 ##### Bonus: Imagen Pre-Instalada
->Hay una forma alternativa de tener Gamestarter, puedes descargar y escribir en una tarjeta SD [esta imagen pre-instalada](https://goo.gl/l9X3rC) de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/):
+>Hay una forma alternativa de tener Gamestarter, puedes descargar y escribir en una tarjeta SD [esta imagen pre-instalada](https://goo.gl/l9X3rC) de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 
 
 ![screenshot-kodi](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-kodi-b.png)
@@ -135,10 +135,12 @@ pkill uae4arm
 .
 
 #### Emulationstation:
-Si usas el método por ssh method u elijes la instalación "advanced" (2) tendrás el frontend Emulationstation. Puede ser lanzado utilizando su propio addon que esta situado en Addons de Programas > Gamestarter: Emulationstation
+Si usas el método de instalación por ssh y elijes la opción "advanced" (2) tendrás el frontend Emulationstation. Puede ser lanzado utilizando su propio addon que esta situado en "Addons de Programas" > "Gamestarter: Emulationstation".
 ![screenshot-emulationstation-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-emulationstation.png)
 
 Puedes personalizar la lista de emuladores editando el archivo /storage/emulators/emulationstation/es_systems.cfg
+
+¡Este addon sólo funciona en OE7!
 
 ***
 ###### Consejo:
@@ -152,7 +154,7 @@ XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh emulationstation")
 
 ### GameMaker Pi:
 
-Como extra, se descargarán e instalarán 3 juegos gratuitos de GameMaker. Para hacerlos funcionar en OpenELEC hay que hacer un pequeño hack en las bibliotecas del sistema. Si notas algun pequeño fallo, relacionado con el downgrade de la versión de CURL, puedes desactivar/activar el hack usando un addon que encontrarás en Addons de Programas llamado "hacklib".
+Como extra, se descargarán e instalarán 3 juegos gratuitos de GameMaker. Para hacerlos funcionar en OpenELEC hay que hacer un pequeño hack en las bibliotecas del sistema. Si notas algun pequeño fallo, relacionado con el downgrade de la versión de CURL, puedes desactivar/activar el hack usando un addon que encontrarás en "Addons de Programas" llamado "hacklib".
 
 Estos juegos sólo funcionan con el mando de Xbox :(
 
