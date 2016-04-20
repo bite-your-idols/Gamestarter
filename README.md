@@ -176,7 +176,7 @@ pkill TheyNeedToBeFed
 
 - [Retroarch](http://www.libretro.com/)
 
-- [UAE4ARM](https://www.raspberrypi.org/forums/viewtopic.php?t=110488) Pi by Chips
+- [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488) by Chips
 
 - [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher)
 
