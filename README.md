@@ -88,9 +88,11 @@ XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
 ***
 
+.
+
 #### AdvancedLauncher:
 
-The other way to launch RetroArch games, and the only one to launch both amiga roms and GameMaker Pi ports, is using AdvancedLauncher, located also under Program Addons.
+Another way to launch RetroArch games, and the only one to launch both amiga roms and GameMaker Pi ports, is using AdvancedLauncher, located also under Program Addons.
 
 
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-context.png)
@@ -110,7 +112,7 @@ Finally, you can use Video Addons > IARL addon, it will launch Games hosted on t
 
 More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/wiki)
 
-
+.
 
 #### Amiga emulation:
 
@@ -134,7 +136,7 @@ pkill uae4arm
 .
 
 #### Emulationstation:
-If you use ssh method and you choose advanced installation (2) you will get Emulationstation front end. It can be launched using its own addon located under Program files > Gamestarter: Emulationstation
+If you use ssh method and you choose advanced installation (2) you will get Emulationstation front end. It can be launched using its own addon located under Program Addons > Gamestarter: Emulationstation
 ![screenshot-emulationstation-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-emulationstation.png)
 
 You can customize system lists editing /storage/emulators/emulationstation/es_systems.cfg file
