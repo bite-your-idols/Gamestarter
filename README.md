@@ -4,23 +4,25 @@
 
 English/[Spanish](https://github.com/bite-your-idols/gamestarter-openelec/blob/master/README-ES.md)
 
-### About
-I like Raspberry Pi as my media center. I Like Kodi because it is huge. I like OpenELEC because it is simple, fast and stable. I like gaming, specially retrogaming, so I wanted to use my media center for playing retro games. But I didn't like to swap sd cards, dual-booting, etc... So I'm trying to make an easy installation for emulators and other games for Raspberry Pi's OpenELEC.
+## About
+If you use a Raspberry Pi as a media center running Kodi on [OpenELEC](http://openelec.tv/get-openelec), you like retro-gaming and you want to launch games just as you do with movies and tv shows without dual-booting, swaping SD memories... Here you have the definitve solution.
 
-After instalaltion you will continue with your own customized OpenELEC but with the addition of multi-emulator frontend [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/), Amiga UAE4ARM emulator and some [GameMaker Pi](http://yoyogames.com/pi) ports. Everything can be launched within kodi, and after exit you will get back to kodi again. Also I included a launcher addon for retroarch, some test freeware roms, advanced launcher "skin" and default game list with main emulators, retroarch joypad configs, [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl) addon and many more...
+After installation you will continue with your own customized OpenELEC but empowered including: 
+- [RetroArch](http://www.libretro.com/index.php/getting-started-with-retroarch/) multi-emulator frontend with a launcher addon and joypad configs,
+- AdvancedLauncher addon with default emulators list and custom skin,
+- Amiga UAE4ARM emulator,
+- [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl) addon to launch games from the "cloud".
+- 3 [GameMaker Pi](http://yoyogames.com/pi) ports including moder masterpiece Maldita Castilla.
+- Some test freeware roms.
 
-Only things you need:
-- a Raspberry Pi with [OpenELEC](http://openelec.tv/get-openelec) (OE6 recommended) installed, 
-- a PC, a tablet or a phone to download and copy addon zip (or ssh client to run the installation script), 
-- a gamepad to enjoy!
+.
 
-***
 
-### Installation instructions:
+## Installation instructions:
 
-Before installation I recommend to backup your system with [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) or creating an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
+>Before installation I recommend to backup your system with [OpenELEC's Configuration Tool](http://wiki.openelec.tv/index.php/OpenELEC_Configuration_Addon) or creating an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 
-Since this is still a work in progress project some things may not work, but I have tested into OpenELEC 6.0.3/6.95.2 in a Raspberry Pi 2/3 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
+>Since this is still a work in progress project some things may not work, but I have tested into OpenELEC 6.0.3/6.95.2 in a Raspberry Pi 2/3 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
 
 So, let's go!!
 
