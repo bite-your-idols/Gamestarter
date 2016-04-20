@@ -9,7 +9,7 @@ If you use a Raspberry Pi as a media center running Kodi on [OpenELEC](http://op
 
 After installation you will continue with your own customized OpenELEC but empowered including: 
 - Retroarch multi-emulator frontend with a launcher addon and joypad configs,
-- AdvancedLauncher addon with default emulators list and custom skin,
+- AdvancedLauncher addon with default emulator list and custom skin,
 - Amiga UAE4ARM emulator,
 - Internet Archive ROM Launcheraddon to launch games from the "cloud".
 - 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla".
@@ -73,15 +73,16 @@ After installation is completed there are several ways of launching RetroArch. T
 
 ![screenshot-addons](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-addons.png)
 
-The first time RetroArch is launched I recommend to Update everything (Settings menu> Online Updater). Then you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores... just like in [Lakka](http://www.lakka.tv/) distro!!
+The first time RetroArch is launched I recommend to update everything (Settings menu> Online Updater). Then you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores... just like in [Lakka](http://www.lakka.tv/) distro!!
 
 ![screenshot-retroarch-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-retroarch.gif)
 
 
-### Tip:
 ***
->Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
+#### Tip:
+Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
 ```
+
 XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
 ***
@@ -98,7 +99,7 @@ There is a default/example launchers/games list I created. You can edit list, sc
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
-Finally, you can use [IARL](https://github.com/zach-morris/plugin.program.iarl/) addon, it will launch Games hosted on the Internet Archive.
+Finally, you can use Internet Archive ROM Launcher addon, it will launch Games hosted on the Internet Archive. It is located under Video Addons > IARL.
 
 ![Screen #2](https://raw.githubusercontent.com/zach-morris/plugin.program.iarl/master/support/media/screen2.jpg)
 
