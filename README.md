@@ -84,7 +84,6 @@ The first time RetroArch is launched I recommend to update everything (Settings 
 ###### Tip:
 Instead os using this addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
 ```
-
 XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh retroarch")
 ```
 ***
@@ -133,6 +132,23 @@ pkill uae4arm
 > There is a work in progress libretro core port of this emulator. When it will be released I will use it instead.
 
 .
+
+#### Emulationstation:
+If you use ssh method and you choose advanced installation (2) you will get Emulationstation front end. It can be launched using its own addon located under Program files > Gamestarter: Emulationstation
+![screenshot-emulationstation-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-emulationstation.png)
+
+You can customize system lists editing /storage/emulators/emulationstation/es_systems.cfg file
+
+***
+###### Tip:
+Instead os using the addon you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
+```
+XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh emulationstation")
+```
+***
+
+.
+
 
 #### GameMaker Pi:
 As an extra feature, the installation will download and extract three free games from GameMaker Team. To make them work I had to make a hacklib in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some curl-related issues to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called "hacklib".
