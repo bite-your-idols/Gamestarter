@@ -153,7 +153,11 @@ v0.0.2:
 v0.0.1: 
 - Initial Release
 
+
+Any improvement, collaborations, corrections are welcome!!!
+
 .
+
 
 
 ## Credits:
@@ -186,4 +190,5 @@ http://yoyogames.com/pi
 http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392
 
 
-Any improvement, collaborations, corrections are welcome!!!
+
+
