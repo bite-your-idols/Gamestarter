@@ -12,7 +12,8 @@ After installation you will continue with your own customized OpenELEC but empow
 - AdvancedLauncher addon with default emulators list and custom skin,
 - Amiga UAE4ARM emulator,
 - [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl) addon to launch games from the "cloud".
-- 3 [GameMaker Pi](http://yoyogames.com/pi) ports including moder masterpiece Maldita Castilla.
+- 3 [GameMaker Pi](http://yoyogames.com/pi) ports including modern masterpiece "Maldita Castilla".
+- Emulationstation* frontend (*only available in ssh installation and it only works in OE7)
 - Some test freeware roms.
 
 So, let's go!!
@@ -37,7 +38,7 @@ Connect to your Raspberry Pi via [ssh](http://wiki.openelec.tv/index.php/OpenELE
 wget --no-check-certificate -O /storage/installer-menu.sh https://raw.githubusercontent.com/bite-your-idols/gamestarter-openelec/master/installer-menu.sh && sh /storage/installer-menu.sh
 ```
 
-Then you can choose between current stable version (v.0.0.2) and the Work-In-Progress beta version (v.0.0.3). If you select the second one you will be asked to install or not Emulationstation and Gamemaker Pi ports during installation process.
+Then you can choose between current stable version (same as installer addon) and the Work-In-Progress version which includes optional installation of Emulationstation (it only works in OE7) and Gamemaker Pi ports (no sound in OE7) during installation process.
 
 
 relax and wait 5 minutes...
@@ -47,6 +48,7 @@ After that, you should reboot your system and copy your [roms and bios](https://
 
 That's all!
 
+  
 
 ##### Bonus: Pre-Installed image 
 >There is an alternative way for getting Gamestarter, you can write a pre-installed image with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/): 
