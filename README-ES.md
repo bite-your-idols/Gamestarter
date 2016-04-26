@@ -63,6 +63,7 @@ Incluye algunos extras como una splash screen personalizada y acceso directo de 
 
 ¡¡Es grabar y a jugar!!
 
+>Después de iniciar la imagen grabada puedes expandir tu partición "storage" para aprovechar toda tu tarjeta de memoria siguiendo [este truco](forum.kodi.tv/showthread.php?tid=230353&pid=2166080#pid2166080).
 
 .
 
