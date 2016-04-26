@@ -62,6 +62,7 @@ It includes some extras like custom splash screen and addon shortcuts on home pa
 
 It's burn & run!!!
 
+>After image boot you can expand your OpenELEC storage following [this workaround](forum.kodi.tv/showthread.php?tid=230353&pid=2166080#pid2166080).
 
 .
 
