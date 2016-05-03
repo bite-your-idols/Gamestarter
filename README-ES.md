@@ -9,7 +9,7 @@
 Si usas la Raspberry Pi como media center corriendo Kodi en [OpenELEC](http://openelec.tv/get-openelec), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
 
 Después de la instalación continuarás teniendo tu propia versión de OpenELEC pero vitaminada incluyendo:
-- multi-emulador RetroArch con un addon para lanzarlo y pre-configuraciones para la mayoria de mandos, 
+- multi-emulador RetroArch (actulaizo a la versión v1.3.4) con un addon para lanzarlo y pre-configuraciones para la mayoria de mandos,
 - addon AdvancedLauncher con un listado inicial de emuladores y una apariencia custom,
 - emulador de Amiga UAE4ARM Pi,
 - addon Internet Archive ROM Launcher para lanzar juegos desde la "nube",
