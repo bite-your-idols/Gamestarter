@@ -8,7 +8,7 @@ English/[Spanish](https://github.com/bite-your-idols/gamestarter-openelec/blob/m
 If you use a Raspberry Pi as a media center running Kodi on [OpenELEC](http://openelec.tv/get-openelec), you like retro-gaming and you want to launch games just as you do with movies and tv shows without dual-booting, swaping SD memories... Here you have the definitve solution.
 
 After installation you will continue with your own customized OpenELEC but empowered including: 
-- Retroarch multi-emulator frontend with a launcher addon and joypad configs,
+- Retroarch multi-emulator frontend (updated to v1.3.4) with a launcher addon and joypad configs,
 - AdvancedLauncher addon with default emulator list and custom skin,
 - Amiga UAE4ARM emulator,
 - Internet Archive ROM Launcheraddon to launch games from the "cloud".
