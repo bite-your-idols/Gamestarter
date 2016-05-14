@@ -4,6 +4,8 @@
 
 English/[Spanish](https://github.com/bite-your-idols/gamestarter-openelec/blob/master/README-ES.md)
 
+Follow [@bite_your_idols](https://twitter.com/bite_your_idols) on Twitter.
+
 ## About
 If you use a Raspberry Pi as a media center running Kodi on [OpenELEC](http://openelec.tv/get-openelec), you like retro-gaming and you want to launch games just as you do with movies and tv shows without dual-booting, swaping SD memories... Here you have the definitve solution.
 
