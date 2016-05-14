@@ -4,6 +4,8 @@
 
 [English](https://github.com/bite-your-idols/gamestarter-openelec/)/Spanish
 
+Sígueme en [twitter](https://twitter.com/bite_your_idols).
+
 
 ## Sobre el proyecto
 Si usas la Raspberry Pi como media center corriendo Kodi en [OpenELEC](http://openelec.tv/get-openelec), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
