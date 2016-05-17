@@ -1,8 +1,7 @@
 # Gamestarter
+![gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/assets/gamestarter-logo-dark.jpg)
 
-![gamestarter-logo](https://raw.githubusercontent.com/bite-your-idols/script.gamestarter/master/resources/media/gamestarter-logo-dark.jpg)
-
-[English](https://github.com/bite-your-idols/gamestarter-openelec/)/Spanish
+[English](https://github.com/bite-your-idols/gamestarter/)/Spanish
 
 Sígueme en [twitter](https://twitter.com/bite_your_idols).
 
@@ -25,26 +24,26 @@ También tendrás la opción de instalar con un click:
 
 ## Instrucciones de instalación
 
-Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/script.gamestarter.installer/archive/master.zip), copialo en tu Raspberry y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/gamestarter/releases/download/2.0.0/script.gamestarter-v2.0.0.zip), copialo en tu Raspberry y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
 
 >Antes de la instalación recomiendo hacer un backup de tu sistema o hacer una imagen de tu tarjeta con [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 >Probado en OpenELEC 6, OpenELEC 7 beta y LibreELEC 7 en una Raspberry Pi 2/3 model B y todo funciona bien. También recomiendo leer todo este texto antes de instalar para saber de que va el tema.
 
-![screenshot-addon](https://raw.githubusercontent.com/bite-your-idols/script.gamestarter/master/resources/media/screenshot000.png)
+![screenshot-addon](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter.png)
 
 
 ##### Ajustes del Addon
 En ajustes del addon podrás elegir que frontend quieres usar por defecto cada vez que inicies el addon entre RetroArch y EmulationStation.
 Desde aqui también puedes instalar el addon Internet Archive ROM launcher y los juegos de GameMaker Pi. Más opciones en camino...
 
-![screenshot-addon-settings](https://github.com/bite-your-idols/script.gamestarter/raw/master/resources/media/screenshot003.png)
+![screenshot-addon-settings](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter-settings-2.png)
 
 
 .
 
 
 ##### Imagen Pre-Instalada
->Puedes descargar y escribir en una tarjeta SD [esta imagen pre-instalada](https://goo.gl/l9X3rC) de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/). Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio. 
+>Puedes descargar y escribir en una tarjeta SD [esta imagen pre-instalada](https://github.com/bite-your-idols/gamestarter/releases/download/v0.X.X/Gamestarter-0.0.2-OpenELEC-RPi2.arm-6.0.3.zip) de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/). Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio. 
 >Después de iniciar la imagen grabada puedes expandir tu partición "storage" para aprovechar toda tu tarjeta de memoria siguiendo [este truco](forum.kodi.tv/showthread.php?tid=230353&pid=2166080#pid2166080).
 >Esta imagen está basada en versiones antiguas de Gamestarter y OpenELEC y no voy a continuar actualizandola, la instalaciónd el addon es muy simple y si estas buscando una imagen pre-configurada para emuladores existen otras alternativas.
 
@@ -59,7 +58,7 @@ La forma más sencilla y rápida de usar emuladores es con [Retroarch](http://ww
 La primera vez que inicies RetroArch recomiendo que actualices todo lo posible (Settings menu> Online Updates), asi podrás crear tus propias listas en el menu, lanzar juegos, seleccionar distintos cores para cada emulador, usar wallpapers dinámicos, boxarts, actualizar los cores... todo como en la distro [Lakka](http://www.lakka.tv/)!!
 
 
-![screenshot-retroarch-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-retroarch.gif)
+![screenshot-retroarch](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-retroarch.gif)
 
 
 Puedes crear un acceso directo del menu en tu skin o [asignarle a un botón del mando de la TV](http://kodi.wiki/view/HOW-TO:Modify_keymaps) la siguiente acción:
@@ -73,14 +72,14 @@ XBMC.System.Exec("/storage/.kodi/addons/script.gamestarter/resources/bin/gamesta
 #### Advanced Launcher:
 La mejor forma de integrar tu colección de juegos en Kodi y lanzar juegos con RetroArch, los juegos de Amiga y GameMaker Pi, es usando el addon [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher), situado en "Addons de Programas".
 
-![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-context.png)
+![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-context.png)
 
 Hay una lista de emuladores como ejemplo con algunos roms gratuitos incluidos. Puedes editar la lista, escanear para buscar tus roms, cambiar los cores de los emuladores... todo usando el menu contextual.
 
-![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-advlauncher-edit.png)
+![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-edit.png)
 
 Tambien hay creada una categoría llamada "Frontend" desde la que se pueden lanzar RetroArch y EmulationStation.
-![screenshot-advlauncher-frontends](https://github.com/bite-your-idols/script.gamestarter/raw/master/resources/media/screenshot005.png)
+![screenshot-advlauncher-frontends](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-frontends.png)
 
 
 .
@@ -88,12 +87,12 @@ Tambien hay creada una categoría llamada "Frontend" desde la que se pueden lanz
 #### Emulationstation:
 Finalmente también puedes utilizar el frontened [EmulationStation](https://github.com/Herdinger/EmulationStation).
 Puedes personalizar la lista de emuladores editando el archivo /storage/emulators/emulationstation/es_systems.cfg
-![screenshot-emulationstation-](https://github.com/bite-your-idols/gamestarter-openelec/raw/master/assets/screenshot-emulationstation.png)
+![screenshot-emulationstation](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
 
 
 En lugar de usar el addon, tambien puedes [asignarle a un botón del mando de la TV](http://kodi.wiki/view/HOW-TO:Modify_keymaps) la siguiente acción:
 ```
-XBMC.System.Exec("/storage/emulators/scripts/gamestarter.sh emulationstation")
+XBMC.System.Exec("/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh emulationstation")
 ```
 
 >Este frontend no funciona en OE6-
@@ -141,7 +140,7 @@ pkill TheyNeedToBeFed
 
 Finalmente, también puedes instalar el el addon [IARL](https://github.com/zach-morris/plugin.program.iarl/), lanza juegos que están almancenados en Internet Archive.
 
-![Screen #2](https://raw.githubusercontent.com/zach-morris/plugin.program.iarl/master/support/media/screen2.jpg)
+![screenshot-iarl](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-iarl.jpg)
 
 
 .
