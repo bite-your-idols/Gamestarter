@@ -100,9 +100,13 @@ XBMC.System.Exec("/storage/.kodi/addons/script.gamestarter/resources/bin/gamesta
 #### Amiga emulation:
 
 Amiga emulation is based on [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488) port, You can not launch emulator into GUI by now, but you can launch games from Kodi's Advanced Launcher or Emulationstation. Games must be ".adf" files. All files from Multi-disk games must be named the same adding "_Disk1.adf", "_Disk2.adf"... like this:
+
 > name of the game_Disk1.adf
+
 > name of the game_Disk2.adf
+
 > name of the game_Disk3.adf
+
 > ...
 
 You will need a mouse in order to start games and a keyboard to exit, save/load states...
