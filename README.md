@@ -42,6 +42,7 @@ From there, you can also install Internet Archive ROM launcher and GameMaker Pi 
 
 ##### Pre-Installed image 
 >You can download and write [this pre-installed image](https://github.com/bite-your-idols/gamestarter/releases/download/v0.X.X/Gamestarter-0.0.2-OpenELEC-RPi2.arm-6.0.3.zip) with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/). It includes some extras like custom splash screen and addon shortcuts on home page. >After image boot you can expand your OpenELEC storage following [this workaround](forum.kodi.tv/showthread.php?tid=230353&pid=2166080#pid2166080). 
+
 >This is based on old Gamestarter and OpenenELEC versions and I am not going to update any more, addon installation is so easy and if you want a kodi prebuilt image with retrogaming setup there are other alternatives.
 
 .
