@@ -29,6 +29,7 @@ else:
 
 
 
+# WIP 
 # import sys
 # import xbmcgui
 # import xbmcplugin
@@ -37,9 +38,15 @@ else:
 
 # xbmcplugin.setContent(addon_handle, 'movies')
 
-# url = 'http://localhost/some_video.mkv'
-# li = xbmcgui.ListItem('My First Video!', iconImage='DefaultVideo.png')
-# xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
+# url1 = 'System.Exec(/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh retroarch)'
+# li1 = xbmcgui.ListItem('RetroArch', iconImage='/storage/.kodi/addons/script.gamestarter/resources/media/retroarch.jpg')
+# # li.setArt({'fanart': my_addon.getAddonInfo('fanart')})
+# xbmcplugin.addDirectoryItem(handle=addon_handle, url=url1, listitem=li1)
+
+# url2 = 'System.Exec(/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh emulationstation)'
+# li2 = xbmcgui.ListItem('EmulationStation', iconImage='/storage/.kodi/addons/script.gamestarter/resources/media/emulationstation.jpg')
+# # li.setArt({'fanart': my_addon.getAddonInfo('fanart')})
+# xbmcplugin.addDirectoryItem(handle=addon_handle, url=url2, listitem=li2)
 
 # xbmcplugin.endOfDirectory(addon_handle)
 
