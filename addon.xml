@@ -8,17 +8,17 @@
 		<provides>executable</provides>
 	</extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="es">Retrogaming addon for Raspberry Pi's Kodi</summary>
-    <summary lang="en">Retrogaming addon for Raspberry Pi's Kodi</summary>
-		<description lang="es">Retrogaming addon for Raspberry Pi's Kodi</description>
-    <description lang="en">Launch retro games in your Raspberry Pi from Kodi using RetroArch, EmulationStation and more...</description>
+    <summary lang="es">Retrogaming addon en Raspberry Pi</summary>
+    <summary lang="en">Retrogaming addon for Raspberry Pi</summary>
+	<description lang="es">Lanza emuladores dede Kodi en tu Raspberry Pi incluyendo RetroArch y sus cores, EmulationStation y más.</description>
+    <description lang="en">launch emulators from Kodi in your Raspberry Pi including RetroArch, EmulationStation and more...</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum></forum>
-    <website>https://github.com/bite-your-idols/gamestarter-openelec</website>
+    <website>https://github.com/bite-your-idols/gamestarter</website>
     <email></email>
-    <source>https://github.com/bite-your-idols/script.gamestarter/</source>
+    <source></source>
   </extension>
 </addon>
