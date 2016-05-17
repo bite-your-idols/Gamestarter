@@ -152,7 +152,7 @@ Finalmente, también puedes instalar el el addon [IARL](https://github.com/zach-
 
 ## Créditos
 
-- [Original RetroArch addon](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi) by Mezo
+- Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 
 - RetroArch, UAE4ARM & EmulationStation compiled by [Escalade](http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch)
 
