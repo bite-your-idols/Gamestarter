@@ -119,7 +119,7 @@ pkill uae4arm
 #### GameMaker Pi:
 As an extra feature, there is an optional installation of three free games from [GameMaker Team](http://yoyogames.com/pi). To make them work I had to make a [hacklib](http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392) in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some curl-related issues to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called "hacklib".
 
-These games only work with Xbox Controller :(
+![screenshot-gamemaker](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamemaker.png)
 
 You can exit them using ssh too:
 ```
@@ -127,6 +127,8 @@ pkill MalditaCastilla
 pkill SuperCrateBox
 pkill TheyNeedToBeFed
 ```
+
+> These games only work with Xbox Controller :(
 > These games have sound issues in OE7+.
 
 .
