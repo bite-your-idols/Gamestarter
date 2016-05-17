@@ -21,7 +21,7 @@ chmod a+x /storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemak
 tar -xf /storage/.kodi/addons/script.gamestarter/resources/data/retroarch.tar.gz -C /storage/.config/ -xz
 tar -xf /storage/.kodi/addons/script.gamestarter/resources/data/libretro-part1.tar.gz -C /storage/.config/retroarch/cores/ -xz
 tar -xf /storage/.kodi/addons/script.gamestarter/resources/data/libretro-part2.tar.gz -C /storage/.config/retroarch/cores/ -xz
-tar -xf /storage/.kodi/addons/script.gamestarter/resources/data/libretro-part3.tar.gz -C /storage/.config/retroarch/cores/ -xz
+# tar -xf /storage/.kodi/addons/script.gamestarter/resources/data/libretro-part3.tar.gz -C /storage/.config/retroarch/cores/ -xz
 tar -xf /storage/.kodi/addons/script.gamestarter/resources/data/emulationstation.tar.gz -C /storage/.config/ -xz
 tar -xf /storage/.kodi/addons/script.gamestarter/resources/data/emulators.tar.gz -C /storage/ -xz
 tar -xf /storage/.kodi/addons/script.gamestarter/resources/data/advancedlauncher.tar.gz -C /storage/.config/ -xz
