@@ -45,6 +45,7 @@ Desde aqui también puedes instalar el addon Internet Archive ROM launcher y los
 ##### Imagen Pre-Instalada
 >Puedes descargar y escribir en una tarjeta SD [esta imagen pre-instalada](https://github.com/bite-your-idols/gamestarter/releases/download/v0.X.X/Gamestarter-0.0.2-OpenELEC-RPi2.arm-6.0.3.zip) de OpenELEC con la instalación ya hecha utilizando [USB Image Tool](http://www.alexpage.de/usb-image-tool/). Incluye algunos extras como una splash screen personalizada y acceso directo de los addons en la pantalla de inicio. 
 >Después de iniciar la imagen grabada puedes expandir tu partición "storage" para aprovechar toda tu tarjeta de memoria siguiendo [este truco](forum.kodi.tv/showthread.php?tid=230353&pid=2166080#pid2166080).
+
 >Esta imagen está basada en versiones antiguas de Gamestarter y OpenELEC y no voy a continuar actualizandola, la instalaciónd el addon es muy simple y si estas buscando una imagen pre-configurada para emuladores existen otras alternativas.
 
 .
@@ -104,9 +105,13 @@ XBMC.System.Exec("/storage/.kodi/addons/script.gamestarter/resources/bin/gamesta
 ### Emulación de Amiga:
 
 Para emular Amiga se usa la versión para Pi del emulador [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488), de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher y EmulationStation, que deben estar en formato ".adf". Todos los archivos de juegos multi-disco tienen que llamarse igual añadiendo al final "_Disk1.adf", "_Disk2.adf"...:
+
 > name of the game_Disk1.adf
+
 > name of the game_Disk2.adf
+
 > name of the game_Disk3.adf
+
 > ...
 
 Necesitarás un ratón para iniciar algunos juegos y un teclado para salir, salvar partidas, etc...
@@ -124,7 +129,7 @@ pkill uae4arm
 
 Como extra, tienes la opcion de instalar 3 juegos gratuitos de [GameMaker Team](http://yoyogames.com/pi). Para hacerlos funcionar en OpenELEC hay que hacer un pequeño [hack](http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392) en las bibliotecas del sistema. Si notas algun pequeño fallo, relacionado con el downgrade de la versión de CURL, puedes desactivar/activar el hack usando un addon que encontrarás en "Addons de Programas" llamado "hacklib".
 
-Estos juegos sólo funcionan con el mando de Xbox :(
+![screenshot-gamemaker](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamemaker.png)
 
 También puedes salir mediante ssh:
 ```
@@ -132,6 +137,9 @@ pkill MalditaCastilla
 pkill SuperCrateBox
 pkill TheyNeedToBeFed
 ```
+
+> Estos juegos sólo funcionan con el mando de Xbox :(
+
 > Estos juegos tienen problemas de sonido en OE7+.
 
 .
