@@ -1,14 +1,19 @@
 v2.0.0 (2016-05-17)
 - All-in-One addon structure
+- Addon settings with default frontend selection between RetroArch and EmulationStation
+- GameMaker Pi ports and IARL addon optional installation from addon settings
+- Change all config files and directories to /storage/.config/
 
 v0.0.3:
 - Emulationstation (optional/OE7+)
 - Installation menu and optional features
 - Installer addon
+- code debugging
 
 v0.0.2:
 - IARL
 - Launch "adf" Amiga roms
+- code debugging
 
 v0.0.1:
 - Initial Release
