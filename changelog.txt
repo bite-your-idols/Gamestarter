@@ -1,2 +1,14 @@
-v2.0.0 (2016-05-11)
-- Initial release
+v2.0.0 (2016-05-17)
+- All-in-One addon structure
+
+v0.0.3:
+- Emulationstation (optional/OE7+)
+- Installation menu and optional features
+- Installer addon
+
+v0.0.2:
+- IARL
+- Launch "adf" Amiga roms
+
+v0.0.1:
+- Initial Release
