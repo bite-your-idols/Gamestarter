@@ -1,7 +1,7 @@
 # Gamestarter v2
 ![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/assets/gamestarter-logo-dark.jpg)
 
-English/[Spanish](https://github.com/bite-your-idols/script.gamestarter/blob/master/README-ES)
+English/[Spanish](https://github.com/bite-your-idols/gamestarter/blob/master/README-ES)
 
 Follow me on [twitter](https://twitter.com/bite_your_idols)
 
@@ -53,7 +53,7 @@ From there, you can also install Internet Archive ROM launcher and GameMaker Pi 
 The easiest and fastest way of retrogaming is using [Retroarch](http://www.libretro.com/). 
 The first time RetroArch is launched I recommend to update everything (Settings menu> Online Updater). Then you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores... just like in [Lakka](http://www.lakka.tv/) distro!!
 
-![screenshot-retroarch-](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-retroarch.gif)
+![screenshot-retroarch](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-retroarch.gif)
 
 You can create a custom skin menu shortcut or you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
 ```
@@ -84,7 +84,7 @@ Also, there is a "Frontend" category where you can launch both RetroArch and Emu
 #### EmulationStation:
 Finally, [EmulationStation](https://github.com/Herdinger/EmulationStation) frontend is included.
 You can customize system lists editing /storage/.config/emulationstation/es_systems.cfg file
-![screenshot-emulationstation-](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
+![screenshot-emulationstation](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
 
 
 You can create a custom skin menu shortcut or you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
