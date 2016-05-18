@@ -1,4 +1,4 @@
-# Gamestarter
+# Gamestarter Pi
 ![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/assets/gamestarter-logo-dark.jpg)
 
 English/[Spanish](https://github.com/bite-your-idols/gamestarter/blob/master/README-ES.md)
