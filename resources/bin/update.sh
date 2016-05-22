@@ -1,7 +1,8 @@
 #!/bin/bash
-# Script for IARL addon installation 
+# Script for checking for updates
 
-# kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+ADDON_VERSION=$1
+kodi-send --action=Notification"(Gamestarter,$ADDON_VERSION,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 # wget --no-check-certificate -O /storage/iarl.tar.gz https://github.com/zach-morris/plugin.program.iarl/archive/master.tar.gz
 # tar -xf /storage/iarl.tar.gz -C /storage/.kodi/addons/ -xz
 
