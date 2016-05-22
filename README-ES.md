@@ -10,7 +10,7 @@ Seguir en [twitter](https://twitter.com/gamestarterpi).
 Si usas la Raspberry Pi como media center corriendo Kodi en [LibreELEC](https://libreelec.tv/) o [OpenELEC](http://openelec.tv/), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
 
 Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada incluyendo:
-- Multi-emulador RetroArch (actualizado a la versión v1.3.4) con todos los cores y pre-configuraciones para la mayoria de mandos,
+- Multi-emulador RetroArch con todos los cores y pre-configuraciones para la mayoria de mandos,
 - AdvancedLauncher con un listado inicial de emuladores y una apariencia custom,
 - Menu de emuladores o frontend EmulationStation,
 - emulador de Amiga UAE4ARM Pi incluido en Advanced Launcher y EmulationStation,
