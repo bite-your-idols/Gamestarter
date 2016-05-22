@@ -11,7 +11,7 @@
     <summary lang="es">Retrogaming addon en Raspberry Pi</summary>
     <summary lang="en">Retrogaming addon for Raspberry Pi</summary>
 	<description lang="es">Lanza emuladores dede Kodi en tu Raspberry Pi incluyendo RetroArch y sus cores, EmulationStation y más.</description>
-    <description lang="en">Launch emulators from Kodi in your Raspberry Pi including RetroArch, EmulationStation and more...</description>
+    <description lang="en">launch emulators from Kodi in your Raspberry Pi including RetroArch, EmulationStation and more...</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>
