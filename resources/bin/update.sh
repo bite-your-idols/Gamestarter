@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script for checking for updates 
-
+kodi-send --action=Notification"(Gamestarter,Checking for updates...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 ADDON_VERSION=$1
 LATEST_VERSION="2.0.1"
 # echo $ADDON_VERSION
