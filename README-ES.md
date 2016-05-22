@@ -24,7 +24,7 @@ También tendrás la opción de instalar con un click:
 
 ## Instrucciones de instalación
 
-Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/gamestarter/releases/download/2.0.0/script.gamestarter-v2.0.0.zip), copialo en tu Raspberry y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copialo en tu Raspberry y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
 
 >Antes de la instalación recomiendo hacer un backup de tu sistema o hacer una imagen de tu tarjeta con [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 >Probado en OpenELEC 6, OpenELEC 7 beta y LibreELEC 7 en una Raspberry Pi 2/3 model B y todo funciona bien. También recomiendo leer todo este texto antes de instalar para saber de que va el tema.
