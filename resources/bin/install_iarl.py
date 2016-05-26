@@ -1,9 +1,6 @@
 import os
 import os.path
-
 import xbmcgui
-import os
-
 
 xbmcgui.Dialog().ok("Gamestarter", "Downloading IARL, please do not power off or reboot your Raspberry Pi.")
 
