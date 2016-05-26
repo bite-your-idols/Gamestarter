@@ -16,4 +16,4 @@ directory = os.path.dirname(script_file)
 
 os.system("sh  /storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.sh")
 
-xbmcgui.Dialog().ok("Gamestarter", "IARL addon downloaded, please install from zip located in home folder")
+xbmcgui.Dialog().ok("Gamestarter", "IARL addon downloaded, please install from zip located in Storage folder")
