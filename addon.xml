@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.gamestarter" name="Gamestarter" version="2.0.1" provider-name="Bite Your Idols!">
+<addon id="script.gamestarter" name="Gamestarter" version="2.0.2" provider-name="Bite Your Idols!">
   <requires>
-    <import addon="xbmc.python" version="2.2.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
     
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
