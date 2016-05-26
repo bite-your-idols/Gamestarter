@@ -2,10 +2,9 @@
 # Script for checking for updates 
 # kodi-send --action=Notification"(Gamestarter,Checking for updates...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 ADDON_VERSION=$1
-LATEST_VERSION="2.0.1"
+LATEST_VERSION="2.0.2"
 # echo $ADDON_VERSION
 # kodi-send --action=Notification"(Gamestarter,$ADDON_VERSION,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
-
 
 if [ $ADDON_VERSION == $LATEST_VERSION ]
 then
