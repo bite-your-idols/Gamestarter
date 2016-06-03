@@ -75,6 +75,8 @@ tar -xf $ADDON_DIRECTORY/resources/data/advancedlauncher.tar.gz -C $CONFIG_DIREC
 
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/CaveStory.sh
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Dinothawr.sh
+chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Doom.sh
+chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Quake.sh
 
 
 # instalar advanced launcher a manopla, en kodi 17 habria que activarlo
