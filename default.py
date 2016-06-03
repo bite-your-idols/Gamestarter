@@ -21,7 +21,9 @@ else:
 	frontend = xbmcplugin.getSetting(int(sys.argv[1]),'frontend')
 	askConfirmation = xbmcplugin.getSetting(int(sys.argv[1]),'ask')
 
-	if askConfirmation == True:
+	# xbmcgui.Dialog().yesno("Gamestarter",askConfirmation);
+
+	if askConfirmation == "true":
 		resultado = xbmcgui.Dialog().yesno("Gamestarter", "Exit Kodi and run "+frontend+"?");
 		if resultado:
 			if frontend=="EmulationStation":
