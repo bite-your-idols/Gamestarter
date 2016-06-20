@@ -3,6 +3,8 @@
 	<category label="Gamestarter">
 		<setting id="frontend" type="select" label="Select you default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
         	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
+        	<!-- <setting visible="true" label="Amiga emulator: Libretro core (EXP)" type="action" action="RunScript(special://home/addons/plugin.program.iarl/resources/lib/update_addonxml_provides_video.py)"/>-->
+        	<!-- <setting visible="true" label="Amiga emulator: UAE4ARM (Default)" type="action" action="RunScript(special://home/addons/plugin.program.iarl/resources/lib/update_addonxml_provides_video.py)"/>-->
         	<setting type="sep"/>
         	<!--<setting label="Download AdvancedLauncher" type="action" action="RunScript(my.addon.id, downloadreport)"/>-->
         	<!-- <setting label="Install Internet Archive ROM Launcher" type="action" action="System.Exec(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.sh)"/> -->
