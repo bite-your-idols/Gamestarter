@@ -1,4 +1,5 @@
 #!/bin/sh
+#!/bin/env python
 . /etc/profile
 
 # path to addon
@@ -6,6 +7,17 @@ DIR="/storage/.kodi/addons/script.gamestarter"
 CONFIG_FILE="/storage/.config/retroarch/retroarch.cfg"
 LIBRETRO_DIR="/storage/.config/retroarch/cores"
 AMIGA_TEMP_FILE=$DIR/resources/bin/launchTemp.uae
+
+#check default amiga emulator
+# kodi-send --action=RunScript'(/storage/.kodi/addons/script.gamestarter/resources/bin/check_amiga.py)'
+# AMIGA_EMU=python $DIR/resources/bin/check_amiga.py
+# AMIGA_EMU=$(python $DIR/resources/bin/check_amiga.py)
+AMIGA_EMU="uae4arm"
+# AMIGA_EMU=$(head -c 12 /storage/.kodi/addons/script.gamestarter/resources/bin/amiga.txt)
+if [[ ! $(grep 'id="amiga" value="uae4arm"' '/storage/.kodi/userdata/addon_data/script.gamestarter/settings.xml') ]]; then
+    AMIGA_EMU="libretro"
+fi 
+echo $AMIGA_EMU
 
 # Stop KODI
 systemctl stop kodi
@@ -50,10 +62,13 @@ case $1 in
 
    # cambiar el modo de TV a 1080 50h
     tvservice -e "CEA 31"
-    $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE
-    # to use retroarch uae4arm core instead of standalone emulator change previous line for the next one:
-    # $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE
 
+    case $AMIGA_EMU in
+      "libretro") 
+        $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE;;
+      *) 
+        $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE;; 
+    esac
 
   ;;
    *) 
