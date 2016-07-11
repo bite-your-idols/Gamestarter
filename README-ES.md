@@ -3,7 +3,6 @@
 
 [English](https://github.com/bite-your-idols/gamestarter/)/Spanish
 
-Seguir en [twitter](https://twitter.com/gamestarterpi).
 
 
 ## Retrogamig addon para Kodi en Raspberry Pi
