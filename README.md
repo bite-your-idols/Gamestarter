@@ -23,7 +23,7 @@ Also, you will have the choice of one-click installation of:
 ## Installation Instructions
 Download the latest release of the addon from [Releases Page](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copy into your Raspberry Pi and select "install from zip" in Settings>Addons menu. The first time the addon is launched it will perform some settings. Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
 
->Before installation I recommend to backup your system or create an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
+>Before installation you can backup your system or create an image of your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
 >The addon has ben tested into OpenELEC 6, OpeneELEC 7 beta and LibreELEC 7 in a Raspberry Pi 2/3 model B and everything is working ok. I also recommend to read this whole text before installation to understand what is this all about.
 
 ![screenshot-addon](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter.png)
@@ -36,13 +36,6 @@ From there, you can also install Internet Archive ROM launcher and GameMaker Pi 
 ![screenshot-addon-settings](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter-settings-2.png)
 
 
-.
-
-
-##### Pre-Installed image 
->You can download and write [this pre-installed image](https://github.com/bite-your-idols/gamestarter/releases/download/v0.X.X/Gamestarter-0.0.2-OpenELEC-RPi2.arm-6.0.3.zip) with OpenELEC into your SD card using [USB Image Tool](http://www.alexpage.de/usb-image-tool/). It includes some extras like custom splash screen and addon shortcuts on home page. >After image boot you can expand your OpenELEC storage following [this workaround](forum.kodi.tv/showthread.php?tid=230353&pid=2166080#pid2166080). 
-
->This is based on old Gamestarter and OpenenELEC versions and I am not going to update any more, addon installation is so easy and if you want a kodi prebuilt image with retrogaming setup there are other alternatives.
 
 .
 
@@ -54,11 +47,6 @@ The easiest and fastest way of retrogaming is using [Retroarch](http://www.libre
 The first time RetroArch is launched I recommend to update everything (Settings menu> Online Updater). Then you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores... just like in [Lakka](http://www.lakka.tv/) distro!!
 
 ![screenshot-retroarch](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-retroarch.gif)
-
-You can create a custom skin menu shortcut or you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
-```
-XBMC.System.Exec("/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh retroarch")
-```
 
 .
 
@@ -86,11 +74,9 @@ Finally, [EmulationStation](https://github.com/Herdinger/EmulationStation) front
 You can customize system lists editing /storage/.config/emulationstation/es_systems.cfg file
 ![screenshot-emulationstation](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
 
+.
 
-You can create a custom skin menu shortcut or you can [remap your remote](http://kodi.wiki/view/HOW-TO:Modify_keymaps) and assign to a key the following action:
-```
-XBMC.System.Exec("/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh emulationstation")
-```
+
 > This frontend does not work in OE6-.
 
 .
@@ -152,6 +138,17 @@ More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/wiki)
 .
 
 
+
+## Support
+- [OpenELEC Forums](http://openelec.tv/forum/128-addons/80244-gamestarter-easy-retrogaming-installation-script)
+- [LibreELEC Forums](https://forum.libreelec.tv/thread-287.html)
+- [Kodi Forums](http://forum.kodi.tv/showthread.php?tid=276002)
+- [Raspberri Pi Forums - English](https://www.raspberrypi.org/forums/viewtopic.php?f=78&t=141847)
+- [Raspberri Pi Forums - Spanish](https://www.raspberrypi.org/forums/viewtopic.php?f=76&t=142248)
+- [Github Issues](https://github.com/bite-your-idols/Gamestarter-Pi/issues)
+
+
+.
 
 ## Credits
 
