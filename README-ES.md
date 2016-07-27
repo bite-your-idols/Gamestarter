@@ -47,7 +47,7 @@ Desde aqui también puedes instalar el addon Internet Archive ROM launcher y los
 #### RetroArch:
 
 La forma más sencilla y rápida de usar emuladores es con [Retroarch](http://www.libretro.com/). 
-La primera vez que inicies RetroArch recomiendo que actualices todo lo posible (Settings menu> Online Updates), asi podrás crear tus propias listas en el menu, lanzar juegos, seleccionar distintos cores para cada emulador, usar wallpapers dinámicos, boxarts, actualizar los cores... todo como en la distro [Lakka](http://www.lakka.tv/)!!
+La primera vez que inicies RetroArch recomiendo que actualices (Settings menu> Online Updates) las bases de datos, descargues boxarts/thumbnails y asi podrás crear tus propias listas en el menu... todo como en la distro [Lakka](http://www.lakka.tv/)!!
 
 
 ![screenshot-retroarch](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-retroarch.gif)
@@ -84,7 +84,7 @@ Puedes personalizar la lista de emuladores editando el archivo /storage/emulator
 
 ### Emulación de Amiga:
 
-Para emular Amiga se usa la versión para Pi del emulador [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488), de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher y EmulationStation, que deben estar en formato ".adf". Todos los archivos de juegos multi-disco tienen que llamarse igual añadiendo al final "_Disk1.adf", "_Disk2.adf"...:
+Para emular Amiga existen 2 opciones seleccionables desde los ajustes del addon. Puedes usar el core de libretro experimental o la versión para Pi del emulador [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488), de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher y EmulationStation, que deben estar en formato ".adf". Todos los archivos de juegos multi-disco tienen que llamarse igual añadiendo al final "_Disk1.adf", "_Disk2.adf"...:
 
 > name of the game_Disk1.adf
 
@@ -94,13 +94,7 @@ Para emular Amiga se usa la versión para Pi del emulador [UAE4ARM Pi](https://w
 
 > ...
 
-Necesitarás un ratón para iniciar algunos juegos y un teclado para salir, salvar partidas, etc...
-
-También puede salir mediante ssh:
-```
-pkill uae4arm
-```
-> Hay en desarrollo una versión para RetroArch de este emulador, cuando se publique la idea es cambiarnos a él.
+Si usas la version no-libretro necesitarás un ratón para iniciar algunos juegos y un teclado para salir, salvar partidas, etc...
 
 
 .
