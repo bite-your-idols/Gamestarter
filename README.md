@@ -44,7 +44,7 @@ From there, you can also install Internet Archive ROM launcher and GameMaker Pi 
 
 #### RetroArch:
 The easiest and fastest way of retrogaming is using [Retroarch](http://www.libretro.com/). 
-The first time RetroArch is launched I recommend to update everything (Settings menu> Online Updater). Then you can create your own playlists, start games, change cores, user dynamic wallpapers, boxarts, update cores... just like in [Lakka](http://www.lakka.tv/) distro!!
+The first time RetroArch is launched I recommend to update (Settings menu> Online Updater) databases and download boxarts/thumbnails. Then you can create your own playlists, start games, change cores, user dynamic wallpapers... just like in [Lakka](http://www.lakka.tv/) distro!!
 
 ![screenshot-retroarch](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-retroarch.gif)
 
@@ -85,7 +85,7 @@ You can customize system lists editing /storage/.config/emulationstation/es_syst
 
 #### Amiga emulation:
 
-Amiga emulation is based on [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488) port, You can not launch emulator into GUI by now, but you can launch games from Kodi's Advanced Launcher or Emulationstation. Games must be ".adf" files. All files from Multi-disk games must be named the same adding "_Disk1.adf", "_Disk2.adf"... like this:
+Amiga Emulation is a little tricky and you can choose between uae4arm-libretro experiemntal core and  [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488) port. You can not launch emulator into GUI by now, but you can launch games from Kodi's Advanced Launcher or Emulationstation. Games must be ".adf" files. All files from Multi-disk games must be named the same adding "_Disk1.adf", "_Disk2.adf"... like this:
 
 > name of the game_Disk1.adf
 
@@ -95,13 +95,8 @@ Amiga emulation is based on [UAE4ARM Pi](https://www.raspberrypi.org/forums/view
 
 > ...
 
-You will need a mouse in order to start games and a keyboard to exit, save/load states...
+With non libretro emulator you will need a mouse in order to start games and a keyboard to exit, save/load states...
 
-Also you can exit using ssh:
-```
-pkill uae4arm
-```
-> There is a work in progress libretro core port of this emulator. When it will be released I will use it instead.
 
 .
 
