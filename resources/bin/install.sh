@@ -14,31 +14,31 @@ if [ -z "$ADDON_DIRECTORY" ]; then
 fi
 
 
-if echo "$ADDON_DIRECTORY" | grep -q "/osmc/"; then
- 	echo "::Gamestarter:: -> installing in OSMC..."
- 	CONFIG_DIRECTORY="/home/osmc/.config"
- 	ROOT_DIRECTORY="/home/osmc"
- 	mkdir /home/osmc/.config
- 	chmod a+x $ADDON_DIRECTORY/resources/bin/gamestarter_osmc.sh
-	chmod a+x $ADDON_DIRECTORY/resources/bin/gamestarter_watchdog.sh
-	chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch_osmc.sh
+# if echo "$ADDON_DIRECTORY" | grep -q "/osmc/"; then
+#  	echo "::Gamestarter:: -> installing in OSMC..."
+#  	CONFIG_DIRECTORY="/home/osmc/.config"
+#  	ROOT_DIRECTORY="/home/osmc"
+#  	mkdir /home/osmc/.config
+#  	chmod a+x $ADDON_DIRECTORY/resources/bin/gamestarter_osmc.sh
+# 	chmod a+x $ADDON_DIRECTORY/resources/bin/gamestarter_watchdog.sh
+# 	chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch_osmc.sh
 
-	sudo apt-get update
-	# para retroarch de lakka
-	# sudo apt-get install -y libusb-1.0 libavformat-dev libswscale-dev libav-tools
-	# para retroarch de kodi17
-	sudo apt-get install -y libpulse-dev libsdl2-dev
-	# sudo apt-get install libavcodec-dev
+# 	sudo apt-get update
+# 	# para retroarch de lakka
+# 	# sudo apt-get install -y libusb-1.0 libavformat-dev libswscale-dev libav-tools
+# 	# para retroarch de kodi17
+# 	sudo apt-get install -y libpulse-dev libsdl2-dev
+# 	# sudo apt-get install libavcodec-dev
 
-	# Para Emulationststation
-	# sudo apt-get install -y libsdl1.2-dev libsdl-ttf2.0-dev libboost-filesystem-dev libsdl-image1.2-dev libsdl-gfx1.2-dev
+# 	# Para Emulationststation
+# 	# sudo apt-get install -y libsdl1.2-dev libsdl-ttf2.0-dev libboost-filesystem-dev libsdl-image1.2-dev libsdl-gfx1.2-dev
 
-	# añadir audio al config.txt
-	if [[ ! $(grep "dtparam=audio=on" "/boot/config.txt") ]]; then
-		sudo su -c 'echo -e "dtparam=audio=on" >> "/boot/config.txt"'
-	fi
+# 	# añadir audio al config.txt
+# 	if [[ ! $(grep "dtparam=audio=on" "/boot/config.txt") ]]; then
+# 		sudo su -c 'echo -e "dtparam=audio=on" >> "/boot/config.txt"'
+# 	fi
 
- else
+#  else
  	echo "::Gamestarter:: -> installing in Open/LibreELEC..."
  	CONFIG_DIRECTORY="/storage/.config"
  	ROOT_DIRECTORY="/storage"
@@ -47,10 +47,8 @@ if echo "$ADDON_DIRECTORY" | grep -q "/osmc/"; then
 	echo '::Gamestarter:: -> edit config.txt...'
 	mount -o remount,rw /flash
 	echo 'dtparam=audio=on' >> /flash/config.txt
-fi
+# fi
 
-#dependiedo del OS seleccionamos un retroarch u otro
-# mv $ADDON_DIRECTORY/resources/bin/retroarch-kodi15 $ADDON_DIRECTORY/resources/bin/retroarch
 
 # hacer ejecutables los scripts y binarios
 echo '::Gamestarter:: -> script permissions...'
@@ -62,6 +60,27 @@ chmod a+x $ADDON_DIRECTORY/resources/bin/uae4arm
 
 chmod a+x $ADDON_DIRECTORY/resources/bin/install_iarl.sh
 chmod a+x $ADDON_DIRECTORY/resources/bin/install_gamemaker.sh
+
+#comprobamos si hay archivos de configs anteriores para no borrarlos en las actualizaciones
+# mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg
+# mv $CONFIG_DIRECTORY/advancedlauncher/launchers.xml $CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml
+# mv $CONFIG_DIRECTORY/emulationstation/es_systems.cfg $CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg
+
+if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch.cfg" ]
+then
+	mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg
+fi
+
+if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers.xml" ]
+then
+	mv $CONFIG_DIRECTORY/advancedlauncher/launchers.xml $CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml
+fi
+
+if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems.cfg" ]
+then
+	mv $CONFIG_DIRECTORY/emulationstation/es_systems.cfg $CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg
+	mv $CONFIG_DIRECTORY/emulationstation/es_input.cfg $CONFIG_DIRECTORY/emulationstation/es_input_BACKUP.cfg
+fi
 
 #copiar los packages de data a .config
 echo '::Gamestarter:: -> copying packages...'
@@ -86,9 +105,29 @@ wget --no-check-certificate -O $ROOT_DIRECTORY/advanced.launcher.tar.gz https://
 tar -xf $ROOT_DIRECTORY/advanced.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
 rm $ROOT_DIRECTORY/advanced.launcher.tar.gz
 
+#antes de terminar comprobamos de nuevo si habia archivos y los restauramos guardando los nuevos
+if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg" ]
+then
+	mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_gamestarter.cfg
+	mv $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg $CONFIG_DIRECTORY/retroarch/retroarch.cfg
+fi
 
+if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml" ]
+then
+	mv $CONFIG_DIRECTORY/advancedlauncher/launchers.xml $CONFIG_DIRECTORY/advancedlauncher/launchers_gamestarter.xml
+	mv $CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml $CONFIG_DIRECTORY/advancedlauncher/launchers.xml
+fi
 
-# borramos los zips de data y renombramos el instalador
+if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg" ]
+then
+	mv $CONFIG_DIRECTORY/emulationstation/es_systems.cfg $CONFIG_DIRECTORY/emulationstation/es_systems_gamestarter.cfg
+	mv $CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg $CONFIG_DIRECTORY/emulationstation/es_systems.cfg
+	mv $CONFIG_DIRECTORY/emulationstation/es_input.cfg $CONFIG_DIRECTORY/emulationstation/es_input_gamestarter.cfg
+	mv $CONFIG_DIRECTORY/emulationstation/es_input_BACKUP.cfg $CONFIG_DIRECTORY/emulationstation/es_input.cfg
+fi
+fi
+
+# borramos los zips de data y creamos el chivato de instalacion
 # rm $ADDON_DIRECTORY/resources/data/retroarch.tar.gz
 # rm $ADDON_DIRECTORY/resources/data/libretro-part1.tar.gz
 # rm $ADDON_DIRECTORY/resources/data/libretro-part2.tar.gz
@@ -99,7 +138,6 @@ rm $ROOT_DIRECTORY/advanced.launcher.tar.gz
 
 touch $ADDON_DIRECTORY/resources/bin/installed
 echo $ADDON_DIRECTORY >> $ADDON_DIRECTORY/resources/bin/installed
-# mv $ADDON_DIRECTORY/resources/bin/setup.sh $ADDON_DIRECTORY/resources/bin/setup_done.sh 
 
 # end installation
 echo '::Gamestarter:: -> installation completed, enjoy!!'
