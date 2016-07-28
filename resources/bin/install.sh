@@ -69,6 +69,7 @@ chmod a+x $ADDON_DIRECTORY/resources/bin/install_gamemaker.sh
 if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch.cfg" ]
 then
 	mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg
+	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg $CONFIG_DIRECTORY/retroarch/retroarch-core-options_BACKUP.cfg
 fi
 
 if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers.xml" ]
@@ -110,6 +111,8 @@ if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg" ]
 then
 	mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_gamestarter.cfg
 	mv $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg $CONFIG_DIRECTORY/retroarch/retroarch.cfg
+	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg $CONFIG_DIRECTORY/retroarch/retroarch-core-options_gamestarter.cfg
+	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_BACKUP.cfg $CONFIG_DIRECTORY/retroarch/retroarch-core-options.cfg
 fi
 
 if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml" ]
