@@ -128,7 +128,6 @@ then
 	mv $CONFIG_DIRECTORY/emulationstation/es_input.cfg $CONFIG_DIRECTORY/emulationstation/es_input_gamestarter.cfg
 	mv $CONFIG_DIRECTORY/emulationstation/es_input_BACKUP.cfg $CONFIG_DIRECTORY/emulationstation/es_input.cfg
 fi
-fi
 
 # borramos los zips de data y creamos el chivato de instalacion
 # rm $ADDON_DIRECTORY/resources/data/retroarch.tar.gz
