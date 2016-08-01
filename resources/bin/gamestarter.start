@@ -17,11 +17,11 @@ modprobe snd_bcm2835
 # Launch emulator
 case $1 in
   "retroarch")  
-      $DIR/resources/bin/retroarch -c $CONFIG_FILE --menu
+      $DIR/resources/bin/retroarch -c $CONFIG_FILE --menu &> /storage/.config/gamestarter.log
   ;;
   "emulationstation")  
       # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
-      $DIR/resources/bin/emulationstation
+      $DIR/resources/bin/emulationstation &> /storage/.config/gamestarter.log
   ;;
    "ports")  
       # si es un port ejecutamos su sh
@@ -65,14 +65,15 @@ case $1 in
 
     case $AMIGA_EMU in
       "libretro") 
-        $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE;;
+        $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE &> /storage/.config/gamestarter.log;;
       *) 
-        $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE;; 
+        $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE &> /storage/.config/gamestarter.log;; 
     esac
 
   ;;
    *) 
-    $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/$1_libretro.so "$2"
+    $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/$1_libretro.so "$2" &> /storage/.config/gamestarter.log
+    # /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch -c /storage/.config/retroarch/retroarch.cfg -L /storage/.config/retroarch/cores/mame2003_libretro.so /storage/emulators/roms/mame/gng.zip
    ;;
 esac
 
