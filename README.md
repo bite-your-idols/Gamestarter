@@ -63,8 +63,13 @@ There is a default/example launchers/games list I created. You can edit list, sc
 
 .
 
+----
+
+
+## Bonus
+
 #### EmulationStation:
-Finally, [EmulationStation](https://github.com/Herdinger/EmulationStation) frontend is included.
+From addon setting you can install [EmulationStation](https://github.com/Herdinger/EmulationStation) frontend.
 You can customize system lists editing /storage/.config/emulationstation/es_systems.cfg file
 ![screenshot-emulationstation](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
 
@@ -73,8 +78,6 @@ You can customize system lists editing /storage/.config/emulationstation/es_syst
 > This frontend does not work in OE6-.
 
 .
-
-## Bonus
 
 #### Amiga emulation:
 
@@ -116,22 +119,11 @@ More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/wiki)
 
 
 
-## Support
-- [OpenELEC Forums](http://openelec.tv/forum/128-addons/80244-gamestarter-easy-retrogaming-installation-script)
-- [LibreELEC Forums](https://forum.libreelec.tv/thread-287.html)
-- [Kodi Forums](http://forum.kodi.tv/showthread.php?tid=276002)
-- [Raspberri Pi Forums - English](https://www.raspberrypi.org/forums/viewtopic.php?f=78&t=141847)
-- [Raspberri Pi Forums - Spanish](https://www.raspberrypi.org/forums/viewtopic.php?f=76&t=142248)
-- [Github Issues](https://github.com/bite-your-idols/Gamestarter-Pi/issues)
-
-
-.
-
 ## Credits
 
 - Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 
-- UAE4ARM & EmulationStation compiled by [Escalade](http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch)
+- UAE4ARM & EmulationStation compiled by [Escalade](https://forum.libreelec.tv/thread-302.html)
 
 - AdvancedLauncher "skin" images by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
 
