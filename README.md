@@ -99,12 +99,14 @@ With non libretro emulator you will need a mouse in order to start games and a k
 
 
 #### GameMaker Pi:
-As an extra feature, there is an optional installation of three free games from [GameMaker Team](http://yoyogames.com/pi).
+As an extra feature, there is an optional installation of three free games from [GameMaker Team](http://yoyogames.com/pi) using addon settings.
 ![screenshot-gamemaker](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamemaker.png)
 
 > These games only work with Xbox Controller :(
 
 > These games have sound issues in OE7+.
+
+More info [here](https://github.com/bite-your-idols/gamemaker-pi).
 
 .
 
