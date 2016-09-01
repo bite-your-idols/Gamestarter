@@ -9,13 +9,13 @@ English/[Spanish](https://github.com/bite-your-idols/gamestarter/blob/master/REA
 If you use a Raspberry Pi as a media center running Kodi on [LibreELEC](https://libreelec.tv/) or [OpenELEC](http://openelec.tv/), you like retrogaming and you want to launch games just as you do with movies and tv shows without dual-booting, swaping SD memories, complex installations... Here you have the definitve solution.
 
 With this addon you will continue with your own customized Kodi but empowered including: 
-- Retroarch multi-emulator frontend with joypad configs,
-- AdvancedLauncher addon with default emulators list and a custom skin,
-- Emulationstation frontend,
+- Retroarch multi-emulator frontend with joypad configs and optimized common cores,
+- AdvancedLauncher addon with default emulators list and custom skin,
 - Amiga UAE4ARM emulator included in AdvancedLauncher and Emulationstation frontends,
 - Some test freeware roms.
 
 Also, you will have the choice of one-click installation of:
+- Emulationstation frontend,
 - Internet Archive ROM Launcher addon to launch games from the "cloud",
 - 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla".
 
