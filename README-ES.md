@@ -30,14 +30,6 @@ Después puedes abrir la ventana de ajustes del addon para instalar otras opcion
 ![screenshot-addon](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter.png)
 
 
-##### Ajustes del Addon
-En ajustes del addon podrás elegir que frontend quieres usar por defecto cada vez que inicies el addon entre RetroArch y EmulationStation.
-Desde aqui también puedes instalar el addon Internet Archive ROM launcher y los juegos de GameMaker Pi. Más opciones en camino...
-
-![screenshot-addon-settings](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter-settings-2.png)
-
-
-
 .
 
 
