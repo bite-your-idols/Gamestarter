@@ -24,7 +24,8 @@ import xbmcgui
 # directory = os.path.dirname(script_file)
 
 
-os.system("sh  /storage/.kodi/addons/script.gamestarter/resources/bin/update.sh")
+# os.system("sh  /storage/.kodi/addons/script.gamestarter/resources/bin/update.sh")
+os.system("sh  https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/update-checker.sh")
 # os.system("wget --no-check-certificate -O /storage/.kodi/addons/script.gamestarter/resources/bin/update.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/resources/bin/update.sh && sh /storage/.kodi/addons/script.gamestarter/resources/bin/update.sh")
 # xbmcgui.Dialog().ok("Gamestarter", "Gamestarter is up to date.")
 
