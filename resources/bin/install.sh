@@ -14,40 +14,15 @@ if [ -z "$ADDON_DIRECTORY" ]; then
 fi
 
 
-# if echo "$ADDON_DIRECTORY" | grep -q "/osmc/"; then
-#  	echo "::Gamestarter:: -> installing in OSMC..."
-#  	CONFIG_DIRECTORY="/home/osmc/.config"
-#  	ROOT_DIRECTORY="/home/osmc"
-#  	mkdir /home/osmc/.config
-#  	chmod a+x $ADDON_DIRECTORY/resources/bin/gamestarter_osmc.sh
-# 	chmod a+x $ADDON_DIRECTORY/resources/bin/gamestarter_watchdog.sh
-# 	chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch_osmc.sh
+echo "::Gamestarter:: -> installing in Open/LibreELEC..."
+CONFIG_DIRECTORY="/storage/.config"
+ROOT_DIRECTORY="/storage"
+ 
+# añadir audio al config.txt
+echo '::Gamestarter:: -> edit config.txt...'
+mount -o remount,rw /flash
+echo 'dtparam=audio=on' >> /flash/config.txt
 
-# 	sudo apt-get update
-# 	# para retroarch de lakka
-# 	# sudo apt-get install -y libusb-1.0 libavformat-dev libswscale-dev libav-tools
-# 	# para retroarch de kodi17
-# 	sudo apt-get install -y libpulse-dev libsdl2-dev
-# 	# sudo apt-get install libavcodec-dev
-
-# 	# Para Emulationststation
-# 	# sudo apt-get install -y libsdl1.2-dev libsdl-ttf2.0-dev libboost-filesystem-dev libsdl-image1.2-dev libsdl-gfx1.2-dev
-
-# 	# añadir audio al config.txt
-# 	if [[ ! $(grep "dtparam=audio=on" "/boot/config.txt") ]]; then
-# 		sudo su -c 'echo -e "dtparam=audio=on" >> "/boot/config.txt"'
-# 	fi
-
-#  else
- 	echo "::Gamestarter:: -> installing in Open/LibreELEC..."
- 	CONFIG_DIRECTORY="/storage/.config"
- 	ROOT_DIRECTORY="/storage"
- 	
- 	# añadir audio al config.txt
-	echo '::Gamestarter:: -> edit config.txt...'
-	mount -o remount,rw /flash
-	echo 'dtparam=audio=on' >> /flash/config.txt
-# fi
 
 
 # hacer ejecutables los scripts y binarios
@@ -58,8 +33,8 @@ chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch
 chmod a+x $ADDON_DIRECTORY/resources/bin/emulationstation
 chmod a+x $ADDON_DIRECTORY/resources/bin/uae4arm
 
-chmod a+x $ADDON_DIRECTORY/resources/bin/install_iarl.sh
-chmod a+x $ADDON_DIRECTORY/resources/bin/install_gamemaker.sh
+# chmod a+x $ADDON_DIRECTORY/resources/bin/install_iarl.sh
+# chmod a+x $ADDON_DIRECTORY/resources/bin/install_gamemaker.sh
 
 #comprobamos si hay archivos de configs anteriores para no borrarlos en las actualizaciones
 # mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg
@@ -99,10 +74,10 @@ chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Doom.sh
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Quake.sh
 
 
-# instalar advanced launcher a manopla, en kodi 17 habria que activarlo
+# instalar advanced launcher a manopla, hay que cambiar por advanced emulator launcher
 echo '::Gamestarter:: -> installing advanced launcher...'
 ln -s $CONFIG_DIRECTORY/advancedlauncher/ $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.launcher
-wget --no-check-certificate -O $ROOT_DIRECTORY/advanced.launcher.tar.gz https://github.com/bite-your-idols/advanced-launcher/archive/2.5.8.tar.gz
+wget --no-check-certificate -O $ROOT_DIRECTORY/advanced.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/advanced-launcher-2.5.8.tar.gz
 tar -xf $ROOT_DIRECTORY/advanced.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
 rm $ROOT_DIRECTORY/advanced.launcher.tar.gz
 
