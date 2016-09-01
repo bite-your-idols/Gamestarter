@@ -64,9 +64,6 @@ There is a default/example launchers/games list I created. You can edit list, sc
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
-Also, there is a "Frontend" category where you can launch both RetroArch and EmulationStation.
-![screenshot-advlauncher-frontends](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-frontends.png)
-
 .
 
 #### EmulationStation:
@@ -102,23 +99,14 @@ With non libretro emulator you will need a mouse in order to start games and a k
 
 
 #### GameMaker Pi:
-As an extra feature, there is an optional installation of three free games from [GameMaker Team](http://yoyogames.com/pi). To make them work I had to make a [hacklib](http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392) in order to downgrade some OpenELEC libs. If you notice that this downgrade is making some curl-related issues to your system, you can toggle the hack on/off using an addon I created and installed under Program addons menu called "hacklib".
-
+As an extra feature, there is an optional installation of three free games from [GameMaker Team](http://yoyogames.com/pi).
 ![screenshot-gamemaker](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamemaker.png)
-
-You can exit them using ssh too:
-```
-pkill MalditaCastilla
-pkill SuperCrateBox
-pkill TheyNeedToBeFed
-```
 
 > These games only work with Xbox Controller :(
 
 > These games have sound issues in OE7+.
 
 .
-
 
 
 #### Internet Archive ROM Launcher:
@@ -149,7 +137,7 @@ More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/wiki)
 
 - Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 
-- RetroArch, UAE4ARM & EmulationStation compiled by [Escalade](http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch)
+- UAE4ARM & EmulationStation compiled by [Escalade](http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch)
 
 - AdvancedLauncher "skin" images by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
 
