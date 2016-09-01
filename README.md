@@ -23,33 +23,27 @@ Also, you will have the choice of one-click installation of:
 ## Installation Instructions
 Download the latest release of the addon from [Releases Page](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copy into your Raspberry Pi and select "install from zip" in Settings>Addons menu. The first time the addon is launched it will perform some settings. Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
 
+Then you can open addon settings to install additional features such as Internet Archive ROM Launcher, EmulationStation frontend and so on.
+
 ![screenshot-addon](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter.png)
-
-
-##### Addon Settings 
-In addon settings you can define what frontend you want to use everytime you launch the addon, between RetroArch and EmulationStation.
-From there, you can also install Internet Archive ROM launcher and GameMaker Pi ports. More options are coming...
-
-![screenshot-addon-settings](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter-settings-2.png)
 
 
 
 .
 
 
-## Frontends
+## RetroArch:
+The easiest and fastest way of retrogaming is using [Retroarch](http://www.libretro.com/). This will start by default the first time you launch the Gamestarter addon after the first-time-installation. Also, you can access it when playing even if you launch the game from kodi or emulationstation.
 
-#### RetroArch:
-The easiest and fastest way of retrogaming is using [Retroarch](http://www.libretro.com/). 
 The first time RetroArch is launched I recommend to update (Settings menu> Online Updater) databases and download boxarts/thumbnails. Then you can create your own playlists, start games, change cores, user dynamic wallpapers... just like in [Lakka](http://www.lakka.tv/) distro!!
 
 ![screenshot-retroarch](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-retroarch.gif)
 
 .
 
-#### AdvancedLauncher:
+## AdvancedLauncher:
 
-The most "Kodi-like" way to launch RetroArch games, amiga roms and GameMaker Pi ports, is using [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher), located also under Program Addons. Using this you will get all your games just like your movies or music, integrated in Kodi.
+The most "Kodi-like" way to launch games is using [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher), located also under Program Addons. Using this you will get all your games integrated in Kodi's library, just like your movies or music.
 
 
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-context.png)
