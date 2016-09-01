@@ -32,10 +32,7 @@ Después puedes abrir la ventana de ajustes del addon para instalar otras opcion
 
 .
 
-
-## Frontends
-
-#### RetroArch:
+## RetroArch:
 
 La forma más sencilla y rápida de usar emuladores es con [Retroarch](http://www.libretro.com/).  Se iniciará por defecto cada vez que lances el addon después del setup de la primera vez. También podrás acceder a él cuando estes jugando a un juego anque lo hayas lanzado desde kodi o emulationstation.
 
@@ -47,7 +44,7 @@ La primera vez que inicies RetroArch recomiendo que actualices (Settings menu> O
 
 .
 
-#### Advanced Launcher:
+## Advanced Launcher:
 La mejor forma de integrar y lanzar tu colección de juegos retro es usando el addon [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher), situado en "Addons de Programas".
 
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-context.png)
