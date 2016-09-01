@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
 	<category label="Gamestarter">
-		<setting id="frontend" type="select" label="Select you default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
         	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
         	<setting id="amiga" type="select" label="Default Amiga Emulator" values="uae4arm|libretro" default="uar4arm" />
+        	<setting id="frontend" type="select" label="Select you default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
         	<setting type="sep"/>
         	<!--<setting label="Download AdvancedLauncher" type="action" action="RunScript(my.addon.id, downloadreport)"/>-->
         	<!-- <setting label="Install Internet Archive ROM Launcher" type="action" action="System.Exec(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.sh)"/> -->
+        	<setting label="Install EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_emulationstation.py, SetLocation)"/>
         	<setting label="Install Internet Archive ROM Launcher" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.py, SetLocation)"/>
         	<setting label="Install GameMaker Pi ports" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.py, SetLocation)"/>
         	<setting type="sep"/>
