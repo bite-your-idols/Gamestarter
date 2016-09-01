@@ -56,7 +56,7 @@ There is a default/example launchers/games list I created. You can edit list, sc
 
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
-
+Example of Kodi's game "library" with [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 .
 
 ----
