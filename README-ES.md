@@ -109,8 +109,6 @@ Mas info [aquí](https://github.com/bite-your-idols/gamemaker-pi).
 
 Finalmente, también puedes instalar el el addon [IARL](https://github.com/zach-morris/plugin.program.iarl/), lanza juegos que están almancenados en Internet Archive.
 
-![screenshot-iarl](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-iarl.jpg)
-
 
 .
 
