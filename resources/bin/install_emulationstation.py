@@ -11,6 +11,6 @@ directory = os.path.dirname(script_file)
 # xbmcgui.Dialog().ok("Gamestarter", "Done!")
 # os.system("sh "+directory+"/resources/bin/install_iarl.sh")
 
-os.system("sh  https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/install_emulationstation.sh")
+os.system("sh  https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/install_es.sh")
 
 xbmcgui.Dialog().ok("Gamestarter", "EmulationStation installed, please reboot your system.")
