@@ -25,6 +25,8 @@ También tendrás la opción de instalar con un click:
 
 Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copialo en tu Raspberry y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
 
+Después puedes abrir la ventana de ajustes del addon para instalar otras opciones como el addon Internet Archive ROM Launcher, el frontend EmulationStation y más.
+
 ![screenshot-addon](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter.png)
 
 
@@ -43,7 +45,8 @@ Desde aqui también puedes instalar el addon Internet Archive ROM launcher y los
 
 #### RetroArch:
 
-La forma más sencilla y rápida de usar emuladores es con [Retroarch](http://www.libretro.com/). 
+La forma más sencilla y rápida de usar emuladores es con [Retroarch](http://www.libretro.com/).  Se iniciará por defecto cada vez que lances el addon después del setup de la primera vez. También podrás acceder a él cuando estes jugando a un juego anque lo hayas lanzado desde kodi o emulationstation.
+
 La primera vez que inicies RetroArch recomiendo que actualices (Settings menu> Online Updates) las bases de datos, descargues boxarts/thumbnails y asi podrás crear tus propias listas en el menu... todo como en la distro [Lakka](http://www.lakka.tv/)!!
 
 
@@ -53,7 +56,7 @@ La primera vez que inicies RetroArch recomiendo que actualices (Settings menu> O
 .
 
 #### Advanced Launcher:
-La mejor forma de integrar tu colección de juegos en Kodi y lanzar juegos con RetroArch, los juegos de Amiga y GameMaker Pi, es usando el addon [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher), situado en "Addons de Programas".
+La mejor forma de integrar y lanzar tu colección de juegos retro es usando el addon [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher), situado en "Addons de Programas".
 
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-context.png)
 
@@ -62,10 +65,17 @@ Hay una lista de emuladores como ejemplo con algunos roms gratuitos incluidos. P
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
+![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
+Ejemplo de la "biblioteca de juegos" de Kodi con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 .
 
+----
+
+
+## Bonus
+
 #### Emulationstation:
-Finalmente también puedes utilizar el frontened [EmulationStation](https://github.com/Herdinger/EmulationStation).
+Desde el menú de ajustes del addon también puedes instalar el frontened [EmulationStation](https://github.com/Herdinger/EmulationStation).
 Puedes personalizar la lista de emuladores editando el archivo /storage/emulators/emulationstation/es_systems.cfg
 ![screenshot-emulationstation](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
 
@@ -74,9 +84,8 @@ Puedes personalizar la lista de emuladores editando el archivo /storage/emulator
 
 .
 
-## Bonus
 
-### Emulación de Amiga:
+#### Emulación de Amiga:
 
 Para emular Amiga existen 2 opciones seleccionables desde los ajustes del addon. Puedes usar el core de libretro experimental o la versión para Pi del emulador [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488), de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher y EmulationStation, que deben estar en formato ".adf". Todos los archivos de juegos multi-disco tienen que llamarse igual añadiendo al final "_Disk1.adf", "_Disk2.adf"...:
 
@@ -93,7 +102,7 @@ Si usas la version no-libretro necesitarás un ratón para iniciar algunos juego
 
 .
 
-### GameMaker Pi:
+#### GameMaker Pi:
 
 Como extra, tienes la opcion de instalar 3 juegos gratuitos de [GameMaker Team](http://yoyogames.com/pi) desde el menu de ajustes del addon. 
 
@@ -105,25 +114,13 @@ Mas info [aquí](https://github.com/bite-your-idols/gamemaker-pi).
 
 .
 
-### Internet Archive ROM Launcher:
+#### Internet Archive ROM Launcher:
 
 Finalmente, también puedes instalar el el addon [IARL](https://github.com/zach-morris/plugin.program.iarl/), lanza juegos que están almancenados en Internet Archive.
 
 
 .
 
-## Ayuda
-
-- [OpenELEC Forums](http://openelec.tv/forum/128-addons/80244-gamestarter-easy-retrogaming-installation-script)
-- [LibreELEC Forums](https://forum.libreelec.tv/thread-287.html)
-- [Kodi Forums](http://forum.kodi.tv/showthread.php?tid=276002)
-- [Raspberri Pi Forums - Inglés](https://www.raspberrypi.org/forums/viewtopic.php?f=78&t=141847)
-- [Raspberri Pi Forums - Castellano](https://www.raspberrypi.org/forums/viewtopic.php?f=76&t=142248)
-- [Github Issues](https://github.com/bite-your-idols/Gamestarter-Pi/issues)
-
-
-
-.
 
 
 ## Créditos
