@@ -11,11 +11,11 @@ Si usas la Raspberry Pi como media center corriendo Kodi en [LibreELEC](https://
 Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada incluyendo:
 - Multi-emulador RetroArch con todos los cores y pre-configuraciones para la mayoria de mandos,
 - AdvancedLauncher con un listado inicial de emuladores y una apariencia custom,
-- Menu de emuladores o frontend EmulationStation,
-- emulador de Amiga UAE4ARM Pi incluido en Advanced Launcher y EmulationStation,
+- emulador de Amiga UAE4ARM Pi incluido en Advanced Launcher,
 - algunos roms gratuitos de muestra.
 
 También tendrás la opción de instalar con un click:
+- frontend Emulationstation para gestionar tu colección de juegos.
 - 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla",
 - addon Internet Archive ROM Launcher para lanzar juegos desde la "nube".
 
