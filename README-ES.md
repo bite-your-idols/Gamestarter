@@ -25,9 +25,6 @@ También tendrás la opción de instalar con un click:
 
 Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copialo en tu Raspberry y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
 
->Antes de la instalación puedes hacer un backup de tu sistema o hacer una imagen de tu tarjeta con [USB Image Tool](http://www.alexpage.de/usb-image-tool/).
->Probado en OpenELEC 6, OpenELEC 7 beta y LibreELEC 7 en una Raspberry Pi 2/3 model B y todo funciona bien. También recomiendo leer todo este texto antes de instalar para saber de que va el tema.
-
 ![screenshot-addon](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter.png)
 
 
@@ -64,9 +61,6 @@ Hay una lista de emuladores como ejemplo con algunos roms gratuitos incluidos. P
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-edit.png)
 
-Tambien hay creada una categoría llamada "Frontend" desde la que se pueden lanzar RetroArch y EmulationStation.
-![screenshot-advlauncher-frontends](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-frontends.png)
-
 
 .
 
@@ -101,20 +95,13 @@ Si usas la version no-libretro necesitarás un ratón para iniciar algunos juego
 
 ### GameMaker Pi:
 
-Como extra, tienes la opcion de instalar 3 juegos gratuitos de [GameMaker Team](http://yoyogames.com/pi). Para hacerlos funcionar en OpenELEC hay que hacer un pequeño [hack](http://forum.kodi.tv/showthread.php?pid=1481392#pid1481392) en las bibliotecas del sistema. Si notas algun pequeño fallo, relacionado con el downgrade de la versión de CURL, puedes desactivar/activar el hack usando un addon que encontrarás en "Addons de Programas" llamado "hacklib".
-
-![screenshot-gamemaker](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamemaker.png)
-
-También puedes salir mediante ssh:
-```
-pkill MalditaCastilla
-pkill SuperCrateBox
-pkill TheyNeedToBeFed
-```
+Como extra, tienes la opcion de instalar 3 juegos gratuitos de [GameMaker Team](http://yoyogames.com/pi) desde el menu de ajustes del addon. 
 
 > Estos juegos sólo funcionan con el mando de Xbox :(
 
 > Estos juegos tienen problemas de sonido en OE7+.
+
+Mas info [aquí](https://github.com/bite-your-idols/gamemaker-pi).
 
 .
 
