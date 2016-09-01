@@ -13,8 +13,8 @@ CONFIG_DIRECTORY="/storage/.config"
 # fi
 
 wget --no-check-certificate -O /storage/emulationstation.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/emulationstation.tar.gz
-tar -xf /storage/advanced.launcher.tar.gz -C /storage/.config/ -xz
-rm /storage/advanced.launcher.tar.gz
+tar -xf /storage/emulationstation.tar.gz -C /storage/.config/ -xz
+rm /storage/emulationstation.tar.gz
 
 mv /storage/.config/emulationstation/emulationstation $ADDON_DIRECTORY/resources/bin/emulationstation
 
