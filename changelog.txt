@@ -1,3 +1,9 @@
+v2.2.0 (2016-09-01)
+- EmulationStation as an optional Frontend Installation.
+- Glupen64 core included for Nintendo 64.
+- Remove some packages in order to make addon lighter and easier to update.
+- Minor updates, bug fixes and code debugging.
+
 v2.1.1 (2016-08-07)
 - Debug log included
 - RetroArch playlist bug fix
