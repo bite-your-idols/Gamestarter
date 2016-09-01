@@ -73,7 +73,6 @@ You can customize system lists editing /storage/.config/emulationstation/es_syst
 
 .
 
-
 > This frontend does not work in OE6-.
 
 .
@@ -94,13 +93,11 @@ Amiga Emulation is a little tricky and you can choose between uae4arm-libretro e
 
 With non libretro emulator you will need a mouse in order to start games and a keyboard to exit, save/load states...
 
-
 .
 
 
 #### GameMaker Pi:
 As an extra feature, there is an optional installation of three free games from [GameMaker Team](http://yoyogames.com/pi) using addon settings.
-![screenshot-gamemaker](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamemaker.png)
 
 > These games only work with Xbox Controller :(
 
@@ -114,8 +111,6 @@ More info [here](https://github.com/bite-your-idols/gamemaker-pi).
 #### Internet Archive ROM Launcher:
 
 Finally, after installing from Addon settings, you can use Video Addons > IARL addon, it will launch Games hosted on the Internet Archive. 
-
-![screenshot-iarl](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-iarl.jpg)
 
 More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/wiki)
 
