@@ -7,7 +7,7 @@
         	<setting type="sep"/>
         	<!--<setting label="Download AdvancedLauncher" type="action" action="RunScript(my.addon.id, downloadreport)"/>-->
         	<!-- <setting label="Install Internet Archive ROM Launcher" type="action" action="System.Exec(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.sh)"/> -->
-        	<setting label="Install EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_emulationstation.py, SetLocation)"/>
+        	<setting label="Install EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_es.py, SetLocation)"/>
         	<setting label="Install Internet Archive ROM Launcher" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.py, SetLocation)"/>
         	<setting label="Install GameMaker Pi ports" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.py, SetLocation)"/>
         	<setting type="sep"/>
