@@ -105,7 +105,7 @@ Mas info [aquí](https://github.com/bite-your-idols/gamemaker-pi).
 
 .
 
-#### Internet Archive ROM Launcher:
+### Internet Archive ROM Launcher:
 
 Finalmente, también puedes instalar el el addon [IARL](https://github.com/zach-morris/plugin.program.iarl/), lanza juegos que están almancenados en Internet Archive.
 
@@ -132,6 +132,6 @@ Finalmente, también puedes instalar el el addon [IARL](https://github.com/zach-
 
 - Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 
-- RetroArch, UAE4ARM & EmulationStation compiled by [Escalade](http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch)
+- UAE4ARM & EmulationStation compiled by [Escalade](http://openelec.tv/forum/124-raspberry-pi/80543-raspberry-pi2-3-openelec-7-0-kodi-16-0-retroarch)
 
 - AdvancedLauncher "skin" images by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
