@@ -17,6 +17,8 @@ tar -xf /storage/emulationstation.tar.gz -C /storage/.config/ -xz
 rm /storage/emulationstation.tar.gz
 
 mv /storage/.config/emulationstation/emulationstation $ADDON_DIRECTORY/resources/bin/emulationstation
+mv /storage/.config/emulationstation/lib/* /storage/.kodi/addons/script.gamestarter/lib/
+rm -rf /storage/.config/emulationstation/lib/
 
 chmod a+x $ADDON_DIRECTORY/resources/bin/emulationstation
 
