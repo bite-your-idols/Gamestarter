@@ -8,6 +8,8 @@ CONFIG_FILE="/storage/.config/retroarch/retroarch.cfg"
 LIBRETRO_DIR="/storage/.config/retroarch/cores"
 AMIGA_TEMP_FILE=$DIR/resources/bin/launchTemp.uae
 
+echo 'Gamestarter: launch...'
+
 # Stop KODI
 systemctl stop kodi
 
