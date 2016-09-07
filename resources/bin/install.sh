@@ -2,7 +2,7 @@
 # Script for installing Gamestarter
 
 #Welcome message
-echo 'Gamestarter Pi' 
+echo '::Gamestarter:: -> installation on ' $(date)
 ADDON_DIRECTORY=$1
 
 # comprobamos si le ha llegado una ruta sino ponemos la de OLE por defecto
@@ -22,6 +22,11 @@ ROOT_DIRECTORY="/storage"
 echo '::Gamestarter:: -> edit config.txt...'
 mount -o remount,rw /flash
 echo 'dtparam=audio=on' >> /flash/config.txt
+
+#if [[ ! $(grep "dtparam=audio=on" "/flash/config.txt") ]]; then
+#	echo '::Gamestarter:: -> edit config.txt...'
+#	echo 'dtparam=audio=on' >> /flash/config.txt
+# fi
 
 
 
@@ -47,10 +52,10 @@ then
 	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_BACKUP.cfg
 fi
 
-if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers.xml" ]
-then
-	mv $CONFIG_DIRECTORY/advancedlauncher/launchers.xml $CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml
-fi
+# if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers.xml" ]
+# then
+#	mv $CONFIG_DIRECTORY/advancedlauncher/launchers.xml $CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml
+# fi
 
 #if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems.cfg" ]
 #then
@@ -66,7 +71,7 @@ tar -xf $ADDON_DIRECTORY/resources/data/libretro-part2.tar.gz -C $CONFIG_DIRECTO
 # tar -xf $ADDON_DIRECTORY/resources/data/libretro-part3.tar.gz -C $CONFIG_DIRECTORY/retroarch/cores/ -xz
 # tar -xf $ADDON_DIRECTORY/resources/data/emulationstation.tar.gz -C $CONFIG_DIRECTORY/ -xz
 tar -xf $ADDON_DIRECTORY/resources/data/emulators.tar.gz -C $ROOT_DIRECTORY -xz
-tar -xf $ADDON_DIRECTORY/resources/data/advancedlauncher.tar.gz -C $CONFIG_DIRECTORY/ -xz
+# tar -xf $ADDON_DIRECTORY/resources/data/advancedlauncher.tar.gz -C $CONFIG_DIRECTORY/ -xz
 
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/CaveStory.sh
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Dinothawr.sh
@@ -75,11 +80,19 @@ chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Quake.sh
 
 
 # instalar advanced launcher a manopla, hay que cambiar por advanced emulator launcher para kodi 17
-echo '::Gamestarter:: -> installing advanced launcher...'
-ln -s $CONFIG_DIRECTORY/advancedlauncher/ $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.launcher
-wget --no-check-certificate -O $ROOT_DIRECTORY/advanced.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/advanced-launcher-2.5.8.tar.gz
-tar -xf $ROOT_DIRECTORY/advanced.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
-rm $ROOT_DIRECTORY/advanced.launcher.tar.gz
+# echo '::Gamestarter:: -> installing advanced launcher...'
+# ln -s $CONFIG_DIRECTORY/advancedlauncher/ $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.launcher
+# wget --no-check-certificate -O $ROOT_DIRECTORY/advanced.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/advanced-launcher-2.5.8.tar.gz
+# tar -xf $ROOT_DIRECTORY/advanced.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
+# rm $ROOT_DIRECTORY/advanced.launcher.tar.gz
+
+# instalar advanced emulator launcher para kodi 17
+echo '::Gamestarter:: -> installing advanced emulator launcher...'
+# ln -s $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher $CONFIG_DIRECTORY/advancedemulatorlauncher 
+wget --no-check-certificate -O $ROOT_DIRECTORY/advancedemulatorlauncher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/advancedemulatorlauncher.tar.gz
+tar -xf $ROOT_DIRECTORY/advancedemulatorlauncher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
+rm $ROOT_DIRECTORY/advancedemulatorlauncher.tar.gz
+tar -xf $ADDON_DIRECTORY/resources/data/advancedemulatorlauncher.tar.gz -C $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher -xz
 
 #antes de terminar comprobamos de nuevo si habia archivos y los restauramos guardando los nuevos
 if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg" ]
@@ -90,11 +103,14 @@ then
 	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_BACKUP.cfg $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg
 fi
 
-if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml" ]
-then
-	mv $CONFIG_DIRECTORY/advancedlauncher/launchers.xml $CONFIG_DIRECTORY/advancedlauncher/launchers_gamestarter.xml
-	mv $CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml $CONFIG_DIRECTORY/advancedlauncher/launchers.xml
-fi
+#if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml" ]
+#then
+#	mv $CONFIG_DIRECTORY/advancedlauncher/launchers.xml $CONFIG_DIRECTORY/advancedlauncher/launchers_gamestarter.xml
+#	mv $CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml $CONFIG_DIRECTORY/advancedlauncher/launchers.xml
+#fi
+
+#habria que conrolar el tema de hacer backup del listado de AEL
+
 
 #if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg" ]
 #then
