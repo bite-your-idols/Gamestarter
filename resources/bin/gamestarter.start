@@ -8,15 +8,16 @@ CONFIG_FILE="/storage/.config/retroarch/retroarch.cfg"
 LIBRETRO_DIR="/storage/.config/retroarch/cores"
 AMIGA_TEMP_FILE=$DIR/resources/bin/launchTemp.uae
 
-echo 'Gamestarter: launch...'
-
 # Stop KODI
+echo 'Gamestarter: stop kodi...'
 systemctl stop kodi
 
 # Enable ALSA
+echo 'Gamestarter: enable alsa...'
 modprobe snd_bcm2835
 
 # Launch emulator
+echo 'Gamestarter: launch ' $1
 case $1 in
   "retroarch")  
       $DIR/resources/bin/retroarch -c $CONFIG_FILE --menu &> /storage/.config/gamestarter.log
@@ -28,7 +29,7 @@ case $1 in
    "ports")  
       # si es un port ejecutamos su sh
       chmod a+x $2
-    $2
+      $2 &> /storage/.config/gamestarter.log
   ;;
   "amiga") 
     # crear el archivo uae temporal para el adf seleccionado
@@ -80,11 +81,13 @@ case $1 in
 esac
 
 # Disable ALSA
+echo 'Gamestarter: disable alsa...'
 rmmod snd_bcm2835
 
 # Reset resolution to standard y borrar uae temporal
 case $1 in
-  "amiga") 
+  "amiga")
+    echo 'Gamestarter: reset amiga configs...'
     rm $AMIGA_TEMP_FILE
     tvservice -p
   ;;
@@ -93,6 +96,9 @@ esac
 # Start KODI
 # systemctl start kodi
 case $3 in
-  "ES") echo 'Exit ES';;
-  *) systemctl start kodi;;
+  "ES") echo 'Gamestarter: Exit ES';;
+  *) 
+  	echo 'Gamestarter: restart kodi...'
+  	systemctl start kodi
+  ;;
 esac
