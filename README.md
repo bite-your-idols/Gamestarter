@@ -11,7 +11,7 @@ If you use a Raspberry Pi as a media center running Kodi on [LibreELEC](https://
 With this addon you will continue with your own customized Kodi but empowered including: 
 - AMIGA (UAE4ARM or lr uae4arm), ARCADE (lr Mame2003 with hiscores and lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
 
-- Everything integrated in your Kodi library thanks to AdvacedLauncher/Advanced Emulator Launcher addon, using Retroarch as frontend for configuration and settings (including joypad configs) and some test freeware roms.
+- Everything integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon, using Retroarch as frontend for configuration and settings (including joypad configs) and some test freeware roms.
 
 Also, you will have the choice of one-click installation of:
 - Emulationstation frontend,
