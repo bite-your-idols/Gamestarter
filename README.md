@@ -15,7 +15,7 @@ With this addon you will continue with your own customized Kodi but empowered in
 
 Also, you will have the choice of one-click installation of:
 - Emulationstation frontend,
-- Internet Archive ROM Launcher addon to launch games from the "cloud",
+- [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/wiki) addon to launch games from the "cloud",
 - 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla" ([More Info](https://github.com/bite-your-idols/gamemaker-pi)).
 
 
@@ -24,9 +24,8 @@ Download the latest release of the addon from [Releases Page](https://github.com
 
 Then you can open addon settings to install additional features such as Internet Archive ROM Launcher, EmulationStation frontend and so on.
 
-![screenshot-addon](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter.png)
-
-
+![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
+Example of Kodi's game "library" with [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 
 .
 
@@ -54,16 +53,9 @@ There is a default/example launchers/games list I created. You can edit list, sc
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-edit.png)
 
 
-![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
-Example of Kodi's game "library" with [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 .
 
-----
-
-
-## Bonus
-
-#### EmulationStation:
+## EmulationStation:
 From addon setting you can install [EmulationStation](https://github.com/Herdinger/EmulationStation) frontend.
 You can customize system lists editing /storage/.config/emulationstation/es_systems.cfg file
 ![screenshot-emulationstation](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
@@ -74,7 +66,7 @@ You can customize system lists editing /storage/.config/emulationstation/es_syst
 
 .
 
-#### Amiga emulation:
+## Amiga emulation:
 
 Amiga Emulation is a little tricky and you can choose between uae4arm-libretro experiemntal core and  [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488) port. You can not launch emulator into GUI by now, but you can launch games from Kodi's Advanced Launcher or Emulationstation. Games must be ".adf" files. All files from Multi-disk games must be named the same adding "_Disk1.adf", "_Disk2.adf"... like this:
 
@@ -89,29 +81,6 @@ Amiga Emulation is a little tricky and you can choose between uae4arm-libretro e
 With non libretro emulator you will need a mouse in order to start games and a keyboard to exit, save/load states...
 
 .
-
-
-#### GameMaker Pi:
-As an extra feature, there is an optional installation of three free games from [GameMaker Team](http://yoyogames.com/pi) using addon settings.
-
-> These games only work with Xbox Controller :(
-
-> These games have sound issues in OE7+.
-
-More info [here](https://github.com/bite-your-idols/gamemaker-pi).
-
-.
-
-
-#### Internet Archive ROM Launcher:
-
-Finally, after installing from Addon settings, you can use Video Addons > IARL addon, it will launch Games hosted on the Internet Archive. 
-
-More info: [IARL](https://github.com/zach-morris/plugin.program.iarl/wiki)
-
-
-.
-
 
 
 ## Credits
