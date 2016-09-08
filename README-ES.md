@@ -15,7 +15,7 @@ Todo integrado en tu biblioteca de Kodi gracias al addon AdvacedLauncher/Advance
 
 También tendrás la opción de instalar con un click:
 - frontend Emulationstation para gestionar tu colección de juegos.
-- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" (Mas info [aquí](https://github.com/bite-your-idols/gamemaker-pi)),
+- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" ([Mas info aquí](https://github.com/bite-your-idols/gamemaker-pi)).
 - addon [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/) para lanzar juegos desde la "nube" alojados en Internet Archive.
 
 
@@ -26,7 +26,8 @@ Descarga la última versión del addon desde la [Página de Releases](https://gi
 
 Después puedes abrir la ventana de ajustes del addon para instalar otras opciones como el addon Internet Archive ROM Launcher, el frontend EmulationStation y más.
 
-![screenshot-addon](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-gamestarter.png)
+![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
+Ejemplo de la "biblioteca de juegos" de Kodi con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 
 
 .
@@ -52,9 +53,6 @@ Hay una lista de emuladores como ejemplo con algunos roms gratuitos incluidos. P
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-edit.png)
 
-
-![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
-Ejemplo de la "biblioteca de juegos" de Kodi con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 .
 
 ## Emulationstation:
