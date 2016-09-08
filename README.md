@@ -16,7 +16,7 @@ With this addon you will continue with your own customized Kodi but empowered in
 Also, you will have the choice of one-click installation of:
 - Emulationstation frontend,
 - Internet Archive ROM Launcher addon to launch games from the "cloud",
-- 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla".
+- 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla" ([More Info](https://github.com/bite-your-idols/gamemaker-pi)).
 
 
 ## Installation Instructions
