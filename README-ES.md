@@ -15,8 +15,8 @@ Todo integrado en tu biblioteca de Kodi gracias al addon AdvacedLauncher/Advance
 
 También tendrás la opción de instalar con un click:
 - frontend Emulationstation para gestionar tu colección de juegos.
-- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla",
-- addon Internet Archive ROM Launcher para lanzar juegos desde la "nube".
+- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" (Mas info [aquí](https://github.com/bite-your-idols/gamemaker-pi)),
+- addon [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/) para lanzar juegos desde la "nube" alojados en Internet Archive.
 
 
 
@@ -57,12 +57,8 @@ Hay una lista de emuladores como ejemplo con algunos roms gratuitos incluidos. P
 Ejemplo de la "biblioteca de juegos" de Kodi con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 .
 
-----
+## Emulationstation:
 
-
-## Bonus
-
-#### Emulationstation:
 Desde el menú de ajustes del addon también puedes instalar el frontened [EmulationStation](https://github.com/Herdinger/EmulationStation).
 Puedes personalizar la lista de emuladores editando el archivo /storage/emulators/emulationstation/es_systems.cfg
 ![screenshot-emulationstation](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
@@ -72,8 +68,7 @@ Puedes personalizar la lista de emuladores editando el archivo /storage/emulator
 
 .
 
-
-#### Emulación de Amiga:
+## Emulación de Amiga:
 
 Para emular Amiga existen 2 opciones seleccionables desde los ajustes del addon. Puedes usar el core de libretro experimental o la versión para Pi del emulador [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488), de momento no se puede lanzar este emulador a su menu/GUI, pero puedes lanzar directamente los juegos desde kodi con Advanced Launcher y EmulationStation, que deben estar en formato ".adf". Todos los archivos de juegos multi-disco tienen que llamarse igual añadiendo al final "_Disk1.adf", "_Disk2.adf"...:
 
@@ -89,26 +84,6 @@ Si usas la version no-libretro necesitarás un ratón para iniciar algunos juego
 
 
 .
-
-#### GameMaker Pi:
-
-Como extra, tienes la opcion de instalar 3 juegos gratuitos de [GameMaker Team](http://yoyogames.com/pi) desde el menu de ajustes del addon. 
-
-> Estos juegos sólo funcionan con el mando de Xbox :(
-
-> Estos juegos tienen problemas de sonido en OE7+.
-
-Mas info [aquí](https://github.com/bite-your-idols/gamemaker-pi).
-
-.
-
-#### Internet Archive ROM Launcher:
-
-Finalmente, también puedes instalar el el addon [IARL](https://github.com/zach-morris/plugin.program.iarl/), lanza juegos que están almancenados en Internet Archive.
-
-
-.
-
 
 
 ## Créditos
