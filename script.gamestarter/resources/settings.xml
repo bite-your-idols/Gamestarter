@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="Gamestarter">
+        	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
+        	<setting id="amiga" type="select" label="Default Amiga Emulator" values="uae4arm|libretro" default="uar4arm" />
+        	<setting id="frontend" type="select" label="Select your default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
+        	<setting type="sep"/>
+        	<!--<setting label="Download AdvancedLauncher" type="action" action="RunScript(my.addon.id, downloadreport)"/>-->
+        	<!-- <setting label="Install Internet Archive ROM Launcher" type="action" action="System.Exec(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.sh)"/> -->
+        	<setting label="Install EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_es.py, SetLocation)"/>
+        	<setting label="Install Internet Archive ROM Launcher" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.py, SetLocation)"/>
+        	<setting label="Install GameMaker Pi ports" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.py, SetLocation)"/>
+        	<setting type="sep"/>
+        	<setting label="Check for updates" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/update.py, SetLocation)"/>
+        	<!-- <setting label="Re-installation Setup" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/reinstall.py, SetLocation)"/> -->
+        </category>
+        <!--<category label="Experimental">
+        	<setting label="Use Libretro Amiga Core" type="action" action="RunScript(my.addon.id, downloadreport)"/>
+        	<setting id="amiga" type="select" label="Select your Amiga Emulator" values="UAE4ARM|Libretro-uae4arm" default="UAE4ARM" />
+    		<setting label="Use Mame2010 core" type="action" action="RunScript(my.addon.id, downloadreport)"/>
+    		<setting label="Change Splashscreen" type="action" action="RunScript(my.addon.id, downloadreport)"/>
+        	<setting label="Remove addon" type="action" action="RunScript(my.addon.id, downloadreport)"/>
+    	</category>-->
+</settings>
