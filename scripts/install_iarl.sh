@@ -6,7 +6,7 @@
 # lo cambiamos por el de la repo de zACHMORRIS
 wget --no-check-certificate -O /storage/plugin.program.iarl.zip https://github.com/zach-morris/repository.zachmorris/raw/master/plugin.program.iarl/plugin.program.iarl-1.5.2.zip
 # y descargamos su repo para los autoupdates
-# wget --no-check-certificate -O /storage/repository.zachmorris.zip https://github.com/zach-morris/repository.zachmorris/blob/master/repository.zachmorris/repository.zachmorris-1.0.0.zip
+wget --no-check-certificate -O /storage/repository.zachmorris.zip https://github.com/zach-morris/repository.zachmorris/blob/master/repository.zachmorris/repository.zachmorris-1.0.0.zip
 # tar -xf /storage/iarl.tar.gz -C /storage/.kodi/addons/ -xz
 
 # rm /storage/.kodi/addons/plugin.program.iarl-master/resources/bin/romlaunch_OE_RPi2.sh
