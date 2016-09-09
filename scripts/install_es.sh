@@ -12,7 +12,7 @@ CONFIG_DIRECTORY="/storage/.config"
 # 	mv $CONFIG_DIRECTORY/emulationstation/es_input.cfg $CONFIG_DIRECTORY/emulationstation/es_input_BACKUP.cfg
 # fi
 
-wget --no-check-certificate -O /storage/emulationstation.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/emulationstation.tar.gz
+wget --no-check-certificate -O /storage/emulationstation.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulationstation.tar.gz
 tar -xf /storage/emulationstation.tar.gz -C /storage/.config/ -xz
 rm /storage/emulationstation.tar.gz
 
