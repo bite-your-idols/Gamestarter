@@ -13,7 +13,7 @@ directory = os.path.dirname(script_file)
 
 #os.system("sh  https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/install_es.sh")
 
-os.system("wget --no-check-certificate -O /storage/install-es.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/install_es.sh && sh /storage/install-es.sh")
+os.system("wget --no-check-certificate -O /storage/install-es.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/install_es.sh && sh /storage/install-es.sh")
 os.system("rm /storage/install-es.sh")
 
 xbmcgui.Dialog().ok("Gamestarter", "EmulationStation installed, please reboot your system.")
