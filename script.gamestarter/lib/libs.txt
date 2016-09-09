@@ -1,0 +1,20 @@
+UAE4ARM OE6/OLE7
+libSDL-1.2.so.0
+libSDL_image-1.2.so.0
+libSDL_ttf-2.0.so.0
+libguichan_sdl-0.8.1.so.1
+libguichan-0.8.1.so.1
+
+emulationstation OE6/OLE7 (included in emulationstation.tar.gz)
+libfreeimage.so.3
+libSDL2-2.0.so.0
+
+glupen64 core OE6/OLE7
+libbrcmEGL.so
+libbrcmGLESv2.so
+
+retroarch OE6/OLE7
+
+
+
+
