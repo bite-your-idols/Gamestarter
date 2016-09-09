@@ -29,7 +29,6 @@ echo 'dtparam=audio=on' >> /flash/config.txt
 # fi
 
 
-
 # hacer ejecutables los scripts y binarios
 echo '::Gamestarter:: -> script permissions...'
 chmod a+x $ADDON_DIRECTORY/resources/bin/gamestarter.sh
@@ -82,16 +81,16 @@ chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Quake.sh
 # instalar advanced launcher a manopla, hay que cambiar por advanced emulator launcher para kodi 17
 # echo '::Gamestarter:: -> installing advanced launcher...'
 # ln -s $CONFIG_DIRECTORY/advancedlauncher/ $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.launcher
-# wget --no-check-certificate -O $ROOT_DIRECTORY/advanced.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/advanced-launcher-2.5.8.tar.gz
+# wget --no-check-certificate -O $ROOT_DIRECTORY/advanced.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/advanced-launcher-2.5.8.tar.gz
 # tar -xf $ROOT_DIRECTORY/advanced.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
 # rm $ROOT_DIRECTORY/advanced.launcher.tar.gz
 
 # instalar advanced emulator launcher para kodi 17
 echo '::Gamestarter:: -> installing advanced emulator launcher...'
 # ln -s $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher $CONFIG_DIRECTORY/advancedemulatorlauncher 
-wget --no-check-certificate -O $ROOT_DIRECTORY/advancedemulatorlauncher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/advancedemulatorlauncher.tar.gz
-tar -xf $ROOT_DIRECTORY/advancedemulatorlauncher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
-rm $ROOT_DIRECTORY/advancedemulatorlauncher.tar.gz
+wget --no-check-certificate -O $ROOT_DIRECTORY/plugin.program.advanced.emulator.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/plugin.program.advanced.emulator.launcher.tar.gz
+tar -xf $ROOT_DIRECTORY/plugin.program.advanced.emulator.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
+rm $ROOT_DIRECTORY/plugin.program.advanced.emulator.launcher.tar.gz
 tar -xf $ADDON_DIRECTORY/resources/data/advancedemulatorlauncher.tar.gz -C $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher -xz
 
 #antes de terminar comprobamos de nuevo si habia archivos y los restauramos guardando los nuevos
