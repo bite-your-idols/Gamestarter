@@ -8,6 +8,7 @@ wget --no-check-certificate -O /storage/uae4arm.tar.gz https://github.com/bite-y
 tar -xf /storage/uae4arm.tar.gz -C /storage/uae4arm-temp/ -xz
 # rm /storage/uae4arm.tar.gz
 
+mkdir /storage/uae4arm-temp
 mv /storage/uae4arm-temp/uae4arm $ADDON_DIRECTORY/resources/bin/uae4arm
 mv /storage/uae4arm-temp/lib/* /storage/.kodi/addons/script.gamestarter/lib/
 # rm -rf /storage/uae4arm-temp/
