@@ -9,12 +9,13 @@
 Si usas la Raspberry Pi como media center corriendo Kodi en [LibreELEC](https://libreelec.tv/) o [OpenELEC](http://openelec.tv/), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
 
 Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada incluyendo:
-AMIGA (UAE4ARM o lr uae4arm), ARCADE (lr Mame2003 con hiscores y lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
+AMIGA (lr uae4arm o UAE4ARM), ARCADE (lr Mame2003 con hiscores y lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ScummVM (lr scummvm), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
 
 Todo integrado en tu biblioteca de Kodi gracias al addon AdvacedLauncher/Advanced Emulator Launcher, usando Retroarch como frontend para las configuraciones y ajustes (incluyendo configuraciones para gamepads) y algunos roms gratuitos de muestra.
 
 También tendrás la opción de instalar con un click:
 - frontend Emulationstation para gestionar tu colección de juegos.
+- Emulador de Amiga UAE4ARM
 - 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" ([Mas info aquí](https://github.com/bite-your-idols/gamemaker-pi)).
 - addon [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/) para lanzar juegos desde la "nube" alojados en Internet Archive.
 
