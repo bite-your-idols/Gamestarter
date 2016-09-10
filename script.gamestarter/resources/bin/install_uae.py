@@ -13,7 +13,7 @@ directory = os.path.dirname(script_file)
 
 #os.system("sh  https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/install_es.sh")
 
-os.system("wget --no-check-certificate -O /storage/install-uae.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/install_uae.sh && sh /storage/install-uae.sh")
+os.system("wget --no-check-certificate -O /storage/install-uae.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/install_uae.sh && sh /storage/install-uae.sh &> /storage/.config/gamestarter.log")
 os.system("rm /storage/install-uae.sh")
 
 xbmcgui.Dialog().ok("Gamestarter", "UAE4ARM installed, please reboot your system.")
