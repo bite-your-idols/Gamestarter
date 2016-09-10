@@ -1,4 +1,4 @@
-UAE4ARM OE6/OLE7
+UAE4ARM OE6/OLE7 (included in uae4arm.tar.gz)
 libSDL-1.2.so.0
 libSDL_image-1.2.so.0
 libSDL_ttf-2.0.so.0
