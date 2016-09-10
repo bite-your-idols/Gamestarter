@@ -1,3 +1,11 @@
+v2.3.0 (2016-09-10)
+- Improve gamestarter.log.
+- AEL as frontend for LE8 alpha version.
+- SCUMMVM libretro core included.
+- UAE4ARM as an optional installaton.
+- Change github directories structure.
+- Minor updates, bug fixes and code debugging.
+
 v2.2.0 (2016-09-01)
 - EmulationStation as an optional Frontend Installation.
 - Glupen64 core included for Nintendo 64.
