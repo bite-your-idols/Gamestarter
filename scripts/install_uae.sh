@@ -9,6 +9,7 @@ tar -xf /storage/uae4arm.tar.gz -C /storage/ -xz
 rm /storage/uae4arm.tar.gz
 
 mv /storage/uae4arm/uae4arm $ADDON_DIRECTORY/resources/bin/uae4arm
+mkdir -p /storage/.kodi/addons/script.gamestarter/lib/
 mv /storage/uae4arm/lib/* /storage/.kodi/addons/script.gamestarter/lib/
 rm -rf /storage/uae4arm-temp/
 
