@@ -11,7 +11,7 @@ rm /storage/uae4arm.tar.gz
 mv /storage/uae4arm/uae4arm $ADDON_DIRECTORY/resources/bin/uae4arm
 mkdir -p $ADDON_DIRECTORY/lib/
 mv /storage/uae4arm/lib/* $ADDON_DIRECTORY/lib/
-rm -rf /storage/uae4arm-temp/
+rm -rf /storage/uae4arm/
 
 chmod a+x $ADDON_DIRECTORY/resources/bin/uae4arm
 
