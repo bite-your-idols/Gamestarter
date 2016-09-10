@@ -5,12 +5,11 @@
 ADDON_DIRECTORY="/storage/.kodi/addons/script.gamestarter"
 
 wget --no-check-certificate -O /storage/uae4arm.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/uae4arm.tar.gz
-tar -xf /storage/uae4arm.tar.gz -C /storage/uae4arm-temp/ -xz
+tar -xf /storage/uae4arm.tar.gz -C /storage/ -xz
 # rm /storage/uae4arm.tar.gz
 
-mkdir /storage/uae4arm-temp
-mv /storage/uae4arm-temp/uae4arm $ADDON_DIRECTORY/resources/bin/uae4arm
-mv /storage/uae4arm-temp/lib/* /storage/.kodi/addons/script.gamestarter/lib/
+mv /storage/uae4arm/uae4arm $ADDON_DIRECTORY/resources/bin/uae4arm
+mv /storage/uae4arm/lib/* /storage/.kodi/addons/script.gamestarter/lib/
 # rm -rf /storage/uae4arm-temp/
 
 chmod a+x $ADDON_DIRECTORY/resources/bin/uae4arm
