@@ -2,7 +2,7 @@ import os
 import os.path
 import xbmcgui
 
-xbmcgui.Dialog().ok("Gamestarter", "Installing UAE4ARM, please do not power off or reboot your Raspberry Pi.")
+xbmcgui.Dialog().ok("Gamestarter", "Installing UAE4ARM, please do not power off your Pi.")
 
 
 script_file = os.path.realpath(__file__)
@@ -16,4 +16,4 @@ directory = os.path.dirname(script_file)
 os.system("wget --no-check-certificate -O /storage/install-uae.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/install_uae.sh && sh /storage/install-uae.sh &> /storage/.config/gamestarter.log")
 os.system("rm /storage/install-uae.sh")
 
-xbmcgui.Dialog().ok("Gamestarter", "UAE4ARM installed, please reboot your system.")
+xbmcgui.Dialog().ok("Gamestarter", "UAE4ARM installed, select as default Amiga emulator in settings.")
