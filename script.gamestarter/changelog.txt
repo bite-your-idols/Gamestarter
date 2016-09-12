@@ -1,3 +1,7 @@
+v2.4.0 (2016-09-14)
+- Addon updater from settings.
+- Minor updates, bug fixes and code debugging.
+
 v2.3.0 (2016-09-10)
 - Improve gamestarter.log.
 - AEL as frontend for LE8 alpha version.
