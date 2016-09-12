@@ -12,7 +12,7 @@
         	<setting label="Install Internet Archive ROM Launcher" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.py, SetLocation)"/>
         	<setting label="Install GameMaker Pi ports" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.py, SetLocation)"/>
         	<setting type="sep"/>
-        	<setting label="Check for updates" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/update.py, SetLocation)"/>
+        	<setting label="Update Gamestarter" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/update.py, SetLocation)"/>
         </category>
         <!--<category label="Experimental">
         	<setting label="Download AdvancedLauncher" type="action" action="RunScript(my.addon.id, downloadreport)"/>
