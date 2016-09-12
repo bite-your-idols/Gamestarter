@@ -18,7 +18,7 @@ then
    kodi-send --action=Notification"(Gamestarter,Gamestarter is up to date,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 else
    # echo "There is a new version you can download"
-   kodi-send --action=Notification"(Gamestarter,Uploading...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+   kodi-send --action=Notification"(Gamestarter,Updating...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
    #sacar solo los valores de la version p.e. "2.3"
    #VERSION_UPDATE=$(head -c 4 $ADDON_DIRECTORY/changelog_latest.txt) 
    #VERSION_UPDATE=$(tail -c 5 $VERSION_UPDATE)
