@@ -20,21 +20,22 @@ else
    # echo "There is a new version you can download"
    kodi-send --action=Notification"(Gamestarter,Uploading...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
    #sacar solo los valores de la version p.e. "2.3"
-   VERSION_UPDATE=$(head -c 4 $ADDON_DIRECTORY/changelog_latest.txt) 
-   VERSION_UPDATE=$(tail -c 5 $VERSION_UPDATE)
+   #VERSION_UPDATE=$(head -c 4 $ADDON_DIRECTORY/changelog_latest.txt) 
+   #VERSION_UPDATE=$(tail -c 5 $VERSION_UPDATE)
+   VERSION_UPDATE=${VERSION_ONLINE:1:3}
    #sacar la veriosnd el addon OLE/LE8alpha -> habria que meterla en installed al instalar
-   VERSION_ADDON=$(head -c 8 $ADDON_DIRECTORY/resources/bin/installed)
+   ADDON_VERSION=$(head -c 8 $ADDON_DIRECTORY/resources/bin/installed)
    #asi sabemos que version del zip descargar
-   wget --no-check-certificate -O /storage/gamestarter-update.zip https://github.com/bite-your-idols/Gamestarter-Pi/releases/download/$VERSION_UPDATE/script.gamestarter-v$VERSION_UPDATE-$VERSION_ADDON.zip
+   wget --no-check-certificate -O /storage/gamestarter-update.zip https://github.com/bite-your-idols/Gamestarter-Pi/releases/download/$VERSION_UPDATE/script.gamestarter-v$VERSION_UPDATE-$ADDON_VERSION.zip
    unzip /storage/gamestarter-update.zip -d /storage/gamestarter-update
    # movemos la carpeta del addon nueva y nos aseguramos que sobreescribe lo que tiene que sobreescribir
-   mv /storage/gamestarter-update/script.gamestarter /storage/.kodi/addons/
+   cp -r /storage/gamestarter-update/script.gamestarter /storage/.kodi/addons/
    # habria que copiar las carpetas y archivos en su sitio
    
    #forzamos la reinstalacion al iniciar el addon
    rm $ADDON_DIRECTORY/resources/bin/installed
    #borramos la carpeta de archivos de actualizacion
-   #rm -rx /storage/gamestarter-update
+   #rm -rf /storage/gamestarter-update
 fi
 
 rm $ADDON_DIRECTORY/changelog_latest.txt
