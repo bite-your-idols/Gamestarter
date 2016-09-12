@@ -37,6 +37,7 @@ else
    rm $ADDON_DIRECTORY/resources/bin/installed
    #borramos la carpeta de archivos de actualizacion
    rm -rf /storage/gamestarter-update
+   kodi-send --action=Notification"(Gamestarter,Gamestarter Updated,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 fi
 
 rm $ADDON_DIRECTORY/changelog_latest.txt
