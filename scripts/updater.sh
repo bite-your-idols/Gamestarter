@@ -16,7 +16,12 @@ then
    kodi-send --action=Notification"(Gamestarter,Gamestarter is up to date,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 else
    # echo "There is a new version you can download"
-   kodi-send --action=Notification"(Gamestarter,There is a new version you can download,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+   kodi-send --action=Notification"(Gamestarter,Uploading...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+   wget --no-check-certificate -O /storage/gamestarter-update.zip https://github.com/bite-your-idols/Gamestarter-Pi/releases/download/2.3/script.gamestarter-v2.3-LE8alpha.zip
+   unzip /storage/gamestarter-update.zip -d /storage/gamestarter-update
+   
+   
+   #rm -rx /storage/gamestarter-update
 fi
 
 rm /storage/.kodi/addons/script.gamestarter/changelog_latest.txt
