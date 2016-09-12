@@ -35,7 +35,7 @@ else
    #forzamos la reinstalacion al iniciar el addon
    rm $ADDON_DIRECTORY/resources/bin/installed
    #borramos la carpeta de archivos de actualizacion
-   #rm -rf /storage/gamestarter-update
+   rm -rf /storage/gamestarter-update
 fi
 
 rm $ADDON_DIRECTORY/changelog_latest.txt
