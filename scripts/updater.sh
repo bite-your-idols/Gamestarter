@@ -28,6 +28,7 @@ else
    #asi sabemos que version del zip descargar
    wget --no-check-certificate -O /storage/gamestarter-update.zip https://github.com/bite-your-idols/Gamestarter-Pi/releases/download/$VERSION_UPDATE/script.gamestarter-v$VERSION_UPDATE-$ADDON_VERSION.zip
    unzip /storage/gamestarter-update.zip -d /storage/gamestarter-update
+   rm /storage/gamestarter-update.zip
    # movemos la carpeta del addon nueva y nos aseguramos que sobreescribe lo que tiene que sobreescribir
    cp -r /storage/gamestarter-update/script.gamestarter /storage/.kodi/addons/
    # habria que copiar las carpetas y archivos en su sitio
