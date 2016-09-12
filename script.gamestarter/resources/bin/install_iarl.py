@@ -2,7 +2,7 @@ import os
 import os.path
 import xbmcgui
 
-xbmcgui.Dialog().ok("Gamestarter", "Downloading IARL, please do not power off or reboot your Raspberry Pi.")
+xbmcgui.Dialog().ok("Gamestarter", "Downloading IARL, please do not power off your Pi.")
 
 
 script_file = os.path.realpath(__file__)
