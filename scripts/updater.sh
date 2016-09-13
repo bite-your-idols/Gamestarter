@@ -26,6 +26,8 @@ else
    #sacar la veriosnd el addon OLE/LE8alpha -> habria que meterla en installed al instalar
    ADDON_VERSION=$(head -c 8 $ADDON_DIRECTORY/resources/bin/installed)
    #asi sabemos que version del zip descargar
+   echo "VERSION DEL ADDON: " $ADDON_VERSION
+   echo "ACTUALIZAR A: " $VERSION_UPDATE
    wget --no-check-certificate -O /storage/gamestarter-update.zip https://github.com/bite-your-idols/Gamestarter-Pi/releases/download/$VERSION_UPDATE/script.gamestarter-v$VERSION_UPDATE-$ADDON_VERSION.zip
    unzip /storage/gamestarter-update.zip -d /storage/gamestarter-update
    rm /storage/gamestarter-update.zip
