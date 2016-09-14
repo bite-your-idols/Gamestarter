@@ -23,7 +23,7 @@
 # ADDON_VERSION="LE8alpha"
 ADDON_VERSION=$1
 
-cp -R script.gamestarter exports/
+cp -R script.gamestarter exports/script.gamestarter
 
 if [ "$ADDON_VERSION" = "OLE" ]; then
 
