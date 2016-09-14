@@ -60,4 +60,6 @@ fi
 
 
 # crear el zip
-zip /exports/script.gamestarter script.gamestarter-$ADDON_VERSION.zip
+zip /exports/script.gamestarter script.gamestarter-$ADDON_VERSION.
+
+echo "done!"
