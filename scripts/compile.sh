@@ -23,13 +23,14 @@
 # ADDON_VERSION="LE8alpha"
 ADDON_VERSION=$1
 
-cp -R script.gamestarter exports/script.gamestarter
+mkdir -p exports/script.gamestarter
+cp -R script.gamestarter exports/
 
 if [ "$ADDON_VERSION" = "OLE" ]; then
 
 	# OLE
 	# install.sh ADDON_VERSION
-	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="xxx"/ADDON_VERSION="OLE"/' exports/script.gamestarter/resources/bin/install.sh
+	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="OLE"/' exports/script.gamestarter/resources/bin/install.sh
 
 	# retroarch_1.3.6(OLE)
 	mv exports/script.gamestarter/resources/bin/retroarch_1.3.6 exports/script.gamestarter/resources/bin/retroarch
@@ -44,7 +45,7 @@ else
 
 	# LE8alpha:
 	# install.sh ADDON_VERSION
-	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="xxx"/ADDON_VERSION="LE8alpha"/' exports/script.gamestarter/resources/bin/install.sh
+	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="LE8alpha"/' exports/script.gamestarter/resources/bin/install.sh
 
 	# retroarch_1.3.6_libreelec8
 	mv exports/script.gamestarter/resources/bin/retroarch_1.3.6_libreelec8 exports/script.gamestarter/resources/bin/retroarch
@@ -60,6 +61,8 @@ fi
 
 
 # crear el zip
-zip exports/script.gamestarter script.gamestarter-$ADDON_VERSION.
+zip -r exports/script.gamestarter-$ADDON_VERSION.zip exports/
+rm -rf exports/script.gamestarter/
+
 
 echo "done!"
