@@ -4,8 +4,9 @@
 #Welcome message
 echo '::Gamestarter:: -> installation on ' $(date)
 ADDON_DIRECTORY=$1
-#ADDON_VERSION="OLE"
-ADDON_VERSION="LE8alpha"
+# ADDON_VERSION="OLE"
+# ADDON_VERSION="LE8alpha"
+ADDON_VERSION="XXX"
 
 # comprobamos si le ha llegado una ruta sino ponemos la de OLE por defecto
 if [ -z "$ADDON_DIRECTORY" ]; then
