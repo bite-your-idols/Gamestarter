@@ -29,14 +29,14 @@ if [ "$ADDON_VERSION" = "OLE" ]; then
 
 	# OLE
 	# install.sh ADDON_VERSION
-	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="xxx"/ADDON_VERSION="OLE"/' /exports/script.gamestarter/resources/bin/install.sh
+	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="xxx"/ADDON_VERSION="OLE"/' exports/script.gamestarter/resources/bin/install.sh
 
 	# retroarch_1.3.6(OLE)
-	mv /exports/script.gamestarter/resources/bin/retroarch_1.3.6 /exports/script.gamestarter/resources/bin/retroarch
-	rm /exports/script.gamestarter/resources/bin/retroarch_1.3.6_libreelec8
+	mv exports/script.gamestarter/resources/bin/retroarch_1.3.6 exports/script.gamestarter/resources/bin/retroarch
+	rm exports/script.gamestarter/resources/bin/retroarch_1.3.6_libreelec8
 
 	# seleccionar advanced launcher
-	rm /exports/script.gamestarter/resources/data/advancedemulatorlauncher.tar.gz
+	rm exports/script.gamestarter/resources/data/advancedemulatorlauncher.tar.gz
 
 	# dejar las libs necesarias: /lib/libbrcmEGL.so y /lib/libbrcmGLESv2.so para glupen64
 
@@ -44,22 +44,22 @@ else
 
 	# LE8alpha:
 	# install.sh ADDON_VERSION
-	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="xxx"/ADDON_VERSION="LE8alpha"/' /exports/script.gamestarter/resources/bin/install.sh
+	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="xxx"/ADDON_VERSION="LE8alpha"/' exports/script.gamestarter/resources/bin/install.sh
 
 	# retroarch_1.3.6_libreelec8
-	mv /exports/script.gamestarter/resources/bin/retroarch_1.3.6_libreelec8 /exports/script.gamestarter/resources/bin/retroarch
-	rm /exports/script.gamestarter/resources/bin/retroarch_1.3.6
+	mv exports/script.gamestarter/resources/bin/retroarch_1.3.6_libreelec8 exports/script.gamestarter/resources/bin/retroarch
+	rm exports/script.gamestarter/resources/bin/retroarch_1.3.6
 
 	# seleccionar advanced emulator launcher
-	rm /exports/script.gamestarter/resources/data/advancedlauncher.tar.gz
+	rm exports/script.gamestarter/resources/data/advancedlauncher.tar.gz
 
 	# quitar las libs
-	rm -rf /exports/script.gamestarter/lib
+	rm -rf exports/script.gamestarter/lib
 
 fi
 
 
 # crear el zip
-zip /exports/script.gamestarter script.gamestarter-$ADDON_VERSION.
+zip exports/script.gamestarter script.gamestarter-$ADDON_VERSION.
 
 echo "done!"
