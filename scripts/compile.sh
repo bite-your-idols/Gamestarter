@@ -75,7 +75,7 @@ fi
 
 
 # crear el zip
-cd exports && zip -r script.gamestarter-$ADDON_VERSION.zip . -i exports/script.gamestarter/ && cd ..
+cd exports && zip -r script.gamestarter-$ADDON_VERSION.zip . -i script.gamestarter/ && cd ..
 rm -rf exports/script.gamestarter/
 
 
