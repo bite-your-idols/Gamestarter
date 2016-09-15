@@ -8,15 +8,22 @@
 # crear los tar.gz de las carpetas de packages
 #################################################
 
-read -p "Are you sure? " -n 1 -r
+read -p "Do you want to make tar/zip packages (y/n)? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
 	# hacer un pack de carpeta para cada package y resources/data: 
 	# emulationstation.tar.gz | libretro-extra-cores.tar.gz | uae4arm.tar.gz
+	cd packages && tar -zcvf emulationstation.tar.gz emulationstation/ && cd ..
+	cd packages && tar -zcvf uae4arm.tar.gz uae4arm/ && cd ..
+	
 	# advancedemulatorlauncher.tar.gz | advancedlauncher.tar.gz | emulators.tar.gz | libretro-part1.tar.gz | libretro-part2.tar.gz | retroarch.tar.gz
 	# subir cada package actualizando el existente
-    tar czf packages/emulationstation2.tar.gz packages/emulationstation
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/emualtors.tar.gz emulators/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedemulatorlauncher.tar.gz advancedemulatorlauncher/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedlauncher.tar.gz advancedlauncher/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
+	
 fi
 
 
