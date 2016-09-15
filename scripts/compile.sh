@@ -89,7 +89,8 @@ case $response in
 	fi
 
 	# crear el zip
-	cd exports && zip -r script.gamestarter-$ADDON_VERSION.zip script.gamestarter/ && cd ..
+	TIMESTAMP=`date +%Y%m%d`
+	cd exports && zip -r script.gamestarter-$ADDON_VERSION-$TIMESTAMP.zip script.gamestarter/ && cd ..
 	rm -rf exports/script.gamestarter/
 
 esac
