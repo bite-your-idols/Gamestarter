@@ -12,11 +12,13 @@ read -p "Do you want to make tar/zip packages (y/n)? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
+	echo "Compilamos las carpetas de packages..."
 	# hacer un pack de carpeta para cada package y resources/data: 
 	# emulationstation.tar.gz | libretro-extra-cores.tar.gz | uae4arm.tar.gz
 	cd packages && tar -zcvf emulationstation.tar.gz emulationstation/ && cd ..
 	cd packages && tar -zcvf uae4arm.tar.gz uae4arm/ && cd ..
 	
+	echo "Compilamos las carpetas de data..."
 	# advancedemulatorlauncher.tar.gz | advancedlauncher.tar.gz | emulators.tar.gz | libretro-part1.tar.gz | libretro-part2.tar.gz | retroarch.tar.gz
 	# subir cada package actualizando el existente
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/emulators.tar.gz emulators/ && cd ..
@@ -25,14 +27,6 @@ then
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
 	
 fi
-
-
-
-
-
-
-
-
 
 
 #################################################
@@ -47,7 +41,7 @@ mkdir -p exports/script.gamestarter
 cp -R script.gamestarter exports/
 
 if [ "$ADDON_VERSION" = "OLE" ]; then
-
+	echo "Compilamos el addon para "$ADDON_VERSION" ..."
 	# OLE
 	# install.sh ADDON_VERSION
 	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="OLE"/' exports/script.gamestarter/resources/bin/install.sh
@@ -62,7 +56,7 @@ if [ "$ADDON_VERSION" = "OLE" ]; then
 	# dejar las libs necesarias: /lib/libbrcmEGL.so y /lib/libbrcmGLESv2.so para glupen64
 
 else
-
+	echo "Compilamos el addon para "$ADDON_VERSION" ..."
 	# LE8alpha:
 	# install.sh ADDON_VERSION
 	sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="LE8alpha"/' exports/script.gamestarter/resources/bin/install.sh
@@ -81,7 +75,7 @@ fi
 
 
 # crear el zip
-cd exports && zip -r script.gamestarter-$ADDON_VERSION.zip exports/script.gamestarter/ && cd ..
+cd exports && zip -r script.gamestarter-$ADDON_VERSION.zip . -i exports/script.gamestarter/ && cd ..
 rm -rf exports/script.gamestarter/
 
 
