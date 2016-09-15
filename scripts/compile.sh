@@ -28,7 +28,7 @@ case $response in
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedemulatorlauncher.tar.gz advancedemulatorlauncher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedlauncher.tar.gz advancedlauncher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/libretro-cores.tar.gz cores/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/libretro-cores.tar.gz libretro-cores/ && cd ..
 	cd packages && split -b 25M ../script.gamestarter/resources/data/libretro-cores.tar.gz "part"
         ;;
     # *)
