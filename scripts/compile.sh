@@ -19,7 +19,7 @@ then
 	
 	# advancedemulatorlauncher.tar.gz | advancedlauncher.tar.gz | emulators.tar.gz | libretro-part1.tar.gz | libretro-part2.tar.gz | retroarch.tar.gz
 	# subir cada package actualizando el existente
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/emualtors.tar.gz emulators/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/emulators.tar.gz emulators/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedemulatorlauncher.tar.gz advancedemulatorlauncher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedlauncher.tar.gz advancedlauncher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
@@ -81,7 +81,7 @@ fi
 
 
 # crear el zip
-zip -r exports/script.gamestarter-$ADDON_VERSION.zip exports/
+cd exports zip -r script.gamestarter-$ADDON_VERSION.zip exports/ && cd ..
 rm -rf exports/script.gamestarter/
 
 
