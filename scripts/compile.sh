@@ -10,8 +10,7 @@
 
 read -p "Do you want to make tar/zip packages (y/n)? " -n 1 -r
 echo    # (optional) move to a new line
-if [[ ! $REPLY =~ ^[Yy]$ ]]
-then
+if [[ ! $REPLY =~ ^[Yy]$ ]];then
 	echo "Compilamos las carpetas de packages..."
 	# hacer un pack de carpeta para cada package y resources/data: 
 	# emulationstation.tar.gz | libretro-extra-cores.tar.gz | uae4arm.tar.gz
@@ -25,7 +24,6 @@ then
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedemulatorlauncher.tar.gz advancedemulatorlauncher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedlauncher.tar.gz advancedlauncher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
-	
 fi
 
 
@@ -75,7 +73,7 @@ fi
 
 
 # crear el zip
-cd exports && zip -r script.gamestarter-$ADDON_VERSION.zip . -i script.gamestarter/ && cd ..
+cd exports && zip -r script.gamestarter-$ADDON_VERSION.zip . -i script.gamestarter && cd ..
 rm -rf exports/script.gamestarter/
 
 
