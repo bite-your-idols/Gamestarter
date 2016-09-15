@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_ROMs version="1">
+<launcher>
+  <id>13d4566ea34693ad198d66ed0afgameboy</id>
+  <m_name>Gameboy/Gameboy Color</m_name>
+  <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
+  <platform>Nintendo GameBoy</platform>
+  <rompath>/storage/emulators/roms/gb/</rompath>
+  <romext>gb|zip|gbc</romext>
+</launcher>
+</advanced_emulator_launcher_ROMs>

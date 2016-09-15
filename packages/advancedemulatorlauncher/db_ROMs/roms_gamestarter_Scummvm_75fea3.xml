@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_ROMs version="1">
+<launcher>
+  <id>75fea3bdd6309e7ec48e59523fee80ec</id>
+  <m_name>Scummvm</m_name>
+  <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
+  <platform>Unknown</platform>
+  <rompath>/storage/emulators/roms/</rompath>
+  <romext>sh</romext>
+</launcher>
+</advanced_emulator_launcher_ROMs>

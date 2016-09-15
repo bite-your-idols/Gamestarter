@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_ROMs version="1">
+<launcher>
+  <id>5f23df964fe0fc8dc8c42c68ecc8c9ff</id>
+  <m_name>NES</m_name>
+  <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
+  <platform>Nintendo NES</platform>
+  <rompath>/storage/emulators/roms/nes/</rompath>
+  <romext>nes</romext>
+</launcher>
+</advanced_emulator_launcher_ROMs>

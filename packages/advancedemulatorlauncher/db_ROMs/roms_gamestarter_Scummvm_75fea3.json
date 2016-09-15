@@ -1,0 +1,28 @@
+{
+ "8e89d775870a910e6f10393c7322f609":{
+  "altapp":"",
+  "altarg":"",
+  "filename":"/storage/emulators/roms/scummvm/Start SCUMMVM.sh",
+  "finished":false,
+  "id":"8e89d775870a910e6f10393c7322f609",
+  "m_genre":"Emulator",
+  "m_name":"Start SCUMMVM",
+  "m_plot":"",
+  "m_rating":"",
+  "m_studio":"",
+  "m_year":"",
+  "nointro_status":"None",
+  "s_banner":"",
+  "s_boxback":"",
+  "s_boxfront":"",
+  "s_cartridge":"",
+  "s_clearlogo":"",
+  "s_fanart":"/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/gamestarter/ports_fanart.jpg",
+  "s_flyer":"",
+  "s_manual":"",
+  "s_map":"",
+  "s_snap":"",
+  "s_title":"/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/gamestarter/ports.jpg",
+  "s_trailer":""
+ }
+}
