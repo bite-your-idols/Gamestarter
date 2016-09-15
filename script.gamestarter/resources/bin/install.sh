@@ -68,6 +68,7 @@ fi
 #copiar los packages de data a .config
 echo '::Gamestarter:: -> copying packages...'
 tar -xf $ADDON_DIRECTORY/resources/data/retroarch.tar.gz -C $CONFIG_DIRECTORY/ -xz
+mkdir $CONFIG_DIRECTORY/retroarch/cores/
 tar -xf $ADDON_DIRECTORY/resources/data/libretro-part1.tar.gz -C $CONFIG_DIRECTORY/retroarch/cores/ -xz
 tar -xf $ADDON_DIRECTORY/resources/data/libretro-part2.tar.gz -C $CONFIG_DIRECTORY/retroarch/cores/ -xz
 # tar -xf $ADDON_DIRECTORY/resources/data/libretro-part3.tar.gz -C $CONFIG_DIRECTORY/retroarch/cores/ -xz
