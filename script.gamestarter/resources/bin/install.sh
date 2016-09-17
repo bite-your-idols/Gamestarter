@@ -74,7 +74,8 @@ mkdir $CONFIG_DIRECTORY/retroarch/cores/
 # tar -xf $ADDON_DIRECTORY/resources/data/libretro-part1.tar.gz -C $CONFIG_DIRECTORY/retroarch/cores/ -xz
 # tar -xf $ADDON_DIRECTORY/resources/data/libretro-part2.tar.gz -C $CONFIG_DIRECTORY/retroarch/cores/ -xz
 cat $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz
-tar -xf $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz -C $CONFIG_DIRECTORY/retroarch/cores/ -xz
+tar -xf $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz -C $CONFIG_DIRECTORY/retroarch/ -xz
+mv $CONFIG_DIRECTORY/retroarch/libretro-cores  $CONFIG_DIRECTORY/retroarch/cores
 rm $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz
 # tar -xf $ADDON_DIRECTORY/resources/data/libretro-part3.tar.gz -C $CONFIG_DIRECTORY/retroarch/cores/ -xz
 # tar -xf $ADDON_DIRECTORY/resources/data/emulationstation.tar.gz -C $CONFIG_DIRECTORY/ -xz
