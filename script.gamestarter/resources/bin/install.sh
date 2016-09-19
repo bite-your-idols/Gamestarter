@@ -19,7 +19,7 @@ if [ -z "$ADDON_DIRECTORY" ]; then
 fi
 
 
-echo "::Gamestarter:: -> installing in Open/LibreELEC..."
+echo "::Gamestarter:: -> installing in Open/LibreELEC: " $ADDON_VERSION
 CONFIG_DIRECTORY="/storage/.config"
 ROOT_DIRECTORY="/storage"
  
