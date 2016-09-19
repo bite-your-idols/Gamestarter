@@ -7,7 +7,7 @@ ADDON_DIRECTORY=$1
 # ADDON_VERSION="OLE"
 # ADDON_VERSION="LE8alpha"
 #versionstart
-ADDON_VERSION="XXX"
+ADDON_VERSION="LE8alpha"
 #versionend
 
 # comprobamos si le ha llegado una ruta sino ponemos la de OLE por defecto
@@ -106,13 +106,13 @@ else
 	# ln -s $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher $CONFIG_DIRECTORY/advancedemulatorlauncher 
 	# wget --no-check-certificate -O $ROOT_DIRECTORY/plugin.program.advanced.emulator.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/plugin.program.advanced.emulator.launcher.tar.gz
 	# tar -xf $ROOT_DIRECTORY/plugin.program.advanced.emulator.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
-	wget --no-check-certificate -O $ROOT_DIRECTORY/advancedemulatorlauncher.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/plugin.program.advanced.emulator.launcher.tar.gz
+	wget --no-check-certificate -O $ROOT_DIRECTORY/advancedemulatorlauncher.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/plugin.program.advanced.emulator.launcher.zip
 	unzip $ROOT_DIRECTORY/advancedemulatorlauncher.zip -d $ROOT_DIRECTORY/.kodi/addons/
 	rm $ROOT_DIRECTORY/advancedemulatorlauncher.zip
 	mkdir -p $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher
 	tar -xf $ADDON_DIRECTORY/resources/data/advancedemulatorlauncher.tar.gz -C $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher -xz
 	mv -v $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/advancedemulatorlauncher/* $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/
-	rm $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/advancedemulatorlauncher
+	rm -rf $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/advancedemulatorlauncher
 fi
 
 
