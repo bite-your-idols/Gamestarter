@@ -415,7 +415,7 @@
 			<name>NES</name>
 			<category>default</category>
 			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-			<args>fceu "%rom%"</args>
+			<args>fceumm "%rom%"</args>
 			<rompath>/storage/emulators/roms/nes/</rompath>
 			<thumbpath>/storage/.config/advancedlauncher/thumbs/</thumbpath>
 			<fanartpath>/storage/.config/advancedlauncher/fanarts/</fanartpath>
@@ -456,7 +456,7 @@
 			<name>NeoGeo</name>
 			<category>default</category>
 			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-			<args>fba "%rom%"</args>
+			<args>fbalpha "%rom%"</args>
 			<rompath>/storage/emulators/roms/neogeo/</rompath>
 			<thumbpath>/storage/.config/advancedlauncher/thumbs/</thumbpath>
 			<fanartpath>/storage/.config/advancedlauncher/fanarts/</fanartpath>
