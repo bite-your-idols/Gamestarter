@@ -603,7 +603,7 @@
 			<fanartpath>/storage/.config/advancedlauncher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>bin|img</romext>
+			<romext>bin|img|pbp</romext>
 			<platform>Sony Playstation</platform>
 			<thumb>/storage/.config/advancedlauncher/systems/psx.jpg</thumb>
 			<fanart>/storage/.config/advancedlauncher/systems/psx_fanart.jpg</fanart>
