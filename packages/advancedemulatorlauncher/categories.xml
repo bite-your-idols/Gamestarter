@@ -898,7 +898,7 @@
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
   <args>pcsx_rearmed &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/psx/</rompath>
-  <romext>bin|img</romext>
+  <romext>bin|img|pbp</romext>
   <finished>False</finished>
   <minimize>False</minimize>
   <roms_base_noext></roms_base_noext>
