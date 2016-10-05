@@ -13,15 +13,19 @@ CONFIG_DIRECTORY="/storage/.config"
 # fi
 
 wget --no-check-certificate -O /storage/emulationstation.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulationstation.tar.gz
-tar -xf /storage/emulationstation.tar.gz -C /storage/.config/ -xz
+tar -xf /storage/emulationstation.tar.gz -C $CONFIG_DIRECTORY/ -xz
 rm /storage/emulationstation.tar.gz
 
-mv /storage/.config/emulationstation/emulationstation $ADDON_DIRECTORY/resources/bin/emulationstation
+mv $CONFIG_DIRECTORY/emulationstation/emulationstation $ADDON_DIRECTORY/resources/bin/emulationstation
 mkdir -p $ADDON_DIRECTORY/lib/
-mv /storage/.config/emulationstation/lib/* $ADDON_DIRECTORY/lib/
-rm -rf /storage/.config/emulationstation/lib/
+mv $CONFIG_DIRECTORY/emulationstation/lib/* $ADDON_DIRECTORY/lib/
+rm -rf $CONFIG_DIRECTORY/emulationstation/lib/
 
 chmod a+x $ADDON_DIRECTORY/resources/bin/emulationstation
+
+#para el scraper
+ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
+chmod a+x $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.sh
 
 #restauramos sus archivos si los tenia
 # if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg" ]
