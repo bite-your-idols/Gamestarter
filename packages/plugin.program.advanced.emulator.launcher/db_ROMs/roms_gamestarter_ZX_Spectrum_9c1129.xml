@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_ROMs version="1">
+<launcher>
+  <id>9c11294859088cb34de2bf2ac5b0f678</id>
+  <m_name>ZX Spectrum</m_name>
+  <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
+  <platform>Unknown</platform>
+  <rompath>/storage/emulators/roms/zxspectrum/</rompath>
+  <romext>tzx|Z80|z80</romext>
+</launcher>
+</advanced_emulator_launcher_ROMs>
