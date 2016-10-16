@@ -25,9 +25,10 @@ case $response in
 	# advancedemulatorlauncher.tar.gz | advancedlauncher.tar.gz | emulators.tar.gz | libretro-part1.tar.gz | libretro-part2.tar.gz | retroarch.tar.gz
 	# subir cada package actualizando el existente
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/emulators.tar.gz emulators/ && cd ..
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedemulatorlauncher.tar.gz advancedemulatorlauncher/ && cd ..
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/advancedlauncher.tar.gz advancedlauncher/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz plugin.program.advanced.emulator.launcher/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz plugin.program.advanced.launcher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/frontend-assets.tar.gz frontend-assets/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/libretro-cores.tar.gz libretro-cores/ && cd ..
 	cd script.gamestarter/resources/data/ && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ../../../
 	rm script.gamestarter/resources/data/libretro-cores.tar.gz
@@ -51,47 +52,47 @@ case $response in
     [yY][eE][sS]|[yY]) 
 	
 	echo "compilamos los zips..."
-	mkdir -p exports/script.gamestarter
-	cp -R script.gamestarter exports/
+	mkdir -p releases/script.gamestarter
+	cp -R script.gamestarter releases/
 
 	if [ "$ADDON_VERSION" = "OLE" ]; then
 		echo "Compilamos el addon para "$ADDON_VERSION" ..."
 		# OLE
 		# install.sh ADDON_VERSION
-		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="OLE"/' exports/script.gamestarter/resources/bin/install.sh
+		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="OLE"/' releases/script.gamestarter/resources/bin/install.sh
 
 		# retroarch_1.3.6(OLE)
-		mv exports/script.gamestarter/resources/bin/retroarch_1.3.6 exports/script.gamestarter/resources/bin/retroarch
-		rm exports/script.gamestarter/resources/bin/retroarch_1.3.6_libreelec8
+		mv releases/script.gamestarter/resources/bin/retroarch_1.3.6 releases/script.gamestarter/resources/bin/retroarch
+		rm releases/script.gamestarter/resources/bin/retroarch_1.3.6_LE8
 
 		# seleccionar advanced launcher
-		rm exports/script.gamestarter/resources/data/advancedemulatorlauncher.tar.gz
+		rm releases/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz
 
 		# dejar las libs necesarias: /lib/libbrcmEGL.so y /lib/libbrcmGLESv2.so para glupen64
-		rm exports/script.gamestarter/lib/libs.txt
+		rm releases/script.gamestarter/lib/libs.txt
 
 	else
 		echo "Compilamos el addon para "$ADDON_VERSION" ..."
 		# LE8alpha:
 		# install.sh ADDON_VERSION
-		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="LE8alpha"/' exports/script.gamestarter/resources/bin/install.sh
+		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="LE8"/' releases/script.gamestarter/resources/bin/install.sh
 
-		# retroarch_1.3.6_libreelec8
-		mv exports/script.gamestarter/resources/bin/retroarch_1.3.6_libreelec8 exports/script.gamestarter/resources/bin/retroarch
-		rm exports/script.gamestarter/resources/bin/retroarch_1.3.6
+		# retroarch_1.3.6_LE8
+		mv releases/script.gamestarter/resources/bin/retroarch_1.3.6_LE8 releases/script.gamestarter/resources/bin/retroarch
+		rm releases/script.gamestarter/resources/bin/retroarch_1.3.6
 
 		# seleccionar advanced emulator launcher
-		rm exports/script.gamestarter/resources/data/advancedlauncher.tar.gz
+		rm releases/script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz
 
 		# quitar las libs
-		rm -rf exports/script.gamestarter/lib
+		rm -rf releases/script.gamestarter/lib
 
 	fi
 
 	# crear el zip
 	TIMESTAMP=`date +%Y%m%d`
-	cd exports && zip -r script.gamestarter-$ADDON_VERSION-$TIMESTAMP.zip script.gamestarter/ && cd ..
-	rm -rf exports/script.gamestarter/
+	cd releases && zip -r script.gamestarter-$ADDON_VERSION-$TIMESTAMP.zip script.gamestarter/ && cd ..
+	rm -rf releases/script.gamestarter/
 
 esac
 
