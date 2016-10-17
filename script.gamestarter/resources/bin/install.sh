@@ -79,8 +79,8 @@ chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Dinothawr.sh
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Doom.sh
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Quake.sh
 
-#acceso directo de retroarch en .config
-ln -s  $ROOT_DIRECTORY/.config/retroarch/ $CONFIG_DIRECTORY/retroarch
+#acceso directo de retroarch en .config que es donde se genera por default
+ln -s   $CONFIG_DIRECTORY/retroarch $ROOT_DIRECTORY/.config/retroarch
 
 if [ "$ADDON_VERSION" = "OLE" ]; then
 	# Open/LibreELEC
