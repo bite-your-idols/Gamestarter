@@ -30,10 +30,12 @@ case $1 in
 		
 		# acceso directo a la carpeta de config default
 		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
+		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
 
 		#para el scraper
-		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
-		chmod a+x $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.sh
+		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/ $ADDON_DIRECTORY/resources/bin/
+		rm -rf $CONFIG_DIRECTORY/emulationstation/sselph-scraper
+		chmod a+x $ADDON_DIRECTORY/resources/bin/scraper.sh
 
 		#restauramos sus archivos si los tenia
 		# if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg" ]
