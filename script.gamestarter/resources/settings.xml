@@ -3,24 +3,21 @@
 	<category label="Gamestarter">
         	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
         	<setting type="sep"/>
-        	<setting label="Install EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_es.py, SetLocation)"/>
-        	<setting id="frontend" type="select" label="Select your default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
-        	<setting type="sep"/>
-        	<setting label="Install UAE4RM emulator" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_uae.py, SetLocation)"/>
-        	<setting id="amiga" type="select" label="Default Amiga Emulator" values="libretro|uae4arm" default="libretro" />
-        	<setting type="sep"/>
-        	<setting label="Install Internet Archive ROM Launcher" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.py, SetLocation)"/>
-        	<setting label="Install GameMaker Pi ports" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.py, SetLocation)"/>
-        	<setting type="sep"/>
-        	<setting label="Update Gamestarter" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/update.py, SetLocation)"/>
+            <setting label="Backup your configuration" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/backup.py, SetLocation)"/>
+            <setting label="Restore your configuration" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/restore.py, SetLocation)"/>
+            <setting type="sep"/>
+            <setting label="Update Gamestarter" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/update.py, SetLocation)"/>
         </category>
-        <!--<category label="Experimental">
-        	<setting label="Download AdvancedLauncher" type="action" action="RunScript(my.addon.id, downloadreport)"/>
-        	<setting label="Install Internet Archive ROM Launcher" type="action" action="System.Exec(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.sh)"/>
-        	<setting label="Use Libretro Amiga Core" type="action" action="RunScript(my.addon.id, downloadreport)"/>
-        	<setting id="amiga" type="select" label="Select your Amiga Emulator" values="UAE4ARM|Libretro-uae4arm" default="UAE4ARM" />
-    		<setting label="Use Mame2010 core" type="action" action="RunScript(my.addon.id, downloadreport)"/>
-    		<setting label="Change Splashscreen" type="action" action="RunScript(my.addon.id, downloadreport)"/>
-        	<setting label="Remove addon" type="action" action="RunScript(my.addon.id, downloadreport)"/>
-    	</category>-->
+        <category label="Emulationstation">
+        	<setting label="Install EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_es.py, SetLocation)"/>
+            <setting id="frontend" type="select" label="Select your default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
+            <setting label="Auto-scrape all systems" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/scrape.py, SetLocation)"/>
+    	</category>
+        <category label="Extras">
+            <setting label="Install UAE4RM emulator" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_uae.py, SetLocation)"/>
+            <setting id="amiga" type="select" label="Default Amiga Emulator" values="libretro|uae4arm" default="libretro" />
+            <setting type="sep"/>
+            <setting label="Install Internet Archive ROM Launcher" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.py, SetLocation)"/>
+            <setting label="Install GameMaker Pi ports (deprecated)" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.py, SetLocation)"/>
+        </category>
 </settings>
