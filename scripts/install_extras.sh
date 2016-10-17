@@ -27,6 +27,9 @@ case $1 in
 		rm -rf $CONFIG_DIRECTORY/emulationstation/lib/
 
 		chmod a+x $ADDON_DIRECTORY/resources/bin/emulationstation
+		
+		# acceso directo a la carpeta de config default
+		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
 
 		#para el scraper
 		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
