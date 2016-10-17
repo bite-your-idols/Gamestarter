@@ -23,6 +23,9 @@ rm -rf $CONFIG_DIRECTORY/emulationstation/lib/
 
 chmod a+x $ADDON_DIRECTORY/resources/bin/emulationstation
 
+#aaceso directo para el directorio de config default
+ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
+
 #para el scraper
 ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
 chmod a+x $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.sh
