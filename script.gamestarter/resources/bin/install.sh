@@ -79,6 +79,9 @@ chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Dinothawr.sh
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Doom.sh
 chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Quake.sh
 
+#acceso directo de retroarch en .config
+ln -s  $ROOT_DIRECTORY/.config/retroarch/ $CONFIG_DIRECTORY/retroarch
+
 if [ "$ADDON_VERSION" = "OLE" ]; then
 	# Open/LibreELEC
 	# instalar advanced launcher a manopla, hay que cambiar por advanced emulator launcher para kodi 17
