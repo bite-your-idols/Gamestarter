@@ -21,8 +21,7 @@ xbmcgui.Dialog().ok("Gamestarter", "Scraping all your Emulationstation systems, 
 script_file = os.path.realpath(__file__)
 directory = os.path.dirname(script_file)
 
-os.system("wget --no-check-certificate -O /storage/scraper.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/scraper.sh && sh /storage/scraper.sh all &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log")
-os.system("rm /storage/scraper.sh")
+os.system("sh /storage/.kodi/addons/script.gamestarter/resources/bin/scraper.sh all &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log")
 
 xbmcgui.Dialog().ok("Gamestarter", "Scraping done.")
 
