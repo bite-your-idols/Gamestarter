@@ -14,7 +14,7 @@ directory = os.path.dirname(script_file)
 # os.system("sh  /storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.sh")
 #os.system("sh  https://github.com/bite-your-idols/gamemaker-pi/raw/master/gamemaker-gamestarter.sh")
 
-os.system("wget --no-check-certificate -O /storage/install-gm.sh https://github.com/bite-your-idols/gamemaker-pi/raw/master/gamemaker-gamestarter.sh && sh /storage/install-gm.sh &> /storage/.config/gamestarter.log")
+os.system("wget --no-check-certificate -O /storage/install-gm.sh https://github.com/bite-your-idols/gamemaker-pi/raw/master/gamemaker-gamestarter.sh && sh /storage/install-gm.sh &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log")
 os.system("rm /storage/install-gm.sh")
 
 xbmcgui.Dialog().ok("Gamestarter", "GameMaker Pi ports installed, please reboot your Raspberry Pi.")
