@@ -13,7 +13,7 @@ directory = os.path.dirname(script_file)
 
 #os.system("sh  https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/install_iarl.sh")
 
-os.system("wget --no-check-certificate -O /storage/install_extras.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/install_extras.sh && sh /storage/install_extras.sh iarl &> /storage/.config/gamestarter.log")
+os.system("wget --no-check-certificate -O /storage/install_extras.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/install_extras.sh && sh /storage/install_extras.sh iarl &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log")
 os.system("rm /storage/install_extras.sh")
 
 xbmcgui.Dialog().ok("Gamestarter", "IARL addon downloaded, please install from zip located in Storage folder")
