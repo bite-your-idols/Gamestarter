@@ -18,7 +18,6 @@ if [ -z "$ADDON_DIRECTORY" ]; then
 	# echo "$ADDON_DIRECTORY"
 fi
 
-
 echo "::Gamestarter:: -> installing in Open/LibreELEC: " $ADDON_VERSION
 # CONFIG_DIRECTORY="/storage/.config"
 USERADDON_DIRECTORY="/storage/.kodi/userdata/addon_data"
@@ -35,7 +34,6 @@ echo 'dtparam=audio=on' >> /flash/config.txt
 #	echo 'dtparam=audio=on' >> /flash/config.txt
 # fi
 
-
 # hacer ejecutables los scripts y binarios
 echo '::Gamestarter:: -> script permissions...'
 chmod a+x $ADDON_DIRECTORY/resources/bin/gamestarter.sh
@@ -45,11 +43,11 @@ chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch
 # chmod a+x $ADDON_DIRECTORY/resources/bin/uae4arm
 
 #comprobamos si hay archivos de configs anteriores para no borrarlos en las actualizaciones
-if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch.cfg" ]
-then
-	mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg
-	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_BACKUP.cfg
-fi
+# if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch.cfg" ]
+# then
+# 	mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg
+# 	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_BACKUP.cfg
+# fi
 
 # if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers.xml" ]
 # then
@@ -111,13 +109,13 @@ fi
 
 
 #antes de terminar comprobamos de nuevo si habia archivos y los restauramos guardando los nuevos
-if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg" ]
-then
-	mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_gamestarter.cfg
-	mv $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg $CONFIG_DIRECTORY/retroarch/retroarch.cfg
-	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_gamestarter.cfg
-	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_BACKUP.cfg $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg
-fi
+# if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg" ]
+# then
+# 	mv $CONFIG_DIRECTORY/retroarch/retroarch.cfg $CONFIG_DIRECTORY/retroarch/retroarch_gamestarter.cfg
+# 	mv $CONFIG_DIRECTORY/retroarch/retroarch_BACKUP.cfg $CONFIG_DIRECTORY/retroarch/retroarch.cfg
+# 	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_gamestarter.cfg
+# 	mv $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options_BACKUP.cfg $CONFIG_DIRECTORY/retroarch/config/retroarch-core-options.cfg
+# fi
 
 #if [ -f "$CONFIG_DIRECTORY/advancedlauncher/launchers_BACKUP.xml" ]
 #then
