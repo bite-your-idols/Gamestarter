@@ -17,13 +17,22 @@ then
    # echo "Gamestarter is up to date"
    kodi-send --action=Notification"(Gamestarter,Gamestarter is up to date,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 else
-   # echo "There is a new version you can download"
-   kodi-send --action=Notification"(Gamestarter,Updating...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+	kodi-send --action=Notification"(Gamestarter,Updating...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+	if [[ $VERSION_LOCAL == "2.4" ]] 
+	then
+		mv /storage/.config/retroarch /storage/.kodi/userdata/addon_data/script.gamestarter
+		mv /storage/.config/emulationstation /storage/.kodi/userdata/addon_data/script.gamestarter
+		rm /storage/.kodi/userdata/addon_data/plgin.program.advanced.launcher/launchers.xml
+		mv /storage/.config/advancedlauncher/launchers.xml /storage/.kodi/userdata/addon_data/plgin.program.advanced.launcher/launchers.xml
+		rm /storage/.emulationstation
+		rm /storage/.config/advancedlauncher
+	fi
+
    #sacar solo los valores de la version p.e. "2.3"
    #VERSION_UPDATE=$(head -c 4 $ADDON_DIRECTORY/changelog_latest.txt) 
    #VERSION_UPDATE=$(tail -c 5 $VERSION_UPDATE)
    VERSION_UPDATE=${VERSION_ONLINE:1:3}
-   #sacar la veriosnd el addon OLE/LE8alpha -> habria que meterla en installed al instalar
+   #sacar la veriosnd el addon OLE/LE8alpha
    ADDON_VERSION=$(head -c 8 $ADDON_DIRECTORY/resources/bin/installed)
    #asi sabemos que version del zip descargar
    echo "VERSION DEL ADDON: " $ADDON_VERSION
@@ -33,7 +42,6 @@ else
    rm /storage/gamestarter-update.zip
    # movemos la carpeta del addon nueva y nos aseguramos que sobreescribe lo que tiene que sobreescribir
    cp -r /storage/gamestarter-update/script.gamestarter /storage/.kodi/addons/
-   # habria que copiar las carpetas y archivos en su sitio
    
    #forzamos la reinstalacion al iniciar el addon
    rm $ADDON_DIRECTORY/resources/bin/installed
