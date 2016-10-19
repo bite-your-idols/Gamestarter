@@ -33,9 +33,12 @@ case $1 in
 		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
 
 		#para el scraper
-		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/ $ADDON_DIRECTORY/resources/bin/
+		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.sh $ADDON_DIRECTORY/resources/bin/
+		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.py $ADDON_DIRECTORY/resources/bin/
+		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper $ADDON_DIRECTORY/resources/bin/
 		rm -rf $CONFIG_DIRECTORY/emulationstation/sselph-scraper
 		chmod a+x $ADDON_DIRECTORY/resources/bin/scraper.sh
+		chmod a+x $ADDON_DIRECTORY/resources/bin/scraper
 
 		#restauramos sus archivos si los tenia
 		# if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg" ]

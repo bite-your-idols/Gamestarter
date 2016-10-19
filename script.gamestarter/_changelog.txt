@@ -1,0 +1,77 @@
+v2.5.0 (2016-10-20)
+- Configuraton files backup/restore feature.
+- Change configs path from /storage/.config to userdata to easily backup options and remove addon.
+- Emulationstation additional scraper included than can be used from addon settings.
+- Advanced Emulator Launcher updated to v0.9.3
+- fbalpha and fceumm cores renamed.
+- frontend images updated.
+- pbp/PBP extension included for Emulationstation and AL/AEL.
+- Minor updates, bug fixes and code debugging.
+
+v2.4.0 (2016-09-14)
+- Addon updater from settings.
+- Minor updates, bug fixes and code debugging.
+
+v2.3.0 (2016-09-10)
+- Improve gamestarter.log.
+- AEL as frontend for LE8 alpha version.
+- SCUMMVM libretro core included.
+- UAE4ARM as an optional installaton.
+- Change github directories structure.
+- Minor updates, bug fixes and code debugging.
+
+v2.2.0 (2016-09-01)
+- EmulationStation as an optional Frontend Installation.
+- Glupen64 core included for Nintendo 64.
+- Remove some packages in order to make addon lighter and easier to update.
+- Minor updates, bug fixes and code debugging.
+
+v2.1.1 (2016-08-07)
+- Debug log included
+- RetroArch playlist bug fix
+- Minor updates, bug fixes and code debugging
+
+v2.1.0 (2016-07-27)
+- RetroArch 1.3.6
+- CaveStory, Quake and Doom ports included.
+- mame2003-libretro core update including Hiscores and config data for settings.
+- UAE4ARM-libretro core configs
+- New crt-pi shader for RetroArch
+- Minor updates, bug fixes and code debugging
+
+v2.0.4 (2016-07-15)
+- IARL path to correct zip download.
+- Amiga emulator selection in settings
+- RetroArch updated to 1.3.4 for Open/LibreELEC version
+
+v2.0.3 (2016-06-17)
+- Exit Kodi confirmation can be toggled in settings
+- Minor updates, bug fixes and code debugging
+
+v2.0.2 (2016-05-26)
+- Kodi 17 alpha version
+- minor updates, bug fixes and code debugging
+
+v2.0.1 (2016-05-22)
+- Downgrade RetroArch Version (1.3.2)
+- Included "Check for updates" option in settings
+
+v2.0.0 (2016-05-17)
+- All-in-One addon structure
+- Addon settings with default frontend selection between RetroArch and EmulationStation
+- GameMaker Pi ports and IARL addon optional installation from addon settings
+- Change all config files and directories to /storage/.config/
+
+v0.0.3:
+- Emulationstation (optional/OE7+)
+- Installation menu and optional features
+- Installer addon
+- code debugging
+
+v0.0.2:
+- IARL
+- Launch "adf" Amiga roms
+- code debugging
+
+v0.0.1:
+- Initial Release
