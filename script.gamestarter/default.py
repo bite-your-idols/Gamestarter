@@ -12,7 +12,7 @@ directory = os.path.dirname(script_file)
 
 # primero habria que comprobar si es la priemra vez que se lanza entonces hacer la instalacion:
 if os.path.isfile(directory+"/resources/bin/installed") == False: 
- 	xbmcgui.Dialog().ok(addonname, "This is the first time you run Gamestarter. We are going to make a first-time-setup, please do not switch off your Raspberry Pi or network connection.")
+ 	xbmcgui.Dialog().ok(addonname, "This is the first time you run Gamestarter. We are going to make a first-time-setup, please do not switch off your Raspberry Pi.")
  	# os.system("sh "+directory+"/resources/bin/install.sh "+directory)
  	os.system("mkdir /storage/.kodi/userdata/addon_data/script.gamestarter && sh "+directory+"/resources/bin/install.sh "+directory+" &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log")
  	xbmcgui.Dialog().ok(addonname, "Done. Copy your roms, reboot and enjoy!")
