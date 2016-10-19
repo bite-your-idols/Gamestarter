@@ -32,6 +32,8 @@ case $response in
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/libretro-cores.tar.gz libretro-cores/ && cd ..
 	cd script.gamestarter/resources/data/ && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ../../../
 	rm script.gamestarter/resources/data/libretro-cores.tar.gz
+	cp packages/plugin.program.advanced.emulator.launcher.zip script.gamestarter/resources/data
+	cp packages/advanced-launcher-2.5.8.zip script.gamestarter/resources/data
         ;;
     # *)
         # do_something_else
@@ -67,6 +69,7 @@ case $response in
 
 		# seleccionar advanced launcher
 		rm releases/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz
+		rm releases/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.zip
 
 		# dejar las libs necesarias: /lib/libbrcmEGL.so y /lib/libbrcmGLESv2.so para glupen64
 		rm releases/script.gamestarter/lib/libs.txt
@@ -83,6 +86,7 @@ case $response in
 
 		# seleccionar advanced emulator launcher
 		rm releases/script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz
+		rm releases/script.gamestarter/resources/data/advanced-launcher-2.5.8.zip
 
 		# quitar las libs
 		rm -rf releases/script.gamestarter/lib
