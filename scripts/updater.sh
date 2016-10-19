@@ -22,10 +22,10 @@ else
 	then
 		mv /storage/.config/retroarch /storage/.kodi/userdata/addon_data/script.gamestarter
 		mv /storage/.config/emulationstation /storage/.kodi/userdata/addon_data/script.gamestarter
-		rm /storage/.kodi/userdata/addon_data/plgin.program.advanced.launcher/launchers.xml
-		mv /storage/.config/advancedlauncher/launchers.xml /storage/.kodi/userdata/addon_data/plgin.program.advanced.launcher/launchers.xml
+		rm /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/launchers.xml
+		mv /storage/.config/advancedlauncher/launchers.xml /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/launchers.xml
 		rm /storage/.emulationstation
-		rm /storage/.config/advancedlauncher
+		rm -rf /storage/.config/advancedlauncher
 	fi
 
    #sacar solo los valores de la version p.e. "2.3"
