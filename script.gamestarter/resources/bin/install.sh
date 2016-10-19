@@ -67,29 +67,20 @@ ln -s   $CONFIG_DIRECTORY/retroarch $ROOT_DIRECTORY/.config/retroarch
 
 if [ "$ADDON_VERSION" = "OLE" ]; then
 	# Open/LibreELEC
-	# instalar advanced launcher a manopla, hay que cambiar por advanced emulator launcher para kodi 17
 	echo '::Gamestarter:: -> installing advanced launcher...'
 	tar -xf $ADDON_DIRECTORY/resources/data/plugin.program.advanced.launcher.tar.gz -C $USERADDON_DIRECTORY/ -xz
-	# ln -s $CONFIG_DIRECTORY/advancedlauncher/ $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.launcher
-	# wget --no-check-certificate -O $ROOT_DIRECTORY/advanced.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/advanced-launcher-2.5.8.tar.gz
-	wget --no-check-certificate -O $ROOT_DIRECTORY/advancedlauncher.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/advanced-launcher-2.5.8.zip
-	# tar -xf $ROOT_DIRECTORY/advanced.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
-	unzip -o $ROOT_DIRECTORY/advancedlauncher.zip -d $ROOT_DIRECTORY/.kodi/addons/
-	rm $ROOT_DIRECTORY/advancedlauncher.zip
+	# wget --no-check-certificate -O $ROOT_DIRECTORY/advancedlauncher.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/advanced-launcher-2.5.8.zip
+	# unzip -o $ROOT_DIRECTORY/advancedlauncher.zip -d $ROOT_DIRECTORY/.kodi/addons/
+	unzip -o $ADDON_DIRECTORY/resources/data/advanced-launcher-2.5.8.zip -d $ROOT_DIRECTORY/.kodi/addons/
+	# rm $ROOT_DIRECTORY/advancedlauncher.zip
 else
 	# LibreELEC 8 alpha
-	# instalar advanced emulator launcher para kodi 17
-	echo '::Gamestarter:: -> installing advanced emulator launcher...'
-	# ln -s $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher $CONFIG_DIRECTORY/advancedemulatorlauncher 
-	# wget --no-check-certificate -O $ROOT_DIRECTORY/plugin.program.advanced.emulator.launcher.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/plugin.program.advanced.emulator.launcher.tar.gz
-	# tar -xf $ROOT_DIRECTORY/plugin.program.advanced.emulator.launcher.tar.gz -C $ROOT_DIRECTORY/.kodi/addons/ -xz
-	wget --no-check-certificate -O $ROOT_DIRECTORY/advancedemulatorlauncher.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/plugin.program.advanced.emulator.launcher-0.9.3.zip
-	unzip $ROOT_DIRECTORY/advancedemulatorlauncher.zip -d $ROOT_DIRECTORY/.kodi/addons/
-	rm -o $ROOT_DIRECTORY/advancedemulatorlauncher.zip
-	# mkdir -p $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher
+	# echo '::Gamestarter:: -> installing advanced emulator launcher...'
+	# wget --no-check-certificate -O $ROOT_DIRECTORY/advancedemulatorlauncher.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/plugin.program.advanced.emulator.launcher-0.9.3.zip
+	# unzip $ROOT_DIRECTORY/advancedemulatorlauncher.zip -d $ROOT_DIRECTORY/.kodi/addons/
+	unzip -o $ADDON_DIRECTORY/resources/data/plugin.program.advanced.emulator.launcher.zip -d $ROOT_DIRECTORY/.kodi/addons/
+	# rm $ROOT_DIRECTORY/advancedemulatorlauncher.zip
 	tar -xf $ADDON_DIRECTORY/resources/data/plugin.program.advanced.emulator.launcher.tar.gz -C $USERADDON_DIRECTORY/ -xz
-	# mv -v $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/advancedemulatorlauncher/* $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/
-	# rm -rf $ROOT_DIRECTORY/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/advancedemulatorlauncher
 fi
 
 touch $ADDON_DIRECTORY/resources/bin/installed
