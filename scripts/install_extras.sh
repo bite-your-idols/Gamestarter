@@ -50,6 +50,7 @@ case $1 in
 		# fi
 
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		echo "Emulationstation Installed."
   ;;
   "iarl")  
      	# IARL addon installation 
@@ -68,6 +69,7 @@ case $1 in
 		# rm /storage/iarl.tar.gz
 
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		echo "IARL Installed."
   ;;
    "uae4arm")  
      	# Script for UAE4ARM emulator installation 
@@ -85,5 +87,6 @@ case $1 in
 		chmod a+x $ADDON_DIRECTORY/resources/bin/uae4arm
 
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		echo "UAE4ARM Installed."
   ;;
 esac
