@@ -3,10 +3,10 @@ import os.path
 import xbmcgui
 # import sys
 
-xbmcgui.Dialog().ok("Gamestarter", "Making a  backup of your configuration files, please wait...")
+xbmcgui.Dialog().ok("Gamestarter", "You are going to backup your RetroArch, EmulationStation and Advanced(Emulator)Launcher configuration files to /storage/backup.")
 
-script_file = os.path.realpath(__file__)
-directory = os.path.dirname(script_file)
+#script_file = os.path.realpath(__file__)
+#directory = os.path.dirname(script_file)
 
 os.system("sh /storage/.kodi/addons/script.gamestarter/resources/bin/backup.sh &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log")
 
