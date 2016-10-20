@@ -50,8 +50,8 @@ echo '::Gamestarter:: -> copying packages...'
 tar -xf $ADDON_DIRECTORY/resources/data/retroarch.tar.gz -C $CONFIG_DIRECTORY/ -xz
 # mkdir $CONFIG_DIRECTORY/retroarch/cores/
 cat $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz
-tar -xf $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz -C $CONFIG_DIRECTORY/retroarch/ -xz
-mv $CONFIG_DIRECTORY/retroarch/libretro-cores $CONFIG_DIRECTORY/retroarch/cores
+tar -xf $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz -C $ADDON_DIRECTORY/resources/bin/ -xz
+# mv $CONFIG_DIRECTORY/retroarch/libretro-cores $CONFIG_DIRECTORY/retroarch/cores
 rm $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz
 # tar -xf $ADDON_DIRECTORY/resources/data/emulationstation.tar.gz -C $CONFIG_DIRECTORY/ -xz
 tar -xf $ADDON_DIRECTORY/resources/data/emulators.tar.gz -C $ROOT_DIRECTORY -xz
