@@ -50,6 +50,7 @@ else
 		# cp -ar $CONFIG_DIRECTORY/retroarch/shaders $BACKUP_DIRECTORY/script.gamestarter/retroarch
 	# fi
 	
+	mkdir -p $BACKUP_DIRECTORY/script.gamestarter/retroarch
 	cp -ar $CONFIG_DIRECTORY/retroarch $BACKUP_DIRECTORY/script.gamestarter
 
 	if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems.cfg" ]
