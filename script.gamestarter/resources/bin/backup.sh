@@ -21,14 +21,14 @@ then
 		if [ -f "$CONFIG_DIRECTORY/plugin.program.advanced.launcher/launchers.xml" ]
 		then
 			cp -rf $CONFIG_DIRECTORY/plugin.program.advanced.launcher $USERADDON_DIRECTORY
-			rm -rf $CONFIG_DIRECTORY/plugin.program.advanced.launcher $USERADDON_DIRECTORY
+			rm -rf $CONFIG_DIRECTORY/plugin.program.advanced.launcher
 			echo '::Gamestarter:: -> restore AL' 
 		fi
 
 		if [ -f "$CONFIG_DIRECTORY/plugin.program.advanced.emulator.launcher/categories.xml" ]
 		then
 			cp -rf $CONFIG_DIRECTORY/plugin.program.advanced.emulator.launcher $USERADDON_DIRECTORY
-			rm -rf $CONFIG_DIRECTORY/plugin.program.advanced.emulator.launcher $USERADDON_DIRECTORY
+			rm -rf $CONFIG_DIRECTORY/plugin.program.advanced.emulator.launcher
 			echo '::Gamestarter:: -> restore AEL'
 		fi
 		echo '::Gamestarter:: -> backup restored.'
