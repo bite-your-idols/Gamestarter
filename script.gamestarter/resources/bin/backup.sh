@@ -41,14 +41,16 @@ then
 else
 	#kodi-send --action=Notification"(Gamestarter,Making backup of your config files,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 	#comprobamos si hay archivos de configs anteriores para no borrarlos en las actualizaciones
-	if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch.cfg" ]
-	then
-		mkdir -p $BACKUP_DIRECTORY/script.gamestarter/retroarch
-		cp $CONFIG_DIRECTORY/retroarch/retroarch.cfg $BACKUP_DIRECTORY/script.gamestarter/retroarch/retroarch.cfg
-		cp -ar $CONFIG_DIRECTORY/retroarch/config $BACKUP_DIRECTORY/script.gamestarter/retroarch
-		cp -ar $CONFIG_DIRECTORY/retroarch/autoconfig $BACKUP_DIRECTORY/script.gamestarter/retroarch
-		cp -ar $CONFIG_DIRECTORY/retroarch/shaders $BACKUP_DIRECTORY/script.gamestarter/retroarch
-	fi
+	# if [ -f "$CONFIG_DIRECTORY/retroarch/retroarch.cfg" ]
+	# then
+		# mkdir -p $BACKUP_DIRECTORY/script.gamestarter/retroarch
+		# cp $CONFIG_DIRECTORY/retroarch/retroarch.cfg $BACKUP_DIRECTORY/script.gamestarter/retroarch/retroarch.cfg
+		# cp -ar $CONFIG_DIRECTORY/retroarch/config $BACKUP_DIRECTORY/script.gamestarter/retroarch
+		# cp -ar $CONFIG_DIRECTORY/retroarch/autoconfig $BACKUP_DIRECTORY/script.gamestarter/retroarch
+		# cp -ar $CONFIG_DIRECTORY/retroarch/shaders $BACKUP_DIRECTORY/script.gamestarter/retroarch
+	# fi
+	
+	cp -ar $CONFIG_DIRECTORY/retroarch $BACKUP_DIRECTORY/script.gamestarter
 
 	if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems.cfg" ]
 	then
