@@ -6,31 +6,33 @@ echo '::Gamestarter:: -> launching on' $(date) >> /storage/.kodi/userdata/addon_
 # path to addon
 DIR="/storage/.kodi/addons/script.gamestarter"
 CONFIG_FILE="/storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/retroarch.cfg"
-LIBRETRO_DIR="/storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/cores"
+# LIBRETRO_DIR="/storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/cores"
+LIBRETRO_DIR=$DIR"/resources/bin/libretro-cores"
 AMIGA_TEMP_FILE=$DIR/resources/bin/launchTemp.uae
+LOG_FILE=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
 
 # Stop KODI
-echo '::Gamestarter:: -> stop kodi...' >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+echo '::Gamestarter:: -> stop kodi...' >> $LOG_FILE
 systemctl stop kodi
 
 # Enable ALSA
-echo '::Gamestarter:: -> enable alsa...' >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+echo '::Gamestarter:: -> enable alsa...' >>  $LOG_FILE
 modprobe snd_bcm2835
 
 # Launch emulator
-echo '::Gamestarter:: -> launch' $1 >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+echo '::Gamestarter:: -> launch' $1 >>  $LOG_FILE
 case $1 in
   "retroarch")  
-      $DIR/resources/bin/retroarch -c $CONFIG_FILE --menu &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+      $DIR/resources/bin/retroarch -c $CONFIG_FILE --menu &>  $LOG_FILE
   ;;
   "emulationstation")  
       # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
-      $DIR/resources/bin/emulationstation >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+      $DIR/resources/bin/emulationstation >>  $LOG_FILE
   ;;
    "ports")  
       # si es un port ejecutamos su sh
       chmod a+x $2
-      $2 &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+      $2 &>  $LOG_FILE
   ;;
   "amiga") 
     # crear el archivo uae temporal para el adf seleccionado
@@ -65,24 +67,24 @@ case $1 in
 	if [[ ! $(grep 'id="amiga" value="uae4arm"' '/storage/.kodi/userdata/addon_data/script.gamestarter/settings.xml') ]]; then
 	    AMIGA_EMU="libretro"
 	fi 
-	echo '::Gamestarter:: -> amiga EMU...' $AMIGA_EMU >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+	echo '::Gamestarter:: -> amiga EMU...' $AMIGA_EMU >>  $LOG_FILE
 
     case $AMIGA_EMU in
       "libretro") 
-        $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log;;
+        $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE;;
       *) 
-        $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE  >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log;; 
+        $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE  >>  $LOG_FILE;; 
     esac
 
   ;;
    *) 
-    $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/$1_libretro.so "$2"  &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+    $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/$1_libretro.so "$2"  &>  $LOG_FILE
     # /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch -c /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/retroarch.cfg -L /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/cores/mame2003_libretro.so /storage/emulators/roms/mame/gng.zip
    ;;
 esac
 
 # Disable ALSA
-echo '::Gamestarter:: -> disable alsa...' >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+echo '::Gamestarter:: -> disable alsa...' >>  $LOG_FILE
 rmmod snd_bcm2835
 
 # Reset resolution to standard y borrar uae temporal
