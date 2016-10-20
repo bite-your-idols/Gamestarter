@@ -18,14 +18,18 @@ then
    kodi-send --action=Notification"(Gamestarter,Gamestarter is up to date,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 else
 	kodi-send --action=Notification"(Gamestarter,Updating...,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
-	if [[ $VERSION_LOCAL == "2.4" ]] 
+	if [[ $VERSION_LOCAL == "v2.4.0" ]] 
 	then
-		mv /storage/.config/retroarch /storage/.kodi/userdata/addon_data/script.gamestarter
-		mv /storage/.config/emulationstation /storage/.kodi/userdata/addon_data/script.gamestarter
+      rm -rf /storage/.config/retroarch/cores
+		cp -rf /storage/.config/retroarch /storage/.kodi/userdata/addon_data/script.gamestarter
+		rm -rf /storage/.config/retroarch
+		cp -rf /storage/.config/emulationstation /storage/.kodi/userdata/addon_data/script.gamestarter
+		rm -rf /storage/.config/emulationstation
 		rm /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/launchers.xml
 		mv /storage/.config/advancedlauncher/launchers.xml /storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/launchers.xml
 		rm /storage/.emulationstation
 		rm -rf /storage/.config/advancedlauncher
+		rm /storage/.config/gamestarter.log
 	fi
 
    #sacar solo los valores de la version p.e. "2.3"

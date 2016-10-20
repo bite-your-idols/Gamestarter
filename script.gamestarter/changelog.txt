@@ -1,3 +1,15 @@
+v2.5.0 (2016-10-20)
+- Configuraton files backup/restore feature.
+- Change configs path from /storage/.config to userdata to easily backup options and remove addon.
+- Emulationstation additional scraper included than can be used from addon settings.
+- Advanced Emulator Launcher updated to v0.9.3
+- Change libretro-cores path to addon bin folder.
+- fbalpha and fceumm cores renamed.
+- quickness and snes9x2010 cores added.
+- frontend images updated.
+- pbp/PBP extension included for Emulationstation and AL/AEL.
+- Minor updates, bug fixes and code debugging.
+
 v2.4.0 (2016-09-14)
 - Addon updater from settings.
 - Minor updates, bug fixes and code debugging.
