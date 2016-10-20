@@ -25,15 +25,15 @@ CONFIG_DIRECTORY=$USERADDON_DIRECTORY"/script.gamestarter"
 ROOT_DIRECTORY="/storage"
  
 # añadir audio al config.txt
-# echo '::Gamestarter:: -> edit config.txt...'
-# mount -o remount,rw /flash
-# echo 'dtparam=audio=on' >> /flash/config.txt
-
+echo '::Gamestarter:: -> edit config.txt...'
 mount -o remount,rw /flash
-if [[ ! $(grep "dtparam=audio=on" "/flash/config.txt") ]]; then
-	echo '::Gamestarter:: -> edit config.txt...'
-	echo 'dtparam=audio=on' >> /flash/config.txt
-fi
+echo 'dtparam=audio=on' >> /flash/config.txt
+
+# mount -o remount,rw /flash
+# if [[ ! $(grep "dtparam=audio=on" "/flash/config.txt") ]]; then
+#	echo '::Gamestarter:: -> edit config.txt...'
+#	echo 'dtparam=audio=on' >> /flash/config.txt
+# fi
 
 # hacer ejecutables los scripts y binarios
 echo '::Gamestarter:: -> script permissions...'
