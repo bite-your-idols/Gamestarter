@@ -57,8 +57,9 @@ else
 	then
 		echo '::Gamestarter:: -> backup ES' 
 		mkdir -p $BACKUP_DIRECTORY/script.gamestarter/emulationstation
-		cp $CONFIG_DIRECTORY/emulationstation/es_systems.cfg $BACKUP_DIRECTORY/script.gamestarter/emulationstation/es_systems.cfg
-		cp $CONFIG_DIRECTORY/emulationstation/es_input.cfg $BACKUP_DIRECTORY/script.gamestarter/emulationstation/es_input.cfg
+		# cp $CONFIG_DIRECTORY/emulationstation/es_systems.cfg $BACKUP_DIRECTORY/script.gamestarter/emulationstation/es_systems.cfg
+		# cp $CONFIG_DIRECTORY/emulationstation/es_input.cfg $BACKUP_DIRECTORY/script.gamestarter/emulationstation/es_input.cfg
+		 $CONFIG_DIRECTORY/emulationstation $BACKUP_DIRECTORY/script.gamestarter
 	fi
 
 	if [ -f "$USERADDON_DIRECTORY/plugin.program.advanced.launcher/launchers.xml" ]
