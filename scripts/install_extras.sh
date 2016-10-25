@@ -29,8 +29,16 @@ case $1 in
 		chmod a+x $ADDON_DIRECTORY/resources/bin/emulationstation
 		
 		# acceso directo a la carpeta de config default
-		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
-		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
+		if [ ! -L /storage/.config/emulationstation ]
+		  then
+		    ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
+		fi
+		
+		if [ ! -L /storage/.emulationstation ]
+		  then
+		    ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
+		fi
+		
 
 		#para el scraper
 		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.sh $ADDON_DIRECTORY/resources/bin/
