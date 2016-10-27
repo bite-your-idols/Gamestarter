@@ -29,8 +29,16 @@ case $1 in
 		chmod a+x $ADDON_DIRECTORY/resources/bin/emulationstation
 		
 		# acceso directo a la carpeta de config default
-		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
-		ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
+		if [ ! -L /storage/.config/emulationstation ]
+		  then
+		    ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
+		fi
+		
+		if [ ! -L /storage/.emulationstation ]
+		  then
+		    ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
+		fi
+		
 
 		#para el scraper
 		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.sh $ADDON_DIRECTORY/resources/bin/
@@ -58,7 +66,7 @@ case $1 in
 
 		# wget --no-check-certificate -O /storage/plugin.program.iarl.zip https://github.com/zach-morris/plugin.program.iarl/archive/master.zip
 		# lo cambiamos por el de la repo de zACHMORRIS
-		wget --no-check-certificate -O /storage/plugin.program.iarl.zip https://github.com/zach-morris/repository.zachmorris/raw/master/plugin.program.iarl/plugin.program.iarl-1.5.5.zip
+		wget --no-check-certificate -O /storage/plugin.program.iarl.zip https://github.com/zach-morris/repository.zachmorris/raw/master/plugin.program.iarl/plugin.program.iarl-1.5.8.zip
 		# y descargamos su repo para los autoupdates
 		wget --no-check-certificate -O /storage/repository.zachmorris.zip https://github.com/zach-morris/repository.zachmorris/raw/master/repository.zachmorris/repository.zachmorris-1.0.0.zip
 		# tar -xf /storage/iarl.tar.gz -C /storage/.kodi/addons/ -xz
