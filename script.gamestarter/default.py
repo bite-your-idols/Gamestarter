@@ -27,12 +27,14 @@ else:
 	if askConfirmation == "true":
 		resultado = xbmcgui.Dialog().yesno("Gamestarter", "Exit Kodi and run "+frontend+"?");
 		if resultado:
+			# xbmc.executebuiltin('ShowPicture("/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamestarter_fanart.png")') 
 			if frontend=="EmulationStation":
 				os.system(directory+"/resources/bin/gamestarter.sh emulationstation")
 			else:
 				os.system(directory+"/resources/bin/gamestarter.sh retroarch")
 	else:
-		if frontend=="EmulationStation":
+		# xbmc.executebuiltin('ShowPicture("/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamestarter_fanart.png")') 
+		if frontend=="EmulationStation": 
 			os.system(directory+"/resources/bin/gamestarter.sh emulationstation")
 		else:
 			os.system(directory+"/resources/bin/gamestarter.sh retroarch")
