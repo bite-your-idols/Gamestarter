@@ -2,7 +2,7 @@
 #!/bin/env python
 . /etc/profile
 
-kodi-send --action="xbmc.ShowPicture(/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamestarter_fanart.png)"
+#kodi-send --action="xbmc.ShowPicture(/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamestarter_fanart.png)"
 sleep 1s
 
 echo '::Gamestarter:: -> launching on' $(date) >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
