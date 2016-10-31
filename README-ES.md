@@ -6,7 +6,7 @@
 
 
 ## Retrogamig addon para Kodi en Raspberry Pi
-Si usas la Raspberry Pi como media center corriendo Kodi en [LibreELEC](https://libreelec.tv/) o [OpenELEC](http://openelec.tv/), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
+Si usas la Raspberry Pi 2/3 como media center corriendo Kodi en [LibreELEC](https://libreelec.tv/) o [OpenELEC](http://openelec.tv/), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
 
 Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada incluyendo:
 AMIGA (lr uae4arm o UAE4ARM), ARCADE (lr Mame2003 con hiscores y lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ScummVM (lr scummvm), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
@@ -23,7 +23,7 @@ También tendrás la opción de instalar con un click:
 
 ## Instrucciones de instalación
 
-Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copialo en tu Raspberry y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copialo en tu Raspberry Pi 2/3 y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
 
 Después puedes abrir la ventana de ajustes del addon para instalar otras opciones como el addon Internet Archive ROM Launcher, el frontend EmulationStation y más.
 
