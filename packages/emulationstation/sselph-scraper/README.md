@@ -4,18 +4,18 @@ Documentation:
 documentation: https://github.com/sselph/scraper/wiki
 
 usage:
-sh /storage/.config/emulationstation/sselph-scraper/scraper.sh "SYSTEM_FOLDER_NAME" "TYPE_OF IMAGE" "ADDITIONAL_EXTENSIONS"
+sh /storage/.kodi/addons/script.gamestarter/resources/bin/scraper.sh "SYSTEM_FOLDER_NAME" "TYPE_OF IMAGE" "ADDITIONAL_EXTENSIONS"
 
 example:
-sh /storage/.config/emulationstation/sselph-scraper/scraper.sh nes fanart
-sh /storage/.config/emulationstation/sselph-scraper/scraper.sh all
-sh /storage/.config/emulationstation/sselph-scraper/scraper.sh psx box PBP
+sh /storage/.kodi/addons/script.gamestarter/resources/bin/scraper.sh nes fanart
+sh /storage/.kodi/addons/script.gamestarter/resources/bin/scraper.sh all
+sh /storage/.kodi/addons/script.gamestarter/resources/bin/scraper.sh psx box PBP
 
 
 
 COMMAND LINE USAGE
 
-sh /storage/.config/emulationstation/sselph-scraper/scraper
+sh /storage/.kodi/addons/script.gamestarter/resources/bin/scraper
 
 ```
   -add_not_found=false: If true, add roms that are not found as an empty gamelist entry.
