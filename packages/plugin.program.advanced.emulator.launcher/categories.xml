@@ -944,7 +944,7 @@
   <platform>Nintendo SNES</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>pocketsnes &quot;%rom%&quot;</args>
+  <args>snes9x2010 &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/snes/</rompath>
   <romext>smc|sfc</romext>
   <finished>False</finished>
