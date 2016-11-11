@@ -137,37 +137,37 @@ case $1 in
 		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 
 		echo "Installing Carbon no-meta..."
-		curl -o /storage/carbon-nometa.zip https://github.com/RetroPie/es-theme-carbon-nometa/archive/master.zip
+		wget --no-check-certificate -O  /storage/carbon-nometa.zip https://github.com/RetroPie/es-theme-carbon-nometa/archive/master.zip
 		unzip -o /storage/carbon-nometa.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/carbon-nometa.zip
 		
 		echo "Installing Carbon..."
-		curl -o /storage/carbon.zip https://github.com/RetroPie/es-theme-carbon/archive/master.zip
+		wget --no-check-certificate -O  /storage/carbon.zip https://github.com/RetroPie/es-theme-carbon/archive/master.zip
 		unzip -o /storage/carbon.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/carbon.zip
 
 		echo "Installing Pixel..."
-		curl -o /storage/pixel.zip https://github.com/RetroPie/es-theme-pixel/archive/master.zip
+		wget --no-check-certificate -O  /storage/pixel.zip https://github.com/RetroPie/es-theme-pixel/archive/master.zip
 		unzip -o /storage/pixel.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/pixel.zip
 
 		echo "Installing Turtle-pi..."
-		curl -o /storage/turtle.zip https://github.com/RetroPie/es-theme-turtle-pi/archive/master.zip
+		wget --no-check-certificate -O  /storage/turtle.zip https://github.com/RetroPie/es-theme-turtle-pi/archive/master.zip
 		unzip -o /storage/turtle.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/turtle.zip
 
 		echo "Installing Canela..."
-		curl -o /storage/canela.zip https://github.com/RetroPie/es-theme-simplified-static-canela/archive/master.zip
+		wget --no-check-certificate -O  /storage/canela.zip https://github.com/RetroPie/es-theme-simplified-static-canela/archive/master.zip
 		unzip -o /storage/canela.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/canela.zip
 
 		echo "Installing clean look..."
-		curl -o /storage/clean.zip https://github.com/RetroPie/es-theme-clean-look/archive/master.zip
+		wget --no-check-certificate -O  /storage/clean.zip https://github.com/RetroPie/es-theme-clean-look/archive/master.zip
 		unzip -o /storage/clean.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/clean.zip
 
 		echo "Installing Tronkyfran..."
-		curl -o /storage/tronkyfran.zip https://github.com/HerbFargus/es-theme-tronkyfran/archive/master.zip
+		wget --no-check-certificate -O  /storage/tronkyfran.zip https://github.com/HerbFargus/es-theme-tronkyfran/archive/master.zip
 		unzip -o /storage/tronkyfran.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/tronkyfran.zip
 		
