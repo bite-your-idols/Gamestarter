@@ -94,7 +94,8 @@ case $response in
 	fi
 
 	# crear el zip
-	TIMESTAMP=`date +%Y%m%d%k%M%S`
+	# TIMESTAMP=`date +%Y%m%d%k%M%S`
+	TIMESTAMP=`date +%Y%m%d%H%M%S`
 	cd releases && zip -r script.gamestarter-$ADDON_VERSION-$TIMESTAMP.zip script.gamestarter/ && cd ..
 	rm -rf releases/script.gamestarter/
 
