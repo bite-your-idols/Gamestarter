@@ -57,10 +57,10 @@ rm $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz
 tar -xf $ADDON_DIRECTORY/resources/data/emulators.tar.gz -C $ROOT_DIRECTORY -xz
 tar -xf $ADDON_DIRECTORY/resources/data/frontend-assets.tar.gz -C $CONFIG_DIRECTORY -xz
 
-chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/CaveStory.sh
-chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Dinothawr.sh
-chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Doom.sh
-chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Quake.sh
+# chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/CaveStory.sh
+# chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Dinothawr.sh
+# chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Doom.sh
+# chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/Quake.sh
 
 #acceso directo de retroarch en .config que es donde se genera por default
 if [ ! -L $ROOT_DIRECTORY/.config/retroarch ]
