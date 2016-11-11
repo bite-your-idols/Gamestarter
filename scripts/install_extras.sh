@@ -102,32 +102,28 @@ case $1 in
 		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 
 		echo "Installing Cave Story..."
-		# Cave Story: https://buildbot.libretro.com/assets/cores/NXEngine/Cave%20Story%20%28en%29.zip
-		wget --no-check-certificate -O /storage/cavestory.zip https://buildbot.libretro.com/assets/cores/NXEngine/Cave%20Story%20%28en%29.zip
+		curl -o /storage/cavestory.zip https://buildbot.libretro.com/assets/cores/NXEngine/Cave%20Story%20%28en%29.zip
 		unzip -o /storage/cavestory.zip -d /storage/emulators/roms/ports/
 		rm /storage/cavestory.zip
 		wget --no-check-certificate -O /storage/emulators/roms/ports/CaveStory.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ports/CaveStory.sh
 		chmod a+x /storage/emulators/roms/ports/CaveStory.sh
 		
 		echo "Installing Doom..."
-		# Doom: https://buildbot.libretro.com/assets/cores/PrBoom/Doom%20%5Bshareware%5D%5B1993%5D.zip
-		wget --no-check-certificate -O /storage/doom.zip https://buildbot.libretro.com/assets/cores/PrBoom/Doom%20%5Bshareware%5D%5B1993%5D.zip
+		curl -o /storage/doom.zip https://buildbot.libretro.com/assets/cores/PrBoom/Doom%20%5Bshareware%5D%5B1993%5D.zip
 		unzip -o /storage/doom.zip -d /storage/emulators/roms/ports/
 		rm /storage/doom.zip
 		wget --no-check-certificate -O /storage/emulators/roms/ports/Doom.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ports/Doom.sh
 		chmod a+x /storage/emulators/roms/ports/Doom.sh
 
 		echo "Installing Quake..."
-		# Quake: 
-		wget --no-check-certificate -O /storage/quake.zip https://buildbot.libretro.com/assets/cores/Tyrquake/Quake%20%5Bshareware%5D%5B1996%5D.zip
+		curl -o /storage/quake.zip https://buildbot.libretro.com/assets/cores/Tyrquake/Quake%20%5Bshareware%5D%5B1996%5D.zip
 		unzip -o /storage/quake.zip -d /storage/emulators/roms/ports/
 		rm /storage/quake.zip
 		wget --no-check-certificate -O /storage/emulators/roms/ports/Quake.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ports/Quake.sh
 		chmod a+x /storage/emulators/roms/ports/Quake.sh
 
 		echo "Installing Dinothawr..."
-		# dinothawr: https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip
-		wget --no-check-certificate -O /storage/dino.zip https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip
+		curl -o /storage/dino.zip https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip
 		unzip -o /storage/dino.zip -d /storage/emulators/roms/ports/
 		rm /storage/dino.zip
 		wget --no-check-certificate -O /storage/emulators/roms/ports/Dinothawr.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ports/Dinothawr.sh
@@ -135,5 +131,47 @@ case $1 in
 		
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 		echo "Libretro ports Installed."
+  ;;
+   "esthemes")  
+     	# Script for ES themes installation 
+		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+
+		echo "Installing Carbon no-meta..."
+		curl -o /storage/carbon-nometa.zip https://github.com/RetroPie/es-theme-carbon-nometa/archive/master.zip
+		unzip -o /storage/carbon-nometa.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
+		rm /storage/carbon-nometa.zip
+		
+		echo "Installing Carbon..."
+		curl -o /storage/carbon.zip https://github.com/RetroPie/es-theme-carbon/archive/master.zip
+		unzip -o /storage/carbon.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
+		rm /storage/carbon.zip
+
+		echo "Installing Pixel..."
+		curl -o /storage/pixel.zip https://github.com/RetroPie/es-theme-pixel/archive/master.zip
+		unzip -o /storage/pixel.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
+		rm /storage/pixel.zip
+
+		echo "Installing Turtle-pi..."
+		curl -o /storage/turtle.zip https://github.com/RetroPie/es-theme-turtle-pi/archive/master.zip
+		unzip -o /storage/turtle.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
+		rm /storage/turtle.zip
+
+		echo "Installing Canela..."
+		curl -o /storage/canela.zip https://github.com/RetroPie/es-theme-simplified-static-canela/archive/master.zip
+		unzip -o /storage/canela.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
+		rm /storage/canela.zip
+
+		echo "Installing clean look..."
+		curl -o /storage/clean.zip https://github.com/RetroPie/es-theme-clean-look/archive/master.zip
+		unzip -o /storage/clean.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
+		rm /storage/clean.zip
+
+		echo "Installing Tronkyfran..."
+		curl -o /storage/tronkyfran.zip https://github.com/HerbFargus/es-theme-tronkyfran/archive/master.zip
+		unzip -o /storage/tronkyfran.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
+		rm /storage/tronkyfran.zip
+		
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		echo "ES Themes Installed."
   ;;
 esac

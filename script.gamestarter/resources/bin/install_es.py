@@ -2,7 +2,7 @@ import os
 import os.path
 import xbmcgui
 
-xbmcgui.Dialog().ok("Gamestarter", "Installing EmulationStation, please do not power off your Pi and. A working internet connection is needed.")
+xbmcgui.Dialog().ok("Gamestarter", "Installing EmulationStation, please do not power off your Pi. A working internet connection is needed.")
 
 script_file = os.path.realpath(__file__)
 directory = os.path.dirname(script_file)

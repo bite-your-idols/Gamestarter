@@ -12,12 +12,14 @@
         	<setting label="Install EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_es.py, SetLocation)"/>
             <setting id="frontend" type="select" label="Select your default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
             <setting label="Auto-scrape all systems" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/scraper.py, SetLocation)"/>
+            <setting label="Install ES themes ()" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_esthemes.py, SetLocation)"/>
     	</category>
         <category label="Extras">
             <setting label="Install UAE4RM emulator" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_uae.py, SetLocation)"/>
             <setting id="amiga" type="select" label="Default Amiga Emulator" values="libretro|uae4arm" default="libretro" />
             <setting type="sep"/>
             <setting label="Download Internet Archive ROM Launcher & Repo" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.py, SetLocation)"/>
+            <setting type="sep"/>
             <setting label="Install Libretro ports: Cave Story, Doom, Quake & Dinothawr" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_ports.py, SetLocation)"/>
             <setting label="Install GameMaker Pi ports (deprecated: Only working in OpenELEc 6)" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.py, SetLocation)"/>
         </category>
