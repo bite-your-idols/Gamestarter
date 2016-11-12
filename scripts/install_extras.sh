@@ -181,8 +181,7 @@ case $1 in
 		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
 		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/mame2010_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/mame2010_libretro.so
 		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
-
-		# chmod a+x
+		
 		echo "Experimental cores Installed."
   ;;
 esac
