@@ -1,7 +1,8 @@
 #!/bin/bash
 # Script for installing Gamestarter
 
-#Welcome message
+kodi-send --action="xbmc.ActivateWindow(busydialog)"
+
 echo '::Gamestarter:: -> installation on ' $(date)
 ADDON_DIRECTORY=$1
 # ADDON_VERSION="OLE"
@@ -92,3 +93,5 @@ echo $ADDON_VERSION >> $ADDON_DIRECTORY/resources/bin/installed
 
 # end installation
 echo '::Gamestarter:: -> installation completed, enjoy!!'
+
+kodi-send --action="xbmc.Dialog.Close(busydialog)"

@@ -1,3 +1,14 @@
+v2.6.0 (2016-11-12)
+- imame4all and snes cores renamed.
+- EmulationStation themes optional installation from settings.
+- Libretro ports optional installation from settings.
+- Experimental Libretro cores optional installation from settings.
+- Advanced Emulator Launcher updated to v0.9.4.
+- wonderswan core included and some cores updated.
+- Sample/demo roms removed.
+- Gamestarter splash screen.
+- Minor updates, bug fixes and code debugging.
+
 v2.5.0 (2016-10-20)
 - Configuraton files backup/restore feature.
 - Change configs path from /storage/.config to userdata to easily backup options and remove addon.

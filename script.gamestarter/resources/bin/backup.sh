@@ -1,7 +1,7 @@
 #!/bin/bash
 # Backup Gamestarter
 
-#Welcome message
+kodi-send --action="xbmc.ActivateWindow(busydialog)"
 
 echo '::Gamestarter:: -> backup/restore' $(date)
 ACTION=$1
@@ -82,3 +82,5 @@ else
 	echo '::Gamestarter:: -> backup completed.'
 	kodi-send --action=Notification"(Gamestarter,Backup stored at /storage/backup,6000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 fi
+
+kodi-send --action="xbmc.Dialog.Close(busydialog)"

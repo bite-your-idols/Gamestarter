@@ -1,5 +1,7 @@
 #!/bin/bash
 # Script for Extra installations
+kodi-send --action="xbmc.ActivateWindow(busydialog)"
+
 OPTION=$1
 ADDON_DIRECTORY="/storage/.kodi/addons/script.gamestarter"
 # CONFIG_DIRECTORY="/storage/.config"
@@ -137,41 +139,52 @@ case $1 in
 		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 
 		echo "Installing Carbon no-meta..."
-		curl -o /storage/carbon-nometa.zip https://github.com/RetroPie/es-theme-carbon-nometa/archive/master.zip
+		wget --no-check-certificate -O  /storage/carbon-nometa.zip https://github.com/RetroPie/es-theme-carbon-nometa/archive/master.zip
 		unzip -o /storage/carbon-nometa.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/carbon-nometa.zip
 		
 		echo "Installing Carbon..."
-		curl -o /storage/carbon.zip https://github.com/RetroPie/es-theme-carbon/archive/master.zip
+		wget --no-check-certificate -O  /storage/carbon.zip https://github.com/RetroPie/es-theme-carbon/archive/master.zip
 		unzip -o /storage/carbon.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/carbon.zip
 
 		echo "Installing Pixel..."
-		curl -o /storage/pixel.zip https://github.com/RetroPie/es-theme-pixel/archive/master.zip
+		wget --no-check-certificate -O  /storage/pixel.zip https://github.com/RetroPie/es-theme-pixel/archive/master.zip
 		unzip -o /storage/pixel.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/pixel.zip
 
 		echo "Installing Turtle-pi..."
-		curl -o /storage/turtle.zip https://github.com/RetroPie/es-theme-turtle-pi/archive/master.zip
+		wget --no-check-certificate -O  /storage/turtle.zip https://github.com/RetroPie/es-theme-turtle-pi/archive/master.zip
 		unzip -o /storage/turtle.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/turtle.zip
 
 		echo "Installing Canela..."
-		curl -o /storage/canela.zip https://github.com/RetroPie/es-theme-simplified-static-canela/archive/master.zip
+		wget --no-check-certificate -O  /storage/canela.zip https://github.com/RetroPie/es-theme-simplified-static-canela/archive/master.zip
 		unzip -o /storage/canela.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/canela.zip
 
 		echo "Installing clean look..."
-		curl -o /storage/clean.zip https://github.com/RetroPie/es-theme-clean-look/archive/master.zip
+		wget --no-check-certificate -O  /storage/clean.zip https://github.com/RetroPie/es-theme-clean-look/archive/master.zip
 		unzip -o /storage/clean.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/clean.zip
 
 		echo "Installing Tronkyfran..."
-		curl -o /storage/tronkyfran.zip https://github.com/HerbFargus/es-theme-tronkyfran/archive/master.zip
+		wget --no-check-certificate -O  /storage/tronkyfran.zip https://github.com/HerbFargus/es-theme-tronkyfran/archive/master.zip
 		unzip -o /storage/tronkyfran.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/tronkyfran.zip
 		
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 		echo "ES Themes Installed."
+   ;;
+   "excores")  
+     	# Script for Experimental Cores installation 
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/mame2010_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/mame2010_libretro.so
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
+
+		# chmod a+x
+		echo "Experimental cores Installed."
   ;;
 esac
+
+kodi-send --action="xbmc.Dialog.Close(busydialog)"
