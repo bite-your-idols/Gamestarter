@@ -1,5 +1,7 @@
 #!/bin/bash
 # Script for Extra installations
+kodi-send --action="xbmc.ActivateWindow(busydialog)"
+
 OPTION=$1
 ADDON_DIRECTORY="/storage/.kodi/addons/script.gamestarter"
 # CONFIG_DIRECTORY="/storage/.config"
@@ -173,5 +175,15 @@ case $1 in
 		
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 		echo "ES Themes Installed."
+   ;;
+   "excores")  
+     	# Script for Experimental Cores installation 
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/mame2010_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/mame2010_libretro.so
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
+
+		echo "Experimental cores Installed."
   ;;
 esac
+
+kodi-send --action="xbmc.Dialog.Close(busydialog)"
