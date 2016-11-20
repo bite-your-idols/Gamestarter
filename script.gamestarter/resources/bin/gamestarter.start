@@ -30,7 +30,7 @@ case $1 in
   ;;
   "emulationstation")  
       # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
-      $DIR/resources/bin/emulationstation >>  $LOG_FILE
+      $DIR/resources/bin/emulationstation &>  $LOG_FILE
   ;;
    "ports")  
       # si es un port ejecutamos su sh

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="64"
+   height="64"
+   sodipodi:docname="Nintendo - Virtual Boy-content.svg">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="836"
+     id="namedview4"
+     showgrid="true"
+     inkscape:zoom="7.5853275"
+     inkscape:cx="1.5983928"
+     inkscape:cy="27.737054"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:snap-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2987"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="logo">
+    <rect
+       style="fill:#7f8c8d;fill-opacity:1;stroke:none"
+       id="rect3793"
+       width="62"
+       height="51"
+       x="1"
+       y="2"
+       ry="4" />
+    <rect
+       style="fill:#2c3e50;fill-opacity:1;stroke:none"
+       id="rect3793-5"
+       width="62"
+       height="9"
+       x="1"
+       y="53"
+       ry="4" />
+    <rect
+       style="fill:#2c3e50;fill-opacity:1;stroke:none"
+       id="rect3813"
+       width="62"
+       height="5"
+       x="1"
+       y="54"
+       rx="1"
+       ry="1" />
+    <rect
+       style="fill:#7f8c8d;fill-opacity:1;stroke:none"
+       id="rect3815"
+       width="62"
+       height="6"
+       x="1"
+       y="48"
+       rx="1"
+       ry="1" />
+    <rect
+       style="fill:#95a5a6;fill-opacity:1;stroke:none"
+       id="rect3820"
+       width="50"
+       height="52"
+       x="7"
+       y="2"
+       rx="1"
+       ry="1" />
+    <rect
+       style="fill:#3498ff;fill-opacity:1;stroke:none"
+       id="rect3822"
+       width="43"
+       height="35"
+       x="11"
+       y="8"
+       rx="2.0021186"
+       ry="2" />
+    <path
+       style="fill:#7f8c8d;stroke:#7f8c8d;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1"
+       d="m 30,48 4,0 -2,3 z"
+       id="path3824"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>

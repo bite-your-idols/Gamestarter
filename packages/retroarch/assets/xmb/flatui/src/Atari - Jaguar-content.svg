@@ -1,0 +1,31 @@
+<svg id="png_Atari_-_Jaguar-content.png_src_Atari_-_Jaguar-content.svg" data-name="png/Atari - Jaguar-content.png, src/Atari - Jaguar-content.svg" xmlns="http://www.w3.org/2000/svg" width="220" height="197" viewBox="0 0 220 197">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25374a;
+      }
+
+      .cls-2 {
+        fill: #33495f;
+      }
+
+      .cls-3 {
+        fill: #227fbb;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #2b3e51;
+      }
+
+      .cls-4 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Rounded_Rectangle_5" data-name="Rounded Rectangle 5" class="cls-1" d="M18,25H202a2,2,0,0,1,2,2V39a0,0,0,0,1,0,0H16a0,0,0,0,1,0,0V27A2,2,0,0,1,18,25Z"/>
+  <path id="Rounded_Rectangle_5-2" data-name="Rounded Rectangle 5" class="cls-2" d="M7,34H213a2,2,0,0,1,2,2V197a0,0,0,0,1,0,0H5a0,0,0,0,1,0,0V36A2,2,0,0,1,7,34Z"/>
+  <path id="Rounded_Rectangle_5-3" data-name="Rounded Rectangle 5" class="cls-3" d="M19,46H200a4,4,0,0,1,4,4v98a0,0,0,0,1,0,0H15a0,0,0,0,1,0,0V50A4,4,0,0,1,19,46Z"/>
+  <path id="Coches" class="cls-4" d="M34,178H221a1,1,0,0,1,1,1v0.61a1,1,0,0,1-1,1H34a1,1,0,0,1-1-1V179A1,1,0,0,1,34,178Zm0,5.221H221a1,1,0,0,1,1,1V184.8a1,1,0,0,1-1,1H34a1,1,0,0,1-1-1v-0.579A1,1,0,0,1,34,183.221Zm0,5.189H221a1,1,0,0,1,1,1v0.611a1,1,0,0,1-1,1H34a1,1,0,0,1-1-1V189.41A1,1,0,0,1,34,188.41Zm0,5.19H221a1,1,0,0,1,1,1v0.61a1,1,0,0,1-1,1H34a1,1,0,0,1-1-1V194.6A1,1,0,0,1,34,193.6Zm0,5.221H221a1,1,0,0,1,1,1V200.4a1,1,0,0,1-1,1H34a1,1,0,0,1-1-1v-0.579A1,1,0,0,1,34,198.821Zm0,5.189H221a1,1,0,0,1,1,1v0.611a1,1,0,0,1-1,1H34a1,1,0,0,1-1-1V205.01A1,1,0,0,1,34,204.01Zm0,5.19H221a1,1,0,0,1,1,1v0.61a1,1,0,0,1-1,1H34a1,1,0,0,1-1-1V210.2A1,1,0,0,1,34,209.2Zm0,5.221H221a1,1,0,0,1,1,1V216a1,1,0,0,1-1,1H34a1,1,0,0,1-1-1v-0.579A1,1,0,0,1,34,214.421Z" transform="translate(-18 -25)"/>
+  <rect id="Rounded_Rectangle_5-4" data-name="Rounded Rectangle 5" class="cls-2" width="220" height="30" rx="4.177" ry="4.177"/>
+  <rect id="Rounded_Rectangle_5-5" data-name="Rounded Rectangle 5" class="cls-5" y="15" width="220" height="15" rx="4.177" ry="4.177"/>
+</svg>

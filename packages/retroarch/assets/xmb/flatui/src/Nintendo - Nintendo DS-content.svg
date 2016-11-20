@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4203"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="64"
+   height="64"
+   sodipodi:docname="Nintendo - Nintendo DS-content.svg">
+  <metadata
+     id="metadata4209">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4207" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="836"
+     id="namedview4205"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:zoom="9.1207729"
+     inkscape:cx="-7.1813589"
+     inkscape:cy="29.421912"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg4203">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4213"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="logo"
+     style="display:inline">
+    <g
+       id="g4836"
+       style="fill:#2c3e50;fill-opacity:1">
+      <rect
+         ry="0"
+         y="61"
+         x="11"
+         height="2"
+         width="3"
+         id="rect4803"
+         style="fill:#2c3e50;fill-opacity:1;stroke:none" />
+      <rect
+         ry="2"
+         y="1"
+         x="9.4518013"
+         height="62"
+         width="51.548199"
+         id="rect4235"
+         style="fill:#2c3e50;fill-opacity:1;stroke:none" />
+      <rect
+         ry="1.7096773"
+         y="1"
+         x="3"
+         height="53"
+         width="58"
+         id="rect4235-2"
+         style="fill:#2c3e50;fill-opacity:1;stroke:none;display:inline" />
+      <rect
+         ry="7"
+         y="43"
+         x="3"
+         height="20"
+         width="15"
+         id="rect4801"
+         style="fill:#2c3e50;fill-opacity:1;stroke:none" />
+    </g>
+    <g
+       id="g4829"
+       style="fill:#34495e;fill-opacity:1">
+      <rect
+         ry="1.9342026"
+         y="2.0397246"
+         x="8"
+         height="59.960274"
+         width="52"
+         id="rect4235-8"
+         style="fill:#34495e;fill-opacity:1;stroke:none;display:inline" />
+      <rect
+         ry="1.5948688"
+         y="1"
+         x="3"
+         height="47"
+         width="58"
+         id="rect4805"
+         style="fill:#34495e;fill-opacity:1;stroke:none" />
+      <rect
+         ry="0"
+         y="41"
+         x="3"
+         height="13"
+         width="58"
+         id="rect4807"
+         style="fill:#34495e;fill-opacity:1;stroke:none" />
+      <rect
+         y="53"
+         x="56"
+         height="5"
+         width="5"
+         id="rect4809"
+         style="fill:#34495e;fill-opacity:1;stroke:none" />
+      <rect
+         ry="6.0666666"
+         y="44.666664"
+         x="4"
+         height="17.333334"
+         width="13"
+         id="rect4801-5"
+         style="fill:#34495e;fill-opacity:1;stroke:none;display:inline" />
+    </g>
+    <path
+       style="fill:#2c3e50;fill-opacity:1;stroke:none"
+       d="M 9 4 C 7.892 4 7 4.892 7 6 L 7 53.0625 L 10.9375 57 L 54 57 C 55.108 57 56 56.108 56 55 L 56 6 C 56 4.892 55.108 4 54 4 L 9 4 z "
+       id="rect4842" />
+    <path
+       style="fill:#3498db;fill-opacity:1;stroke:none"
+       d="M 10 5 C 8.892 5 8 5.892 8 7 L 8 52.0625 L 11.9375 56 L 53 56 C 54.108 56 55 55.108 55 54 L 55 7 C 55 5.892 54.108 5 53 5 L 10 5 z "
+       id="rect4844" />
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg id="png_Coleco_-_ColecoVision.svg_src_Coleco_-_ColecoVision.svg" data-name="png/Coleco - ColecoVision.svg, src/Coleco - ColecoVision.svg" xmlns="http://www.w3.org/2000/svg" width="110" height="248" viewBox="0 0 110 248">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2c3e51;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-6, .cls-7, .cls-8 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #33495f;
+      }
+
+      .cls-3 {
+        fill: #95a5a6;
+      }
+
+      .cls-4 {
+        fill: #bdc3c7;
+      }
+
+      .cls-5 {
+        fill: #25374a;
+      }
+
+      .cls-6 {
+        fill: #bdc3c8;
+      }
+
+      .cls-7 {
+        fill: #213142;
+        opacity: 0.5;
+      }
+
+      .cls-8 {
+        fill: #405873;
+      }
+    </style>
+  </defs>
+  <g id="Body">
+    <path id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" d="M77.171,4H176.83a5.172,5.172,0,0,1,5.178,5.167V246.833A5.172,5.172,0,0,1,176.83,252H77.171a5.172,5.172,0,0,1-5.178-5.167V9.167A5.172,5.172,0,0,1,77.171,4Z" transform="translate(-72 -4)"/>
+    <path id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-2" d="M81.781,4h90.126a4,4,0,0,1,4,4V77.445l-8,4.444v19.668l8,4.8V240.25a4,4,0,0,1-4,4H81.781a4,4,0,0,1-4-4V107.183l8-4.924V81.814l-8-4.631V8A4,4,0,0,1,81.781,4Z" transform="translate(-72 -4)"/>
+    <path class="cls-3" d="M72,82H82a2,2,0,0,1,2,2v16a2,2,0,0,1-2,2H72V82Zm100,0h10v20H172a2,2,0,0,1-2-2V84A2,2,0,0,1,172,82Z" transform="translate(-72 -4)"/>
+    <g id="Pad">
+      <rect id="Rounded_Rectangle_11" data-name="Rounded Rectangle 11" class="cls-4" x="42" y="110" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-2" data-name="Rounded Rectangle 11" class="cls-4" x="8" y="110" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-3" data-name="Rounded Rectangle 11" class="cls-4" x="76" y="110" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-4" data-name="Rounded Rectangle 11" class="cls-4" x="42" y="144" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-5" data-name="Rounded Rectangle 11" class="cls-4" x="8" y="144" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-6" data-name="Rounded Rectangle 11" class="cls-4" x="76" y="144" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-7" data-name="Rounded Rectangle 11" class="cls-4" x="42" y="178" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-8" data-name="Rounded Rectangle 11" class="cls-4" x="8" y="178" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-9" data-name="Rounded Rectangle 11" class="cls-4" x="76" y="178" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-10" data-name="Rounded Rectangle 11" class="cls-4" x="42" y="212" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-11" data-name="Rounded Rectangle 11" class="cls-5" x="8" y="212" width="26" height="26" rx="4" ry="4"/>
+      <rect id="Rounded_Rectangle_11-12" data-name="Rounded Rectangle 11" class="cls-5" x="76" y="212" width="26" height="26" rx="4" ry="4"/>
+    </g>
+    <path class="cls-6" d="M72,82h6v20H72V82Zm104,0h6v20h-6V82Z" transform="translate(-72 -4)"/>
+  </g>
+  <g id="Knob">
+    <path class="cls-7" d="M130.546,25.136C147.917,25.136,162,38.985,162,56.068S147.917,87,130.546,87,99.092,73.151,99.092,56.068,113.174,25.136,130.546,25.136Z" transform="translate(-72 -4)"/>
+    <path class="cls-8" d="M128,11c18.778,0,34,15,34,33.51s-15.222,33.51-34,33.51-34-15-34-33.51S109.222,11,128,11Z" transform="translate(-72 -4)"/>
+    <path class="cls-1" d="M127.916,13.952A31.932,31.932,0,1,1,95.6,45.882,32.125,32.125,0,0,1,127.916,13.952Z" transform="translate(-72 -4)"/>
+    <circle class="cls-4" cx="56" cy="41" r="27"/>
+  </g>
+</svg>

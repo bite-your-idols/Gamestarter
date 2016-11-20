@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="64"
+   height="64"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   inkscape:export-filename="/home/kivutar/Bureau/lakka-menu/settings.png"
+   inkscape:export-xdpi="270"
+   inkscape:export-ydpi="270"
+   sodipodi:docname="settings.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="9.7006212"
+     inkscape:cx="38.954992"
+     inkscape:cy="31.51361"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1440"
+     inkscape:window-height="838"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2993"
+       empspacing="8"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-988.36218)">
+    <path
+       transform="translate(0,988.36218)"
+       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       d="m 29,11 6,0 c -1,0 -2,1 -2,2 l 0,12 -2,0 0,-12 c 0,-1 -1,-2 -2,-2 z"
+       id="rect2995"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-xdpi="270"
+       inkscape:export-ydpi="270" />
+    <path
+       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       d="m 35,1041.3622 -6,0 c 1,0 2,-1 2,-2 l 0,-12 2,0 0,12 c 0,1 1,2 2,2 z"
+       id="rect2995-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-xdpi="270"
+       inkscape:export-ydpi="270" />
+    <path
+       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       d="m 51.686551,1028.2641 -3,5.1962 c 0.5,-0.866 0.13394,-2.2321 -0.732086,-2.7321 l -10.392304,-6 1,-1.732 10.392304,6 c 0.866026,0.5 2.232086,0.134 2.732086,-0.7321 z"
+       id="rect2995-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/kivutar/Bureau/lakka-menu/rect2995-5-9.png"
+       inkscape:export-xdpi="270"
+       inkscape:export-ydpi="270" />
+    <path
+       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       d="m 12.313449,1012.4603 3,-5.1962 c -0.5,0.866 -0.133974,2.2321 0.732051,2.7321 l 10.392305,6 -1,1.732 -10.392305,-6 c -0.866025,-0.5 -2.232051,-0.134 -2.732051,0.7321 z"
+       id="rect2995-5-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-xdpi="270"
+       inkscape:export-ydpi="270" />
+    <path
+       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       d="m 48.686551,1007.2641 3,5.1961 c -0.5,-0.866 -1.86606,-1.232 -2.732086,-0.732 l -10.392304,6 -1,-1.732 10.392304,-6 c 0.866026,-0.5 1.232086,-1.8661 0.732086,-2.7321 z"
+       id="rect2995-8"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/kivutar/Bureau/lakka-menu/rect2995-5-9.png"
+       inkscape:export-xdpi="270"
+       inkscape:export-ydpi="270" />
+    <path
+       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       d="m 15.313449,1033.4603 -3,-5.1962 c 0.5,0.866 1.866026,1.2321 2.732051,0.7321 l 10.392305,-6 1,1.732 -10.392305,6 c -0.866025,0.5 -1.232051,1.866 -0.732051,2.7321 z"
+       id="rect2995-5-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="/home/kivutar/Bureau/lakka-menu/rect2995-5-9.png"
+       inkscape:export-xdpi="270"
+       inkscape:export-ydpi="270" />
+    <path
+       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       d="M 31 5 L 30 7 L 30 8.09375 C 29.2347 8.15645 28.493274 8.27339 27.75 8.40625 L 27.46875 7.34375 L 25.96875 5.65625 L 24.03125 6.1875 L 23.59375 8.375 L 23.875 9.4375 C 23.15498 9.69678 22.436205 9.95695 21.75 10.28125 L 21.21875 9.34375 L 19.375 8.125 L 17.625 9.125 L 17.78125 11.34375 L 18.3125 12.28125 C 17.691122 12.71355 17.076659 13.16865 16.5 13.65625 L 15.75 12.90625 L 13.625 12.1875 L 12.1875 13.625 L 12.90625 15.75 L 13.65625 16.5 C 13.168638 17.0766 12.713525 17.6911 12.28125 18.3125 L 11.34375 17.78125 L 9.125 17.625 L 8.125 19.375 L 9.34375 21.21875 L 10.28125 21.75 C 9.956945 22.4362 9.696781 23.155 9.4375 23.875 L 8.375 23.59375 L 6.1875 24.03125 L 5.65625 25.96875 L 7.34375 27.46875 L 8.40625 27.75 C 8.273392 28.4933 8.156485 29.2347 8.09375 30 L 7 30 L 5 31 L 5 33 L 7 34 L 8.09375 34 C 8.156485 34.7653 8.273392 35.5067 8.40625 36.25 L 7.34375 36.53125 L 5.65625 38.03125 L 6.1875 39.96875 L 8.375 40.40625 L 9.4375 40.125 C 9.696781 40.845 9.956945 41.5638 10.28125 42.25 L 9.34375 42.78125 L 8.125 44.625 L 9.125 46.375 L 11.34375 46.21875 L 12.28125 45.6875 C 12.713525 46.3089 13.168638 46.9233 13.65625 47.5 L 12.90625 48.25 L 12.1875 50.375 L 13.625 51.8125 L 15.75 51.09375 L 16.5 50.34375 C 17.076659 50.83135 17.691122 51.28655 18.3125 51.71875 L 17.78125 52.65625 L 17.625 54.875 L 19.375 55.875 L 21.21875 54.65625 L 21.75 53.71875 C 22.436205 54.04305 23.15498 54.3032 23.875 54.5625 L 23.59375 55.625 L 24.03125 57.8125 L 25.96875 58.34375 L 27.46875 56.65625 L 27.75 55.59375 C 28.493274 55.72665 29.2347 55.84355 30 55.90625 L 30 57 L 31 59 L 33 59 L 34 57 L 34 55.90625 C 34.7653 55.84325 35.506726 55.72665 36.25 55.59375 L 36.53125 56.65625 L 38.03125 58.34375 L 39.96875 57.8125 L 40.40625 55.625 L 40.125 54.5625 C 40.84502 54.3032 41.563795 54.04305 42.25 53.71875 L 42.78125 54.65625 L 44.625 55.875 L 46.375 54.875 L 46.21875 52.65625 L 45.6875 51.71875 C 46.30888 51.28655 46.92334 50.83135 47.5 50.34375 L 48.25 51.09375 L 50.375 51.8125 L 51.8125 50.375 L 51.09375 48.25 L 50.34375 47.5 C 50.83136 46.9233 51.28648 46.3089 51.71875 45.6875 L 52.65625 46.21875 L 54.875 46.375 L 55.875 44.625 L 54.65625 42.78125 L 53.71875 42.25 C 54.04305 41.5638 54.30322 40.845 54.5625 40.125 L 55.625 40.40625 L 57.8125 39.96875 L 58.34375 38.03125 L 56.65625 36.53125 L 55.59375 36.25 C 55.72661 35.5067 55.84352 34.7653 55.90625 34 L 57 34 L 59 33 L 59 31 L 57 30 L 55.90625 30 C 55.84352 29.2347 55.72661 28.4933 55.59375 27.75 L 56.65625 27.46875 L 58.34375 25.96875 L 57.8125 24.03125 L 55.625 23.59375 L 54.5625 23.875 C 54.30322 23.155 54.04305 22.4362 53.71875 21.75 L 54.65625 21.21875 L 55.875 19.375 L 54.875 17.625 L 52.65625 17.78125 L 51.71875 18.3125 C 51.28648 17.6911 50.83136 17.0766 50.34375 16.5 L 51.09375 15.75 L 51.8125 13.625 L 50.375 12.1875 L 48.25 12.90625 L 47.5 13.65625 C 46.92334 13.16865 46.30888 12.71355 45.6875 12.28125 L 46.21875 11.34375 L 46.375 9.125 L 44.625 8.125 L 42.78125 9.34375 L 42.25 10.28125 C 41.563795 9.95695 40.84502 9.69678 40.125 9.4375 L 40.40625 8.375 L 39.96875 6.1875 L 38.03125 5.65625 L 36.53125 7.34375 L 36.25 8.40625 C 35.506726 8.27339 34.7653 8.15648 34 8.09375 L 34 7 L 33 5 L 31 5 z M 32 11 C 43.59798 11 53 20.40202 53 32 C 53 43.59798 43.59798 53 32 53 C 20.40202 53 11 43.59798 11 32 C 11 20.40202 20.40202 11 32 11 z "
+       transform="translate(0,988.36218)"
+       id="path2984" />
+    <path
+       style="fill:#ecf0f1;fill-opacity:1;stroke:none"
+       d="M 32 24 C 27.581722 24 24 27.581722 24 32 C 24 36.418278 27.581722 40 32 40 C 36.418278 40 40 36.418278 40 32 C 40 27.581722 36.418278 24 32 24 z M 32 27 C 34.761424 27 37 29.238576 37 32 C 37 34.761424 34.761424 37 32 37 C 29.238576 37 27 34.761424 27 32 C 27 29.238576 29.238576 27 32 27 z "
+       transform="translate(0,988.36218)"
+       id="path2990" />
+  </g>
+</svg>

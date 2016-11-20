@@ -3,6 +3,43 @@
 # COMPILAR LOS ZIPS DEL ADDON GAMESTARTER
 #################################################
 
+#################################################
+# ACtualizar assets libretro
+#################################################
+
+read -r -p "Do you want to update libretro assets? [y/n] " response
+case $response in
+    [yY][eE][sS]|[yY]) 
+	echo "Descargamos libretro infos..."
+	curl -o packages/retroarch/info.zip https://buildbot.libretro.com/assets/frontend/info.zip
+	rm packages/retroarch/info/*
+	unzip -o packages/retroarch/info.zip -d packages/retroarch/info
+	rm packages/retroarch/info.zip
+
+	echo "Descargamos libretro joypad autoconfigs..."
+	curl -o packages/retroarch/autoconfig.zip https://buildbot.libretro.com/assets/frontend/autoconfig.zip
+	unzip -o packages/retroarch/autoconfig.zip -d packages/retroarch/autoconfig-temp
+	rm packages/retroarch/autoconfig.zip
+	rm -rf packages/retroarch/autoconfig
+	cp -r packages/retroarch/autoconfig-temp/udev packages/retroarch/autoconfig
+	rm -rf packages/retroarch/autoconfig-temp
+
+	echo "Descargamos libretro frontend assets..."
+	curl -o packages/retroarch/assets.zip https://buildbot.libretro.com/assets/frontend/assets.zip
+	unzip -o packages/retroarch/assets.zip -d packages/retroarch/assets-temp
+	rm packages/retroarch/assets.zip
+	rm -rf packages/retroarch/assets
+	mkdir packages/retroarch/assets
+	cp -r packages/retroarch/assets-temp/xmb packages/retroarch/assets/xmb
+	rm -rf packages/retroarch/assets-temp
+
+	echo "Descargamos libretro daabases..."
+	curl -o packages/retroarch/database.zip https://buildbot.libretro.com/assets/frontend/database-rdb.zip
+	rm packages/retroarch/database/*
+	unzip -o packages/retroarch/database.zip -d packages/retroarch/database
+	rm packages/retroarch/database.zip	
+esac
+
 
 #################################################
 # crear los tar.gz de las carpetas de packages

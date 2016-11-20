@@ -1,0 +1,41 @@
+<svg id="png_3DO-content.png_src_3DO-content.svg" data-name="png/3DO-content.png, src/3DO-content.svg" xmlns="http://www.w3.org/2000/svg" width="243.812" height="243.812" viewBox="0 0 243.812 243.812">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #227fbb;
+        stroke-width: 87px;
+      }
+
+      .cls-2 {
+        stroke: #bdc3c7;
+        stroke-width: 24px;
+      }
+
+      .cls-3 {
+        fill: #2c97de;
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        stroke: #33495f;
+        stroke-width: 6px;
+      }
+
+      .cls-5 {
+        stroke: #ecf0f1;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <circle id="Fond" class="cls-1" cx="121.906" cy="121.906" r="73"/>
+  <circle id="Intérieur" class="cls-2" cx="121.906" cy="121.906" r="26.531"/>
+  <path id="Mid" class="cls-3" d="M228.289,66.066a118.866,118.866,0,0,0-39.831-39.4L128,126.966ZM27.721,191.4a118.857,118.857,0,0,0,40.26,38.948L128,126.966ZM127.483,87.678a38.771,38.771,0,1,1-38.771,38.771A38.771,38.771,0,0,1,127.483,87.678Z" transform="translate(-6.094 -6.094)"/>
+  <circle id="Outline_extérieur" data-name="Outline extérieur" class="cls-4" cx="121.375" cy="121.375" r="43.844"/>
+  <circle id="Stroke_in_out" data-name="Stroke in, out" class="cls-5" cx="121.906" cy="121.906" r="38.875"/>
+  <circle id="Stroke_in_in" data-name="Stroke in, in" class="cls-5" cx="121.906" cy="121.906" r="13.719"/>
+  <circle id="Outline_extérieur-2" data-name="Outline extérieur" class="cls-4" cx="121.906" cy="121.906" r="118.906"/>
+</svg>

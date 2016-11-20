@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="64"
+   height="64"
+   sodipodi:docname="Sega - Master System - Mark III-content.svg">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="836"
+     id="namedview4"
+     showgrid="true"
+     inkscape:zoom="16.258342"
+     inkscape:cx="11.38332"
+     inkscape:cy="41.201486"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2989"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="logo"
+     style="display:inline">
+    <path
+       style="fill:#34495e;fill-opacity:1;stroke:none"
+       d="m 2,12 c -0.554,0 -1,0.446 -1,1 l 0,9 1,0 0,4 -1,0 0,25 c 0,0.554 0.446,1 1,1 l 60,0 c 0.554,0 1,-0.446 1,-1 l 0,-25 -1,0 0,-4 1,0 0,-9 c 0,-0.554 -0.446,-1 -1,-1 L 2,12 z"
+       id="rect2991"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#2c3e50;fill-opacity:1;stroke:none"
+       id="rect3822"
+       width="60"
+       height="4"
+       x="2"
+       y="22" />
+    <rect
+       style="fill:#34495e;fill-opacity:1;stroke:none;display:inline"
+       id="rect3822-2"
+       width="62"
+       height="1"
+       x="1"
+       y="22.5"
+       ry="0.25397247" />
+    <rect
+       style="fill:#34495e;fill-opacity:1;stroke:none;display:inline"
+       id="rect3822-2-1"
+       width="62"
+       height="1"
+       x="1"
+       y="24.5"
+       ry="0.23859574" />
+    <g
+       id="g3875"
+       style="fill:#c0392b;fill-opacity:1">
+      <rect
+         ry="1"
+         y="12"
+         x="2"
+         height="9"
+         width="60"
+         id="rect3871"
+         style="fill:#c0392b;fill-opacity:1;stroke:none" />
+      <rect
+         ry="0"
+         y="12"
+         x="2"
+         height="8"
+         width="60"
+         id="rect3873"
+         style="fill:#c0392b;fill-opacity:1;stroke:none" />
+    </g>
+    <rect
+       style="fill:#3498db;fill-opacity:1;stroke:none"
+       id="rect3879"
+       width="28"
+       height="5"
+       x="4"
+       y="14" />
+  </g>
+</svg>
