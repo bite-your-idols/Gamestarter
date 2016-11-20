@@ -56,6 +56,36 @@ tar -xf $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz -C $ADDON_DIRECTOR
 rm $ADDON_DIRECTORY/resources/data/libretro-cores.tar.gz
 # tar -xf $ADDON_DIRECTORY/resources/data/emulationstation.tar.gz -C $CONFIG_DIRECTORY/ -xz
 tar -xf $ADDON_DIRECTORY/resources/data/emulators.tar.gz -C $ROOT_DIRECTORY -xz
+mkdir /storage/emulators/roms/amiga
+mkdir /storage/emulators/roms/atari2600
+mkdir /storage/emulators/roms/atarilynx
+mkdir /storage/emulators/roms/atarist
+mkdir /storage/emulators/roms/fba
+mkdir /storage/emulators/roms/gamegear
+mkdir /storage/emulators/roms/gb
+mkdir /storage/emulators/roms/gw
+mkdir /storage/emulators/roms/mame
+mkdir /storage/emulators/roms/mastersystem
+mkdir /storage/emulators/roms/megadrive
+mkdir /storage/emulators/roms/msx
+mkdir /storage/emulators/roms/n64
+mkdir /storage/emulators/roms/neogeo
+mkdir /storage/emulators/roms/nes
+#mkdir /storage/emulators/roms/nds
+#mkdir /storage/emulators/roms/ngp
+mkdir /storage/emulators/roms/pcengine
+mkdir /storage/emulators/roms/ports
+mkdir /storage/emulators/roms/psp
+mkdir /storage/emulators/roms/psx
+#mkdir /storage/emulators/roms/saturn
+#mkdir /storage/emulators/roms/sega32x
+#mkdir /storage/emulators/roms/sg1000
+#mkdir /storage/emulators/roms/scummvm
+mkdir /storage/emulators/roms/snes
+# mkdir /storage/emulators/roms/vectrex
+mkdir /storage/emulators/roms/videopac
+mkdir /storage/emulators/roms/wonderswan
+mkdir /storage/emulators/roms/zxspectrum
 tar -xf $ADDON_DIRECTORY/resources/data/frontend-assets.tar.gz -C $CONFIG_DIRECTORY -xz
 
 # chmod a+x $ROOT_DIRECTORY/emulators/roms/ports/CaveStory.sh
