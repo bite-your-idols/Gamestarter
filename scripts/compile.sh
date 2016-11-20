@@ -101,7 +101,7 @@ case $response in
 		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="OLE"/' releases/script.gamestarter/resources/bin/install.sh
 
 		# retroarch_1.3.6(OLE)
-		mv releases/script.gamestarter/resources/bin/retroarch_1.3.6 releases/script.gamestarter/resources/bin/retroarch
+		mv releases/script.gamestarter/resources/bin/retroarch_1.3.6_LE7 releases/script.gamestarter/resources/bin/retroarch
 		rm releases/script.gamestarter/resources/bin/retroarch_1.3.6_LE8
 
 		# seleccionar advanced launcher
@@ -119,7 +119,7 @@ case $response in
 
 		# retroarch_1.3.6_LE8
 		mv releases/script.gamestarter/resources/bin/retroarch_1.3.6_LE8 releases/script.gamestarter/resources/bin/retroarch
-		rm releases/script.gamestarter/resources/bin/retroarch_1.3.6
+		rm releases/script.gamestarter/resources/bin/retroarch_1.3.6_LE7
 
 		# seleccionar advanced emulator launcher
 		rm releases/script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz
