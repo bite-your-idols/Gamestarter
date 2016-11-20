@@ -109,7 +109,9 @@ case $response in
 		rm releases/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.zip
 
 		# dejar las libs necesarias: /lib/libbrcmEGL.so y /lib/libbrcmGLESv2.so para glupen64
-		rm releases/script.gamestarter/lib/README.md
+		# rm releases/script.gamestarter/lib/README.md
+		# quitar las libs -> nuevo core compilado no las necesita
+		rm -rf releases/script.gamestarter/lib
 
 	else
 		echo "Compilamos el addon para "$ADDON_VERSION" ..."
