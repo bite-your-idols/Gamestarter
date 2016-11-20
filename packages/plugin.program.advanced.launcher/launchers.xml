@@ -119,22 +119,6 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
-				<rom>
-					<id>8b94355e49665f798083b339f5671b67</id>
-					<name>Split Screen</name>
-					<filename>/storage/emulators/roms/atari2600/Split Screen.a26</filename>
-					<thumb></thumb>
-					<fanart></fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<finished>false</finished>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		<launcher>
@@ -235,22 +219,6 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
-				<rom>
-					<id>cb3d211919fa5e789cd332bfb695c135</id>
-					<name>Shadow of the Sausage</name>
-					<filename>/storage/emulators/roms/gba/Shadow of the Sausage.gba</filename>
-					<thumb></thumb>
-					<fanart></fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<finished>false</finished>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		<launcher>
@@ -276,22 +244,6 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
-				<rom>
-					<id>d30dab53e39cb14a6bdddd919ae752ff</id>
-					<name>It Came From Planet Zilog</name>
-					<filename>/storage/emulators/roms/gb/It Came From Planet Zilog.gbc</filename>
-					<thumb></thumb>
-					<fanart></fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<finished>false</finished>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		<launcher>
@@ -392,22 +344,6 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
-				<rom>
-					<id>cdb8c44e3e4f5074ef0cee435ab7669d</id>
-					<name>Road Wars 2000</name>
-					<filename>/storage/emulators/roms/megadrive/Road Wars 2000.smd</filename>
-					<thumb></thumb>
-					<fanart></fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<finished>false</finished>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		<launcher>
@@ -433,22 +369,6 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
-				<rom>
-					<id>804309f5911ef2564b3d131128c0e5d2</id>
-					<name>Capcom OST</name>
-					<filename>/storage/emulators/roms/nes/Capcom OST.nes</filename>
-					<thumb></thumb>
-					<fanart></fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<finished>false</finished>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		<launcher>
@@ -524,22 +444,6 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
-				<rom>
-					<id>e1273e1c88c05de751eca5dd32fa92f1</id>
-					<name>reflectron</name>
-					<filename>/storage/emulators/roms/pcengine/reflectron.pce</filename>
-					<thumb></thumb>
-					<fanart></fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<finished>false</finished>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		<launcher>
@@ -665,22 +569,6 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
-				<rom>
-					<id>1568e0323c2eee735f05ece3b4d76b67</id>
-					<name>Airwolf 92</name>
-					<filename>/storage/emulators/roms/snes/Airwolf 92.smc</filename>
-					<thumb></thumb>
-					<fanart></fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<finished>false</finished>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		<launcher>
@@ -706,22 +594,6 @@
 			<minimize>false</minimize>
 			<lnk></lnk>
 			<roms>
-				<rom>
-					<id>bbaedd0e3dad02dfe547c1295b6a65e9</id>
-					<name>Big Bang Demo</name>
-					<filename>/storage/emulators/roms/zxspectrum/Big Bang Demo.tzx</filename>
-					<thumb></thumb>
-					<fanart></fanart>
-					<trailer></trailer>
-					<custom></custom>
-					<genre></genre>
-					<release></release>
-					<publisher></publisher>
-					<gameplot></gameplot>
-					<finished>false</finished>
-					<altapp></altapp>
-					<altarg></altarg>
-				</rom>
 			</roms>
 		</launcher>
 		<launcher>
