@@ -33,11 +33,11 @@ case $response in
 	cp -r packages/retroarch/assets-temp/xmb packages/retroarch/assets/xmb
 	rm -rf packages/retroarch/assets-temp
 
-	echo "Descargamos libretro daabases..."
-	curl -o packages/retroarch/database.zip https://buildbot.libretro.com/assets/frontend/database-rdb.zip
-	rm packages/retroarch/database/*
-	unzip -o packages/retroarch/database.zip -d packages/retroarch/database
-	rm packages/retroarch/database.zip	
+	# echo "Descargamos libretro daabases..."
+	# curl -o packages/retroarch/database.zip https://buildbot.libretro.com/assets/frontend/database-rdb.zip
+	# rm packages/retroarch/database/*
+	# unzip -o packages/retroarch/database.zip -d packages/retroarch/database
+	# rm packages/retroarch/database.zip	
 esac
 
 
