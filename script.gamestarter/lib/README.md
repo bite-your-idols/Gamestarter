@@ -12,8 +12,3 @@
 - libfreeimage.so.3
 - libSDL2-2.0.so.0
 
-
-### glupen64 core OE6/OLE7
-
-- libbrcmEGL.so
-- libbrcmGLESv2.so
