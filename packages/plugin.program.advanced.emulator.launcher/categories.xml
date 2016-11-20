@@ -272,7 +272,7 @@
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>picodrive &quot;%rom%&quot;</args>
+  <args>genesis_plus_gx &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/gamegear/</rompath>
   <romext>gg</romext>
   <finished>False</finished>

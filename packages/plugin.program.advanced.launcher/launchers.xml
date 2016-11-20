@@ -192,7 +192,7 @@
 			<name>Game Gear</name>
 			<category>default</category>
 			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-			<args>picodrive "%rom%"</args>
+			<args>genesis_plus_gx "%rom%"</args>
 			<rompath>/storage/emulators/roms/gamegear/</rompath>
 			<thumbpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/thumbs/</thumbpath>
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
