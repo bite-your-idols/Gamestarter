@@ -107,7 +107,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>a26|bin</romext>
+			<romext>a26|bin|zip|ZIP</romext>
 			<platform>Atari 2600</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/atari2600.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/atari2600_fanart.jpg</fanart>
@@ -132,7 +132,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>lnx</romext>
+			<romext>lnx|zip|ZIP</romext>
 			<platform>Atari Lynx</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/atarilynx.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/atarilynx_fanart.jpg</fanart>
@@ -182,7 +182,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>gg</romext>
+			<romext>gg|zip|ZIP</romext>
 			<platform>Sega Game Gear</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamegear.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamegear_fanart.jpg</fanart>
@@ -207,7 +207,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>gba|zip</romext>
+			<romext>gba|zip|ZIP</romext>
 			<platform>Game Boy Advance</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gba.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gba_fanart.jpg</fanart>
@@ -257,7 +257,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>rom|mx1|mx2|col|dsk</romext>
+			<romext>rom|mx1|mx2|col|dsk|zip|ZIP</romext>
 			<platform></platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/msx.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/msx_fanart.jpg</fanart>
@@ -282,7 +282,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>bin</romext>
+			<romext>bin|zip|ZIP</romext>
 			<platform>Magnavox Odyssey/Phillips Videopac</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/videopac.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/videopac_fanart.jpg</fanart>
@@ -307,7 +307,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>sms</romext>
+			<romext>sms|zip|ZIP</romext>
 			<platform>Sega Master System</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/mastersystem.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/mastersystem_fanart.jpg</fanart>
@@ -332,7 +332,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>smd|md|bin</romext>
+			<romext>smd|md|bin|zip|ZIP</romext>
 			<platform>Sega Genesis</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/megadrive.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/megadrive_fanart.jpg</fanart>
@@ -357,7 +357,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>nes</romext>
+			<romext>nes|zip|ZIP</romext>
 			<platform>Nintendo Entertainment System</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/nes.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/nes_fanart.jpg</fanart>
@@ -407,7 +407,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>v64|n64|z64</romext>
+			<romext>v64|n64|z64|zip|ZIP</romext>
 			<platform>Nintendo 64</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/n64.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/n64_fanart.jpg</fanart>
@@ -432,7 +432,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>pce|cue</romext>
+			<romext>pce|cue|zip|ZIP</romext>
 			<platform>PC Engine</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/pcengine.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/pcengine_fanart.jpg</fanart>
@@ -482,7 +482,7 @@
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
 			<trailerpath></trailerpath>
 			<custompath></custompath>
-			<romext>iso|cso</romext>
+			<romext>iso|cso|pbp|PBP</romext>
 			<platform>PSP</platform>
 			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/psp.jpg</thumb>
 			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/psp_fanart.jpg</fanart>
@@ -547,56 +547,6 @@
 			</roms>
 		</launcher>
 		<launcher>
-			<id>5fcb144341abe99147cc1843c0b317ef</id>
-			<name>Super Nintendo</name>
-			<category>default</category>
-			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-			<args>snes9x2010 "%rom%"</args>
-			<rompath>/storage/emulators/roms/snes/</rompath>
-			<thumbpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/thumbs/</thumbpath>
-			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
-			<trailerpath></trailerpath>
-			<custompath></custompath>
-			<romext>smc|sfc</romext>
-			<platform>Super Nintendo Entertainment System</platform>
-			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/snes.jpg</thumb>
-			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/snes_fanart.jpg</fanart>
-			<genre></genre>
-			<release>1990</release>
-			<publisher></publisher>
-			<launcherplot></launcherplot>
-			<finished>false</finished>
-			<minimize>false</minimize>
-			<lnk></lnk>
-			<roms>
-			</roms>
-		</launcher>
-		<launcher>
-			<id>9c11294859088cb34de2bf2ac5b0f678</id>
-			<name>ZX Spectrum</name>
-			<category>default</category>
-			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-			<args>fuse "%rom%"</args>
-			<rompath>/storage/emulators/roms/zxspectrum/</rompath>
-			<thumbpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/thumbs/</thumbpath>
-			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
-			<trailerpath></trailerpath>
-			<custompath></custompath>
-			<romext>tzx|Z80|z80</romext>
-			<platform>Sinclair ZX Spectrum</platform>
-			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/zxspectrum.jpg</thumb>
-			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/zxspectrum_fanart.jpg</fanart>
-			<genre></genre>
-			<release>1982</release>
-			<publisher></publisher>
-			<launcherplot></launcherplot>
-			<finished>false</finished>
-			<minimize>false</minimize>
-			<lnk></lnk>
-			<roms>
-			</roms>
-		</launcher>
-		<launcher>
 			<id>918d47f0784ac6b58748d3c8sdsdf5gms044</id>
 			<name>ScummVM</name>
 			<category>default</category>
@@ -635,6 +585,56 @@
 					<altapp></altapp>
 					<altarg></altarg>
 				</rom>
+			</roms>
+		</launcher>
+		<launcher>
+			<id>5fcb144341abe99147cc1843c0b317ef</id>
+			<name>Super Nintendo</name>
+			<category>default</category>
+			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+			<args>snes9x2010 "%rom%"</args>
+			<rompath>/storage/emulators/roms/snes/</rompath>
+			<thumbpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/thumbs/</thumbpath>
+			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
+			<trailerpath></trailerpath>
+			<custompath></custompath>
+			<romext>smc|sfc|zip|ZIP</romext>
+			<platform>Super Nintendo Entertainment System</platform>
+			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/snes.jpg</thumb>
+			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/snes_fanart.jpg</fanart>
+			<genre></genre>
+			<release>1990</release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+			</roms>
+		</launcher>
+		<launcher>
+			<id>9c11294859088cb34de2bf2ac5b0f678</id>
+			<name>ZX Spectrum</name>
+			<category>default</category>
+			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+			<args>fuse "%rom%"</args>
+			<rompath>/storage/emulators/roms/zxspectrum/</rompath>
+			<thumbpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/thumbs/</thumbpath>
+			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
+			<trailerpath></trailerpath>
+			<custompath></custompath>
+			<romext>tzx|Z80|z80|zip|ZIP</romext>
+			<platform>Sinclair ZX Spectrum</platform>
+			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/zxspectrum.jpg</thumb>
+			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/zxspectrum_fanart.jpg</fanart>
+			<genre></genre>
+			<release>1982</release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
 			</roms>
 		</launcher>
 	</launchers>
