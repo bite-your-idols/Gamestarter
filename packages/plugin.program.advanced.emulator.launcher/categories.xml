@@ -145,7 +145,7 @@
   <platform>MAME</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>fba &quot;%rom%&quot;</args>
+  <args>fbalpha &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/fba/</rompath>
   <romext>zip</romext>
   <finished>False</finished>
@@ -625,7 +625,7 @@
   <platform>Nintendo NES</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>fceu &quot;%rom%&quot;</args>
+  <args>fceumm &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/nes/</rompath>
   <romext>nes</romext>
   <finished>False</finished>
