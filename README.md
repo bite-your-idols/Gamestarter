@@ -51,16 +51,11 @@ The first time RetroArch is launched I recommend to update (Settings menu> Onlin
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
 Example of Kodi's game "library" with [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 
-![screenshot-retroarch](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-retroarch.gif)
-RetroArch Frontend.
-
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-context.png)
 Advanced Launcher context menu.
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-edit.png)
 Advanced Launcher core edit.
 
-![screenshot-emulationstation](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-emulationstation.png)
-Emulationstation
 
 
