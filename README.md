@@ -10,6 +10,9 @@ If you use a Raspberry Pi 2/3 as a media center running Kodi on [LibreELEC](http
 
 With this addon you will continue with your own customized Kodi but empowered with the awesome [RetroArch](http://www.libretro.com/) multi-emulator integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon.
 
+Cores/Emulators included:
+- AMIGA (lr uae4arm or UAE4ARM [More Info](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34)), ARCADE (lr Mame2003 with hiscores and lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ScummVM (lr scummvm), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
+
 
 ## Installation Instructions
 
@@ -21,19 +24,9 @@ Download the latest release of the addon from [Releases Page](https://github.com
 After firts-time-setup you can open addon settings to install additional features such as:
 - [EmulationStation](https://github.com/Herdinger/EmulationStation) (the same frontend RetroPie and Recalbox use) and themes (ES does not work in OE6-),
 - [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/wiki) addon to launch games from the "cloud",
-- UAE4ARM Amiga emulator (See #34 https://github.com/bite-your-idols/Gamestarter-Pi/issues/34),
+- UAE4ARM Amiga emulator ([More Info](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34)),
 - Libretro PC ports (Cave Story, Quake, Doom & Dinothawr)
 - 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla" ([More Info](https://github.com/bite-your-idols/gamemaker-pi)).
-
-
-## RetroArch
-
-The real power of emulation in Gamestarter comes from [RetroArch](http://www.libretro.com/). This will start by default the first time you launch the Gamestarter addon after the first-time-installation. Also, you can access it when playing even if you launch the game from kodi or emulationstation.
-
-#### Cores/Emulators inluded:
-AMIGA (lr uae4arm), ARCADE (lr Mame2003 with hiscores and lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ScummVM (lr scummvm), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
-
-The first time RetroArch is launched I recommend to update (Settings menu> Online Updater) databases and download boxarts/thumbnails. Then you can create your own playlists, start games, change cores, user dynamic wallpapers... just like in [Lakka](http://www.lakka.tv/) distro!!
 
 
 ## Credits
