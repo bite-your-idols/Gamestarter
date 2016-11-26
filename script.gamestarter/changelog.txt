@@ -1,12 +1,15 @@
-v2.6.0 (2016-11-12)
+v2.6.0 (2016-11-26)
 - imame4all and snes cores renamed.
 - EmulationStation themes optional installation from settings.
 - Libretro ports optional installation from settings.
 - Experimental Libretro cores optional installation from settings.
+- RetroArch and its assets updated.
 - Advanced Emulator Launcher updated to v0.9.4.
-- wonderswan core included and some cores updated.
+- Wonderswan core included and some cores updated.
 - Sample/demo roms removed.
 - Gamestarter splash screen.
+- Emulationstation theme mod: Simple-nodata.
+- Retroarch menu combo key: L1+R1+select+start
 - Minor updates, bug fixes and code debugging.
 
 v2.5.0 (2016-10-20)
