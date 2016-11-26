@@ -8,62 +8,32 @@ English/[Spanish](https://github.com/bite-your-idols/gamestarter/blob/master/REA
 
 If you use a Raspberry Pi 2/3 as a media center running Kodi on [LibreELEC](https://libreelec.tv/) or [OpenELEC](http://openelec.tv/), you like retrogaming and you want to launch games just as you do with movies and tv shows without dual-booting, swaping SD memories, complex installations... Here you have the definitve solution.
 
-With this addon you will continue with your own customized Kodi but empowered with the awesome RetroArch multi-emulator integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon.
+With this addon you will continue with your own customized Kodi but empowered with the awesome [RetroArch](http://www.libretro.com/) multi-emulator integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon.
 
 
 ## Installation Instructions
+
 Download the latest release of the addon from [Releases Page](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copy into your Raspberry Pi 2/3 and select "install from zip" in Settings>Addons menu. The first time the addon is launched it will perform set-up . Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
 
-Then you can open addon settings to install additional features such as:
-- Emulationstation frontend and themes,
+
+## Optional Installations
+
+After firts-time-setup you can open addon settings to install additional features such as:
+- [EmulationStation](https://github.com/Herdinger/EmulationStation) (the same frontend RetroPie and Recalbox use) and themes (ES does not work in OE6-),
 - [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/wiki) addon to launch games from the "cloud",
-- UAE4ARM Amiga emulator,
+- UAE4ARM Amiga emulator (See #34 https://github.com/bite-your-idols/Gamestarter-Pi/issues/34),
 - Libretro PC ports (Cave Story, Quake, Doom & Dinothawr)
 - 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla" ([More Info](https://github.com/bite-your-idols/gamemaker-pi)).
 
-.
 
-## RetroArch:
-The real power of emulation in Gamestarter comes from [Retroarch](http://www.libretro.com/). This will start by default the first time you launch the Gamestarter addon after the first-time-installation. Also, you can access it when playing even if you launch the game from kodi or emulationstation.
+## RetroArch
 
-Cores/Emulators inluded:
-AMIGA (lr uae4arm or UAE4ARM), ARCADE (lr Mame2003 with hiscores and lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ScummVM (lr scummvm), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
+The real power of emulation in Gamestarter comes from [RetroArch](http://www.libretro.com/). This will start by default the first time you launch the Gamestarter addon after the first-time-installation. Also, you can access it when playing even if you launch the game from kodi or emulationstation.
+
+#### Cores/Emulators inluded:
+AMIGA (lr uae4arm), ARCADE (lr Mame2003 with hiscores and lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ScummVM (lr scummvm), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
 
 The first time RetroArch is launched I recommend to update (Settings menu> Online Updater) databases and download boxarts/thumbnails. Then you can create your own playlists, start games, change cores, user dynamic wallpapers... just like in [Lakka](http://www.lakka.tv/) distro!!
-
-.
-
-## AdvancedLauncher/AdvancedEmulatorLauncher:
-
-The most "Kodi-like" way to launch games is using [AdvancedLauncher](https://github.com/edwtjo/advanced-launcher)(Open/LibreELEC 6 & 7) and [Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826)(LibreELEC 8), located also under Program Addons. Using this you will get all your games integrated in Kodi's library, just like your movies or music.
-
-There is a default/example launchers/games list I created. You can edit list, scan for your games, edit emulator cores... everything using contextual menu.
-
-.
-
-## EmulationStation:
-From addon setting you can install [EmulationStation](https://github.com/Herdinger/EmulationStation) frontend and some themes.
-.
-
-> This frontend does not work in OE6-.
-
-.
-
-## Amiga emulation:
-
-Amiga Emulation is a little tricky and you can choose between uae4arm-libretro experiemntal core and  [UAE4ARM Pi](https://www.raspberrypi.org/forums/viewtopic.php?t=110488) port. You can not launch emulator into GUI by now, but you can launch games from Kodi's Advanced Launcher or Emulationstation. Games must be ".adf" files. All files from Multi-disk games must be named the same adding "_Disk1.adf", "_Disk2.adf"... like this:
-
-> name of the game_Disk1.adf
-
-> name of the game_Disk2.adf
-
-> name of the game_Disk3.adf
-
-> ...
-
-With non libretro emulator you will need a mouse in order to start games and a keyboard to exit, save/load states...
-
-.
 
 
 ## Credits
