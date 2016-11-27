@@ -8,10 +8,7 @@ English/[Spanish](https://github.com/bite-your-idols/gamestarter/blob/master/REA
 
 If you use a Raspberry Pi 2/3 as a media center running Kodi on [LibreELEC](https://libreelec.tv/) or [OpenELEC](http://openelec.tv/), you like retrogaming and you want to launch games just as you do with movies and tv shows without dual-booting, swaping SD memories, complex installations... Here you have the definitve solution.
 
-With this addon you will continue with your own customized Kodi but empowered with the awesome [RetroArch](http://www.libretro.com/) multi-emulator integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon.
-
-Cores/Emulators included:
-- [AMIGA](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34) (lr uae4arm or UAE4ARM ), ARCADE (lr Mame2003 with hiscores and lr FBA next), Atari 2600 (lr stella), Atari Lynx (lr handy), Sega GameGear (lr picodrive), Sega Master System (lr picodrive), Sega Megadrive/MegaCD (lr picodrive), Nintendo Game Boy/Game Boy Color (lr Gambatte), Nintendo NES (lr fceumm), Super Nintendo (lr pocketsnes), Nintendo Game Boy Advanced (lr gpsp), Nintendo 64 (lr glupen64), MSX (lr bluemsx), Magnavox Odyssey/Phillips Videopac (lr o2em), NeoGeo (lr FBA next), Turbografx/PC Engine/PC Engine CD (lr mednafen_pce_fast), Sony Playstation (lr pcsx_rearmed), Sony PSP (lr ppsspp), ScummVM (lr scummvm), ZX Spectrum (lr fuse), PC Ports (libretro CaveStory, Quake and Doom).
+With this addon you will continue with your own customized Kodi but empowered with the awesome [RetroArch](http://www.libretro.com/) multi-emulator integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon. (Check out included systems [here](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35))
 
 
 ## Installation Instructions
@@ -22,11 +19,12 @@ Download the latest release of the addon from [Releases Page](https://github.com
 ## Optional Installations
 
 After firts-time-setup you can open addon settings to install additional features such as:
-- [EmulationStation](https://github.com/Herdinger/EmulationStation) (the same frontend RetroPie and Recalbox use) and themes (ES does not work in OE6-),
-- [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/wiki) addon to launch games from the "cloud",
-- UAE4ARM Amiga emulator ([More Info](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34)),
+- [EmulationStation](https://github.com/Herdinger/EmulationStation) (the same frontend RetroPie and Recalbox use) and themes (ES does not work in OE6-)
+- [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/wiki) addon to launch games from the "cloud" ([config instructions](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
+- RetroArch experimental cores (Mame2010, yabause, reicast, desmume...)
+- UAE4ARM Amiga emulator ([info about amiga emulation](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
 - Libretro PC ports (Cave Story, Quake, Doom & Dinothawr)
-- 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla" ([More Info](https://github.com/bite-your-idols/gamemaker-pi)).
+- 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla" ([More Info](https://github.com/bite-your-idols/gamemaker-pi))
 
 
 ## Credits
