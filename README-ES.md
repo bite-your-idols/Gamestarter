@@ -15,9 +15,9 @@ Descarga la última versión del addon desde la [Página de Releases](https://gi
 
 ## Instalaciones Opcionales.
 Despues de iniciar por primera vez tendrás la opción de instalar con un click desde los ajustes del addon:
-- [EmulationStation](https://github.com/Herdinger/EmulationStation)(el mismo frontend/menu que usa RetroPie y Recalbox) y algunos temas (ES no funciona en versiones OE6-) 
-- [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/), addon para lanzar juegos desde la "nube"
-- RetroArch cores experimentales (Mame2010, yabause, reicast, desmume...)alojados en Internet Archive ([instrucciones de configcuracion](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31)).
+- [EmulationStation](https://github.com/Herdinger/EmulationStation) (el mismo frontend que usan RetroPie y Recalbox) y algunos temas (ES no funciona en versiones OE6-) 
+- [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/), addon para lanzar juegos desde la "nube" alojados en Internet Archive ([instrucciones de config](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
+- RetroArch cores experimentales (Mame2010, yabause, reicast, desmume...)
 - Emulador de Amiga UAE4ARM ([info sobre emulación de amiga](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
 - 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" ([Mas info aquí](https://github.com/bite-your-idols/gamemaker-pi)).
 
