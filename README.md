@@ -11,12 +11,12 @@ If you use a Raspberry Pi 2/3 as a media center running Kodi on [LibreELEC](http
 With this addon you will continue with your own customized Kodi but empowered with the awesome [RetroArch](http://www.libretro.com/) multi-emulator integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon. Check out included systems [here](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
 
 
-## Installation Instructions
+## Installation Instructions.
 
 Download the latest release of the addon from [Releases Page](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copy into your Raspberry Pi 2/3 and select "install from zip" in Settings>Addons menu. The first time the addon is launched it will perform set-up . Then copy your [roms and bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) to /storage/emulators/ folder via ftp or [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) and reboot.
 
 
-## Optional Installations
+## Optional Installations.
 
 After firts-time-setup you can open addon settings to install additional features such as:
 - [EmulationStation](https://github.com/Herdinger/EmulationStation) (the same frontend RetroPie and Recalbox use) and themes (ES does not work in OE6-)
@@ -32,25 +32,10 @@ Example of Kodi's game "library" with [Mimic Skin](http://kodi.wiki/view/Add-on:
 
 
 
-## Credits
+## Credits.
 
 - Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 
 - UAE4ARM & EmulationStation compiled by [Escalade](https://forum.libreelec.tv/thread-302.html)
 
 - AdvancedLauncher "skin" images by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
-
-
-
-## Gallery
-
-
-
-![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-context.png)
-Advanced Launcher context menu.
-
-![screenshot-advlauncher-edit](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-edit.png)
-Advanced Launcher core edit.
-
-
-
