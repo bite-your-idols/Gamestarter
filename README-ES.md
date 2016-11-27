@@ -23,10 +23,10 @@ Despues de iniciar por primera vez tendrás la opción de instalar con un click 
 
 ## Créditos.
 - Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
-
 - UAE4ARM & EmulationStation compiled by [Escalade](https://forum.libreelec.tv/thread-302.html)
-
 - AdvancedLauncher "skin" images by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
+
+.
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
 Ejemplo de la "biblioteca de juegos" de Kodi con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
