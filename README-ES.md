@@ -19,7 +19,7 @@ Despues de iniciar por primera vez tendrás la opción de instalar con un click 
 - [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/), addon para lanzar juegos desde la "nube" ([instrucciones de config](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
 - RetroArch cores experimentales (Mame2010, yabause, reicast, desmume...)
 - Emulador de Amiga UAE4ARM ([info sobre emulación de amiga](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
-- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" ([Mas info aquí](https://github.com/bite-your-idols/gamemaker-pi)).
+- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" ([Mas info aquí](https://github.com/bite-your-idols/gamemaker-pi))
 
 ## Créditos.
 - Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
