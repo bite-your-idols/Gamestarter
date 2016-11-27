@@ -26,16 +26,15 @@ After firts-time-setup you can open addon settings to install additional feature
 - Libretro PC ports (Cave Story, Quake, Doom & Dinothawr)
 - 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla" ([More Info](https://github.com/bite-your-idols/gamemaker-pi))
 
+## Credits.
+
+- Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
+- UAE4ARM & EmulationStation compiled by [Escalade](https://forum.libreelec.tv/thread-302.html)
+- AdvancedLauncher "skin" images by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
+
+.
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
 Example of Kodi's game "library" with [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
 
 
-
-## Credits.
-
-- Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
-
-- UAE4ARM & EmulationStation compiled by [Escalade](https://forum.libreelec.tv/thread-302.html)
-
-- AdvancedLauncher "skin" images by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
