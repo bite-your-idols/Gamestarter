@@ -6,9 +6,9 @@ English/[Spanish](https://github.com/bite-your-idols/gamestarter/blob/master/REA
 
 ## Retrogamig addon for Raspberry Pi's Kodi.
 
-If you use a Raspberry Pi 2/3 as a media center running Kodi on [LibreELEC](https://libreelec.tv/) or [OpenELEC](http://openelec.tv/), you like retrogaming and you want to launch games just as you do with movies and tv shows without dual-booting, swaping SD memories, complex installations... Here you have the definitve solution.
+If you use a Raspberry Pi 2/3 as a media center running Kodi on [LibreELEC](https://libreelec.tv/) or [OpenELEC](http://openelec.tv/), you like retrogaming and you want to launch games just as you do with movies and tv shows without dual-booting, swaping SD memories, complex installations... Here you have the ultimate solution.
 
-With this addon you will continue with your own customized Kodi but empowered with the awesome [RetroArch](http://www.libretro.com/) multi-emulator integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon. (Check out included systems [here](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35))
+With this addon you will continue with your own customized Kodi but empowered with the awesome [RetroArch](http://www.libretro.com/) multi-emulator integrated in your Kodi library thanks to [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) addon. Check out included systems [here](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
 
 
 ## Installation Instructions
@@ -27,6 +27,11 @@ After firts-time-setup you can open addon settings to install additional feature
 - 3 GameMaker Pi ports including modern masterpiece "Maldita Castilla" ([More Info](https://github.com/bite-your-idols/gamemaker-pi))
 
 
+![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
+Example of Kodi's game "library" with [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
+
+
+
 ## Credits
 
 - Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
@@ -39,8 +44,7 @@ After firts-time-setup you can open addon settings to install additional feature
 
 ## Gallery
 
-![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
-Example of Kodi's game "library" with [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
+
 
 ![screenshot-advlauncher-context](https://github.com/bite-your-idols/gamestarter/raw/master/assets/screenshot-advlauncher-context.png)
 Advanced Launcher context menu.
