@@ -10,7 +10,7 @@ kodi-send --action="xbmc.ActivateWindow(busydialog)"
 # wget --no-check-certificate -O $ADDON_DIRECTORY/changelog_latest.txt https://raw.githubusercontent.com/bite-your-idols/Gamestarter-Pi/master/script.gamestarter/changelog.txt
 VERSION_LOCAL=$(head -c 6 $ADDON_DIRECTORY/changelog.txt) 
 # VERSION_ONLINE=$(head -c 6 $ADDON_DIRECTORY/changelog_latest.txt) 
-VERSION_ONLINE="v2.5.0"
+VERSION_ONLINE="v2.6.0"
 echo $VERSION_LOCAL
 echo $VERSION_ONLINE
 
