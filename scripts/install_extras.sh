@@ -107,28 +107,28 @@ case $1 in
 		curl -o /storage/cavestory.zip https://buildbot.libretro.com/assets/cores/NXEngine/Cave%20Story%20%28en%29.zip
 		unzip -o /storage/cavestory.zip -d /storage/emulators/roms/ports/
 		rm /storage/cavestory.zip
-		wget --no-check-certificate -O /storage/emulators/roms/ports/CaveStory.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ports/CaveStory.sh
+		wget --no-check-certificate -O /storage/emulators/roms/ports/CaveStory.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulators/roms/ports/CaveStory.sh
 		chmod a+x /storage/emulators/roms/ports/CaveStory.sh
 		
 		echo "Installing Doom..."
 		curl -o /storage/doom.zip https://buildbot.libretro.com/assets/cores/PrBoom/Doom%20%5Bshareware%5D%5B1993%5D.zip
 		unzip -o /storage/doom.zip -d /storage/emulators/roms/ports/
 		rm /storage/doom.zip
-		wget --no-check-certificate -O /storage/emulators/roms/ports/Doom.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ports/Doom.sh
+		wget --no-check-certificate -O /storage/emulators/roms/ports/Doom.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulators/roms/ports/Doom.sh
 		chmod a+x /storage/emulators/roms/ports/Doom.sh
 
 		echo "Installing Quake..."
 		curl -o /storage/quake.zip https://buildbot.libretro.com/assets/cores/Tyrquake/Quake%20%5Bshareware%5D%5B1996%5D.zip
 		unzip -o /storage/quake.zip -d /storage/emulators/roms/ports/
 		rm /storage/quake.zip
-		wget --no-check-certificate -O /storage/emulators/roms/ports/Quake.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ports/Quake.sh
+		wget --no-check-certificate -O /storage/emulators/roms/ports/Quake.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulators/roms/ports/Quake.sh
 		chmod a+x /storage/emulators/roms/ports/Quake.sh
 
 		echo "Installing Dinothawr..."
 		curl -o /storage/dino.zip https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip
 		unzip -o /storage/dino.zip -d /storage/emulators/roms/ports/
 		rm /storage/dino.zip
-		wget --no-check-certificate -O /storage/emulators/roms/ports/Dinothawr.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ports/Dinothawr.sh
+		wget --no-check-certificate -O /storage/emulators/roms/ports/Dinothawr.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulators/roms/ports/Dinothawr.sh
 		chmod a+x /storage/emulators/roms/ports/Dinothawr.sh
 		
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"

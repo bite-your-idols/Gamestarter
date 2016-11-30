@@ -52,7 +52,8 @@ esac
 read -r -p "Do you want to make tar/zip packages? [y/n] " response
 case $response in
     [yY][eE][sS]|[yY]) 
-        echo "Compilamos las carpetas de packages..."
+       
+    echo "Compilamos las carpetas de packages..."
 	# hacer un pack de carpeta para cada package y resources/data: 
 	# emulationstation.tar.gz | libretro-extra-cores.tar.gz | uae4arm.tar.gz
 	cd packages && tar -zcvf emulationstation.tar.gz emulationstation/ && cd ..
@@ -62,6 +63,7 @@ case $response in
 	# advancedemulatorlauncher.tar.gz | advancedlauncher.tar.gz | emulators.tar.gz | libretro-part1.tar.gz | libretro-part2.tar.gz | retroarch.tar.gz
 	# subir cada package actualizando el existente
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/emulators.tar.gz emulators/ && cd ..
+
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz plugin.program.advanced.emulator.launcher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz plugin.program.advanced.launcher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
