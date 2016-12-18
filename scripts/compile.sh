@@ -70,7 +70,9 @@ case $response in
 	rm -rf emulators
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz plugin.program.advanced.emulator.launcher/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz plugin.program.advanced.launcher/ && cd ..
+	mkdir packages/retroarch/playlists
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
+	rm -rf packages/retroarch/playlists
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/frontend-assets.tar.gz frontend-assets/ && cd ..
 	cd packages && tar -zcvf ../script.gamestarter/resources/data/libretro-cores.tar.gz libretro-cores/ && cd ..
 	cd script.gamestarter/resources/data/ && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ../../../
