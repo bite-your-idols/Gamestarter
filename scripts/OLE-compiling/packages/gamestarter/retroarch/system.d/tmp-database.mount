@@ -1,0 +1,13 @@
+[Unit]
+Description=Database directory
+After=storage.mount
+After=systemd-tmpfiles-setup.service
+
+[Mount]
+What=none
+Where=/tmp/database
+Type=overlay
+Options=lowerdir=/usr/share/retroarch/database,upperdir=/storage/.config/retroarch/database,workdir=/storage/.tmp/database-workdir
+
+[Install]
+WantedBy=kodi.target

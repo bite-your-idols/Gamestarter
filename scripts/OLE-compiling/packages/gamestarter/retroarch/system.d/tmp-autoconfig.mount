@@ -1,0 +1,13 @@
+[Unit]
+Description=Joypad configs directory
+After=storage.mount
+After=systemd-tmpfiles-setup.service
+
+[Mount]
+What=none
+Where=/tmp/autoconfig
+Type=overlay
+Options=lowerdir=/usr/share/retroarch/autoconfig,upperdir=/storage/.config/retroarch/autoconfig,workdir=/storage/.tmp/autoconfig-workdir
+
+[Install]
+WantedBy=kodi.target
