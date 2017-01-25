@@ -1,4 +1,4 @@
-### Github Tips to compile retroarchs and cores using Open/LibreELEC toolchain:
+#### Personal notes to compile using Open/LibreELEC toolchain:
 
 clonar el repo en el HDD:
 
