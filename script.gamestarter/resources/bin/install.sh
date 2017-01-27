@@ -63,6 +63,7 @@ mkdir /storage/emulators/roms/atarist
 mkdir /storage/emulators/roms/fba
 mkdir /storage/emulators/roms/gamegear
 mkdir /storage/emulators/roms/gb
+mkdir /storage/emulators/roms/gba
 mkdir /storage/emulators/roms/gw
 mkdir /storage/emulators/roms/mame
 mkdir /storage/emulators/roms/mastersystem
