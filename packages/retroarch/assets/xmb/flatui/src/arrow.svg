@@ -1,11 +1,9 @@
-<svg id="png_arrow.png_src_arrow.svg" data-name="png/arrow.png, src/arrow.svg" xmlns="http://www.w3.org/2000/svg" width="65.969" height="100.031" viewBox="0 0 65.969 100.031">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #ecf0f1;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Flèche" class="cls-1" d="M151.29,82.661a16.115,16.115,0,0,1,0,22.73l-33.967,32.487a15.969,15.969,0,0,1-22.644,0c-6.253-6.276-6.253-14.845,0-21.122l33.967-34.095A15.97,15.97,0,0,1,151.29,82.661Zm-0.325,90.649a16.051,16.051,0,0,0,0-22.627l-33.787-32.332a15.877,15.877,0,0,0-22.524,0c-6.22,6.248-6.22,14.771,0,21.019l33.786,33.94A15.877,15.877,0,0,0,150.965,173.31Z" transform="translate(-90 -77.969)"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<path fill="#F2F2F2" d="M35.706,38.292L29.414,32l6.293-6.293l0,0C35.888,25.525,36,25.276,36,25c0-0.553-0.447-1-1-1
+	c-0.276,0-0.526,0.112-0.707,0.293l-7,7C27.112,31.474,27,31.724,27,32s0.112,0.525,0.293,0.707l0,0l7,7l0,0
+	C34.475,39.888,34.725,40,35,40c0.553-0.001,1-0.448,1-1C36,38.723,35.888,38.473,35.706,38.292z"/>
 </svg>

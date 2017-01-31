@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256">
+    <desc iVinci="yes" version="4.6" gridStep="20" showGrid="no" snapToGrid="no" codePlatform="0"/>
+    <g id="Layer1" name="Layer 1" opacity="1">
+        <g id="Shape1">
+            <desc shapeID="1" type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-100,-68.4834,200,136.967)" text="" font-familyName="" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.97865,0.000512411,-0.000512419,0.978665,127.968,189.029)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath1" d="M42.4218,126.285 C31.8374,138.147 30.1561,145.569 30.1211,180.592 L30.0933,207.544 L57.0444,207.544 C92.0585,207.546 99.4913,205.871 111.351,195.312 L115.663,191.473 L115.875,219.601 C116.075,246.152 116.172,247.872 117.614,250.268 C122.501,258.388 134.847,257.846 138.714,249.344 C140.016,246.481 140.14,243.872 140.169,218.818 L140.2,191.423 L144.543,195.298 C156.43,205.904 163.834,207.583 198.872,207.618 L225.823,207.646 L225.824,180.695 C225.825,145.671 224.152,138.248 213.58,126.374 L209.729,122.05 L205.287,125.079 C197.219,130.58 186.766,134.179 178.77,134.208 L175.641,134.22 L173.613,139.379 C157.212,181.089 98.7321,181.059 82.3753,139.332 L80.3521,134.17 L77.2234,134.155 C69.2279,134.117 58.7787,130.507 50.7166,124.998 L46.277,121.964 L42.4218,126.285 Z" style="stroke:none;fill-rule:evenodd;fill:#2ecc71;fill-opacity:1;"/>
+        </g>
+        <g id="Shape2">
+            <desc shapeID="2" type="0" basicInfo-basicType="1" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-83.0229,-25.7162,166.046,51.4324)" text="" font-familyName="Helvetica" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.984273,0.000515356,-0.000585224,1.11771,127.988,150.75)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath2" d="M46.2859,121.964 L209.72,122.049 L209.69,179.536 L46.2558,179.451 L46.2859,121.964 Z" style="stroke:none;fill-rule:evenodd;fill:#2ecc71;fill-opacity:1;"/>
+        </g>
+    </g>
+    <g id="Layer2" name="Layer 4" opacity="1">
+        <g id="Shape3">
+            <desc shapeID="3" type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-50.2318,-49.7682,100.464,99.5363)" text="" font-familyName="Helvetica" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.974133,0.000510046,-0.000514806,0.983224,79.09,84.9615)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath3" d="M30.1575,84.9359 C30.1717,57.9108 52.091,36.0141 79.1156,36.0283 C106.14,36.0424 128.037,57.962 128.023,84.9871 C128.008,112.012 106.089,133.909 79.0644,133.895 C52.0397,133.881 30.1434,111.961 30.1575,84.9359 Z" style="stroke:none;fill-rule:evenodd;fill:#d35400;fill-opacity:1;"/>
+        </g>
+    </g>
+    <g id="Layer3" name="Layer 2" opacity="1">
+        <g id="Shape4">
+            <desc shapeID="4" type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-48.9954,-49.7682,97.9908,99.5364)" text="" font-familyName="Helvetica" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.998716,0.000522918,-0.000514806,0.983223,176.955,85.6138)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath4" d="M128.022,85.5882 C128.036,58.5631 149.956,36.6664 176.98,36.6806 C204.005,36.6947 225.901,58.6144 225.887,85.6394 C225.873,112.665 203.954,134.561 176.929,134.547 C149.904,134.533 128.008,112.613 128.022,85.5882 Z" style="stroke:none;fill-rule:evenodd;fill:#e67e22;fill-opacity:1;"/>
+        </g>
+        <g id="Shape5">
+            <desc shapeID="5" type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-48.9954,-49.7682,97.9908,99.5364)" text="" font-familyName="Helvetica" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.998716,0.000522918,-0.000514806,0.983223,128.003,121.592)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath5" d="M79.0707,121.567 C79.0849,94.5417 101.004,72.645 128.029,72.6592 C155.054,72.6733 176.95,94.593 176.936,121.618 C176.922,148.643 155.002,170.54 127.978,170.526 C100.953,170.512 79.0566,148.592 79.0707,121.567 Z" style="stroke:none;fill-rule:evenodd;fill:#e67e22;fill-opacity:1;"/>
+        </g>
+    </g>
+    <g id="Layer4" name="Layer 3" opacity="1">
+        <g id="Shape6">
+            <desc shapeID="6" type="0" basicInfo-basicType="4" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-50.2318,-49.7682,100.464,99.5363)" text="" font-familyName="Helvetica" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.974133,0.000510046,-0.000514806,0.983224,128.041,48.9845)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath6" d="M79.1089,48.9588 C79.123,21.9338 101.042,0.0370636 128.067,0.0512276 C155.092,0.0653763 176.988,21.985 176.974,49.0101 C176.96,76.0352 155.04,97.9319 128.016,97.9177 C100.991,97.9036 79.0947,75.9839 79.1089,48.9588 Z" style="stroke:none;fill-rule:evenodd;fill:#f1c40f;fill-opacity:1;"/>
+        </g>
+    </g>
+</svg>
