@@ -1,6 +1,5 @@
 # releases directory
-/releases/
+# /releases/
 
 # compilation packages/settings for OLE
-/scripts/OLE-compiling/_packages_OLD
 /scripts/OLE-compiling/target/
