@@ -1,0 +1,62 @@
+--- a/es-app/src/guis/GuiMenu.cpp	2016-03-25 09:27:17.720479960 +0100
++++ b/es-app/src/guis/GuiMenu.cpp	2016-03-25 09:33:38.602015649 +0100
+@@ -211,59 +211,9 @@
+ 
+ 	addEntry("QUIT", 0x777777FF, true, 
+ 		[this] {
+-			auto s = new GuiSettings(mWindow, "QUIT");
+-			
+-			Window* window = mWindow;
+-
+-			ComponentListRow row;
+-			row.makeAcceptInputHandler([window] {
+-				window->pushGui(new GuiMsgBox(window, "REALLY RESTART?", "YES",
+-				[] {
+-					if(quitES("/tmp/es-restart") != 0)
+-						LOG(LogWarning) << "Restart terminated with non-zero result!";
+-				}, "NO", nullptr));
+-			});
+-			row.addElement(std::make_shared<TextComponent>(window, "RESTART EMULATIONSTATION", Font::get(FONT_SIZE_MEDIUM), 0x777777FF), true);
+-			s->addRow(row);
+-
+-			row.elements.clear();
+-			row.makeAcceptInputHandler([window] {
+-				window->pushGui(new GuiMsgBox(window, "REALLY RESTART?", "YES", 
+-				[] { 
+-					if(quitES("/tmp/es-sysrestart") != 0)
+-						LOG(LogWarning) << "Restart terminated with non-zero result!";
+-				}, "NO", nullptr));
+-			});
+-			row.addElement(std::make_shared<TextComponent>(window, "RESTART SYSTEM", Font::get(FONT_SIZE_MEDIUM), 0x777777FF), true);
+-			s->addRow(row);
+-
+-			row.elements.clear();
+-			row.makeAcceptInputHandler([window] {
+-				window->pushGui(new GuiMsgBox(window, "REALLY SHUTDOWN?", "YES", 
+-				[] { 
+-					if(quitES("/tmp/es-shutdown") != 0)
+-						LOG(LogWarning) << "Shutdown terminated with non-zero result!";
+-				}, "NO", nullptr));
+-			});
+-			row.addElement(std::make_shared<TextComponent>(window, "SHUTDOWN SYSTEM", Font::get(FONT_SIZE_MEDIUM), 0x777777FF), true);
+-			s->addRow(row);
+-
+-			if(Settings::getInstance()->getBool("ShowExit"))
+-			{
+-				row.elements.clear();
+-				row.makeAcceptInputHandler([window] {
+-					window->pushGui(new GuiMsgBox(window, "REALLY QUIT?", "YES", 
+-					[] { 
+ 						SDL_Event ev;
+ 						ev.type = SDL_QUIT;
+ 						SDL_PushEvent(&ev);
+-					}, "NO", nullptr));
+-				});
+-				row.addElement(std::make_shared<TextComponent>(window, "QUIT EMULATIONSTATION", Font::get(FONT_SIZE_MEDIUM), 0x777777FF), true);
+-				s->addRow(row);
+-			}
+-
+-			mWindow->pushGui(s);
+ 	});
+ 
+ 	mVersion.setFont(Font::get(FONT_SIZE_SMALL));

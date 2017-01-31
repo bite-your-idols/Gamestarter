@@ -1,0 +1,24 @@
+--- a/configure	2016-03-18 13:17:01.317452494 +0100
++++ b/configure	2016-03-18 13:18:02.569930609 +0100
+@@ -18322,9 +18322,6 @@
+ 
+   X_CFLAGS= X_PRE_LIBS= X_LIBS= X_EXTRA_LIBS=
+ else
+-  if test -n "$x_includes"; then
+-    X_CFLAGS="$X_CFLAGS -I$x_includes"
+-  fi
+ 
+   # It would also be nice to do this for all -L options, not just this one.
+   if test -n "$x_libraries"; then
+@@ -19320,8 +19317,9 @@
+     if test x$enable_video = xyes -a x$enable_video_dispmanx = xyes; then
+         { $as_echo "$as_me:${as_lineno-$LINENO}: checking for dispmanx support" >&5
+ $as_echo_n "checking for dispmanx support... " >&6; }
+-        DISPMANX_LDFLAGS="-L/opt/vc/lib -lbcm_host -lvcos -lvchiq_arm"
+-        DISPMANX_INCLUDES="-I/opt/vc/include -I/opt/vc/include/interface/vcos/pthreads -I/opt/vc/include/interface/vmcs_host/linux"
++	DISPMANX_INCLUDES="-I$SYSROOT_PREFIX/usr/include -I$SYSROOT_PREFIX/usr/include/interface/vcos/pthreads -I$SYSROOT_PREFIX/usr/include/interface/vmcs_host/linux"
++	DISPMANX_LDFLAGS="-L$SYSROOT_PREFIX/usr/lib -lbcm_host -lvcos -lvchiq_arm"
++
+         EXTRA_CFLAGS="$EXTRA_CFLAGS $DISPMANX_INCLUDES"
+         EXTRA_LDFLAGS="$EXTRA_LDFLAGS $DISPMANX_LDFLAGS"
+         SOURCES="$SOURCES $srcdir/src/video/dispmanx/*.c"

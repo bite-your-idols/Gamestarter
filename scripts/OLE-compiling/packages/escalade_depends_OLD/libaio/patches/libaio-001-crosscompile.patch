@@ -1,0 +1,11 @@
+--- a/Makefile	2016-10-10 22:51:42.386752527 +0200
++++ b/Makefile	2016-10-10 22:52:42.874046228 +0200
+@@ -5,7 +5,7 @@
+ CVSTAG = $(NAME)_$(subst .,-,$(VERSION))_$(subst .,-,$(RELEASE))
+ RPMBUILD=$(shell `which rpmbuild >&/dev/null` && echo "rpmbuild" || echo "rpm")
+ 
+-prefix=/usr
++prefix=$(DESTDIR)/usr
+ includedir=$(prefix)/include
+ libdir=$(prefix)/lib
+ 

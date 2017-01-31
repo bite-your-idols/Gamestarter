@@ -23,6 +23,13 @@ PKG_LICENSE="various"
 # PKG_SITE="http://www.libreelec.tv"
 PKG_SITE="http://www.openelec.tv"
 PKG_URL=""
+# ALL
+# PKG_DEPENDS_TARGET="toolchain beetle-pce-fast-libretro emulationstation fbalpha-libretro fceumm-libretro genesis-plus-gx-libretro glupen64-libretro mame2003-libretro pcsx_rearmed-libretro ppsspp-libretro retroarch snes9x2010-libretro"
+# OE6
+# PKG_DEPENDS_TARGET="toolchain retroarch beetle-pce-fast-libretro fbalpha-libretro fceumm-libretro genesis-plus-gx-libretro mame2003-libretro pcsx_rearmed-libretro snes9x2010-libretro"
+# LE8
+# PKG_DEPENDS_TARGET="toolchain retroarch emulationstation"
+# BASICS
 PKG_DEPENDS_TARGET="toolchain retroarch"
 PKG_SECTION="oem"
 PKG_SHORTDESC="OEM: Metapackage for various OEM packages"

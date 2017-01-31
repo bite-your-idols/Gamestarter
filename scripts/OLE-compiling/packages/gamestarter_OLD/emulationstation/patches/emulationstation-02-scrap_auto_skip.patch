@@ -1,0 +1,197 @@
+diff --git a/es-app/src/components/ScraperSearchComponent.cpp b/es-app/src/components/ScraperSearchComponent.cpp
+index 9cfda3d..561f5f7 100644
+--- a/es-app/src/components/ScraperSearchComponent.cpp
++++ b/es-app/src/components/ScraperSearchComponent.cpp
+@@ -16,9 +16,10 @@
+ #include "Log.h"
+ #include "Util.h"
+ 
+-ScraperSearchComponent::ScraperSearchComponent(Window* window, SearchType type) : GuiComponent(window),
++ScraperSearchComponent::ScraperSearchComponent(Window* window, SearchType type, SkipType skip) : GuiComponent(window),
+ 	mGrid(window, Eigen::Vector2i(4, 3)),
+-	mSearchType(type), mBusyAnim(window)
++	mSearchType(type), mBusyAnim(window),
++	mAutoSkipType(skip)
+ {
+ 	addChild(&mGrid);
+ 
+@@ -233,42 +234,50 @@
+ 
+ 	const int end = results.size() > MAX_SCRAPER_RESULTS ? MAX_SCRAPER_RESULTS : results.size(); // at max display 5
+ 
+-	auto font = Font::get(FONT_SIZE_MEDIUM);
+-	unsigned int color = 0x777777FF;
+-	if(end == 0)
++	//check if we are auto skipping results and if we did not receive a result
++	if (mAutoSkipType == AUTO_SKIP_NO_RESULTS && end == 0)
+ 	{
+-		ComponentListRow row;
+-		row.addElement(std::make_shared<TextComponent>(mWindow, "NO GAMES FOUND - SKIP", font, color), true);
++		mSkipCallback();
++	}
++	else
++	{
++		auto font = Font::get(FONT_SIZE_MEDIUM);
++		unsigned int color = 0x777777FF;
++		if (end == 0)
++		{
++			ComponentListRow row;
++			row.addElement(std::make_shared<TextComponent>(mWindow, "NO GAMES FOUND - SKIP", font, color), true);
+ 
+-		if(mSkipCallback)
+-			row.makeAcceptInputHandler(mSkipCallback);
++			if (mSkipCallback)
++				row.makeAcceptInputHandler(mSkipCallback);
+ 
+-		mResultList->addRow(row);
+-		mGrid.resetCursor();
+-	}else{
+-		ComponentListRow row;
+-		for(int i = 0; i < end; i++)
+-		{
+-			row.elements.clear();
+-			row.addElement(std::make_shared<TextComponent>(mWindow, strToUpper(results.at(i).mdl.get("name")), font, color), true);
+-			row.makeAcceptInputHandler([this, i] { returnResult(mScraperResults.at(i)); });
+ 			mResultList->addRow(row);
++			mGrid.resetCursor();
++		}else{
++			ComponentListRow row;
++			for (int i = 0; i < end; i++)
++			{
++				row.elements.clear();
++				row.addElement(std::make_shared<TextComponent>(mWindow, strToUpper(results.at(i).mdl.get("name")), font, color), true);
++				row.makeAcceptInputHandler([this, i] { returnResult(mScraperResults.at(i)); });
++				mResultList->addRow(row);
++			}
++			mGrid.resetCursor();
+ 		}
+-		mGrid.resetCursor();
+-	}
+ 
+-	mBlockAccept = false;
+-	updateInfoPane();
++		mBlockAccept = false;
++		updateInfoPane();
+ 
+-	if(mSearchType == ALWAYS_ACCEPT_FIRST_RESULT)
+-	{
+-		if(mScraperResults.size() == 0)
+-			mSkipCallback();
+-		else
+-			returnResult(mScraperResults.front());
+-	}else if(mSearchType == ALWAYS_ACCEPT_MATCHING_CRC)
+-	{
+-		// TODO
++		if (mSearchType == ALWAYS_ACCEPT_FIRST_RESULT)
++		{
++			if (mScraperResults.size() == 0)
++				mSkipCallback();
++			else
++				returnResult(mScraperResults.front());
++		}else if(mSearchType == ALWAYS_ACCEPT_MATCHING_CRC)
++		{
++			// TODO
++		}
+ 	}
+ }
+ 
+diff --git a/es-app/src/components/ScraperSearchComponent.h b/es-app/src/components/ScraperSearchComponent.h
+index f4fb43f..515e8a1 100644
+--- a/es-app/src/components/ScraperSearchComponent.h
++++ b/es-app/src/components/ScraperSearchComponent.h
+@@ -25,7 +25,13 @@ class ScraperSearchComponent : public GuiComponent
+ 		NEVER_AUTO_ACCEPT
+ 	};
+ 
+-	ScraperSearchComponent(Window* window, SearchType searchType = NEVER_AUTO_ACCEPT);
++	enum SkipType
++	{
++		AUTO_SKIP_NO_RESULTS,
++		NEVER_SKIP_NO_RESULTS
++	};
++
++	ScraperSearchComponent(Window* window, SearchType searchType = NEVER_AUTO_ACCEPT, SkipType skipType = NEVER_SKIP_NO_RESULTS);
+ 
+ 	void search(const ScraperSearchParams& params);
+ 	void openInputScreen(ScraperSearchParams& from);
+@@ -89,6 +95,7 @@ class ScraperSearchComponent : public GuiComponent
+ 	std::vector<MetaDataPair> mMD_Pairs;
+ 
+ 	SearchType mSearchType;
++	SkipType mAutoSkipType;
+ 	ScraperSearchParams mLastSearch;
+ 	std::function<void(const ScraperSearchResult&)> mAcceptCallback;
+ 	std::function<void()> mSkipCallback;
+diff --git a/es-app/src/guis/GuiScraperMulti.cpp b/es-app/src/guis/GuiScraperMulti.cpp
+index afbfe0a..2100af3 100644
+--- a/es-app/src/guis/GuiScraperMulti.cpp
++++ b/es-app/src/guis/GuiScraperMulti.cpp
+@@ -15,7 +15,7 @@
+ 
+ using namespace Eigen;
+ 
+-GuiScraperMulti::GuiScraperMulti(Window* window, const std::queue<ScraperSearchParams>& searches, bool approveResults) : 
++GuiScraperMulti::GuiScraperMulti(Window* window, const std::queue<ScraperSearchParams>& searches, bool approveResults, bool autoSkipNoResults) :
+ 	GuiComponent(window), mSearchQueue(searches),
+     mBackground(window, ":/frame.png"), mGrid(window, Vector2i(1, 5))
+ {
+@@ -40,7 +40,8 @@
+ 	mGrid.setEntry(mSubtitle, Vector2i(0, 2), false, true);
+ 
+ 	mSearchComp = std::make_shared<ScraperSearchComponent>(mWindow, 
+-		approveResults ? ScraperSearchComponent::ALWAYS_ACCEPT_MATCHING_CRC : ScraperSearchComponent::ALWAYS_ACCEPT_FIRST_RESULT);
++		approveResults ? ScraperSearchComponent::ALWAYS_ACCEPT_MATCHING_CRC : ScraperSearchComponent::ALWAYS_ACCEPT_FIRST_RESULT, 
++		autoSkipNoResults ? ScraperSearchComponent::AUTO_SKIP_NO_RESULTS : ScraperSearchComponent::NEVER_SKIP_NO_RESULTS);
+ 	mSearchComp->setAcceptCallback(std::bind(&GuiScraperMulti::acceptResult, this, std::placeholders::_1));
+ 	mSearchComp->setSkipCallback(std::bind(&GuiScraperMulti::skip, this));
+ 	mSearchComp->setCancelCallback(std::bind(&GuiScraperMulti::finish, this));
+diff --git a/es-app/src/guis/GuiScraperMulti.h b/es-app/src/guis/GuiScraperMulti.h
+index ff18c12..267e5e3 100644
+--- a/es-app/src/guis/GuiScraperMulti.h
++++ b/es-app/src/guis/GuiScraperMulti.h
+@@ -13,7 +13,7 @@ class TextComponent;
+ class GuiScraperMulti : public GuiComponent
+ {
+ public:
+-	GuiScraperMulti(Window* window, const std::queue<ScraperSearchParams>& searches, bool approveResults);
++	GuiScraperMulti(Window* window, const std::queue<ScraperSearchParams>& searches, bool approveResults, bool autoSkipNoResults);
+ 	virtual ~GuiScraperMulti();
+ 
+ 	void onSizeChanged() override;
+diff --git a/es-app/src/guis/GuiScraperStart.cpp b/es-app/src/guis/GuiScraperStart.cpp
+index 7d1ebab..cbb6161 100644
+--- a/es-app/src/guis/GuiScraperStart.cpp
++++ b/es-app/src/guis/GuiScraperStart.cpp
+@@ -33,6 +33,11 @@ GuiScraperStart::GuiScraperStart(Window* window) : GuiComponent(window),
+ 	mApproveResults->setState(true);
+ 	mMenu.addWithLabel("User decides on conflicts", mApproveResults);
+ 
++	// scrape auto skip
++	mAutoSkipNoResults = std::make_shared<SwitchComponent>(mWindow);
++	mAutoSkipNoResults->setState(false);
++	mMenu.addWithLabel("auto skip no games found", mAutoSkipNoResults);
++
+ 	mMenu.addButton("START", "start", std::bind(&GuiScraperStart::pressedStart, this));
+ 	mMenu.addButton("BACK", "back", [&] { delete this; });
+ 
+@@ -66,7 +71,7 @@ void GuiScraperStart::start()
+ 		mWindow->pushGui(new GuiMsgBox(mWindow,
+ 			"NO GAMES FIT THAT CRITERIA."));
+ 	}else{
+-		GuiScraperMulti* gsm = new GuiScraperMulti(mWindow, searches, mApproveResults->getState());
++		GuiScraperMulti* gsm = new GuiScraperMulti(mWindow, searches, mApproveResults->getState(), mAutoSkipNoResults->getState());
+ 		mWindow->pushGui(gsm);
+ 		delete this;
+ 	}
+diff --git a/es-app/src/guis/GuiScraperStart.h b/es-app/src/guis/GuiScraperStart.h
+index 0d453ca..6a7bb55 100644
+--- a/es-app/src/guis/GuiScraperStart.h
++++ b/es-app/src/guis/GuiScraperStart.h
+@@ -33,6 +33,7 @@ class GuiScraperStart : public GuiComponent
+ 	std::shared_ptr< OptionListComponent<GameFilterFunc> > mFilters;
+ 	std::shared_ptr< OptionListComponent<SystemData*> > mSystems;
+ 	std::shared_ptr<SwitchComponent> mApproveResults;
++	std::shared_ptr<SwitchComponent> mAutoSkipNoResults;
+ 
+ 	MenuComponent mMenu;
+ };

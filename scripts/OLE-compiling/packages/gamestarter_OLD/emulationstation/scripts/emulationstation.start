@@ -1,0 +1,12 @@
+#!/bin/sh
+
+. /storage/.config/emulationstation/emulationstation.conf
+. /etc/profile
+
+export DISPLAY=:0.0
+export SDL_AUDIODRIVER=alsa
+
+pidof kodi.bin > /dev/null && KODI=1
+[ "$KODI" = "1" ] && systemctl stop kodi
+emulationstation $EMULATIONSTATION_OPTS "$@" > /tmp/emulationstation.log 2>&1
+[ "$KODI" = "1" ] && systemctl start kodi

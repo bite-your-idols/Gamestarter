@@ -1,0 +1,46 @@
+--- a/Makefile	2016-03-25 11:10:45.833211198 +0100
++++ b/Makefile	2016-03-25 11:11:02.609627159 +0100
+@@ -32,8 +32,6 @@
+ 
+ NAME   = uae4arm
+ RM     = rm -f
+-CXX    = g++
+-STRIP  = strip
+ 
+ PROG   = $(NAME)
+ 
+@@ -46,7 +44,7 @@
+ #GEN_PROFILE=1
+ #USE_PROFILE=1
+ 
+-SDL_CFLAGS = `sdl-config --cflags`
++SDL_CFLAGS = `$(SYSROOT_PREFIX)/usr/bin/sdl-config --cflags`
+ 
+ DEFS +=  `xml2-config --cflags`
+ DEFS += -DCPU_arm -DARM_ASSEMBLY -DARMV6_ASSEMBLY -DGP2X -DPANDORA -DSIX_AXIS_WORKAROUND
+@@ -62,13 +60,13 @@
+ 	DEFS += -DUSE_ARMNEON
+ endif
+ 
+-MORE_CFLAGS += -I/opt/vc/include -I/opt/vc/include/interface/vmcs_host/linux -I/opt/vc/include/interface/vcos/pthreads
++MORE_CFLAGS += -I$(SYSROOT_PREFIX)/usr/include -I$(SYSROOT_PREFIX)/usr/include/interface/vmcs_host/linux -I$(SYSROOT_PREFIX)/usr/include/interface/vcos/pthreads
+ 
+ MORE_CFLAGS += -Isrc -Isrc/od-pandora -Isrc/gp2x -Isrc/threaddep -Isrc/menu -Isrc/include -Isrc/gp2x/menu -Wno-unused -Wno-format  -DGCCCONSTFUNC="__attribute__((const))"
+ MORE_CFLAGS += -fexceptions -fpermissive
+ 
+-LDFLAGS += -lSDL -lpthread -lm -lz -lSDL_image -lpng -lrt -lxml2 -lFLAC -lmpg123 -ldl
+-LDFLAGS += -lSDL_ttf -lguichan_sdl -lguichan -L/opt/vc/lib 
++LDFLAGS += -lSDL -lpthread -lm -lz -lSDL_image -lpng -lrt -lxml2 -lFLAC -lmpg123 -ldl -ljpeg -lfreetype -logg -lvorbis -L$(SYSROOT_PREFIX)/usr/lib
++LDFLAGS += -lSDL_ttf -lguichan_sdl -lguichan
+ 
+ ifndef DEBUG
+ MORE_CFLAGS += -Ofast -fomit-frame-pointer
+@@ -235,7 +233,7 @@
+ OBJS += src/od-gles/gles_gfx.o
+ MORE_CFLAGS += -I/opt/vc/include/
+ MORE_CFLAGS += -DHAVE_GLES
+-LDFLAGS +=  -ldl -lEGL -lGLESv1_CM
++LDFLAGS +=  -ldl -lEGL -lGLESv2
+ endif
+ 
+ 

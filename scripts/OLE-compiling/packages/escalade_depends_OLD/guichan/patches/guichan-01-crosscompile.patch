@@ -1,0 +1,11 @@
+--- a/configure	2016-03-18 20:39:22.783865461 +0100
++++ b/configure	2016-03-18 20:44:09.889946503 +0100
+@@ -14884,7 +14884,7 @@
+ {
+   SDLIMAGE="yes"
+   SDL_LIBS="$SDL_LIBS -lSDL_image"
+-  CPPFLAGS="$CPPFLAGS `sdl-config --cflags`"
++  CPPFLAGS="$CPPFLAGS `$SYSROOT_PREFIX/usr/bin/sdl-config --cflags`"
+ }
+ 
+ ForceSDLImage()

@@ -1,0 +1,16 @@
+--- a/Makefile	2016-08-13 15:58:53.302616785 +0200
++++ b/Makefile	2016-08-13 15:59:39.916444896 +0200
+@@ -1,4 +1,4 @@
+-SUBDIRS=libsepol libselinux libsemanage sepolgen checkpolicy secilc policycoreutils # policy
++SUBDIRS=libsepol libselinux
+ PYSUBDIRS=libselinux libsemanage
+ DISTCLEANSUBIDRS=libselinux libsemanage
+ 
+--- a/libselinux/Makefile	2016-08-13 14:35:10.029812196 +0000
++++ b/libselinux/Makefile	2016-08-13 14:35:33.929812046 +0000
+@@ -1,4 +1,4 @@
+-SUBDIRS = src include utils man
++SUBDIRS = src include
+ 
+ DISABLE_AVC ?= n
+ DISABLE_SETRANS ?= n

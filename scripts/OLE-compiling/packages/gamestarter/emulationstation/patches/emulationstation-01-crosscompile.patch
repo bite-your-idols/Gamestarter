@@ -1,0 +1,35 @@
+--- a/CMakeLists.txt	2016-03-24 12:15:07.452580559 +0100
++++ b/CMakeLists.txt	2016-03-24 12:16:37.614101378 +0100
+@@ -17,7 +17,7 @@
+ #-------------------------------------------------------------------------------
+ #check if we're running on Raspberry Pi
+ MESSAGE("Looking for bcm_host.h")
+-if(EXISTS "/opt/vc/include/bcm_host.h")
++if(EXISTS "${CMAKE_FIND_ROOT_PATH}/usr/include/bcm_host.h")
+     MESSAGE("bcm_host.h found")
+     set(BCMHOST found)
+     set(GLSystem "OpenGL ES")
+@@ -109,10 +109,10 @@
+ 
+ if(DEFINED BCMHOST)
+     LIST(APPEND COMMON_INCLUDE_DIRS
+-        "/opt/vc/include"
+-        "/opt/vc/include/interface/vcos"
+-        "/opt/vc/include/interface/vmcs_host/linux"
+-        "/opt/vc/include/interface/vcos/pthreads"
++        "${CMAKE_FIND_ROOT_PATH}/include"
++        "${CMAKE_FIND_ROOT_PATH}/include/interface/vcos"
++        "${CMAKE_FIND_ROOT_PATH}/include/interface/vmcs_host/linux"
++        "${CMAKE_FIND_ROOT_PATH}/include/interface/vcos/pthreads"
+     )
+ else()
+     if(${GLSystem} MATCHES "Desktop OpenGL")
+@@ -131,7 +131,7 @@
+ if(DEFINED BCMHOST)
+     link_directories(
+         ${Boost_LIBRARY_DIRS}
+-        "/opt/vc/lib"
++        "${CMAKE_FIND_ROOT_PATH}/lib"
+     )
+ else()
+     link_directories(
