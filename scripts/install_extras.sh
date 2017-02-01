@@ -183,6 +183,12 @@ case $1 in
 		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
 		
 		echo "Experimental cores Installed."
+	"skin")  
+		# descargamos el zip del addon
+		wget --no-check-certificate -O /storage/skin.estuary.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/skin.estuary.zip
+
+		# kodi-send --action=Notification"(Gamestarter,Custom Estuary skin downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		echo "Estuary Skin Downloaded."
   ;;
 esac
 
