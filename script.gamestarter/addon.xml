@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.gamestarter" name="Gamestarter" version="2.6.0" provider-name="Bite Your Idols!">
+<addon id="script.gamestarter" name="Gamestarter" version="2.7.0" provider-name="Bite Your Idols!">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -9,8 +9,8 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="es">Retrogaming addon para Raspberry Pi</summary>
     <summary lang="en">Retrogaming addon for Raspberry Pi</summary>
-	<description lang="es">Lanza emuladores desde Kodi en tu Raspberry Pi incluyendo RetroArch y sus cores, EmulationStation y más.</description>
-    <description lang="en">Launch emulators from Kodi in your Raspberry Pi including RetroArch, EmulationStation and more...</description>
+	<description lang="es">Lanza emuladores desde Kodi en tu Raspberry Pi 2/3 incluyendo RetroArch y sus cores, EmulationStation y más.</description>
+    <description lang="en">Launch emulators from Kodi in your Raspberry Pi 2/3 including RetroArch, EmulationStation and more...</description>
     <disclaimer lang="en"></disclaimer>
     <language></language>
     <platform>all</platform>
