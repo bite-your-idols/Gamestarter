@@ -58,6 +58,7 @@ case $response in
 	# emulationstation.tar.gz | libretro-extra-cores.tar.gz | uae4arm.tar.gz
 	cd packages && tar -zcvf emulationstation.tar.gz emulationstation/ && cd ..
 	cd packages && tar -zcvf uae4arm.tar.gz uae4arm/ && cd ..
+	cd packages && tar -zcvf drastic.tar.gz drastic/ && cd ..
 	
 	echo "Compilamos las carpetas de data..."
 	# advancedemulatorlauncher.tar.gz | advancedlauncher.tar.gz | emulators.tar.gz | libretro-part1.tar.gz | libretro-part2.tar.gz | retroarch.tar.gz

@@ -79,7 +79,13 @@ case $1 in
         $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE  >>  $LOG_FILE;; 
     esac
 
+    ;;
+  "nds") 
+	cd $DIR/resources/bin/drastic/
+   $DIR/resources/bin/drastic/drastic "$2"  &>  $LOG_FILE
+   # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
   ;;
+
    *) 
     $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/$1_libretro.so "$2"  &>  $LOG_FILE
     # /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch -c /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/retroarch.cfg -L /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/cores/mame2003_libretro.so /storage/emulators/roms/mame/gng.zip

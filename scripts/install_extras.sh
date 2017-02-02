@@ -190,7 +190,26 @@ case $1 in
 
 		# kodi-send --action=Notification"(Gamestarter,Custom Estuary skin downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 		echo "Estuary Skin Downloaded."
+    ;;
+    "drastic")  
+     	# Script for DraStic emulator installation 
+		# kodi-send --action=Notification"(Gamestarter,Installing DraStic,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+
+		wget --no-check-certificate -O /storage/drastic.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/drastic.tar.gz
+		tar -xf /storage/drastic.tar.gz -C /drastic/ -xz
+		rm /storage/drastic.tar.gz
+		
+		mkdir -p $ADDON_DIRECTORY/lib/
+		mv /storage/drastic/lib/* $ADDON_DIRECTORY/lib/
+		rm .rf /storage/drastic/lib
+		mv /storage/drastic/* $ADDON_DIRECTORY/resources/bin/drastic
+
+		chmod a+x $ADDON_DIRECTORY/resources/bin/drastic/drastic
+
+		# kodi-send --action=Notification"(Gamestarter,DraStic ainstalled,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		echo "DraStic emulator Installed."
   ;;
+
 esac
 
 kodi-send --action="xbmc.Dialog.Close(busydialog)"
