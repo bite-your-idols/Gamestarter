@@ -1096,6 +1096,56 @@
   <path_manual>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/manuals</path_manual>
   <path_trailer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/trailers</path_trailer>
 </launcher>
+
+<launcher>
+  <id>9c11294859088cb34de2bf2acds5b0f678hdd</id>
+  <m_name>Nintendo DS</m_name>
+  <m_year>2004</m_year>
+  <m_genre></m_genre>
+  <m_studio></m_studio>
+  <m_plot></m_plot>
+  <m_rating></m_rating>
+  <platform>Unknown</platform>
+  <categoryID>root_category</categoryID>
+  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <args>nds &quot;%rom%&quot;</args>
+  <rompath>/var/media/MEDIA_3T/Emuladores/roms/nds/</rompath>
+  <romext>zip|nds</romext>
+  <finished>False</finished>
+  <minimize>False</minimize>
+  <roms_base_noext>roms_Emulators_nintendods_9c1129</roms_base_noext>
+  <nointro_xml_file></nointro_xml_file>
+  <pclone_launcher>False</pclone_launcher>
+  <timestamp_launcher>1478390562.95</timestamp_launcher>
+  <timestamp_report>0.0</timestamp_report>
+  <default_thumb>s_thumb</default_thumb>
+  <default_fanart>s_fanart</default_fanart>
+  <default_banner>s_banner</default_banner>
+  <default_poster>s_flyer</default_poster>
+  <roms_default_thumb>s_title</roms_default_thumb>
+  <roms_default_fanart>s_fanart</roms_default_fanart>
+  <roms_default_banner>s_banner</roms_default_banner>
+  <roms_default_poster>s_flyer</roms_default_poster>
+  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
+  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/systems/nds.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/systems/nds_fanart.jpg</s_fanart>
+  <s_banner></s_banner>
+  <s_flyer></s_flyer>
+  <s_trailer></s_trailer>
+  <path_title>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/titles</path_title>
+  <path_snap>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/snaps</path_snap>
+  <path_fanart>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/fanarts</path_fanart>
+  <path_banner>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/banners</path_banner>
+  <path_clearlogo>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/clearlogos</path_clearlogo>
+  <path_boxfront>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/boxfront</path_boxfront>
+  <path_boxback>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/boxback</path_boxback>
+  <path_cartridge>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/cartridges</path_cartridge>
+  <path_flyer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/flyers</path_flyer>
+  <path_map>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/maps</path_map>
+  <path_manual>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/manuals</path_manual>
+  <path_trailer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/trailers</path_trailer>
+</launcher>
+
 <launcher>
   <id>ab94af6caf67b6d5615a4uae4arm69d82c3adf5cf2retro</id>
   <m_name>Retroarch</m_name>
