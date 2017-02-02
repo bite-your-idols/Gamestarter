@@ -2,4 +2,4 @@
 # /releases/
 
 # compilation packages/settings for OLE
-/scripts/OLE-compiling/target/
+/packages/OLE-compiling/target/
