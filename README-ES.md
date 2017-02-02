@@ -1,11 +1,11 @@
 # Gamestarter Pi
 ![gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/assets/gamestarter-logo-dark.jpg)
 
-[English](https://github.com/bite-your-idols/gamestarter/)/Spanish
+[English](https://github.com/bite-your-idols/gamestarter/) / Spanish / [German](https://github.com/bite-your-idols/gamestarter/blob/master/README-DE.md)
 
 
 
-## Retrogamig addon para Kodi en Raspberry Pi
+## Retrogaming addon para Kodi en Raspberry Pi
 Si usas la Raspberry Pi 2/3 como media center corriendo Kodi en [LibreELEC](https://libreelec.tv/) o [OpenELEC](http://openelec.tv/), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
 
 Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada con el maravilloso multi-emulador [Retroarch](http://www.libretro.com/) integrado en kodi gracias al addon [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826). Mira la lista de emuladores [aquí](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
