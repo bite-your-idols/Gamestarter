@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64">
+    <desc iVinci="yes" version="4.6" gridStep="20" showGrid="no" snapToGrid="no" codePlatform="0"/>
+    <g id="Layer1" name="Layer 1" opacity="1">
+        <g id="Shape1">
+            <desc shapeID="1" type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-31,-31,62,62)" text="" font-familyName="" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.774194,0,0,0.774194,32,32)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath1" d="M32,8 C18.7452,8 8,18.7452 8,32 C8,45.2548 18.7452,56 32,56 C45.2548,56 56,45.2548 56,32 C56,18.7452 45.2548,8 32,8 M32,28.9032 C33.7103,28.9032 35.0968,30.2897 35.0968,32 C35.0968,33.7103 33.7103,35.0968 32,35.0968 C30.2897,35.0968 28.9032,33.7103 28.9032,32 C28.9032,30.2897 30.2897,28.9032 32,28.9032 Z" style="stroke:none;fill-rule:nonzero;fill:#ecf0f1;fill-opacity:1;"/>
+        </g>
+        <g id="Shape2">
+            <desc shapeID="2" type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-30,-30,60,60)" text="" font-familyName="" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.766667,0.000401419,-0.000401419,0.766667,32,32)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath2" d="M32.012,9 C19.3095,8.99335 9.00666,19.2854 9,31.988 C8.99335,44.6905 19.2854,54.9934 31.988,55 C44.6905,55.0067 54.9934,44.7146 55,32.012 C55.0067,19.3095 44.7146,9.00666 32.012,9 M32.0016,28.9333 C33.6953,28.9342 35.0676,30.3079 35.0667,32.0016 C35.0658,33.6953 33.6921,35.0676 31.9984,35.0667 C30.3047,35.0658 28.9325,33.6921 28.9333,31.9984 C28.9342,30.3047 30.3079,28.9325 32.0016,28.9333 Z" style="stroke:none;fill-rule:nonzero;fill:#3498db;fill-opacity:1;"/>
+        </g>
+        <g id="Shape3">
+            <desc shapeID="3" type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-12,-12,24,24)" text="" font-familyName="" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(0.958333,0,0,0.958333,32,32)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+            <path id="shapePath3" d="M32,20.5 C25.6487,20.5 20.5,25.6487 20.5,32 C20.5,38.3513 25.6487,43.5 32,43.5 C38.3513,43.5 43.5,38.3513 43.5,32 C43.5,25.6487 38.3513,20.5 32,20.5 M32,28.1667 C34.1171,28.1667 35.8333,29.8829 35.8333,32 C35.8333,34.1171 34.1171,35.8333 32,35.8333 C29.8829,35.8333 28.1667,34.1171 28.1667,32 C28.1667,29.8829 29.8829,28.1667 32,28.1667 Z" style="stroke:#bdc3c7;stroke-opacity:1;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:2;stroke-linecap:butt;fill-rule:nonzero;fill:#ecf0f1;fill-opacity:1;"/>
+        </g>
+    </g>
+</svg>

@@ -2,9 +2,10 @@ v2.7.0 (2017-02-04)
 - retroarch 1.4.1
 - OLE version compiled from OE6 to improve compatibility
 - Cores updated from Lakka, Escalade's build and RetroPie
-- retroarch playlists and gba folders included
-- Estuary skin custom mod as an optional installation
+- Advanced Emulator Launcher updated to v0.9.5
 - Nintendo DS DraStic emulator as an optional installation
+- Estuary skin custom mod as an optional installation
+- retroarch playlists and gba folders included
 - Minor updates, bug fixes and code debugging.
 
 v2.6.0 (2016-11-26)

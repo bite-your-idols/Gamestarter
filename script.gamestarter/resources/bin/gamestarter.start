@@ -84,6 +84,7 @@ case $1 in
 	cd $DIR/resources/bin/drastic/
    $DIR/resources/bin/drastic/drastic "$2"  &>  $LOG_FILE
    # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
+   cd /storage
   ;;
 
    *) 

@@ -637,5 +637,30 @@
 			<roms>
 			</roms>
 		</launcher>
+		<launcher>
+			<id>9c11294859088cb34de2bf2ac5b0f6ds</id>
+			<name>Nintendo DS</name>
+			<category>default</category>
+			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+			<args>nds "%rom%"</args>
+			<rompath>/storage/emulators/roms/nds/</rompath>
+			<thumbpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/thumbs/</thumbpath>
+			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>
+			<trailerpath></trailerpath>
+			<custompath></custompath>
+			<romext>.nds|.NDS|.zip|.ZIP</romext>
+			<platform>Nintendo DS</platform>
+			<thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/nds.jpg</thumb>
+			<fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/nds_fanart.jpg</fanart>
+			<genre></genre>
+			<release>2004</release>
+			<publisher></publisher>
+			<launcherplot></launcherplot>
+			<finished>false</finished>
+			<minimize>false</minimize>
+			<lnk></lnk>
+			<roms>
+			</roms>
+		</launcher>
 	</launchers>
 </advanced_launcher>
