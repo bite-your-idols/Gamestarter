@@ -1,3 +1,12 @@
+v2.7.0 (2017-02-04)
+- retroarch 1.4.1
+- OLE version compiled from OE6 to improve compatibility
+- Cores updated from Lakka, Escalade's build and RetroPie
+- retroarch playlists and gba folders included
+- Estuary skin custom mod as an optional installation
+- Nintendo DS DraStic emulator as an optional installation
+- Minor updates, bug fixes and code debugging.
+
 v2.6.0 (2016-11-26)
 - imame4all and snes cores renamed.
 - EmulationStation themes optional installation from settings.
