@@ -9,10 +9,9 @@ Do you use your **Raspberry Pi** as a **media center**, running **Kodi** in [Lib
 With this addon you will be able to run **multiple emulators** from [RetroArch](http://libretro.com/) thanks to [Advanced Launcher](http://forum.kodi.tv/showthread.php?tid=85724) / [Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826). Check out the included systems below.
 
 ## Installation instructions
-- Use [SSH](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=SSH) to connect to your **Raspberry Pi** ([PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) for Windows, [Terminus](https://termius.com/download/) for mobile)
-- Download the [latest release](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) with `wget`
+- Download the [latest release](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) and transfer it to your **Raspberry Pi**
 - Go to **Kodi → Settings → System → Add-ons** and enable **Unknown sources**
-- Go to **Kodi → Add-ons → Install from zip file** and select the `.zip` (check the **Home folder**)
+- Go to **Kodi → Add-ons → Install from zip file** and select the downloaded `.zip` file
 
 The first time the addon is launched, it will perform a initial setup. You can then copy your [ROMs](https://github.com/libretro/Lakka/wiki/ROMs) and [BIOSes](https://github.com/libretro/Lakka/wiki/BIOSes) to `/storage/emulators/` via [Samba](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=Samba_2FSMB).
 
@@ -66,10 +65,11 @@ You can download [this](https://github.com/bite-your-idols/Gamestarter-Pi/raw/ma
 - Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
 
 ## Credits
+- Created by [bite-your-idols](https://github.com/bite-your-idols)
 - Original **RetroArch** addon by [mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 - **UAE4ARM** & **EmulationStation** compiled by [escalade](https://forum.libreelec.tv/thread-302.html)
 - **Advanced Launcher** emulator icons by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
-- **ReadMe** german translation by [BrokenCommander](https://github.com/BrokenCommander)
+- **ReadMe** by [BrokenCommander](https://github.com/BrokenCommander)
 
 ---
 
