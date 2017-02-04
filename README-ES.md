@@ -78,7 +78,10 @@ Puesde abrir los ajustas del addon para instalar:
 - **Advanced Launcher** emulator icons by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
 - **ReadMe** by [BrokenCommander](https://github.com/BrokenCommander)
 
-.
+---
+
+![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-estuary-ael-systems.png)
+Ejemplo de la "biblioteca de juegos" con **Advanced Emulator Launcher** en **Estuary Skin**.
 
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
 Ejemplo de la "biblioteca de juegos" de Kodi con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
