@@ -719,7 +719,7 @@
   <m_plot></m_plot>
   <m_rating></m_rating>
   <platform>Nintendo 64</platform>
-  <categoryID>2b494a422afb2474f89a7b693328fe64</categoryID>
+  <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
   <args>glupen64 &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/n64/</rompath>

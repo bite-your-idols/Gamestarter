@@ -72,7 +72,7 @@ mkdir /storage/emulators/roms/msx
 mkdir /storage/emulators/roms/n64
 mkdir /storage/emulators/roms/neogeo
 mkdir /storage/emulators/roms/nes
-#mkdir /storage/emulators/roms/nds
+mkdir /storage/emulators/roms/nds
 #mkdir /storage/emulators/roms/ngp
 mkdir /storage/emulators/roms/pcengine
 mkdir /storage/emulators/roms/ports
