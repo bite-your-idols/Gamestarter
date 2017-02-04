@@ -10,10 +10,13 @@ With this addon you will be able to run **multiple emulators** from [RetroArch](
 
 ## Installation instructions
 - Download the [latest release](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) and transfer it to your **Raspberry Pi**
-- Go to **Kodi → Settings → System → Add-ons** and enable **Unknown sources**
+- Go to **Kodi → Settings → System → Add-ons** and enable **Unknown sources** (LibreELEC 8)
 - Go to **Kodi → Add-ons → Install from zip file** and select the downloaded `.zip` file
 
 The first time the addon is launched, it will perform a initial setup. You can then copy your [ROMs](https://github.com/libretro/Lakka/wiki/ROMs) and [BIOSes](https://github.com/libretro/Lakka/wiki/BIOSes) to `/storage/emulators/` via [Samba](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=Samba_2FSMB).
+
+>If using LibreELEC 8, after installation you have to activate Advanced Emulator Launcher manually in Addons>My Addons> Proram Addons. It is a new Kodi 17 policy.
+
 
 ## Optional packages
 You can open the addon settings to install additional features.
@@ -22,8 +25,9 @@ You can open the addon settings to install additional features.
 - **Experimental RetroArch cores:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause)
 - **[uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi):** Amiga emulator (see [#34](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
 - **[Libretro PC ports](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr
+- **[DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Nintendo DS beta emulator
+- **Custom Estuary Skin:** Including home menu shortcut for Advaced Emulator Launcher or defautl Gamestarter frontend (see [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48))
 
-You can download [this](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/skin.estuary.zip) **modified Estuary Skin** to get a **Games** section in the home menu (see [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48)).
 
 ## Included systems
 ### Popular systems
@@ -60,9 +64,9 @@ You can download [this](https://github.com/bite-your-idols/Gamestarter-Pi/raw/ma
 
 ### Experimental systems (WIP)
 - *Arcade* ([lr-mame2010](https://github.com/libretro/mame2010-libretro))
-- Amiga ([lr-fsuae](https://github.com/libretro/libretro-fsuae))
 - Nintendo DS ([lr-desmume](https://github.com/libretro/desmume))
 - Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
+- Nintendo DS ([DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
 
 ## Credits
 - Created by [bite-your-idols](https://github.com/bite-your-idols)
