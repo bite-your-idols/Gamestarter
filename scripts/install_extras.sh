@@ -201,8 +201,8 @@ case $1 in
 		
 		mkdir -p $ADDON_DIRECTORY/lib/
 		mv /storage/drastic/lib/* $ADDON_DIRECTORY/lib/
-		rm .rf /storage/drastic/lib
-		mv /storage/drastic/* $ADDON_DIRECTORY/resources/bin/drastic
+		rm -rf /storage/drastic/lib
+		mv /storage/drastic $ADDON_DIRECTORY/resources/bin
 
 		chmod a+x $ADDON_DIRECTORY/resources/bin/drastic/drastic
 
