@@ -15,14 +15,14 @@ With this addon you will be able to run **multiple emulators** from [RetroArch](
 
 The first time the addon is launched, it will perform a initial setup. You can then copy your [ROMs](https://github.com/libretro/Lakka/wiki/ROMs) and [BIOSes](https://github.com/libretro/Lakka/wiki/BIOSes) to `/storage/emulators/` via [Samba](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=Samba_2FSMB).
 
->If using LibreELEC 8, after installation you have to activate Advanced Emulator Launcher manually in Addons>My Addons> Proram Addons. It is a new Kodi 17 policy.
+>If using LibreELEC 8, after installation you have to activate Advanced Emulator Launcher manually in Addons>My Addons> Program Addons. It is a new Kodi 17 policy.
 
 
 ## Optional packages
 You can open the addon settings to install additional features.
 - **[EmulationStation](http://emulationstation.org/):** a nice frontend also used by [RetroPie](https://retropie.org.uk/) and [Recalbox](https://recalbox.com/) and additional themes
 - **[Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/wiki):** addon to launch games from the [Internet Archive](https://archive.org/) (see [#31](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
-- **Experimental RetroArch cores:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause)
+- **Experimental RetroArch cores:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause)...
 - **[uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi):** Amiga emulator (see [#34](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
 - **[Libretro PC ports](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr
 - **[DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Nintendo DS beta emulator
@@ -67,6 +67,9 @@ You can open the addon settings to install additional features.
 - Nintendo DS ([lr-desmume](https://github.com/libretro/desmume))
 - Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
 - Nintendo DS ([DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
+
+>Missing a system? -> post [here](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
+
 
 ## Credits
 - Created by [bite-your-idols](https://github.com/bite-your-idols)
