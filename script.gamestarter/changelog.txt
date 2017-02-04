@@ -5,6 +5,7 @@ v2.7.0 (2017-02-04)
 - Advanced Emulator Launcher updated to v0.9.5
 - Nintendo DS DraStic emulator as an optional installation
 - Estuary skin custom mod as an optional installation
+- independent log files
 - retroarch playlists and gba folders included
 - Minor updates, bug fixes and code debugging.
 
