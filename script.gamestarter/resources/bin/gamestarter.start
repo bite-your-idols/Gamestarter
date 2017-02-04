@@ -5,7 +5,6 @@
 #kodi-send --action="xbmc.ShowPicture(/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamestarter_fanart.png)"
 sleep 1s
 
-echo '::Gamestarter:: -> launching on' $(date) >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
 # path to addon
 DIR="/storage/.kodi/addons/script.gamestarter"
 CONFIG_FILE="/storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/retroarch.cfg"
@@ -13,6 +12,12 @@ CONFIG_FILE="/storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/ret
 LIBRETRO_DIR=$DIR"/resources/bin/libretro-cores"
 AMIGA_TEMP_FILE=$DIR/resources/bin/launchTemp.uae
 LOG_FILE=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+LOG_FILE_RA=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter_retroarch.log
+LOG_FILE_ES=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter_emulationstation.log
+LOG_FILE_AG=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter_amiga.log
+LOG_FILE_DS=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter_nintendoDS.log
+
+echo '::Gamestarter:: -> launching on' $(date) >> $LOG_FILE
 
 # Stop KODI
 echo '::Gamestarter:: -> stop kodi...' >> $LOG_FILE
@@ -26,11 +31,11 @@ modprobe snd_bcm2835
 echo '::Gamestarter:: -> launch' $1 >>  $LOG_FILE
 case $1 in
   "retroarch")  
-      $DIR/resources/bin/retroarch -c $CONFIG_FILE --menu &>  $LOG_FILE
+      $DIR/resources/bin/retroarch -c $CONFIG_FILE --menu &>  $LOG_FILE_RA
   ;;
   "emulationstation")  
       # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
-      $DIR/resources/bin/emulationstation &>  $LOG_FILE
+      $DIR/resources/bin/emulationstation &>  $LOG_FILE_ES
   ;;
    "ports")  
       # si es un port ejecutamos su sh
@@ -74,21 +79,21 @@ case $1 in
 
     case $AMIGA_EMU in
       "libretro") 
-        $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE;;
+        $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE_RA;;
       *) 
-        $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE  >>  $LOG_FILE;; 
+        $DIR/resources/bin/uae4arm -f $AMIGA_TEMP_FILE  &>  $LOG_FILE_AG;; 
     esac
 
     ;;
   "nds") 
 	cd $DIR/resources/bin/drastic/
-   $DIR/resources/bin/drastic/drastic "$2"  &>  $LOG_FILE
+   $DIR/resources/bin/drastic/drastic "$2"  &>  $LOG_FILE_DS
    # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
    cd /storage
   ;;
 
    *) 
-    $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/$1_libretro.so "$2"  &>  $LOG_FILE
+    $DIR/resources/bin/retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/$1_libretro.so "$2"  &>  $LOG_FILE_RA
     # /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch -c /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/retroarch.cfg -L /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/cores/mame2003_libretro.so /storage/emulators/roms/mame/gng.zip
    ;;
 esac
@@ -100,7 +105,7 @@ rmmod snd_bcm2835
 # Reset resolution to standard y borrar uae temporal
 case $1 in
   "amiga")
-    echo '::Gamestarter:: -> reset amiga configs...' >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log 
+    echo '::Gamestarter:: -> reset amiga configs...' >> $LOG_FILE
     rm $AMIGA_TEMP_FILE
     tvservice -p
   ;;
@@ -109,9 +114,9 @@ esac
 # Start KODI
 # systemctl start kodi
 case $3 in
-  "ES") echo '::Gamestarter:: -> Exit ES' >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log;;
+  "ES") echo '::Gamestarter:: -> Exit ES' >> $LOG_FILE;;
   *) 
-  	echo '::Gamestarter:: -> restart kodi...' >> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
+  	echo '::Gamestarter:: -> restart kodi...' >> $LOG_FILE
   	systemctl start kodi
   ;;
 esac
