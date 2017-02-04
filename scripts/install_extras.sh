@@ -196,7 +196,7 @@ case $1 in
 		# kodi-send --action=Notification"(Gamestarter,Installing DraStic,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 
 		wget --no-check-certificate -O /storage/drastic.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/drastic.tar.gz
-		tar -xf /storage/drastic.tar.gz -C /storage/drastic/ -xz
+		tar -xf /storage/drastic.tar.gz -C /storage/ -xz
 		rm /storage/drastic.tar.gz
 		
 		mkdir -p $ADDON_DIRECTORY/lib/
