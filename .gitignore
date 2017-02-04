@@ -1,5 +1,5 @@
 # releases directory
-# /releases/
+/releases/
 
 # compilation packages/settings for OLE
-/packages/OLE-compiling/target/
+/packages/OLE-compiling/builds/

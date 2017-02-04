@@ -1,18 +1,30 @@
-### UAE4ARM OE6/LE7 (included in uae4arm.tar.gz)
-
+### UAE4ARM (included in uae4arm.tar.gz)
 - libSDL-1.2.so.0
-- libSDL_image-1.2.so.0
-- libSDL_ttf-2.0.so.0
-- libguichan_sdl-0.8.1.so.1
-- libguichan-0.8.1.so.1
 
-
-### emulationstation OE6/LE7 (included in emulationstation.tar.gz)
-
+## emulationstation (included in emualtionstation.tar.gz)
+- libboost_system.so.1.63.0 
+- libboost_filesystem.so.1.63.0
+- libboost_locale.so.1.63.0
 - libfreeimage.so.3
-- libSDL2-2.0.so.0
+- libSDL2-2.0.so.1
+- libbrcmGLESv2.so (OLE)
+- libbrcmEGL.so (OLE)
 
-### emulationstation OE6/LE7/LE8a10
 
-- libfreeimage.so.3 (new)
-- libSDL2-2.0.so.0
+### DraStic (included in drastic.tar.gz)
+- libSDL-1.2.so.0
+- libpng12.so.0
+- libX11.so.6
+- libXext.so.6
+- libXrandr.so.2
+- libXrender.so.1
+- libdirectfb-1.2.so.9
+- libfusion-1.2.so.9
+- libdirect-1.2.so.9
+- libcaca.so.0
+- libxcb.so.1
+- libslang.so.2
+- libncursesw.so.5
+- libtinfo.so.5
+- libXau.so.6
+- libXdmcp.so.6
