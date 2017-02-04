@@ -11,7 +11,7 @@ Si usas la Raspberry Pi 2/3 como media center corriendo Kodi en [LibreELEC](http
 Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada con el maravilloso multi-emulador [Retroarch](http://www.libretro.com/) integrado en kodi gracias al addon [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826). Mira la lista de emuladores más abajo.
 
 ## Instrucciones de instalación.
-- Descarga la [última versión](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) y copialo en tu Raspberry Pi
+- Descarga la [última versión](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) y cópialo en tu Raspberry Pi
 - Ir a **Kodi → Ajustes → Sistema → Add-ons** y activa **Fuentes Desconocidas** (LibreELEC 8)
 - Ir a **Kodi → Add-ons → Install desde archivo zip** y elige el archivo `.zip` descargado
 
@@ -21,13 +21,13 @@ La primera vez que inicies el addon se realizaran unos ajustes iniciales. Despu�
 
 ## Instalaciones Opcionales.
 Puesde abrir los ajustas del addon para instalar:
-- **[EmulationStation](https://github.com/Herdinger/EmulationStation):** el mismo frontend que usan RetroPie y Recalbox y algunos temas 
-- **[Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/):**: addon para lanzar juegos desde la "nube" ([ver](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
+- **[EmulationStation](https://github.com/Herdinger/EmulationStation):** el mismo frontend que usan [RetroPie](https://retropie.org.uk/) y [Recalbox](https://recalbox.com/) y algunos temas 
+- **[Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/):**: addon para lanzar juegos desde la "nube" ([ver instrucciones](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
 - **RetroArch cores experimentales:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause)...
 - **[uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi):** Emulador de Amiga (ver [#34](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
 - **[Libretro PC ports](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr
 - **[DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Emulador en fase beta de Nintendo DS
-- **Estuary Skin custom:** Incluyendo acceso direcnto en la pantalla inicial a Advaced Emulator Launcher o Gamestarter (ver [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48))
+- **Estuary Skin custom:** Con acceso directo en la pantalla de inicio a Advaced Emulator Launcher o Gamestarter (ver [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48))
 
 
 ## Sistemas Incluidos
