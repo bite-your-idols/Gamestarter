@@ -9,10 +9,9 @@ Benutzt du deinen **Raspberry Pi** als **Media Center**, in Verbindung mit **Kod
 Mit diesem Addon wird es dir dank [Advanced Launcher](http://forum.kodi.tv/showthread.php?tid=85724) / [Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) möglich sein, **mehrere Emulatoren** von [RetroArch](http://libretro.com/) zu benutzen.  Siehe unten für eine Liste der unterstützten Systeme.
 
 ## Installationsanleitung
-- Nutze [SSH](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=SSH) um dich mit deinem **Raspberry Pi** zu verbinden ([PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) für Windows, [Terminus](https://termius.com/download/) für Smartphones)
-- Lade die [neuste Version](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) mit `wget` herunter
+- Lade die [neuste Version](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) herunter und kopiere sie auf deinen **Raspberry Pi**
 - Öffne **Kodi → Einstellungen → System → Addons** und aktiviere **Unbekannte Quellen**
-- Öffne **Kodi → Addons → Aus ZIP-Datei installieren** und wähle deine `.zip` (überprüfe den **Home-Ordner**)
+- Öffne **Kodi → Addons → Aus ZIP-Datei installieren** und wähle deine heruntergeladene `.zip`-Datei
 
 Wenn das Addon zum ersten Mal gestartet wird, erfolgt eine Erstkonfiguration. Danach kannst du deine [ROMs](https://github.com/libretro/Lakka/wiki/ROMs) und [BIOSes](https://github.com/libretro/Lakka/wiki/BIOSes) über [Samba](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=Samba_2FSMB) nach `/storage/emulators/` kopieren.
 
@@ -66,10 +65,11 @@ Du kannst [diesen](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/
 - Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
 
 ## Mitwirkende
+- Erstellt von [bite-your-idols](https://github.com/bite-your-idols)
 - Ursprüngliches **RetroArch** Addon von [mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 - **UAE4ARM** & **EmulationStation** kompiliert von [escalade](https://forum.libreelec.tv/thread-302.html)
 - **Advanced Launcher** Emulator Icons von [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
-- **ReadMe** deutsche Übersetzung von [BrokenCommander](https://github.com/BrokenCommander)
+- **ReadMe** von [BrokenCommander](https://github.com/BrokenCommander)
 
 ---
 
