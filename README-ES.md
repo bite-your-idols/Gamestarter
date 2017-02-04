@@ -8,23 +8,75 @@
 ## Retrogaming addon para Kodi en Raspberry Pi
 Si usas la Raspberry Pi 2/3 como media center corriendo Kodi en [LibreELEC](https://libreelec.tv/) o [OpenELEC](http://openelec.tv/), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
 
-Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada con el maravilloso multi-emulador [Retroarch](http://www.libretro.com/) integrado en kodi gracias al addon [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826). Mira la lista de emuladores [aquí](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
+Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada con el maravilloso multi-emulador [Retroarch](http://www.libretro.com/) integrado en kodi gracias al addon [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826). Mira la lista de emuladores más abajo.
 
 ## Instrucciones de instalación.
-Descarga la última versión del addon desde la [Página de Releases](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest), copialo en tu Raspberry Pi 2/3 y selecciona "instalar desde zip" en el menu Ajustes>addons. La primera vez que inicies el addon se relaizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+- Descarga la [última versión](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) y copialo en tu Raspberry Pi
+- Ir a **Kodi → Ajustes → Sistema → Add-ons** y activa **Fuentes Desconocidas** (LibreELEC 8)
+- Ir a **Kodi → Add-ons → Install desde archivo zip** y elige el archivo `.zip` descargado
+
+La primera vez que inicies el addon se realizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+
+>Si usas LibreELEC 8, después de la instalación tendras que activar el addon Advanced Emulator Launcher manualmente desde Addons>Mis Addons> Addons de Programas. Es una nueva polític de Kodi 17.
 
 ## Instalaciones Opcionales.
-Despues de iniciar por primera vez tendrás la opción de instalar con un click desde los ajustes del addon:
-- [EmulationStation](https://github.com/Herdinger/EmulationStation) (el mismo frontend que usan RetroPie y Recalbox) y algunos temas (ES no funciona en versiones OE6-) 
-- [Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/), addon para lanzar juegos desde la "nube" ([instrucciones de config](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
-- RetroArch cores experimentales (Mame2010, yabause, reicast, desmume...)
-- Emulador de Amiga UAE4ARM ([info sobre emulación de amiga](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
-- 3 juegos de GameMaker Pi incluyendo el clásico moderno "Maldita Castilla" ([Mas info aquí](https://github.com/bite-your-idols/gamemaker-pi))
+Puesde abrir los ajustas del addon para instalar:
+- **[EmulationStation](https://github.com/Herdinger/EmulationStation):** el mismo frontend que usan RetroPie y Recalbox y algunos temas 
+- **[Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/):**: addon para lanzar juegos desde la "nube" ([ver](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
+- **RetroArch cores experimentales:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause)...
+- **[uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi):** Emulador de Amiga (ver [#34](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
+- **[Libretro PC ports](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr
+- **[DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Emulador en fase beta de Nintendo DS
+- **Estuary Skin custom:** Incluyendo acceso direcnto en la pantalla inicial a Advaced Emulator Launcher o Gamestarter (ver [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48))
 
-## Créditos.
-- Original RetroArch addon by [Mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
-- UAE4ARM & EmulationStation compiled by [Escalade](https://forum.libreelec.tv/thread-302.html)
-- AdvancedLauncher "skin" images by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
+
+## Sistemas Incluidos
+### Sistemas más Comunes
+- *Arcade* ([lr-mame2003](https://github.com/libretro/mame2003-libretro) / [lr-fbalpha](https://github.com/libretro/fbalpha))
+- MSX / MSX2 ([lr-bluemsx](https://github.com/libretro/blueMSX-libretro) / [lr-fmsx](https://github.com/libretro/fmsx-libretro))
+- Neo Geo ([lr-fbalpha](https://github.com/libretro/fbalpha))
+- Nintendo 64 ([lr-glupen64](https://github.com/GLupeN64/GLupeN64) / [lr-mupen64plus](https://github.com/libretro/mupen64plus-libretro))
+- Nintendo Game Boy / Game Boy Color ([lr-gambatte](https://github.com/libretro/Gambatte-libretro))
+- Nintendo Game Boy Advanced ([lr-gpsp](https://github.com/libretro/gpsp) / [lr-mgba](https://github.com/libretro/mgba))
+- Nintendo NES ([lr-fceumm](https://github.com/libretro/libretro-fceumm) / [lr-nestopia](https://github.com/libretro/nestopia) / [lr-quicknes](https://github.com/libretro/QuickNES_Core))
+- Nintendo SNES ([lr-snes9x2002](https://github.com/libretro/snes9x2002) / [lr-snes9x2005](https://github.com/libretro/snes9x2005) / [lr-snes9x2010](https://github.com/libretro/snes9x2010))
+- Sega Master System ([lr-picodrive](https://github.com/libretro/picodrive) / [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
+- Sega Mega Drive / Mega-CD ([lr-picodrive](https://github.com/libretro/picodrive) / [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
+- Sony Playstation ([lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed))
+- Sony PSP ([lr-ppsspp](https://github.com/libretro/libretro-ppsspp))
+- TurboGrafx-16 / PC Engine / PC Engine CD ([lr-mednafen-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) / [lr-mednafen-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro))
+
+### Otros Sistemas
+- *Arcade* ([lr-mame2000](https://github.com/libretro/mame2000-libretro))
+- Amiga ([lr-uae4arm](https://github.com/r-type/uae4arm-libretro) / [uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi))
+- Atari 800 ([lr-atari800](https://github.com/r-type/libretro-atari800))
+- Atari 2600 ([lr-stella](https://github.com/libretro/stella-libretro))
+- Atari 7800 ([lr-prosystem](https://github.com/libretro/prosystem-libretro))
+- Atari Lynx ([lr-handy](https://github.com/libretro/libretro-handy))
+- DOSBox ([lr-dosbox](https://github.com/libretro/dosbox-libretro))
+- Game & Watch ([lr-gw](https://github.com/libretro/gw-libretro))
+- Magnavox Odyssey² / Philips Videopac G7000 ([lr-o2em](https://github.com/libretro/libretro-o2em))
+- Neo Geo Pocket / Neo Geo Pocket Color ([lr-mednafen-ngp](https://github.com/libretro/beetle-ngp-libretro))
+- Sega Game Gear ([lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
+- ScummVM ([lr-scummvm](https://github.com/libretro/scummvm))
+- Vectrex ([lr-vecx](https://github.com/libretro/libretro-vecx))
+- WondeSwan / WonderSwan Color ([lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro))
+- ZX Spectrum ([lr-fuse](https://github.com/libretro/fuse-libretro))
+
+### Sistemas Experimentales (en desarrollo)
+- *Arcade* ([lr-mame2010](https://github.com/libretro/mame2010-libretro))
+- Nintendo DS ([lr-desmume](https://github.com/libretro/desmume))
+- Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
+- Nintendo DS ([DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
+
+¿Echas en falta algún sistema? -> coméntalo [aquí](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
+
+## Créditos
+- Created by [bite-your-idols](https://github.com/bite-your-idols)
+- Original **RetroArch** addon by [mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
+- **UAE4ARM** & **EmulationStation** compiled by [escalade](https://forum.libreelec.tv/thread-302.html)
+- **Advanced Launcher** emulator icons by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
+- **ReadMe** by [BrokenCommander](https://github.com/BrokenCommander)
 
 .
 
