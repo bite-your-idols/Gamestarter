@@ -75,3 +75,9 @@ Du kannst [diesen](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/
 
 ![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
 **Advanced Launcher** Bibliothek mit dem [Mimic Skin](http://kodi.wiki/view/Add-on:mimic)
+
+![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-settings.png)
+**Addon Settings** screen
+
+![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
+**Advanced Launcher** library with the [Mimic Skin](http://kodi.wiki/view/Add-on:mimic)
