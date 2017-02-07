@@ -10,20 +10,23 @@ Mit diesem Addon wird es dir dank [Advanced Launcher](http://forum.kodi.tv/showt
 
 ## Installationsanleitung
 - Lade die [neuste Version](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) herunter und kopiere sie auf deinen **Raspberry Pi**
-- Öffne **Kodi → Einstellungen → System → Addons** und aktiviere **Unbekannte Quellen**
+- **[Kodi 17+]** Öffne **Kodi → Einstellungen → System → Addons** und aktiviere **Unbekannte Quellen**
 - Öffne **Kodi → Addons → Aus ZIP-Datei installieren** und wähle deine heruntergeladene `.zip`-Datei
 
 Wenn das Addon zum ersten Mal gestartet wird, erfolgt eine Erstkonfiguration. Danach kannst du deine [ROMs](https://github.com/libretro/Lakka/wiki/ROMs) und [BIOSes](https://github.com/libretro/Lakka/wiki/BIOSes) über [Samba](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=Samba_2FSMB) nach `/storage/emulators/` kopieren.
+
+> Seit **Kodi 17** musst du **Advanced Emulator Launcher** manuell aktivieren:
+<br>Öffne **Addons → Benutzer-Addons → Programm-Addons → Advanced Emulator Laucher** und klicke auf **Aktivieren**
 
 ## Zusätzliche Programme
 Du kannst die Addon Einstellungen aufrufen um zusätzliche Funktionen zu installieren.
 - **[EmulationStation](http://emulationstation.org/):** ein schöne Benutzeroberfläche, auch benutzt von [RetroPie](https://retropie.org.uk/) und [Recalbox](https://recalbox.com/), und zusätzliche Designs
 - **[Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/wiki):** ein Addon um Spiele vom [Internet Archive](https://archive.org/) zu starten (siehe [#31](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
-- **Experimentelle RetroArch Emulatoren:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause)
+- **Experimentelle RetroArch Emulatoren:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause) ...
 - **[uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi):** Amiga Emulator (siehe [#34](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
+- **[DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Experimenteller Nintendo DS Emulator
 - **[Libretro PC Portierungen](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr
-
-Du kannst [diesen](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/skin.estuary.zip) **modifizieren Estuary Skin** herunterladen, um einen **Games** Menüpunkt im Hauptmenü zu erhalten (siehe [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48)).
+- **Angepasster Estuary Skin:** Fügt einen Menüpunkt für Gamestarter oder Advanced Emulator Launcher im Hauptmenü hinzu (siehe [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48))
 
 ## Unterstützte Systeme
 ### Beliebte Systeme
@@ -55,14 +58,15 @@ Du kannst [diesen](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/
 - Sega Game Gear ([lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
 - ScummVM ([lr-scummvm](https://github.com/libretro/scummvm))
 - Vectrex ([lr-vecx](https://github.com/libretro/libretro-vecx))
-- WondeSwan / WonderSwan Color ([lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro))
+- WonderSwan / WonderSwan Color ([lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro))
 - ZX Spectrum ([lr-fuse](https://github.com/libretro/fuse-libretro))
 
 ### Experimentelle Systeme
 - *Arcade* ([lr-mame2010](https://github.com/libretro/mame2010-libretro))
-- Amiga ([lr-fsuae](https://github.com/libretro/libretro-fsuae))
-- Nintendo DS ([lr-desmume](https://github.com/libretro/desmume))
+- Nintendo DS ([lr-desmume](https://github.com/libretro/desmume) / [DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
 - Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
+
+> Wenn du ein bestimmtes System willst, bitte kommentiere [hier](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
 
 ## Mitwirkende
 - Erstellt von [bite-your-idols](https://github.com/bite-your-idols)
@@ -73,11 +77,11 @@ Du kannst [diesen](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/
 
 ---
 
-![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
-**Advanced Launcher** Bibliothek mit dem [Mimic Skin](http://kodi.wiki/view/Add-on:mimic)
+![screenshot-gamestarter-settings](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-settings.png)
+**Gamestarter** Einstellungen
 
-![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-settings.png)
-**Addon Settings** screen
+![screenshot-advemulauncher](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-estuary-ael-systems.png)
+**Advanced Emulator Launcher** Bibliothek in **LibreELEC 8**
 
 ![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
-**Advanced Launcher** library with the [Mimic Skin](http://kodi.wiki/view/Add-on:mimic)
+**Advanced Launcher** Bibliothek mit [Mimic Skin](http://kodi.wiki/view/Add-on:mimic)

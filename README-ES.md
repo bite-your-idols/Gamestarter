@@ -1,32 +1,31 @@
 # Gamestarter Pi
-![gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/assets/gamestarter-logo-dark.jpg)
+![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/assets/gamestarter-logo-dark.jpg)
 
 [English](https://github.com/bite-your-idols/gamestarter/) / Spanish / [German](https://github.com/bite-your-idols/gamestarter/blob/master/README-DE.md)
 
-
-
 ## Retrogaming addon para Kodi en Raspberry Pi
-Si usas la Raspberry Pi 2/3 como media center corriendo Kodi en [LibreELEC](https://libreelec.tv/) o [OpenELEC](http://openelec.tv/), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, aqui tienes la solución definitiva.
+Si usas la **Raspberry Pi 2/3** como **media center** corriendo **Kodi** en [LibreELEC](https://libreelec.tv/) o [OpenELEC](http://openelec.tv/), te gusta jugar a juegos retro y quieres lanzarlos como haces con tus pelis o series sin tener que estar cambiado de tarjeta, ni tener arranque dual ni nada de eso, **aqui tienes la solución definitiva**.
 
-Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada con el maravilloso multi-emulador [Retroarch](http://www.libretro.com/) integrado en kodi gracias al addon [AdvacedLauncher](http://forum.kodi.tv/showthread.php?tid=85724)/[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826). Mira la lista de emuladores más abajo.
+Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada con el maravilloso multi-emulador [Retroarch](http://www.libretro.com/) integrado en kodi gracias al addon [Advanced Launcher](http://forum.kodi.tv/showthread.php?tid=85724) / [Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826). Mira la lista de emuladores más abajo.
 
 ## Instrucciones de instalación.
-- Descarga la [última versión](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) y cópialo en tu Raspberry Pi
-- Ir a **Kodi → Ajustes → Sistema → Add-ons** y activa **Fuentes Desconocidas** (LibreELEC 8)
-- Ir a **Kodi → Add-ons → Install desde archivo zip** y elige el archivo `.zip` descargado
+- Descarga la [última versión](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) y cópialo en tu **Raspberry Pi**
+- **[Kodi 17+]** Ir a **Kodi → Ajustes → Sistema → Add-ons** y activa **Fuentes desconocidas**
+- Ir a **Kodi → Add-ons → Instalar desde un archivo .zip** y elige el archivo `.zip` descargado
 
-La primera vez que inicies el addon se realizaran unos ajustes iniciales. Después solo tendrás que copiar tu [roms y bios](https://github.com/libretro/Lakka/wiki/ROMs-and-BIOSes) en la carpeta /storage/emulators/ usando ftp o [samba](http://wiki.openelec.tv/index.php/Accessing_Samba_Shares) y reiniciar.
+La primera vez que inicies el addon se realizaran unos ajustes iniciales. Después solo tendrás que copiar tu [ROMs](https://github.com/libretro/Lakka/wiki/ROMs) y [BIOSes](https://github.com/libretro/Lakka/wiki/BIOSes) en la carpeta `/storage/emulators/` usando [Samba](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=Samba_2FSMB).
 
->Si usas LibreELEC 8, después de la instalación tendras que activar el addon Advanced Emulator Launcher manualmente desde Addons>Mis Addons> Addons de Programas. Es una nueva polític de Kodi 17.
+> Si usas **Kodi 17**, después de la instalación tendras que activar el addon **Advanced Emulator Launcher** manualmente:
+<br>Ir a **Add-ons → Mis add-ons → Add-ons de programas → Advanced Emulator Launcher** y haga clic en **Activar**
 
 ## Instalaciones Opcionales.
-Puesde abrir los ajustas del addon para instalar:
+Puesde abrir los ajustas del addon para instalar.
 - **[EmulationStation](https://github.com/Herdinger/EmulationStation):** el mismo frontend que usan [RetroPie](https://retropie.org.uk/) y [Recalbox](https://recalbox.com/) y algunos temas 
-- **[Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/):**: addon para lanzar juegos desde la "nube" ([ver instrucciones](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
-- **RetroArch cores experimentales:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause)...
+- **[Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/):**: addon para lanzar juegos desde la "nube" (ver [#31](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
+- **RetroArch cores experimentales:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause) ...
 - **[uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi):** Emulador de Amiga (ver [#34](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
-- **[Libretro PC ports](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr
 - **[DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Emulador en fase beta de Nintendo DS
+- **[Libretro PC ports](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr
 - **Estuary Skin custom:** Con acceso directo en la pantalla de inicio a Advaced Emulator Launcher o Gamestarter (ver [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48))
 
 
@@ -60,16 +59,15 @@ Puesde abrir los ajustas del addon para instalar:
 - Sega Game Gear ([lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
 - ScummVM ([lr-scummvm](https://github.com/libretro/scummvm))
 - Vectrex ([lr-vecx](https://github.com/libretro/libretro-vecx))
-- WondeSwan / WonderSwan Color ([lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro))
+- WonderSwan / WonderSwan Color ([lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro))
 - ZX Spectrum ([lr-fuse](https://github.com/libretro/fuse-libretro))
 
 ### Sistemas Experimentales (en desarrollo)
 - *Arcade* ([lr-mame2010](https://github.com/libretro/mame2010-libretro))
-- Nintendo DS ([lr-desmume](https://github.com/libretro/desmume))
+- Nintendo DS ([lr-desmume](https://github.com/libretro/desmume) / [DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
 - Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
-- Nintendo DS ([DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
 
-¿Echas en falta algún sistema? -> coméntalo [aquí](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
+> ¿Echas en falta algún sistema? -> coméntalo [aquí](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
 
 ## Créditos
 - Created by [bite-your-idols](https://github.com/bite-your-idols)
@@ -80,11 +78,11 @@ Puesde abrir los ajustas del addon para instalar:
 
 ---
 
-![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-estuary-ael-systems.png)
-Ejemplo de la "biblioteca de juegos" con **Advanced Emulator Launcher** en **Estuary Skin**.
-
-![screenshot-advlauncher-mimic](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-settings.png)
+![screenshot-gamestarter-settings](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-settings.png)
 Pantalla de **Ajustes del addon**
 
+![screenshot-advemulauncher](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-estuary-ael-systems.png)
+Ejemplo de la "biblioteca de juegos" con **Advanced Emulator Launcher** en **LibreELEC 8**
+
 ![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
-Ejemplo de la "biblioteca de juegos" de Kodi con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic).
+Ejemplo de la "biblioteca de juegos" con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic)
