@@ -98,7 +98,7 @@ PKG_CONFIGURE_OPTS_TARGET="--disable-vg \
                            --enable-freetype"
 
 unpack() {
-  tar -zxf $SOURCES/$PKG_NAME/$PKG_VERSION.tar.gz -C $BUILD
+  tar -zxf $SOURCES/$PKG_NAME/$PKG_NAME-$PKG_VERSION.tar.gz -C $BUILD
   mv $BUILD/RetroArch* $BUILD/$PKG_NAME-$PKG_VERSION
 }
 
