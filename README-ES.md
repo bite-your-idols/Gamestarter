@@ -22,10 +22,9 @@ La primera vez que inicies el addon se realizaran unos ajustes iniciales. Despu�
 Puesde abrir los ajustas del addon para instalar.
 - **[EmulationStation](https://github.com/Herdinger/EmulationStation):** el mismo frontend que usan [RetroPie](https://retropie.org.uk/) y [Recalbox](https://recalbox.com/) y algunos temas 
 - **[Internet Archive ROM Launcher](https://github.com/zach-morris/plugin.program.iarl/):**: addon para lanzar juegos desde la "nube" (ver [#31](https://github.com/bite-your-idols/Gamestarter-Pi/issues/31))
-- **RetroArch cores experimentales:** [lr-desmume](https://github.com/libretro/desmume), [lr-mame2010](https://github.com/libretro/mame2010-libretro), [lr-yabause](https://github.com/libretro/yabause) ...
 - **[uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi):** Emulador de Amiga (ver [#34](https://github.com/bite-your-idols/Gamestarter-Pi/issues/34))
 - **[DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Emulador en fase beta de Nintendo DS
-- **[Libretro PC ports](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr
+- **[Libretro PC ports](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr & Rick Dangerous
 - **Estuary Skin custom:** Con acceso directo en la pantalla de inicio a Advaced Emulator Launcher o Gamestarter (ver [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48))
 
 
@@ -34,11 +33,11 @@ Puesde abrir los ajustas del addon para instalar.
 - *Arcade* ([lr-mame2003](https://github.com/libretro/mame2003-libretro) / [lr-fbalpha](https://github.com/libretro/fbalpha))
 - MSX / MSX2 ([lr-bluemsx](https://github.com/libretro/blueMSX-libretro) / [lr-fmsx](https://github.com/libretro/fmsx-libretro))
 - Neo Geo ([lr-fbalpha](https://github.com/libretro/fbalpha))
-- Nintendo 64 ([lr-glupen64](https://github.com/GLupeN64/GLupeN64) / [lr-mupen64plus](https://github.com/libretro/mupen64plus-libretro))
+- Nintendo 64 ([lr-mupen64plus](https://github.com/libretro/mupen64plus-libretro) / [lr-parallel_64](https://github.com/libretro/parallel-n64))
 - Nintendo Game Boy / Game Boy Color ([lr-gambatte](https://github.com/libretro/Gambatte-libretro))
 - Nintendo Game Boy Advanced ([lr-gpsp](https://github.com/libretro/gpsp) / [lr-mgba](https://github.com/libretro/mgba))
 - Nintendo NES ([lr-fceumm](https://github.com/libretro/libretro-fceumm) / [lr-nestopia](https://github.com/libretro/nestopia) / [lr-quicknes](https://github.com/libretro/QuickNES_Core))
-- Nintendo SNES ([lr-snes9x2002](https://github.com/libretro/snes9x2002) / [lr-snes9x2005](https://github.com/libretro/snes9x2005) / [lr-snes9x2010](https://github.com/libretro/snes9x2010))
+- Nintendo SNES ([lr-snes9x2002](https://github.com/libretro/snes9x2002) / [lr-snes9x2005](https://github.com/libretro/snes9x2005) / [lr-snes9x2010](https://github.com/libretro/snes9x2010)  / [lr-snes9x](https://github.com/libretro/snes9x))
 - Sega Master System ([lr-picodrive](https://github.com/libretro/picodrive) / [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
 - Sega Mega Drive / Mega-CD ([lr-picodrive](https://github.com/libretro/picodrive) / [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
 - Sony Playstation ([lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed))
@@ -46,28 +45,28 @@ Puesde abrir los ajustas del addon para instalar.
 - TurboGrafx-16 / PC Engine / PC Engine CD ([lr-mednafen-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) / [lr-mednafen-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro))
 
 ### Otros Sistemas
-- *Arcade* ([lr-mame2000](https://github.com/libretro/mame2000-libretro))
-- Amiga ([lr-uae4arm](https://github.com/r-type/uae4arm-libretro) / [uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi))
+- *Arcade* ([lr-mame2000](https://github.com/libretro/mame2000-libretro) / [lr-mame2010](https://github.com/libretro/mame2010-libretro))
+- Amiga ([lr-uae4arm](https://github.com/r-type/uae4arm-libretro) / [uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi) / [lr-puae](https://github.com/libretro/libretro-uae))
+- Amstard CPC ([lr-caprice32](https://github.com/libretro/libretro-cap32) / [lr-crocods](https://github.com/libretro/libretro-crocods))
 - Atari 800 ([lr-atari800](https://github.com/r-type/libretro-atari800))
 - Atari 2600 ([lr-stella](https://github.com/libretro/stella-libretro))
 - Atari 7800 ([lr-prosystem](https://github.com/libretro/prosystem-libretro))
-- Atari Lynx ([lr-handy](https://github.com/libretro/libretro-handy))
+- Atari Lynx ([lr-handy](https://github.com/libretro/libretro-handy) / [lr-mednafen_lynx](https://github.com/libretro/beetle-lynx-libretro))
+- Commodore 64 ([lr-vice](https://github.com/libretro/vice-libretro))
 - DOSBox ([lr-dosbox](https://github.com/libretro/dosbox-libretro))
 - Game & Watch ([lr-gw](https://github.com/libretro/gw-libretro))
 - Magnavox Odyssey² / Philips Videopac G7000 ([lr-o2em](https://github.com/libretro/libretro-o2em))
 - Neo Geo Pocket / Neo Geo Pocket Color ([lr-mednafen-ngp](https://github.com/libretro/beetle-ngp-libretro))
+- Nintendo DS ([lr-desmume](https://github.com/libretro/desmume) / [DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
 - Sega Game Gear ([lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
+- Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
 - ScummVM ([lr-scummvm](https://github.com/libretro/scummvm))
 - Vectrex ([lr-vecx](https://github.com/libretro/libretro-vecx))
 - WonderSwan / WonderSwan Color ([lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro))
 - ZX Spectrum ([lr-fuse](https://github.com/libretro/fuse-libretro))
+- ZX81 ([lr-81](https://github.com/libretro/81-libretro))
+- ...
 
-### Sistemas Experimentales (en desarrollo)
-- *Arcade* ([lr-mame2010](https://github.com/libretro/mame2010-libretro))
-- Nintendo DS ([lr-desmume](https://github.com/libretro/desmume) / [DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
-- Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
-
-> ¿Echas en falta algún sistema? -> coméntalo [aquí](https://github.com/bite-your-idols/Gamestarter-Pi/issues/35).
 
 ## Créditos
 - Created by [bite-your-idols](https://github.com/bite-your-idols)
