@@ -24,8 +24,8 @@ echo '::Gamestarter:: -> stop kodi...' >> $LOG_FILE
 systemctl stop kodi
 
 # Enable ALSA
-echo '::Gamestarter:: -> enable alsa...' >>  $LOG_FILE
-modprobe snd_bcm2835
+# echo '::Gamestarter:: -> enable alsa...' >>  $LOG_FILE
+# modprobe snd_bcm2835
 
 # Launch emulator
 echo '::Gamestarter:: -> launch' $1 >>  $LOG_FILE
@@ -99,8 +99,8 @@ case $1 in
 esac
 
 # Disable ALSA
-echo '::Gamestarter:: -> disable alsa...' >>  $LOG_FILE
-rmmod snd_bcm2835
+# echo '::Gamestarter:: -> disable alsa...' >>  $LOG_FILE
+# rmmod snd_bcm2835
 
 # Reset resolution to standard y borrar uae temporal
 case $1 in

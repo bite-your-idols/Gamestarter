@@ -401,7 +401,7 @@
 			<name>Nintendo 64</name>
 			<category>default</category>
 			<application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-			<args>glupen64 "%rom%"</args>
+			<args>mupen64plus "%rom%"</args>
 			<rompath>/storage/emulators/roms/n64/</rompath>
 			<thumbpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/thumbs/</thumbpath>
 			<fanartpath>/storage/.kodi/userdata/addon_data/plugin.program.advanced.launcher/fanarts/</fanartpath>

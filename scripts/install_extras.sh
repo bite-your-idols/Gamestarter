@@ -130,6 +130,13 @@ case $1 in
 		rm /storage/dino.zip
 		wget --no-check-certificate -O /storage/emulators/roms/ports/Dinothawr.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulators/roms/ports/Dinothawr.sh
 		chmod a+x /storage/emulators/roms/ports/Dinothawr.sh
+
+		echo "Rick Dangerous..."
+		curl -o /storage/rick.zip https://buildbot.libretro.com/assets/cores/Rick%20Dangerous/Rick%20Dangerous.zip
+		unzip -o /storage/rick.zip -d /storage/emulators/roms/ports/
+		rm /storage/rick.zip
+		wget --no-check-certificate -O /storage/emulators/roms/ports/RickDangerous.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulators/roms/ports/RickDangerous.sh
+		chmod a+x /storage/emulators/roms/ports/RickDangerous.sh
 		
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 		echo "Libretro ports Installed."

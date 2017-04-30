@@ -721,7 +721,7 @@
   <platform>Nintendo 64</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>glupen64 &quot;%rom%&quot;</args>
+  <args>mupen64plus &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/n64/</rompath>
   <romext>v64|n64|z64</romext>
   <finished>False</finished>
@@ -1106,7 +1106,7 @@
   <m_plot></m_plot>
   <m_rating></m_rating>
   <platform>Unknown</platform>
-  <categoryID>root_category</categoryID>
+  <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
   <args>nds &quot;%rom%&quot;</args>
   <rompath>/var/media/MEDIA_3T/Emuladores/roms/nds/</rompath>

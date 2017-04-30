@@ -110,8 +110,8 @@ case $response in
 		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="OLE"/' releases/script.gamestarter/resources/bin/install.sh
 
 		# retroarch_1.3.6(OLE)
-		mv releases/script.gamestarter/resources/bin/retroarch_1.4.1_OE6 releases/script.gamestarter/resources/bin/retroarch
-		rm releases/script.gamestarter/resources/bin/retroarch_1.4.1_LE8
+		mv releases/script.gamestarter/resources/bin/retroarch_1.5.0_OE6 releases/script.gamestarter/resources/bin/retroarch
+		rm releases/script.gamestarter/resources/bin/retroarch_1.5.0_LE8
 
 		# seleccionar advanced launcher
 		rm releases/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz
@@ -129,8 +129,8 @@ case $response in
 		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="LE8"/' releases/script.gamestarter/resources/bin/install.sh
 
 		# retroarch_1.3.6_LE8
-		mv releases/script.gamestarter/resources/bin/retroarch_1.4.1_LE8 releases/script.gamestarter/resources/bin/retroarch
-		rm releases/script.gamestarter/resources/bin/retroarch_1.4.1_OE6
+		mv releases/script.gamestarter/resources/bin/retroarch_1.5.0_LE8 releases/script.gamestarter/resources/bin/retroarch
+		rm releases/script.gamestarter/resources/bin/retroarch_1.5.0_OE6
 
 		# seleccionar advanced emulator launcher
 		rm releases/script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz
