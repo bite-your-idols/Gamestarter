@@ -1,6 +1,9 @@
 v2.9.0 (2017-xx-xx)
+- RetroArch 1.6.0
+- RetroArch update option in addon settings
+- Libretro cores update option in addon settings
 - Logs path move to /storage/.kodi/temp
-- Minor updates, bug fixes and code debugging.
+- Minor updates, bug fixes and code debugging
 
 v2.8.0 (2017-04-30)
 - retroarch 1.5.0
