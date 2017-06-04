@@ -217,6 +217,10 @@ case $1 in
 		cat $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
 		tar -xf $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz -C $ADDON_DIRECTORY/resources/bin/ -xz
 		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
+		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa
+		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ab
+		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ac
+		rm -rf $ADDON_DIRECTORY/resources/bin/_libretro-cores
 
 		echo "Libretro Cores Updated."
     ;;

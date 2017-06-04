@@ -147,7 +147,7 @@ case $response in
 		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="LE8"/' builds/script.gamestarter/resources/bin/install.sh
 
 		# retroarch LE8
-		cp packages/retroarch/retroarch_LE builds/script.gamestarter/resources/bin/retroarch
+		cp packages/retroarch/retroarch_LE8 builds/script.gamestarter/resources/bin/retroarch
 		# mv builds/script.gamestarter/resources/bin/retroarch_1.5.0_LE8 builds/script.gamestarter/resources/bin/retroarch
 		# rm builds/script.gamestarter/resources/bin/retroarch_1.5.0_OE6
 
