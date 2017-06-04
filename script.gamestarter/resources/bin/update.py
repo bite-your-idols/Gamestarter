@@ -29,7 +29,7 @@ import xbmcgui
 
 # os.system("wget --no-check-certificate -O /storage/update-checker.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/update-checker.sh && sh /storage/update-checker.sh &> /storage/.config/gamestarter.log")
 # os.system("rm /storage/update-checker.sh")
-os.system("wget --no-check-certificate -O /storage/updater.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/updater.sh && sh /storage/updater.sh &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log")
+os.system("wget --no-check-certificate -O /storage/updater.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/scripts/updater.sh && sh /storage/updater.sh &> /storage/.kodi/temp/gamestarter.log")
 os.system("rm /storage/updater.sh")
 # os.system("wget --no-check-certificate -O /storage/.kodi/addons/script.gamestarter/resources/bin/update.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/resources/bin/update.sh && sh /storage/.kodi/addons/script.gamestarter/resources/bin/update.sh")
 # xbmcgui.Dialog().ok("Gamestarter", "Gamestarter is up to date.")

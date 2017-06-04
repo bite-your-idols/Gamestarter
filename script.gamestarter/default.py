@@ -14,7 +14,7 @@ directory = os.path.dirname(script_file)
 if os.path.isfile(directory+"/resources/bin/installed") == False: 
  	xbmcgui.Dialog().ok(addonname, "This is the first time you run Gamestarter. We are going to make a first-time-setup, please do not switch off your Raspberry Pi.")
  	# os.system("sh "+directory+"/resources/bin/install.sh "+directory)
- 	os.system("mkdir -p /storage/.kodi/userdata/addon_data/script.gamestarter && sh "+directory+"/resources/bin/install.sh "+directory+" &> /storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log")
+ 	os.system("mkdir -p /storage/.kodi/userdata/addon_data/script.gamestarter && sh "+directory+"/resources/bin/install.sh "+directory+" &> /storage/.kodi/temp/gamestarter.log")
  	xbmcgui.Dialog().ok(addonname, "Done. Copy your roms, reboot and enjoy!")
 
 # las siguientes veces directamente lanzariamos RetroArch o Emulationstation

@@ -11,11 +11,11 @@ CONFIG_FILE="/storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/ret
 # LIBRETRO_DIR="/storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/cores"
 LIBRETRO_DIR=$DIR"/resources/bin/libretro-cores"
 AMIGA_TEMP_FILE=$DIR/resources/bin/launchTemp.uae
-LOG_FILE=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter.log
-LOG_FILE_RA=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter_retroarch.log
-LOG_FILE_ES=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter_emulationstation.log
-LOG_FILE_AG=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter_amiga.log
-LOG_FILE_DS=/storage/.kodi/userdata/addon_data/script.gamestarter/gamestarter_nintendoDS.log
+LOG_FILE=/storage/.kodi/temp/gamestarter.log
+LOG_FILE_RA=/storage/.kodi/temp/gamestarter_retroarch.log
+LOG_FILE_ES=/storage/.kodi/temp/gamestarter_emulationstation.log
+LOG_FILE_AG=/storage/.kodi/temp/gamestarter_amiga.log
+LOG_FILE_DS=/storage/.kodi/temp/gamestarter_nintendoDS.log
 
 echo '::Gamestarter:: -> launching on' $(date) >> $LOG_FILE
 
