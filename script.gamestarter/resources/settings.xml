@@ -2,6 +2,7 @@
 <settings>
 	<category label="Gamestarter">
         	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
+            <setting id="frontend" type="select" label="Select your default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
         	<setting type="sep"/>
             <setting label="Backup your configuration" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/backup.py, SetLocation)"/>
             <setting label="Restore your configuration" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/restore.py, SetLocation)"/>
@@ -11,11 +12,12 @@
         <category label="RetroArch">
             <setting label="Update/Re-install RetroArch" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_ra.py, SetLocation)"/>
             <setting label="Update/Re-install Libretro Cores" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_cores.py, SetLocation)"/>
+            <setting type="sep"/>
+            <setting label="Install Libretro ports: Cave Story, Doom, Quake, Dinothawr & Rick Dangerous" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_ports.py, SetLocation)"/>
             <setting label="Install Experimental Libretro cores: mame2010" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_excores.py, SetLocation)"/>
         </category>
         <category label="Emulationstation">
         	<setting label="Install/update EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_es.py, SetLocation)"/>
-            <setting id="frontend" type="select" label="Select your default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
             <setting label="Auto-scrape all systems" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/scraper.py, SetLocation)"/>
             <setting label="Install ES themes (Carbon, Clean Look, Pixel, Canela, Tronkyfran & Turtle-Pi)" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_esthemes.py, SetLocation)"/>
     	</category>
@@ -25,7 +27,6 @@
             <setting type="sep"/>
             <setting label="Download Internet Archive ROM Launcher & Repo" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_iarl.py, SetLocation)"/>
             <setting type="sep"/>
-            <setting label="Install Libretro ports: Cave Story, Doom, Quake, Dinothawr & Rick Dangerous" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_ports.py, SetLocation)"/>
             <setting label="Install DraStic, an experimental Nintendo DS emulator" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_drastic.py, SetLocation)"/>
              <setting type="sep"/>
              <setting label="Download latest custom Estuary skin (LibreELEC 8+)" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_skin.py, SetLocation)"/>
