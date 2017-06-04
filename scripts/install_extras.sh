@@ -201,7 +201,7 @@ case $1 in
 	"retroarch")  
 		# Script for Retroarch update/re-installation
 		# rm $ADDON_DIRECTORY/resources/bin/retroarch
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/retroarch https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores/retroarch_$ADDON_VERSION
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/retroarch https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/retroarch/retroarch_$ADDON_VERSION
 		chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch
 
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
@@ -209,9 +209,9 @@ case $1 in
     ;;
     "cores")  
 		# Script for Libretro Cores update/re-installation
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.aa
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ab
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ac
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.aa
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ab
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ac
 		cp -R $ADDON_DIRECTORY/resources/bin/libretro-cores $ADDON_DIRECTORY/resources/bin/_libretro-cores
 		rm -rf $ADDON_DIRECTORY/resources/bin/libretro-cores
 		cat $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
