@@ -1,0 +1,11 @@
+--- a/Makefile.common	2016-05-04 13:26:35.450490404 +0000
++++ b/Makefile.common	2016-05-04 13:31:02.119507897 +0000
+@@ -95,7 +95,7 @@
+ 
+ # Git
+ 
+-GIT_VERSION := $(shell git rev-parse --short HEAD 2>/dev/null)
++GIT_VERSION := $(shell cat .gitversion)
+ ifneq ($(GIT_VERSION),)
+    DEFINES += -DHAVE_GIT_VERSION -DGIT_VERSION=$(GIT_VERSION)
+    OBJ += git_version.o

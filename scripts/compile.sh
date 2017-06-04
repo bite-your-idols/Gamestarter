@@ -59,27 +59,14 @@ case $response in
 	cd packages && tar -zcvf emulationstation.tar.gz emulationstation/ && cd ..
 	cd packages && tar -zcvf uae4arm.tar.gz uae4arm/ && cd ..
 	cd packages && tar -zcvf drastic.tar.gz drastic/ && cd ..
-	
-	echo "Compilamos las carpetas de data..."
-	# advancedemulatorlauncher.tar.gz | advancedlauncher.tar.gz | emulators.tar.gz | libretro-part1.tar.gz | libretro-part2.tar.gz | retroarch.tar.gz
-	# subir cada package actualizando el existente
-	# cd packages && tar -zcvf ../script.gamestarter/resources/data/emulators.tar.gz emulators/ && cd ..
-	cp -R packages/emulators emulators
-	rm -rf emulators/roms/ports
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/emulators.tar.gz emulators/ && cd ..
-	tar -zcvf script.gamestarter/resources/data/emulators.tar.gz emulators/
-	rm -rf emulators
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz plugin.program.advanced.emulator.launcher/ && cd ..
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz plugin.program.advanced.launcher/ && cd ..
 	mkdir packages/retroarch/playlists
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/retroarch.tar.gz retroarch/ && cd ..
-	rm -rf packages/retroarch/playlists
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/frontend-assets.tar.gz frontend-assets/ && cd ..
-	cd packages && tar -zcvf ../script.gamestarter/resources/data/libretro-cores.tar.gz libretro-cores/ && cd ..
-	cd script.gamestarter/resources/data/ && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ../../../
-	rm script.gamestarter/resources/data/libretro-cores.tar.gz
-	cp packages/plugin.program.advanced.emulator.launcher.zip script.gamestarter/resources/data
-	cp packages/advanced-launcher-2.5.8.zip script.gamestarter/resources/data
+	cd packages && tar -zcvf retroarch.tar.gz retroarch/ && cd ..
+
+	cd packages && tar -zcvf libretro-cores.tar.gz libretro-cores/ && cd ..
+	# cd script.gamestarter/resources/data/ && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ../../../
+	cd packages && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ..
+	rm packages/libretro-cores.tar.gz
+
         ;;
     # *)
         # do_something_else
@@ -88,7 +75,7 @@ esac
 
 
 #################################################
-# crear los zips de las versiones del addon
+# crear los zips de las versiones del addon con los zips de data
 #################################################
 
 # ADDON_VERSION="OLE"
@@ -99,54 +86,86 @@ read -r -p "Do you want to make addon zip file for "$1"? [y/n] " response
 case $response in
     [yY][eE][sS]|[yY]) 
 	
+	echo "Compilamos las carpetas de data..."
+	mkdir script.gamestarter/resources/data/
+	# advancedemulatorlauncher.tar.gz | advancedlauncher.tar.gz | emulators.tar.gz | libretro-part1.tar.gz | libretro-part2.tar.gz | retroarch.tar.gz
+	# subir cada package actualizando el existente
+	# cd packages && tar -zcvf ../script.gamestarter/resources/data/emulators.tar.gz emulators/ && cd ..
+	cp -R packages/emulators emulators
+	rm -rf emulators/roms/ports
+	# cd packages && tar -zcvf ../script.gamestarter/resources/data/emulators.tar.gz emulators/ && cd ..
+	tar -zcvf script.gamestarter/resources/data/emulators.tar.gz emulators/
+	rm -rf emulators
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz plugin.program.advanced.emulator.launcher/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz plugin.program.advanced.launcher/ && cd ..
+	
+	mkdir retroarch
+	# mkdir packages/retroarch-temp/playlists
+	cp -R packages/retroarch/. retroarch
+	rm retroarch/retroarch_OLE
+	rm retroarch/retroarch_LE
+	tar -zcvf script.gamestarter/resources/data/retroarch.tar.gz retroarch/
+	rm -rf packages/retroarch/playlists
+	rm -rf retroarch
+
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/frontend-assets.tar.gz frontend-assets/ && cd ..
+	cd packages && tar -zcvf ../script.gamestarter/resources/data/libretro-cores.tar.gz libretro-cores/ && cd ..
+	cd script.gamestarter/resources/data/ && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ../../../
+	rm script.gamestarter/resources/data/libretro-cores.tar.gz
+	cp packages/plugin.program.advanced.emulator.launcher.zip script.gamestarter/resources/data
+	cp packages/advanced-launcher-2.5.8.zip script.gamestarter/resources/data
+
+
 	echo "compilamos los zips..."
-	mkdir -p releases/script.gamestarter
-	cp -R script.gamestarter releases/
+	mkdir -p builds/script.gamestarter
+	cp -R script.gamestarter builds/
 
 	if [ "$ADDON_VERSION" = "OLE" ]; then
 		echo "Compilamos el addon para "$ADDON_VERSION" ..."
 		# OLE
 		# install.sh ADDON_VERSION
-		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="OLE"/' releases/script.gamestarter/resources/bin/install.sh
+		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="OLE"/' builds/script.gamestarter/resources/bin/install.sh
 
-		# retroarch_1.3.6(OLE)
-		mv releases/script.gamestarter/resources/bin/retroarch_1.5.0_OE6 releases/script.gamestarter/resources/bin/retroarch
-		rm releases/script.gamestarter/resources/bin/retroarch_1.5.0_LE8
-
+		# retroarch OLE
+		# mv builds/script.gamestarter/resources/bin/retroarch_1.5.0_OE6 builds/script.gamestarter/resources/bin/retroarch
+		cp packages/retroarch/retroarch_OLE builds/script.gamestarter/resources/bin/retroarch
+		# rm builds/script.gamestarter/resources/bin/retroarch_1.5.0_LE8
+		
 		# seleccionar advanced launcher
-		rm releases/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz
-		rm releases/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.zip
+		rm builds/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.tar.gz
+		rm builds/script.gamestarter/resources/data/plugin.program.advanced.emulator.launcher.zip
 
 		# dejar las libs necesarias: /lib/libbrcmEGL.so y /lib/libbrcmGLESv2.so para glupen64
-		# rm releases/script.gamestarter/lib/README.md
+		# rm builds/script.gamestarter/lib/README.md
 		# quitar las libs -> nuevo core compilado no las necesita
-		rm -rf releases/script.gamestarter/lib
+		rm -rf builds/script.gamestarter/lib
 
 	else
 		echo "Compilamos el addon para "$ADDON_VERSION" ..."
 		# LE8alpha:
 		# install.sh ADDON_VERSION
-		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="LE8"/' releases/script.gamestarter/resources/bin/install.sh
+		sed -i '/#versionstart/,/#versionend/s/ADDON_VERSION="XXX"/ADDON_VERSION="LE8"/' builds/script.gamestarter/resources/bin/install.sh
 
-		# retroarch_1.3.6_LE8
-		mv releases/script.gamestarter/resources/bin/retroarch_1.5.0_LE8 releases/script.gamestarter/resources/bin/retroarch
-		rm releases/script.gamestarter/resources/bin/retroarch_1.5.0_OE6
+		# retroarch LE8
+		cp packages/retroarch/retroarch_LE builds/script.gamestarter/resources/bin/retroarch
+		# mv builds/script.gamestarter/resources/bin/retroarch_1.5.0_LE8 builds/script.gamestarter/resources/bin/retroarch
+		# rm builds/script.gamestarter/resources/bin/retroarch_1.5.0_OE6
 
 		# seleccionar advanced emulator launcher
-		rm releases/script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz
-		rm releases/script.gamestarter/resources/data/advanced-launcher-2.5.8.zip
+		rm builds/script.gamestarter/resources/data/plugin.program.advanced.launcher.tar.gz
+		rm builds/script.gamestarter/resources/data/advanced-launcher-2.5.8.zip
 
 		# quitar las libs
-		rm -rf releases/script.gamestarter/lib
+		rm -rf builds/script.gamestarter/lib
 
 	fi
 
 	# crear el zip
 	# TIMESTAMP=`date +%Y%m%d%k%M%S`
 	TIMESTAMP=`date +%Y%m%d%H%M%S`
-	cd releases && zip -r script.gamestarter-$ADDON_VERSION-$TIMESTAMP.zip script.gamestarter/ && cd ..
-	rm -rf releases/script.gamestarter/
-
+	cd builds && zip -r script.gamestarter-$ADDON_VERSION-$TIMESTAMP.zip script.gamestarter/ && cd ..
+	rm -rf builds/script.gamestarter/
+	rm -rf script.gamestarter/resources/data
 esac
 
 
