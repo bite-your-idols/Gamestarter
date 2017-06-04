@@ -3,6 +3,7 @@
 kodi-send --action="xbmc.ActivateWindow(busydialog)"
 
 OPTION=$1
+ADDON_VERSION=$2
 ADDON_DIRECTORY="/storage/.kodi/addons/script.gamestarter"
 # CONFIG_DIRECTORY="/storage/.config"
 CONFIG_DIRECTORY="/storage/.kodi/userdata/addon_data/script.gamestarter"
@@ -185,18 +186,39 @@ case $1 in
    ;;
    "excores")  
      	# Script for Experimental Cores installation 
-		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
+		# wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
 		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/mame2010_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/mame2010_libretro.so
-		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
+		# wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
 		
 		echo "Experimental cores Installed."
 	;;
 	"skin")  
 		# descargamos el zip del addon
 		wget --no-check-certificate -O /storage/skin.estuary.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/skin.estuary.zip
-
 		# kodi-send --action=Notification"(Gamestarter,Custom Estuary skin downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
 		echo "Estuary Skin Downloaded."
+    ;;
+	"retroarch")  
+		# Script for Retroarch update/re-installation
+		# rm /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores/retroarch_$ADDON_VERSION
+		chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch
+
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		echo "RetroArch Updated."
+    ;;
+    "cores")  
+		# Script for Libretro Cores update/re-installation
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.aa
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ab
+		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ac
+		cp -R /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores /storage/.kodi/addons/script.gamestarter/resources/bin/_libretro-cores
+		rm -rf /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores
+		cat $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
+		tar -xf $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz -C $ADDON_DIRECTORY/resources/bin/ -xz
+		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
+
+		echo "Libretro Cores Updated."
     ;;
     "drastic")  
      	# Script for DraStic emulator installation 

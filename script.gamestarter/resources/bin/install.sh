@@ -120,6 +120,8 @@ else
 fi
 
 touch $ADDON_DIRECTORY/resources/bin/installed
+rm -rf $ADDON_DIRECTORY/resources/data
+
 echo $ADDON_VERSION >> $ADDON_DIRECTORY/resources/bin/installed
 
 # end installation

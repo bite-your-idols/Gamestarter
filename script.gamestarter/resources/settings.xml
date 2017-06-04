@@ -8,6 +8,11 @@
             <setting type="sep"/>
             <setting label="Update Gamestarter" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/update.py, SetLocation)"/>
         </category>
+        <category label="RetroArch">
+            <setting label="Update/Re-install RetroArch" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_ra.py, SetLocation)"/>
+            <setting label="Update/Re-install Libretro Cores" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_cores.py, SetLocation)"/>
+            <setting label="Install Experimental Libretro cores: mame2010" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_excores.py, SetLocation)"/>
+        </category>
         <category label="Emulationstation">
         	<setting label="Install/update EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_es.py, SetLocation)"/>
             <setting id="frontend" type="select" label="Select your default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
@@ -22,7 +27,6 @@
             <setting type="sep"/>
             <setting label="Install Libretro ports: Cave Story, Doom, Quake, Dinothawr & Rick Dangerous" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_ports.py, SetLocation)"/>
             <setting label="Install DraStic, an experimental Nintendo DS emulator" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_drastic.py, SetLocation)"/>
-             <setting label="Install Experimental Libretro cores: mame2010, Yabause & Desmume" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_excores.py, SetLocation)"/>
              <setting type="sep"/>
              <setting label="Download latest custom Estuary skin (LibreELEC 8+)" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_skin.py, SetLocation)"/>
             <!-- <setting label="Install GameMaker Pi ports (deprecated: Only working in OpenELEc 6)" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_gamemaker.py, SetLocation)"/> -->
