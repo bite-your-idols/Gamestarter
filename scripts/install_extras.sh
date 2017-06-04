@@ -3,15 +3,15 @@
 kodi-send --action="xbmc.ActivateWindow(busydialog)"
 
 OPTION=$1
-ADDON_VERSION=$2
 ADDON_DIRECTORY="/storage/.kodi/addons/script.gamestarter"
+ADDON_VERSION=$(head -c 8 $ADDON_DIRECTORY/resources/bin/installed)
 # CONFIG_DIRECTORY="/storage/.config"
 CONFIG_DIRECTORY="/storage/.kodi/userdata/addon_data/script.gamestarter"
 
 case $1 in
   "emulationstation")  
   		# EmulationsStation installation
-	    # kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+	    # kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,$ADDON_DIRECTORY/icon.png)"
 
 		# chekeamos si ya esta instalado y hacemos copia de seguridad de sus archivos
 		# if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems.cfg" ]
@@ -60,12 +60,12 @@ case $1 in
 		# 	mv $CONFIG_DIRECTORY/emulationstation/es_input_BACKUP.cfg $CONFIG_DIRECTORY/emulationstation/es_input.cfg
 		# fi
 
-		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "Emulationstation Installed."
   ;;
   "iarl")  
      	# IARL addon installation 
-		# kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,$ADDON_DIRECTORY/icon.png)"
 
 		# wget --no-check-certificate -O /storage/plugin.program.iarl.zip https://github.com/zach-morris/plugin.program.iarl/archive/master.zip
 		# lo cambiamos por el de la repo de zACHMORRIS
@@ -79,12 +79,12 @@ case $1 in
 		# chmod a+x /storage/.kodi/addons/plugin.program.iarl-master/resources/bin/romlaunch_OE_RPi2.sh
 		# rm /storage/iarl.tar.gz
 
-		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "IARL Downloaded."
   ;;
    "uae4arm")  
      	# Script for UAE4ARM emulator installation 
-		# kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,$ADDON_DIRECTORY/icon.png)"
 
 		wget --no-check-certificate -O /storage/uae4arm.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/uae4arm.tar.gz
 		tar -xf /storage/uae4arm.tar.gz -C /storage/ -xz
@@ -97,12 +97,12 @@ case $1 in
 
 		chmod a+x $ADDON_DIRECTORY/resources/bin/uae4arm
 
-		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "UAE4ARM Installed."
   ;;
    "ports")  
      	# Script for Libretro PORTS installation 
-		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,$ADDON_DIRECTORY/icon.png)"
 
 		echo "Installing Cave Story..."
 		curl -o /storage/cavestory.zip https://buildbot.libretro.com/assets/cores/NXEngine/Cave%20Story%20%28en%29.zip
@@ -139,12 +139,12 @@ case $1 in
 		wget --no-check-certificate -O /storage/emulators/roms/ports/RickDangerous.sh https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulators/roms/ports/RickDangerous.sh
 		chmod a+x /storage/emulators/roms/ports/RickDangerous.sh
 		
-		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "Libretro ports Installed."
   ;;
    "esthemes")  
      	# Script for ES themes installation 
-		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,$ADDON_DIRECTORY/icon.png)"
 
 		echo "Installing Carbon no-meta..."
 		wget --no-check-certificate -O  /storage/carbon-nometa.zip https://github.com/RetroPie/es-theme-carbon-nometa/archive/master.zip
@@ -181,39 +181,39 @@ case $1 in
 		unzip -o /storage/tronkyfran.zip -d $CONFIG_DIRECTORY/emulationstation/themes/
 		rm /storage/tronkyfran.zip
 		
-		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "ES Themes Installed."
    ;;
    "excores")  
      	# Script for Experimental Cores installation 
-		# wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
-		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/mame2010_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/mame2010_libretro.so
-		# wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
+		# wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/mame2010_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/mame2010_libretro.so
+		# wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
 		
 		echo "Experimental cores Installed."
 	;;
 	"skin")  
 		# descargamos el zip del addon
 		wget --no-check-certificate -O /storage/skin.estuary.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/skin.estuary.zip
-		# kodi-send --action=Notification"(Gamestarter,Custom Estuary skin downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,Custom Estuary skin downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "Estuary Skin Downloaded."
     ;;
 	"retroarch")  
 		# Script for Retroarch update/re-installation
-		# rm /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch
-		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores/retroarch_$ADDON_VERSION
+		# rm $ADDON_DIRECTORY/resources/bin/retroarch
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/retroarch https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores/retroarch_$ADDON_VERSION
 		chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch
 
-		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "RetroArch Updated."
     ;;
     "cores")  
 		# Script for Libretro Cores update/re-installation
-		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.aa
-		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ab
-		wget --no-check-certificate -O  /storage/.kodi/addons/script.gamestarter/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ac
-		cp -R /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores /storage/.kodi/addons/script.gamestarter/resources/bin/_libretro-cores
-		rm -rf /storage/.kodi/addons/script.gamestarter/resources/bin/libretro-cores
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.aa
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ab
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ac
+		cp -R $ADDON_DIRECTORY/resources/bin/libretro-cores $ADDON_DIRECTORY/resources/bin/_libretro-cores
+		rm -rf $ADDON_DIRECTORY/resources/bin/libretro-cores
 		cat $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
 		tar -xf $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz -C $ADDON_DIRECTORY/resources/bin/ -xz
 		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
@@ -222,7 +222,7 @@ case $1 in
     ;;
     "drastic")  
      	# Script for DraStic emulator installation 
-		# kodi-send --action=Notification"(Gamestarter,Installing DraStic,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,Installing DraStic,2000,$ADDON_DIRECTORY/icon.png)"
 
 		wget --no-check-certificate -O /storage/drastic.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/drastic.tar.gz
 		tar -xf /storage/drastic.tar.gz -C /storage/ -xz
@@ -235,7 +235,7 @@ case $1 in
 
 		chmod a+x $ADDON_DIRECTORY/resources/bin/drastic/drastic
 
-		# kodi-send --action=Notification"(Gamestarter,DraStic ainstalled,2000,/storage/.kodi/addons/script.gamestarter/icon.png)"
+		# kodi-send --action=Notification"(Gamestarter,DraStic ainstalled,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "DraStic emulator Installed."
   ;;
 
