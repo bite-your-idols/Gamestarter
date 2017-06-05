@@ -1,0 +1,124 @@
+#!/bin/sh
+#!/bin/env python
+. /etc/profile
+
+#kodi-send --action="xbmc.ShowPicture(/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamestarter_fanart.png)"
+sleep 1s
+
+# path to addon
+DIR="/storage/.kodi/addons/game.starter"
+CONFIG_FILE="/storage/.kodi/userdata/addon_data/game.starter/retroarch/retroarch.cfg"
+LIBRETRO_DIR="/storage/.kodi/addons"
+# LIBRETRO_DIR=$DIR"/resources/bin/libretro-cores"
+AMIGA_TEMP_FILE=$DIR/resources/bin/launchTemp.uae
+LOG_FILE=/storage/.kodi/temp/gamestarter.log
+LOG_FILE_RA=/storage/.kodi/temp/gamestarter_retroarch.log
+LOG_FILE_ES=/storage/.kodi/temp/gamestarter_emulationstation.log
+LOG_FILE_AG=/storage/.kodi/temp/gamestarter_amiga.log
+LOG_FILE_DS=/storage/.kodi/temp/gamestarter_nintendoDS.log
+
+echo '::Gamestarter:: -> launching on' $(date) >> $LOG_FILE
+
+# Stop KODI
+echo '::Gamestarter:: -> stop kodi...' >> $LOG_FILE
+systemctl stop kodi
+
+# Enable ALSA
+# echo '::Gamestarter:: -> enable alsa...' >>  $LOG_FILE
+# modprobe snd_bcm2835
+
+# Launch emulator
+echo '::Gamestarter:: -> launch' $1 >>  $LOG_FILE
+case $1 in
+  "retroarch")  
+      $DIR/game.retroarch -c $CONFIG_FILE --menu &>  $LOG_FILE_RA
+  ;;
+  "emulationstation")  
+      # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
+      $DIR/game.emulationstation &>  $LOG_FILE_ES
+  ;;
+   "ports")  
+      # si es un port ejecutamos su sh
+      chmod a+x $2
+      $2 &>  $LOG_FILE
+  ;;
+  "amiga") 
+    # crear el archivo uae temporal para el adf seleccionado
+    cp $DIR/gamestarter.uae $AMIGA_TEMP_FILE
+    echo 'floppy0='$2 >> $AMIGA_TEMP_FILE
+    echo 'floppy0type=0' >> $AMIGA_TEMP_FILE
+    
+    # checkeamos si es multidisco (_DISK)
+	if echo "$2" | grep -q "_Disk"; then
+		#echo "multi!";
+		name=${2%_Disk*}
+		echo 'floppy1='$name'_Disk2.adf' >> $AMIGA_TEMP_FILE
+		echo 'floppy1type=0' >> $AMIGA_TEMP_FILE
+		echo 'floppy2='$name'_Disk3.adf' >> $AMIGA_TEMP_FILE
+		echo 'floppy2type=0' >> $AMIGA_TEMP_FILE
+		echo 'floppy3='$name'_Disk4.adf' >> $AMIGA_TEMP_FILE
+		echo 'floppy3type=0' >> $AMIGA_TEMP_FILE
+		echo 'nr_floppies=4' >> $AMIGA_TEMP_FILE
+	else
+		echo 'nr_floppies=1' >> $AMIGA_TEMP_FILE
+	fi
+
+   # cambiar el modo de TV a 1080 50h
+    tvservice -e "CEA 31"
+
+    #check default amiga emulator
+	# kodi-send --action=RunScript'(/storage/.kodi/addons/script.gamestarter/resources/bin/check_amiga.py)'
+	# AMIGA_EMU=python $DIR/resources/bin/check_amiga.py
+	# AMIGA_EMU=$(python $DIR/resources/bin/check_amiga.py)
+	AMIGA_EMU="uae4arm"
+	# AMIGA_EMU=$(head -c 12 /storage/.kodi/addons/script.gamestarter/resources/bin/amiga.txt)
+	if [[ ! $(grep 'id="amiga" value="uae4arm"' '/storage/.kodi/userdata/addon_data/script.gamestarter/settings.xml') ]]; then
+	    AMIGA_EMU="libretro"
+	fi 
+	echo '::Gamestarter:: -> amiga EMU...' $AMIGA_EMU >>  $LOG_FILE
+
+    case $AMIGA_EMU in
+      "libretro") 
+        $DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE_RA;;
+      *) 
+        $DIR/game.uae4arm -f $AMIGA_TEMP_FILE  &>  $LOG_FILE_AG;; 
+    esac
+
+    ;;
+  "nds") 
+	cd $DIR/
+   $DIR/game.drastic "$2"  &>  $LOG_FILE_DS
+   # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
+   cd /storage
+  ;;
+
+   *) 
+    # $DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/game.libretro.$1/game.libretro.$1.so "$2"  &>  $LOG_FILE_RA
+    # /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch -c /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/retroarch.cfg -L /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/cores/mame2003_libretro.so /storage/emulators/roms/mame/gng.zip
+   /storage/.kodi/addons/game.starter/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.starter/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).nes"
+
+   ;;
+esac
+
+# Disable ALSA
+# echo '::Gamestarter:: -> disable alsa...' >>  $LOG_FILE
+# rmmod snd_bcm2835
+
+# Reset resolution to standard y borrar uae temporal
+case $1 in
+  "amiga")
+    echo '::Gamestarter:: -> reset amiga configs...' >> $LOG_FILE
+    rm $AMIGA_TEMP_FILE
+    tvservice -p
+  ;;
+esac
+
+# Start KODI
+# systemctl start kodi
+case $3 in
+  "ES") echo '::Gamestarter:: -> Exit ES' >> $LOG_FILE;;
+  *) 
+  	echo '::Gamestarter:: -> restart kodi...' >> $LOG_FILE
+  	systemctl start kodi
+  ;;
+esac
