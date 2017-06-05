@@ -1,7 +1,7 @@
-Package addon:
+How to build addon package:
 
 cd Gamestarter-Pi
 
-sh scripts/compile.sh "ADDON_VERSION"
+sh scripts/build.sh "ADDON_VERSION"
 
-ADDON_VERSION= OLE / LE8alpha
+ADDON_VERSION= OLE / LE8
