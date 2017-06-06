@@ -6,11 +6,14 @@
 sleep 1s
 
 # path to addon
-DIR="/storage/.kodi/addons/game.starter"
-CONFIG_FILE="/storage/.kodi/userdata/addon_data/game.starter/retroarch/retroarch.cfg"
+ADDON_DIR="/storage/.kodi/addons/game.starter"
+USERADDON_DIRECTORY="/storage/.kodi/userdata/addon_data"
+CONFIG_DIRECTORY=$USERADDON_DIRECTORY"/game.starter"
+CONFIG_FILE=$CONFIG_DIRECTORY"/retroarch/retroarch.cfg"
+
 LIBRETRO_DIR="/storage/.kodi/addons"
 LIBRETRO_LINK_DIR="/storage/.kodi/userdata/addon_data/game.starter/retroarch/cores"
-AMIGA_TEMP_FILE=$DIR/resources/bin/launchTemp.uae
+AMIGA_TEMP_FILE=$ADDON_DIR/resources/bin/launchTemp.uae
 LOG_FILE=/storage/.kodi/temp/gamestarter.log
 LOG_FILE_RA=/storage/.kodi/temp/gamestarter_retroarch.log
 LOG_FILE_ES=/storage/.kodi/temp/gamestarter_emulationstation.log
@@ -27,15 +30,35 @@ systemctl stop kodi
 # echo '::Gamestarter:: -> enable alsa...' >>  $LOG_FILE
 # modprobe snd_bcm2835
 
+echo '::Gamestarter:: -> first time setup...' >> $LOG_FILE
+#first time setup -> esto molaria meterlo en el addon python
+mv $ADDON_DIR/retroarch $CONFIG_DIRECTORY
+#acceso directo de retroarch en .config que es donde se genera por default
+if [ ! -L /storage/.config/retroarch ]
+  then
+  ln -s $CONFIG_DIRECTORY/retroarch /storage/.config/retroarch
+fi
+
+mv $ADDON_DIR/emulationstation $CONFIG_DIRECTORY
+if [ ! -L /storage/.config/emulationstation ]
+  then
+  ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
+fi
+
+# habria que recorrer la carpeta de addons enbusca de cores y crear los links
+# cada vez que entra deberia borrar todos y volver a "escanear"
+ln -s $LIBRETRO_DIR/game.libretro.fceumm/game.libretro.fceumm.so $LIBRETRO_LINK_DIR/fceumm_libretro.so 
+
+
 # Launch emulator
 echo '::Gamestarter:: -> launch' $1 >>  $LOG_FILE
 case $1 in
   "retroarch")  
-      $DIR/game.retroarch -c $CONFIG_FILE --menu &>  $LOG_FILE_RA
+      $ADDON_DIR/game.retroarch -c $CONFIG_FILE --menu &>  $LOG_FILE_RA
   ;;
   "emulationstation")  
       # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
-      $DIR/game.emulationstation &>  $LOG_FILE_ES
+      $ADDON_DIR/game.emulationstation --ignore-gamelist &>  $LOG_FILE_ES
   ;;
    # "ports")  
    #    # si es un port ejecutamos su sh
@@ -45,7 +68,7 @@ case $1 in
 
  #  "amiga") 
  #    # crear el archivo uae temporal para el adf seleccionado
- #    cp $DIR/gamestarter.uae $AMIGA_TEMP_FILE
+ #    cp $ADDON_DIR/gamestarter.uae $AMIGA_TEMP_FILE
  #    echo 'floppy0='$2 >> $AMIGA_TEMP_FILE
  #    echo 'floppy0type=0' >> $AMIGA_TEMP_FILE
     
@@ -77,25 +100,27 @@ case $1 in
 
  #    case $AMIGA_EMU in
  #      "libretro") 
- #        $DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE_RA;;
+ #        $ADDON_DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE_RA;;
  #      *) 
- #        $DIR/game.uae4arm -f $AMIGA_TEMP_FILE  &>  $LOG_FILE_AG;; 
+ #        $ADDON_DIR/game.uae4arm -f $AMIGA_TEMP_FILE  &>  $LOG_FILE_AG;; 
  #    esac
 
  #    ;;
 
  #  "nds") 
-	# cd $DIR/
- #   $DIR/game.drastic "$2"  &>  $LOG_FILE_DS
+	# cd $ADDON_DIR/
+ #   $ADDON_DIR/game.drastic "$2"  &>  $LOG_FILE_DS
  #   # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
  #   cd /storage
  #  ;;
 
    *) 
-    # $DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/game.libretro.$1/game.libretro.$1.so "$2"  &>  $LOG_FILE_RA
+    echo "lanzamos un juego desde fuera de RA"
+    # $ADDON_DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/game.libretro.$1/game.libretro.$1.so "$2"  &>  $LOG_FILE_RA
     # /storage/.kodi/addons/script.gamestarter/resources/bin/retroarch -c /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/retroarch.cfg -L /storage/.kodi/userdata/addon_data/script.gamestarter/retroarch/cores/mame2003_libretro.so /storage/emulators/roms/mame/gng.zip
     # /storage/.kodi/addons/game.starter/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.starter/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).nes"
-    $DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).nes"
+    # $ADDON_DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_LINK_DIR/fceumm_libretro.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).nes" &>  $LOG_FILE_RA
+    /storage/.kodi/addons/game.starter/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.starter/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).nes" &>  $LOG_FILE_RA
    ;;
 esac
 

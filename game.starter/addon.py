@@ -21,12 +21,12 @@ if askConfirmation == "true":
 	if resultado:
 		xbmc.executebuiltin('ShowPicture(directory+"/fanart.png")')  
 		if frontend=="EmulationStation":
-			os.system(directory+"/gamestarter.sh emulationstation")
+			os.system("sh "+directory+"/gamestarter.sh emulationstation")
 		else:
-			os.system(directory+"/gamestarter.sh retroarch")
+			os.system("sh "+directory+"/gamestarter.sh retroarch")
 else:
 	xbmc.executebuiltin('ShowPicture(directory+"/fanart.png")') 
 	if frontend=="EmulationStation": 
-		os.system(directory+"/gamestarter.sh emulationstation")
+		os.system("sh "+directory+"/gamestarter.sh emulationstation")
 	else:
-		os.system(directory+"/gamestarter.sh retroarch")
+		os.system("sh "+directory+"/gamestarter.sh retroarch")
