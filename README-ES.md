@@ -1,5 +1,5 @@
 # Gamestarter Pi
-![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/assets/gamestarter-logo-dark.jpg)
+![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/packages/assets/gamestarter-logo-dark.jpg)
 
 [English](https://github.com/bite-your-idols/gamestarter/) / Spanish / [German](https://github.com/bite-your-idols/gamestarter/blob/master/README-DE.md)
 
@@ -77,11 +77,11 @@ Puesde abrir los ajustas del addon para instalar.
 
 ---
 
-![screenshot-gamestarter-settings](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-settings.png)
+![screenshot-gamestarter-settings](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/assets/screenshot-settings.png)
 Pantalla de **Ajustes del addon**
 
-![screenshot-advemulauncher](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-estuary-ael-systems.png)
+![screenshot-advemulauncher](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/assets/screenshot-estuary-ael-systems.png)
 Ejemplo de la "biblioteca de juegos" con **Advanced Emulator Launcher** en **LibreELEC 8**
 
-![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/assets/screenshot-gamestarter-advlauncher-mimic.png)
+![screenshot-advlauncher-edit](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/assets/screenshot-gamestarter-advlauncher-mimic.png)
 Ejemplo de la "biblioteca de juegos" con [Mimic Skin](http://kodi.wiki/view/Add-on:mimic)

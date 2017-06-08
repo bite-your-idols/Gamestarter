@@ -21,7 +21,7 @@
     <source></source>
     <assets>
       <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
+      <fanart>resources/fanart.jpg</fanart>
       <screenshot>resources/screenshot01.png</screenshot>
       <screenshot>resources/screenshot02.png</screenshot>
       <screenshot>resources/screenshot03.png</screenshot>
