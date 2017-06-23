@@ -104,7 +104,7 @@ case $response in
 	# mkdir packages/retroarch-temp/playlists
 	cp -R packages/retroarch/. retroarch
 	rm retroarch/retroarch_OLE
-	rm retroarch/retroarch_LE
+	rm retroarch/retroarch_LE8
 	tar -zcvf script.gamestarter/resources/data/retroarch.tar.gz retroarch/
 	rm -rf packages/retroarch/playlists
 	rm -rf retroarch
