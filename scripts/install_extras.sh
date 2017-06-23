@@ -37,10 +37,10 @@ case $1 in
 		    ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
 		fi
 		
-		if [ ! -L /storage/.emulationstation ]
-		  then
-		    ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
-		fi
+		# if [ ! -L /storage/.emulationstation ]
+		#   then
+		#     ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
+		# fi
 		
 
 		#para el scraper
