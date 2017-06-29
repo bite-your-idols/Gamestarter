@@ -577,7 +577,7 @@
   <platform>Sega MegaDrive/Genesis</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>picodrive &quot;%rom%&quot;</args>
+  <args>genesis_plus_gx &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/megadrive/</rompath>
   <romext>smd|md|bin</romext>
   <finished>False</finished>
@@ -673,7 +673,7 @@
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
   <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>fba &quot;%rom%&quot;</args>
+  <args>fbalpha &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/neogeo/</rompath>
   <romext>zip</romext>
   <finished>False</finished>
