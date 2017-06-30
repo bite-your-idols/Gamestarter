@@ -227,6 +227,7 @@ case $1 in
 		tar -xf $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz -C $ADDON_DIRECTORY/resources/bin/ -xz
 		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz	
 		rm -rf $ADDON_DIRECTORY/resources/bin/_libretro-cores
+		mv $ADDON_DIRECTORY/resources/bin/libretro-cores-all $ADDON_DIRECTORY/resources/bin/libretro-cores
 
 		echo "Libretro Cores Updated."
     ;;
