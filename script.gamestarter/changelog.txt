@@ -4,6 +4,7 @@ v2.9.0 (2017-06-06)
 - Libretro cores removed except for most popular ones
 - Libretro cores update/download option within RetroArch
 - All Libretro cores update/download option in addon settings
+- Advanced Emulator Launcher updated to v0.9.6
 - Logs path moved to /storage/.kodi/temp
 - Minor updates, bug fixes and code debugging
 
