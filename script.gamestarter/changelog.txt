@@ -3,6 +3,7 @@ v2.9.0 (2017-06-06)
 - RetroArch update option in addon settings
 - Libretro cores removed except for most popular ones
 - Libretro cores update/download option within RetroArch
+- All Libretro cores update/download option in addon settings
 - Logs path moved to /storage/.kodi/temp
 - Minor updates, bug fixes and code debugging
 
