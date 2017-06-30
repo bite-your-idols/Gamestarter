@@ -33,7 +33,7 @@ case $response in
 	cp -r packages/retroarch/assets-temp/xmb packages/retroarch/assets/xmb
 	rm -rf packages/retroarch/assets-temp
 
-	# echo "Descargamos libretro daabases..."
+	# echo "Descargamos libretro databases..."
 	# curl -o packages/retroarch/database.zip https://buildbot.libretro.com/assets/frontend/database-rdb.zip
 	# rm packages/retroarch/database/*
 	# unzip -o packages/retroarch/database.zip -d packages/retroarch/database
@@ -63,10 +63,10 @@ case $response in
 	mkdir packages/retroarch/playlists
 	cd packages && tar -zcvf retroarch.tar.gz retroarch/ && cd ..
 
-	cd packages && tar -zcvf libretro-cores.tar.gz libretro-cores/ && cd ..
+	cd packages && tar -zcvf libretro-cores-all.tar.gz libretro-cores-all/ && cd ..
 	# cd script.gamestarter/resources/data/ && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ../../../
-	cd packages && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ..
-	rm packages/libretro-cores.tar.gz
+	cd packages && split -b 24M libretro-cores-all.tar.gz "libretro-cores-all.tar.gz.part." && cd ..
+	rm packages/libretro-cores-all.tar.gz
 
         ;;
     # *)

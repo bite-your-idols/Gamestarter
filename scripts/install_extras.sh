@@ -189,14 +189,14 @@ case $1 in
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "ES Themes Installed."
    ;;
-   "excores")  
-     	# Script for Experimental Cores installation 
-		# wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/mame2010_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/mame2010_libretro.so
-		# wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
+ #   "excores")  
+ #     	# Script for Experimental Cores installation 
+	# 	# wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/desmume_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/desmume_libretro.so
+	# 	wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/mame2010_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/mame2010_libretro.so
+	# 	# wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/yabause_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-ex/yabause_libretro.so
 		
-		echo "Experimental cores Installed."
-	;;
+	# 	echo "Experimental cores Installed."
+	# ;;
 	"skin")  
 		# descargamos el zip del addon
 		wget --no-check-certificate -O /storage/skin.estuary.zip https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/skin.estuary.zip
@@ -214,9 +214,9 @@ case $1 in
     ;;
     "cores")  
 		# Script for Libretro Cores update/re-installation
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.aa
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ab
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores.tar.gz.part.ac
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all.tar.gz.part.aa
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all.tar.gz.part.ab
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all.tar.gz.part.ac
 		cp -R $ADDON_DIRECTORY/resources/bin/libretro-cores $ADDON_DIRECTORY/resources/bin/_libretro-cores
 		rm -rf $ADDON_DIRECTORY/resources/bin/libretro-cores
 		cat $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
