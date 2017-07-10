@@ -1,4 +1,4 @@
-# Gamestarter Pi
+# Gamestarter
 ![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/packages/assets/gamestarter-logo-dark.jpg)
 
 [English](https://github.com/bite-your-idols/gamestarter/blob/master/README.md) / [Spanish](https://github.com/bite-your-idols/gamestarter/blob/master/README-ES.md) / German
@@ -27,44 +27,28 @@ Du kannst die Addon Einstellungen aufrufen um zusätzliche Funktionen zu install
 - **[Libretro PC Portierungen](https://buildbot.libretro.com/assets/cores/):** Cave Story, Doom, Quake, Dinothawr & Rick Dangerous
 - **Angepasster Estuary Skin:** Fügt einen Menüpunkt für Gamestarter oder Advanced Emulator Launcher im Hauptmenü hinzu (siehe [#48](https://github.com/bite-your-idols/Gamestarter-Pi/issues/48))
 
-## Unterstützte Systeme
-### Beliebte Systeme
-- *Arcade* ([lr-mame2003](https://github.com/libretro/mame2003-libretro) / [lr-fbalpha](https://github.com/libretro/fbalpha))
-- MSX / MSX2 ([lr-bluemsx](https://github.com/libretro/blueMSX-libretro) / [lr-fmsx](https://github.com/libretro/fmsx-libretro))
-- Neo Geo ([lr-fbalpha](https://github.com/libretro/fbalpha))
-- Nintendo 64 ([lr-mupen64plus](https://github.com/libretro/mupen64plus-libretro) / [lr-parallel_64](https://github.com/libretro/parallel-n64))
-- Nintendo Game Boy / Game Boy Color ([lr-gambatte](https://github.com/libretro/Gambatte-libretro))
-- Nintendo Game Boy Advanced ([lr-gpsp](https://github.com/libretro/gpsp) / [lr-mgba](https://github.com/libretro/mgba))
-- Nintendo NES ([lr-fceumm](https://github.com/libretro/libretro-fceumm) / [lr-nestopia](https://github.com/libretro/nestopia) / [lr-quicknes](https://github.com/libretro/QuickNES_Core))
-- Nintendo SNES ([lr-snes9x2002](https://github.com/libretro/snes9x2002) / [lr-snes9x2005](https://github.com/libretro/snes9x2005) / [lr-snes9x2010](https://github.com/libretro/snes9x2010)  / [lr-snes9x](https://github.com/libretro/snes9x))
-- Sega Master System ([lr-picodrive](https://github.com/libretro/picodrive) / [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
-- Sega Mega Drive / Mega-CD ([lr-picodrive](https://github.com/libretro/picodrive) / [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
-- Sony Playstation ([lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed))
-- Sony PSP ([lr-ppsspp](https://github.com/libretro/libretro-ppsspp))
-- TurboGrafx-16 / PC Engine / PC Engine CD ([lr-mednafen-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) / [lr-mednafen-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro))
+## Verfügbar Systeme
+### Unterstützte Systeme
+- *Arcade* ([mame2003_libretro](https://github.com/libretro/mame2003-libretro))
+- Amiga ([uae4arm_libretro](https://github.com/r-type/uae4arm-libretro) / [uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi))
+- MSX / MSX2 ([bluemsx_libretro](https://github.com/libretro/blueMSX-libretro))
+- Neo Geo ([fbalpha_libretro](https://github.com/libretro/fbalpha))
+- Nintendo 64 ([mupen64plus_libretro](https://github.com/libretro/mupen64plus-libretro))
+- Nintendo Game Boy / Game Boy Color ([gambatte_libretro](https://github.com/libretro/Gambatte-libretro))
+- Nintendo Game Boy Advanced ([gpsp_libretro](https://github.com/libretro/gpsp))
+- Nintendo NES ([fceumm_libretro](https://github.com/libretro/libretro-fceumm))
+- Nintendo SNES ([snes9x2010_libretro](https://github.com/libretro/snes9x2010))
+- Sega Game Gear ([genesis-plus-gx_libretro](https://github.com/libretro/Genesis-Plus-GX))
+- Sega Master System ([picodrive_libretro](https://github.com/libretro/picodrive))
+- Sega Mega Drive / Mega-CD ([genesis-plus-gx_libretro](https://github.com/libretro/Genesis-Plus-GX))
+- Sony Playstation ([pcsx-rearmed_libretro](https://github.com/libretro/pcsx_rearmed))
+- Sony PSP ([ppsspp_libretro](https://github.com/libretro/libretro-ppsspp))
+- TurboGrafx-16 / PC Engine / PC Engine CD ([mednafen-pce-fast_libretro](https://github.com/libretro/beetle-pce-fast-libretro))
+- ZX Spectrum ([fuse_libretro](https://github.com/libretro/fuse-libretro))
 
 ### Zusätzliche Systeme
-- *Arcade* ([lr-mame2000](https://github.com/libretro/mame2000-libretro) / [lr-mame2010](https://github.com/libretro/mame2010-libretro))
-- Amiga ([lr-uae4arm](https://github.com/r-type/uae4arm-libretro) / [uae4arm-rpi](https://github.com/Chips-fr/uae4arm-rpi) / [lr-puae](https://github.com/libretro/libretro-uae))
-- Amstard CPC ([lr-caprice32](https://github.com/libretro/libretro-cap32) / [lr-crocods](https://github.com/libretro/libretro-crocods))
-- Atari 800 ([lr-atari800](https://github.com/r-type/libretro-atari800))
-- Atari 2600 ([lr-stella](https://github.com/libretro/stella-libretro))
-- Atari 7800 ([lr-prosystem](https://github.com/libretro/prosystem-libretro))
-- Atari Lynx ([lr-handy](https://github.com/libretro/libretro-handy) / [lr-mednafen_lynx](https://github.com/libretro/beetle-lynx-libretro))
-- Commodore 64 ([lr-vice](https://github.com/libretro/vice-libretro))
-- DOSBox ([lr-dosbox](https://github.com/libretro/dosbox-libretro))
-- Game & Watch ([lr-gw](https://github.com/libretro/gw-libretro))
-- Magnavox Odyssey² / Philips Videopac G7000 ([lr-o2em](https://github.com/libretro/libretro-o2em))
-- Neo Geo Pocket / Neo Geo Pocket Color ([lr-mednafen-ngp](https://github.com/libretro/beetle-ngp-libretro))
-- Nintendo DS ([lr-desmume](https://github.com/libretro/desmume) / [DraStic](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991))
-- Sega Game Gear ([lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX))
-- Sega Saturn ([lr-yabause](https://github.com/libretro/yabause))
-- ScummVM ([lr-scummvm](https://github.com/libretro/scummvm))
-- Vectrex ([lr-vecx](https://github.com/libretro/libretro-vecx))
-- WonderSwan / WonderSwan Color ([lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro))
-- ZX Spectrum ([lr-fuse](https://github.com/libretro/fuse-libretro))
-- ZX81 ([lr-81](https://github.com/libretro/81-libretro))
-- ...
+- Cores from [Libretro buildbot](https://buildbot.libretro.com/nightly/linux/armhf/latest/): Download/update option within RetroArch
+- Cores from [Lakka](https://github.com/bite-your-idols/Gamestarter/tree/master/packages/libretro-cores-all): Download/update option from addon settings.
 
 
 ## Mitwirkende
