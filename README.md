@@ -8,7 +8,7 @@ Do you use your **Raspberry Pi** as a **media center**, running **Kodi** in [Lib
 
 With this addon you will be able to run **multiple emulators** from [RetroArch](https://www.libretro.com/index.php/getting-started-with-retroarch/) thanks to [Advanced Launcher](http://forum.kodi.tv/showthread.php?tid=85724) / [Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826). Check out the included systems below.
 
-> New addon version available for Linux PC Linux running **LibreELEC 8** Generic X86_64
+> New addon version available for Linux PC running **LibreELEC 8** Generic X86_64
 
 ## Installation instructions
 - Download the [latest release](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) and transfer it to your **Raspberry Pi**
