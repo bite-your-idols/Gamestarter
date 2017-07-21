@@ -105,7 +105,7 @@ case $1 in
 		# kodi-send --action=Notification"(Gamestarter,Installing Libretro ports,2000,$ADDON_DIRECTORY/icon.png)"
 
 		echo "Installing Cave Story..."
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/nxengine_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all/nxengine_libretro.so
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/nxengine_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi/nxengine_libretro.so
 		curl -o /storage/cavestory.zip https://buildbot.libretro.com/assets/cores/NXEngine/Cave%20Story%20%28en%29.zip
 		unzip -o /storage/cavestory.zip -d /storage/emulators/roms/ports/
 		rm /storage/cavestory.zip
@@ -113,7 +113,7 @@ case $1 in
 		chmod a+x /storage/emulators/roms/ports/CaveStory.sh
 		
 		echo "Installing Doom..."
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/prboom_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all/prboom_libretro.so
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/prboom_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi/prboom_libretro.so
 		curl -o /storage/doom.zip https://buildbot.libretro.com/assets/cores/PrBoom/Doom%20%5Bshareware%5D%5B1993%5D.zip
 		unzip -o /storage/doom.zip -d /storage/emulators/roms/ports/
 		rm /storage/doom.zip
@@ -121,7 +121,7 @@ case $1 in
 		chmod a+x /storage/emulators/roms/ports/Doom.sh
 
 		echo "Installing Quake..."
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/tyrquake_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all/tyrquake_libretro.so
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/tyrquake_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi/tyrquake_libretro.so
 		curl -o /storage/quake.zip https://buildbot.libretro.com/assets/cores/Tyrquake/Quake%20%5Bshareware%5D%5B1996%5D.zip
 		unzip -o /storage/quake.zip -d /storage/emulators/roms/ports/
 		rm /storage/quake.zip
@@ -129,7 +129,7 @@ case $1 in
 		chmod a+x /storage/emulators/roms/ports/Quake.sh
 
 		echo "Installing Dinothawr..."
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/dinothawr_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all/dinothawr_libretro.so
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/dinothawr_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi/dinothawr_libretro.so
 		curl -o /storage/dino.zip https://buildbot.libretro.com/assets/cores/Dinothawr/Dinothawr.zip
 		unzip -o /storage/dino.zip -d /storage/emulators/roms/ports/
 		rm /storage/dino.zip
@@ -137,7 +137,7 @@ case $1 in
 		chmod a+x /storage/emulators/roms/ports/Dinothawr.sh
 
 		echo "Rick Dangerous..."
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/xrick_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all/xrick_libretro.so
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores/xrick_libretro.so https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi/xrick_libretro.so
 		curl -o /storage/rick.zip https://buildbot.libretro.com/assets/cores/Rick%20Dangerous/Rick%20Dangerous.zip
 		unzip -o /storage/rick.zip -d /storage/emulators/roms/ports/
 		rm /storage/rick.zip
@@ -214,9 +214,9 @@ case $1 in
     ;;
     "cores")  
 		# Script for Libretro Cores update/re-installation
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all.tar.gz.part.aa
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all.tar.gz.part.ab
-		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-all.tar.gz.part.ac
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.aa
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ab
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ac
 		cp -R $ADDON_DIRECTORY/resources/bin/libretro-cores $ADDON_DIRECTORY/resources/bin/_libretro-cores
 		rm -rf $ADDON_DIRECTORY/resources/bin/libretro-cores
 		cat $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
@@ -227,7 +227,7 @@ case $1 in
 		tar -xf $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz -C $ADDON_DIRECTORY/resources/bin/ -xz
 		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz	
 		rm -rf $ADDON_DIRECTORY/resources/bin/_libretro-cores
-		mv $ADDON_DIRECTORY/resources/bin/libretro-cores-all $ADDON_DIRECTORY/resources/bin/libretro-cores
+		mv $ADDON_DIRECTORY/resources/bin/libretro-cores-RPi $ADDON_DIRECTORY/resources/bin/libretro-cores
 
 		echo "Libretro Cores Updated."
     ;;

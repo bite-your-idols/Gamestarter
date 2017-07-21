@@ -63,10 +63,10 @@ case $response in
 	mkdir packages/retroarch/playlists
 	cd packages && tar -zcvf retroarch.tar.gz retroarch/ && cd ..
 
-	cd packages && tar -zcvf libretro-cores-all.tar.gz libretro-cores-all/ && cd ..
+	cd packages && tar -zcvf libretro-cores-RPi.tar.gz libretro-cores-RPi/ && cd ..
 	# cd script.gamestarter/resources/data/ && split -b 24M libretro-cores.tar.gz "libretro-cores.tar.gz.part." && cd ../../../
-	cd packages && split -b 24M libretro-cores-all.tar.gz "libretro-cores-all.tar.gz.part." && cd ..
-	rm packages/libretro-cores-all.tar.gz
+	cd packages && split -b 24M libretro-cores-RPi.tar.gz "libretro-cores-RPi.tar.gz.part." && cd ..
+	rm packages/libretro-cores-RPi.tar.gz
 
         ;;
     # *)
