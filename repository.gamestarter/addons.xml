@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="repository.gamestarter" name="Gamestarter add-on repository" provider-name="Bite Your Idols!" version="3.0.0">
+    <extension name="Gamestarter add-on repository" point="xbmc.addon.repository">
+        <info compressed="true">https://github.com/bite-your-idols/Gamestarter/raw/master/repository.gamestarter/addons.xml</info>
+        <checksum>https://github.com/bite-your-idols/Gamestarter/raw/master/repository.gamestarter/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/bite-your-idols/Gamestarter/master/repository.gamestarter/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Gamestarter add-on repository</summary>
+        <platform>all</platform>
+    </extension>
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="0.0.3">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">RetroArch frontend for LibreELEC</summary>
+    <assets>
+      <icon>icon.jpg</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <screenshot />
+      <screenshot />
+      <screenshot />
+    </assets>
+  </extension>
+</addon><addon id="game.emulationstation" name="Emulationstation" provider-name="Bite Your Idols!" version="0.0.1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="game.retroarch" version="0.0.1" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Emualtionstation frontend for Retroplayer.</summary>
+    <assets>
+      <icon>icon.jpg</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon></addons>

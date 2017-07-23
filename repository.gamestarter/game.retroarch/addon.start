@@ -1,0 +1,136 @@
+#!/bin/sh
+#!/bin/env python
+. /etc/profile
+
+sleep 1s
+
+# get addon version to know which retraorch binary and config file to use
+RELEASE=$(cat /etc/release)
+PROJECT=$(head -c 3 /etc/release)
+
+# paths
+ADDON_RA_DIR="/storage/.kodi/addons/game.retroarch"
+ADDON_ES_DIR="/storage/.kodi/addons/game.emulationstation"
+CONFIG_FILE="/storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg"
+LIBRETRO_DIR="/storage/.kodi/addons"
+LIBRETRO_LINK_DIR="/storage/.kodi/userdata/addon_data/game.retroarch/cores"
+LOG_FILE=/storage/.kodi/temp/retroarch.log
+LOG_FILE_RA=/storage/.kodi/temp/retroarch_debug.log
+LOG_FILE_ES=/storage/.kodi/temp/emulationstation_debug.log
+echo 'RetroArch [ADDON] :: '$RELEASE >> $LOG_FILE
+
+if [[ $PROJECT == "Gen" ]] 
+then
+  # ADDON_RA_DIR="/storage/.kodi/addons/game.retroarch-Gen"
+  # CONFIG_FILE="/storage/.kodi/userdata/addon_data/game.retroarch/retroarch-Gen.cfg"
+  sed -i '/audio_dsp_plugin = ""/,/netplay_ip_address = ""/s/core_updater_buildbot_url = "http://buildbot.libretro.com/nightly/linux/armhf/latest/"/core_updater_buildbot_url = "http://buildbot.libretro.com/nightly/linux/x86_64/latest/"/' $CONFIG_FILE
+# else
+fi
+
+# Stop KODI
+echo 'RetroArch [ADDON] :: Stop kodi...' >> $LOG_FILE
+systemctl stop kodi
+
+# Enable ALSA
+# echo 'RetroArch [ADDON] :: Enable alsa...' >>  $LOG_FILE
+# modprobe snd_bcm2835
+
+# Launch emulator
+
+case $1 in
+  "retroarch")  
+      echo 'RetroArch [ADDON] :: Launch Retroarch (Enable debugging and see process output in retroarch_debug.log)' >>  $LOG_FILE
+      "$ADDON_RA_DIR/game.retroarch-$PROJECT" -c $CONFIG_FILE --menu &> $LOG_FILE_RA
+      # /storage/.kodi/addons/game.retroarch/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.retroarch/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).zip" &>  $LOG_FILE_RA
+  ;;
+  "emulationstation")  
+      echo "Emulationstation [ADDON] :: Launch Emulationstation (See process output in emulationstation_debug.log)" >>  $LOG_FILE
+      # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
+      $ADDON_ES_DIR/game.emulationstation --ignore-gamelist --no-splash &>  $LOG_FILE_ES
+  ;;
+   # "ports")  
+   #    # si es un port ejecutamos su sh
+   #    chmod a+x $2
+   #    $2 &>  $LOG_FILE
+  # ;;
+
+ #  "amiga") 
+ #    # crear el archivo uae temporal para el adf seleccionado
+ #    cp $ADDON_RA_DIR/gamestarter.uae $AMIGA_TEMP_FILE
+ #    echo 'floppy0='$2 >> $AMIGA_TEMP_FILE
+ #    echo 'floppy0type=0' >> $AMIGA_TEMP_FILE
+    
+ #    # checkeamos si es multidisco (_DISK)
+  # if echo "$2" | grep -q "_Disk"; then
+  #   #echo "multi!";
+  #   name=${2%_Disk*}
+  #   echo 'floppy1='$name'_Disk2.adf' >> $AMIGA_TEMP_FILE
+  #   echo 'floppy1type=0' >> $AMIGA_TEMP_FILE
+  #   echo 'floppy2='$name'_Disk3.adf' >> $AMIGA_TEMP_FILE
+  #   echo 'floppy2type=0' >> $AMIGA_TEMP_FILE
+  #   echo 'floppy3='$name'_Disk4.adf' >> $AMIGA_TEMP_FILE
+  #   echo 'floppy3type=0' >> $AMIGA_TEMP_FILE
+  #   echo 'nr_floppies=4' >> $AMIGA_TEMP_FILE
+  # else
+  #   echo 'nr_floppies=1' >> $AMIGA_TEMP_FILE
+  # fi
+
+ #   # cambiar el modo de TV a 1080 50h
+ #    tvservice -e "CEA 31"
+
+ #    #check default amiga emulator
+ #    AMIGA_EMU="uae4arm"
+ #    # AMIGA_EMU=$(head -c 12 /storage/.kodi/addons/script.gamestarter/resources/bin/amiga.txt)
+ #    if [[ ! $(grep 'id="amiga" value="uae4arm"' '/storage/.kodi/userdata/addon_data/script.gamestarter/settings.xml') ]]; then
+ #        AMIGA_EMU="libretro"
+ #    fi 
+ #    echo '::RetroArch:: -> amiga EMU...' $AMIGA_EMU >>  $LOG_FILE
+
+ #    case $AMIGA_EMU in
+ #      "libretro") 
+ #        $ADDON_RA_DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE_RA;;
+ #      *) 
+ #        $ADDON_RA_DIR/game.uae4arm -f $AMIGA_TEMP_FILE  &>  $LOG_FILE_AG;; 
+ #    esac
+
+ #    ;;
+
+ #  "nds") 
+  # cd $ADDON_RA_DIR/
+ #   $ADDON_RA_DIR/game.drastic "$2"  &>  $LOG_FILE_DS
+ #   # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
+ #   cd /storage
+ #  ;;
+
+   *) 
+    echo 'RetroArch [ADDON] :: Launch Retroarch (Enable debugging and see process output in retroarch_debug.log)' >>  $LOG_FILE
+    echo "RetroArch [ADDON] :: Launch with direct link:" $@ >>  $LOG_FILE
+    $ADDON_RA_DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_LINK_DIR/$1_libretro.so "$2" &> $LOG_FILE_RA
+    # /storage/.kodi/addons/game.retroarch/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.retroarch/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).zip" &>  $LOG_FILE_RA
+   ;;
+esac
+
+# Disable ALSA
+# echo 'RetroArch [ADDON] :: Disable alsa...' >>  $LOG_FILE
+# rmmod snd_bcm2835
+
+# Reset resolution to standard y borrar uae temporal
+# case $1 in
+#   "amiga")
+#     echo 'RetroArch [ADDON] :: Reset amiga configs...' >> $LOG_FILE
+#     rm $AMIGA_TEMP_FILE
+#     tvservice -p
+#   ;;
+# esac
+
+# Start KODI
+# systemctl start kodi
+case $3 in
+  "ES") echo 'RetroArch [ADDON] :: Exit ES' >> $LOG_FILE
+  ;;
+  
+  *) 
+    echo 'RetroArch [ADDON] :: Restart kodi...' >> $LOG_FILE
+    systemctl start kodi
+  ;;
+esac

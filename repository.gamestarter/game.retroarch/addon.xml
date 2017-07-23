@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="game.retroarch" name="RetroArch" version="0.0.3" provider-name="Bite Your Idols!">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">RetroArch frontend for LibreELEC</summary>
+    <assets>
+      <icon>icon.jpg</icon>
+      <fanart>resources/fanart.jpg</fanart>
+      <screenshot></screenshot>
+      <screenshot></screenshot>
+      <screenshot></screenshot>
+    </assets>
+  </extension>
+</addon>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="game.emulationstation" name="Emulationstation" version="0.0.1" provider-name="Bite Your Idols!">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="game.retroarch" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Emualtionstation frontend for Retroplayer.</summary>
+    <assets>
+      <icon>icon.jpg</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
