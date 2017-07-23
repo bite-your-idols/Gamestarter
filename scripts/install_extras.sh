@@ -63,6 +63,61 @@ case $1 in
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "Emulationstation Installed."
   ;;
+  "emulationstationGen")  
+  		# EmulationsStation installation
+	    # kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,$ADDON_DIRECTORY/icon.png)"
+
+		# chekeamos si ya esta instalado y hacemos copia de seguridad de sus archivos
+		# if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems.cfg" ]
+		# then
+		# 	mv $CONFIG_DIRECTORY/emulationstation/es_systems.cfg $CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg
+		# 	mv $CONFIG_DIRECTORY/emulationstation/es_input.cfg $CONFIG_DIRECTORY/emulationstation/es_input_BACKUP.cfg
+		# fi
+
+		wget --no-check-certificate -O /storage/emulationstation.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/emulationstation-Gen.tar.gz
+		tar -xf /storage/emulationstation.tar.gz -C $CONFIG_DIRECTORY/ -xz
+		rm /storage/emulationstation.tar.gz
+
+		mv $CONFIG_DIRECTORY/emulationstation/emulationstation $ADDON_DIRECTORY/resources/bin/emulationstation
+		mkdir -p $ADDON_DIRECTORY/lib/
+		mv $CONFIG_DIRECTORY/emulationstation/lib/* $ADDON_DIRECTORY/lib/
+		rm -rf $CONFIG_DIRECTORY/emulationstation/lib/
+
+		chmod a+x $ADDON_DIRECTORY/resources/bin/emulationstation
+		
+		# acceso directo a la carpeta de config default
+		if [ ! -L /storage/.config/emulationstation ]
+		  then
+		    ln -s $CONFIG_DIRECTORY/emulationstation /storage/.config/emulationstation
+		fi
+		
+		# if [ ! -L /storage/.emulationstation ]
+		#   then
+		#     ln -s $CONFIG_DIRECTORY/emulationstation /storage/.emulationstation
+		# fi
+		
+
+		#para el scraper
+		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.sh $ADDON_DIRECTORY/resources/bin/
+		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper.py $ADDON_DIRECTORY/resources/bin/
+		mv $CONFIG_DIRECTORY/emulationstation/sselph-scraper/scraper $ADDON_DIRECTORY/resources/bin/
+		rm -rf $CONFIG_DIRECTORY/emulationstation/sselph-scraper
+		chmod a+x $ADDON_DIRECTORY/resources/bin/scraper.sh
+		chmod a+x $ADDON_DIRECTORY/resources/bin/scraper
+
+		#restauramos sus archivos si los tenia
+		# if [ -f "$CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg" ]
+		# then
+		# 	mv $CONFIG_DIRECTORY/emulationstation/es_systems.cfg $CONFIG_DIRECTORY/emulationstation/es_systems_gamestarter.cfg
+		# 	mv $CONFIG_DIRECTORY/emulationstation/es_systems_BACKUP.cfg $CONFIG_DIRECTORY/emulationstation/es_systems.cfg
+		# 	mv $CONFIG_DIRECTORY/emulationstation/es_input.cfg $CONFIG_DIRECTORY/emulationstation/es_input_gamestarter.cfg
+		# 	mv $CONFIG_DIRECTORY/emulationstation/es_input_BACKUP.cfg $CONFIG_DIRECTORY/emulationstation/es_input.cfg
+		# fi
+
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
+		echo "Emulationstation Installed."
+  ;;
+
   "iarl")  
      	# IARL addon installation 
 		# kodi-send --action=Notification"(Gamestarter,Installing IARL,2000,$ADDON_DIRECTORY/icon.png)"
@@ -212,6 +267,15 @@ case $1 in
 		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
 		echo "RetroArch Updated."
     ;;
+    "retroarchGen")  
+		# Script for Retroarch update/re-installation
+		# rm $ADDON_DIRECTORY/resources/bin/retroarch
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/retroarch https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/retroarch/retroarch_Gen
+		chmod a+x $ADDON_DIRECTORY/resources/bin/retroarch
+
+		# kodi-send --action=Notification"(Gamestarter,IARL addon downloaded,2000,$ADDON_DIRECTORY/icon.png)"
+		echo "RetroArch Updated."
+    ;;
     "cores")  
 		# Script for Libretro Cores update/re-installation
 		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.aa
@@ -228,6 +292,25 @@ case $1 in
 		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz	
 		rm -rf $ADDON_DIRECTORY/resources/bin/_libretro-cores
 		mv $ADDON_DIRECTORY/resources/bin/libretro-cores-RPi $ADDON_DIRECTORY/resources/bin/libretro-cores
+
+		echo "Libretro Cores Updated."
+    ;;
+    "coresGen")  
+		# Script for Libretro Cores update/re-installation
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.aa
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ab
+		wget --no-check-certificate -O  $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ac
+		cp -R $ADDON_DIRECTORY/resources/bin/libretro-cores $ADDON_DIRECTORY/resources/bin/_libretro-cores
+		rm -rf $ADDON_DIRECTORY/resources/bin/libretro-cores
+		cat $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.* > $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz
+		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.aa
+		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ab
+		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz.part.ac
+
+		tar -xf $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz -C $ADDON_DIRECTORY/resources/bin/ -xz
+		rm $ADDON_DIRECTORY/resources/bin/libretro-cores.tar.gz	
+		rm -rf $ADDON_DIRECTORY/resources/bin/_libretro-cores
+		mv $ADDON_DIRECTORY/resources/bin/libretro-cores-Gen $ADDON_DIRECTORY/resources/bin/libretro-cores
 
 		echo "Libretro Cores Updated."
     ;;
