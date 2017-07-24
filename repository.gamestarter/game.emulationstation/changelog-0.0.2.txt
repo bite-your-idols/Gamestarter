@@ -1,0 +1,4 @@
+v0.0.2:
+- RPi & Gen available
+v0.0.1:
+- Initial Pre-Release

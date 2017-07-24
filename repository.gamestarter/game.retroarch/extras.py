@@ -12,15 +12,16 @@ if accion == "cores":
 	xbmcgui.Dialog().ok("RetroArch", "Downloading Libretro cores full package, please do not power off your device.")
 	os.system('kodi-send --action="xbmc.ActivateWindow(busydialog)"')
 	os.system("echo 'RetroArch [ADDON] :: Downloading Libretro cores full package.' $(date) >> /storage/.kodi/temp/retroarch.log")
+	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch/cores")
 
 	if project in "Pi":
-		os.system("curl -o /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.aa")
-		os.system("curl -o /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ab")
-		os.system("curl -o /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ac")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.aa")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ab")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ac")
 	else:
-		os.system("curl -o /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.aa")
-		os.system("curl -o /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ab")
-		os.system("curl -o /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ac")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.aa")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ab")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ac")
 
 	os.system("cat /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.* > /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
 	os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac")

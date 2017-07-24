@@ -1,3 +1,5 @@
+v0.0.4:
+-
 v0.0.3:
 - Libretro Cores full package download
 - RetroPlayer cores use option toggle

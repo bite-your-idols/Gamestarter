@@ -50,7 +50,7 @@ else:
 	if askConfirmation == "true":
 		resultado = xbmcgui.Dialog().yesno("RetroArch", "Exit Kodi and run RetroArch?");
 		if resultado:
-			xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.retroarch/resources/fanart.jpg")') 
+			xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.retroarch/fanart.jpg")') 
 			os.system("echo 'RetroArch [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/retroarch.log") 
 			os.system("sh "+directory+"/addon.sh retroarch")
 			# os.system("sh /storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh retroarch")
@@ -59,6 +59,6 @@ else:
 			xbmc.executebuiltin('Dialog.Close(busydialog)')
 			os.system("echo 'RetroArch [ADDON] :: Abort launch.' >> /storage/.kodi/temp/retroarch.log")
 	else:
-		xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.retroarch/resources/fanart.jpg")') 
+		xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.retroarch/fanart.jpg")') 
 		os.system("echo 'RetroArch [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/retroarch.log")
 		os.system("sh "+directory+"/addon.sh retroarch")
