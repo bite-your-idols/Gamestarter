@@ -1,7 +1,7 @@
 # Gamestarter
 ![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/packages/assets/gamestarter-logo-dark.jpg)
 
-[English](https://github.com/bite-your-idols/gamestarter/blob/master/README.md) / [Spanish](https://github.com/bite-your-idols/gamestarter/blob/master/README-ES.md) / German
+[English](https://github.com/bite-your-idols/Gamestarter/tree/master/repository.gamestarter/script.gamestarter) / [Spanish](https://github.com/bite-your-idols/Gamestarter/blob/master/repository.gamestarter/script.gamestarter/README-ES.md) / German
 
 ## Retrogaming Kodi Addon für Raspberry Pi 2/3
 Benutzt du deinen **Raspberry Pi** als **Media Center**, in Verbindung mit **Kodi** in [LibreELEC](https://libreelec.tv/) oder [OpenELEC](http://openelec.tv/), und möchtest deine Retrogames spielen ohne ein Dual-Boot-System, mehrere SD Karten oder komplizierte Installationen? **Dann ist das die perfekte Lösung.**
