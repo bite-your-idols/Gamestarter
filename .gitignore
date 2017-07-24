@@ -1,10 +1,12 @@
-# releases directory
-/build/
-
 # compilation packages/settings for OLE
-# /scripts/compiling/
+/scripts/compiling/
+
+# releases directory
+/scripts/builds/
 
 #sftp config
 /repository.gamestarter/sftp-config.json
 
+# repo updater
+/scripts/repo.sh
 /repository.gamestarter/create_repository.py
