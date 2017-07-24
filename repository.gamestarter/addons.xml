@@ -7,9 +7,10 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Gamestarter add-on repository</summary>
+		<description lang="en">Gamestarter add-on repository</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="0.0.3">
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="0.0.4">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -18,15 +19,16 @@
 	</extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">RetroArch frontend for LibreELEC</summary>
+    <description lang="en">RetroArch frontend for LibreELEC</description>
     <assets>
       <icon>icon.jpg</icon>
-      <fanart>resources/fanart.jpg</fanart>
+      <fanart>fanart.jpg</fanart>
       <screenshot />
       <screenshot />
       <screenshot />
     </assets>
   </extension>
-</addon><addon id="game.emulationstation" name="Emulationstation" provider-name="Bite Your Idols!" version="0.0.1">
+</addon><addon id="game.emulationstation" name="EmulationStation" provider-name="Bite Your Idols!" version="0.0.2">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="game.retroarch" version="0.0.1" />
@@ -35,10 +37,11 @@
 		<provides>executable game</provides>
 	</extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Emualtionstation frontend for Retroplayer.</summary>
+    <summary lang="en">EmulationStation frontend for LibreELEC.</summary>
+    <description lang="en">EmulationStation frontend for LibreELEC</description>
     <assets>
       <icon>icon.jpg</icon>
-      <fanart>resources/fanart.jpg</fanart>
+      <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
 </addon></addons>

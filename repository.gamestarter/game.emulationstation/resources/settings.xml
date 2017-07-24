@@ -2,9 +2,7 @@
 <settings>
         <category label="Emulationstation">
         	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
-        	<!-- <setting label="Install/update EmulationStation Frontend" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_es.py, SetLocation)"/> -->
-            <setting id="frontend" type="select" label="Select your default frontend" values="RetroArch|EmulationStation" default="RetroArch" />
-           <!--  <setting label="Auto-scrape all systems" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/scraper.py, SetLocation)"/>
-            <setting label="Install ES themes (Carbon, Clean Look, Pixel, Canela, Tronkyfran & Turtle-Pi)" type="action" action="RunScript(/storage/.kodi/addons/script.gamestarter/resources/bin/install_esthemes.py, SetLocation)"/> -->
+        	<setting id="romspath" type="folder" label="Select your roms folder (default: /storage/emulators/roms/)" source="auto" option="writeable"/>
+            <setting label="Install ES themes (Carbon, Clean Look, Pixel, Canela, Tronkyfran & Turtle-Pi)" type="action" action="RunScript(/storage/.kodi/addons/game.emulationstation/extras.py, SetLocation, themes)"/>
     	</category>
 </settings>
