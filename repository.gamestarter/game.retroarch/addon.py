@@ -16,9 +16,9 @@ os.system("echo '============================================================' >
 
 # primero habria que comprobar si es la priemra vez que se lanza entonces hacer la instalacion:
 if os.path.isdir(directory+"/retroarch") == True: 
- 	os.system("echo 'RetroArch [ADDON] :: Firts Run! >> /storage/.kodi/temp/retroarch.log")
+ 	os.system("echo 'RetroArch [ADDON] :: Firts Run!' >> /storage/.kodi/temp/retroarch.log")
  	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch")
- 	os.system("mv /storage/.kodi/addons/game.retroarch/retroarch/* /storage/.kodi/userdata/addon_data/game.retroarch")
+ 	os.system("cp -n /storage/.kodi/addons/game.retroarch/retroarch/* /storage/.kodi/userdata/addon_data/game.retroarch")
  	os.system("rm -rf /storage/.kodi/addons/game.retroarch/retroarch")
 	os.system("if [ ! -L /storage/.config/retroarch ] ; then ln -s /storage/.kodi/userdata/addon_data/game.retroarch /storage/.config/retroarch ; fi")
  	# os.system("touch /storage/.kodi/addons/game.retroarch/installed && echo $(cat /etc/release) >> /storage/.kodi/addons/game.retroarch/installed")
@@ -57,6 +57,7 @@ else:
 			# os.system("sh "+directory+"/addon.sh fceumm '/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).zip'")
 		else:
 			xbmc.executebuiltin('Dialog.Close(busydialog)')
+			os.system("echo 'RetroArch [ADDON] :: Abort launch.' >> /storage/.kodi/temp/retroarch.log")
 	else:
 		xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.retroarch/resources/fanart.jpg")') 
 		os.system("echo 'RetroArch [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/retroarch.log")

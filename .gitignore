@@ -3,3 +3,6 @@
 
 # compilation packages/settings for OLE
 # /scripts/compiling/
+
+#sftp config
+/repository.gamestarter/sftp-config.json
