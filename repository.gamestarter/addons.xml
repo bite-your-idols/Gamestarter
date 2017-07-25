@@ -10,7 +10,7 @@
 		<description lang="en">Gamestarter add-on repository</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="0.0.4">
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="0.0.5">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -23,15 +23,15 @@
     <assets>
       <icon>icon.jpg</icon>
       <fanart>fanart.jpg</fanart>
-      <screenshot />
-      <screenshot />
-      <screenshot />
+      <screenshot>resources/screenshot01.png</screenshot>
+      <screenshot>resources/screenshot02.png</screenshot>
+      <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="game.emulationstation" name="EmulationStation" provider-name="Bite Your Idols!" version="0.0.2">
+</addon><addon id="game.emulationstation" name="EmulationStation" provider-name="Bite Your Idols!" version="0.0.3">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
-    <import addon="game.retroarch" version="0.0.1" />
+    <import addon="game.retroarch" version="0.0.5" />
   </requires>
   <extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>executable game</provides>
@@ -42,6 +42,9 @@
     <assets>
       <icon>icon.jpg</icon>
       <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot01.png</screenshot>
+      <screenshot>resources/screenshot02.png</screenshot>
+      <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
 </addon></addons>
