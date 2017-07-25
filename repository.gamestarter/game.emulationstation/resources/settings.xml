@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-        <category label="Emulationstation">
+        <category label="EmulationStation">
         	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
         	<setting id="romspath" type="folder" label="Select your roms folder (default: /storage/emulators/roms/)" source="auto" option="writeable"/>
             <setting label="Install ES themes (Carbon, Clean Look, Pixel, Canela, Tronkyfran & Turtle-Pi)" type="action" action="RunScript(/storage/.kodi/addons/game.emulationstation/extras.py, SetLocation, themes)"/>

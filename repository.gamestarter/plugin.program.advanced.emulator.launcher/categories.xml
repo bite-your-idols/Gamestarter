@@ -4,25 +4,8 @@
   <update_timestamp>1473406347.18</update_timestamp>
 </control>
 <category>
-  <id>b48e49c688b22e7ed7a5291434ce864faaa</id>
-  <m_name>FRONTENDS</m_name>
-  <m_genre>Frontends</m_genre>
-  <m_plot>RetroArch/EmulationStation</m_plot>
-  <m_rating></m_rating>
-  <finished>False</finished>
-  <default_thumb>s_thumb</default_thumb>
-  <default_fanart>s_fanart</default_fanart>
-  <default_banner>s_banner</default_banner>
-  <default_poster>s_flyer</default_poster>
-  <s_thumb>/storage/.kodi/addons/script.gamestarter/icon.png</s_thumb>
-  <s_fanart>/storage/.kodi/addons/script.gamestarter/fanart.jpg</s_fanart>
-  <s_banner></s_banner>
-  <s_flyer></s_flyer>
-  <s_trailer></s_trailer>
-</category>
-<category>
   <id>2b494a422afb2474f89a7b693328fe92</id>
-  <m_name>GAMES</m_name>
+  <m_name>GAMESTARTER</m_name>
   <m_genre>Emulators</m_genre>
   <m_plot>Gamestarter default category.</m_plot>
   <m_rating></m_rating>
@@ -32,8 +15,8 @@
   <default_banner>s_banner</default_banner>
   <default_poster>s_flyer</default_poster>
   <default_clearlogo>s_banner</default_clearlogo>
-  <s_thumb>/storage/.kodi/addons/script.gamestarter/icon.png</s_thumb>
-  <s_fanart>/storage/.kodi/addons/script.gamestarter/fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/repository.gamestarter/icon.png</s_thumb>
+  <s_fanart>/storage/.kodi/addons/repository.gamestarter/fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -48,7 +31,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>amiga &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/amiga/</rompath>
   <romext>adf</romext>
@@ -73,8 +56,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/amiga.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/amiga_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/amiga.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/amiga_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -101,7 +84,7 @@
   <m_rating></m_rating>
   <platform>MAME</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>mame2003 &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/mame/</rompath>
   <romext>zip</romext>
@@ -126,8 +109,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/mame.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/mame_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/mame.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/mame_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -154,7 +137,7 @@
   <m_rating></m_rating>
   <platform>MAME</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>fbalpha &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/fba/</rompath>
   <romext>zip</romext>
@@ -179,8 +162,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/fba.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/fba_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/fba.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/fba_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -207,7 +190,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>stella &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/atari2600</rompath>
   <romext>a26|bin|zip</romext>
@@ -232,8 +215,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/atari2600.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/atari2600_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/atari2600.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/atari2600_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -260,7 +243,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>handy &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/atarilynx/</rompath>
   <romext>lnx|zip</romext>
@@ -285,8 +268,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/atarilynx.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/atarilynx_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/atarilynx.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/atarilynx_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -313,7 +296,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>genesis_plus_gx &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/gamegear/</rompath>
   <romext>gg|zip</romext>
@@ -338,8 +321,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamegear.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gamegear_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/gamegear.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/gamegear_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -366,7 +349,7 @@
   <m_rating></m_rating>
   <platform>Nintendo GameBoy Advance</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>gpsp &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/gba/</rompath>
   <romext>gba|zip</romext>
@@ -391,8 +374,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gba.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gba_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/gba.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/gba_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -419,7 +402,7 @@
   <m_rating></m_rating>
   <platform>Nintendo GameBoy</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>gambatte &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/gb/</rompath>
   <romext>gb|zip|gbc</romext>
@@ -444,8 +427,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gb.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/gb_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/gb.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/gb_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -472,7 +455,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>bluemsx &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/msx/</rompath>
   <romext>rom|mx1|mx2|col|dsk|zip</romext>
@@ -497,8 +480,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/msx.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/msx_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/msx.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/msx_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -525,7 +508,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>o2em &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/videopac/</rompath>
   <romext>bin|zip</romext>
@@ -550,8 +533,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/videopac.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/videopac_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/videopac.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/videopac_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -578,7 +561,7 @@
   <m_rating></m_rating>
   <platform>Sega Master System/Mark III</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>picodrive &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/mastersystem/</rompath>
   <romext>sms|zip</romext>
@@ -603,8 +586,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/mastersystem.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/mastersystem_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/mastersystem.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/mastersystem_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -631,7 +614,7 @@
   <m_rating></m_rating>
   <platform>Sega MegaDrive/Genesis</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>genesis_plus_gx &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/megadrive/</rompath>
   <romext>smd|md|bin|zip</romext>
@@ -656,8 +639,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/megadrive.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/megadrive_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/megadrive.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/megadrive_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -684,7 +667,7 @@
   <m_rating></m_rating>
   <platform>Nintendo NES</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>fceumm &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/nes/</rompath>
   <romext>nes|zip</romext>
@@ -709,8 +692,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/nes.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/nes_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/nes.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/nes_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -737,7 +720,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>fbalpha &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/neogeo/</rompath>
   <romext>zip</romext>
@@ -762,8 +745,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/neogeo.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/neogeo_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/neogeo.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/neogeo_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -790,7 +773,7 @@
   <m_rating></m_rating>
   <platform>Nintendo 64</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>mupen64plus &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/n64/</rompath>
   <romext>v64|n64|z64|zip</romext>
@@ -815,8 +798,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/n64.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/n64_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/n64.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/n64_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -843,7 +826,7 @@
   <m_rating></m_rating>
   <platform>NEC PC Engine/TurboGrafx 16</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>mednafen_pce_fast &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/pcengine/</rompath>
   <romext>pce|cue</romext>
@@ -868,8 +851,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/pcengine.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/pcengine_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/pcengine.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/pcengine_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -886,7 +869,7 @@
   <path_manual>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/manuals</path_manual>
   <path_trailer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/trailers</path_trailer>
 </launcher>
-<launcher>
+<!-- <launcher>
   <id>918d47f0784ac6b58748d3c85gms044</id>
   <m_name>PC Ports</m_name>
   <m_year></m_year>
@@ -896,7 +879,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>ports %rom%</args>
   <rompath>/storage/emulators/roms/ports/</rompath>
   <romext>sh</romext>
@@ -921,8 +904,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/ports.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/ports_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/ports.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/ports_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -938,7 +921,7 @@
   <path_map>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/maps</path_map>
   <path_manual>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/manuals</path_manual>
   <path_trailer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/trailers</path_trailer>
-</launcher>
+</launcher> -->
 <launcher>
   <id>ab94af6caf67b6d5615a469d82cewrwer35psp</id>
   <m_name>PSP</m_name>
@@ -949,7 +932,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>ppsspp &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/psp/</rompath>
   <romext>iso|cso</romext>
@@ -974,8 +957,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/psp.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/psp_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/psp.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/psp_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -1002,7 +985,7 @@
   <m_rating></m_rating>
   <platform>Sony PlayStation</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>pcsx_rearmed &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/psx/</rompath>
   <romext>bin|img|pbp|PBP|IMG|BIN</romext>
@@ -1027,8 +1010,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/psx.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/psx_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/psx.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/psx_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -1055,7 +1038,7 @@
   <m_rating></m_rating>
   <platform>Nintendo SNES</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>snes9x2010 &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/snes/</rompath>
   <romext>smc|sfc|zip</romext>
@@ -1080,8 +1063,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/snes.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/snes_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/snes.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/snes_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -1108,7 +1091,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>fuse &quot;%rom%&quot;</args>
   <rompath>/storage/emulators/roms/zxspectrum/</rompath>
   <romext>tzx|Z80|z80|zip</romext>
@@ -1133,8 +1116,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/zxspectrum.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/zxspectrum_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/zxspectrum.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/zxspectrum_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -1151,9 +1134,7 @@
   <path_manual>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/manuals</path_manual>
   <path_trailer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/trailers</path_trailer>
 </launcher>
-
-
-<launcher>
+<!-- <launcher>
   <id>75fea3bdd6309e7ec48e59523fee80ec</id>
   <m_name>ScummVM</m_name>
   <m_year>2001</m_year>
@@ -1163,7 +1144,7 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
   <args>scummvm</args>
   <rompath>/storage/emulators/roms/scummvm/</rompath>
   <romext>sh</romext>
@@ -1188,8 +1169,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
- <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/ports.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/ports_fanart.jpg</s_fanart>
+ <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/ports.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/ports_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
@@ -1205,7 +1186,7 @@
   <path_map>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/maps</path_map>
   <path_manual>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/manuals</path_manual>
   <path_trailer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/trailers</path_trailer>
-</launcher>
+</launcher> -->
 
 <launcher>
   <id>9c11294859088cb34de2bf2acds5b0f678hdd</id>
@@ -1217,9 +1198,9 @@
   <m_rating></m_rating>
   <platform>Unknown</platform>
   <categoryID>2b494a422afb2474f89a7b693328fe92</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>nds &quot;%rom%&quot;</args>
-  <rompath>/var/media/MEDIA_3T/Emuladores/roms/nds/</rompath>
+  <application>/storage/.kodi/addons/game.drastic/addon.sh</application>
+  <args>drastic &quot;%rom%&quot;</args>
+  <rompath>/storage/emulators/roms/nds/</rompath>
   <romext>zip|nds</romext>
   <finished>False</finished>
   <minimize>False</minimize>
@@ -1237,109 +1218,12 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/systems/nds.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/systems/nds_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-themends.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-themends_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>
   <path_title>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/titles</path_title>
-  <path_snap>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/snaps</path_snap>
-  <path_fanart>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/fanarts</path_fanart>
-  <path_banner>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/banners</path_banner>
-  <path_clearlogo>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/clearlogos</path_clearlogo>
-  <path_boxfront>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/boxfront</path_boxfront>
-  <path_boxback>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/boxback</path_boxback>
-  <path_cartridge>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/cartridges</path_cartridge>
-  <path_flyer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/flyers</path_flyer>
-  <path_map>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/maps</path_map>
-  <path_manual>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/manuals</path_manual>
-  <path_trailer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/trailers</path_trailer>
-</launcher>
-
-<launcher>
-  <id>ab94af6caf67b6d5615a4uae4arm69d82c3adf5cf2retro</id>
-  <m_name>Retroarch</m_name>
-  <m_year>1978</m_year>
-  <m_genre></m_genre>
-  <m_studio></m_studio>
-  <m_plot></m_plot>
-  <m_rating></m_rating>
-  <platform>Unknown</platform>
-  <categoryID>b48e49c688b22e7ed7a5291434ce864faaa</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>retroarch</args>
-  <rompath></rompath>
-  <romext></romext>
-  <finished>False</finished>
-  <minimize>False</minimize>
-  <roms_base_noext></roms_base_noext>
-  <nointro_xml_file></nointro_xml_file>
-  <pclone_launcher>False</pclone_launcher>
-  <timestamp_launcher>1473341097.76</timestamp_launcher>
-  <timestamp_report>0.0</timestamp_report>
-  <default_thumb>s_thumb</default_thumb>
-  <default_fanart>s_fanart</default_fanart>
-  <default_banner>s_banner</default_banner>
-  <default_poster>s_flyer</default_poster>
-  <roms_default_thumb>s_title</roms_default_thumb>
-  <roms_default_fanart>s_fanart</roms_default_fanart>
-  <roms_default_banner>s_banner</roms_default_banner>
-  <roms_default_poster>s_flyer</roms_default_poster>
-  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/retroarch.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/retroarch_fanart.jpg</s_fanart>
-  <s_banner></s_banner>
-  <s_flyer></s_flyer>
-  <s_trailer></s_trailer>
-  <path_title>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/title</path_title>
-  <path_snap>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/snaps</path_snap>
-  <path_fanart>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/fanart</path_fanart>
-  <path_banner>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/banners</path_banner>
-  <path_clearlogo>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/clearlogos</path_clearlogo>
-  <path_boxfront>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/boxfront</path_boxfront>
-  <path_boxback>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/boxback</path_boxback>
-  <path_cartridge>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/cartridges</path_cartridge>
-  <path_flyer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/flyers</path_flyer>
-  <path_map>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/maps</path_map>
-  <path_manual>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/manuals</path_manual>
-  <path_trailer>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/trailers</path_trailer>
-</launcher>
-<launcher>
-  <id>ab94af6caf67b6d5615a4uae4arm69d82c3adf5cf2ES</id>
-  <m_name>EmulationStation</m_name>
-  <m_year>1978</m_year>
-  <m_genre></m_genre>
-  <m_studio></m_studio>
-  <m_plot></m_plot>
-  <m_rating></m_rating>
-  <platform>Unknown</platform>
-  <categoryID>b48e49c688b22e7ed7a5291434ce864faaa</categoryID>
-  <application>/storage/.kodi/addons/script.gamestarter/resources/bin/gamestarter.sh</application>
-  <args>emulationstation</args>
-  <rompath></rompath>
-  <romext></romext>
-  <finished>False</finished>
-  <minimize>False</minimize>
-  <roms_base_noext></roms_base_noext>
-  <nointro_xml_file></nointro_xml_file>
-  <pclone_launcher>False</pclone_launcher>
-  <timestamp_launcher>1473341097.76</timestamp_launcher>
-  <timestamp_report>0.0</timestamp_report>
-  <default_thumb>s_thumb</default_thumb>
-  <default_fanart>s_fanart</default_fanart>
-  <default_banner>s_banner</default_banner>
-  <default_poster>s_flyer</default_poster>
-  <roms_default_thumb>s_title</roms_default_thumb>
-  <roms_default_fanart>s_fanart</roms_default_fanart>
-  <roms_default_banner>s_banner</roms_default_banner>
-  <roms_default_poster>s_flyer</roms_default_poster>
-  <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/emulationstation.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/userdata/addon_data/script.gamestarter/frontend-assets/emulationstation_fanart.jpg</s_fanart>
-  <s_banner></s_banner>
-  <s_flyer></s_flyer>
-  <s_trailer></s_trailer>
-  <path_title>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/title</path_title>
   <path_snap>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/snaps</path_snap>
   <path_fanart>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/fanarts</path_fanart>
   <path_banner>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks/banners</path_banner>

@@ -1,0 +1,41 @@
+#!/bin/sh
+#!/bin/env python
+. /etc/profile
+
+sleep 1s
+
+# get addon version to know which retraorch binary and config file to use
+
+# paths
+ADDON_DS_DIR="/storage/.kodi/addons/game.drastic/drastic"
+LOG_FILE=/storage/.kodi/temp/drastic.log
+LOG_FILE_DS_DEBUG=/storage/.kodi/temp/drastic_debug.log
+
+echo 'DraStic [ADDON] :: RPi - '$(date) >> $LOG_FILE
+
+# Stop KODI
+echo 'DraStic [ADDON] :: Stop kodi...' >> $LOG_FILE
+systemctl stop kodi
+
+# Enable ALSA
+# echo 'RetroArch [ADDON] :: Enable alsa...' >>  $LOG_FILE
+# modprobe snd_bcm2835
+
+
+# Launch emulator
+cd $ADDON_DS_DIR/
+$ADDON_DS_DIR/drastic "$2"  &>  $LOG_FILE_DS_DEBUG
+# /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
+cd /storage
+
+
+
+# Disable ALSA
+# echo 'RetroArch [ADDON] :: Disable alsa...' >>  $LOG_FILE
+# rmmod snd_bcm2835
+
+
+# Start KODI
+# systemctl start kodi
+echo 'DraStic [ADDON] :: Restart kodi...' >> $LOG_FILE
+systemctl start kodi

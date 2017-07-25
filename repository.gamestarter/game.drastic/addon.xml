@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="game.drastic" name="DraStic RPi" version="0.0.1" provider-name="Bite Your Idols!">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Experimental port of DraStic for LibreELEC, NDS emulator for RPi.</summary>
+    <description lang="en">Experimental port of DraStic for LibreELEC, NDS emulator for RPi.</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot01.png</screenshot>
+      <screenshot>resources/screenshot02.png</screenshot>
+      <screenshot>fanart.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>

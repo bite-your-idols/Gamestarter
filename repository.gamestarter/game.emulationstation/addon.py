@@ -21,7 +21,7 @@ if os.path.isdir(directory+"/emulationstation") == True:
  	os.system("echo 'EmulationStation [ADDON] :: Firts Run!' >> /storage/.kodi/temp/emulationstation.log")
  	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.emulationstation")
   	os.system("if [ ! -f /storage/.kodi/userdata/addon_data/game.emulationstation/es_systems.cfg ] ; then cp /storage/.kodi/addons/game.emulationstation/emulationstation/es_systems.cfg /storage/.kodi/userdata/addon_data/game.emulationstation/es_systems.cfg ; fi && rm -rf /storage/.kodi/addons/game.emulationstation/emulationstation/es_systems.cfg")
- 	os.system("cp /storage/.kodi/addons/game.emulationstation/emulationstation/* /storage/.kodi/userdata/addon_data/game.emulationstation")
+ 	os.system("cp -r /storage/.kodi/addons/game.emulationstation/emulationstation/* /storage/.kodi/userdata/addon_data/game.emulationstation")
  	# os.system("rm -rf /storage/.kodi/addons/game.emulationstation/emulationstation")
  	os.system("if [ ! -L /storage/.config/emulationstation ] ; then ln -s /storage/.kodi/userdata/addon_data/game.emulationstation /storage/.config/emulationstation ; fi")
  	os.system("rm -rf /storage/.kodi/addons/game.emulationstation/emulationstation")
@@ -41,7 +41,7 @@ if os.path.isdir(directory+"/emulationstation") == True:
 # else:
 askConfirmation = xbmcplugin.getSetting(int(sys.argv[1]),'ask')
 if askConfirmation == "true":
-	resultado = xbmcgui.Dialog().yesno("Emulationstation", "Exit Kodi and run Emulationstation?");
+	resultado = xbmcgui.Dialog().yesno("EmulationStation", "Exit Kodi and run Emulationstation?");
 	if resultado:
 		xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.emulationstation/fanart.jpg")')  
 		os.system("echo 'EmulationStation [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/emulationstation.log") 
