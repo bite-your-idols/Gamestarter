@@ -17,6 +17,7 @@ os.system("echo '============================================================' >
 # primero habria que comprobar si es la priemra vez que se lanza entonces hacer la instalacion:
 if os.path.isdir(directory+"/retroarch") == True: 
  	os.system("echo 'RetroArch [ADDON] :: Firts Run!' >> /storage/.kodi/temp/retroarch.log")
+ 	os.system("mkdir -p /storage/emulators/roms && mkdir -p /storage/emulators/bios && mkdir -p /storage/emulators/saves")
  	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch")
  	os.system("if [ ! -f /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ] ; then cp /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ; fi && rm -rf /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg")
  	os.system("cp -r /storage/.kodi/addons/game.retroarch/retroarch/* /storage/.kodi/userdata/addon_data/game.retroarch")
