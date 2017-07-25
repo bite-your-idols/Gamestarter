@@ -2,7 +2,7 @@
 <addon id="game.emulationstation" name="EmulationStation" version="0.0.2" provider-name="Bite Your Idols!">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="game.retroarch" version="0.0.1"/>
+    <import addon="game.retroarch" version="0.0.4"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>executable game</provides>

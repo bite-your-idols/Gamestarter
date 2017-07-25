@@ -15,9 +15,29 @@ CONFIG_FILE="/storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg"
 LIBRETRO_DIR="/storage/.kodi/addons"
 LIBRETRO_LINK_DIR="/storage/.kodi/userdata/addon_data/game.retroarch/cores"
 LOG_FILE=/storage/.kodi/temp/retroarch.log
-LOG_FILE_RA=/storage/.kodi/temp/retroarch_debug.log
-LOG_FILE_ES=/storage/.kodi/temp/emulationstation_debug.log
-echo 'RetroArch [ADDON] :: '$RELEASE >> $LOG_FILE
+LOG_FILE_ES=/storage/.kodi/temp/emulationstation.log
+LOG_FILE_RA_DEBUG=/storage/.kodi/temp/retroarch_debug.log
+LOG_FILE_ES_DEBUG=/storage/.kodi/temp/emulationstation_debug.log
+
+case $1 in
+  "emulationstation")  
+  		LOG_FILE=$LOG_FILE_ES
+  		ADDON="EmulationStation"
+  ;;
+   *) 
+		ADDON="RetroArch"
+   ;;
+esac
+
+case $3 in
+  "ES")  
+  		LOG_FILE=$LOG_FILE_ES
+  		ADDON="EmulationStation"
+  ;;
+esac
+
+echo $ADDON' [ADDON] :: '$RELEASE >> $LOG_FILE
+
 
 if [[ $PROJECT == "Gen" ]] 
 then
@@ -28,7 +48,7 @@ then
 fi
 
 # Stop KODI
-echo 'RetroArch [ADDON] :: Stop kodi...' >> $LOG_FILE
+echo $ADDON' [ADDON] :: Stop kodi...' >> $LOG_FILE
 systemctl stop kodi
 
 # Enable ALSA
@@ -40,13 +60,13 @@ systemctl stop kodi
 case $1 in
   "retroarch")  
       echo 'RetroArch [ADDON] :: Launch Retroarch (Enable debugging and see process output in retroarch_debug.log)' >>  $LOG_FILE
-      "$ADDON_RA_DIR/game.retroarch-$PROJECT" -c $CONFIG_FILE --menu &> $LOG_FILE_RA
-      # /storage/.kodi/addons/game.retroarch/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.retroarch/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).zip" &>  $LOG_FILE_RA
+      "$ADDON_RA_DIR/game.retroarch-$PROJECT" -c $CONFIG_FILE --menu &> $LOG_FILE_RA_DEBUG
+      # /storage/.kodi/addons/game.retroarch/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.retroarch/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).zip" &>  $LOG_FILE_RA_DEBUG
   ;;
   "emulationstation")  
-      echo "Emulationstation [ADDON] :: Launch Emulationstation (See process output in emulationstation_debug.log)" >>  $LOG_FILE
+      echo "Emulationstation [ADDON] :: Launch Emulationstation (See process output in emulationstation_debug.log)" >>  $LOG_FILE_ES
       # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
-      $ADDON_ES_DIR/game.emulationstation --ignore-gamelist --no-splash &>  $LOG_FILE_ES
+      "$ADDON_ES_DIR/game.emulationstation-$PROJECT" --ignore-gamelist --no-splash &>  $LOG_FILE_ES_DEBUG
   ;;
    # "ports")  
    #    # si es un port ejecutamos su sh
@@ -88,7 +108,7 @@ case $1 in
 
  #    case $AMIGA_EMU in
  #      "libretro") 
- #        $ADDON_RA_DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE_RA;;
+ #        $ADDON_RA_DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_DIR/uae4arm_libretro.so $AMIGA_TEMP_FILE  &>  $LOG_FILE_RA_DEBUG;;
  #      *) 
  #        $ADDON_RA_DIR/game.uae4arm -f $AMIGA_TEMP_FILE  &>  $LOG_FILE_AG;; 
  #    esac
@@ -105,8 +125,8 @@ case $1 in
    *) 
     echo 'RetroArch [ADDON] :: Launch Retroarch (Enable debugging and see process output in retroarch_debug.log)' >>  $LOG_FILE
     echo "RetroArch [ADDON] :: Launch with direct link:" $@ >>  $LOG_FILE
-    $ADDON_RA_DIR/game.retroarch -c $CONFIG_FILE -L $LIBRETRO_LINK_DIR/$1_libretro.so "$2" &> $LOG_FILE_RA
-    # /storage/.kodi/addons/game.retroarch/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.retroarch/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).zip" &>  $LOG_FILE_RA
+    "$ADDON_RA_DIR/game.retroarch-$PROJECT" -c $CONFIG_FILE -L $LIBRETRO_LINK_DIR/$1_libretro.so "$2" &> $LOG_FILE_RA_DEBUG
+    # /storage/.kodi/addons/game.retroarch/game.retroarch -c "/storage/.kodi/userdata/addon_data/game.retroarch/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).zip" &>  $LOG_FILE_RA_DEBUG
    ;;
 esac
 
@@ -126,11 +146,11 @@ esac
 # Start KODI
 # systemctl start kodi
 case $3 in
-  "ES") echo 'RetroArch [ADDON] :: Exit ES' >> $LOG_FILE
+  "ES") echo $ADDON' [ADDON] :: Exit ES' >> $LOG_FILE
   ;;
   
   *) 
-    echo 'RetroArch [ADDON] :: Restart kodi...' >> $LOG_FILE
+    echo $ADDON' [ADDON] :: Restart kodi...' >> $LOG_FILE
     systemctl start kodi
   ;;
 esac
