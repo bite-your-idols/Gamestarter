@@ -3,6 +3,7 @@
 
 # releases directory
 /scripts/builds/
+/scripts/build.sh
 
 #sftp config
 /repository.gamestarter/sftp-config.json
