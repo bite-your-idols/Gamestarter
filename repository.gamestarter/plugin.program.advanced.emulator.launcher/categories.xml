@@ -1218,8 +1218,8 @@
   <roms_default_banner>s_banner</roms_default_banner>
   <roms_default_poster>s_flyer</roms_default_poster>
   <roms_default_clearlogo>s_clearlogo</roms_default_clearlogo>
-  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-themends.jpg</s_thumb>
-  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-themends_fanart.jpg</s_fanart>
+  <s_thumb>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/nds.jpg</s_thumb>
+  <s_fanart>/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/gamestarter-theme/nds_fanart.jpg</s_fanart>
   <s_banner></s_banner>
   <s_flyer></s_flyer>
   <s_trailer></s_trailer>

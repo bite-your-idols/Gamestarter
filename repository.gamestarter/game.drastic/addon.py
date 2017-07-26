@@ -42,17 +42,21 @@ os.system("chmod a+x /storage/.kodi/addons/game.drastic/drastic/drastic")
 
 # Finalmente lanzamos DraStic
 # else:
-askConfirmation = xbmcplugin.getSetting(int(sys.argv[1]),'ask')
-if askConfirmation == "true":
-	resultado = xbmcgui.Dialog().yesno("DraStic", "Exit Kodi and run DraStic?");
-	if resultado:
-		# xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.drastic/fanart.jpg")')  
-		os.system("echo 'DraStic [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/drastic.log") 
-		os.system("sh "+directory+"/addon.sh drastic")
-	else:
-		# xbmc.executebuiltin('Dialog.Close(busydialog)')
-		os.system("echo 'DraStic [ADDON] :: Abort launch.' >> /storage/.kodi/temp/drastic.log")
-else:
-	# xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.drastic/fanart.jpg")') 
-	os.system("echo 'DraStic [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/drastic.log") 
-	os.system("sh "+directory+"/addon.sh drastic")
+# askConfirmation = xbmcplugin.getSetting(int(sys.argv[1]),'ask')
+# if askConfirmation == "true":
+# 	resultado = xbmcgui.Dialog().yesno("DraStic", "Exit Kodi and run DraStic?");
+# 	if resultado:
+# 		# xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.drastic/fanart.jpg")')  
+# 		xbmc.executebuiltin('ActivateWindow(busydialog)')
+# 		os.system("echo 'DraStic [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/drastic.log") 
+# 		os.system("sh "+directory+"/addon.sh drastic")
+# 	else:
+# 		# xbmc.executebuiltin('Dialog.Close(busydialog)')
+# 		os.system("echo 'DraStic [ADDON] :: Abort launch.' >> /storage/.kodi/temp/drastic.log")
+# else:
+# 	# xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.drastic/fanart.jpg")') 
+# 	xbmc.executebuiltin('ActivateWindow(busydialog)')
+# 	os.system("echo 'DraStic [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/drastic.log") 
+# 	os.system("sh "+directory+"/addon.sh drastic")
+
+xbmcgui.Dialog().ok(addonname, "You need to use a frontend like EmulationStation or Advanced Emulator Launcher to run this emulator passing to it a rom file.")

@@ -23,6 +23,7 @@ systemctl stop kodi
 
 
 # Launch emulator
+echo "DraStic [ADDON] :: Launch DraStic (See process output in drastic_debug.log)" >>  $LOG_FILE
 cd $ADDON_DS_DIR/
 $ADDON_DS_DIR/drastic "$2"  &>  $LOG_FILE_DS_DEBUG
 # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
