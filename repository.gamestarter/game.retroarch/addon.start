@@ -11,19 +11,26 @@ PROJECT=$(head -c 3 /etc/release)
 # paths
 ADDON_RA_DIR="/storage/.kodi/addons/game.retroarch"
 ADDON_ES_DIR="/storage/.kodi/addons/game.emulationstation"
+ADDON_DS_DIR="/storage/.kodi/addons/game.drastic/drastic"
 CONFIG_FILE="/storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg"
 LIBRETRO_DIR="/storage/.kodi/addons"
 LIBRETRO_CORES_DIR="/storage/.kodi/userdata/addon_data/game.retroarch/cores"
 AMIGA_TEMP_FILE=$ADDON_RA_DIR/launchTemp.uae
 LOG_FILE=/storage/.kodi/temp/retroarch.log
 LOG_FILE_ES=/storage/.kodi/temp/emulationstation.log
+LOG_FILE_DS=/storage/.kodi/temp/drastic.log
 LOG_FILE_RA_DEBUG=/storage/.kodi/temp/retroarch_debug.log
 LOG_FILE_ES_DEBUG=/storage/.kodi/temp/emulationstation_debug.log
+LOG_FILE_DS_DEBUG=/storage/.kodi/temp/drastic_debug.log
 
 case $1 in
   "emulationstation")  
   		LOG_FILE=$LOG_FILE_ES
   		ADDON="EmulationStation"
+  ;;
+  "drastic")  
+      LOG_FILE=$LOG_FILE_DS
+      ADDON="DraStic"
   ;;
    *) 
 		ADDON="RetroArch"
@@ -119,12 +126,14 @@ case $1 in
 
     ;;
 
-  # "nds") 
-  # cd $ADDON_RA_DIR/
-  #  $ADDON_RA_DIR/game.drastic "$2"  &>  $LOG_FILE_DS
-  #  # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
-  #  cd /storage
-  # ;;
+  "drastic") 
+   # Launch emulator
+    echo "DraStic [ADDON] :: Launch DraStic (See process output in drastic_debug.log)" >>  $LOG_FILE_DS
+    cd $ADDON_DS_DIR/
+    $ADDON_DS_DIR/drastic "$2"  &>  $LOG_FILE_DS_DEBUG
+    # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
+    cd /storage
+  ;;
 
    *) 
     echo 'RetroArch [ADDON] :: Launch Retroarch (Enable debugging and see process output in retroarch_debug.log)' >>  $LOG_FILE
