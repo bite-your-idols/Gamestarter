@@ -11,7 +11,7 @@ Con este addon continuarás teniendo tu propia versión de Kodi pero vitaminada 
 > Nueva versión del addon disponible para PC Linux con **LibreELEC 8** Generic X86_64
 
 ## Instrucciones de instalación.
-- Descarga la [última versión](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) y cópialo en tu **Raspberry Pi**
+- Descarga la [última versión](https://github.com/bite-your-idols/Gamestarter/releases/tag/2.9) y cópialo en tu **Raspberry Pi**
 - **[Kodi 17+]** Ir a **Kodi → Ajustes → Sistema → Add-ons** y activa **Fuentes desconocidas**
 - Ir a **Kodi → Add-ons → Instalar desde un archivo .zip** y elige el archivo `.zip` descargado
 

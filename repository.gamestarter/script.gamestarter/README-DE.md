@@ -9,7 +9,7 @@ Benutzt du deinen **Raspberry Pi** als **Media Center**, in Verbindung mit **Kod
 Mit diesem Addon wird es dir dank [Advanced Launcher](http://forum.kodi.tv/showthread.php?tid=85724) / [Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826) möglich sein, **mehrere Emulatoren** von [RetroArch](http://libretro.com/) zu benutzen.  Siehe unten für eine Liste der unterstützten Systeme.
 
 ## Installationsanleitung
-- Lade die [neuste Version](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) herunter und kopiere sie auf deinen **Raspberry Pi**
+- Lade die [neuste Version](https://github.com/bite-your-idols/Gamestarter/releases/tag/2.9) herunter und kopiere sie auf deinen **Raspberry Pi**
 - **[Kodi 17+]** Öffne **Kodi → Einstellungen → System → Addons** und aktiviere **Unbekannte Quellen**
 - Öffne **Kodi → Addons → Aus ZIP-Datei installieren** und wähle deine heruntergeladene `.zip`-Datei
 

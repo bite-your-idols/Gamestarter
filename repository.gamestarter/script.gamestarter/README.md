@@ -11,7 +11,7 @@ With this addon you will be able to run **multiple emulators** from [RetroArch](
 > New addon version available for Linux PC running **LibreELEC 8** Generic X86_64
 
 ## Installation instructions
-- Download the [latest release](https://github.com/bite-your-idols/Gamestarter-Pi/releases/latest) and transfer it to your **Raspberry Pi**
+- Download the [latest release](https://github.com/bite-your-idols/Gamestarter/releases/tag/2.9) and transfer it to your **Raspberry Pi**
 - **[Kodi 17+]** Go to **Kodi → Settings → System → Add-ons** and enable **Unknown sources**
 - Go to **Kodi → Add-ons → Install from zip file** and select the downloaded `.zip` file
 
