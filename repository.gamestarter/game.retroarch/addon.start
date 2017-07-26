@@ -84,7 +84,7 @@ case $1 in
 
   "amiga") 
     # crear el archivo uae temporal para el adf seleccionado
-    cp $ADDON_RA_DIR/addon.uae $AMIGA_TEMP_FILE
+    cp $ADDON_RA_DIR/config.uae $AMIGA_TEMP_FILE
     echo 'floppy0='$2 >> $AMIGA_TEMP_FILE
     echo 'floppy0type=0' >> $AMIGA_TEMP_FILE
     
