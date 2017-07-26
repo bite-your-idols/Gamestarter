@@ -1,5 +1,7 @@
+v0.0.6:
+- RetroArch 1.6.1
 v0.0.5:
--
+- Code debugging WIP
 v0.0.4:
 - Code debugging WIP
 v0.0.3:
