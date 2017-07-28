@@ -2,7 +2,8 @@
 <settings>
         <category label="EmulationStation">
         	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
-        	<!-- <setting id="romspath" type="folder" label="Select your roms folder (default: /storage/emulators/roms/)" source="auto" option="writeable"/> -->
-            <setting label="Install ES themes (Carbon, Clean Look, Pixel, Canela, Tronkyfran & Turtle-Pi)" type="action" action="RunScript(/storage/.kodi/addons/game.emulationstation/extras.py, SetLocation, themes)"/>
+        	<setting id="romspath" type="folder" label="Select your roms folder" default="/storage/emulators/roms/" source="auto" option="writeable"/>
+            <setting label="Install ES themes... (Carbon, Clean Look, Pixel, Canela, Tronkyfran & Turtle-Pi)" type="action" action="RunScript(/storage/.kodi/addons/game.emulationstation/extras.py, SetLocation, themes)"/>
+            <!-- <setting id="is_settings" type="action" label="Open RetroArch Add-on settings..." action="RunPlugin(plugin://game.retroarch/?mode=openSettings&url=is)" option="close"/> -->
     	</category>
 </settings>
