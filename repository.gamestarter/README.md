@@ -1,7 +1,7 @@
 # Gamestarter add-on repository
 ![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/packages/assets/gamestarter-logo-dark.jpg)
 
-## Retrogaming Kodi add-ons for LibreELEC
+## Retrogaming Kodi add-ons for LibreELEC (RPi2/3 & Generic)
 
 ### Installation instructions
 - Download the [repo zip file](https://goo.gl/m36qLT) and transfer it to your **Raspberry Pi**
