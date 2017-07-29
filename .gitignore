@@ -1,14 +1,14 @@
 # compilation packages/settings for OLE
-/scripts/compiling/
+# /scripts/compiling/
 
 # releases directory
 /scripts/builds/
 /packages/builds/
-/scripts/build.sh
+# /scripts/build.sh
 
 #sftp config
 /repository.gamestarter/sftp-config.json
 
 # repo updater
-/scripts/repo.sh
-/repository.gamestarter/create_repository.py
+# /scripts/repo.sh
+# /repository.gamestarter/create_repository.py
