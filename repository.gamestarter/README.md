@@ -10,6 +10,6 @@
 
 
 ### Available add-ons
-- **[Retroarch](http://www.libretro.com/):** the official frontend for Libretro cores with a lot of features and settings
-- **[EmulationStation](http://emulationstation.org/):** a nice frontend also used by [RetroPie](https://retropie.org.uk/) and [Recalbox](https://recalbox.com/) and additional themes
-- **[DraStic RPi](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Experimental Nintendo DS emulator for Raspberry Pi 2/3
+- **[Retroarch](http://www.retroarch.com/):** the official frontend for Libretro cores with a lot of features and settings used in by [Lakka](http://www.lakka.tv/).
+- **[EmulationStation](http://emulationstation.org/):** a nice frontend also used by [RetroPie](https://retropie.org.uk/) and [Recalbox](https://recalbox.com/).
+- **[DraStic RPi](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Experimental Nintendo DS emulator for Raspberry Pi 2/3.
