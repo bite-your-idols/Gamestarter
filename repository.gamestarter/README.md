@@ -12,4 +12,5 @@
 ### Available add-ons
 - **[RetroArch](http://www.retroarch.com/):** the official frontend for Libretro cores with a lot of features and settings used by [Lakka](http://www.lakka.tv/).
 - **[EmulationStation](http://emulationstation.org/):** a nice frontend also used by [RetroPie](https://retropie.org.uk/) and [Recalbox](https://recalbox.com/).
+- **[Advanced Emulator Launcher](http://forum.kodi.tv/showthread.php?tid=287826):** Best way to integrate and launch your game collections in Kodi.
 - **[DraStic RPi](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Experimental Nintendo DS emulator for Raspberry Pi 2/3.
