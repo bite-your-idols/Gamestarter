@@ -65,4 +65,17 @@
       <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
+</addon><addon id="plugin.program.advanced.emulator.launcher" name="Advanced Emulator Launcher" provider-name="Wintermute0110" version="0.9.6">
+  <requires>
+    
+    <import addon="xbmc.python" version="2.25.0" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Start any emulators/apps from Kodi.</summary>
+    <description lang="en">Multi-emulator front-end for Kodi scalable to collections of thousands of ROMs. Includes offline scrapers for MAME and No-Intro ROM sets and also supports scrapping ROM metadata and artwork online. ROM auditing for No-Intro ROMs using No-Intro XML DATs. Launching of games and standalone applications is also available.</description>
+  </extension>
 </addon></addons>

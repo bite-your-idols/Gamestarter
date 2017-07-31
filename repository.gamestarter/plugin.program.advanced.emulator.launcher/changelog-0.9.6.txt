@@ -1,0 +1,418 @@
+[B]Advanced Emulator Launcher | version 0.9.8 | XX July 2017[/B]
+
+WIP      Full Extranafart support for Categories/Launchers.
+
+WIP      Full Extranafart for ROMs.
+
+WIP      Advanced fuzzy search engine based on the Levenshtein Distance algorithm, for both
+         online and offline scrapers. There is a Python implementation of the algorithm here,
+         https://github.com/seatgeek/fuzzywuzzy
+
+WIP      Massive upgrade of AEL Offline scraper database.
+
+WIP      Support Kodi VFS and ROMs in remote filesystems for Retroplayer.
+         Copy remote ROMs for external launchers?
+
+
+[B]Advanced Emulator Launcher | version 0.9.7 | XX Jun 2017[/B]
+
+WIP      AEL ONLY WORKS ON KRYPTON NOW!!!
+
+WIP      Removed ElementTree dependency in addon.xml. It's not longer needed.
+
+WIP      Use the <news> tag in addon.xml. In general, have a look at http://kodi.wiki/view/addon.xml
+         and modernise addon.xml.
+
+WIP      Make use of Krypton feature in the several dialogs of the addon.
+         New param: "preselect" for Dialog().multiselect() and Dialog().select(). 
+         See http://forum.kodi.tv/showthread.php?tid=250936
+
+WIP      Update code to use xbmcgui.Dialog().select() - additions. Get rid of the ImgSelectDialog()
+         class. This need Krypton Beta 4 to run!
+
+WIP      Edit multidisc ROMs.
+
+WIP      Changes and suggestions propoed by Atsumori.
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2560843#pid2560843
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2586596#pid2586596
+
+
+[B]Advanced Emulator Launcher | version 0.9.6 | 19 May 2017[/B]
+
+FEATURE  Set Parent/Clone property so skins can display flag.
+
+FEATURE  Support ERSB and NPlayers in offline scraper.
+
+FEATURE  Support ERSB and NPlayers in online scrapers.
+
+FEATURE  Virtual category to browse the Offline Scraper database.
+
+FEATURE  Updated the number of databases in the Offline Scraper.
+
+FEATURE  ROM scanner reports.
+
+FEATURE  Refurbish ROM auditing and Parent/Clone view display mode.
+
+FEATURE  Added a "Display ROMs" setting valid only in Parent/Clone display mode.
+
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2581878#pid2581878
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2582004#pid2582004
+
+FEATURE  Support Redump DAT files. Note that Redump does not include Parent/Clone data so all
+         ROMs are Parent ROMs.
+
+FEATURE  New platform Panasonic 3DO.
+
+FEATURE  Update NFO files after scraping. This is useful to interrupt the scanner when scanning
+         large collections and resume scanning later.
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2548998#pid2548998
+
+FEATURE  Allow only one instance of AEL running at a time.
+         This prevents multiple launcher execution and also get rids forever of any database
+         corruption issues due to concurrency! Thanks Roman_V_M for ideas about the fix.
+         See http://forum.kodi.tv/showthread.php?tid=310697
+
+FIX      Fixed crash when displaying a Launcher in Parent/Clone view with Unknown ROMs.
+
+FIX      Fixed the number of ROMs counter when importing AL launchers.xml
+
+FIX      ROM scanner ignores NFO files if option "NFO Files + Scrapers" is set.
+
+
+[B]Advanced Emulator Launcher | version 0.9.6-beta1 | 5 March 2017[/B]
+
+FEATURE  Import and Export of Launchers configurations. Will be very useful especially for 
+         Android users.
+
+FEATURE  Use a Window property to let skins know wheter a launcher OR ROMs are being rendered.
+         Set xbmcgui.Window(10001).setProperty('AEL_Content', 'launchers')
+             xbmcgui.Window(10001).setProperty('AEL_Content', 'roms')
+         It must be set on entering and unset on exiting the plugin.
+
+FEATURE  Use setProperty() to inform the skin about ROM flags:
+           1) Favourite status: OK, Unlinked ROM, Unlinked Launcher, Broken
+           2) No-Intro status: Have, Missing, Added, Unknown
+           3) Parent/Clone status: Parent or Clone (Boolean)
+
+         For example:
+           setProperty('AEL_Fav_stat',     'Fav_OK')
+           setProperty('AEL_NoIntro_stat', 'NoIntro_Have')
+           setProperty('AEL_PClone_stat',  'PClone_Parent')
+
+FEATURE  Add Retroplayer support.
+         See https://github.com/Wintermute0110/plugin.program.advanced.emulator.launcher/issues/33
+
+FEATURE  New menu for the virtual launchers [Browse by ...]
+
+FEATURE  New virtual launchers [Browse by ESRB Rating] and Browse by [Number of Players].
+
+FEATURE  Added new platforms Xbox One, Nintendo Switch, Nintendo Wii U, PSX 3 and PSX 4.
+
+FEATURE  Clearlogos in Categories, Launchers and ROM Collections.
+
+FEATURE  Edit clearlogos in Categories.
+
+FEATURE  Edit clearlogos in Launchers.
+
+FEATURE  Edit clearlogos in ROM Collections.
+
+FEATURE  Default to launcher icon if ROM icon is missing.
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2500040#pid2500040
+
+FEATURE  Update launching mechanism. User Python subprocess module on all platforms and not the
+         deprecated os.system(). Current patched subprocess_hack module is from Python 2.4. Current 
+         Python version in Kodi is 2.7.
+         os.system(), os.open(), etc. are deprecated, and the subprocess module should be used 
+         instead for all platforms. A parser of arguments must be coded in order to use the 
+         subprocess module.
+
+FEATURE  Log emulator/standalone launcher stdout/stderr into a file. Requires new launching
+         mechanism based on subprocess module. Have a look to AML for an implementation.
+
+FEATURE  Add nplayers metadata field to ROMs. Billyc999 database has nplayers NFO.
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2407055#pid2407055
+
+FEATURE  Edit nplayers in ROMs.
+         
+FEATURE  Add ESRB/MPAA/PEGI rating? >> User ESRB, new metadata field esrb in ROMs.
+
+FEATURE  Edit ESRB in ROMs.
+
+FEATURE  Support for multidisc systems. Have a look to NOTES.md for more details about the AEL
+         implementation.
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2495480#pid2495480
+
+         AL ROM scanner only added the first disc to the database and skipped disc numbers
+         from 2 to 9.
+         https://github.com/Wintermute0110/plugin.program.advanced.launcher/blob/master/resources/lib/launcher_plugin.py#L2088
+
+         At ROM launching, if any of the strings ['.cd1', '-cd1', '_cd1', ' cd1'] is found on the
+         ROMfile basename then the rompath was scanned looking for all the discs. User selected
+         the disc number to launch from a select dialog.
+         https://github.com/Wintermute0110/plugin.program.advanced.launcher/blob/master/resources/lib/launcher_plugin.py#L1688
+
+         AEL will use a better implementation based on a ROM filename parser. See NOTES.md
+
+FEATURE  Delete ROM context menu integrated in Edit ROM.
+
+FEATURE  Display number of ROMs in launcher.
+
+FEATURE  Platform icons/clearlogos in AEL. Platform icons can be an icon of the console or gamepad.
+         EmulationStation has a lot of material that can be reused for AEL.
+
+FEATURE  Improved No-Intro audit.
+
+FEATURE  Remove No-Intro Added status.
+
+FEATURE  New style Parent/Clone launchers, ala Advanced MAME Launcher.
+
+FEATURE  Print number of parent and clones in PClone launchers.
+
+FEATURE  Split Launcher report into statistics, metadata and asset reports.
+
+FEATURE  Include databases for all supported platforms in AEL offline scraper (well... at least
+         included more databases).
+
+FEATURE  Updated Offline scraper MAME database from 0.173 to 0.183.
+
+FIX      Fixed crash when editing Collection ROM position.
+
+FIX      Keep order when Collection ROM is relinked.
+
+
+[B]Advanced Emulator Launcher | version 0.9.5 | 12 January 2017[/B]
+
+FIX      Fix ROM Collection exporting/importing.
+
+FIX      Properly remove HTML tags in MobyGames metadata scraper plot.
+
+FIX      ROM substitution keywords now use $ instead of the ugly %.
+         %rom% becomes $rom$
+
+FIX      Added new argument substitution keywords $rombasenoext$, $categoryID$, $launcherID$,
+         and $romID$.
+
+FIX      Fixed issues #31 and #32 (FileName class related stuff). This should fix also
+         "Edit Launcher" -> "Manage ROMs" -> "Scan for local artwork/assets"
+
+FIX      Fixed error in the ROM scanner when using semi-automatic scraping.
+
+
+[B]Advanced Emulator Launcher | version 0.9.5~beta2 | 27 December 2016[/B]
+
+FIX      Fixed crash when scanning ROMs and the asset scraper is ON.
+
+FIX      Improved ROM scanner debug output. Will make it easier to read scanner logs.
+
+FIX      Fixed crash in "Edit Launcher" -> "Manage ROM List" -> "Rescan ROMs local assets"
+         See http://forum.kodi.tv/showthread.php?tid=287826&pid=2479446#pid2479446
+
+FIX      Fixed crash when adding single ROM.
+         http://forum.kodi.tv/showthread.php?tid=287826&pid=2484522#pid2484522
+
+FIX      Fixed several uses of old function misc_split_path(). Now FileName() class must be used.
+
+
+[B]Advanced Emulator Launcher | version 0.9.5~beta1 | 13 December 2016[/B]
+
+FEATURE  New Arcade Database online metadata/asset scraper for MAME ROMs.
+
+FEATURE  Support for several arguments in launcher. This will be useful when using MAME for
+         console emulation (MAME consoles from a different region have different names, and an
+         European console will typically refuse to run a Japanese game).
+         Survey about this: http://forum.kodi.tv/showthread.php?tid=287826&pid=2467547#pid2467547
+
+FEATURE  New command SHOW_ALL_ROMS to render all ROMs in all launchers. Will be used by skins.
+
+FEATURE  Supend/resume Kodi audio engine at launching. This will prevent sound problems in Linux. 
+         Include a setting for this in addons "Settings" --> "Advanced".
+
+FEATURE  Export/Import assets/artwork in ROM Collections. Encode binary files in base64 and put
+         in an auxiliar JSON files. Exporting assets should be optional, not mandatory.
+
+FEATURE  Extranafart for ROM Collections.
+
+FEATURE  All requests are cached in TheGamesDB scraper.
+
+FEATURE  All requests are cached in GameFAQs scraper.
+
+FEATURE  All requests are cached in MobyGames scraper.
+
+FEATURE  Resolve image URL for online asset scrapers. This will increase scraping speed a lot.
+         Requires a change in the scraping API.
+
+FEATURE  TheGamesDB scraper now returns Titles and Snaps. However, since there is no difference
+         between Titles, Snaps and shots in TheGamesDB this only is useful when doing manual
+         scraping.
+
+FEATURE  Improve message reporting in Kodi GUI when scanning ROMs.
+
+FEATURE  Improve launcher report and include is a No-Intro audit information.
+
+FEATURE  Remove ROM tags (for example, (Europe), [Rev A]) from parent ROM names when showing 
+         parent ROMs in a PClone launcher.
+
+FEATURE  New No-Intro status 'Added'.
+
+FEATURE  Browse by Category Virtual Launcher.
+         http://forum.kodi.tv/showthread.php?tid=287826&pid=2458080#pid2458080
+
+FEATURE  Deal with Kodi virtual filesystem smb:// paths. Merged a massive patch by Chrisism.
+
+FEATURE  New platform "Microsoft Windows"
+
+FEATURE  Add genre, plot and rating to ROM collections. Unify ROM Collections and Cateogories
+         metadata. During the migration current collections names will be lost and user has
+         to edit every ROM Collection and set a new name.
+
+FEATURE  Request monospaced font on text viewer dialog (window 10147).
+
+FIX      Fixed searches in launchers.
+
+FIX      Fixed artwork display in ROM Collections (Icon/Fanart/Banner/Poster).
+
+FIX      Fix "launching app not found lnk_launcher_app" error in Windows LNK launchers.
+
+FIX      Remove setContent() old code.
+
+FIX      Fixed the case of removing all categories and having just Standalone/ROM launchers on 
+         addon root.
+
+FIX      Fix offline scraper search when there are hypens in filename.
+         http://forum.kodi.tv/showthread.php?tid=287826&pid=2461203#pid2461203
+
+
+[B]Advanced Emulator Launcher | version 0.9.4 | 16 October 2016[/B]
+
+FEATURE  Create ROM and standalone launchers in addon root. "Categoryless" launchers.
+
+FEATURE  Improve the repairing for Favourite/Collection ROMs once and for all.
+
+FEATURE  Parent/Clone launcher display option when using No-Intro DATs.
+
+FEATURE  [Recently played ROMs] Virtual Launcher. List of ROMs played in reverse chronological
+         order.
+
+FEATURE  [Most played ROMs] Virtual Launcher. Histogram of how many times a ROM has been played,
+         ordered by the number of times a ROM has been played.
+
+FIX      Fixed loading of No-Intro files.
+
+FIX      Fixed "Edit Launcher" >> "Choose default Assets/Artwork..."
+
+FIX      Fixed "Add new Launcher" context menu in non-Windows platforms.
+
+
+[B]Advanced Emulator Launcher | version 0.9.3 | 8 October 2016[/B]
+
+FEATURE  LNK ROMs Launcher in Windows.
+
+FEATURE  Rename launcher ROMs JSON file if Launcher name changes.
+
+FEATURE  Favourite/Collection ROMs can be updated with information from parent.
+
+FEATURE  Reorganised all Edit Asset/Artwork context menus.
+
+FEATURE  Reorganised and improved all ROM context menus.
+
+FEATURE  Increased the number of AEL platforms to 50.
+
+FEATURE  Setting options to hide [Fav] and [OK] labels in Launcher/Collection/Favourite ROMs.
+
+FEATURE  Setting options to hide Favourites and ROM Collections.
+
+FEATURE  ROM Collections can be imported/exported and shared with other people.
+
+FEATURE  ROMs in a Collection can now be edited.
+
+FEATURE  Move ROMs up/down in collections has been moved from Collection ROM context menu into
+         Edit ROM in Collection context menu.
+
+FEATURE  Collection ROMs can be placed in any position in the Collection easily via the context
+         menu.
+
+FEATURE  Edit ROM -- Edit Metadata shows all available metadata scrapers, not just the one
+         selected in settings. The metadata scraper selected in plugin settings is only used
+         when scanning ROMs.
+
+FEATURE  Edit ROM -- Edit Assets/Artwork now automatically chooses the scrapers available
+         depending on the asset selected.
+
+FIX      Fixed launching of standalone launchers having LNK files in Windows.
+
+FIX      Fixed launching of ROM launchers having LNK files as ROMs in Windows. Any executable can
+         be chosen as the launcher program (it will be ignored), expect an LNK file.
+
+FIX      Fix information dialogs in _command_remove_rom() (shown when deleting a ROM).
+
+FIX      Fixed scraping of launchers in context menu Edit Launcher -- Edit Metadata. Now user is
+         able to choose scraper.
+
+FIX      Fixed TheGamesDB platform names.
+
+FIX      Removed Categories 'default_clearlogo' and Launchers 'default_clearlogo' JSON data files
+         introduced by error in previous versions.
+         ROM STORAGE IS INCOMPATIBLE WITH PREVIOUS VERSIONS OF AEL!!! 
+         MIGRATION: automatic. XML writer will remove those fields as soon as categories.xml 
+         is rewritten.
+
+
+[B]Advanced Emulator Launcher | version 0.9.2 | 26 September 2016[/B]
+
+FEATURE  Display assets when editing ROMs using the ImgSelectDialog class.
+
+FEATURE  Collection ROMs can be repaired/relinked, like Favourite ROMs.
+
+FEATURE  Versioned ROM storage JSON files for Favourites and ROM Collections.
+         NOT COMPATBLE WITH PREVIOUS AEL VERSIONS!
+
+FEATURE  Reorganised context menu in Favourites/Collection ROMs.
+
+FEATURE  Relink Favourite ROMs with Unlinked Launchers or Broken parent ROMs.
+
+FEATURE  Tell if scrapers support asset or not in "Edit ROM" -- "Edit Assets/Artwork..."
+
+FEATURE  TheGamesDB asset scraper working OK.
+
+FEATURE  GameFAQs asset scraper working OK.
+
+FEATURE  MobyGames metadata scraper.
+
+FEATURE  MobyGames asset scraper.
+
+FEATURE  Initial implementation of Arcade Database metadata scraper.
+
+FEATURE  Ratings can be edited now for Categories/Launchers/ROMs.
+
+FEATURE  Improved URL page data retrieve function.
+
+FIX      Include 3 characters of the object ID in artwork directories. This avoids overwriting of
+         images in Favourites if there are 2 ROMs with same name from 2 different launchers.
+
+FIX      Use ROM title instead of rombasename in launcher notification. For standalone launchers use
+         then Launcher title.
+
+FIX      Add Clearlogo to "Edit Launcher" -- "Manage ROM asset directories..." menu.
+
+FIX      Do not include empty strings when checking for repeated asset directories.
+
+
+[B]Advanced Emulator Launcher | version 0.9.1 | 6 September 2016[/B]
+
+FEATURE  Invalid characters in launchers.xml are fixed before importing AL legacy launcher/ROMs. 
+         A copy of the fixed launchers.xml is placed in AEL ADDON_DATA_DIR.
+
+FEATURE  Check if there are duplicated asset directories. This will avoid overwriting of
+         artwork files!
+
+FIX      Changed video supported extensions from [mpg, mpeg, avi] to [mov, divx, xvid, wmv, avi, mpg,
+         mpeg, mp4, mkv, avc].
+
+FIX      Fixed issue 21: Crash when adding ROMs using _roms_add_new_rom().
+
+FIX      Fixed edition of asset directories in "Edit Launcher" -- "Manage ROM Asset directories..."
+
+
+[B]Advanced Emulator Launcher | version 0.9.0 | 22 August 2016[/B]
+
+* Initial release.

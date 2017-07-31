@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.advanced.emulator.launcher"
+       name="Advanced Emulator Launcher"
+       version="0.9.6"
+       provider-name="Wintermute0110">
+  <requires>
+    <!-- 2.24.0  Jarvis 16.x / 2.25.0  Krypton 17.x / x.yy.z  Leia 18.x -->
+    <import addon="xbmc.python" version="2.25.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Start any emulators/apps from Kodi.</summary>
+    <description lang="en">Multi-emulator front-end for Kodi scalable to collections of thousands of ROMs. Includes offline scrapers for MAME and No-Intro ROM sets and also supports scrapping ROM metadata and artwork online. ROM auditing for No-Intro ROMs using No-Intro XML DATs. Launching of games and standalone applications is also available.</description>
+  </extension>
+</addon>
