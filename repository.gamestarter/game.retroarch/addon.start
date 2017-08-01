@@ -147,7 +147,7 @@ esac
 # echo 'RetroArch [ADDON] :: Disable alsa...' >>  $LOG_FILE
 # rmmod snd_bcm2835
 
-Reset resolution to standard y borrar uae temporal
+# Reset resolution to standard y borrar uae temporal
 case $1 in
   "amiga")
     echo 'RetroArch [ADDON] :: Reset amiga configs...' >> $LOG_FILE

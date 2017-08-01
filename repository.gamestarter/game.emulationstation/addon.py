@@ -41,7 +41,7 @@ if os.path.isdir(directory+"/emulationstation") == True:
 # else:
 askConfirmation = xbmcplugin.getSetting(int(sys.argv[1]),'ask')
 if askConfirmation == "true":
-	resultado = xbmcgui.Dialog().yesno("EmulationStation", "Exit Kodi and run Emulationstation?");
+	resultado = xbmcgui.Dialog().yesno("EmulationStation", "Exit Kodi and run EmulationStation?");
 	if resultado:
 		xbmc.executebuiltin('ShowPicture("/storage/.kodi/addons/game.emulationstation/fanart.jpg")')  
 		os.system("echo 'EmulationStation [ADDON] :: Kodi is ready.' >> /storage/.kodi/temp/emulationstation.log") 
