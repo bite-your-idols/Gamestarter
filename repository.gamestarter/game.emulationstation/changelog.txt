@@ -1,3 +1,5 @@
+v0.0.4:
+- missing libs for Generic
 v0.0.3:
 - code debugging WIP
 v0.0.2:
