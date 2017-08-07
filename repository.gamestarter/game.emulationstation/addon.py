@@ -23,7 +23,7 @@ if os.path.isdir(directory+"/emulationstation") == True:
   	os.system("if [ ! -f /storage/.kodi/userdata/addon_data/game.emulationstation/es_systems.cfg ] ; then cp /storage/.kodi/addons/game.emulationstation/emulationstation/es_systems.cfg /storage/.kodi/userdata/addon_data/game.emulationstation/es_systems.cfg ; fi && rm -rf /storage/.kodi/addons/game.emulationstation/emulationstation/es_systems.cfg")
  	os.system("cp -r /storage/.kodi/addons/game.emulationstation/emulationstation/* /storage/.kodi/userdata/addon_data/game.emulationstation")
  	# os.system("rm -rf /storage/.kodi/addons/game.emulationstation/emulationstation")
- 	os.system("if [ ! -L /storage/.config/emulationstation ] ; then ln -s /storage/.kodi/userdata/addon_data/game.emulationstation /storage/.config/emulationstation ; fi")
+ 	os.system("if [ -L /storage/.config/emulationstation ] ; then rm /storage/.config/emulationstation ; fi && ln -s /storage/.kodi/userdata/addon_data/game.emulationstation /storage/.config/emulationstation")
  	os.system("rm -rf /storage/.kodi/addons/game.emulationstation/emulationstation")
  	# os.system("touch /storage/.kodi/addons/game.emulationstation/installed && echo 'EmulationStation [ADDON] :: Firts Run! - ' $(date) >> /storage/.kodi/addons/game.emulationstation/installed")
  	os.system("chmod a+x /storage/.kodi/addons/game.emulationstation/game.emulationstation-RPi")

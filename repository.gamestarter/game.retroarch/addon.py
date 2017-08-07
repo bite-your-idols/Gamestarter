@@ -22,7 +22,7 @@ if os.path.isdir(directory+"/retroarch") == True:
  	os.system("if [ ! -f /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ] ; then cp /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ; fi && rm -rf /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg")
  	os.system("cp -r /storage/.kodi/addons/game.retroarch/retroarch/* /storage/.kodi/userdata/addon_data/game.retroarch")
  	os.system("rm -rf /storage/.kodi/addons/game.retroarch/retroarch")
-	os.system("if [ ! -L /storage/.config/retroarch ] ; then ln -s /storage/.kodi/userdata/addon_data/game.retroarch /storage/.config/retroarch ; fi")
+	os.system("if [ -L /storage/.config/retroarch ] ; then rm /storage/.config/retroarch ; fi && ln -s /storage/.kodi/userdata/addon_data/game.retroarch /storage/.config/retroarch")
  	# os.system("touch /storage/.kodi/addons/game.retroarch/installed && echo $(cat /etc/release) >> /storage/.kodi/addons/game.retroarch/installed")
  	# os.system("echo $(date) >> /storage/.kodi/addons/game.retroarch/installed")
  	os.system("chmod a+x /storage/.kodi/addons/game.retroarch/addon.sh && chmod a+x /storage/.kodi/addons/game.retroarch/addon.start && chmod a+x /storage/.kodi/addons/game.retroarch/game.retroarch-RPi && chmod a+x /storage/.kodi/addons/game.retroarch/game.retroarch-Gen")

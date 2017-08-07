@@ -19,7 +19,7 @@
 ################################################################################
 
 PKG_NAME="retroarch"
-PKG_VERSION="adae065" #v1.6.3
+PKG_VERSION="681351c" #v1.6.1
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPLv3"
@@ -56,20 +56,34 @@ if [ "$AVAHI_DAEMON" = yes ]; then
   PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET avahi nss-mdns"
 fi
 
+# if [ "$OPENGLES" == "no" ]; then
+#  RETROARCH_GL="--enable-kms --enable-vulkan"
+#  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET mesa vulkan-loader"
+# elif [[ "$PROJECT" =~ "RPi" ]]; then
+#  # RETROARCH_GL="--enable-gles --disable-kms"
+#  RETROARCH_GL="--disable-kms"
+#  CFLAGS="$CFLAGS -I$SYSROOT_PREFIX/usr/include/interface/vcos/pthreads \
+#                  -I$SYSROOT_PREFIX/usr/include/interface/vmcs_host/linux"
+#elif [ "$OPENGLES" == "sunxi-mali" ] || [ "$OPENGLES" == "odroidc1-mali" ] || [ "$OPENGLES" == "odroidxu3-mali" ] || [ "$OPENGLES" == "opengl-meson6" ] || [ "$OPENGLES" == "opengl-meson8" ]; then
+#  RETROARCH_GL="--enable-gles --disable-kms --enable-mali_fbdev"
+#elif [ "$OPENGLES" == "gpu-viv-bin-mx6q" ]; then
+#  RETROARCH_GL="--enable-gles --disable-kms --enable-vivante_fbdev"
+#  CFLAGS="$CFLAGS -DLINUX -DEGL_API_FB"
+#fi
+
 if [ "$OPENGLES" == "no" ]; then
-  RETROARCH_GL="--enable-kms --enable-vulkan"
-  PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET mesa vulkan-loader"
-elif [[ "$PROJECT" =~ "RPi" ]]; then
-  # RETROARCH_GL="--enable-gles --disable-kms"
-  RETROARCH_GL="--disable-kms"
+  RETROARCH_GL="--enable-kms"
+elif [ "$OPENGLES" == "bcm2835-driver" ]; then
+  RETROARCH_GL="--enable-opengles --disable-kms --disable-x11"
   CFLAGS="$CFLAGS -I$SYSROOT_PREFIX/usr/include/interface/vcos/pthreads \
                   -I$SYSROOT_PREFIX/usr/include/interface/vmcs_host/linux"
-elif [ "$OPENGLES" == "sunxi-mali" ] || [ "$OPENGLES" == "odroidc1-mali" ] || [ "$OPENGLES" == "odroidxu3-mali" ] || [ "$OPENGLES" == "opengl-meson6" ] || [ "$OPENGLES" == "opengl-meson8" ]; then
-  RETROARCH_GL="--enable-gles --disable-kms --enable-mali_fbdev"
-elif [ "$OPENGLES" == "gpu-viv-bin-mx6q" ]; then
-  RETROARCH_GL="--enable-gles --disable-kms --enable-vivante_fbdev"
+elif [ "$OPENGLES" == "sunxi-mali" ] || [ "$OPENGLES" == "odroidc1-mali" ] || [ "$OPENGLES" == "odroidxu3-mali" ] || [ "$OPENGLES" == "opengl-meson" ] || [ "$OPENGLES" == "opengl-meson8" ]; then
+  RETROARCH_GL="--enable-opengles --disable-kms --disable-x11 --enable-mali_fbdev"
+elif [ "$OPENGLES" == "gpu-viv-bin-mx6q" ] || [ "$OPENGLES" == "imx-gpu-viv" ]; then
+  RETROARCH_GL="--enable-opengles --disable-kms --disable-x11 --enable-vivante_fbdev"
   CFLAGS="$CFLAGS -DLINUX -DEGL_API_FB"
 fi
+
 
 if [[ "$TARGET_FPU" =~ "neon" ]]; then
   RETROARCH_NEON="--enable-neon"
@@ -91,7 +105,7 @@ PKG_CONFIGURE_OPTS_TARGET="--disable-vg \
                            --enable-freetype"
 
 unpack() {
-  tar -zxf $SOURCES/$PKG_NAME/$PKG_VERSION.tar.gz -C $BUILD
+  tar -zxf $SOURCES/$PKG_NAME/$PKG_NAME-$PKG_VERSION.tar.gz -C $BUILD
   mv $BUILD/RetroArch* $BUILD/$PKG_NAME-$PKG_VERSION
 }
 
