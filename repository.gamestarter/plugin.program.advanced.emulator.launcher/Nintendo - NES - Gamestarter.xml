@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <category>Nintendo</category>
+  <name>NES (Retroarch-LibreELEC)</name>
+  <year>1983</year>
+  <platform>Nintendo NES</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>fceumm &quot;%rom%&quot;</args>
+  <args_extra>nestopia &quot;%rom%&quot;</args_extra>
+  <romext>nes|zip</romext>
+  <rompath>/storage/emulators/roms/nes/</rompath>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+</advanced_emulator_launcher_configuration>

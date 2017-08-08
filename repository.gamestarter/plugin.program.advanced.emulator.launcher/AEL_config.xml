@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Amiga 500</name>
+  <category>GAMESTARTER</category>
+  <year>1987</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>amiga &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/amiga/</rompath>
+  <romext>adf</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Arcade/FBA</name>
+  <category>GAMESTARTER</category>
+  <year>1972</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>MAME</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>fbalpha &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/fba/</rompath>
+  <romext>zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Arcade/MAME</name>
+  <category>GAMESTARTER</category>
+  <year>1972</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>MAME</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>mame2003 &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/mame/</rompath>
+  <romext>zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Atari 2600</name>
+  <category>GAMESTARTER</category>
+  <year>1977</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>stella &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/atari2600</rompath>
+  <romext>a26|bin|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Atari Lynx</name>
+  <category>GAMESTARTER</category>
+  <year>1989</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>handy &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/atarilynx/</rompath>
+  <romext>lnx|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Game Gear</name>
+  <category>GAMESTARTER</category>
+  <year>1990</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>genesis_plus_gx &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/gamegear/</rompath>
+  <romext>gg|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Gameboy Advance</name>
+  <category>GAMESTARTER</category>
+  <year>2001</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Nintendo GameBoy Advance</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>gpsp &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/gba/</rompath>
+  <romext>gba|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Gameboy/Gameboy Color</name>
+  <category>GAMESTARTER</category>
+  <year>1989</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Nintendo GameBoy</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>gambatte &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/gb/</rompath>
+  <romext>gb|zip|gbc</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>MSX</name>
+  <category>GAMESTARTER</category>
+  <year>1983</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>bluemsx &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/msx/</rompath>
+  <romext>rom|mx1|mx2|col|dsk|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Magnavox Odyssey/Phillips Videopac</name>
+  <category>GAMESTARTER</category>
+  <year>1983</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>o2em &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/videopac/</rompath>
+  <romext>bin|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Master System</name>
+  <category>GAMESTARTER</category>
+  <year>1985</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Sega Master System/Mark III</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>picodrive &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/mastersystem/</rompath>
+  <romext>sms|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Megadrive/Mega CD</name>
+  <category>GAMESTARTER</category>
+  <year>1988</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Sega MegaDrive/Genesis</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>genesis_plus_gx &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/megadrive/</rompath>
+  <romext>smd|md|bin|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>NES</name>
+  <category>GAMESTARTER</category>
+  <year>1983</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Nintendo NES</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>fceumm &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/nes/</rompath>
+  <romext>nes|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>NeoGeo</name>
+  <category>GAMESTARTER</category>
+  <year>1990</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>fbalpha &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/neogeo/</rompath>
+  <romext>zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Nintendo 64</name>
+  <category>GAMESTARTER</category>
+  <year>1996</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Nintendo 64</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>mupen64plus &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/n64/</rompath>
+  <romext>v64|n64|z64|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Nintendo DS</name>
+  <category>GAMESTARTER</category>
+  <year>2004</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.drastic/addon.sh</application>
+  <args>drastic &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/nds/</rompath>
+  <romext>zip|nds</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>PC Engine/PC Engine CD</name>
+  <category>GAMESTARTER</category>
+  <year>1987</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>NEC PC Engine/TurboGrafx 16</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>mednafen_pce_fast &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/pcengine/</rompath>
+  <romext>pce|cue</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>PSP</name>
+  <category>GAMESTARTER</category>
+  <year>2005</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>ppsspp &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/psp/</rompath>
+  <romext>iso|cso</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Playstation</name>
+  <category>GAMESTARTER</category>
+  <year>1994</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Sony PlayStation</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>pcsx_rearmed &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/psx/</rompath>
+  <romext>bin|img|pbp|PBP|IMG|BIN</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>Super Nintendo</name>
+  <category>GAMESTARTER</category>
+  <year>1990</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Nintendo SNES</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>snes9x2010 &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/snes/</rompath>
+  <romext>smc|sfc|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+<launcher>
+  <name>ZX Spectrum</name>
+  <category>GAMESTARTER</category>
+  <year>1982</year>
+  <genre></genre>
+  <studio></studio>
+  <rating></rating>
+  <plot></plot>
+  <platform>Unknown</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>fuse &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <rompath>/storage/emulators/roms/zxspectrum/</rompath>
+  <romext>tzx|Z80|z80|zip</romext>
+  <path_assets>/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/artworks</path_assets>
+</launcher>
+</advanced_emulator_launcher_configuration>
