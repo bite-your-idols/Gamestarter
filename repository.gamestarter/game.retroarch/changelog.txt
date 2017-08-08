@@ -1,3 +1,5 @@
+v0.0.9:
+- RetroArch 1.6.4
 v0.0.8:
 - Clean Gamestarter RA folder ls
 v0.0.7:

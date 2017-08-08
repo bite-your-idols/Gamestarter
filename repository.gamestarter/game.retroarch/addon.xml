@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="game.retroarch" name="RetroArch" version="0.0.8" provider-name="Bite Your Idols!">
+<addon id="game.retroarch" name="RetroArch" version="0.0.9" provider-name="Bite Your Idols!">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
