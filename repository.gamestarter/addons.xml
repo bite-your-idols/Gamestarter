@@ -1,2 +1,99 @@
-<?xml version='1.0' encoding='utf-8'?>
-<addons />
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="repository.gamestarter" name="Gamestarter add-on repository" provider-name="Bite Your Idols!" version="3.0.0">
+    <extension name="Gamestarter add-on repository" point="xbmc.addon.repository">
+        <info compressed="true">https://github.com/bite-your-idols/Gamestarter/raw/master/repository.gamestarter/addons.xml</info>
+        <checksum>https://github.com/bite-your-idols/Gamestarter/raw/master/repository.gamestarter/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/bite-your-idols/Gamestarter/master/repository.gamestarter/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Gamestarter add-on repository</summary>
+		<description lang="en">Gamestarter add-on repository</description>
+        <platform>all</platform>
+    </extension>
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="0.0.9">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">RetroArch frontend for LibreELEC</summary>
+    <description lang="en">RetroArch frontend for LibreELEC</description>
+    <assets>
+      <icon>icon.jpg</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot01.png</screenshot>
+      <screenshot>resources/screenshot02.png</screenshot>
+      <screenshot>fanart.jpg</screenshot>
+    </assets>
+  </extension>
+</addon><addon id="game.emulationstation" name="EmulationStation" provider-name="Bite Your Idols!" version="0.0.5">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="game.retroarch" version="0.0.8" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">EmulationStation frontend for LibreELEC.</summary>
+    <description lang="en">EmulationStation frontend for LibreELEC</description>
+    <assets>
+      <icon>icon.jpg</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot01.png</screenshot>
+      <screenshot>resources/screenshot02.png</screenshot>
+      <screenshot>fanart.jpg</screenshot>
+    </assets>
+  </extension>
+</addon><addon id="game.drastic" name="DraStic RPi" provider-name="Bite Your Idols!" version="0.0.1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Experimental port of DraStic for LibreELEC, NDS emulator for RPi.</summary>
+    <description lang="en">Experimental port of DraStic for LibreELEC, NDS emulator for RPi.</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot01.png</screenshot>
+      <screenshot>resources/screenshot02.png</screenshot>
+      <screenshot>fanart.jpg</screenshot>
+    </assets>
+  </extension>
+</addon><addon id="plugin.program.advanced.emulator.launcher" name="Advanced Emulator Launcher" provider-name="Wintermute0110" version="0.9.6">
+  <requires>
+    
+    <import addon="xbmc.python" version="2.25.0" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Start any emulators/apps from Kodi.</summary>
+    <description lang="en">Multi-emulator front-end for Kodi scalable to collections of thousands of ROMs. Includes offline scrapers for MAME and No-Intro ROM sets and also supports scrapping ROM metadata and artwork online. ROM auditing for No-Intro ROMs using No-Intro XML DATs. Launching of games and standalone applications is also available.</description>
+  </extension>
+</addon><addon id="game.ppsspp" name="PPSSPP RPi" provider-name="Bite Your Idols!" version="0.0.1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">PSP emulator for Raspberry Pi.</summary>
+    <description lang="en">PSP emulator for Raspberry Pi</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot01.png</screenshot>
+      <screenshot>resources/screenshot02.jpg</screenshot>
+      <screenshot>fanart.jpg</screenshot>
+    </assets>
+  </extension>
+</addon></addons>
