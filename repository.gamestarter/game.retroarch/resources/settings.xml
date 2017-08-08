@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-	<category label="RetroArch">
+	<category label="Settings">
     	<setting id="ask" type="bool" label="Ask for confirmation at exit Kodi" default="true"/>
     	<!-- <setting type="sep"/> -->
     	<setting id="retroplayer" type="bool" label="Use RetroPlayer installed cores only (Clean cores directory)" default="false"/>
