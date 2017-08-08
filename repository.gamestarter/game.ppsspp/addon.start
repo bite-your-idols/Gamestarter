@@ -1,0 +1,54 @@
+#!/bin/sh
+#!/bin/env python
+. /etc/profile
+
+sleep 1s
+
+# get addon version to know which retraorch binary and config file to use
+
+# paths
+ADDON_PSP_DIR="/storage/.kodi/addons/game.ppsspp"
+LOG_FILE=/storage/.kodi/temp/ppsspp.log
+LOG_FILE_PSP_DEBUG=/storage/.kodi/temp/ppsspp_debug.log
+
+echo 'PPSSPP [ADDON] :: RPi - '$(date) >> $LOG_FILE
+
+# Stop KODI
+echo 'PPSSPP [ADDON] :: Stop kodi...' >> $LOG_FILE
+systemctl stop kodi
+
+# Enable ALSA
+# echo 'RetroArch [ADDON] :: Enable alsa...' >>  $LOG_FILE
+# modprobe snd_bcm2835
+
+echo 'PPSSPP [ADDON] :: Stop kodi...' $@ >> $LOG_FILE
+
+
+case $1 in
+  "gui")  
+  	# Launch emulator
+	echo "PPSSPP [ADDON] :: Launch PPSSPP (See process output in ppsspp_debug.log)" >>  $LOG_FILE
+	$ADDON_PSP_DIR/game.ppsspp  &>  $LOG_FILE_PSP_DEBUG
+	# /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
+
+  ;;
+   *) 
+	#launch rom
+	echo "PPSSPP [ADDON] :: Launch PPSSPP (See process output in ppsspp_debug.log)" >>  $LOG_FILE
+	echo "PPSSPP [ADDON] :: Launch with direct link:" $@ >>  $LOG_FILE
+	$ADDON_PSP_DIR/game.ppsspp  &>  $LOG_FILE_PSP_DEBUG
+	# /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
+
+   ;;
+esac
+
+
+# Disable ALSA
+# echo 'RetroArch [ADDON] :: Disable alsa...' >>  $LOG_FILE
+# rmmod snd_bcm2835
+
+
+# Start KODI
+# systemctl start kodi
+echo 'PPSSPP [ADDON] :: Restart kodi...' >> $LOG_FILE
+systemctl start kodi

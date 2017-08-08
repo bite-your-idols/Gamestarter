@@ -13,6 +13,8 @@ ADDON_4='game.drastic'
 ADDON_4_VER='0.0.1'
 ADDON_5='plugin.program.advanced.emulator.launcher'
 ADDON_5_VER='0.9.6'
+ADDON_6='game.ppsspp'
+ADDON_6_VER='0.0.1'
 # ADDON_5='game.uae4arm'
 # ADDON_5_VER='0.0.1'
 
@@ -31,7 +33,7 @@ echo "-------------------------------------"
 echo ""
 
 # ADDONS=./$ADDON_1/$ADDON_1-$ADDON_1_VER.zip' './$ADDON_2/$ADDON_2-$ADDON_2_VER.zip' './$ADDON_3/$ADDON_3-$ADDON_3_VER.zip' './$ADDON_4/$ADDON_4-$ADDON_4_VER.zip' './$ADDON_5/$ADDON_5-$ADDON_5_VER.zip' './$ADDON_6/$ADDON_6-$ADDON_6_VER.zip
-ADDONS=./$ADDON_1/$ADDON_1-$ADDON_1_VER.zip' './$ADDON_2/$ADDON_2-$ADDON_2_VER.zip' './$ADDON_3/$ADDON_3-$ADDON_3_VER.zip' './$ADDON_4/$ADDON_4-$ADDON_4_VER.zip' './$ADDON_5/$ADDON_5-$ADDON_5_VER.zip
+ADDONS=./$ADDON_1/$ADDON_1-$ADDON_1_VER.zip' './$ADDON_2/$ADDON_2-$ADDON_2_VER.zip' './$ADDON_3/$ADDON_3-$ADDON_3_VER.zip' './$ADDON_4/$ADDON_4-$ADDON_4_VER.zip' './$ADDON_5/$ADDON_5-$ADDON_5_VER.zip' './$ADDON_6/$ADDON_6-$ADDON_6_VER.zip
 
 # echo $ADDONS
 

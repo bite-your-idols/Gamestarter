@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+        <category label="PPSSPP RPi">
+        	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
+    	</category>
+</settings>

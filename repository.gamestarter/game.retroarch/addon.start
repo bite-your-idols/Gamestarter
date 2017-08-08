@@ -12,6 +12,7 @@ PROJECT=$(head -c 3 /etc/release)
 ADDON_RA_DIR="/storage/.kodi/addons/game.retroarch"
 ADDON_ES_DIR="/storage/.kodi/addons/game.emulationstation"
 ADDON_DS_DIR="/storage/.kodi/addons/game.drastic/drastic"
+ADDON_PSP_DIR="/storage/.kodi/addons/game.ppsspp"
 CONFIG_FILE="/storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg"
 LIBRETRO_DIR="/storage/.kodi/addons"
 LIBRETRO_CORES_DIR="/storage/.kodi/userdata/addon_data/game.retroarch/cores"
@@ -19,20 +20,22 @@ AMIGA_TEMP_FILE=$ADDON_RA_DIR/launchTemp.uae
 LOG_FILE=/storage/.kodi/temp/retroarch.log
 LOG_FILE_ES=/storage/.kodi/temp/emulationstation.log
 LOG_FILE_DS=/storage/.kodi/temp/drastic.log
+LOG_FILE_PSP=/storage/.kodi/temp/ppsspp.log
 LOG_FILE_RA_DEBUG=/storage/.kodi/temp/retroarch_debug.log
 LOG_FILE_ES_DEBUG=/storage/.kodi/temp/emulationstation_debug.log
 LOG_FILE_DS_DEBUG=/storage/.kodi/temp/drastic_debug.log
+LOG_FILE_PSP_DEBUG=/storage/.kodi/temp/ppsspp_debug.log
 
 case $1 in
-  "emulationstation")  
+  "emulationstation")
   		LOG_FILE=$LOG_FILE_ES
   		ADDON="EmulationStation"
   ;;
-  "drastic")  
+  "drastic")
       LOG_FILE=$LOG_FILE_DS
       ADDON="DraStic"
   ;;
-   *) 
+   *)
 		ADDON="RetroArch"
    ;;
 esac
@@ -133,6 +136,13 @@ case $1 in
     $ADDON_DS_DIR/drastic "$2"  &>  $LOG_FILE_DS_DEBUG
     # /storage/.kodi/addons/script.gamestarter/resources/bin/drastic/drastic "/storage/emulators/roms/nds/0479 - New Super Mario Bros. (E)(Supremacy).nds"
     cd /storage
+  ;;
+
+  "ppsspp") 
+    echo "PPSSPP [ADDON] :: Launch PPSSPP (See process output in ppsspp_debug.log)" >>  $LOG_FILE_PSP
+    echo "PPSSPP [ADDON] :: Launch with direct link:" $@ >>  $LOG_FILE_PSP
+    $ADDON_PSP_DIR/game.ppsspp  &>  $LOG_FILE_PSP_DEBUG
+
   ;;
 
    *) 
