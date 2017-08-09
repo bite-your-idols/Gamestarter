@@ -18,10 +18,16 @@
 - **[DraStic RPi](https://www.raspberrypi.org/forums/viewtopic.php?t=170820&p=1104991):** Experimental Nintendo DS emulator for Raspberry Pi 2/3 ([changelog](https://github.com/bite-your-idols/Gamestarter/blob/master/repository.gamestarter/game.drastic/changelog.txt)).
 - **[PPSSPP RPi](http://ppsspp.org/):** PSP emulator for Raspberry Pi 2/3 ([changelog](https://github.com/bite-your-idols/Gamestarter/blob/master/repository.gamestarter/game.ppsspp/changelog.txt)).
 
-## Documentation
-- coming soon...
+### Additional info
+- **RetroArch**:
+  - Before launching addon, in settings windows, you can download full Lakka core package ([RPi](https://github.com/bite-your-idols/Gamestarter/tree/master/packages/libretro-cores-RPi)/[Generic](https://github.com/bite-your-idols/Gamestarter/tree/master/packages/libretro-cores-Gen)).
+  - You should copy your [ROMs](https://github.com/libretro/Lakka/wiki/ROMs) and [BIOSes](https://github.com/libretro/Lakka/wiki/BIOSes) to default folder `/storage/emulators/` via [Samba](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=Samba_2FSMB).
+  - After launching addon you can enter retroArch menu with default combo `select + start` in your gamepad or `F2` in your keyboard. Then you can download/update cores from [Libretro buildbot](https://buildbot.libretro.com/nightly/linux/armhf/latest/) and other assets.
+  
+- **Advanced Emulator Launcher**:
+  - After installing you should move `categories.xml` file from `/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/` to `/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/`
 
-## Credits
+### Credits
 - Original **RetroArch** addon by [mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 - **EmulationStation** compiled by [escalade](https://forum.libreelec.tv/thread-302.html)
 - **Advanced Launcher** "theme artworks" by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
