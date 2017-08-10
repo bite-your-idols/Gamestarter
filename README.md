@@ -23,7 +23,7 @@
 - **RetroArch**:
   - Before launching addon, you can download full *Lakka* core package ([RPi](https://github.com/bite-your-idols/Gamestarter/tree/master/packages/libretro-cores-RPi)/[Generic](https://github.com/bite-your-idols/Gamestarter/tree/master/packages/libretro-cores-Gen)) in settings window.
   - You should copy your [ROMs](https://github.com/libretro/Lakka/wiki/ROMs) and [BIOSes](https://github.com/libretro/Lakka/wiki/BIOSes) to default folder `/storage/emulators/` via [Samba](https://wiki.libreelec.tv/index.php?title=Accessing_LibreELEC#tab=Samba_2FSMB) or FTP.
-  - After launching addon you can enter RetroArch menu with default combo `select + start` in your gamepad or `F2` in your keyboard. Then you can download/update cores from [Libretro buildbot](https://buildbot.libretro.com/nightly/linux/armhf/latest/) and other assets.
+  - After launching addon you can enter RetroArch menu with default combo `select + start` in your gamepad or `F1` in your keyboard. Then you can download/update cores from [Libretro buildbot](https://buildbot.libretro.com/nightly/linux/armhf/latest/) and other assets.
   
 - **Advanced Emulator Launcher**:
   - After installing this addon you should move `categories.xml` file from `/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/` to `/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/`
