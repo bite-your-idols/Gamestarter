@@ -34,5 +34,8 @@
 - **Advanced Launcher** "theme artworks" by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
 
 ---
+![screenshot-repo](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/assets/screenshot-addonrepo.png)
+Available add-ons installed in **LibreELEC 8**
+
 ![screenshot-advemulauncher](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/assets/screenshot-estuary-ael-systems.png)
 **Advanced Emulator Launcher** library in **LibreELEC 8**
