@@ -1,3 +1,5 @@
+v1.0.0:
+- Alsa activation in config.txt
 v0.0.9:
 - RetroArch 1.6.4
 v0.0.8:

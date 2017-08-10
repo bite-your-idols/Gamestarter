@@ -1,0 +1,12 @@
+v0.0.6:
+- Requires RA addon v1.0.0
+v0.0.5:
+- Clean Gamestarter folder LS
+v0.0.4:
+- missing libs for Generic
+v0.0.3:
+- code debugging WIP
+v0.0.2:
+- RPi & Gen available
+v0.0.1:
+- Initial Pre-Release

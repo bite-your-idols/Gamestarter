@@ -14,9 +14,10 @@ xbmc.executebuiltin('ActivateWindow(busydialog)')
 os.system("echo 'RetroArch [ADDON] ::' $(date) > /storage/.kodi/temp/retroarch.log")
 os.system("echo '============================================================' >> /storage/.kodi/temp/retroarch.log")
 
-# primero habria que comprobar si es la priemra vez que se lanza entonces hacer la instalacion:
+# primero habria que comprobar si es la primera vez que se lanza entonces hacer la instalacion:
 if os.path.isdir(directory+"/retroarch") == True: 
  	os.system("echo 'RetroArch [ADDON] :: Firts Run!' >> /storage/.kodi/temp/retroarch.log")
+ 	os.system("mount -o remount,rw /flash && if [ -z $(grep 'dtparam=audio=on' /flash/config.txt) ]; then echo 'dtparam=audio=on' >> /flash/config.txt && echo 'RetroArch [ADDON] :: Alsa activated in config.txt' >> /storage/.kodi/temp/retroarch.log ; fi")
  	os.system("mkdir -p /storage/emulators/roms && mkdir -p /storage/emulators/bios && mkdir -p /storage/emulators/saves")
  	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch")
  	os.system("if [ ! -f /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ] ; then cp /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ; fi && rm -rf /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg")
