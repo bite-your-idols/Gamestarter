@@ -28,7 +28,7 @@
       <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="game.emulationstation" name="EmulationStation" provider-name="Bite Your Idols!" version="0.0.6">
+</addon><addon id="game.emulationstation" name="EmulationStation" provider-name="Bite Your Idols!" version="0.0.7">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
     <import addon="game.retroarch" version="1.0.0" />
