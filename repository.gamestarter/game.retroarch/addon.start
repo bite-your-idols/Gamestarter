@@ -79,11 +79,11 @@ case $1 in
       # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
       "$ADDON_ES_DIR/game.emulationstation-$PROJECT" --ignore-gamelist --no-splash &>  $LOG_FILE_ES_DEBUG
   ;;
-   # "ports")  
-   #    # si es un port ejecutamos su sh
-   #    chmod a+x $2
-   #    $2 &>  $LOG_FILE
-  # ;;
+   "ports")  
+      # si es un port ejecutamos su sh
+      chmod a+x $2
+      $2 &>  $LOG_FILE
+   ;;
 
   "amiga") 
     # crear el archivo uae temporal para el adf seleccionado

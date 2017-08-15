@@ -1,3 +1,6 @@
+v8.164.1:
+- Ports launch from external FE
+- New version naming (LE_version.Retroarch_version.addon_version)
 v1.0.0:
 - Alsa activation in config.txt
 v0.0.9:
