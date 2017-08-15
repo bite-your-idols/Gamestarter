@@ -1,7 +1,7 @@
 # Gamestarter add-on repository
 ![Gamestarter-logo](https://github.com/bite-your-idols/gamestarter/raw/master/packages/assets/gamestarter-logo-dark.jpg)
 
-## Retrogaming Kodi add-ons for LibreELEC (RPi2/3 & Generic)
+## Retrogaming Kodi add-ons for LibreELEC (RPi2/3 & Generic x86_64)
 
 > If you are looking for old Gamestarter addon please visit [this link](https://goo.gl/KYwp4q).
 
