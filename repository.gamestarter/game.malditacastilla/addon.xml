@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="game.malditacastilla" name="Maldita Castilla RPi" version="0.0.1" provider-name="Bite Your Idols!">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable game</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Maldita Castilla</summary>
+    <description lang="en">Maldita Castilla</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot01.png</screenshot>
+      <screenshot>resources/screenshot02.jpg</screenshot>
+      <screenshot>fanart.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>

@@ -1,0 +1,29 @@
+# See: http://forum.xbmc.org/showthread.php?tid=162307&pid=1481392#pid1481392
+# Start of hack to load 3rd party libraries
+LIB_3RD_PARTY=/storage/lib
+RAMTMP=/var/tmp/libhack
+if [ -d ${LIB_3RD_PARTY} -a -z "$(echo ${LD_LIBRARY_PATH} | grep -E "^${LIB_3RD_PARTY}|${RAMTMP}")" ]; then
+  if [ -d /etc/init.d ]; then
+    XBMC_INIT=$(grep "DISPLAY=:0.0" /etc/init.d/* | awk -F: '{print $1}')
+    if [ -f /etc/profile -a -f "${XBMC_INIT}" ]; then
+      logger -t "$(basename $0)" "Adding 3rd Party libraries to LD_LIBRARY_PATH!"
+      [ -f /storage/.config/mktmplib ] && . /storage/.config/mktmplib
+      . /etc/profile
+      export LD_LIBRARY_PATH=${LIB_3RD_PARTY}:${LD_LIBRARY_PATH}
+      logger -t "$(basename $0)" "Starting XBMC using ${XBMC_INIT}"
+      . ${XBMC_INIT}
+      reboot
+    else
+      logger -t "$(basename $0)" -p user.warn "Unable to add 3rd Party libraries to LD_LIBRARY_PATH - dependencies not found!"
+    fi
+  else
+    logger -t "$(basename $0)" "Adding 3rd Party libraries to LD_LIBRARY_PATH!"
+    [ -f /storage/.config/mktmplib ] && . /storage/.config/mktmplib || mkdir -p ${RAMTMP}
+    cp -r /etc/profile.d ${RAMTMP}/profile.d
+    echo "export LD_LIBRARY_PATH=${LIB_3RD_PARTY}:\$LD_LIBRARY_PATH" > ${RAMTMP}/profile.d/ZZ-libhack
+#    rm -fr /storage/check.log; echo "echo \$\$, \$PPID, \$LD_LIBRARY_PATH >> /storage/check.log" >> ${RAMTMP}/profile.d/ZZ-libhack
+    mount --bind ${RAMTMP}/profile.d /etc/profile.d
+    logger -t "$(basename $0)" "Succesfully updated /etc/profile.d"
+  fi
+fi
+# End of hack for 3rd party libraries
