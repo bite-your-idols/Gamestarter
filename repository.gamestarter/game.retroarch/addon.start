@@ -80,9 +80,11 @@ case $1 in
       "$ADDON_ES_DIR/game.emulationstation-$PROJECT" --ignore-gamelist --no-splash &>  $LOG_FILE_ES_DEBUG
   ;;
    "ports")  
-      # si es un port ejecutamos su sh
-      chmod a+x $2
-      $2 &>  $LOG_FILE
+       echo 'RetroArch [ADDON] :: Launch Retroarch (Enable debugging and see process output in retroarch_debug.log)' >>  $LOG_FILE
+       echo "RetroArch [ADDON] :: Launch PORT:" $@ >>  $LOG_FILE
+       # si es un port ejecutamos su sh
+       chmod a+x $2
+       $2 &> $LOG_FILE_RA_DEBUG
    ;;
 
   "amiga") 
