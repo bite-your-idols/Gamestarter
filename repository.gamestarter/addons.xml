@@ -10,7 +10,7 @@
 		<description lang="en">Gamestarter add-on repository</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="8.164.1">
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="8.167.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -28,10 +28,10 @@
       <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="game.emulationstation" name="EmulationStation" provider-name="Bite Your Idols!" version="0.0.7">
+</addon><addon id="game.emulationstation" name="EmulationStation" provider-name="Bite Your Idols!" version="0.0.8">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
-    <import addon="game.retroarch" version="1.0.0" />
+    <import addon="game.retroarch" version="8.167.1" />
   </requires>
   <extension library="addon.py" point="xbmc.python.pluginsource">
 		<provides>executable game</provides>
@@ -93,24 +93,6 @@
       <fanart>fanart.jpg</fanart>
       <screenshot>resources/screenshot01.png</screenshot>
       <screenshot>resources/screenshot02.jpg</screenshot>
-      <screenshot>fanart.jpg</screenshot>
-    </assets>
-  </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="1.0.0">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-  </requires>
-  <extension library="addon.py" point="xbmc.python.pluginsource">
-		<provides>executable game</provides>
-	</extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">RetroArch frontend for LibreELEC</summary>
-    <description lang="en">RetroArch frontend for LibreELEC</description>
-    <assets>
-      <icon>icon.jpg</icon>
-      <fanart>fanart.jpg</fanart>
-      <screenshot>resources/screenshot01.png</screenshot>
-      <screenshot>resources/screenshot02.png</screenshot>
       <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
