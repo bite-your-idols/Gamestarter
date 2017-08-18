@@ -75,8 +75,8 @@ case $1 in
       # /storage/.kodi/addons/game.retroarch/game.retroarch-RPi -c "/storage/.kodi/userdata/addon_data/game.retroarch/retroarch/retroarch.cfg" -L /storage/.kodi/addons/game.libretro.fceumm/game.libretro.fceumm.so "/storage/emulators/roms/nes/Super Mario Bros. (Europe) (Rev A).zip" &>  $LOG_FILE_RA_DEBUG
   ;;
   "emulationstation")  
-      echo "Emulationstation [ADDON] :: Launch Emulationstation (See process output in emulationstation_debug.log)" >>  $LOG_FILE_ES
-      # /storage/emulators/emulationstation/emulationstation --no-splash --ignore-gamelist
+      echo "EmulationStation [ADDON] :: Launch EmulationStation (See process output in emulationstation_debug.log)" >>  $LOG_FILE_ES
+      # /storage/emulators/temp/retroarch/temp/retroarch --no-splash --ignore-gamelist
       "$ADDON_ES_DIR/game.emulationstation-$PROJECT" --ignore-gamelist --no-splash &>  $LOG_FILE_ES_DEBUG
   ;;
    "ports")  
