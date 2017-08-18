@@ -28,10 +28,22 @@
 - **Advanced Emulator Launcher**:
   - After installing this addon you should move `categories.xml` file from `/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/` to `/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/`
 
+## Issues & Help
+Please provide log files located in `/storage/.kodi/temp`:
+- retroarch.log
+- retroarch_debug.log
+- emulationstation.log
+- emulationstation_debug.log
+- drastic.log
+- drastic_debug.log
+- ppsspp.log
+- ppsspp_debug.log
+
+
 ## Credits
 - Original **RetroArch** addon by [mezo](http://openelec.tv/forum/128-addons/72972-retroarch-addon-arm-rpi)
 - **EmulationStation** compiled by [escalade](https://forum.libreelec.tv/thread-302.html)
-- **Advanced Launcher** "theme artworks" by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
+- **Advanced Emulator Launcher** "theme artworks" by [tronkyfran](https://github.com/HerbFargus/es-theme-tronkyfran)
 
 ---
 ![screenshot-repo](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/assets/screenshot-addonrepo.png)
@@ -39,3 +51,6 @@ Available add-ons installed in **LibreELEC 8**
 
 ![screenshot-advemulauncher](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/assets/screenshot-estuary-ael-systems.png)
 **Advanced Emulator Launcher** library in **LibreELEC 8**
+
+![screenshot-ESsettings](https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/assets/screenshot-emulationstation-settings.png)
+**EmulationStation** add-on Settings

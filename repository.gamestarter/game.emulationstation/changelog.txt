@@ -1,3 +1,7 @@
+v8.201.1:
+- Default core per system selection in addon settings
+- Default roms path selection in addon settings
+- New version naming (LE_version.Emulationstation_version.addon_version)
 v0.0.8:
 - additional missing lib for Generic
 - Requires RA addon v8.167.1

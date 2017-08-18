@@ -63,7 +63,120 @@ if command == 'DOWNLOAD_THEMES':
 	xbmcgui.Dialog().ok("EmulationStation", "EmulationStation themes downloaded. Select your favourite after launching EmulationStation.")
 
 elif command == 'UPDATE_SYSTEMS':
-	xbmcgui.Dialog().yesno("EmulationStation", "WIP feature");
+	os.system("echo 'EmulationStation [ADDON] :: Updating es_systems.cfg file.' $(date) >> /storage/.kodi/temp/emulationstation.log")
+	import xml.etree.ElementTree as ET
+	# Writes a XML text tag line, indented 2 spaces by default.
+	# Both tag_name and tag_text must be Unicode strings.
+	# Returns an Unicode string.
+	#
+	def XML_text(tag_name, tag_text, num_spaces = 2):
+	    if tag_text:
+	        tag_text = text_escape_XML(tag_text)
+	        line = '{0}<{1}>{2}</{3}>\n'.format(' ' * num_spaces, tag_name, tag_text, tag_name)
+	    else:
+	        # >> Empty tag    
+	        line = '{0}<{1} />\n'.format(' ' * num_spaces, tag_name)
+
+	    return line
+
+	# Some XML encoding of special characters:
+	#   {'\n': '&#10;', '\r': '&#13;', '\t':'&#9;'}
+	#
+	# See http://stackoverflow.com/questions/1091945/what-characters-do-i-need-to-escape-in-xml-documents
+	# See https://wiki.python.org/moin/EscapingXml
+	# See https://github.com/python/cpython/blob/master/Lib/xml/sax/saxutils.py
+	# See http://stackoverflow.com/questions/2265966/xml-carriage-return-encoding
+	#
+	def text_escape_XML(data_str):
+	    # Ampersand MUST BE replaced FIRST
+	    data_str = data_str.replace('&', '&amp;')
+	    data_str = data_str.replace('>', '&gt;')
+	    data_str = data_str.replace('<', '&lt;')
+
+	    data_str = data_str.replace("'", '&apos;')
+	    data_str = data_str.replace('"', '&quot;')
+	    
+	    # --- Unprintable characters ---
+	    data_str = data_str.replace('\n', '&#10;')
+	    data_str = data_str.replace('\r', '&#13;')
+	    data_str = data_str.replace('\t', '&#9;')
+
+	    return data_str
+
+	# archivo = directory.join('es_systems.xml')
+	os.system("rm /storage/.kodi/userdata/addon_data/game.emulationstation/es_systems.cfg")
+	archivo = "/storage/.kodi/userdata/addon_data/game.emulationstation/es_systems.cfg"
+	ruta_roms =xbmcaddon.Addon(id='game.emulationstation').getSetting('romspath')
+	app_file= '/storage/.kodi/addons/game.retroarch/addon.start'
+
+	emus=[
+		["amiga","Commodore Amiga",".adf"],
+		["atari2600","Atari 2600",".a26 .bin .rom .zip .gz .A26 .BIN .ROM .ZIP .GZ"],
+		["atarilynx","Atari Lynx",".lnx .zip .LNX .ZIP"],
+		["gamegear","Game Gear",".gg .bin .sms .zip .GG .BIN .SMS .ZIP"],
+		["gba","Game Boy Advance",".gba .zip .GBA .ZIP"],
+		["gb","Game Boy/Game Boy Color",".gb .zip .GB .ZIP .gbc .GBC"],
+		["mame","MAME",".zip .ZIP"],
+		["fba","FBA",".zip .ZIP"],
+		["neogeo","NEOGEO",".zip .ZIP"],
+		["msx","MSX/MSX2",".rom .mx1 .mx2 .col .dsk .zip .ROM .MX1 .MX2 .COL .DSK .ZIP"],
+		["nes","Nintendo NES",".nes .zip .NES .ZIP .fds .FDS"],
+		["mastersystem","Sega Master System",".sms .bin .zip .SMS .BIN .ZIP"],
+		["snes","Super Nintendo",".bin .smc .sfc .fig .swc .mgd .zip .BIN .SMC .SFC .FIG .SWC .MGD .ZIP"],
+		["megadrive","MegaDrive/MegaCD",".smd .bin .gen .md .sg .zip .SMD .BIN .GEN .MD .SG .ZIP"],
+		["pcengine","PC Engine/PC Engine CD",".pce .cue .zip .PCE .CUE .ZIP"],
+		["psx","PlayStation",".bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx .BIN .CUE .CBN .IMG .ISO .M3U .MDF .PBP .TOC .Z .ZNX .zip .ZIP"],
+		["n64","Nintendo 64",".z64 .n64 .v64 .Z64 .N64 .V64"],
+		["psp","PSP",".iso .pbp .cso .ISO .PBP .CSO"],
+		["zxspectrum","ZX Spectrum","sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk .zip SNA .SZX .Z80 .TAP .TZX .GZ .UDI .MGT .IMG .TRD .SCL .DSK .ZIP"],
+		["videopac","Philips Videopac",".bin .zip .BIN .ZIP"],
+		["ports","PC Games",".sh .SH"],
+		["scummvm","ScummVM",".sh .SH"],
+		["saturn","Sega Saturn",".bin .cue .iso"],
+		["wonderswan","Wonderswan",".ws .wsc .zip .ZIP"],
+		["virtualboy","Virtual Boy",".zip .ZIP .vb .VB"],
+		["gw","Game and Watch",".zip .ZIP .mgw .MGW"],
+		["sega32x","Sega 32x",".32x .32X .smd .SMD .bin .BIN .zip .ZIP"],
+		["segasg1000","Sega SG1000",".sg .SG .zip .ZIP"],
+		["segacd","Sega CD",".cue .CUE .iso .ISO"],
+		["supergrafx","SuperGrafx",".pce .PCE .cue .CUE .sgx .SGX .zip .ZIP .ccd .CCD"],
+		["atari7800","Atari 7800",".a78 .A78 .bin .BIN .zip .ZIP"],
+		["ngp","Neo-Geo Pocket/Neo Geo Pocket Color",".zip .ZIP .ngc .NGC .ngp .NGP"],
+		["vectrex","Vectrex",".zip .ZIP .vec .VEC .bin .BIN"],
+		["lutro","Lutro",".zip .ZIP .lua .LUA"],
+		["atarist","Atari ST",".st .ST .stx .STX .zip .ZIP"],
+		["amstradcpc","Amstrad CPC",".dsk .DSK .zip .ZIP"],
+		["zx81","ZX81",".tzx .TZX .p .P .zip .ZIP"],
+		["dreamcast","Dreamcast",".gdi .GDI .cdi .CDI"],
+		["nds","Nintendo DS",".nds .zip .NDS .ZIP"]
+	]
+
+	str_list = []
+	str_list.append('<?xml version="1.0"?>\n')
+	str_list.append('<systemList>\n')
+
+	# # --- Write launchers ---
+	for emuID in emus:
+	# # 	# Data which is not string must be converted to string
+		# emu = emus[emuID]
+		str_list.append('<system>\n')
+		str_list.append(XML_text('name', emuID[0]))
+		str_list.append(XML_text('fullname', emuID[1]))
+		str_list.append(XML_text('path', ruta_roms+emuID[0]))
+		str_list.append(XML_text('extension', emuID[2]))
+		str_list.append(XML_text('command', app_file+' '+xbmcaddon.Addon(id='game.emulationstation').getSetting(emuID[0])+' %ROM% ES'))
+		str_list.append(XML_text('platform', emuID[0]))
+		str_list.append('</system>\n')
+	# End of file
+	str_list.append('</systemList>\n')
+
+	full_string = ''.join(str_list).encode('utf-8')
+	file_obj = open(archivo, 'w')
+	file_obj.write(full_string)
+	file_obj.close()
+
+	os.system("echo 'EmulationStation [ADDON] :: es_systems.cfg updated.' >> /storage/.kodi/temp/emulationstation.log")
+	xbmcgui.Dialog().ok("EmulationStation", "EmulationStation Systems config file (es_systems.cfg) updated.");
 	
 else:
 	xbmc.executebuiltin('ActivateWindow(busydialog)')

@@ -2,52 +2,51 @@
 <settings>
         <category label="Settings">
         	<setting id="ask" type="bool" label="Ask for confimation at exit kodi" default="true"/>
-                <setting label="Install ES themes... (Carbon, Clean Look, Pixel, Canela, Tronkyfran &amp; Turtle-Pi)" type="action" option="close" action="RunPlugin(plugin://game.emulationstation/?com=DOWNLOAD_THEMES)"/>
-                <setting label="Open RetroArch Add-on settings..." type="action" option="close" action="RunPlugin(plugin://game.retroarch/?com=OPEN_SETTINGS)"/>
+            <setting label="Install ES themes... (Carbon, Clean Look, Pixel, Canela, Tronkyfran &amp; Turtle-Pi)" type="action" option="close" action="RunPlugin(plugin://game.emulationstation/?com=DOWNLOAD_THEMES)"/>
+            <setting label="Open RetroArch Add-on settings..." type="action" option="close" action="RunPlugin(plugin://game.retroarch/?com=OPEN_SETTINGS)"/>
     	</category>
-        <category label="es_systems.cfg">
-                <setting id="romspath" type="folder" label="Select your roms folder" default="/storage/emulators/roms/" source="auto" option="writeable"/>
-                <setting type="sep"/>
-                <setting id="emu_amiga" type="text" label="Amiga 500" default="uae4arm" option="writeable"/>
-                <setting id="emu_atari2600" type="text" label="Atari 2600" default="stella" option="writeable"/>
-                <setting id="emu_atarilynx" type="text" label="Atari Lynx" default="handy" option="writeable"/>
-                <setting id="emu_gamegear" type="text" label="Game Gear" default="genesis_plus_gx" option="writeable"/>
-                <setting id="emu_gba" type="text" label="Game Boy Advance" default="gpsp" option="writeable"/>
-                <setting id="emu_gb" type="text" label="Game Boy/Game Boy Color" default="gambatte" option="writeable"/>
-                <setting id="emu_mame" type="text" label="MAME" default="mame2003" option="writeable"/>
-                <setting id="emu_fba" type="text" label="FBA" default="fbalpha" option="writeable"/>
-                <setting id="emu_neogeo" type="text" label="Neo-Geo" default="fbalpha" option="writeable"/>
-                <setting id="emu_msx" type="text" label="MSX/MSX2" default="bluemsx" option="writeable"/>
-                <setting id="emu_nes" type="text" label="NES" default="fceumm" option="writeable"/>
-                <setting id="emu_mastersystem" type="text" label="Master System" default="genesis_plus_gx" option="writeable"/>
-                <setting id="emu_snes" type="text" label="SNES" default="snes9x2010" option="writeable"/>
-                <setting id="emu_megadrive" type="text" label="Megadrive/Mega CD" default="genesis_plus_gx" option="writeable"/>
-                <setting id="emu_pcengine" type="text" label="PC Engine/PC Engine CD" default="mednafen_pce_fast" option="writeable"/>
-                <setting id="emu_psx" type="text" label="Playstation" default="pcsx_rearmed" option="writeable"/>
-                <setting id="emu_n64" type="text" label="Nintendo 64" default="mupen64plus" option="writeable"/>
-                <setting id="emu_psp" type="text" label="PSP" default="ppsspp" option="writeable"/>
-                <setting id="emu_zxspectrum" type="text" label="ZX Spectrum" default="fuse" option="writeable"/>
-                <setting id="emu_videopac" type="text" label="Magnavox Odyssey/Philips Videopac" default="o2em" option="writeable"/>
-                <setting id="emu_ports" type="text" label="PC Games" default="ports" option="writeable"/>
-                <setting id="emu_scummvm" type="text" label="SCUMMVM" default="scummvm" option="writeable"/>
-                <setting id="emu_saturn" type="text" label="Sega Saturn" default="yabause" option="writeable"/>
-                <setting id="emu_wonderswan" type="text" label="Wonderswan" default="mednafen_wswan" option="writeable"/>
-                <setting id="emu_virtualboy" type="text" label="Virtual Boy" default="mednafen_vb" option="writeable"/>
-                <setting id="emu_gw" type="text" label="Game and Watch" default="gw" option="writeable"/>
-                <setting id="emu_sega32" type="text" label="Sega 32x" default="picodrive" option="writeable"/>
-                <setting id="emu_sg1000" type="text" label="Sega SG1000" default="picodrive" option="writeable"/>
-                <setting id="emu_segacd" type="text" label="Sega CD" default="genesis_plus_gx" option="writeable"/>
-                <setting id="emu_supergrafx" type="text" label="Supergrafx" default="mednafen_supergrafx" option="writeable"/>
-                <setting id="emu_atari7800" type="text" label="Atari 7800" default="prosystem" option="writeable"/>
-                <setting id="emu_ngp" type="text" label="Neo-Geo Pocket" default="mednafen_ngp" option="writeable"/>
-                <setting id="emu_vectrex" type="text" label="Vectrex" default="vecx" option="writeable"/>
-                <setting id="emu_lutro" type="text" label="Lutro" default="lutro" option="writeable"/>
-                <setting id="emu_atarist" type="text" label="Atari ST" default="hatari" option="writeable"/>
-                <setting id="emu_amstradcpc" type="text" label="AmstradCPC" default="cap32" option="writeable"/>
-                <setting id="emu_zx81" type="text" label="ZX81" default="81" option="writeable"/>
-                <setting id="emu_dreamcast" type="text" label="Dreamcast" default="reicast" option="writeable"/>
-                <setting id="emu_nds" type="text" label="Nintendo DS" default="drastic" option="writeable"/>
-                <setting type="sep"/>
-                <setting label="Update es_systems.cfg..." type="action" option="close" action="RunPlugin(plugin://game.emulationstation/?com=UPDATE_SYSTEMS)"/>
+        <category label="es_systems.cfg">   
+            <setting id="romspath" type="folder" label="Select your roms folder" default="/storage/emulators/roms/" source="auto" option="writeable"/>
+            <setting label="Update es_systems.cfg..." type="action" option="close" action="RunPlugin(plugin://game.emulationstation/?com=UPDATE_SYSTEMS)"/> 
+            <setting type="sep"/>
+            <setting id="amiga" type="text" label="Amiga 500" default="uae4arm" option="writeable"/>
+            <setting id="atari2600" type="text" label="Atari 2600" default="stella" option="writeable"/>
+            <setting id="atarilynx" type="text" label="Atari Lynx" default="handy" option="writeable"/>
+            <setting id="gamegear" type="text" label="Game Gear" default="genesis_plus_gx" option="writeable"/>
+            <setting id="gba" type="text" label="Game Boy Advance" default="gpsp" option="writeable"/>
+            <setting id="gb" type="text" label="Game Boy/Game Boy Color" default="gambatte" option="writeable"/>
+            <setting id="mame" type="text" label="MAME" default="mame2003" option="writeable"/>
+            <setting id="fba" type="text" label="FBA" default="fbalpha" option="writeable"/>
+            <setting id="neogeo" type="text" label="Neo-Geo" default="fbalpha" option="writeable"/>
+            <setting id="msx" type="text" label="MSX/MSX2" default="bluemsx" option="writeable"/>
+            <setting id="nes" type="text" label="NES" default="fceumm" option="writeable"/>
+            <setting id="mastersystem" type="text" label="Master System" default="genesis_plus_gx" option="writeable"/>
+            <setting id="snes" type="text" label="SNES" default="snes9x2010" option="writeable"/>
+            <setting id="megadrive" type="text" label="Megadrive/Mega CD" default="genesis_plus_gx" option="writeable"/>
+            <setting id="pcengine" type="text" label="PC Engine/PC Engine CD" default="mednafen_pce_fast" option="writeable"/>
+            <setting id="psx" type="text" label="Playstation" default="pcsx_rearmed" option="writeable"/>
+            <setting id="n64" type="text" label="Nintendo 64" default="mupen64plus" option="writeable"/>
+            <setting id="psp" type="text" label="PSP" default="ppsspp" option="writeable"/>
+            <setting id="zxspectrum" type="text" label="ZX Spectrum" default="fuse" option="writeable"/>
+            <setting id="videopac" type="text" label="Magnavox Odyssey/Philips Videopac" default="o2em" option="writeable"/>
+            <setting id="ports" type="text" label="PC Games" default="ports" option="writeable"/>
+            <setting id="scummvm" type="text" label="SCUMMVM" default="scummvm" option="writeable"/>
+            <setting id="saturn" type="text" label="Sega Saturn" default="yabause" option="writeable"/>
+            <setting id="wonderswan" type="text" label="Wonderswan" default="mednafen_wswan" option="writeable"/>
+            <setting id="virtualboy" type="text" label="Virtual Boy" default="mednafen_vb" option="writeable"/>
+            <setting id="gw" type="text" label="Game and Watch" default="gw" option="writeable"/>
+            <setting id="sega32" type="text" label="Sega 32x" default="picodrive" option="writeable"/>
+            <setting id="sg1000" type="text" label="Sega SG1000" default="picodrive" option="writeable"/>
+            <setting id="segacd" type="text" label="Sega CD" default="genesis_plus_gx" option="writeable"/>
+            <setting id="supergrafx" type="text" label="Supergrafx" default="mednafen_supergrafx" option="writeable"/>
+            <setting id="atari7800" type="text" label="Atari 7800" default="prosystem" option="writeable"/>
+            <setting id="ngp" type="text" label="Neo-Geo Pocket" default="mednafen_ngp" option="writeable"/>
+            <setting id="vectrex" type="text" label="Vectrex" default="vecx" option="writeable"/>
+            <setting id="lutro" type="text" label="Lutro" default="lutro" option="writeable"/>
+            <setting id="atarist" type="text" label="Atari ST" default="hatari" option="writeable"/>
+            <setting id="amstradcpc" type="text" label="AmstradCPC" default="cap32" option="writeable"/>
+            <setting id="zx81" type="text" label="ZX81" default="81" option="writeable"/>
+            <setting id="dreamcast" type="text" label="Dreamcast" default="reicast" option="writeable"/>
+            <setting id="nds" type="text" label="Nintendo DS" default="drastic" option="writeable"/>
     	</category>
 </settings>
