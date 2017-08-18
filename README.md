@@ -29,15 +29,7 @@
   - After installing this addon you should move `categories.xml` file from `/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/` to `/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/`
 
 ## Issues & Help
-Please provide log files located in `/storage/.kodi/temp`:
-- retroarch.log
-- retroarch_debug.log
-- emulationstation.log
-- emulationstation_debug.log
-- drastic.log
-- drastic_debug.log
-- ppsspp.log
-- ppsspp_debug.log
+Please provide log files located in `/storage/.kodi/temp`.
 
 
 ## Credits
