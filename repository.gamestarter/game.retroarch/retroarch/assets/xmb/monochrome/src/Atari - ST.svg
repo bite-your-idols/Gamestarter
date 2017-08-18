@@ -1,35 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1"
-	 id="svg2" inkscape:export-filename="/home/kivutar/Bureau/lakka-menu/reload.png" inkscape:export-xdpi="90" inkscape:version="0.48.4 r9939" inkscape:export-ydpi="90" sodipodi:docname="reload.svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px"
-	 viewBox="0 128 64 64" enable-background="new 0 128 64 64" xml:space="preserve">
-<path id="Keyboard" fill="#F2F2F2" d="M58,145H6c-0.991,0-2,1.008-2,2v26c0,0.994,1.009,2,2,2h52c0.991,0,2-1.006,2-2v-26
-	C60,146.008,58.991,145,58,145z M42,151c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1
-	V151z M36,151c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1V151z M36,156h3
-	c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3C35,156.447,35.447,156,36,156z M30,151c0-0.553,0.447-1,1-1
-	h3c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1V151z M30,156h3c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1
-	h-3c-0.553,0-1-0.447-1-1v-3C29,156.447,29.447,156,30,156z M24,151c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v3
-	c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1V151z M29,163v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1
-	h3C28.553,162,29,162.447,29,163z M24,156h3c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3
-	C23,156.447,23.447,156,24,156z M18,151c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1
-	V151z M23,163v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3C22.553,162,23,162.447,23,163z M12,151
-	c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1V151z M6,151c0-0.553,0.447-1,1-1h3
-	c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1H7c-0.553,0-1-0.447-1-1V151z M6,157c0-0.553,0.447-1,1-1h8c0.553,0,1,0.447,1,1v3
-	c0,0.553-0.447,1-1,1H7c-0.553,0-1-0.447-1-1V157z M11,172c0,0.553-0.447,1-1,1H7c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3
-	c0.553,0,1,0.447,1,1V172z M11,166c0,0.553-0.447,1-1,1H7c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V166z
-	 M17,172c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V172z M17,166
-	c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V166z M17,160v-3c0-0.553,0.447-1,1-1h3
-	c0.553,0,1,0.447,1,1v3c0,0.553-0.447,1-1,1h-3C17.447,161,17,160.553,17,160z M34,172c0,0.553-0.447,1-1,1H19c-0.553,0-1-0.447-1-1
-	v-3c0-0.553,0.447-1,1-1h14c0.553,0,1,0.447,1,1V172z M34,167h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3
-	c0.553,0,1,0.447,1,1v3C35,166.553,34.553,167,34,167z M40,172c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1
-	h3c0.553,0,1,0.447,1,1V172z M40,167h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1v3
-	C41,166.553,40.553,167,40,167z M46,172c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1
-	V172z M46,161h-4c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h4c0.553,0,1,0.447,1,1v3C47,160.553,46.553,161,46,161z M52,172
-	c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V172z M52,166c0,0.553-0.447,1-1,1h-3
-	c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V166z M58,172c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3
-	c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V172z M58,166c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-4c0-0.553-0.447-1-1-1h-1
-	c-0.553,0-1-0.447-1-1v-3c0-0.553,0.447-1,1-1h6c0.553,0,1,0.447,1,1V166z M58,154c0,0.553-0.447,1-1,1h-3c-0.553,0-1-0.447-1-1v-3
-	c0-0.553,0.447-1,1-1h3c0.553,0,1,0.447,1,1V154z"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3079"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   width="64"
+   height="64"
+   xml:space="preserve"
+   sodipodi:docname="Atari - ST.svg"
+   inkscape:export-filename="/Users/margetts/Desktop/Icon Workshop/Monochrome Plus June/png/Atari - ST.png"
+   inkscape:export-xdpi="360"
+   inkscape:export-ydpi="360"><metadata
+     id="metadata3085"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3083" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1676"
+     inkscape:window-height="1005"
+     id="namedview3081"
+     showgrid="false"
+     inkscape:zoom="3.8"
+     inkscape:cx="6.9736842"
+     inkscape:cy="40"
+     inkscape:window-x="4"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g3087" /><g
+     id="g3087"
+     inkscape:groupmode="layer"
+     inkscape:label="Atari - ST"
+     transform="matrix(1.25,0,0,-1.25,0,64)"><g
+       id="g3097"
+       transform="matrix(0.8,0,0,0.8,0,0.4)"><path
+         id="path3089"
+         style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 59,37 -54,0 0,-4.069 54,0 0,4.069 z"
+         inkscape:connector-curvature="0" /><g
+         transform="translate(54,44)"
+         id="g3091"><path
+           id="path3093"
+           style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           d="m 0,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -1,0 -5,-5 -1,0 5,5 -8,0 0,-6 54,0 0,6 -5,0 z"
+           inkscape:connector-curvature="0" /></g><path
+         id="path3095"
+         style="fill:#f2f2f2;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 58,29 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m 0,-6 -2,0 0,5 2,0 0,-5 z m -3,9 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m -3,9 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m -3,9 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m -3,9 -3,0 0,2 3,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m -3,3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m -3,3 -2,0 0,2 2,0 0,-2 z m 0,-3 -2,0 0,2 2,0 0,-2 z m -4,6 -3,0 0,2 3,0 0,-2 z m 0,-4 0,-2 -2,0 -2,0 0,2 2,0 0,3 2,0 0,-3 z m -2,-5 -4,0 0,2 4,0 0,-2 z m -5,5 2,0 0,-2 -2,0 0,2 z m 0,-5 -19,0 0,2 19,0 0,-2 z m -20,0 -3,0 0,2 3,0 0,-2 z m -3,5 4,0 0,-2 -4,0 0,2 z m 0,3 3,0 0,-2 -3,0 0,2 z m 0,3 2,0 0,-2 -2,0 0,2 z m 3,0 2,0 0,-2 -2,0 0,2 z m 3,-5 -2,0 0,2 2,0 0,-2 z m 1,-3 -2,0 0,2 2,0 0,-2 z m -1,8 2,0 0,-2 -2,0 0,2 z m 3,-5 -2,0 0,2 2,0 0,-2 z m 1,-3 -2,0 0,2 2,0 0,-2 z m -1,8 2,0 0,-2 -2,0 0,2 z m 3,-5 -2,0 0,2 2,0 0,-2 z m 1,-3 -2,0 0,2 2,0 0,-2 z m -1,8 2,0 0,-2 -2,0 0,2 z m 3,-5 -2,0 0,2 2,0 0,-2 z m 1,-3 -2,0 0,2 2,0 0,-2 z m -1,8 2,0 0,-2 -2,0 0,2 z m 3,-5 -2,0 0,2 2,0 0,-2 z m 1,-3 -2,0 0,2 2,0 0,-2 z m -1,8 2,0 0,-2 -2,0 0,2 z m 3,-5 -2,0 0,2 2,0 0,-2 z m 1,-3 -2,0 0,2 2,0 0,-2 z m 2,3 -2,0 0,2 2,0 0,-2 z m -3,5 2,0 0,-2 -2,0 0,2 z m 6,-5 -2,0 0,2 2,0 0,-2 z m -3,5 2,0 0,-2 -2,0 0,2 z m 8,0 3,0 0,-2 -3,0 0,2 z M 8.164,32 5,32 5,19 59,19 59,32 8.164,32 z"
+         inkscape:connector-curvature="0" /></g></g></svg>
