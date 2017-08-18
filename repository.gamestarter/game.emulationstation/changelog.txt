@@ -1,3 +1,7 @@
+v0.0.8:
+- additional missing lib for Generic
+- Requires RA addon v8.167.1
+- Code optimization
 v0.0.7:
 - additional missing libs for Generic
 v0.0.6:
