@@ -22,7 +22,7 @@ if command == 'DOWNLOAD_CORES':
 	
 	xbmcgui.Dialog().ok("RetroArch", project)
 	# descarga de cores
-	xbmcgui.Dialog().ok("RetroArch", "Downloading Libretro cores full package, please do not power off your device."+project)
+	xbmcgui.Dialog().ok("RetroArch", "Downloading Libretro cores full package, please do not power off your device.")
 	os.system('kodi-send --action="xbmc.ActivateWindow(busydialog)"')
 	os.system("echo 'RetroArch [ADDON] :: Downloading Libretro cores full package.' $(date) >> /storage/.kodi/temp/retroarch.log")
 	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch/cores")

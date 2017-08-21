@@ -10,7 +10,7 @@
 		<description lang="en">Gamestarter add-on repository</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="8.167.1">
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="8.167.2">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
