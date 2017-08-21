@@ -11,7 +11,7 @@ addonname   = addon.getAddonInfo('name')
 
 script_file = os.path.realpath(__file__)
 directory = os.path.dirname(script_file)
-project=str(os.popen('$(head -c 3 /etc/release)').read())
+project=str(os.popen('echo $(head -c 3 /etc/release)').read())
 
 # miramos si hay alguna accion
 args = urlparse.parse_qs(sys.argv[2][1:])
@@ -19,8 +19,10 @@ command = args['com'][0] if 'com' in args else 'EXEC_ADDON'
 # log_debug('command = "{0}"'.format(command))
 
 if command == 'DOWNLOAD_CORES':
+	
+	xbmcgui.Dialog().ok("RetroArch", project)
 	# descarga de cores
-	xbmcgui.Dialog().ok("RetroArch", "Downloading Libretro cores full package, please do not power off your device.")
+	xbmcgui.Dialog().ok("RetroArch", "Downloading Libretro cores full package, please do not power off your device."+project)
 	os.system('kodi-send --action="xbmc.ActivateWindow(busydialog)"')
 	os.system("echo 'RetroArch [ADDON] :: Downloading Libretro cores full package.' $(date) >> /storage/.kodi/temp/retroarch.log")
 	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch/cores")
@@ -37,8 +39,13 @@ if command == 'DOWNLOAD_CORES':
 	os.system("cat /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.* > /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
 	os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac")
 	os.system("tar -xf /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz -C /storage/.kodi/userdata/addon_data/game.retroarch/ -xz && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
-	os.system("cp /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores-RPi/* /storage/.kodi/userdata/addon_data/game.retroarch/cores/")
-	os.system("rm -rf /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores-RPi")
+	
+	if project in "Pi":
+		os.system("cp /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores-RPi/* /storage/.kodi/userdata/addon_data/game.retroarch/cores/")
+		os.system("rm -rf /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores-RPi")
+	else:
+		os.system("cp /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores-Gen/* /storage/.kodi/userdata/addon_data/game.retroarch/cores/")
+		os.system("rm -rf /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores-Gen")
 
 	os.system("echo 'RetroArch [ADDON] :: Libretro cores downloaded.' >> /storage/.kodi/temp/retroarch.log")
 	os.system('kodi-send --action="xbmc.Dialog.Close(busydialog)"')
@@ -59,6 +66,7 @@ else:
 	 	os.system("mount -o remount,rw /flash && if [ -z $(grep 'dtparam=audio=on' /flash/config.txt) ]; then echo 'dtparam=audio=on' >> /flash/config.txt && echo 'RetroArch [ADDON] :: Alsa activated in config.txt' >> /storage/.kodi/temp/retroarch.log ; fi")
 	 	os.system("mkdir -p /storage/emulators/roms && mkdir -p /storage/emulators/bios && mkdir -p /storage/emulators/saves")
 	 	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch")
+	 	os.system("PROJECT=$(head -c 3 /etc/release) && if [[ $PROJECT == 'Gen' ]] ; then mv -n /storage/.kodi/addons/game.retroarch/retroarch/retroarch-Gen.cfg /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg ; else mv -n /storage/.kodi/addons/game.retroarch/retroarch/retroarch-RPi.cfg /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg ; fi")
 	 	os.system("if [ ! -f /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ] ; then cp /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ; fi && rm -rf /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg")
 	 	os.system("cp -r /storage/.kodi/addons/game.retroarch/retroarch/* /storage/.kodi/userdata/addon_data/game.retroarch")
 	 	os.system("rm -rf /storage/.kodi/addons/game.retroarch/retroarch")
