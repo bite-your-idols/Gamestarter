@@ -28,7 +28,7 @@
 - **Advanced Emulator Launcher**:
   - After installing this addon you should move `categories.xml` file from `/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/` to `/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/`
   
-- **Advanced Emulator Launcher**:
+- **EmulationStation**:
   - Before launching the addon you can edit default roms path from addon settings (default: `/storage/emulators/roms`)
   - Also you can decide what core to use with each system editing the list in addon settings.
 
