@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Game Gear</name>
+  <category>GAMESTARTER</category>
+  <year>1990</year>
+  <genre>Fourth generation console</genre>
+  <developer>SEGA</developer>
+  <rating></rating>
+  <plot>The Game Gear is an 8-bit handheld game console released by Sega on October 6, 1990 in Japan, 1991 in North America and Europe, and Australia in 1992. The Game Gear primarily competed with Nintendo's Game Boy, the Atari Lynx and NEC's TurboExpress. The handheld shares much of its hardware with the Master System and is able to play its own titles as well as those of the Master System, the latter being made possible by the use of an adapter. Containing a full-color backlit screen with a landscape format, Sega positioned the Game Gear as a technologically superior handheld to the Game Boy.</plot>
+  <platform>SEGA Game Gear</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>genesis_plus_gx &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Game Gear</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/gamegear/</ROM_path>
+  <ROM_ext>gg|zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/gamegear/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>MSX / MSX2</name>
+  <category>GAMESTARTER</category>
+  <year>1983</year>
+  <genre></genre>
+  <developer>Microsoft Japan</developer>
+  <rating></rating>
+  <plot>MSX is the name of a standardized home computer architecture, first announced by Microsoft on June 16, 1983,[1] and marketed by Kazuhiko Nishi, then Vice-president at Microsoft Japan and Director at ASCII Corporation. Microsoft conceived the project as an attempt to create unified standards among various hardware makers of the period.
+    Before the appearance and great success of Nintendo's Family Computer, MSX was the platform for which major Japanese game studios, such as Konami and Hudson Soft, produced video game titles. The Metal Gear series, for example, was originally written for MSX hardware.</plot>
+  <platform>Microsoft MSX / MSX2</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>bluemsx &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>MSX</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/msx/</ROM_path>
+  <ROM_ext>rom|mx1|mx2|col|dsk|zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/msx/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

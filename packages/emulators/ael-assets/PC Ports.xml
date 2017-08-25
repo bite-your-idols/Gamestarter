@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>PC Ports</name>
+  <category>GAMESTARTER</category>
+  <year></year>
+  <genre>Computer Game Ports</genre>
+  <developer></developer>
+  <rating></rating>
+  <plot></plot>
+  <platform>PC Ports</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>ports &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>PC Ports</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/ports/</ROM_path>
+  <ROM_ext>sh</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/ports/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

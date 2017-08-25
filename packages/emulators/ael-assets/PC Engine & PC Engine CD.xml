@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>PC Engine/PC Engine CD</name>
+  <category>GAMESTARTER</category>
+  <year>1987</year>
+  <genre>Fourth generation console</genre>
+  <developer>NEC</developer>
+  <rating></rating>
+  <plot>The TurboGrafx-16 Entertainment SuperSystem, known in Japan and in France as the PC Engine (PCエンジン Pī Shī Enjin), is a home video game console joint-developed by Hudson Soft and NEC, released in Japan on October 30, 1987, in the United States on August 29, 1989, and in France on November 22, 1989. It was the first console released in the 16-bit era, albeit still utilizing an 8-bit CPU. Originally intended to compete with the Nintendo Entertainment System (NES), it ended up competing with the Sega Genesis, and later on the Super NES.
+    
+The TurboGrafx-16 was the first video game console to have a CD-ROM peripheral, and first device ever to use CD-ROM as a storage medium for video games. NEC released the CD-ROM² (シーディーロムロム Shī Dī Romu Romu?, officially pronounced "CD-ROM-ROM") in Japan on December 4, 1988, and released the TurboGrafx-CD in the United States on August 1, 1990.</plot>
+  <platform>NEC PC Engine/TurboGrafx 16</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>mednafen_pce_fast &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>PC Engine</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/pcengine/</ROM_path>
+  <ROM_ext>pce|cue</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/pcengine/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

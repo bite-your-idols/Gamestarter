@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Nintendo 64</name>
+  <category>GAMESTARTER</category>
+  <year>1996</year>
+  <genre>Fifth generation console</genre>
+  <developer>Nintendo</developer>
+  <rating></rating>
+  <plot>The Nintendo 64 (Japanese: ニンテンドー64 Hepburn: Nintendō Rokujūyon), stylized as NINTENDO64 and often referred to as N64, is Nintendo's third home video game console for the international market. Named for its 64-bit central processing unit, it was released in June 1996 in Japan, September 1996 in North America, March 1997 in Europe and Australia, September 1997 in France and December 1997 in Brazil. It is the industry's last major home console to use the cartridge as its primary storage format, although current handheld systems (such as the PlayStation Vita and Nintendo 3DS) also use cartridges. While the Nintendo 64 was succeeded by Nintendo's MiniDVD-based GameCube in November 2001, the consoles remained available until the system was retired in late 2003.</plot>
+  <platform>Nintendo 64</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>mupen64plus &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Nintendo 64</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/n64/</ROM_path>
+  <ROM_ext>v64|n64|z64|zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/n64/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

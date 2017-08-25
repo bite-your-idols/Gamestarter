@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>PSP</name>
+  <category>GAMESTARTER</category>
+  <year>2004</year>
+  <genre>Seventh generation console</genre>
+  <developer>SONY</developer>
+  <rating></rating>
+  <plot>The PlayStation Portable (PSP) is a handheld game console developed by Sony. Development of the console was announced during E3 2003, and it was unveiled on May 11, 2004, at a Sony press conference before E3 2004. The system was released in Japan on December 12, 2004, in North America on March 24, 2005, and in the PAL region on September 1, 2005. It primarily competed with the Nintendo DS, as part of the seventh generation of video games.
+
+The PlayStation Portable became the most powerful portable system when launched, just after the Nintendo DS in 2004. It was the first real competitor to Nintendo's handheld domination, where many challengers, such as SNK's Neo Geo Pocket and Nokia's N-Gage, failed. Its GPU encompassed high-end graphics on a handheld, while its 4.3 inch viewing screen and multi-media capabilities, such as its video player and TV tuner, made the PlayStation Portable a major mobile entertainment device at the time. It also features connectivity with the PlayStation 3, other PSPs and the Internet. It is the only handheld console to use an optical disc format, Universal Media Disc (UMD), as its primary storage medium.</plot>
+  <platform>Sony PSP</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>ppsspp &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>PSP</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/psp/</ROM_path>
+  <ROM_ext>cso|iso</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/psp/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

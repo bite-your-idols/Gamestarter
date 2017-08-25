@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Nintendo DS</name>
+  <category>GAMESTARTER</category>
+  <year>2004</year>
+  <genre>Seventh generation console</genre>
+  <developer>Nintendo</developer>
+  <rating></rating>
+  <plot>The Nintendo DS (ニンテンドーDS Nintendō DS) is a dual-screen handheld game console developed and released by Nintendo. The device went on sale in North America on November 21, 2004. The DS, short for "Developers' System" or "Dual Screen", introduced distinctive new features to handheld gaming: two LCD screens working in tandem (the bottom one featuring a touchscreen), a built-in microphone, and support for wireless connectivity. Both screens are encompassed within a clamshell design similar to the Game Boy Advance SP. The Nintendo DS also features the ability for multiple DS consoles to directly interact with each other over Wi-Fi within a short range without the need to connect to an existing wireless network. Alternatively, they could interact online using the now-closed Nintendo Wi-Fi Connection service. Its main competitor was Sony's PlayStation Portable as part of the seventh generation era.</plot>
+  <platform>Nintendo DS</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>desmume &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Nintendo DS</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/nds/</ROM_path>
+  <ROM_ext>zip|nds</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/nds/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<category>
+  <name>GAMESTARTER</name>
+  <genre></genre>
+  <rating></rating>
+  <plot>Gamestarter default emulators collection</plot>
+  <Asset_Prefix>Gamestarter</Asset_Prefix>
+</category>
+</advanced_emulator_launcher_configuration>

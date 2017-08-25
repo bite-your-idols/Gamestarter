@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Mega Drive / Mega CD</name>
+  <category>GAMESTARTER</category>
+  <year>1988</year>
+  <genre>Fourth generation console</genre>
+  <developer>SEGA</developer>
+  <rating></rating>
+  <plot>The Sega Genesis, known as the Mega Drive in most regions outside North America, is a 16-bit home video game console which was developed and sold by Sega Enterprises, Ltd. The Genesis was Sega's third console and the successor to the Master System. Sega first released the console as the Mega Drive in Japan in 1988, followed by a North American debut under the Genesis moniker in 1989. In 1990, the console was distributed as the Mega Drive by Virgin Mastertronic in Europe.
+Designed by an R&amp;D team supervised by Hideki Sato and Masami Ishikawa, the hardware was adapted from Sega's System 16 arcade board, centered on a Motorola 68000 processor as a primary CPU and a Zilog Z80 as a secondary processor. The system supports a library of more than 900 games created both by Sega and a wide array of third-party publishers and delivered on ROM-based cartridges. It can play Master System games when the separately sold Power Base Converter is inserted.
+
+The Sega CD, released as the Mega-CD most regions outside North America, is a CD-ROM accessory for the Sega Genesis video game console designed and produced by Sega as part of the fourth generation of video game consoles. The add-on was released on December 12, 1991 in Japan, October 15, 1992 in North America, and 1993 in Europe. The Sega CD lets the user play CD-based games and adds extra hardware functionality, such as a faster central processing unit and graphic enhancements. It can also play audio CDs and CD+G discs.</plot>
+  <platform>Sega Mega Drive / Mega CD</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>genesis_plus_gx &quot;$rom$&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Mega Drive</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/megadrive/</ROM_path>
+  <ROM_ext>smd|md|bin|zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/megadrive/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

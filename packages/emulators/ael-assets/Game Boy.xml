@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Game Boy</name>
+  <category>GAMESTARTER</category>
+  <year>1989</year>
+  <genre>Fourth generation console</genre>
+  <developer>Nintendo</developer>
+  <rating></rating>
+  <plot>The Game Boy is an 8-bit handheld video game device developed and manufactured by Nintendo. It was released in Japan on April 21, 1989, in North America on July 31, 1989, and in Europe on September 28, 1990. It is the first handheld console in the Game Boy line, and was created by Gunpei Yokoi and Nintendo Researc &amp; Development 1 (the same staff who had designed the Game &amp; Watch series as well as several popular games for the Nintendo Entertainment System). Redesigned versions were released in 1996 and 1998, in the form of Game Boy Pocket, and Game Boy Light (Japan only), respectively.</plot>
+  <platform>Nintendo Game Boy</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>gambatte &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Game Boy</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/gb/</ROM_path>
+  <ROM_ext>gb|zip|gbc</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/gb/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

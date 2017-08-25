@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Super Nintendo</name>
+  <category>GAMESTARTER</category>
+  <year>1990</year>
+  <genre>Fourth generation console</genre>
+  <developer>Nintendo</developer>
+  <rating></rating>
+  <plot>The Super Nintendo Entertainment System (officially abbreviated the Super NES or SNES, and commonly shortened to Super Nintendo) is a 16-bit home video game console developed by Nintendo that was released in 1990 in Japan and South Korea, 1991 in North America, 1992 in Europe and Australasia (Oceania), and 1993 in South America. In Japan, the system is called the Super Famicom, or SFC for short.
+The SNES is Nintendo's second home console, following the Nintendo Entertainment System (NES). The console introduced advanced graphics and sound capabilities compared with other consoles at the time. Additionally, development of a variety of enhancement chips (which were integrated on game circuit boards) helped to keep it competitive in the marketplace.</plot>
+  <platform>Nintendo SNES</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>snes9x2010 &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>SNES</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/snes/</ROM_path>
+  <ROM_ext>smc|sfc|zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/snes/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>ZX Spectrum</name>
+  <category>GAMESTARTER</category>
+  <year>1990</year>
+  <genre>Fourth generation console</genre>
+  <developer>Sinclair</developer>
+  <rating></rating>
+  <plot>The ZX Spectrum (UK: /zɛd ɛks ˈspɛktrəm/) is an 8-bit personal home computer released in the United Kingdom in 1982 by Sinclair Research. It was manufactured in Dundee, Scotland, in the now closed Timex factory.
+  The Spectrum was released as eight different models, ranging from the entry level with 16 KB RAM released in 1982 to the ZX Spectrum +3 with 128 KB RAM and built in floppy disk drive in 1987; together they sold in excess of 5 million units worldwide (not counting clones).[6]
+The Spectrum was among the first mainstream-audience home computers in the UK, similar in significance to the Commodore 64 in the USA. The introduction of the ZX Spectrum led to a boom in companies producing software and hardware for the machine,[7] the effects of which are still seen;[1] some credit it as the machine which launched the UK IT industry.[8] Licensing deals and clones followed, and earned Clive Sinclair a knighthood for "services to British industry".</plot>
+  <platform>Sinclair ZX Spectrum</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>fuse &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>ZX Spectrum</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/zxspectrum/</ROM_path>
+  <ROM_ext>tzx|Z80|z80|zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/zxspectrum/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

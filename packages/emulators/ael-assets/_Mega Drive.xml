@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Megadrive</name>
+  <!--
+      If a category named 'Gamestarter' already exists this launcher will be added inside that category.
+      If the category does not exist it will be automatically created. Note that this created
+      category will not have any metadata or assets.
+    -->
+  <category>GAMESTARTER</category>
+  <year>1988</year>
+  <genre>Fourth generation console</genre>
+  <developer>SEGA</developer>
+  <rating></rating>
+  <plot>The Sega Genesis, known as the Mega Drive in most regions outside North America, is a 16-bit home video game console which was developed and sold by Sega Enterprises, Ltd. The Genesis was Sega's third console and the successor to the Master System. Sega first released the console as the Mega Drive in Japan in 1988, followed by a North American debut under the Genesis moniker in 1989. In 1990, the console was distributed as the Mega Drive by Virgin Mastertronic in Europe.
+Designed by an R&amp;D team supervised by Hideki Sato and Masami Ishikawa, the hardware was adapted from Sega's System 16 arcade board, centered on a Motorola 68000 processor as a primary CPU and a Zilog Z80 as a secondary processor. The system supports a library of more than 900 games created both by Sega and a wide array of third-party publishers and delivered on ROM-based cartridges. It can play Master System games when the separately sold Power Base Converter is inserted.</plot>
+  <platform>Sega MegaDrive</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>genesis_plus_gx &quot;$rom$&quot;</args>
+  <args_extra></args_extra>
+  <!--
+      This tag configures the assets of the launcher itself. Image files must be on the same
+      directory as this XML configuration file. AEL will search for graphic files having the 
+      following names:
+          a) <Asset_Prefix>_[icon|fanart|banner|poster|clearlogo].[png|jpg|gif]
+          b) <Asset_Prefix>_[icon|fanart|banner|poster|clearlogo]_NN.[png|jpg|gif]
+
+      If several images are present then AEL will show a dialog and user chooses which image to
+      import. For example: 'Mega Drive_icon_1.jpg' and 'Mega Drive_icon_2.jpg'.
+
+      Image files may have an optinal comment at the end of the filename. For example:
+          a) 'Mega Drive_fanart_Artist_Name.jpg'
+          b) 'Mega Drive_fanart_1_Artist Name.jpg'
+          c) 'Mega Drive_fanart_01_Artist Name.jpg'
+    -->
+  <Asset_Prefix>Mega Drive</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/megadrive/</ROM_path>
+  <ROM_ext>smd|md|bin|zip</ROM_ext>
+  <!--
+      This path is the main path of the ROM assets. When importing, AEL will create the following
+      directories automatically:
+          <ROM_asset_path>/banners/
+          <ROM_asset_path>/boxbacks/
+          <ROM_asset_path>/boxfronts/
+          <ROM_asset_path>/cartridges/
+          <ROM_asset_path>/clearlogos/
+          <ROM_asset_path>/fanarts/
+          <ROM_asset_path>/flyers/
+          <ROM_asset_path>/manuals/
+          <ROM_asset_path>/maps/
+          <ROM_asset_path>/snaps/
+          <ROM_asset_path>/titles/
+          <ROM_asset_path>/trailers/
+
+      If the directory <ROM_asset_path> does not exist at the time of launcher importing then 
+      user will get a warning and ROM asset paths will not be set. This is a security measure
+      to prevent creating lots of directories in the wrong places.
+    -->
+  <ROM_asset_path>/storage/emulators/ael-assets/megadrive/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

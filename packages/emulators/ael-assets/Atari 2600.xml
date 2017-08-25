@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Atari 2600</name>
+  <category>GAMESTARTER</category>
+  <year>1977</year>
+  <genre>Second generation console</genre>
+  <developer>Atari</developer>
+  <rating></rating>
+  <plot>The Atari 2600 (or Atari VCS before 1982) is a home video game console released on September 11, 1977 by Atari, Inc. It is credited with popularizing the use of microprocessor-based hardware and ROM cartridges containing game code, a format first used with the Fairchild Channel F video game console in 1976. This format contrasts with the older model of having non-microprocessor dedicated hardware, which could only play the games which were physically built into the unit.
+
+The console was originally sold as the Atari VCS, an abbreviation for Video Computer System. Following the release of the Atari 5200 in 1982, the VCS was renamed to the "Atari 2600", after the unit's Atari part number, CX2600. The 2600 was typically bundled with two joystick controllers, a conjoined pair of paddle controllers, and a game cartridge: initially Combat, and later Pac-Man.</plot>
+  <platform>Atari 2600</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>stella &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Atari 2600</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/atari2600/</ROM_path>
+  <ROM_ext>a26|bin|zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/atari2600/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

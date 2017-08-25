@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Arcade (MAME)</name>
+  <category>GAMESTARTER</category>
+  <year>1972</year>
+  <genre>Arcade</genre>
+  <developer>MAME</developer>
+  <rating></rating>
+  <plot>MAME (an acronym of Multiple Arcade Machine Emulator) is a free and open source emulator designed to recreate the hardware of arcade game systems in software on modern personal computers and other platforms. The intention is to preserve gaming history by preventing vintage games from being lost or forgotten. The aim of MAME is to be a reference to the inner workings of the emulated arcade machines; the ability to actually play the games is considered "a nice side effect". Joystiq has listed MAME as an application that every gamer should have.
+
+The first public MAME release (0.1) was on February 5, 1997, by Nicola Salmoria. The emulator now supports over seven thousand unique games and ten thousand actual ROM image sets, though not all of the supported games are playable. MESS, an emulator for many video game consoles and computer systems, based on the MAME core, has been integrated into MAME in 2015.</plot>
+  <platform>Arcade</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>mame2003 &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Arcade - MAME</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/mame/</ROM_path>
+  <ROM_ext>zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/mame/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

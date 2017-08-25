@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Amiga 500</name>
+  <category>GAMESTARTER</category>
+  <year>1987</year>
+  <genre>Personal computer</genre>
+  <developer>Commodore International</developer>
+  <rating></rating>
+  <plot>The Amiga is a family of personal computers sold by Commodore in the 1980s and 1990s. Based on the Motorola 68000 family of microprocessors, the machine has a custom chipset with graphics and sound capabilities that were unprecedented for the price, and a pre-emptive multitasking operating system called AmigaOS. The Amiga provided a significant upgrade from earlier 8-bit home computers, including Commodore's own C64.</plot>
+  <platform>Commodore Amiga 500</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>amiga &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Amiga 500</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/amiga/</ROM_path>
+  <ROM_ext>adf</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/amiga/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>

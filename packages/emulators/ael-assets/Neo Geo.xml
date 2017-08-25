@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<advanced_emulator_launcher_configuration>
+<launcher>
+  <name>Neo Geo</name>
+  <category>GAMESTARTER</category>
+  <year>1990</year>
+  <genre>Fourth generation console</genre>
+  <developer>SNK</developer>
+  <rating></rating>
+  <plot>The Neo Geo (Japanese: ネオジオ Hepburn: Neojio), stylised as NEO・GEO, also written as NEOGEO, is a cartridge-based arcade system board and fourth-generation home video game console released on April 26, 1990, by Japanese game company SNK Corporation. It was the first system in SNK's Neo Geo family. The Neo Geo was marketed as 24-bit; its CPU is technically a parallel processing 16/32-bit 68000-based system with an 8/16-bit Z80 coprocessor, while its GPU chipset has a 24-bit graphics data bus.
+
+The Neo Geo originally launched as the MVS (Multi Video System) coin-operated arcade machine. The MVS offers owners the ability to put up to six different cartridges into a single cabinet, a unique feature that was also a key economic consideration for operators with limited floorspace, as well as saving money in the long-run. With its games stored on self-contained cartridges, a game cabinet can be exchanged for a different game title by swapping the game's ROM-cartridge and cabinet artwork. A home console version was also made, called AES (Advanced Entertainment System). It was originally launched as a rental console for video game stores in Japan (called Neo Geo Rental System), with its high price causing SNK not to release it for home use - this was later reversed due to high demand and it came into the market as a luxury console. The AES had the same raw specs as the MVS and had full compatibility, thus managed to bring a true arcade experience to home users. As of 2013 it was the most expensive home video game console ever released, costing US$1,125 adjusted for inflation. The Neo Geo was revived along with the brand overall in December 2012 through the introduction of the Neo Geo X handheld and home system.</plot>
+  <platform>Neo Geo</platform>
+  <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
+  <args>fbalpha &quot;%rom%&quot;</args>
+  <args_extra></args_extra>
+  <Asset_Prefix>Neo Geo</Asset_Prefix>
+  <ROM_path>/storage/emulators/roms/neogeo/</ROM_path>
+  <ROM_ext>zip</ROM_ext>
+  <ROM_asset_path>/storage/emulators/ael-assets/neogeo/</ROM_asset_path>
+</launcher>
+</advanced_emulator_launcher_configuration>
