@@ -27,7 +27,7 @@ if command == 'DOWNLOAD_CORES':
 	os.system("echo 'RetroArch [ADDON] :: Downloading Libretro cores full package.' $(date) >> /storage/.kodi/temp/retroarch.log")
 	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch/cores")
 
-	if project in "Pi":
+	if project.find("Pi") >= 0:
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.aa")
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ab")
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ac")
@@ -40,7 +40,7 @@ if command == 'DOWNLOAD_CORES':
 	os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac")
 	os.system("tar -xf /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz -C /storage/.kodi/userdata/addon_data/game.retroarch/ -xz && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
 	
-	if project in "Pi":
+	if project.find("Pi") >= 0:
 		os.system("cp /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores-RPi/* /storage/.kodi/userdata/addon_data/game.retroarch/cores/")
 		os.system("rm -rf /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores-RPi")
 	else:
