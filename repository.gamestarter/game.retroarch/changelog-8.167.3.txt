@@ -1,0 +1,34 @@
+v8.167.3:
+- Better project type check
+v8.167.2:
+- Generic retroarch.cfg file (download cores using RA's online updater)
+- Generic core package download fix
+v8.167.1:
+- RetroArch 1.6.7
+- Assets, info & autoconfigs update (20170818)
+- Code optimization
+v8.164.1:
+- Ports launch from external FE
+- New version naming (LE_version.Retroarch_version.addon_version)
+v1.0.0:
+- Alsa activation in config.txt
+v0.0.9:
+- RetroArch 1.6.4
+v0.0.8:
+- Clean Gamestarter RA folder ls
+v0.0.7:
+- RetroArch 1.6.3
+v0.0.6:
+- RetroArch 1.6.1
+v0.0.5:
+- Code debugging WIP
+v0.0.4:
+- Code debugging WIP
+v0.0.3:
+- Libretro Cores full package download
+- RetroPlayer cores use option toggle
+v0.0.2:
+- Add-on for both RPi&Generic
+- Cores package download WIP
+v0.0.1:
+- Initial Pre-Release
