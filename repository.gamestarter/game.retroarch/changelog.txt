@@ -1,3 +1,5 @@
+v8.167.3:
+- Better project type check
 v8.167.2:
 - Generic retroarch.cfg file (download cores using RA's online updater)
 - Generic core package download fix
