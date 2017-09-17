@@ -26,6 +26,19 @@ LOG_FILE_ES_DEBUG=/storage/.kodi/temp/emulationstation_debug.log
 LOG_FILE_DS_DEBUG=/storage/.kodi/temp/drastic_debug.log
 LOG_FILE_PSP_DEBUG=/storage/.kodi/temp/ppsspp_debug.log
 
+#AEL
+AEL_ROM=$5
+if [ -z "$AEL_ROM" ]
+then
+      AEL="no"
+else
+      AEL="yes"
+      AEL_CAT=$3
+      AEL_LAUNCHER=$4
+      echo "RetroArch [ADDON] :: Launching using AEL ($AEL_CAT $AEL_LAUNCHER $AEL_ROM)" >> /storage/.kodi/temp/retroarch.log    
+fi
+
+
 case $1 in
   "emulationstation")
   		LOG_FILE=$LOG_FILE_ES
@@ -170,12 +183,39 @@ esac
 
 # Start KODI
 # systemctl start kodi
+
+
 case $3 in
   "ES") echo $ADDON' [ADDON] :: Exit ES' >> $LOG_FILE
   ;;
   
   *) 
     echo $ADDON' [ADDON] :: Restart kodi...' >> $LOG_FILE
+
     systemctl start kodi
+
+    if [[ $AEL == "yes" ]] 
+    then
+      echo $ADDON' [ADDON] :: Launch AEL...' >> $LOG_FILE
+
+      # kodi_rpc_params()
+      # {
+      #     METHOD="$1"
+      #     PARAMS="$2"
+      #     json_str="{\"jsonrpc\":\"2.0\",\"id\":\"1\",\"method\":\"$METHOD\",$PARAMS}\""
+      #     curl -H "Content-type: application/json" -d "$json_str" http://localhost:8080/jsonrpc
+      # }
+
+      sleep 5s
+      # ael_id="\"addonid\":\"plugin.program.advanced.emulator.launcher\""
+      # ael_pars="\"params\":{\"com\":\"SHOW_ROMS\",\"catID\":\"$3\",\"launID\":\"$4\"}"
+      # PARAMS="\"params\":{$ael_id,$ael_pars}"
+      # kodi_rpc_params "Addons.ExecuteAddon" "$PARAMS"
+
+      kodi-send --host=127.0.0.1 --port=9777 --action="ActivateWindow(1,plugin://plugin.program.advanced.emulator.launcher/?catID=$AEL_CAT&com=SHOW_ROMS&launID=$AEL_LAUNCHER)"
+    # else
+
+    fi
+    
   ;;
 esac
