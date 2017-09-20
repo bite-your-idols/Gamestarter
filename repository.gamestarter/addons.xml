@@ -10,7 +10,7 @@
 		<description lang="en">Gamestarter add-on repository</description>
         <platform>all</platform>
     </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="8.167.3">
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="8.167.4">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -19,7 +19,9 @@
 	</extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">RetroArch frontend for LibreELEC</summary>
-    <description lang="en">RetroArch frontend for LibreELEC</description>
+    <description lang="en">RetroArch is a frontend for emulators, game engines and media players.
+It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.
+RetroArch has advanced features like shaders, netplay, rewinding, and more!</description>
     <assets>
       <icon>icon.jpg</icon>
       <fanart>fanart.jpg</fanart>

@@ -1,5 +1,6 @@
 v8.167.4:
 - Back to AEL launcher window if using AEL frontend for direct launch
+- Remove ES ignore gamelists flag for scraping
 v8.167.3:
 - Better project type check
 v8.167.2:
