@@ -90,7 +90,7 @@ case $1 in
   "emulationstation")  
       echo "EmulationStation [ADDON] :: Launch EmulationStation (See process output in emulationstation_debug.log)" >>  $LOG_FILE_ES
       # /storage/emulators/temp/retroarch/temp/retroarch --no-splash --ignore-gamelist
-      "$ADDON_ES_DIR/game.emulationstation-$PROJECT" --ignore-gamelist --no-splash &>  $LOG_FILE_ES_DEBUG
+      "$ADDON_ES_DIR/game.emulationstation-$PROJECT" --no-splash &>  $LOG_FILE_ES_DEBUG
   ;;
    "ports")  
        echo 'RetroArch [ADDON] :: Launch Retroarch (Enable debugging and see process output in retroarch_debug.log)' >>  $LOG_FILE
