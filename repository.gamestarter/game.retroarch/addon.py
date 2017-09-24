@@ -20,7 +20,7 @@ command = args['com'][0] if 'com' in args else 'EXEC_ADDON'
 
 if command == 'DOWNLOAD_CORES':
 	
-	xbmcgui.Dialog().ok("RetroArch", project)
+	# xbmcgui.Dialog().ok("RetroArch", project)
 	# descarga de cores
 	xbmcgui.Dialog().ok("RetroArch", "Downloading Libretro cores full package, please do not power off your device.")
 	os.system('kodi-send --action="xbmc.ActivateWindow(busydialog)"')
