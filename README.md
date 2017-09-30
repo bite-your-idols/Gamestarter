@@ -31,6 +31,8 @@
 - **EmulationStation**:
   - Before launching the addon you can edit default roms path from addon settings (default: `/storage/emulators/roms`)
   - Also you can decide what core to use with each system editing the list in addon settings.
+  - You will need to download needed RetroArch cores before using EmulationStation frontend.
+  - If you get any issue using ES, please try to launch the same rom with the same emulator/libretro core using RetroArch addon.
 
 ## Issues & Help
 Please provide log files located in `/storage/.kodi/temp`.
