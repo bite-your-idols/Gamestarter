@@ -11,7 +11,7 @@
 The Game Boy Color, as suggested by the name, features a color screen, but no backlight. It is slightly thicker and taller than the Game Boy Pocket, which is a redesigned Game Boy released in 1996. As with the original Game Boy, it has an 8-bit processor and the custom Zilog Z80 central processing unit (CPU). The original name (with its American English spelling of "color") remained unchanged even in markets where "colour" was the accepted English spelling.</plot>
   <platform>Nintendo Game Boy Color</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>gambatte &quot;%rom%&quot;</args>
+  <args>gambatte &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>Game Boy Color</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/gbc/</ROM_path>

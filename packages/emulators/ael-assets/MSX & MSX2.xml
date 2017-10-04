@@ -11,7 +11,7 @@
     Before the appearance and great success of Nintendo's Family Computer, MSX was the platform for which major Japanese game studios, such as Konami and Hudson Soft, produced video game titles. The Metal Gear series, for example, was originally written for MSX hardware.</plot>
   <platform>Microsoft MSX / MSX2</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>bluemsx &quot;%rom%&quot;</args>
+  <args>bluemsx &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>MSX</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/msx/</ROM_path>

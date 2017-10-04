@@ -10,7 +10,7 @@
   <plot>The Atari Lynx is an 8 bit handheld game console that was released by Atari Corporation in October 1989 in North America, and in Europe and Japan in 1990. The Lynx holds the distinction of being the world's first handheld electronic game with a color LCD. The system is also notable for its forward-looking features, advanced graphics, and ambidextrous layout. As part of the fourth generation of gaming, the Lynx competed with the Game Boy (released just 2 months earlier), as well as the Game Gear and TurboExpress, both released the following year.</plot>
   <platform>Atari Lynx</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>handy &quot;%rom%&quot;</args>
+  <args>handy &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>Atari Lynx</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/atarilynx/</ROM_path>

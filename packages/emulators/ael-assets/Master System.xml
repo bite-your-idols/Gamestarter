@@ -10,7 +10,7 @@
   <plot>The Sega Master System is a third-generation home video game console that was manufactured by Sega. It was originally released in 1985 as the Sega Mark III in Japan. After being redesigned prior to its North American launch, the console was renamed Master System and released in 1986 in North America, 1987 in Europe, and 1989 in Brazil. The redesigned Master System was also released in Japan in 1987. Both the Mark III and the original Master System models could play with both cartridges (or "Mega Cartridges", as they were officially called) and the credit card-sized Sega Cards, which retailed at lower prices than cartridges but had lower storage capacity; the Master System II and later models did not have the card slot. The Master System also featured accessories such as a light gun and 3D glasses which were designed to work with a range of specially coded games.</plot>
   <platform>Sega Master System/Mark III</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>picodrive &quot;%rom%&quot;</args>
+  <args>picodrive &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>Master System</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/mastersystem/</ROM_path>

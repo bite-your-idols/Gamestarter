@@ -12,7 +12,7 @@
 The Neo Geo originally launched as the MVS (Multi Video System) coin-operated arcade machine. The MVS offers owners the ability to put up to six different cartridges into a single cabinet, a unique feature that was also a key economic consideration for operators with limited floorspace, as well as saving money in the long-run. With its games stored on self-contained cartridges, a game cabinet can be exchanged for a different game title by swapping the game's ROM-cartridge and cabinet artwork. A home console version was also made, called AES (Advanced Entertainment System). It was originally launched as a rental console for video game stores in Japan (called Neo Geo Rental System), with its high price causing SNK not to release it for home use - this was later reversed due to high demand and it came into the market as a luxury console. The AES had the same raw specs as the MVS and had full compatibility, thus managed to bring a true arcade experience to home users. As of 2013 it was the most expensive home video game console ever released, costing US$1,125 adjusted for inflation. The Neo Geo was revived along with the brand overall in December 2012 through the introduction of the Neo Geo X handheld and home system.</plot>
   <platform>Neo Geo</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fbalpha &quot;%rom%&quot;</args>
+  <args>fbalpha &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>Neo Geo</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/neogeo/</ROM_path>

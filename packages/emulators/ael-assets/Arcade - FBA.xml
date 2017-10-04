@@ -10,7 +10,7 @@
   <plot>FinalBurn Alpha is an arcade emulator for MC68000/Z80 based arcade games. It mostly plays Capcom games on the CPS-1 and CPS-2 boards as well as most of the Neo-Geo MVS arcade games and other miscellaneous hardware.</plot>
   <platform>Arcade</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fbalpha &quot;%rom%&quot;</args>
+  <args>fbalpha &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>Arcade - FBA</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/fba/</ROM_path>

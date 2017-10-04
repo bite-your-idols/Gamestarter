@@ -10,7 +10,7 @@
   <plot>The PlayStation (Japanese: プレイステーション Hepburn: Pureisutēshon) (officially abbreviated as PS, and commonly known as the PS1 or PSX) is a home video game console developed and marketed by Sony Computer Entertainment. The console was released on 3 December 1994 in Japan, 9 September 1995 in North America, 29 September 1995 in Europe, 15 November 1995 in Australia, and for Korea in 1996. The console was the first of the PlayStation lineup of home video game consoles. It primarily competed with the Nintendo 64 and the Sega Saturn as part of the fifth generation of video game consoles.</plot>
   <platform>Sony PlayStation</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>pcsx_rearmed &quot;%rom%&quot;</args>
+  <args>pcsx_rearmed &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>PlayStation</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/psx/</ROM_path>

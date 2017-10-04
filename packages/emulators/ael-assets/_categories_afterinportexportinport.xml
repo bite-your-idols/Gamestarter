@@ -34,7 +34,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fbalpha &quot;%rom%&quot;</args>
+  <args>fbalpha &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/fba/</rompath>
   <romext>zip</romext>
   <finished>False</finished>
@@ -95,7 +95,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>mame2003 &quot;%rom%&quot;</args>
+  <args>mame2003 &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/mame/</rompath>
   <romext>zip</romext>
   <finished>False</finished>
@@ -156,7 +156,7 @@
   <platform>Atari Lynx</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>handy &quot;%rom%&quot;</args>
+  <args>handy &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/atarilynx/</rompath>
   <romext />
   <finished>False</finished>
@@ -217,7 +217,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>gambatte &quot;%rom%&quot;</args>
+  <args>gambatte &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/gb/</rompath>
   <romext>gb|zip|gbc</romext>
   <finished>False</finished>
@@ -278,7 +278,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>gpsp &quot;%rom%&quot;</args>
+  <args>gpsp &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/gba/</rompath>
   <romext>gba|zip</romext>
   <finished>False</finished>
@@ -339,7 +339,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>genesis_plus_gx &quot;%rom%&quot;</args>
+  <args>genesis_plus_gx &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/gamegear/</rompath>
   <romext>gg|zip</romext>
   <finished>False</finished>
@@ -400,7 +400,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>bluemsx &quot;%rom%&quot;</args>
+  <args>bluemsx &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/msx/</rompath>
   <romext>rom|mx1|mx2|col|dsk|zip</romext>
   <finished>False</finished>
@@ -461,7 +461,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>picodrive &quot;%rom%&quot;</args>
+  <args>picodrive &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/mastersystem/</rompath>
   <romext>sms|zip</romext>
   <finished>False</finished>
@@ -583,7 +583,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fceumm &quot;%rom%&quot;</args>
+  <args>fceumm &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/nes/</rompath>
   <romext>nes|zip</romext>
   <finished>False</finished>
@@ -644,7 +644,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fbalpha &quot;%rom%&quot;</args>
+  <args>fbalpha &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/neogeo/</rompath>
   <romext>zip</romext>
   <finished>False</finished>
@@ -705,7 +705,7 @@
   <platform>Nintendo 64</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>mupen64plus &quot;%rom%&quot;</args>
+  <args>mupen64plus &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/n64/</rompath>
   <romext>v64|n64|z64|zip</romext>
   <finished>False</finished>
@@ -766,7 +766,7 @@
   <platform>Nintendo DS</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>drastic &quot;%rom%&quot;</args>
+  <args>drastic &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/nds/</rompath>
   <romext>zip|nds</romext>
   <finished>False</finished>
@@ -827,7 +827,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>mednafen_pce_fast &quot;%rom%&quot;</args>
+  <args>mednafen_pce_fast &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/pcengine/</rompath>
   <romext>pce|cue</romext>
   <finished>False</finished>
@@ -888,7 +888,7 @@
   <platform>Unknown</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>ppsspp &quot;%rom%&quot;</args>
+  <args>ppsspp &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/psp/</rompath>
   <romext>cso|iso</romext>
   <finished>False</finished>
@@ -949,7 +949,7 @@
   <platform>Sony PlayStation</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>pcsx_rearmed &quot;%rom%&quot;</args>
+  <args>pcsx_rearmed &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/psx/</rompath>
   <romext>bin|img|pbp|PBP|IMG|BIN</romext>
   <finished>False</finished>
@@ -1010,7 +1010,7 @@
   <platform>Nintendo SNES</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>snes9x2010 &quot;%rom%&quot;</args>
+  <args>snes9x2010 &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/snes/</rompath>
   <romext>smc|sfc|zip</romext>
   <finished>False</finished>
@@ -1071,7 +1071,7 @@
   <platform>Sinclair ZX Spectrum</platform>
   <categoryID>be65f11a5b8614adb9bd5fb69231c140</categoryID>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fuse &quot;%rom%&quot;</args>
+  <args>fuse &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <rompath>/storage/emulators/roms/zxspectrum/</rompath>
   <romext>tzx|Z80|z80|zip</romext>
   <finished>False</finished>

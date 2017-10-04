@@ -23,7 +23,7 @@
   <plot>FinalBurn Alpha is an arcade emulator for MC68000/Z80 based arcade games. It mostly plays Capcom games on the CPS-1 and CPS-2 boards as well as most of the Neo-Geo MVS arcade games and other miscellaneous hardware.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fbalpha &quot;%rom%&quot;</args>
+  <args>fbalpha &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/fba/</ROM_path>
   <ROM_ext>zip</ROM_ext>
@@ -47,7 +47,7 @@
   <plot>MAME (an acronym of Multiple Arcade Machine Emulator) is a free and open source emulator designed to recreate the hardware of arcade game systems in software on modern personal computers and other platforms. The intention is to preserve gaming history by preventing vintage games from being lost or forgotten. The aim of MAME is to be a reference to the inner workings of the emulated arcade machines; the ability to actually play the games is considered &quot;a nice side effect&quot;. Joystiq has listed MAME as an application that every gamer should have.&#10;&#10;The first public MAME release (0.1) was on February 5, 1997, by Nicola Salmoria. The emulator now supports over seven thousand unique games and ten thousand actual ROM image sets, though not all of the supported games are playable. MESS, an emulator for many video game consoles and computer systems, based on the MAME core, has been integrated into MAME in 2015.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>mame2003 &quot;%rom%&quot;</args>
+  <args>mame2003 &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/mame/</ROM_path>
   <ROM_ext>zip</ROM_ext>
@@ -71,7 +71,7 @@
   <plot>The Atari Lynx is an 8 bit handheld game console that was released by Atari Corporation in October 1989 in North America, and in Europe and Japan in 1990. The Lynx holds the distinction of being the world&apos;s first handheld electronic game with a color LCD. The system is also notable for its forward-looking features, advanced graphics, and ambidextrous layout. As part of the fourth generation of gaming, the Lynx competed with the Game Boy (released just 2 months earlier), as well as the Game Gear and TurboExpress, both released the following year.</plot>
   <platform>Atari Lynx</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>handy &quot;%rom%&quot;</args>
+  <args>handy &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/atarilynx/</ROM_path>
   <ROM_ext />
@@ -95,7 +95,7 @@
   <plot>The Game Boy is an 8-bit handheld video game device developed and manufactured by Nintendo. It was released in Japan on April 21, 1989, in North America on July 31, 1989, and in Europe on September 28, 1990. It is the first handheld console in the Game Boy line, and was created by Gunpei Yokoi and Nintendo Research &amp; Development 1 (the same staff who had designed the Game &amp; Watch series as well as several popular games for the Nintendo Entertainment System). Redesigned versions were released in 1996 and 1998, in the form of Game Boy Pocket, and Game Boy Light (Japan only), respectively.&#10;&#10;  The Game Boy Color, referred to as GBC, is a handheld game console manufactured by Nintendo. It was released on October 21, 1998 in Japan and was released in November of the same year in international markets. It is the successor of the Game Boy.&#10;The Game Boy Color, as suggested by the name, features a color screen, but no backlight. It is slightly thicker and taller than the Game Boy Pocket, which is a redesigned Game Boy released in 1996. As with the original Game Boy, it has an 8-bit processor and the custom Zilog Z80 central processing unit (CPU). The original name (with its American English spelling of &quot;color&quot;) remained unchanged even in markets where &quot;colour&quot; was the accepted English spelling.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>gambatte &quot;%rom%&quot;</args>
+  <args>gambatte &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/gb/</ROM_path>
   <ROM_ext>gb|zip|gbc</ROM_ext>
@@ -119,7 +119,7 @@
   <plot>The Game Boy Advance, often shortened to GBA, is a 32-bit handheld video game console developed, manufactured and marketed by Nintendo. It is the successor to the Game Boy Color. Nintendo&apos;s competitors in the handheld market were the Neo Geo Pocket Color, WonderSwan, GP32, Tapwave Zodiac, and the N-Gage. Despite the competitors&apos; best efforts, Nintendo maintained a majority market share with the Game Boy Advance. As of June 30, 2010, the Game Boy Advance series has sold 81.51 million units worldwide. Its successor, the Nintendo DS, was released in November 2004.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>gpsp &quot;%rom%&quot;</args>
+  <args>gpsp &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/gba/</ROM_path>
   <ROM_ext>gba|zip</ROM_ext>
@@ -143,7 +143,7 @@
   <plot>The Game Gear is an 8-bit handheld game console released by Sega on October 6, 1990 in Japan, 1991 in North America and Europe, and Australia in 1992. The Game Gear primarily competed with Nintendo&apos;s Game Boy, the Atari Lynx and NEC&apos;s TurboExpress. The handheld shares much of its hardware with the Master System and is able to play its own titles as well as those of the Master System, the latter being made possible by the use of an adapter. Containing a full-color backlit screen with a landscape format, Sega positioned the Game Gear as a technologically superior handheld to the Game Boy.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>genesis_plus_gx &quot;%rom%&quot;</args>
+  <args>genesis_plus_gx &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/gamegear/</ROM_path>
   <ROM_ext>gg|zip</ROM_ext>
@@ -167,7 +167,7 @@
   <plot>MSX is the name of a standardized home computer architecture, first announced by Microsoft on June 16, 1983,[1] and marketed by Kazuhiko Nishi, then Vice-president at Microsoft Japan and Director at ASCII Corporation. Microsoft conceived the project as an attempt to create unified standards among various hardware makers of the period.&#10;    Before the appearance and great success of Nintendo&apos;s Family Computer, MSX was the platform for which major Japanese game studios, such as Konami and Hudson Soft, produced video game titles. The Metal Gear series, for example, was originally written for MSX hardware.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>bluemsx &quot;%rom%&quot;</args>
+  <args>bluemsx &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/msx/</ROM_path>
   <ROM_ext>rom|mx1|mx2|col|dsk|zip</ROM_ext>
@@ -191,7 +191,7 @@
   <plot>The Sega Master System is a third-generation home video game console that was manufactured by Sega. It was originally released in 1985 as the Sega Mark III in Japan. After being redesigned prior to its North American launch, the console was renamed Master System and released in 1986 in North America, 1987 in Europe, and 1989 in Brazil. The redesigned Master System was also released in Japan in 1987. Both the Mark III and the original Master System models could play with both cartridges (or &quot;Mega Cartridges&quot;, as they were officially called) and the credit card-sized Sega Cards, which retailed at lower prices than cartridges but had lower storage capacity; the Master System II and later models did not have the card slot. The Master System also featured accessories such as a light gun and 3D glasses which were designed to work with a range of specially coded games.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>picodrive &quot;%rom%&quot;</args>
+  <args>picodrive &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/mastersystem/</ROM_path>
   <ROM_ext>sms|zip</ROM_ext>
@@ -239,7 +239,7 @@
   <plot>The Nintendo Entertainment System (also abbreviated as NES) is an 8-bit home video game console that was developed and manufactured by Nintendo. It was initially released in Japan as the Family Computer (also known by the portmanteau abbreviation Famicom and abbreviated as FC) on July 15, 1983, and was later released in North America during 1985, in Europe during 1986, and Australia in 1987. In South Korea, it was known as the Hyundai Comboy and was distributed by SK Hynix which then was known as Hyundai Electronics. It was succeeded by the Super Nintendo Entertainment System.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fceumm &quot;%rom%&quot;</args>
+  <args>fceumm &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/nes/</ROM_path>
   <ROM_ext>nes|zip</ROM_ext>
@@ -263,7 +263,7 @@
   <plot>The Neo Geo (Japanese: ネオジオ Hepburn: Neojio), stylised as NEO・GEO, also written as NEOGEO, is a cartridge-based arcade system board and fourth-generation home video game console released on April 26, 1990, by Japanese game company SNK Corporation. It was the first system in SNK&apos;s Neo Geo family. The Neo Geo was marketed as 24-bit; its CPU is technically a parallel processing 16/32-bit 68000-based system with an 8/16-bit Z80 coprocessor, while its GPU chipset has a 24-bit graphics data bus.&#10;&#10;The Neo Geo originally launched as the MVS (Multi Video System) coin-operated arcade machine. The MVS offers owners the ability to put up to six different cartridges into a single cabinet, a unique feature that was also a key economic consideration for operators with limited floorspace, as well as saving money in the long-run. With its games stored on self-contained cartridges, a game cabinet can be exchanged for a different game title by swapping the game&apos;s ROM-cartridge and cabinet artwork. A home console version was also made, called AES (Advanced Entertainment System). It was originally launched as a rental console for video game stores in Japan (called Neo Geo Rental System), with its high price causing SNK not to release it for home use - this was later reversed due to high demand and it came into the market as a luxury console. The AES had the same raw specs as the MVS and had full compatibility, thus managed to bring a true arcade experience to home users. As of 2013 it was the most expensive home video game console ever released, costing US$1,125 adjusted for inflation. The Neo Geo was revived along with the brand overall in December 2012 through the introduction of the Neo Geo X handheld and home system.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fbalpha &quot;%rom%&quot;</args>
+  <args>fbalpha &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/neogeo/</ROM_path>
   <ROM_ext>zip</ROM_ext>
@@ -287,7 +287,7 @@
   <plot>The Nintendo 64 (Japanese: ニンテンドー64 Hepburn: Nintendō Rokujūyon), stylized as NINTENDO64 and often referred to as N64, is Nintendo&apos;s third home video game console for the international market. Named for its 64-bit central processing unit, it was released in June 1996 in Japan, September 1996 in North America, March 1997 in Europe and Australia, September 1997 in France and December 1997 in Brazil. It is the industry&apos;s last major home console to use the cartridge as its primary storage format, although current handheld systems (such as the PlayStation Vita and Nintendo 3DS) also use cartridges. While the Nintendo 64 was succeeded by Nintendo&apos;s MiniDVD-based GameCube in November 2001, the consoles remained available until the system was retired in late 2003.</plot>
   <platform>Nintendo 64</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>mupen64plus &quot;%rom%&quot;</args>
+  <args>mupen64plus &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/n64/</ROM_path>
   <ROM_ext>v64|n64|z64|zip</ROM_ext>
@@ -311,7 +311,7 @@
   <plot>The Nintendo DS (ニンテンドーDS Nintendō DS) is a dual-screen handheld game console developed and released by Nintendo. The device went on sale in North America on November 21, 2004. The DS, short for &quot;Developers&apos; System&quot; or &quot;Dual Screen&quot;, introduced distinctive new features to handheld gaming: two LCD screens working in tandem (the bottom one featuring a touchscreen), a built-in microphone, and support for wireless connectivity. Both screens are encompassed within a clamshell design similar to the Game Boy Advance SP. The Nintendo DS also features the ability for multiple DS consoles to directly interact with each other over Wi-Fi within a short range without the need to connect to an existing wireless network. Alternatively, they could interact online using the now-closed Nintendo Wi-Fi Connection service. Its main competitor was Sony&apos;s PlayStation Portable as part of the seventh generation era.</plot>
   <platform>Nintendo DS</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>drastic &quot;%rom%&quot;</args>
+  <args>drastic &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/nds/</ROM_path>
   <ROM_ext>zip|nds</ROM_ext>
@@ -335,7 +335,7 @@
   <plot>The TurboGrafx-16 Entertainment SuperSystem, known in Japan and in France as the PC Engine (PCエンジン Pī Shī Enjin), is a home video game console joint-developed by Hudson Soft and NEC, released in Japan on October 30, 1987, in the United States on August 29, 1989, and in France on November 22, 1989. It was the first console released in the 16-bit era, albeit still utilizing an 8-bit CPU. Originally intended to compete with the Nintendo Entertainment System (NES), it ended up competing with the Sega Genesis, and later on the Super NES.&#10;    &#10;The TurboGrafx-16 was the first video game console to have a CD-ROM peripheral, and first device ever to use CD-ROM as a storage medium for video games. NEC released the CD-ROM² (シーディーロムロム Shī Dī Romu Romu?, officially pronounced &quot;CD-ROM-ROM&quot;) in Japan on December 4, 1988, and released the TurboGrafx-CD in the United States on August 1, 1990.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>mednafen_pce_fast &quot;%rom%&quot;</args>
+  <args>mednafen_pce_fast &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/pcengine/</ROM_path>
   <ROM_ext>pce|cue</ROM_ext>
@@ -359,7 +359,7 @@
   <plot>The PlayStation Portable (PSP) is a handheld game console developed by Sony. Development of the console was announced during E3 2003, and it was unveiled on May 11, 2004, at a Sony press conference before E3 2004. The system was released in Japan on December 12, 2004, in North America on March 24, 2005, and in the PAL region on September 1, 2005. It primarily competed with the Nintendo DS, as part of the seventh generation of video games.&#10;&#10;The PlayStation Portable became the most powerful portable system when launched, just after the Nintendo DS in 2004. It was the first real competitor to Nintendo&apos;s handheld domination, where many challengers, such as SNK&apos;s Neo Geo Pocket and Nokia&apos;s N-Gage, failed. Its GPU encompassed high-end graphics on a handheld, while its 4.3 inch viewing screen and multi-media capabilities, such as its video player and TV tuner, made the PlayStation Portable a major mobile entertainment device at the time. It also features connectivity with the PlayStation 3, other PSPs and the Internet. It is the only handheld console to use an optical disc format, Universal Media Disc (UMD), as its primary storage medium.</plot>
   <platform>Unknown</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>ppsspp &quot;%rom%&quot;</args>
+  <args>ppsspp &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/psp/</ROM_path>
   <ROM_ext>cso|iso</ROM_ext>
@@ -383,7 +383,7 @@
   <plot>The PlayStation (Japanese: プレイステーション Hepburn: Pureisutēshon) (officially abbreviated as PS, and commonly known as the PS1 or PSX) is a home video game console developed and marketed by Sony Computer Entertainment. The console was released on 3 December 1994 in Japan, 9 September 1995 in North America, 29 September 1995 in Europe, 15 November 1995 in Australia, and for Korea in 1996. The console was the first of the PlayStation lineup of home video game consoles. It primarily competed with the Nintendo 64 and the Sega Saturn as part of the fifth generation of video game consoles.</plot>
   <platform>Sony PlayStation</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>pcsx_rearmed &quot;%rom%&quot;</args>
+  <args>pcsx_rearmed &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/psx/</ROM_path>
   <ROM_ext>bin|img|pbp|PBP|IMG|BIN</ROM_ext>
@@ -407,7 +407,7 @@
   <plot>The Super Nintendo Entertainment System (officially abbreviated the Super NES or SNES, and commonly shortened to Super Nintendo) is a 16-bit home video game console developed by Nintendo that was released in 1990 in Japan and South Korea, 1991 in North America, 1992 in Europe and Australasia (Oceania), and 1993 in South America. In Japan, the system is called the Super Famicom, or SFC for short.&#10;The SNES is Nintendo&apos;s second home console, following the Nintendo Entertainment System (NES). The console introduced advanced graphics and sound capabilities compared with other consoles at the time. Additionally, development of a variety of enhancement chips (which were integrated on game circuit boards) helped to keep it competitive in the marketplace.</plot>
   <platform>Nintendo SNES</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>snes9x2010 &quot;%rom%&quot;</args>
+  <args>snes9x2010 &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/snes/</ROM_path>
   <ROM_ext>smc|sfc|zip</ROM_ext>
@@ -431,7 +431,7 @@
   <plot>The ZX Spectrum (UK: /zɛd ɛks ˈspɛktrəm/) is an 8-bit personal home computer released in the United Kingdom in 1982 by Sinclair Research. It was manufactured in Dundee, Scotland, in the now closed Timex factory.&#10;  The Spectrum was released as eight different models, ranging from the entry level with 16 KB RAM released in 1982 to the ZX Spectrum +3 with 128 KB RAM and built in floppy disk drive in 1987; together they sold in excess of 5 million units worldwide (not counting clones).[6]&#10;The Spectrum was among the first mainstream-audience home computers in the UK, similar in significance to the Commodore 64 in the USA. The introduction of the ZX Spectrum led to a boom in companies producing software and hardware for the machine,[7] the effects of which are still seen;[1] some credit it as the machine which launched the UK IT industry.[8] Licensing deals and clones followed, and earned Clive Sinclair a knighthood for &quot;services to British industry&quot;.</plot>
   <platform>Sinclair ZX Spectrum</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fuse &quot;%rom%&quot;</args>
+  <args>fuse &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra />
   <ROM_path>/storage/emulators/roms/zxspectrum/</ROM_path>
   <ROM_ext>tzx|Z80|z80|zip</ROM_ext>

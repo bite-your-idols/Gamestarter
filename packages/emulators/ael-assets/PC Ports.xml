@@ -10,7 +10,7 @@
   <plot></plot>
   <platform>PC Ports</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>ports &quot;%rom%&quot;</args>
+  <args>ports &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>PC Ports</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/ports/</ROM_path>

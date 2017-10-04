@@ -11,7 +11,7 @@
 The SNES is Nintendo's second home console, following the Nintendo Entertainment System (NES). The console introduced advanced graphics and sound capabilities compared with other consoles at the time. Additionally, development of a variety of enhancement chips (which were integrated on game circuit boards) helped to keep it competitive in the marketplace.</plot>
   <platform>Nintendo SNES</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>snes9x2010 &quot;%rom%&quot;</args>
+  <args>snes9x2010 &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>SNES</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/snes/</ROM_path>

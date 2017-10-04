@@ -12,7 +12,7 @@
 In the early 1970s, Magnavox was an innovator in the home video game industry. They succeeded in bringing the first home video game system to market, the Odyssey, which was quickly followed by a number of later models, each with a few technological improvements (Magnavox Odyssey series). In 1978, Magnavox, now a subsidiary of North American Philips, released the Odyssey², its new second-generation video game console.</plot>
   <platform>Magnavox Odyssey / Philips Videopac</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>o2em &quot;%rom%&quot;</args>
+  <args>o2em &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>Magnavox Odyssey</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/videopac/</ROM_path>

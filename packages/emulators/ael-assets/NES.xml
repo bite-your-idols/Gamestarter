@@ -10,7 +10,7 @@
   <plot>The Nintendo Entertainment System (also abbreviated as NES) is an 8-bit home video game console that was developed and manufactured by Nintendo. It was initially released in Japan as the Family Computer (also known by the portmanteau abbreviation Famicom and abbreviated as FC) on July 15, 1983, and was later released in North America during 1985, in Europe during 1986, and Australia in 1987. In South Korea, it was known as the Hyundai Comboy and was distributed by SK Hynix which then was known as Hyundai Electronics. It was succeeded by the Super Nintendo Entertainment System.</plot>
   <platform>Nintendo Entertainment System</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>fceumm &quot;%rom%&quot;</args>
+  <args>fceumm &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>NES</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/nes/</ROM_path>

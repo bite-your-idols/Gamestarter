@@ -12,7 +12,7 @@
 The console was originally sold as the Atari VCS, an abbreviation for Video Computer System. Following the release of the Atari 5200 in 1982, the VCS was renamed to the "Atari 2600", after the unit's Atari part number, CX2600. The 2600 was typically bundled with two joystick controllers, a conjoined pair of paddle controllers, and a game cartridge: initially Combat, and later Pac-Man.</plot>
   <platform>Atari 2600</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>stella &quot;%rom%&quot;</args>
+  <args>stella &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>Atari 2600</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/atari2600/</ROM_path>

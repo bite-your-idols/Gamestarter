@@ -10,7 +10,7 @@
   <plot>The Game Boy Advance, often shortened to GBA, is a 32-bit handheld video game console developed, manufactured and marketed by Nintendo. It is the successor to the Game Boy Color. Nintendo's competitors in the handheld market were the Neo Geo Pocket Color, WonderSwan, GP32, Tapwave Zodiac, and the N-Gage. Despite the competitors' best efforts, Nintendo maintained a majority market share with the Game Boy Advance. As of June 30, 2010, the Game Boy Advance series has sold 81.51 million units worldwide. Its successor, the Nintendo DS, was released in November 2004.</plot>
   <platform>Nintendo Game Boy Advance</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>gpsp &quot;%rom%&quot;</args>
+  <args>gpsp &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>Game Boy Advance</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/gba/</ROM_path>

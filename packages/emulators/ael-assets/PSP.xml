@@ -12,7 +12,7 @@
 The PlayStation Portable became the most powerful portable system when launched, just after the Nintendo DS in 2004. It was the first real competitor to Nintendo's handheld domination, where many challengers, such as SNK's Neo Geo Pocket and Nokia's N-Gage, failed. Its GPU encompassed high-end graphics on a handheld, while its 4.3 inch viewing screen and multi-media capabilities, such as its video player and TV tuner, made the PlayStation Portable a major mobile entertainment device at the time. It also features connectivity with the PlayStation 3, other PSPs and the Internet. It is the only handheld console to use an optical disc format, Universal Media Disc (UMD), as its primary storage medium.</plot>
   <platform>Sony PSP</platform>
   <application>/storage/.kodi/addons/game.retroarch/addon.sh</application>
-  <args>ppsspp &quot;%rom%&quot;</args>
+  <args>ppsspp &quot;%rom%&quot; $categoryID$ $launcherID$ $romID$</args>
   <args_extra></args_extra>
   <Asset_Prefix>PSP</Asset_Prefix>
   <ROM_path>/storage/emulators/roms/psp/</ROM_path>
