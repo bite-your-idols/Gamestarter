@@ -1,8 +1,8 @@
-[B]Advanced Emulator Launcher | version 0.9.8 | XX July 2017[/B]
+[B]Advanced Emulator Launcher | version 0.9.8 | XX November 2017[/B]
 
-WIP      Full Extranafart support for Categories/Launchers.
+WIP      Complete Extranafart support for Categories/Launchers.
 
-WIP      Full Extranafart for ROMs.
+WIP      Complete Extranafart support for ROMs.
 
 WIP      Advanced fuzzy search engine based on the Levenshtein Distance algorithm, for both
          online and offline scrapers. There is a Python implementation of the algorithm here,
@@ -10,34 +10,199 @@ WIP      Advanced fuzzy search engine based on the Levenshtein Distance algorith
 
 WIP      Massive upgrade of AEL Offline scraper database.
 
+WIP      Update MAME Offline Scraper database to version 0.188 or 0.189
+
 WIP      Support Kodi VFS and ROMs in remote filesystems for Retroplayer.
+         See Chrisism patch in Github.
          Copy remote ROMs for external launchers?
 
+WIP      Edit multi-disc ROMs.
 
-[B]Advanced Emulator Launcher | version 0.9.7 | XX Jun 2017[/B]
-
-WIP      AEL ONLY WORKS ON KRYPTON NOW!!!
-
-WIP      Removed ElementTree dependency in addon.xml. It's not longer needed.
-
-WIP      Use the <news> tag in addon.xml. In general, have a look at http://kodi.wiki/view/addon.xml
-         and modernise addon.xml.
-
-WIP      Make use of Krypton feature in the several dialogs of the addon.
-         New param: "preselect" for Dialog().multiselect() and Dialog().select(). 
-         See http://forum.kodi.tv/showthread.php?tid=250936
-
-WIP      Update code to use xbmcgui.Dialog().select() - additions. Get rid of the ImgSelectDialog()
-         class. This need Krypton Beta 4 to run!
-
-WIP      Edit multidisc ROMs.
+WIP      Fix artwork support for mult-disc ROMs.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2628912#pid2628912
 
 WIP      Changes and suggestions propoed by Atsumori.
+
          See http://forum.kodi.tv/showthread.php?tid=287826&pid=2560843#pid2560843
          See http://forum.kodi.tv/showthread.php?tid=287826&pid=2586596#pid2586596
 
+WIP      LaunchBox Games Database scraper.
+         Apparently LaunchBox GamesDB started as a copy of TheGamesDB. Currently there is no
+         API to access LaunchBox GamesDB but an XML with all the database info can be downloaded.
 
-[B]Advanced Emulator Launcher | version 0.9.6 | 19 May 2017[/B]
+         See http://gamesdb.launchbox-app.com/
+         See https://bitbucket.org/jasondavidcarr/launchbox/issues/902/api-access-to-launchbox
+
+WIP      Have a look at https://www.screenscraper.fr/ and consider it for an online scraper.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2622839#pid2622839
+
+WIP      Think about exporting the AEL platform database using JSON-LD in accordance to
+         Garbear's idea.
+         See https://forum.kodi.tv/showthread.php?tid=295463&pid=2625754#pid2625754
+
+WIP      Add support for ScummVM platform in the Offline Scraper.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2629084#pid2629084
+
+WIP      Disable LNK $rom$ launcher with global setting.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2640857#pid2640857
+
+WIP      categoryID is redundant in SHOW_ROMS URL! Remove it or make it optional.
+         See https://forum.kodi.tv/showthread.php?tid=276002&pid=2643218#pid2643218
+
+WIP      Should plugin URL be rationalised and simplified to make skinner's life easier?
+         See https://forum.kodi.tv/showthread.php?tid=276002&pid=2643218#pid2643218
+
+WIP      Add an option to see the ROM Manual in PDF if exists. Maybe use GhostScript to render
+         the PDF into images like HyperLauncher does?
+         Add an option in context menu "View ROM/Launcher".
+
+WIP      Add an option to create a default Parent ROM for Redump DATs or NoIntro DATs with no
+         PClone information. See previous feature.
+
+WIP      Create a "fake" Parent/Clone list from filenames ala NARS (NARS Advanced ROM Sorting).
+         In "Edit Launcher", "Audit ROMs / Launcher view mode" include a new option like
+         "Create PClone DAT based on ROM filenames"
+
+WIP      Options to generate the 1G1R parent list, like prefer ROMs from Europe, Japan or USA.
+         This resembles what NARS No-Intro filtering does.
+
+
+[B]Advanced Emulator Launcher | version 0.9.7-beta1 | 07 October 2017[/B]
+
+FEATURE  Added a lot of new platforms.
+
+FEATURE  Add an option to see ROM Maps image if it exists.
+         Add an option in context menu "View ROM/Launcher".
+
+FEATURE  Audit all launchers. Check if app exists, ROM path exits, artwork paths are configured,
+         etc. When a user uses XML to import configurations it is easy to make a typo when
+         writing directory names, etc. This command will report if AEL configuration is OK.
+
+FEATURE  Use substituted artwork from the Parent/Clone group.
+         So far implemented only in "Edit Launcher", "Manage ROMs", "Rescan ROMs local assets/artwork"
+
+FEATURE  I discovered that in the ROM Scanner most of the time is spend looking for artwork. Before,
+         I though it was the Offline scraper the culprit. Instead of using FileName().exists()
+         create a set with all files in the directory and use that for the search.
+         Implemented only in "Edit Launcher", "Manage ROMs", "Rescan ROMs local assets/artwork",
+         must be ported to the ROM scanner if it works well (faster than the current approach).
+
+FEATURE  ROM scanner should be able to scrap all assets, not just the ones supported by the
+         selected scraper. This will require a redesign of the current scraping engine.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2628383#pid2628383 and next post.
+
+FEATURE  Make sure all asset scraper requests are cached in the ROM scanner. For example, Title
+         scraper choose a game in the list, then Snap scraper for the same ROM must use the
+         cached selected game.
+
+FEATURE  Port to the ROM scanner the asset file cache. This will increase the scanning speed a lot.
+
+FEATURE  ROMs in UNC paths. It seems Retroarch added UNC path support recently.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2647152#pid2647152
+
+         [Windows]
+         Workaround in _run_process() to add an extra '\\' character if argument starts with
+         a '\\'. This is to fix shlex.split() behaviour.
+         
+         Tested in Windows only with the following configuration:
+             <ROM_path>\\SERVER_NAME\AEL-ROMs\sega-genesis\</ROM_path>
+             <ROM_asset_path>smb://SERVER_NAME/AEL-assets/sega-genesis/</ROM_asset_path>
+
+         This configuration also works in Windows:
+             <ROM_path>smb://SERVER_NAME/AEL-ROMs/sega-genesis/</ROM_path>
+             <ROM_asset_path>smb://SERVER_NAME/AEL-assets/sega-genesis/</ROM_asset_path>
+
+         Artwork is stored in JSON DB as "smb://SERVER_NAME/AEL-assets/sega-genesis/boxbacks\\Sonic.jpg"
+         ROMs are saved in JSON DB as "\\\\SERVER_NAME\\AEL-ROMs\\sega-genesis\\Sonic.md"
+
+         Kodi artwork does not work with paths like \\SERVER_NAME\AEL-ROMs\sega-genesis\image.png.
+         Correct path for artwork is smb://SERVER_NAME/AEL-ROMs/sega-genesis/image.png.
+
+         Retroarch requires a ROM path like \\SERVER_NAME\AEL-ROMs\sega-genesis\Sonic.md.
+
+FEATURE  Launcher flag to enable non-blocking launchers. This is required for wrapper scripts
+         that close Kodi to avoid problems (such as Kodi getting gamepad commands instead of the
+         launcher app or Kodi running in standalone mode withouth a Window manager).
+
+FEATURE  Ability to import launcher and categories assets in the XML configuration files.
+         Create a working example for Gamestarter addon. Also, refactor the AEL asset library.
+
+FEATURE  Rename "Studio" database field to "Developer" in Launchers/ROMs.
+         See https://forum.kodi.tv/showthread.php?tid=295463&pid=2625754#pid2625754
+
+FEATURE  New Launcher asset 's_controller' for Console/Computer controller picture.
+
+FEATURE  Renamed 's_thumb' -> 's_icon' in Categories/Launchers/Collections.
+
+FEATURE  Renamed 's_flyer' -> 's_poster' in Categories/Launchers/Collections.
+
+FEATURE  Renamed 'roms_default_thumb' -> 'roms_default_icon' in Launchers.
+
+FEATURE  Improved Retroplayer support.
+         See https://forum.kodi.tv/showthread.php?tid=295463&pid=2620489#pid2620489
+         and https://alwinesch.github.io/group__python__xbmcgui__listitem.html#ga0f1e91e1d5aa61d8dd0eac90e8edbf18
+
+FEATURE  Audit Retroarch BIOSes in System directory.
+
+FEATURE  Scan for artwork in the Parent/Clone group of a ROM. Implemented only in the context
+         menu "Edit Launcher", "Manage ROM List", "Rescan ROMs local assets/artwork".
+
+FEATURE  Support for <Launcher_NFO> tag in XML configuration files.
+
+FEATURE  Preserve path_title, path_snap, etc. when exporting a Launcher into an XML file.
+
+FEATURE  Add an option to suspend/resume joystick support at launch. This is to prevent Kodi
+         and the launched app to grab joystick events.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2627128#pid2627128
+         
+         Cannot be implemented because setting input.enablejoystick does not exist in Krypton
+         any more.
+
+FEATURE  Removed ElementTree dependency in addon.xml. It's not longer needed.
+         AEL ONLY WORKS ON KRYPTON NOW!!!
+
+FEATURE  Use the <news> tag in addon.xml. In general, have a look at http://kodi.wiki/view/addon.xml
+         and modernise addon.xml.
+
+FEATURE  Update code to use new xbmcgui.Dialog().select() useDetails parameter. Get rid of the 
+         ImgSelectDialog() class. This need Krypton Beta 4 to run!
+         See https://forum.kodi.tv/showthread.php?tid=250936&pid=2438074#pid2438074
+
+FEATURE  Make use of Krypton features in the several dialogs of the addon: new param: "preselect" 
+         for Dialog().multiselect() and Dialog().select(). 
+         See https://forum.kodi.tv/showthread.php?tid=250936&pid=2327011#pid2327011
+
+FEATURE  Option to group Unknown ROMs as clones or keep them as parents. I realised it is not
+         conveninent that the Unknown ROMs are clones in the Parent/Clone view.
+
+FEATURE  1 Game 1 ROM launcher display mode. Copy it from AML.
+         Changed launcher['pclone_launcher'] to launcher['launcher_display_mode'] to store the
+         display mode in categories.xml database.
+
+FEATURE  Addon option to hide [Browse Offline Scraper].
+
+FEATURE  Remove duplicates from recent ROMs list. Contributed by bonzini.
+         See https://github.com/Wintermute0110/plugin.program.advanced.emulator.launcher/pull/41
+
+FEATURE  Preliminary render support for LaunchBox scraper.
+
+FIX      Fixed launching of BAT files in Windows.
+
+FIX      In order for skin shortcuts and widgets to work OK, addon concurrency must be enabled
+         by database read-only commands.
+
+FIX      Fix scraper-related crash in the ROM scanner.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2628382#pid2628382
+
+FIX      When scraper downloads an image the parents JSON must be also updated. In general, every
+         time a ROM is modified in the main database the Parents JSON must be updated to keep
+         both DBs synchronised!
+
+FIX      Fixed Unicode-related crashes introduced in 0.9.6 in the ROM scanner.
+         See https://forum.kodi.tv/showthread.php?tid=276002&pid=2642201#pid2642201
+
+
+[B]Advanced Emulator Launcher | version 0.9.6 | 20 May 2017[/B]
 
 FEATURE  Set Parent/Clone property so skins can display flag.
 
