@@ -67,7 +67,7 @@ RetroArch has advanced features like shaders, netplay, rewinding, and more!</des
       <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="plugin.program.advanced.emulator.launcher" name="Advanced Emulator Launcher" provider-name="Wintermute0110" version="0.9.6">
+</addon><addon id="plugin.program.advanced.emulator.launcher" name="Advanced Emulator Launcher" provider-name="Wintermute0110" version="0.9.7">
   <requires>
     
     <import addon="xbmc.python" version="2.25.0" />
@@ -76,9 +76,22 @@ RetroArch has advanced features like shaders, netplay, rewinding, and more!</des
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
     <summary lang="en">Start any emulators/apps from Kodi.</summary>
-    <description lang="en">Multi-emulator front-end for Kodi scalable to collections of thousands of ROMs. Includes offline scrapers for MAME and No-Intro ROM sets and also supports scrapping ROM metadata and artwork online. ROM auditing for No-Intro ROMs using No-Intro XML DATs. Launching of games and standalone applications is also available.</description>
+    <description lang="en">Multi-emulator front-end and general application launcher for Kodi. Includes offline scrapers for MAME and No-Intro ROM sets and also supports scrapping ROM metadata and artwork online. ROM auditing for No-Intro ROMs using No-Intro or Redump XML DAT files. Launching of games and standalone applications is also available.</description>
+    <platform>all</platform>
+    <license>GNU General Public License version 2</license>
+    <email>wintermute0110@gmail.com</email>    
+    <forum>http://forum.kodi.tv/showthread.php?tid=287826</forum>
+    <website>https://github.com/Wintermute0110/plugin.program.advanced.emulator.launcher/wiki</website>
+    <source>https://github.com/Wintermute0110/plugin.program.advanced.emulator.launcher</source>
+    <assets>
+      <icon>media/icon.png</icon>
+      <fanart>media/fanart.jpg</fanart>
+      <screenshot>media/Estuary_ROM_Launcher.jpg</screenshot>
+      <screenshot>media/Estuary_ROM_Console.jpg</screenshot>
+      <screenshot>media/Estuary_ROM_MAME.jpg</screenshot>
+    </assets>
+    <news>See changelog.txt for information about the latests release.</news>
   </extension>
 </addon><addon id="game.ppsspp" name="PPSSPP RPi" provider-name="Bite Your Idols!" version="0.0.1">
   <requires>

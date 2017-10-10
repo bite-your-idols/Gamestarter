@@ -1,18 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.advanced.emulator.launcher"
-       name="Advanced Emulator Launcher"
-       version="0.9.6"
-       provider-name="Wintermute0110">
+<addon id="plugin.program.advanced.emulator.launcher" name="Advanced Emulator Launcher"
+       version="0.9.7" provider-name="Wintermute0110">
   <requires>
-    <!-- 2.24.0  Jarvis 16.x / 2.25.0  Krypton 17.x / x.yy.z  Leia 18.x -->
+    <!-- See https://github.com/xbmc/xbmc/blob/master/addons/xbmc.python/addon.xml
+         2.24.0  Jarvis 16.x
+         2.25.0  Krypton 17.x
+         x.yy.z  Leia 18.x
+         x.yy.z  M**** 19.x
+    -->
     <import addon="xbmc.python" version="2.25.0" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
     <summary lang="en">Start any emulators/apps from Kodi.</summary>
-    <description lang="en">Multi-emulator front-end for Kodi scalable to collections of thousands of ROMs. Includes offline scrapers for MAME and No-Intro ROM sets and also supports scrapping ROM metadata and artwork online. ROM auditing for No-Intro ROMs using No-Intro XML DATs. Launching of games and standalone applications is also available.</description>
+    <description lang="en">Multi-emulator front-end and general application launcher for Kodi. Includes offline scrapers for MAME and No-Intro ROM sets and also supports scrapping ROM metadata and artwork online. ROM auditing for No-Intro ROMs using No-Intro or Redump XML DAT files. Launching of games and standalone applications is also available.</description>
+    <platform>all</platform>
+    <license>GNU General Public License version 2</license>
+    <email>wintermute0110@gmail.com</email>    
+    <forum>http://forum.kodi.tv/showthread.php?tid=287826</forum>
+    <website>https://github.com/Wintermute0110/plugin.program.advanced.emulator.launcher/wiki</website>
+    <source>https://github.com/Wintermute0110/plugin.program.advanced.emulator.launcher</source>
+    <assets>
+      <icon>media/icon.png</icon>
+      <fanart>media/fanart.jpg</fanart>
+      <screenshot>media/Estuary_ROM_Launcher.jpg</screenshot>
+      <screenshot>media/Estuary_ROM_Console.jpg</screenshot>
+      <screenshot>media/Estuary_ROM_MAME.jpg</screenshot>
+    </assets>
+    <news>See changelog.txt for information about the latests release.</news>
   </extension>
 </addon>
