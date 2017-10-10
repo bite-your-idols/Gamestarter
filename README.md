@@ -26,7 +26,8 @@
   - After launching the addon you can enter RetroArch menu with default combo `select + start` in your gamepad or `F1` in your keyboard. Then you can download/update cores from [Libretro buildbot](https://buildbot.libretro.com/nightly/linux/armhf/latest/) and other assets.
   
 - **Advanced Emulator Launcher**:
-  - After installing this addon you should move `categories.xml` file from `/storage/.kodi/addons/plugin.program.advanced.emulator.launcher/` to `/storage/.kodi/userdata/addon_data/plugin.program.advanced.emulator.launcher/`
+  - After installing this addon you should download [this file](https://github.com/bite-your-idols/Gamestarter/raw/master/packages/ael-assets.zip) and unzip it in `/storage/emulators/` folder. Then, go to `AEL settings → I/O  → Import category/launcher configuration...` and select the systems you want to import one by one or select whole systems import config file (`/storage/emulators/ael-assets/Gamestarter - Category assets.xml`).
+  - After updating from a previous version you should go to `AEL settings → I/O  → Check/Update all databases...`.
   
 - **EmulationStation**:
   - Before launching the addon you can edit default roms path from addon settings (default: `/storage/emulators/roms`)
