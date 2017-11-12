@@ -3,8 +3,6 @@
 
 ## Retrogaming Kodi add-ons for LibreELEC (RPi2/3 & Generic x86_64)
 
-> If you are looking for old Gamestarter addon please visit [this link](https://goo.gl/KYwp4q).
-
 ### Installation instructions
 - Download the [repository zip file](https://goo.gl/m36qLT) and transfer it to your device
 - Go to **Kodi → Settings → System → Add-ons** and enable **Unknown sources**
