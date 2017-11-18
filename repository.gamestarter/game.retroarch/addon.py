@@ -75,10 +75,12 @@ else:
 	 	# os.system("echo $(date) >> /storage/.kodi/addons/game.retroarch/installed")
 	 	os.system("chmod a+x /storage/.kodi/addons/game.retroarch/addon.sh && chmod a+x /storage/.kodi/addons/game.retroarch/addon.start && chmod a+x /storage/.kodi/addons/game.retroarch/game.retroarch-RPi && chmod a+x /storage/.kodi/addons/game.retroarch/game.retroarch-Gen")
 	 	# xbmcgui.Dialog().ok(addonname, "Done. Copy your roms, reboot and enjoy!")
-	 	if project.find("Pi") >= 0:
-			os.system("cp /storage/.kodi/userdata/addon_data/game.retroarch/lib-RPi /storage/.kodi/userdata/addon_data/game.retroarch/lib")
-		else:
-			os.system("cp /storage/.kodi/userdata/addon_data/game.retroarch/lib-Gen /storage/.kodi/userdata/addon_data/game.retroarch/lib")
+	 	os.system("PROJECT=$(head -c 3 /etc/release) && if [[ $PROJECT == 'Gen' ]] ; then mv -n /storage/.kodi/addons/game.retroarch/lib-Gen /storage/.kodi/addons/game.retroarch/lib ; else mv -n /storage/.kodi/addons/game.retroarch/lib-RPi /storage/.kodi/addons/game.retroarch/lib ; fi && echo 'RetroArch [ADDON] :: '$PROJECT >> /storage/.kodi/temp/emulationstation.log")
+
+	 # 	if project.find("Pi") >= 0:
+		# 	os.system("cp /storage/.kodi/userdata/addon_data/game.retroarch/lib-RPi /storage/.kodi/userdata/addon_data/game.retroarch/lib")
+		# else:
+		# 	os.system("cp /storage/.kodi/userdata/addon_data/game.retroarch/lib-Gen /storage/.kodi/userdata/addon_data/game.retroarch/lib")
 			
 
 
