@@ -1,6 +1,7 @@
 v8.167.5:
 - Code fixes in retroarch config files
 - RetroArch 40cfde0 + updated assets
+- Working in RPi's LE9 testbuilds
 v8.167.4:
 - Back to AEL launcher window if using AEL frontend for direct launch
 - Remove ES ignore gamelists flag for scraping

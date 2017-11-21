@@ -6,7 +6,7 @@
 ADDON_1='repository.gamestarter'
 ADDON_1_VER='3.0.0'
 ADDON_2='game.retroarch'
-ADDON_2_VER='8.167.4'
+ADDON_2_VER='8.167.5'
 ADDON_3='game.emulationstation'
 ADDON_3_VER='8.201.1'
 ADDON_4='game.drastic'
