@@ -1,3 +1,5 @@
+v8.168.6:
+-RetroArch 1.6.8 (c056726)
 v8.167.5:
 - Code fixes in retroarch config files
 - RetroArch 40cfde0 + updated assets
