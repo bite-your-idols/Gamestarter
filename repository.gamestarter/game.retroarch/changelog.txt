@@ -1,3 +1,6 @@
+v8.169.7:
+- Cores info files updated
+- AEL assets download from addon settings
 v8.169.6:
 -RetroArch 1.6.9 (c056726)
 v8.167.5:
