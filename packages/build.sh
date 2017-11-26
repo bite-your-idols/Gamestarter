@@ -43,6 +43,20 @@ case $response in
 esac
 
 
+read -r -p "Do you want to make AEL asset package? [y/n] " response
+case $response in
+    [yY][eE][sS]|[yY]) 
+       
+    echo "Compilamos la carpeta de assets de AEL..."
+	cd packages/emulators && tar -zcvf ael-assets.tar.gz ael-assets/ 
+    mv ael-assets.tar.gz ../ && cd ..
+        ;;
+    # *)
+        # do_something_else
+        # ;;
+esac
+
+
 #################################################
 # crear los zips de las versiones del addon con los zips de data
 #################################################
