@@ -51,6 +51,17 @@ if command == 'DOWNLOAD_CORES':
 	os.system('kodi-send --action="xbmc.Dialog.Close(busydialog)"')
 	xbmcgui.Dialog().ok("RetroArch", "Libretro cores downloaded. You must deactivate 'Use RetroPlayer installed cores only' option to use them when launching RetroArch.")
 
+elif command == 'DOWNLOAD_AEL_ASSETS':
+	xbmcgui.Dialog().ok("RetroArch", "Downloading assets for Advanced Emulator Launcher, please do not power off your device.")
+	os.system('kodi-send --action="xbmc.ActivateWindow(busydialog)"')
+	os.system("echo 'RetroArch [ADDON] :: Downloading AEL Assets.' $(date) >> /storage/.kodi/temp/retroarch.log")
+	os.system("mkdir -p /storage/emulators/")
+	os.system("wget -O /storage/emulators/ael-assets.tar.gz https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/ael-assets.tar.gz")
+	os.system("tar -xf /storage/emulators/ael-assets.tar.gz -C /storage/emulators/ -xz && rm /storage/emulators/ael-assets.tar.gz")
+	os.system("echo 'RetroArch [ADDON] :: AEL assets downloaded.' >> /storage/.kodi/temp/retroarch.log")
+	os.system('kodi-send --action="xbmc.Dialog.Close(busydialog)"')
+	xbmcgui.Dialog().ok("RetroArch", "AEL assets downloaded. Go to AEL settings > I/O  > Import category/launcher configuration... and select the systems you want to import one by one or select whole systems import config file (Gamestarter - Category assets.xml).")
+
 elif command == 'OPEN_SETTINGS':
 	xbmcaddon.Addon(id='game.retroarch').openSettings()
 

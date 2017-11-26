@@ -6,5 +6,6 @@
     	<setting id="retroplayer" type="bool" label="Use RetroPlayer installed cores only (Clean cores directory)" default="false"/>
         <!-- <setting label="Download Libretro cores full package..." type="action" action="RunScript(/storage/.kodi/addons/game.retroarch/extras.py, SetLocation, cores)"/> -->
         <setting label="Download Libretro cores full package..." type="action" option="close" action="RunPlugin(plugin://game.retroarch/?com=DOWNLOAD_CORES)"/>
+        <setting label="Download Advanced Emulator Launcher assets..." type="action" option="close" action="RunPlugin(plugin://game.retroarch/?com=DOWNLOAD_AEL_ASSETS)"/>
     </category>
 </settings>
