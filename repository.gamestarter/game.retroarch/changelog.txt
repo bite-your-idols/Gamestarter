@@ -1,6 +1,8 @@
 v8.169.7:
 - Cores info files updated
 - AEL assets download from addon settings
+- Working in Generic's LE9 testbuilds
+- Lakka Cores package updated to Lakka 2.1
 v8.169.6:
 -RetroArch 1.6.9 (c056726)
 v8.167.5:
