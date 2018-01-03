@@ -1,4 +1,4 @@
-[B]Advanced Emulator Launcher | version 0.9.8 | XX November 2017[/B]
+[B]Advanced Emulator Launcher | version 0.9.8 | XX February 2018[/B]
 
 WIP      Complete Extranafart support for Categories/Launchers.
 
@@ -65,6 +65,38 @@ WIP      Create a "fake" Parent/Clone list from filenames ala NARS (NARS Advance
 
 WIP      Options to generate the 1G1R parent list, like prefer ROMs from Europe, Japan or USA.
          This resembles what NARS No-Intro filtering does.
+
+
+[B]Advanced Emulator Launcher | version 0.9.7 | 23 November 2017[/B]
+
+FEATURE  Export individual Launcher XML configuration.
+
+FIX      Fixed crash when editing Launchr Title in context menu.
+
+FIX      Fixed crash in the ROM Scanner when Launcher had unconfigured ROM asset paths.
+
+
+[B]Advanced Emulator Launcher | version 0.9.7-beta2 | 19 November 2017[/B]
+
+FIX      Currently AEL multid-disc parser supports "Rom name (disc 1).bin".
+         Fixed to also support "Rom name (disk 1).bin".
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2656844#pid2656844
+         and https://forum.kodi.tv/showthread.php?tid=287826&pid=2657243#pid2657243
+
+FIX      Fix export of Launcher and ROM NFO files.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2658080#pid2658080
+
+FIX      Fix import of Launcher and ROM NFO files.
+
+FIX      Poster artworks do not appear anymore (got them mapped to flyers for all launchers).
+         When I try to change the mapping (manage rom/choose roms default assets/artworks),
+         then AEL is throwing me an error.
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2660404#pid2660404
+
+FIX      Fix crash in "Add ROMs", "Manually Add ROM".
+         Error Type: <type 'exceptions.NameError'>
+         Error Contents: global name 'assets_search_local_assets' is not defined
+         See https://forum.kodi.tv/showthread.php?tid=287826&pid=2665544#pid2665544
 
 
 [B]Advanced Emulator Launcher | version 0.9.7-beta1 | 07 October 2017[/B]

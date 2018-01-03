@@ -3,7 +3,6 @@
        version="0.9.7" provider-name="Wintermute0110">
   <requires>
     <!-- See https://github.com/xbmc/xbmc/blob/master/addons/xbmc.python/addon.xml
-         2.24.0  Jarvis 16.x
          2.25.0  Krypton 17.x
          x.yy.z  Leia 18.x
          x.yy.z  M**** 19.x
@@ -29,6 +28,6 @@
       <screenshot>media/Estuary_ROM_Console.jpg</screenshot>
       <screenshot>media/Estuary_ROM_MAME.jpg</screenshot>
     </assets>
-    <news>See changelog.txt for information about the latests release.</news>
+    <news>See changelog.txt for information about the latest release.</news>
   </extension>
 </addon>
