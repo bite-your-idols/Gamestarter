@@ -24,7 +24,7 @@
   - After launching the addon you can enter RetroArch menu with default combo `select + start` in your gamepad or `F1` in your keyboard. Then you can download/update cores from [Libretro buildbot](https://buildbot.libretro.com/nightly/linux/armhf/latest/) and other assets.
   
 - **Advanced Emulator Launcher**:
-  - After installing this addon you should download AEL assets using RA's addon settings. Then, go to `AEL settings → I/O  → Import category/launcher configuration...` and select the systems you want to import one by one or select whole systems import config file (`/storage/emulators/ael-assets/Gamestarter - Category assets.xml`).
+  - After installing this addon you should download AEL assets using RA's addon settings. Then, go to `AEL settings → I/O  → Import category/launcher configuration...` and select the systems you want to import from default path (`/storage/emulators/ael-assets`).
   - After updating from a previous version you should go to `AEL settings → I/O  → Check/Update all databases...`.
   
 - **EmulationStation**:
