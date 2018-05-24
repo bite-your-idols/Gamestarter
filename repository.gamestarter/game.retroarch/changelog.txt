@@ -1,3 +1,5 @@
+v8.170.9:
+- Added missing libs for LE9 alpha builds
 v8.170.8:
 - Retroarch 1.7.0 (63d9d80)
 v8.169.7:
