@@ -1,6 +1,8 @@
 v8.174.11:
 - Additional libs for LE9 Alpha Releases (Gen&RPi)
 - Retroarch 1.7.4 (02e23be)
+- Cores info files updated
+- Lakka Cores package updated to Lakka 2.1.1
 v8.173.10:
 - Retroarch 1.7.3 (91744d9)
 v8.170.9:
