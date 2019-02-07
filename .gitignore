@@ -4,6 +4,7 @@
 # releases directory
 /scripts/builds/
 /packages/builds/
+/builds/
 # /scripts/build.sh
 
 #sftp config

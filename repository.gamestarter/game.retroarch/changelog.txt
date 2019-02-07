@@ -1,3 +1,5 @@
+v8.176.13 (WIP):
+- Retroarch 1.7.6 (9750719) - Just for RPi2/3
 v8.175.12:
 - Retroarch 1.7.5 (c9c6c5a)
 v8.174.11:
