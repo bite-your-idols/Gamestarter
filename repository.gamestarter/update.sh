@@ -6,7 +6,7 @@
 ADDON_1='repository.gamestarter'
 ADDON_1_VER='3.0.0'
 ADDON_2='game.retroarch'
-ADDON_2_VER='8.174.11'
+ADDON_2_VER='8.175.12'
 ADDON_3='game.emulationstation'
 ADDON_3_VER='8.201.1'
 ADDON_4='game.drastic'
@@ -18,7 +18,7 @@ ADDON_6_VER='0.0.1'
 # ADDON_5='game.uae4arm'
 # ADDON_5_VER='0.0.1'
 ADDON_7='game.retroarch'
-ADDON_7_VER='8.175.12'
+ADDON_7_VER='8.176.13'
 
 
 echo ""
