@@ -34,7 +34,8 @@ if command == 'DOWNLOAD_CORES':
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ad")
 
 		os.system("cat /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.* > /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
-	os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad")
+		os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad")
+	
 	else:
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.aa")
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ab")
@@ -43,7 +44,7 @@ if command == 'DOWNLOAD_CORES':
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ae")
 
 		os.system("cat /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.* > /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
-	os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ae")
+		os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ae")
 
 	# os.system("cat /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.* > /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
 	# os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad")
