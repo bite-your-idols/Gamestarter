@@ -11,7 +11,7 @@
 # echo    # (optional) move to a new line
 # if [[ ! $REPLY =~ ^[Yy]$ ]];then
 
-read -r -p "Do you want to make RPi Cores packages? [y/n] " response
+read -r -p "Do you want to make RPi 2/3 Cores packages? [y/n] " response
 case $response in
     [yY][eE][sS]|[yY]) 
        
@@ -19,6 +19,21 @@ case $response in
 	cd packages && tar -zcvf libretro-cores-RPi.tar.gz libretro-cores-RPi/ && cd ..
 	cd packages && split -b 24M libretro-cores-RPi.tar.gz "libretro-cores-RPi.tar.gz.part." && cd ..
 	rm packages/libretro-cores-RPi.tar.gz
+
+        ;;
+    # *)
+        # do_something_else
+        # ;;
+esac
+
+read -r -p "Do you want to make RPi 4 Cores packages? [y/n] " response
+case $response in
+    [yY][eE][sS]|[yY]) 
+       
+    echo "Compilamos las carpetas de packages..."
+	cd packages && tar -zcvf libretro-cores-RPi4.tar.gz libretro-cores-RPi4/ && cd ..
+	cd packages && split -b 24M libretro-cores-RPi4.tar.gz "libretro-cores-RPi4.tar.gz.part." && cd ..
+	rm packages/libretro-cores-RPi4.tar.gz
 
         ;;
     # *)
