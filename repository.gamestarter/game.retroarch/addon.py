@@ -11,7 +11,7 @@ addonname   = addon.getAddonInfo('name')
 
 script_file = os.path.realpath(__file__)
 directory = os.path.dirname(script_file)
-project=str(os.popen('echo $(head -c 3 /etc/release)').read())
+project=str(os.popen('echo $(head -c 4 /etc/release)').read())
 
 # miramos si hay alguna accion
 args = urlparse.parse_qs(sys.argv[2][1:])
@@ -27,7 +27,16 @@ if command == 'DOWNLOAD_CORES':
 	os.system("echo 'RetroArch [ADDON] :: Downloading Libretro cores full package.' $(date) >> /storage/.kodi/temp/retroarch.log")
 	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch/cores")
 
-	if project.find("Pi") >= 0:
+	if project.find("Pi4") >= 0:
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi4.tar.gz.part.aa")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi4.tar.gz.part.ab")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi4.tar.gz.part.ac")
+		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi4.tar.gz.part.ad")
+
+		os.system("cat /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.* > /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
+		os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad")
+	
+	elif project.find("Pi") >= 0:
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.aa")
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ab")
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-RPi.tar.gz.part.ac")
@@ -35,7 +44,7 @@ if command == 'DOWNLOAD_CORES':
 
 		os.system("cat /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.* > /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz")
 		os.system("rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ac && rm /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ad")
-	
+		
 	else:
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.aa https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.aa")
 		os.system("wget -O /storage/.kodi/userdata/addon_data/game.retroarch/libretro-cores.tar.gz.part.ab https://github.com/bite-your-idols/Gamestarter-Pi/raw/master/packages/libretro-cores-Gen.tar.gz.part.ab")
@@ -87,6 +96,8 @@ else:
 	 	os.system("mount -o remount,rw /flash && if [ -z $(grep 'dtparam=audio=on' /flash/config.txt) ]; then echo 'dtparam=audio=on' >> /flash/config.txt && echo 'RetroArch [ADDON] :: Alsa activated in config.txt' >> /storage/.kodi/temp/retroarch.log ; fi")
 	 	os.system("mkdir -p /storage/emulators/roms && mkdir -p /storage/emulators/bios && mkdir -p /storage/emulators/saves")
 	 	os.system("mkdir -p /storage/.kodi/userdata/addon_data/game.retroarch")
+		#check RPi4 or not to rename binaries
+		os.system("PROJECTPI=$(head -c 4 /etc/release) && if [[ $PROJECTPI == 'RPi4' ]] ; then mv -n /storage/.kodi/addons/game.retroarch/game.retroarch-RPi /storage/.kodi/addons/game.retroarch/game.retroarch-RPi2 && mv -n /storage/.kodi/addons/game.retroarch/game.retroarch-RPi4 /storage/.kodi/addons/game.retroarch/game.retroarch-RPi ; fi")
 	 	os.system("PROJECT=$(head -c 3 /etc/release) && if [[ $PROJECT == 'Gen' ]] ; then mv -n /storage/.kodi/addons/game.retroarch/retroarch/retroarch-Gen.cfg /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg ; else mv -n /storage/.kodi/addons/game.retroarch/retroarch/retroarch-RPi.cfg /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg ; fi")
 	 	os.system("if [ ! -f /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ] ; then cp /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg /storage/.kodi/userdata/addon_data/game.retroarch/retroarch.cfg ; fi && rm -rf /storage/.kodi/addons/game.retroarch/retroarch/retroarch.cfg")
 	 	os.system("cp -r /storage/.kodi/addons/game.retroarch/retroarch/* /storage/.kodi/userdata/addon_data/game.retroarch")
@@ -106,7 +117,7 @@ else:
 
 
 	# Despues y las siguientes veces comprobamos que haya cores,
-	# habrai que borrar los links y volver a crearlos por si has borrado los cores desde retrpolayer
+	# habria que borrar los links y volver a crearlos por si has borrado los cores desde retrpolayer
 	retroplayer = xbmcplugin.getSetting(int(sys.argv[1]),'retroplayer')
 	if retroplayer == "true":
 		os.system("echo 'RetroArch [ADDON] :: Cleaning Cores - RetroPlayer=True.' >> /storage/.kodi/temp/retroarch.log") 
