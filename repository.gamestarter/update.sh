@@ -18,7 +18,7 @@ ADDON_6_VER='0.0.1'
 # ADDON_5='game.uae4arm'
 # ADDON_5_VER='0.0.1'
 ADDON_7='game.retroarch'
-ADDON_7_VER='8.176.13'
+ADDON_7_VER='9.178.15'
 
 
 echo ""
