@@ -16,9 +16,12 @@ case $response in
     [yY][eE][sS]|[yY]) 
        
     echo "Compilamos las carpetas de packages..."
-	cd packages && tar -zcvf libretro-cores-RPi.tar.gz libretro-cores-RPi/ && cd ..
+    mkdir packages/cores
+    cp packages/libretro-cores-RPi/* packages/cores
+	cd packages && tar -zcvf libretro-cores-RPi.tar.gz cores/ && cd ..
 	cd packages && split -b 24M libretro-cores-RPi.tar.gz "libretro-cores-RPi.tar.gz.part." && cd ..
 	rm packages/libretro-cores-RPi.tar.gz
+	rm -rf packages/cores
 
         ;;
     # *)
@@ -31,9 +34,12 @@ case $response in
     [yY][eE][sS]|[yY]) 
        
     echo "Compilamos las carpetas de packages..."
-	cd packages && tar -zcvf libretro-cores-RPi4.tar.gz libretro-cores-RPi4/ && cd ..
+    mkdir packages/cores
+    cp packages/libretro-cores-RPi4/* packages/cores
+	cd packages && tar -zcvf libretro-cores-RPi4.tar.gz cores/ && cd ..
 	cd packages && split -b 24M libretro-cores-RPi4.tar.gz "libretro-cores-RPi4.tar.gz.part." && cd ..
 	rm packages/libretro-cores-RPi4.tar.gz
+	rm -rf packages/cores
 
         ;;
     # *)
@@ -47,9 +53,12 @@ case $response in
     [yY][eE][sS]|[yY]) 
        
     echo "Compilamos las carpetas de packages..."
-	cd packages && tar -zcvf libretro-cores-Gen.tar.gz libretro-cores-Gen/ && cd ..
+    mkdir packages/cores
+    cp packages/libretro-cores-Gen/* packages/cores
+	cd packages && tar -zcvf libretro-cores-Gen.tar.gz cores/ && cd ..
 	cd packages && split -b 24M libretro-cores-Gen.tar.gz "libretro-cores-Gen.tar.gz.part." && cd ..
 	rm packages/libretro-cores-Gen.tar.gz
+	rm -rf packages/cores
 
         ;;
     # *)
