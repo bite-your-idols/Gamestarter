@@ -1,3 +1,6 @@
+v9.181.16:
+- Retroarch 1.8.1 (bfdc8e6)
+- Identation fix for Python 3
 v9.178.15:
 - Raspberry Pi 4
 - LibreELEC 9.2 beta
