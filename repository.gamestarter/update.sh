@@ -16,7 +16,7 @@ ADDON_5_VER='0.9.7'
 ADDON_6='game.ppsspp'
 ADDON_6_VER='0.0.1'
 ADDON_7='game.retroarch'
-ADDON_7_VER='9.181.16'
+ADDON_7_VER='8.177.14'
 ADDON_8='game.retroarch'
 ADDON_8_VER='9.182.17'
 
