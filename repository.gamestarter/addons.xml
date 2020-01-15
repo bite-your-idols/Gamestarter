@@ -111,7 +111,7 @@ RetroArch has advanced features like shaders, netplay, rewinding, and more!</des
       <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="8.177.14">
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="9.181.16">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
