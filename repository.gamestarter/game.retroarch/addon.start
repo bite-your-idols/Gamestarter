@@ -89,6 +89,12 @@ case $1 in
   ;;
   "emulationstation")  
       echo "EmulationStation [ADDON] :: Launch EmulationStation (See process output in emulationstation_debug.log)" >>  $LOG_FILE_ES
+      # Set locale
+      if ( [ -z "$LANG" ] || [ -z "$LC_CTYPE" ] ) && [ -z "$LC_ALL" ]
+      then
+            echo "EmulationStation [ADDON] :: Set LC_ALL=C" >> $LOG_FILE_ES
+            export LC_ALL="C"
+      fi
       # /storage/emulators/temp/retroarch/temp/retroarch --no-splash --ignore-gamelist
       "$ADDON_ES_DIR/game.emulationstation-$PROJECT" --no-splash &>  $LOG_FILE_ES_DEBUG
   ;;
