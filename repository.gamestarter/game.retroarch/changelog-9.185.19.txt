@@ -1,0 +1,80 @@
+v9.185.19:
+- Retroarch 1.8.5 (8bcd74b)
+- Ozone as default menu theme
+- EmulationStation Locale fix
+v9.184.18:
+- Retroarch 1.8.4 (9e25601)
+v9.182.17:
+- Retroarch 1.8.2 (cf97f39)
+v9.181.16:
+- Retroarch 1.8.1 (bfdc8e6)
+- Identation fix for Python 3
+v9.178.15:
+- Raspberry Pi 4
+- LibreELEC 9.2 beta
+- Retroarch 1.7.8 v4 (ea7e682)
+v8.177.14:
+- Retroarch 1.7.7 (56396f6)
+v8.176.13:
+- Retroarch 1.7.6 (9750719)
+v8.175.12:
+- Retroarch 1.7.5 (c9c6c5a)
+v8.174.11:
+- Additional libs for LE9 Alpha Releases (Gen&RPi)
+- Retroarch 1.7.4 (02e23be)
+- Cores info files updated
+- Lakka Cores package updated to Lakka 2.1.1
+v8.173.10:
+- Retroarch 1.7.3 (91744d9)
+v8.170.9:
+- Added missing libs for LE9 alpha builds
+v8.170.8:
+- Retroarch 1.7.0 (63d9d80)
+v8.169.7:
+- Cores info files updated
+- AEL assets download from addon settings
+- Working in Generic's LE9 testbuilds
+- Lakka Cores package updated to Lakka 2.1
+v8.169.6:
+-RetroArch 1.6.9 (c056726)
+v8.167.5:
+- Code fixes in retroarch config files
+- RetroArch 40cfde0 + updated assets
+- Working in RPi's LE9 testbuilds
+v8.167.4:
+- Back to AEL launcher window if using AEL frontend for direct launch
+- Remove ES ignore gamelists flag for scraping
+v8.167.3:
+- Better project type check
+v8.167.2:
+- Generic retroarch.cfg file (download cores using RA's online updater)
+- Generic core package download fix
+v8.167.1:
+- RetroArch 1.6.7
+- Assets, info & autoconfigs update (20170818)
+- Code optimization
+v8.164.1:
+- Ports launch from external FE
+- New version naming (LE_version.Retroarch_version.addon_version)
+v1.0.0:
+- Alsa activation in config.txt
+v0.0.9:
+- RetroArch 1.6.4
+v0.0.8:
+- Clean Gamestarter RA folder ls
+v0.0.7:
+- RetroArch 1.6.3
+v0.0.6:
+- RetroArch 1.6.1
+v0.0.5:
+- Code debugging WIP
+v0.0.4:
+- Code debugging WIP
+v0.0.3:
+- Libretro Cores full package download
+- RetroPlayer cores use option toggle
+v0.0.2:
+- Add-on for both RPi&Generic
+- Cores package download WIP
+v0.0.1:
+- Initial Pre-Release
