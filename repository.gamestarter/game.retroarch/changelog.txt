@@ -1,3 +1,6 @@
+v9.185.19:
+- Retroarch 1.8.5 (8bcd74b)
+- EmulationStation Locale fix
 v9.184.18:
 - Retroarch 1.8.4 (9e25601)
 v9.182.17:
