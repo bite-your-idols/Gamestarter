@@ -5,7 +5,7 @@
     <import addon="game.retroarch" version="8.167.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>game</provides>
+		<provides>executable game</provides>
 	</extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">EmulationStation frontend for LibreELEC.</summary>

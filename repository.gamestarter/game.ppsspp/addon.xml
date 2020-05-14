@@ -4,7 +4,7 @@
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>game</provides>
+		<provides>executable game</provides>
 	</extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">PSP emulator for Raspberry Pi.</summary>

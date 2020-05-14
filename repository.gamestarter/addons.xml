@@ -111,7 +111,7 @@ RetroArch has advanced features like shaders, netplay, rewinding, and more!</des
       <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="9.184.18">
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="9.185.19">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -131,12 +131,12 @@ RetroArch has advanced features like shaders, netplay, rewinding, and more!</des
       <screenshot>fanart.jpg</screenshot>
     </assets>
   </extension>
-</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="9.185.19">
+</addon><addon id="game.retroarch" name="RetroArch" provider-name="Bite Your Idols!" version="9.186.20">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
   <extension library="addon.py" point="xbmc.python.pluginsource">
-		<provides>executable game</provides>
+		<provides>game</provides>
 	</extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">RetroArch frontend for LibreELEC</summary>
